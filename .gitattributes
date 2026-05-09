@@ -1,0 +1,7 @@
+# Default: normalize text files to LF
+* text=auto eol=lf
+
+# Pack file: research-os-self-dogfood/pack/synthesis/final-report.md was frozen
+# on Windows (CRLF). The freeze receipt hash was computed on the CRLF bytes.
+# Force CRLF checkout on all platforms so verify-pack hashes match the receipt.
+packages/research-os-self-dogfood/pack/synthesis/final-report.md eol=crlf
