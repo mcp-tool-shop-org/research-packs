@@ -1,0 +1,407 @@
+{
+  "section_id": "03-source-and-claim-truth",
+  "verdict": "warn",
+  "summary": "Verdict: warn. synthesis-eligible. no failures; 7 warning(s); 1 waiver(s) applied.",
+  "checked_at": "2026-05-07T02:19:13.143Z",
+  "synthesis_eligible": true,
+  "gate_results": [
+    {
+      "family": "source_floor",
+      "check": "min_sources",
+      "status": "pass",
+      "detail": "10 source card(s) >= minimum 8.",
+      "evidence": [],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "source_floor",
+      "check": "min_independent_publishers",
+      "status": "pass",
+      "detail": "5 independent publisher(s) >= minimum 4.",
+      "evidence": [],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "source_floor",
+      "check": "primary_sources_required",
+      "status": "pass_with_waiver",
+      "detail": "Found 1 primary source(s); minimum 2 required. Pre-waiver. Waiver granted with 5 compensating control(s); converted from fail to pass_with_waiver.",
+      "evidence": [
+        "src_a135974ea838"
+      ],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "source_floor",
+      "check": "failed_fetches_visible",
+      "status": "warn",
+      "detail": "3 fetch attempt(s) recorded as non-ok in fetch-log.jsonl.",
+      "evidence": [],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "claim_integrity",
+      "check": "every_claim_needs_source",
+      "status": "pass",
+      "detail": "All 14 candidate claim(s) reference at least one source_id.",
+      "evidence": [],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "claim_integrity",
+      "check": "no_orphan_claims",
+      "status": "pass",
+      "detail": "All claim source_ids resolve to source cards.",
+      "evidence": [],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "claim_integrity",
+      "check": "source_hashes_present",
+      "status": "pass",
+      "detail": "All candidate claims carry source_hashes.",
+      "evidence": [],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "claim_integrity",
+      "check": "evidence_excerpt_present",
+      "status": "pass",
+      "detail": "All candidate claims carry an evidence_excerpt.",
+      "evidence": [],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "claim_integrity",
+      "check": "fetch_receipt_anchored",
+      "status": "pass",
+      "detail": "All candidate claims trace to at least one successful fetch receipt.",
+      "evidence": [],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "claim_integrity",
+      "check": "no_source_cluster_monopoly",
+      "status": "warn",
+      "detail": "14/14 claim(s) source from a single publisher. Independent corroboration recommended before synthesis.",
+      "evidence": [
+        "clm_d81a8a3d6bba_heuristic_1",
+        "clm_d81a8a3d6bba_heuristic_2",
+        "clm_155c4be7850d_heuristic_1",
+        "clm_155c4be7850d_heuristic_2",
+        "clm_d39cd3ba0ef2_heuristic_1",
+        "clm_d39cd3ba0ef2_heuristic_2",
+        "clm_d39cd3ba0ef2_heuristic_3",
+        "clm_caedf4b2d8e0_heuristic_1",
+        "clm_caedf4b2d8e0_heuristic_2",
+        "clm_caedf4b2d8e0_heuristic_3",
+        "clm_a135974ea838_heuristic_1",
+        "clm_a135974ea838_heuristic_2",
+        "clm_63e3516c85f3_heuristic_1",
+        "clm_63e3516c85f3_heuristic_2"
+      ],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "scope_integrity",
+      "check": "no_untagged_universal_claims",
+      "status": "warn",
+      "detail": "14/14 candidate claim(s) have scope=null. These must not be treated as broad-applicability claims downstream — they are scope-undetermined, not scope-universal. Run a richer extractor or add scope manually before synthesis.",
+      "evidence": [
+        "clm_d81a8a3d6bba_heuristic_1",
+        "clm_d81a8a3d6bba_heuristic_2",
+        "clm_155c4be7850d_heuristic_1",
+        "clm_155c4be7850d_heuristic_2",
+        "clm_d39cd3ba0ef2_heuristic_1",
+        "clm_d39cd3ba0ef2_heuristic_2",
+        "clm_d39cd3ba0ef2_heuristic_3",
+        "clm_caedf4b2d8e0_heuristic_1",
+        "clm_caedf4b2d8e0_heuristic_2",
+        "clm_caedf4b2d8e0_heuristic_3",
+        "clm_a135974ea838_heuristic_1",
+        "clm_a135974ea838_heuristic_2",
+        "clm_63e3516c85f3_heuristic_1",
+        "clm_63e3516c85f3_heuristic_2"
+      ],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "scope_integrity",
+      "check": "not_constraint_present",
+      "status": "warn",
+      "detail": "Only 0/14 candidate claim(s) carry a 'not' constraint. The 'not' field is the structural defense against overgeneralization; sparse coverage means downstream synthesis must be more cautious.",
+      "evidence": [
+        "clm_d81a8a3d6bba_heuristic_1",
+        "clm_d81a8a3d6bba_heuristic_2",
+        "clm_155c4be7850d_heuristic_1",
+        "clm_155c4be7850d_heuristic_2",
+        "clm_d39cd3ba0ef2_heuristic_1",
+        "clm_d39cd3ba0ef2_heuristic_2",
+        "clm_d39cd3ba0ef2_heuristic_3",
+        "clm_caedf4b2d8e0_heuristic_1",
+        "clm_caedf4b2d8e0_heuristic_2",
+        "clm_caedf4b2d8e0_heuristic_3",
+        "clm_a135974ea838_heuristic_1",
+        "clm_a135974ea838_heuristic_2",
+        "clm_63e3516c85f3_heuristic_1",
+        "clm_63e3516c85f3_heuristic_2"
+      ],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "scope_integrity",
+      "check": "no_blocking_overgeneralization",
+      "status": "pass",
+      "detail": "No high- or blocking-severity overgeneralization_risk contradictions.",
+      "evidence": [],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "scope_integrity",
+      "check": "scope_tagging_summary",
+      "status": "pass",
+      "detail": "0 scoped, 14 universal/untagged, 0 with 'not' constraint.",
+      "evidence": [],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "freshness",
+      "check": "no_stale_sources",
+      "status": "pass",
+      "detail": "No max_source_age_months configured; per-source recency not evaluated.",
+      "evidence": [],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "freshness",
+      "check": "publication_date_known",
+      "status": "warn",
+      "detail": "9 source(s) have no parseable published_at. Recency cannot be evaluated for these.",
+      "evidence": [
+        "src_05cae033cedc",
+        "src_155c4be7850d",
+        "src_63e3516c85f3",
+        "src_676ddfa834cc",
+        "src_a135974ea838",
+        "src_bc94816a3373",
+        "src_d39cd3ba0ef2",
+        "src_d81a8a3d6bba",
+        "src_e15c2248a5d8"
+      ],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "contradiction",
+      "check": "unresolved_visible",
+      "status": "pass",
+      "detail": "No contradictions recorded. A clean ledger is not proof of completeness — it means the detector found nothing.",
+      "evidence": [],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "contradiction",
+      "check": "unresolved_contradictions_block_synthesis",
+      "status": "pass",
+      "detail": "No high- or blocking-severity unresolved contradictions.",
+      "evidence": [],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "contradiction",
+      "check": "contradiction_required_by_policy",
+      "status": "warn",
+      "detail": "Pack policy requires contradiction coverage but no contradictions are recorded. A clean ledger may indicate a thin-source-set rather than genuine consensus. Adversarial review should re-examine.",
+      "evidence": [],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "section_budget",
+      "check": "budget_configured",
+      "status": "pass",
+      "detail": "Section budget: 45 minute(s). Pack default: 45.",
+      "evidence": [],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "section_budget",
+      "check": "runtime_tracking",
+      "status": "warn",
+      "detail": "Runtime tracking not yet implemented in v0.1; configured budget is recorded for future enforcement only. Extension policy (extension_requires_evidence=true) is documented but not enforced until actual run timestamps are tracked.",
+      "evidence": [],
+      "blocks_synthesis": false
+    }
+  ],
+  "failures": [],
+  "warnings": [
+    {
+      "family": "source_floor",
+      "check": "failed_fetches_visible",
+      "status": "warn",
+      "detail": "3 fetch attempt(s) recorded as non-ok in fetch-log.jsonl.",
+      "evidence": [],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "claim_integrity",
+      "check": "no_source_cluster_monopoly",
+      "status": "warn",
+      "detail": "14/14 claim(s) source from a single publisher. Independent corroboration recommended before synthesis.",
+      "evidence": [
+        "clm_d81a8a3d6bba_heuristic_1",
+        "clm_d81a8a3d6bba_heuristic_2",
+        "clm_155c4be7850d_heuristic_1",
+        "clm_155c4be7850d_heuristic_2",
+        "clm_d39cd3ba0ef2_heuristic_1",
+        "clm_d39cd3ba0ef2_heuristic_2",
+        "clm_d39cd3ba0ef2_heuristic_3",
+        "clm_caedf4b2d8e0_heuristic_1",
+        "clm_caedf4b2d8e0_heuristic_2",
+        "clm_caedf4b2d8e0_heuristic_3",
+        "clm_a135974ea838_heuristic_1",
+        "clm_a135974ea838_heuristic_2",
+        "clm_63e3516c85f3_heuristic_1",
+        "clm_63e3516c85f3_heuristic_2"
+      ],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "scope_integrity",
+      "check": "no_untagged_universal_claims",
+      "status": "warn",
+      "detail": "14/14 candidate claim(s) have scope=null. These must not be treated as broad-applicability claims downstream — they are scope-undetermined, not scope-universal. Run a richer extractor or add scope manually before synthesis.",
+      "evidence": [
+        "clm_d81a8a3d6bba_heuristic_1",
+        "clm_d81a8a3d6bba_heuristic_2",
+        "clm_155c4be7850d_heuristic_1",
+        "clm_155c4be7850d_heuristic_2",
+        "clm_d39cd3ba0ef2_heuristic_1",
+        "clm_d39cd3ba0ef2_heuristic_2",
+        "clm_d39cd3ba0ef2_heuristic_3",
+        "clm_caedf4b2d8e0_heuristic_1",
+        "clm_caedf4b2d8e0_heuristic_2",
+        "clm_caedf4b2d8e0_heuristic_3",
+        "clm_a135974ea838_heuristic_1",
+        "clm_a135974ea838_heuristic_2",
+        "clm_63e3516c85f3_heuristic_1",
+        "clm_63e3516c85f3_heuristic_2"
+      ],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "scope_integrity",
+      "check": "not_constraint_present",
+      "status": "warn",
+      "detail": "Only 0/14 candidate claim(s) carry a 'not' constraint. The 'not' field is the structural defense against overgeneralization; sparse coverage means downstream synthesis must be more cautious.",
+      "evidence": [
+        "clm_d81a8a3d6bba_heuristic_1",
+        "clm_d81a8a3d6bba_heuristic_2",
+        "clm_155c4be7850d_heuristic_1",
+        "clm_155c4be7850d_heuristic_2",
+        "clm_d39cd3ba0ef2_heuristic_1",
+        "clm_d39cd3ba0ef2_heuristic_2",
+        "clm_d39cd3ba0ef2_heuristic_3",
+        "clm_caedf4b2d8e0_heuristic_1",
+        "clm_caedf4b2d8e0_heuristic_2",
+        "clm_caedf4b2d8e0_heuristic_3",
+        "clm_a135974ea838_heuristic_1",
+        "clm_a135974ea838_heuristic_2",
+        "clm_63e3516c85f3_heuristic_1",
+        "clm_63e3516c85f3_heuristic_2"
+      ],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "freshness",
+      "check": "publication_date_known",
+      "status": "warn",
+      "detail": "9 source(s) have no parseable published_at. Recency cannot be evaluated for these.",
+      "evidence": [
+        "src_05cae033cedc",
+        "src_155c4be7850d",
+        "src_63e3516c85f3",
+        "src_676ddfa834cc",
+        "src_a135974ea838",
+        "src_bc94816a3373",
+        "src_d39cd3ba0ef2",
+        "src_d81a8a3d6bba",
+        "src_e15c2248a5d8"
+      ],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "contradiction",
+      "check": "contradiction_required_by_policy",
+      "status": "warn",
+      "detail": "Pack policy requires contradiction coverage but no contradictions are recorded. A clean ledger may indicate a thin-source-set rather than genuine consensus. Adversarial review should re-examine.",
+      "evidence": [],
+      "blocks_synthesis": false
+    },
+    {
+      "family": "section_budget",
+      "check": "runtime_tracking",
+      "status": "warn",
+      "detail": "Runtime tracking not yet implemented in v0.1; configured budget is recorded for future enforcement only. Extension policy (extension_requires_evidence=true) is documented but not enforced until actual run timestamps are tracked.",
+      "evidence": [],
+      "blocks_synthesis": false
+    }
+  ],
+  "waivers_applied": [
+    {
+      "family": "source_floor",
+      "check": "primary_sources_required",
+      "reason": "This pack researches the design intent of research-os itself. Primary sources for the design (Mike's spec decisions and the maintainer's reasoning) are operator input, not public publications. Public secondary sources about adjacent topics (citation systems, knowledge graphs, gating workflows, FTS5, Cowork patterns) provide independent corroboration where the design touches established practice.",
+      "compensating_controls": [
+        "Adversarial reviewer pass required on every section before synthesis.",
+        "Cross-section contradiction mapping required across all sections.",
+        "Each section must cite >=4 independent publishers; source cluster monopoly is a section-level blocker.",
+        "Final-report citations must be claim-level traceable via [claim:clm_...] references.",
+        "Every active waiver disclosed in synthesis/decision-brief.md and synthesis/final-report.md by family.applied_to."
+      ],
+      "original_status": "fail",
+      "new_status": "pass_with_waiver"
+    }
+  ],
+  "blocking_reasons": [],
+  "claim_counts": {
+    "total": 14,
+    "candidate": 14,
+    "with_evidence_excerpt": 14,
+    "with_source_hashes": 14,
+    "with_scope": 0,
+    "with_not": 0,
+    "universal_scope_null": 14,
+    "orphans": 0
+  },
+  "source_counts": {
+    "total": 10,
+    "primary": 1,
+    "secondary": 9,
+    "forum": 0,
+    "benchmark": 0,
+    "docs": 0,
+    "unknown": 0,
+    "independent_publishers": 5,
+    "failed_fetches": 3
+  },
+  "contradiction_counts": {
+    "total": 0,
+    "unresolved": 0,
+    "blocking": 0,
+    "by_type": {}
+  },
+  "freshness_summary": {
+    "policy_required": true,
+    "max_source_age_months": null,
+    "stale_source_policy": "warn",
+    "stale_count": 0,
+    "unknown_date_count": 9
+  },
+  "scope_integrity_summary": {
+    "universal_claims": 14,
+    "scoped_claims": 0,
+    "with_not_constraint": 0,
+    "overgen_risks_total": 0,
+    "overgen_risks_blocking": 0
+  },
+  "next_actions": []
+}

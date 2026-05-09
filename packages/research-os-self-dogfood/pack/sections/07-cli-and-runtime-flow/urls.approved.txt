@@ -1,0 +1,13 @@
+https://cligang.github.io/2018/03/07/cli-design.html
+https://clik.io/docs/design.html
+https://man7.org/tlpi/volume_1/chapter06.html
+https://github.com/posh-hash/cmdlet-design-guidelines/blob/master/docs/design.md
+https://nvie.com/posts/cli-application-structure/
+https://www.gnu.org/software/libc/manual/html_node/Command-Line.html
+https://github.com/redguardtoo/standalone-cli
+https://clibs.org/standalone-cli/latest/tutorial/
+https://clig.dev/
+https://12factor.net/config
+https://github.com/tj/commander.js/
+https://docs.npmjs.com/cli-documentation/
+https://nodejs.org/en

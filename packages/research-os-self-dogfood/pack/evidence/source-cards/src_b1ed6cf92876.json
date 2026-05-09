@@ -1,0 +1,26 @@
+{
+  "source_id": "src_b1ed6cf92876",
+  "receipt_id": "rcpt_b1ed6cf92876_1778188778006",
+  "section_id": "02-pack-artifact-contract",
+  "url": "https://json-schema.org/specification",
+  "final_url": "https://json-schema.org/specification",
+  "fetched_at": "2026-05-07T21:19:38.006Z",
+  "publisher": "json-schema.org",
+  "published_at": null,
+  "title": "JSON Schema - Specification [#section]",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "The current version is 2020-12! The previous version was 2019-09.",
+    "See also the release notes / change log (Work in progress).",
+    "The specification is split into two parts, Core and Validation. We also publish the Relative JSON Pointers spec although it's not currently used by Core or Validation in any significant way.",
+    "The meta-schemas are schemas against which other schemas can be validated. It is self-descriptive: the JSON Schema meta-schema validates itself.",
+    "The latest meta-schema is 2020-12. For an explanation of the change to date-based identifiers, see the Specification Links page."
+  ],
+  "limitations": [],
+  "asserts": "JSON Schema",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:19:38.080Z"
+}

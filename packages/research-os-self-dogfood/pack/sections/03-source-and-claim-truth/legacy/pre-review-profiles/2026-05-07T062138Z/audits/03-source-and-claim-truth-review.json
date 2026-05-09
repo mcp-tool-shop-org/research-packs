@@ -1,0 +1,906 @@
+{
+  "section_id": "03-source-and-claim-truth",
+  "reviewer": "ollama-intern",
+  "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+  "reviewed_at": "2026-05-07T05:48:14.006Z",
+  "candidate_claims": 50,
+  "findings": [
+    {
+      "finding_id": "fnd_799b69e843c8",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_676ddfa834cc_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_676ddfa834cc"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "Claim generalizes the structure of knowledge graphs beyond the source's mention of the term's origin.",
+      "evidence": "Claim clm_676ddfa834cc_ollama_intern_1 asserts a graph-structured model for knowledge graphs, but the source only discusses the term's origin in 1972, not its structural definition.",
+      "required_action": "Re-evaluate the source's support for the structural claim about knowledge graphs.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T05:48:14.005Z"
+    },
+    {
+      "finding_id": "fnd_73b22c8bd061",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_676ddfa834cc_ollama_intern_1",
+        "clm_676ddfa834cc_ollama_intern_21",
+        "clm_676ddfa834cc_ollama_intern_22",
+        "clm_676ddfa834cc_ollama_intern_23",
+        "clm_676ddfa834cc_ollama_intern_24",
+        "clm_676ddfa834cc_ollama_intern_26"
+      ],
+      "source_ids": [
+        "src_676ddfa834cc"
+      ],
+      "category": "claim_overproduction",
+      "severity": "warn",
+      "summary": "Redundant claims from the same source describe knowledge graphs in overlapping ways, creating synthesis noise.",
+      "evidence": "Multiple claims (clm_676ddfa834cc_ollama_intern_1, 21, 22, 23, 24, 26) from src_676ddfa834cc describe knowledge graphs using similar graph-structured models without distinct synthesis value.",
+      "required_action": "Merge or discard redundant claims about knowledge graph structure.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "finding_id": "fnd_170e402ef86b",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_676ddfa834cc_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_676ddfa834cc"
+      ],
+      "category": "hidden_synthesis",
+      "severity": "warn",
+      "summary": "Claim conflates the origin of the term 'knowledge graph' with a specific project's name, not explicitly stated in the source.",
+      "evidence": "Claim clm_676ddfa834cc_ollama_intern_5 attributes the term's origin to Schneider's 1972 discussion of instructional systems, but the source mentions a 1980s project named 'Knowledge Graphs' separately.",
+      "required_action": "Clarify that the source does not equate the term's origin with the project's name.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "finding_id": "fnd_82dabab32e8f",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_676ddfa834cc_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_676ddfa834cc"
+      ],
+      "category": "scope_widening",
+      "severity": "info",
+      "summary": "Claim about knowledge graphs' structure extends beyond the source's focus on terminology.",
+      "evidence": "Claim clm_676ddfa834cc_ollama_intern_1 discusses structural definitions, while the source only mentions the term's origin in 1972.",
+      "required_action": "Limit the claim to the source's explicit mention of the term's origin.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "finding_id": "fnd_fa6189ca004d",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_bc94816a3373_ollama_intern_56"
+      ],
+      "source_ids": [
+        "src_bc94816a3373"
+      ],
+      "category": "hidden_synthesis",
+      "severity": "block",
+      "summary": "Claim about provenance definition is not supported by the cited source.",
+      "evidence": "Claim clm_bc94816a3373_ollama_intern_56 asserts a definition of provenance, but its evidence_excerpt references a piano auction article (2023) rather than a definition of the term.",
+      "required_action": "Re-evaluate source credibility and ensure claims are directly supported by the cited evidence.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "finding_id": "fnd_2f54a12a18d7",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_155c4be7850d_ollama_intern_18"
+      ],
+      "source_ids": [
+        "src_155c4be7850d"
+      ],
+      "category": "hidden_synthesis",
+      "severity": "block",
+      "summary": "Claim about JSON-LD is unsupported by the cited source.",
+      "evidence": "Claim clm_155c4be7850d_ollama_intern_18 asserts JSON-LD is a JSON-based RDF format, but its evidence_excerpt references N3 (Notation3), not JSON-LD.",
+      "required_action": "Verify that the source explicitly supports the claim's assertion.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "finding_id": "fnd_d0cad0e54bef",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_caedf4b2d8e0_ollama_intern_101"
+      ],
+      "source_ids": [
+        "src_caedf4b2d8e0"
+      ],
+      "category": "hidden_synthesis",
+      "severity": "block",
+      "summary": "Claim about JSON-LD term protection is not supported by the cited source.",
+      "evidence": "Claim clm_caedf4b2d8e0_ollama_intern_101 asserts JSON-LD protects term definitions, but its evidence_excerpt references combining contexts, not term protection mechanisms.",
+      "required_action": "Ensure the source explicitly describes the claimed functionality.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "finding_id": "fnd_c398cb991259",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_bc94816a3373_ollama_intern_72"
+      ],
+      "source_ids": [
+        "src_bc94816a3373"
+      ],
+      "category": "hidden_synthesis",
+      "severity": "block",
+      "summary": "Claim about spandrels in provenance is unsupported by the cited source.",
+      "evidence": "Claim clm_bc94816a3373_ollama_intern_72 links spandrels to provenance, but its evidence_excerpt references a 1979 evolutionary biology paper unrelated to provenance.",
+      "required_action": "Confirm the source explicitly connects the concept to provenance.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "finding_id": "fnd_5ab02ed2a61b",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_676ddfa834cc_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_676ddfa834cc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_676ddfa834cc_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: A knowledge graph uses a graph-structured data model to represent knowledge.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "finding_id": "fnd_b7317046e1a8",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_d39cd3ba0ef2_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_d39cd3ba0ef2"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d39cd3ba0ef2_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: PROV consists of 12 documents including this one.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "finding_id": "fnd_b181768f72ea",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_d39cd3ba0ef2_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_d39cd3ba0ef2"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d39cd3ba0ef2_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: PROV-O defines a light-weight OWL2 ontology for the provenance data model.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "finding_id": "fnd_b251eca5adac",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_d39cd3ba0ef2_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_d39cd3ba0ef2"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d39cd3ba0ef2_ollama_intern_7 has no 'not' constraint recorded.",
+      "evidence": "Asserts: PROV-XML defines an XML schema for the provenance data model.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "finding_id": "fnd_5d9397f29016",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_676ddfa834cc_ollama_intern_26"
+      ],
+      "source_ids": [
+        "src_676ddfa834cc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_676ddfa834cc_ollama_intern_26 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Knowledge graphs encode the underlying relationships between entities.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "finding_id": "fnd_15fd06ba4298",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_155c4be7850d_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_155c4be7850d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_155c4be7850d_ollama_intern_14 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Turtle is a compact, human-friendly format for serializing RDF data.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "finding_id": "fnd_b80fdfa52d80",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_155c4be7850d_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_155c4be7850d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_155c4be7850d_ollama_intern_15 has no 'not' constraint recorded.",
+      "evidence": "Asserts: TriG is an extension of Turtle format for serializing RDF datasets.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "finding_id": "fnd_594b87ba493b",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_155c4be7850d_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_155c4be7850d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_155c4be7850d_ollama_intern_17 has no 'not' constraint recorded.",
+      "evidence": "Asserts: N-Quads is a superset of N-Triples that can serialize multiple RDF graphs.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "finding_id": "fnd_f4ea5e8ef13f",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_155c4be7850d_ollama_intern_18"
+      ],
+      "source_ids": [
+        "src_155c4be7850d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_155c4be7850d_ollama_intern_18 has no 'not' constraint recorded.",
+      "evidence": "Asserts: JSON-LD is a JSON-based serialization format for RDF.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "finding_id": "fnd_a6bdb01129a2",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_155c4be7850d_ollama_intern_42"
+      ],
+      "source_ids": [
+        "src_155c4be7850d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_155c4be7850d_ollama_intern_42 has no 'not' constraint recorded.",
+      "evidence": "Asserts: LV2 uses Turtle to describe API/ABI capabilities and properties.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "finding_id": "fnd_aff4661bd299",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_155c4be7850d_ollama_intern_43"
+      ],
+      "source_ids": [
+        "src_155c4be7850d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_155c4be7850d_ollama_intern_43 has no 'not' constraint recorded.",
+      "evidence": "Asserts: SPDX uses RDF to specify bills of material.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "finding_id": "fnd_a0eed2477d69",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_155c4be7850d_ollama_intern_46"
+      ],
+      "source_ids": [
+        "src_155c4be7850d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_155c4be7850d_ollama_intern_46 has no 'not' constraint recorded.",
+      "evidence": "Asserts: RDF models are labeled, directed multi-graphs.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    }
+  ],
+  "claim_reviews": [
+    {
+      "claim_id": "clm_676ddfa834cc_ollama_intern_1",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn); claim_overproduction (warn).",
+      "finding_ids": [
+        "fnd_799b69e843c8",
+        "fnd_73b22c8bd061",
+        "fnd_82dabab32e8f",
+        "fnd_5ab02ed2a61b"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_d39cd3ba0ef2_ollama_intern_5",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_b7317046e1a8"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_d39cd3ba0ef2_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_b181768f72ea"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_d39cd3ba0ef2_ollama_intern_7",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_b251eca5adac"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_d81a8a3d6bba_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_d81a8a3d6bba_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_d81a8a3d6bba_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_d81a8a3d6bba_ollama_intern_5",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_d81a8a3d6bba_ollama_intern_30",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_d81a8a3d6bba_ollama_intern_31",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_d81a8a3d6bba_ollama_intern_32",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_d81a8a3d6bba_ollama_intern_35",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_d81a8a3d6bba_ollama_intern_39",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_d81a8a3d6bba_ollama_intern_55",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_676ddfa834cc_ollama_intern_5",
+      "decision": "needs_human_review",
+      "reason": "Findings: hidden_synthesis (warn).",
+      "finding_ids": [
+        "fnd_170e402ef86b"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_676ddfa834cc_ollama_intern_21",
+      "decision": "needs_human_review",
+      "reason": "Findings: claim_overproduction (warn).",
+      "finding_ids": [
+        "fnd_73b22c8bd061"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_676ddfa834cc_ollama_intern_22",
+      "decision": "needs_human_review",
+      "reason": "Findings: claim_overproduction (warn).",
+      "finding_ids": [
+        "fnd_73b22c8bd061"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_676ddfa834cc_ollama_intern_23",
+      "decision": "needs_human_review",
+      "reason": "Findings: claim_overproduction (warn).",
+      "finding_ids": [
+        "fnd_73b22c8bd061"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_676ddfa834cc_ollama_intern_24",
+      "decision": "needs_human_review",
+      "reason": "Findings: claim_overproduction (warn).",
+      "finding_ids": [
+        "fnd_73b22c8bd061"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_676ddfa834cc_ollama_intern_26",
+      "decision": "needs_human_review",
+      "reason": "Findings: claim_overproduction (warn).",
+      "finding_ids": [
+        "fnd_73b22c8bd061",
+        "fnd_5d9397f29016"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_bc94816a3373_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_bc94816a3373_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_bc94816a3373_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_bc94816a3373_ollama_intern_7",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_bc94816a3373_ollama_intern_19",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_bc94816a3373_ollama_intern_22",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_bc94816a3373_ollama_intern_56",
+      "decision": "needs_human_review",
+      "reason": "Findings: hidden_synthesis (block).",
+      "finding_ids": [
+        "fnd_fa6189ca004d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_bc94816a3373_ollama_intern_69",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_bc94816a3373_ollama_intern_72",
+      "decision": "needs_human_review",
+      "reason": "Findings: hidden_synthesis (block).",
+      "finding_ids": [
+        "fnd_c398cb991259"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_bc94816a3373_ollama_intern_73",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_155c4be7850d_ollama_intern_14",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_15fd06ba4298"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_155c4be7850d_ollama_intern_15",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_b80fdfa52d80"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_155c4be7850d_ollama_intern_17",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_594b87ba493b"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_155c4be7850d_ollama_intern_18",
+      "decision": "needs_human_review",
+      "reason": "Findings: hidden_synthesis (block).",
+      "finding_ids": [
+        "fnd_2f54a12a18d7",
+        "fnd_f4ea5e8ef13f"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_155c4be7850d_ollama_intern_42",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_a6bdb01129a2"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_155c4be7850d_ollama_intern_43",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_aff4661bd299"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_155c4be7850d_ollama_intern_46",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_a0eed2477d69"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_caedf4b2d8e0_ollama_intern_8",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_caedf4b2d8e0_ollama_intern_10",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_caedf4b2d8e0_ollama_intern_100",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_caedf4b2d8e0_ollama_intern_101",
+      "decision": "needs_human_review",
+      "reason": "Findings: hidden_synthesis (block).",
+      "finding_ids": [
+        "fnd_d0cad0e54bef"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_caedf4b2d8e0_ollama_intern_103",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_caedf4b2d8e0_ollama_intern_104",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_caedf4b2d8e0_ollama_intern_105",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_caedf4b2d8e0_ollama_intern_127",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_caedf4b2d8e0_ollama_intern_128",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_caedf4b2d8e0_ollama_intern_374",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_a135974ea838_ollama_intern_7",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_a135974ea838_ollama_intern_8",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    },
+    {
+      "claim_id": "clm_a135974ea838_ollama_intern_9",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T05:48:14.006Z"
+    }
+  ],
+  "decision_counts": {
+    "accepted_for_synthesis": 39,
+    "rejected": 0,
+    "needs_scope_repair": 1,
+    "needs_source_repair": 0,
+    "needs_contradiction_mapping": 0,
+    "needs_human_review": 10
+  },
+  "severity_counts": {
+    "info": 13,
+    "warn": 3,
+    "block": 4
+  },
+  "llm_findings_rejected_ungrounded": 0,
+  "promoted_to_reviewed": false
+}

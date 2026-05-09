@@ -1,0 +1,95 @@
+{
+  "report_id": "secrep_1778186602382_07-cli-and-runtime-flow",
+  "section_id": "07-cli-and-runtime-flow",
+  "reported_at": "2026-05-07T20:43:22.382Z",
+  "research_os_version": "0.1.0",
+  "status": "reviewed",
+  "sources": {
+    "fetched_ok": 7,
+    "source_cards": 7,
+    "publishers": [
+      "12factor.net",
+      "GitHub",
+      "clibs.org",
+      "clig.dev",
+      "docs.npmjs.com",
+      "nodejs.org",
+      "sourceware.org"
+    ],
+    "primary_source_waiver": {
+      "status": "granted",
+      "reason": "This pack researches the design intent of research-os itself. Primary sources for the design (Mike's spec decisions and the maintainer's reasoning) are operator input, not public publications. Public secondary sources about adjacent topics (citation systems, knowledge graphs, gating workflows, FTS5, Cowork patterns) provide independent corroboration where the design touches established practice.",
+      "compensating_controls": [
+        "Adversarial reviewer pass required on every section before synthesis.",
+        "Cross-section contradiction mapping required across all sections.",
+        "Each section must cite >=4 independent publishers; source cluster monopoly is a section-level blocker.",
+        "Final-report citations must be claim-level traceable via [claim:clm_...] references.",
+        "Every active waiver disclosed in synthesis/decision-brief.md and synthesis/final-report.md by family.applied_to."
+      ]
+    }
+  },
+  "extraction": {
+    "candidate_claims": 175,
+    "claims_per_source": [
+      {
+        "source_id": "src_458d9788c68d",
+        "claims": 85
+      },
+      {
+        "source_id": "src_0b75376a48e4",
+        "claims": 59
+      },
+      {
+        "source_id": "src_27eaf34f91a3",
+        "claims": 11
+      },
+      {
+        "source_id": "src_de50fc93ad72",
+        "claims": 10
+      },
+      {
+        "source_id": "src_96d4bf47e20b",
+        "claims": 8
+      },
+      {
+        "source_id": "src_65308ebae4e9",
+        "claims": 2
+      }
+    ],
+    "claims_per_1k_words": 4.2418072522784565,
+    "excerpt_pages_processed": 1,
+    "excerpt_id_failures": 0,
+    "malformed_extractor_outputs": 0,
+    "near_duplicate_clusters": 0,
+    "weak_scope_count": 33,
+    "generic_scope_count": 38,
+    "density_flags": 6
+  },
+  "contradictions": {
+    "pairs_compared": 15225,
+    "contradiction_candidates": 0,
+    "overgeneralization_risks": 0
+  },
+  "review": {
+    "reviewed": true,
+    "accepted_for_synthesis": 29,
+    "needs_scope_repair": 0,
+    "needs_source_repair": 0,
+    "needs_contradiction_mapping": 0,
+    "rejected": 0,
+    "needs_human_review": 0,
+    "rejection_or_repair_by_category": []
+  },
+  "acceptance": {
+    "candidate_claims": 175,
+    "accepted_for_synthesis": 29,
+    "acceptance_ratio": 0.1657142857142857,
+    "accepted_per_source": 4.142857142857143,
+    "accepted_per_1k_words": 0.7029280589490015,
+    "top_rejection_category": null,
+    "claim_overproduction_fired": false,
+    "synthesis_ready": true
+  },
+  "gate_verdict": "warn",
+  "gate_synthesis_eligible": true
+}

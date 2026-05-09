@@ -1,0 +1,27 @@
+{
+  "receipt_id": "invr_1778134898025_03-source-and-claim-truth",
+  "section_id": "03-source-and-claim-truth",
+  "contract_label": "pre-review-profiles",
+  "reason": "reviewer experiments predated profile isolation; canonical state mixed Hermes and Qwen runs",
+  "invalidated_at": "2026-05-07T06:21:38.025Z",
+  "research_os_version": "0.1.0",
+  "archived_artifacts": [
+    {
+      "src": "audits/03-source-and-claim-truth-review.json",
+      "dst": "sections/03-source-and-claim-truth/legacy/pre-review-profiles/2026-05-07T062138Z/audits/03-source-and-claim-truth-review.json"
+    },
+    {
+      "src": "audits/03-source-and-claim-truth-review.md",
+      "dst": "sections/03-source-and-claim-truth/legacy/pre-review-profiles/2026-05-07T062138Z/audits/03-source-and-claim-truth-review.md"
+    },
+    {
+      "src": "audits/03-source-and-claim-truth-findings.jsonl",
+      "dst": "sections/03-source-and-claim-truth/legacy/pre-review-profiles/2026-05-07T062138Z/audits/03-source-and-claim-truth-findings.jsonl"
+    },
+    {
+      "src": "sections/03-source-and-claim-truth/claim-reviews.jsonl",
+      "dst": "sections/03-source-and-claim-truth/legacy/pre-review-profiles/2026-05-07T062138Z/sections/03-source-and-claim-truth/claim-reviews.jsonl"
+    }
+  ],
+  "notes": null
+}

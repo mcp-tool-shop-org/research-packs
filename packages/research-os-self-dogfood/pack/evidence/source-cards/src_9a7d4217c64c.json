@@ -1,0 +1,23 @@
+{
+  "source_id": "src_9a7d4217c64c",
+  "receipt_id": "rcpt_9a7d4217c64c_1778190625561",
+  "section_id": "05-cowork-handoff",
+  "url": "https://docs.anthropic.com/en/docs/claude-code/sub-agents",
+  "final_url": "https://code.claude.com/docs/en/sub-agents",
+  "fetched_at": "2026-05-07T21:50:25.561Z",
+  "publisher": "code.claude.com",
+  "published_at": null,
+  "title": "Create custom subagents - Claude Code Docs",
+  "source_type": "primary",
+  "relevance": "unknown",
+  "key_points": [
+    "Fetch the complete documentation index at: https://code.claude.com/docs/llms.txt",
+    "Use this file to discover all available pages before exploring further."
+  ],
+  "limitations": [],
+  "asserts": "Create and use specialized AI subagents in Claude Code for task-specific workflows and improved context management.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:50:25.871Z"
+}

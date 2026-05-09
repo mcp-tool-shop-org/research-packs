@@ -1,0 +1,20 @@
+{
+  "source_id": "src_62d58636ae35",
+  "receipt_id": "rcpt_62d58636ae35_1778188778273",
+  "section_id": "02-pack-artifact-contract",
+  "url": "https://datatracker.ietf.org/doc/html/rfc8259",
+  "final_url": "https://datatracker.ietf.org/doc/html/rfc8259",
+  "fetched_at": "2026-05-07T21:19:38.273Z",
+  "publisher": "IETF Datatracker",
+  "published_at": null,
+  "title": "RFC 8259: The JavaScript Object Notation (JSON) Data Interchange Format",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [],
+  "limitations": [],
+  "asserts": "JavaScript Object Notation (JSON) is a lightweight, text-based, language-independent data interchange format. It was derived from the ECMAScript Programming Language Standard. JSON defines a small set of formatting rules for the portable representation of structured data. This document removes inconsistencies with other specifications of JSON, repairs specification errors, and offers experience-based interoperability guidance.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:19:38.453Z"
+}

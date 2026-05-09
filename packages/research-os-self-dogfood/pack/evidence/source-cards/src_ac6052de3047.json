@@ -1,0 +1,20 @@
+{
+  "source_id": "src_ac6052de3047",
+  "receipt_id": "rcpt_ac6052de3047_1778180247993",
+  "section_id": "06-repo-knowledge-integration",
+  "url": "https://github.com/facebookresearch/faiss",
+  "final_url": "https://github.com/facebookresearch/faiss",
+  "fetched_at": "2026-05-07T18:57:27.993Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "(untitled)",
+  "source_type": "unknown",
+  "relevance": "unknown",
+  "key_points": [],
+  "limitations": [],
+  "asserts": "(no assertion extracted)",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-07T18:57:33.774Z"
+}

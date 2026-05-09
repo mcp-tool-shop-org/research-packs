@@ -1,0 +1,131 @@
+{
+  "audit_id": "cda_1778186510497_07-cli-and-runtime-flow",
+  "section_id": "07-cli-and-runtime-flow",
+  "audited_at": "2026-05-07T20:41:50.497Z",
+  "research_os_version": "0.1.0",
+  "candidate_claim_count": 175,
+  "source_count": 6,
+  "total_source_word_count": 106258,
+  "claims_per_1k_words": 1.646934819025391,
+  "weak_scope_count": 33,
+  "generic_scope_count": 38,
+  "per_source": [
+    {
+      "source_id": "src_458d9788c68d",
+      "publisher": "clig.dev",
+      "source_word_count": 11329,
+      "claim_count": 85,
+      "claims_per_1k_words": 7.502868743931503,
+      "share_of_section": 0.4857142857142857,
+      "weak_scope_count": 12,
+      "generic_scope_count": 22
+    },
+    {
+      "source_id": "src_0b75376a48e4",
+      "publisher": "GitHub",
+      "source_word_count": 50063,
+      "claim_count": 59,
+      "claims_per_1k_words": 1.1785150710105265,
+      "share_of_section": 0.33714285714285713,
+      "weak_scope_count": 8,
+      "generic_scope_count": 16
+    },
+    {
+      "source_id": "src_27eaf34f91a3",
+      "publisher": "sourceware.org",
+      "source_word_count": 195,
+      "claim_count": 11,
+      "claims_per_1k_words": 56.41025641025641,
+      "share_of_section": 0.06285714285714286,
+      "weak_scope_count": 5,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_de50fc93ad72",
+      "publisher": "12factor.net",
+      "source_word_count": 682,
+      "claim_count": 10,
+      "claims_per_1k_words": 14.66275659824047,
+      "share_of_section": 0.05714285714285714,
+      "weak_scope_count": 5,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_96d4bf47e20b",
+      "publisher": "nodejs.org",
+      "source_word_count": 43988,
+      "claim_count": 8,
+      "claims_per_1k_words": 0.18186778212239701,
+      "share_of_section": 0.045714285714285714,
+      "weak_scope_count": 3,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_65308ebae4e9",
+      "publisher": "docs.npmjs.com",
+      "source_word_count": 1,
+      "claim_count": 2,
+      "claims_per_1k_words": 2000,
+      "share_of_section": 0.011428571428571429,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    }
+  ],
+  "near_duplicate_clusters": [],
+  "flags": [
+    {
+      "type": "source_dominance",
+      "severity": "block",
+      "message": "Source src_458d9788c68d contributes 85 of 175 claims (49% of section).",
+      "affects_source_ids": [
+        "src_458d9788c68d"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "block",
+      "message": "Source src_0b75376a48e4 contributes 59 of 175 claims (34% of section).",
+      "affects_source_ids": [
+        "src_0b75376a48e4"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_458d9788c68d has 7.5 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_458d9788c68d"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_27eaf34f91a3 has 56.4 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_27eaf34f91a3"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_de50fc93ad72 has 14.7 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_de50fc93ad72"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_65308ebae4e9 has 2000.0 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_65308ebae4e9"
+      ],
+      "affects_claim_ids": []
+    }
+  ]
+}

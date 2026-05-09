@@ -1,0 +1,12 @@
+{
+  "summary_id": "disum_1778186752339_04-gates-and-waivers",
+  "section_id": "04-gates-and-waivers",
+  "ran_at": "2026-05-07T20:45:52.339Z",
+  "research_os_version": "0.1.0",
+  "query": "systematic review quality appraisal inclusion exclusion threshold evidence grading waiver exception Cochrane GRADE",
+  "provider": "llm-heuristic",
+  "candidates_proposed": 9,
+  "candidates_validated": 9,
+  "candidates_rejected_invalid_url": 0,
+  "warnings": []
+}

@@ -1,0 +1,55 @@
+{
+  "summary_id": "tris_1778128707516_03-source-and-claim-truth",
+  "section_id": "03-source-and-claim-truth",
+  "triaged_at": "2026-05-07T04:38:27.516Z",
+  "research_os_version": "0.1.0",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 715,
+  "decisions": {
+    "selected_for_review": 50,
+    "needs_scope_repair": 202,
+    "parked_overdense_source": 100,
+    "parked_weak_scope": 361,
+    "parked_low_value": 2
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 50,
+  "selected_per_source": [
+    {
+      "source_id": "src_caedf4b2d8e0",
+      "selected": 10,
+      "total": 438
+    },
+    {
+      "source_id": "src_bc94816a3373",
+      "selected": 10,
+      "total": 89
+    },
+    {
+      "source_id": "src_d81a8a3d6bba",
+      "selected": 10,
+      "total": 76
+    },
+    {
+      "source_id": "src_155c4be7850d",
+      "selected": 7,
+      "total": 51
+    },
+    {
+      "source_id": "src_676ddfa834cc",
+      "selected": 7,
+      "total": 26
+    },
+    {
+      "source_id": "src_d39cd3ba0ef2",
+      "selected": 3,
+      "total": 26
+    },
+    {
+      "source_id": "src_a135974ea838",
+      "selected": 3,
+      "total": 9
+    }
+  ]
+}

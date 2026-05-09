@@ -1,0 +1,26 @@
+{
+  "source_id": "src_09a48e752e9b",
+  "receipt_id": "rcpt_09a48e752e9b_1778186829922",
+  "section_id": "04-gates-and-waivers",
+  "url": "https://docs.puppetlabs.com/puppet/latest/reference/type.html#gates",
+  "final_url": "https://help.puppet.com/core//current/Content/PuppetCore/puppet_index.htm",
+  "fetched_at": "2026-05-07T20:47:09.922Z",
+  "publisher": "help.puppet.com",
+  "published_at": null,
+  "title": "Puppet Core Documentation",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "Perforce Puppet Core is an enterprise-ready, hardened platform built on the foundations of open source Puppet. Puppet Core is suitable for organizations of all sizes in their platform automation journey, supporting configuration management, robust security, and adherence to a desired state across global infrastructures.",
+    "Learn about new features and enhancements.",
+    "Learn what Puppet Core is, what problems it solves, and how to succeed with it.",
+    "Learn how to try out and purchase Puppet Core.",
+    "Learn how to install and set up Puppet Core."
+  ],
+  "limitations": [],
+  "asserts": "Perforce Puppet Core is an enterprise-ready, hardened platform built on the foundations of open source Puppet. Puppet Core is suitable for organizations of all sizes in their platform automation journey, supporting configuration management, robust security, and adherence to a desired state across global infrastructures.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T20:47:11.555Z"
+}

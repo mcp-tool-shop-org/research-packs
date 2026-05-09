@@ -1,0 +1,26 @@
+{
+  "source_id": "src_bf5d0eef78f0",
+  "receipt_id": "rcpt_bf5d0eef78f0_1778188778191",
+  "section_id": "02-pack-artifact-contract",
+  "url": "https://json-schema.org/understanding-json-schema/reference",
+  "final_url": "https://json-schema.org/understanding-json-schema/reference",
+  "fetched_at": "2026-05-07T21:19:38.191Z",
+  "publisher": "json-schema.org",
+  "published_at": null,
+  "title": "JSON Schema reference",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "Master the full power of JSON Schema with our reference documentation.From basic data types to advanced techniques like conditional validation and schema composition, you will learn everything about JSON Schema keywords through clear explanations and examples. By learning best practices for building clear, scalable, and easy-to-maintain schemas, you will ensure that your JSON data is both robust and flexible.",
+    "Browse our comprehensive index of JSON Schema keywords, each linking to detailed documentation.",
+    "Become profficient at using the type keyword to validate your data.",
+    "Learn how to declare the JSON Schema dialect and vocabulary your schema uses, ensuring compatibility and proper validation.",
+    "Ensure data consistency and accuracy, by defining value sets and fixed values for your JSON properties."
+  ],
+  "limitations": [],
+  "asserts": "JSON Schema",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:19:38.252Z"
+}

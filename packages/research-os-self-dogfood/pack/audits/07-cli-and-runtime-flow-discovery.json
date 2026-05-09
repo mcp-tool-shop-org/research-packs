@@ -1,0 +1,12 @@
+{
+  "summary_id": "disum_1778179337592_07-cli-and-runtime-flow",
+  "section_id": "07-cli-and-runtime-flow",
+  "ran_at": "2026-05-07T18:42:17.592Z",
+  "research_os_version": "0.1.0",
+  "query": "CLI design command line interface state machine runtime error handling tool output standards",
+  "provider": "llm-heuristic",
+  "candidates_proposed": 12,
+  "candidates_validated": 12,
+  "candidates_rejected_invalid_url": 0,
+  "warnings": []
+}

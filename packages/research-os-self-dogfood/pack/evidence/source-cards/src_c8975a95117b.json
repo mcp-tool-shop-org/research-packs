@@ -1,0 +1,23 @@
+{
+  "source_id": "src_c8975a95117b",
+  "receipt_id": "rcpt_c8975a95117b_1778190626715",
+  "section_id": "05-cowork-handoff",
+  "url": "https://docs.anthropic.com/en/docs/claude-code/settings",
+  "final_url": "https://code.claude.com/docs/en/settings",
+  "fetched_at": "2026-05-07T21:50:26.715Z",
+  "publisher": "code.claude.com",
+  "published_at": null,
+  "title": "Claude Code settings - Claude Code Docs",
+  "source_type": "primary",
+  "relevance": "unknown",
+  "key_points": [
+    "Fetch the complete documentation index at: https://code.claude.com/docs/llms.txt",
+    "Use this file to discover all available pages before exploring further."
+  ],
+  "limitations": [],
+  "asserts": "Configure Claude Code with global and project-level settings, and environment variables.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:50:27.025Z"
+}

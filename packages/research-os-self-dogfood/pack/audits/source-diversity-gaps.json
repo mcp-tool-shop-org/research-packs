@@ -1,0 +1,36 @@
+[
+  {
+    "reason": "low_section_publisher_count",
+    "section_id": "05-cowork-handoff",
+    "details": "2 publisher(s); pack policy requires 4.",
+    "evidence_ids": [
+      "www.anthropic.com",
+      "code.claude.com"
+    ]
+  },
+  {
+    "reason": "section_publisher_monopoly",
+    "section_id": "06-repo-knowledge-integration",
+    "details": "Section sources monopolized by sqlite.org.",
+    "evidence_ids": [
+      "src_05cae033cedc",
+      "src_5d98fdba0757",
+      "src_676ddfa834cc",
+      "src_91705d06abdf",
+      "src_ac6052de3047",
+      "src_e15c2248a5d8",
+      "src_f110ffbdbe7c"
+    ]
+  },
+  {
+    "reason": "cross_section_publisher_overlap",
+    "section_id": "*",
+    "details": "Publisher \"en.wikipedia.org\" appears in 4 sections; cross-section diversity is reduced.",
+    "evidence_ids": [
+      "01-product-thesis",
+      "03-source-and-claim-truth",
+      "04-gates-and-waivers",
+      "08-acceptance-suite"
+    ]
+  }
+]

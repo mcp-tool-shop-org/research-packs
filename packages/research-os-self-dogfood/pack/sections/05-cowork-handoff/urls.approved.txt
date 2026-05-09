@@ -1,0 +1,8 @@
+https://docs.anthropic.com/en/docs/claude-code/overview
+https://docs.anthropic.com/en/docs/claude-code/sub-agents
+https://docs.anthropic.com/en/docs/claude-code/hooks
+https://docs.anthropic.com/en/docs/claude-code/memory
+https://docs.anthropic.com/en/docs/claude-code/settings
+https://docs.anthropic.com/en/docs/claude-code/skills
+https://code.claude.com/docs/en/best-practices
+https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents

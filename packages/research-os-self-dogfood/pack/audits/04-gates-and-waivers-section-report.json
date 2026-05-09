@@ -1,0 +1,101 @@
+{
+  "report_id": "secrep_1778187385235_04-gates-and-waivers",
+  "section_id": "04-gates-and-waivers",
+  "reported_at": "2026-05-07T20:56:25.235Z",
+  "research_os_version": "0.1.0",
+  "status": "reviewed",
+  "sources": {
+    "fetched_ok": 6,
+    "source_cards": 6,
+    "publishers": [
+      "en.wikipedia.org",
+      "help.puppet.com",
+      "ieeexplore.ieee.org",
+      "pmc.ncbi.nlm.nih.gov"
+    ],
+    "primary_source_waiver": {
+      "status": "granted",
+      "reason": "This pack researches the design intent of research-os itself. Primary sources for the design (Mike's spec decisions and the maintainer's reasoning) are operator input, not public publications. Public secondary sources about adjacent topics (citation systems, knowledge graphs, gating workflows, FTS5, Cowork patterns) provide independent corroboration where the design touches established practice.",
+      "compensating_controls": [
+        "Adversarial reviewer pass required on every section before synthesis.",
+        "Cross-section contradiction mapping required across all sections.",
+        "Each section must cite >=4 independent publishers; source cluster monopoly is a section-level blocker.",
+        "Final-report citations must be claim-level traceable via [claim:clm_...] references.",
+        "Every active waiver disclosed in synthesis/decision-brief.md and synthesis/final-report.md by family.applied_to."
+      ]
+    }
+  },
+  "extraction": {
+    "candidate_claims": 131,
+    "claims_per_source": [
+      {
+        "source_id": "src_55f4bfa87f54",
+        "claims": 60
+      },
+      {
+        "source_id": "src_f0fe25b20f29",
+        "claims": 44
+      },
+      {
+        "source_id": "src_fb48d4730a5c",
+        "claims": 15
+      },
+      {
+        "source_id": "src_09a48e752e9b",
+        "claims": 6
+      },
+      {
+        "source_id": "src_d2cd935fb884",
+        "claims": 3
+      },
+      {
+        "source_id": "src_bbd08b91cbb6",
+        "claims": 3
+      }
+    ],
+    "claims_per_1k_words": 6.70762928827445,
+    "excerpt_pages_processed": 3,
+    "excerpt_id_failures": 0,
+    "malformed_extractor_outputs": 0,
+    "near_duplicate_clusters": 0,
+    "weak_scope_count": 5,
+    "generic_scope_count": 15,
+    "density_flags": 5
+  },
+  "contradictions": {
+    "pairs_compared": 8515,
+    "contradiction_candidates": 0,
+    "overgeneralization_risks": 0
+  },
+  "review": {
+    "reviewed": true,
+    "accepted_for_synthesis": 30,
+    "needs_scope_repair": 0,
+    "needs_source_repair": 0,
+    "needs_contradiction_mapping": 0,
+    "rejected": 0,
+    "needs_human_review": 0,
+    "rejection_or_repair_by_category": [
+      {
+        "category": "source_quality_problem",
+        "count": 20
+      },
+      {
+        "category": "claim_overproduction",
+        "count": 2
+      }
+    ]
+  },
+  "acceptance": {
+    "candidate_claims": 131,
+    "accepted_for_synthesis": 30,
+    "acceptance_ratio": 0.22900763358778625,
+    "accepted_per_source": 5,
+    "accepted_per_1k_words": 1.5360983102918586,
+    "top_rejection_category": "source_quality_problem",
+    "claim_overproduction_fired": true,
+    "synthesis_ready": true
+  },
+  "gate_verdict": "warn",
+  "gate_synthesis_eligible": true
+}

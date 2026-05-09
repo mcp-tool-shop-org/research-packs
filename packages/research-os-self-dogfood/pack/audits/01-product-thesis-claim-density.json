@@ -1,0 +1,133 @@
+{
+  "audit_id": "cda_1778188698560_01-product-thesis",
+  "section_id": "01-product-thesis",
+  "audited_at": "2026-05-07T21:18:18.560Z",
+  "research_os_version": "0.1.0",
+  "candidate_claim_count": 109,
+  "source_count": 8,
+  "total_source_word_count": 28198,
+  "claims_per_1k_words": 3.86552237747358,
+  "weak_scope_count": 11,
+  "generic_scope_count": 6,
+  "per_source": [
+    {
+      "source_id": "src_d474bc1158c2",
+      "publisher": "en.wikipedia.org",
+      "source_word_count": 10547,
+      "claim_count": 65,
+      "claims_per_1k_words": 6.162889921304636,
+      "share_of_section": 0.5963302752293578,
+      "weak_scope_count": 6,
+      "generic_scope_count": 2
+    },
+    {
+      "source_id": "src_56b5f3cd926b",
+      "publisher": "force11.org",
+      "source_word_count": 9849,
+      "claim_count": 11,
+      "claims_per_1k_words": 1.1168646563102853,
+      "share_of_section": 0.10091743119266056,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_a2f17fd8c9a6",
+      "publisher": "arXiv.org",
+      "source_word_count": 954,
+      "claim_count": 10,
+      "claims_per_1k_words": 10.482180293501049,
+      "share_of_section": 0.09174311926605505,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_770d35522c16",
+      "publisher": "www.doi.org",
+      "source_word_count": 1404,
+      "claim_count": 7,
+      "claims_per_1k_words": 4.985754985754986,
+      "share_of_section": 0.06422018348623854,
+      "weak_scope_count": 5,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_d574302fe3de",
+      "publisher": "GO FAIR",
+      "source_word_count": 3371,
+      "claim_count": 6,
+      "claims_per_1k_words": 1.7798872738059923,
+      "share_of_section": 0.05504587155963303,
+      "weak_scope_count": 0,
+      "generic_scope_count": 2
+    },
+    {
+      "source_id": "src_308195df859c",
+      "publisher": "arXiv.org",
+      "source_word_count": 722,
+      "claim_count": 4,
+      "claims_per_1k_words": 5.54016620498615,
+      "share_of_section": 0.03669724770642202,
+      "weak_scope_count": 0,
+      "generic_scope_count": 2
+    },
+    {
+      "source_id": "src_923564b918e1",
+      "publisher": "arXiv.org",
+      "source_word_count": 682,
+      "claim_count": 3,
+      "claims_per_1k_words": 4.398826979472141,
+      "share_of_section": 0.027522935779816515,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_98d43428beed",
+      "publisher": "arXiv.org",
+      "source_word_count": 669,
+      "claim_count": 3,
+      "claims_per_1k_words": 4.484304932735426,
+      "share_of_section": 0.027522935779816515,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    }
+  ],
+  "near_duplicate_clusters": [],
+  "flags": [
+    {
+      "type": "source_dominance",
+      "severity": "block",
+      "message": "Source src_d474bc1158c2 contributes 65 of 109 claims (60% of section).",
+      "affects_source_ids": [
+        "src_d474bc1158c2"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_d474bc1158c2 has 6.2 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_d474bc1158c2"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_a2f17fd8c9a6 has 10.5 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_a2f17fd8c9a6"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_308195df859c has 5.5 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_308195df859c"
+      ],
+      "affects_claim_ids": []
+    }
+  ]
+}

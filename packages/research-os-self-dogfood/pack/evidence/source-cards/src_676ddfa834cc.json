@@ -1,0 +1,20 @@
+{
+  "source_id": "src_676ddfa834cc",
+  "receipt_id": "rcpt_676ddfa834cc_1778180228720",
+  "section_id": "06-repo-knowledge-integration",
+  "url": "https://en.wikipedia.org/wiki/Knowledge_graph",
+  "final_url": "https://en.wikipedia.org/wiki/Knowledge_graph",
+  "fetched_at": "2026-05-07T18:57:08.720Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Title of the article",
+  "source_type": "unknown",
+  "relevance": "unknown",
+  "key_points": [],
+  "limitations": [],
+  "asserts": "(no assertion extracted)",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-07T18:57:20.517Z"
+}

@@ -1,0 +1,18 @@
+{
+  "receipt_id": "cle_1778190530045_02-pack-artifact-contract",
+  "section_id": "02-pack-artifact-contract",
+  "extracted_at": "2026-05-07T21:48:50.045Z",
+  "research_os_version": "0.1.0",
+  "extractor": "ollama-intern",
+  "extraction_method": "ollama_intern_propositional_paged",
+  "sources_processed": 9,
+  "sources_skipped": 0,
+  "sources_failed": 0,
+  "excerpt_ledgers_built": 8,
+  "claims_added": 352,
+  "claims_deduped": 113,
+  "claims_rejected_ungrounded": 1,
+  "claims_rejected_excerpt_id_missing": 0,
+  "claims_rejected_excerpt_id_malformed": 1,
+  "failures": []
+}

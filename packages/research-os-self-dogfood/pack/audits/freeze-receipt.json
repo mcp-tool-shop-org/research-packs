@@ -1,0 +1,1414 @@
+{
+  "pack_id": "00007be497d5",
+  "pack_topic": "How should research-os structure a research-pack so every research artifact becomes actionable implementation material for the repo?",
+  "frozen_at": "2026-05-08T07:41:33.924Z",
+  "verdict": "frozen",
+  "pack_audit_hash": "360b6e38d6404270ef44994985543b9c33491a6ea0e3af3c5515588692fdc867",
+  "handoff_hash": "bfce28d0379b7cad05b50c6f31f75b26a36facd358ecac12ec78667a93bc159b",
+  "synthesis_hashes": [
+    {
+      "path": "synthesis/cross-section-map.json",
+      "sha256": "5ebccbbdd6a3cf4e2aa1f805891ec2dec67dc6c0abcc878ecf1ed200eebd6a8b",
+      "bytes": 883714
+    },
+    {
+      "path": "synthesis/cross-section-map.md",
+      "sha256": "1ab39b2bd6d9b45ed72124abeccc3e380ecd5e877ad19ce0175676c9b9e0f63f",
+      "bytes": 514186
+    },
+    {
+      "path": "synthesis/decision-brief.md",
+      "sha256": "b225102d970c7a28be8fd9bc81a8e401086afb5ee9e251d74e8824d8c7f48aed",
+      "bytes": 11333
+    },
+    {
+      "path": "synthesis/working-report.md",
+      "sha256": "44e73474f14454b054a0cde130be7aab9d7ee0da61f9c7c5e38f27b0c02145ca",
+      "bytes": 46653
+    },
+    {
+      "path": "synthesis/final-report.md",
+      "sha256": "02eaae66c3414ea1042e4ee53232183f74e726aee7350812cf23a62a9cb1aaab",
+      "bytes": 16143
+    }
+  ],
+  "canonical_artifact_hashes": [
+    {
+      "path": "research.yaml",
+      "sha256": "ff55db88c226cd858b7ce7e2a2a09128705f038f0a87b4713ab4e150e0239177",
+      "bytes": 4618
+    },
+    {
+      "path": "sections/01-product-thesis/claims.jsonl",
+      "sha256": "6ce0b6a54ce36755a68016c4fc51f71219a3cbe3813ee5f35fda4b5da7ebf803",
+      "bytes": 112786
+    },
+    {
+      "path": "sections/01-product-thesis/sources.jsonl",
+      "sha256": "5e2b6898d9b90e4c0e3a75b6c4d872b5f72dd22f2def7c87582f2f8e56b5de58",
+      "bytes": 568
+    },
+    {
+      "path": "sections/01-product-thesis/claim-reviews.jsonl",
+      "sha256": "a95b3d8fbb63db918c97783318fffe5dd898eb2ee90674b2014ddc44023cdfbb",
+      "bytes": 16320
+    },
+    {
+      "path": "sections/01-product-thesis/gates.yaml",
+      "sha256": "0a529a1bddb42233cbde5a491a0c1e2f0b90db52a14779608589ae412d0addfc",
+      "bytes": 270
+    },
+    {
+      "path": "audits/01-product-thesis-gate.json",
+      "sha256": "a1001bfc7d7197ca5bb50408acfd6f337b6ea4d5d9987ef4656276bb852a716a",
+      "bytes": 32449
+    },
+    {
+      "path": "audits/01-product-thesis-review.json",
+      "sha256": "3bbfa19684d846af6ea425552639ac0621efe3835091486fe1ee9539e290c7f8",
+      "bytes": 21717
+    },
+    {
+      "path": "audits/01-product-thesis-findings.jsonl",
+      "sha256": "7d6f99d244fc9fd8a2ae19e2465868e0b37348cd30450f1b1d646a6ce0c03835",
+      "bytes": 39842
+    },
+    {
+      "path": "sections/02-pack-artifact-contract/claims.jsonl",
+      "sha256": "ba10eeb69319e2c8f433c58d5e6ea7f80ddedf3aa7ce40c3f5dce658bcb8eb7d",
+      "bytes": 390537
+    },
+    {
+      "path": "sections/02-pack-artifact-contract/sources.jsonl",
+      "sha256": "6cfa244dc31935cf50827dad67cfb30eb233a8cb1adb6a2550ef981591c09843",
+      "bytes": 639
+    },
+    {
+      "path": "sections/02-pack-artifact-contract/claim-reviews.jsonl",
+      "sha256": "e6cb943c135edcae5bec8e1296a06f91ce08e57ef4c64921404034257013b0d1",
+      "bytes": 40007
+    },
+    {
+      "path": "sections/02-pack-artifact-contract/gates.yaml",
+      "sha256": "6399248a106783eb8fe562d872dde7931847111fb3e666eaa104ec066392a540",
+      "bytes": 278
+    },
+    {
+      "path": "audits/02-pack-artifact-contract-gate.json",
+      "sha256": "155d9b479d48cd014bc51f74cf2b4e52d87bfc7345c36bdd8004b0f8870b5c3f",
+      "bytes": 103185
+    },
+    {
+      "path": "audits/02-pack-artifact-contract-review.json",
+      "sha256": "b674266d956fe7a9cd66107f9a730cc54fe069942a9de844524a7b8ad494e036",
+      "bytes": 57897
+    },
+    {
+      "path": "audits/02-pack-artifact-contract-findings.jsonl",
+      "sha256": "933127a3a5573e1d783d2d0f7528be156068de0febbdada0db7873303ace0f40",
+      "bytes": 81628
+    },
+    {
+      "path": "sections/03-source-and-claim-truth/claims.jsonl",
+      "sha256": "67bf08ba245e130afaff716b0b0c006b90e4e06f1bcd513c5eb5f789c2f3d739",
+      "bytes": 702297
+    },
+    {
+      "path": "sections/03-source-and-claim-truth/sources.jsonl",
+      "sha256": "eb2f068e62e25b497ba80cb62527f021da169675a6fff006db0687de032c5b20",
+      "bytes": 568
+    },
+    {
+      "path": "sections/03-source-and-claim-truth/claim-reviews.jsonl",
+      "sha256": "5e917e0ef11d99f90cfbdec49b3bfce6bf52bdad795bf798dba0725ef26c1ab6",
+      "bytes": 20118
+    },
+    {
+      "path": "sections/03-source-and-claim-truth/gates.yaml",
+      "sha256": "0ec88461b6d50553d5830f74c4082fd7171d9a677aa38eaac33113c0e082bd45",
+      "bytes": 293
+    },
+    {
+      "path": "audits/03-source-and-claim-truth-gate.json",
+      "sha256": "3c8ac4961e8d66953488a52a989040e8f8ca495f5f3b4cc53e36d798a35149a2",
+      "bytes": 167363
+    },
+    {
+      "path": "audits/03-source-and-claim-truth-review.json",
+      "sha256": "806fc5b79676ec90202db424dbec0c75ca83b56dc7c1b6d922ec7a98f20dcae3",
+      "bytes": 54351
+    },
+    {
+      "path": "audits/03-source-and-claim-truth-findings.jsonl",
+      "sha256": "9bb7adbc86fe71d216ce5d04d90f4618812257c22c0e5f781f60f6ea08b51bdd",
+      "bytes": 25422
+    },
+    {
+      "path": "sections/04-gates-and-waivers/claims.jsonl",
+      "sha256": "c996642db9a977c4ea0a3ef493545a13c3d75e393991f120989be426d4bedcf3",
+      "bytes": 126974
+    },
+    {
+      "path": "sections/04-gates-and-waivers/sources.jsonl",
+      "sha256": "12a6704f7a79b7d2e62d9ab6576a6c83cce01f5ceaefaa98b32e3d595d84a4d1",
+      "bytes": 426
+    },
+    {
+      "path": "sections/04-gates-and-waivers/claim-reviews.jsonl",
+      "sha256": "58a5d337353d7122a2d6fa5f20028f9760fa393db7bd11550e6f196b1df6a8b6",
+      "bytes": 25580
+    },
+    {
+      "path": "sections/04-gates-and-waivers/gates.yaml",
+      "sha256": "74906ff9d9f18050ab568cab1fca6bc3b61248c669e8e0db6eb4a9e32207e861",
+      "bytes": 270
+    },
+    {
+      "path": "audits/04-gates-and-waivers-gate.json",
+      "sha256": "418da1ffe70cee1d2a61a8d827fdb931dab66e84af66bd9ae7fc7deb80fd9fdc",
+      "bytes": 36659
+    },
+    {
+      "path": "audits/04-gates-and-waivers-review.json",
+      "sha256": "69d0539645f4d410483537ed71fa53247f8e6bca6a0ae5f4add71b51c1ba85dc",
+      "bytes": 31415
+    },
+    {
+      "path": "audits/04-gates-and-waivers-findings.jsonl",
+      "sha256": "3bab3a5207e5af8cd4790a8a6f127bc210c3a7d1bb10b623dfc622e6c8db07ab",
+      "bytes": 59592
+    },
+    {
+      "path": "sections/05-cowork-handoff/claims.jsonl",
+      "sha256": "c6752435640fc6e1a3332560682778cc877684039148a5450c0463f13db5a37a",
+      "bytes": 502031
+    },
+    {
+      "path": "sections/05-cowork-handoff/sources.jsonl",
+      "sha256": "4ac597269f609e4bd54bc8a73acdbf13efd96d257080d489c38cdf879efed9af",
+      "bytes": 923
+    },
+    {
+      "path": "sections/05-cowork-handoff/contradictions.jsonl",
+      "sha256": "11dd905cc8d18ef919152ec8dbe6a63f3730b63e96c933cf6dc5f32e7f2a33ea",
+      "bytes": 868159
+    },
+    {
+      "path": "sections/05-cowork-handoff/claim-reviews.jsonl",
+      "sha256": "a537f56fdddfea9d8b07df10eb98ff1fb91c301b4065dfdaabfd9cbc5efc1084",
+      "bytes": 253325
+    },
+    {
+      "path": "sections/05-cowork-handoff/gates.yaml",
+      "sha256": "2596028e95280dbdb0beb65b896cfe06dc97b42d6ad285070503e0460b863bac",
+      "bytes": 303
+    },
+    {
+      "path": "audits/05-cowork-handoff-gate.json",
+      "sha256": "d00aa925b844d87c0812c895b9b7856dc42cc93baaf1be5d6f56f62bdee3d4a4",
+      "bytes": 113353
+    },
+    {
+      "path": "audits/05-cowork-handoff-review.json",
+      "sha256": "6097f765b0b91d3780061c51b4d13bfbeb8869a4d3e7d36cd140e83ed8707fc7",
+      "bytes": 101296
+    },
+    {
+      "path": "audits/05-cowork-handoff-findings.jsonl",
+      "sha256": "0cdd29beaa8dc1c65d6830bc1a6c4dd149f13dba6e02b8ddc12709b75d086bc2",
+      "bytes": 860478
+    },
+    {
+      "path": "sections/06-repo-knowledge-integration/claims.jsonl",
+      "sha256": "b9d4669db1975c944e5447b0cf75fb23cb760249b93b2068fb18211609b00964",
+      "bytes": 292197
+    },
+    {
+      "path": "sections/06-repo-knowledge-integration/sources.jsonl",
+      "sha256": "26360a172e34ffc0b9f0fdbe40b174a270f99c20ddb73489a08c516da8624497",
+      "bytes": 497
+    },
+    {
+      "path": "sections/06-repo-knowledge-integration/claim-reviews.jsonl",
+      "sha256": "db31bb559cdda5f1bf84dd64e226b0eb62c398a8b5a3dba0dd4f5eec3043c062",
+      "bytes": 23512
+    },
+    {
+      "path": "sections/06-repo-knowledge-integration/gates.yaml",
+      "sha256": "cb22b54a1bc48efcd4c884e90137302b97fc7ec9c3171f3872c6cc05a2bd2d8a",
+      "bytes": 265
+    },
+    {
+      "path": "audits/06-repo-knowledge-integration-gate.json",
+      "sha256": "f20be081d5d14ca39c5b12043e7048c83e77c1d486791c9b263b378bb1ccd986",
+      "bytes": 68776
+    },
+    {
+      "path": "audits/06-repo-knowledge-integration-review.json",
+      "sha256": "ccf564fb26f1902d99a0fc78db5e3d8b3ddf2172602f2f7623e18d0ffcbe0250",
+      "bytes": 61665
+    },
+    {
+      "path": "audits/06-repo-knowledge-integration-findings.jsonl",
+      "sha256": "261d77bdbfc0d2875b5587bf50fd8a9c968e6f727b178f42f1f51085e82ea454",
+      "bytes": 35851
+    },
+    {
+      "path": "sections/07-cli-and-runtime-flow/claims.jsonl",
+      "sha256": "642523427bae5b0f5bb4a76c08de04275b8d838e5fde563cc73c9e506bfd31ed",
+      "bytes": 155905
+    },
+    {
+      "path": "sections/07-cli-and-runtime-flow/sources.jsonl",
+      "sha256": "eaeef76711aa6d8118e3db761545416453d6f1895a980f5cd89d4bb063d053f4",
+      "bytes": 497
+    },
+    {
+      "path": "sections/07-cli-and-runtime-flow/claim-reviews.jsonl",
+      "sha256": "98b57e35a60b4d047d5a96cd1b02ff9aaad164dad2f274decfd7eaf6f1fbb1bb",
+      "bytes": 19068
+    },
+    {
+      "path": "sections/07-cli-and-runtime-flow/gates.yaml",
+      "sha256": "dbc4d3d9996264d269974d976c78177c3f5dae5927cdc0c4160a0874aa17eb5f",
+      "bytes": 280
+    },
+    {
+      "path": "audits/07-cli-and-runtime-flow-gate.json",
+      "sha256": "01f5f21fc76ce1a9b1ee73ccd7b08508ca668234d82a3c3b99b34863e1afcef1",
+      "bytes": 46158
+    },
+    {
+      "path": "audits/07-cli-and-runtime-flow-review.json",
+      "sha256": "0925cc2438ec60bad2730145323869f8b955579f27c483d36abfdb14ac2cdd4e",
+      "bytes": 29587
+    },
+    {
+      "path": "audits/07-cli-and-runtime-flow-findings.jsonl",
+      "sha256": "61e53f799bf0e6580e314bb74dbb926938e385683014acadc0eaeabb5fbd33be",
+      "bytes": 33214
+    },
+    {
+      "path": "sections/08-acceptance-suite/claims.jsonl",
+      "sha256": "28fcb4dd6cd84b5a8c9c65121b514cb69db7efd852b208c104ed9012158097a5",
+      "bytes": 183228
+    },
+    {
+      "path": "sections/08-acceptance-suite/sources.jsonl",
+      "sha256": "9d5aae046d4cceaaa06d7342340f36cc53d364051ef973f0113b120dac9bb12c",
+      "bytes": 568
+    },
+    {
+      "path": "sections/08-acceptance-suite/contradictions.jsonl",
+      "sha256": "f2bc2cc8261fcea8c80d85fce85d8cb024c81aa2250c979db1fc01c9e2bdc704",
+      "bytes": 146796
+    },
+    {
+      "path": "sections/08-acceptance-suite/claim-reviews.jsonl",
+      "sha256": "d7ade62bf4133c9ab6b0d52c8daf4666b5681af7229ea05bca76a7356eb14d21",
+      "bytes": 47451
+    },
+    {
+      "path": "sections/08-acceptance-suite/gates.yaml",
+      "sha256": "d9a8b612271d56da40d4c2419541fcd40dcb39ea510c9363483d9570eee3703f",
+      "bytes": 281
+    },
+    {
+      "path": "audits/08-acceptance-suite-gate.json",
+      "sha256": "da930f3ff6dccf64b508fdf4439ab8dd1282615c1d706b6fb5d82d9f48154742",
+      "bytes": 53044
+    },
+    {
+      "path": "audits/08-acceptance-suite-review.json",
+      "sha256": "0e0d0f458a1c768019513e5d987ce9bae3650448528f189d0975d4680f8097d8",
+      "bytes": 31146
+    },
+    {
+      "path": "audits/08-acceptance-suite-findings.jsonl",
+      "sha256": "ef512961e2b27d73cc98ba4bbf18d13c82e27b67d4e9015957f5153fe4ee7444",
+      "bytes": 128247
+    },
+    {
+      "path": "evidence/fetch-log.jsonl",
+      "sha256": "06f559603f2958ce87fedbc494451a321cda95462d2b7395f3838c50a718e40a",
+      "bytes": 93524
+    },
+    {
+      "path": "evidence/citation-ledger.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "evidence/source-cards/src_05cae033cedc.json",
+      "sha256": "9ff1d133e4f32847d37044608d9c7e3bb1be506d071fe929c7c9f3421f7430ec",
+      "bytes": 2316
+    },
+    {
+      "path": "evidence/source-cards/src_0801e1ee8a70.json",
+      "sha256": "b63c73d4065fe4b12eb3e5a201858b879b1e65a901cd3301265e637547e1091f",
+      "bytes": 2270
+    },
+    {
+      "path": "evidence/source-cards/src_099defe2e6d6.json",
+      "sha256": "a176d8d59031985f35a20ced3a47377b81ce1c39f8269bea500f3450f7cafc74",
+      "bytes": 1686
+    },
+    {
+      "path": "evidence/source-cards/src_09a48e752e9b.json",
+      "sha256": "62a6a7d3347a8d2f3c5324fa6e34ed39176fba7e55eb4aa99b5c7b74415986da",
+      "bytes": 1560
+    },
+    {
+      "path": "evidence/source-cards/src_0b75376a48e4.json",
+      "sha256": "6b5a4d7f0e55d1a2868e419a66467e6da51c71a1ac3a2e052b8f278e58d49a85",
+      "bytes": 1353
+    },
+    {
+      "path": "evidence/source-cards/src_126e07cf0d68.json",
+      "sha256": "543d9d14b1d7d60e2d625aacdd2db9ce4f00bd9c80b79374a3c077d5c54d98d8",
+      "bytes": 3014
+    },
+    {
+      "path": "evidence/source-cards/src_155c4be7850d.json",
+      "sha256": "d3c1755606006149007a0f681e9f731466331ea78b9b41867f24496ca397eb62",
+      "bytes": 3085
+    },
+    {
+      "path": "evidence/source-cards/src_27eaf34f91a3.json",
+      "sha256": "59568bd6fd84b84064bac5b182c7eb924873794501a470ca4821158fb1a97a5f",
+      "bytes": 1276
+    },
+    {
+      "path": "evidence/source-cards/src_2cc80fcf07ba.json",
+      "sha256": "542f8d23fc85239d3e7650d8fdc6c2bdc1349741285abb4acda0017cd51bb39f",
+      "bytes": 1247
+    },
+    {
+      "path": "evidence/source-cards/src_2ed88e8cb886.json",
+      "sha256": "d12fe903822ea5d1558f9fcede621df9a8731fc5ce790367b24ada3ac48d02da",
+      "bytes": 2852
+    },
+    {
+      "path": "evidence/source-cards/src_2fff6e91c56c.json",
+      "sha256": "564fb6ee9f3270e3a01443ea6f0aec1aaac83c73806abfd86fcddd97d4a42b28",
+      "bytes": 584
+    },
+    {
+      "path": "evidence/source-cards/src_308195df859c.json",
+      "sha256": "6daed1af90718da753b791cea062dde4b72813dc4cbaac306196674c11db8dca",
+      "bytes": 1693
+    },
+    {
+      "path": "evidence/source-cards/src_458d9788c68d.json",
+      "sha256": "aac4f33a28fe9dd5f1e29a1ba4215631b3db77229c602f661435f0112f88bd06",
+      "bytes": 1241
+    },
+    {
+      "path": "evidence/source-cards/src_486f1e6121c8.json",
+      "sha256": "bf753a1604ceb4dc34d5e2e40b6f9e02d6e9d99aace5f95c4026b6df2719d979",
+      "bytes": 924
+    },
+    {
+      "path": "evidence/source-cards/src_4b7a4ad94a3b.json",
+      "sha256": "ad45754ebcad313025d4d7bd6ee1f0f48165165d7dbe7a72380a2b78187fc35b",
+      "bytes": 1324
+    },
+    {
+      "path": "evidence/source-cards/src_53ee6a9ec24b.json",
+      "sha256": "7bc299be2778f210c210a06093b0d40980ffe482eb4e7496e756c0a254def17e",
+      "bytes": 2102
+    },
+    {
+      "path": "evidence/source-cards/src_55f4bfa87f54.json",
+      "sha256": "2b15167d46fe0fa11500adc6f4557733d066acaef8e82079d313cbd4720d0a87",
+      "bytes": 1810
+    },
+    {
+      "path": "evidence/source-cards/src_56b5f3cd926b.json",
+      "sha256": "066afca16cb7776b5d7c187ff0f954badd1eb34436b69f26076d9f27f4af558d",
+      "bytes": 671
+    },
+    {
+      "path": "evidence/source-cards/src_59b5d7b9e7e4.json",
+      "sha256": "d11be857a66112f198139f70554bba7fb581f80375fe0fac928ff710753a1321",
+      "bytes": 584
+    },
+    {
+      "path": "evidence/source-cards/src_5be2e21d45c9.json",
+      "sha256": "48477f094f553ebadc1657739eabe4564df93fb05db358045203f3204a4e5ce4",
+      "bytes": 945
+    },
+    {
+      "path": "evidence/source-cards/src_5d98fdba0757.json",
+      "sha256": "1f5a65f886e01dc2c6a1a90c78d66088d85a793b57481f3f7bfaef86dbc8c1bf",
+      "bytes": 596
+    },
+    {
+      "path": "evidence/source-cards/src_62d58636ae35.json",
+      "sha256": "4d9b4e6681cbd3eae615d5ccec40979f9d9103a304add770f15315a4a94f8cb1",
+      "bytes": 1097
+    },
+    {
+      "path": "evidence/source-cards/src_63e3516c85f3.json",
+      "sha256": "54de5f7e1807f2942513696a462360463944563c7452fc5da67c2ae5996ea48b",
+      "bytes": 6392
+    },
+    {
+      "path": "evidence/source-cards/src_642e49ac2548.json",
+      "sha256": "1dd4175f26c5ebd8c5b468496c0f909fae1ac5f225587a63d5a37931a435a01e",
+      "bytes": 1450
+    },
+    {
+      "path": "evidence/source-cards/src_65308ebae4e9.json",
+      "sha256": "fda892dbb51211d8ad49f4e7e664863060124812a9d64975a9e3e3e1fd1bc512",
+      "bytes": 599
+    },
+    {
+      "path": "evidence/source-cards/src_676ddfa834cc.json",
+      "sha256": "d7807a3580d4ff11f10afda537c5152a519c167267fc4132c1d2289c51bcb741",
+      "bytes": 632
+    },
+    {
+      "path": "evidence/source-cards/src_67b29d913d85.json",
+      "sha256": "3a2f7c78b44b0c9a3408745a77c5392ef5c6c5d9ee007ceb7d5444a218fab3fd",
+      "bytes": 584
+    },
+    {
+      "path": "evidence/source-cards/src_6ab0d27881d8.json",
+      "sha256": "5a52f0fd977957197f3f75ef04c1e551dfb0314f9c2feb29db14cef85a704a74",
+      "bytes": 613
+    },
+    {
+      "path": "evidence/source-cards/src_712838e1db63.json",
+      "sha256": "24384d1b69e7263bb0912ca48d02d6cfaf880d88bd242093d78d0c36b01cc734",
+      "bytes": 1905
+    },
+    {
+      "path": "evidence/source-cards/src_770d35522c16.json",
+      "sha256": "d8343b905ac63664c2cfb7d11013c81266935f30b649ce4f7173bef9683c6f1b",
+      "bytes": 1724
+    },
+    {
+      "path": "evidence/source-cards/src_876b66b88858.json",
+      "sha256": "6e369610d14bbffd15a86885cb4f4ef045677b4a86504d36bf26528813fafa63",
+      "bytes": 1183
+    },
+    {
+      "path": "evidence/source-cards/src_8cffc8f807a2.json",
+      "sha256": "d4ff35056bd32d0111fad9a46dd7c9575f343a93bf0650807d86e8dd69932f3b",
+      "bytes": 604
+    },
+    {
+      "path": "evidence/source-cards/src_91705d06abdf.json",
+      "sha256": "2da8ccc77750a8f77d40ee698806921618bd5df108e1cbb0bf82f3ea678836f9",
+      "bytes": 671
+    },
+    {
+      "path": "evidence/source-cards/src_923564b918e1.json",
+      "sha256": "f13b8b87c89ad0e9a306024177561176dd29f585e60a8c157fc41ceec0a7ee3f",
+      "bytes": 1425
+    },
+    {
+      "path": "evidence/source-cards/src_9686dc1633cd.json",
+      "sha256": "a1985934234decd1ae014d4f670aea10faa6991fc9cd4a8ca6ae26f59b8ad562",
+      "bytes": 934
+    },
+    {
+      "path": "evidence/source-cards/src_96b9a35307c0.json",
+      "sha256": "ec45fd55f187a38d35149a043b04bdad9eca6f97cc92b8ecd4d72b4d3d0c02f4",
+      "bytes": 1042
+    },
+    {
+      "path": "evidence/source-cards/src_96d4bf47e20b.json",
+      "sha256": "d648d1ce9580da3fffd3b01b4dde1c6ba23be5ae544f239ebf4e42e26f0cd291",
+      "bytes": 980
+    },
+    {
+      "path": "evidence/source-cards/src_98d43428beed.json",
+      "sha256": "0ca77a625761bc32a1441de14ccafbe7e4a2aaa393b5a882c4d9e32d18bcec8b",
+      "bytes": 1718
+    },
+    {
+      "path": "evidence/source-cards/src_9a532b2b74e5.json",
+      "sha256": "d12b67425297571b0fadcc09931ef4ca6ac7e3571a6535b999be1a5abb2bba7f",
+      "bytes": 1046
+    },
+    {
+      "path": "evidence/source-cards/src_9a7d4217c64c.json",
+      "sha256": "c2973f1296e70cce07923130d5fabcfd13dc85202ef60e2d4639d39573823c9a",
+      "bytes": 920
+    },
+    {
+      "path": "evidence/source-cards/src_a135974ea838.json",
+      "sha256": "4bd2ecc6ebd8f9fe77dc9fa138b4a6be410c9493031fd78ccc5737af62b91626",
+      "bytes": 1656
+    },
+    {
+      "path": "evidence/source-cards/src_a2f17fd8c9a6.json",
+      "sha256": "9af2c3f0e0bb1a7423404bd33296c4401141770456411819bbf279f140946dd7",
+      "bytes": 1686
+    },
+    {
+      "path": "evidence/source-cards/src_ac6052de3047.json",
+      "sha256": "fa14bbf0a2e2ee176a574afdcdcf97344415cdda1355cbfc571fcb2879a17d73",
+      "bytes": 614
+    },
+    {
+      "path": "evidence/source-cards/src_ae13d4956c22.json",
+      "sha256": "1bbef0181f7a46d0dc8d5392dbac551c01b8c72a09eec2a42666106255d1f084",
+      "bytes": 2395
+    },
+    {
+      "path": "evidence/source-cards/src_b1ed6cf92876.json",
+      "sha256": "2dd18d2992af141384cfcd61644b473d554384d7bf011fdef835977e4b73e4ed",
+      "bytes": 1256
+    },
+    {
+      "path": "evidence/source-cards/src_b9c427878132.json",
+      "sha256": "0bb9a518c2b5ab949c7b46224eac522159c0f9ef9c522fca16cabf1ac6c37abc",
+      "bytes": 584
+    },
+    {
+      "path": "evidence/source-cards/src_bbd08b91cbb6.json",
+      "sha256": "a0cab086d65c51e8a954604c91371592d5496678206df8d3f7aff745904db850",
+      "bytes": 673
+    },
+    {
+      "path": "evidence/source-cards/src_bc94816a3373.json",
+      "sha256": "00f4689c64dfe758a8c6757828f64cf7d3fee48e867e920baaca7467607deaa1",
+      "bytes": 3842
+    },
+    {
+      "path": "evidence/source-cards/src_bf5d0eef78f0.json",
+      "sha256": "7cf043c32e10f5d8dbe30908e41e1f9b2309ebac08e432b5c8ebd88ae7794ea7",
+      "bytes": 1497
+    },
+    {
+      "path": "evidence/source-cards/src_c1e29cfcaa1e.json",
+      "sha256": "105661ed8302ae2a6089de03883ac843247e98fd7b59a3e2bfc344ce5752492a",
+      "bytes": 1873
+    },
+    {
+      "path": "evidence/source-cards/src_c8975a95117b.json",
+      "sha256": "a1e7f44332bd20c5b3a667247085ea0b72b8a830185a5905001fe2713c5264b8",
+      "bytes": 886
+    },
+    {
+      "path": "evidence/source-cards/src_caedf4b2d8e0.json",
+      "sha256": "576f8bb2d1b1c59e580657cd4267da8f1e6bc48f6e090e1973b8bc064a234784",
+      "bytes": 2059
+    },
+    {
+      "path": "evidence/source-cards/src_cf2238f43a01.json",
+      "sha256": "02f9e555e5ba9967f91d4fa9c0d8f8a987b7f70208a5cdab5c7847c3b5e4a86a",
+      "bytes": 652
+    },
+    {
+      "path": "evidence/source-cards/src_d2cd935fb884.json",
+      "sha256": "15338138a31517691cce30410975ddda009a663735ae13bc9f5dbe232fe69e09",
+      "bytes": 1553
+    },
+    {
+      "path": "evidence/source-cards/src_d39cd3ba0ef2.json",
+      "sha256": "342f20ba7f6575b93153a7a12ad5e5868701f3481523c7a6bf1576df875304aa",
+      "bytes": 2156
+    },
+    {
+      "path": "evidence/source-cards/src_d474bc1158c2.json",
+      "sha256": "131061a95d301e60a034740d297878dbd3fe662bf2092fba9225454e15505e26",
+      "bytes": 4184
+    },
+    {
+      "path": "evidence/source-cards/src_d574302fe3de.json",
+      "sha256": "080d894c77a7c76d5a7a66fb7cb8f76d2ba018d0753423042ec9b75820fd17e3",
+      "bytes": 1286
+    },
+    {
+      "path": "evidence/source-cards/src_d81a8a3d6bba.json",
+      "sha256": "7a4aaf347515e953a5964361f0274e62715f6c1741ba55efbe6c69d94fa13bb6",
+      "bytes": 3556
+    },
+    {
+      "path": "evidence/source-cards/src_de50fc93ad72.json",
+      "sha256": "d8a176faf0154789a1db33f54a3131d8212427d008deaceb52eaf5226de56201",
+      "bytes": 2020
+    },
+    {
+      "path": "evidence/source-cards/src_e15c2248a5d8.json",
+      "sha256": "e27f5c639258830c01678f1289394cf9907e0953ee2f1c6a88630baf346ab59b",
+      "bytes": 2665
+    },
+    {
+      "path": "evidence/source-cards/src_ea1a84785166.json",
+      "sha256": "0e5d91ed5f61184bb1a2dd1ebf0ad3188f20b80a9490ce862c4f347bf0f7db1a",
+      "bytes": 625
+    },
+    {
+      "path": "evidence/source-cards/src_eefec92990cb.json",
+      "sha256": "4eea2be3f1465fbb08835014f5c5a37ccc8beb57b921ac95373946a595d284e6",
+      "bytes": 853
+    },
+    {
+      "path": "evidence/source-cards/src_f0fe25b20f29.json",
+      "sha256": "f8d189b1273114be7365720e8329c25ca721a44a6a54ac1a0dd358af427dfeca",
+      "bytes": 3141
+    },
+    {
+      "path": "evidence/source-cards/src_f110ffbdbe7c.json",
+      "sha256": "95e4ff76c02de4965d34c82d7f3f37a9b4af8f9f3b55aedf26314045a8c73c37",
+      "bytes": 642
+    },
+    {
+      "path": "evidence/source-cards/src_fb48d4730a5c.json",
+      "sha256": "e98adc011c5f8c2e1aa5a0ad7c5c166af3640acb32a93d791c699a224516279e",
+      "bytes": 2978
+    }
+  ],
+  "accepted_claim_ids": [
+    "clm_05cae033cedc_ollama_intern_16",
+    "clm_05cae033cedc_ollama_intern_17",
+    "clm_05cae033cedc_ollama_intern_23",
+    "clm_05cae033cedc_ollama_intern_25",
+    "clm_05cae033cedc_ollama_intern_27",
+    "clm_05cae033cedc_ollama_intern_3",
+    "clm_05cae033cedc_ollama_intern_32",
+    "clm_05cae033cedc_ollama_intern_33",
+    "clm_05cae033cedc_ollama_intern_35",
+    "clm_05cae033cedc_ollama_intern_36",
+    "clm_0801e1ee8a70_ollama_intern_109",
+    "clm_0801e1ee8a70_ollama_intern_110",
+    "clm_0801e1ee8a70_ollama_intern_111",
+    "clm_0801e1ee8a70_ollama_intern_127",
+    "clm_0801e1ee8a70_ollama_intern_13",
+    "clm_0801e1ee8a70_ollama_intern_132",
+    "clm_0801e1ee8a70_ollama_intern_52",
+    "clm_0801e1ee8a70_ollama_intern_80",
+    "clm_0801e1ee8a70_ollama_intern_83",
+    "clm_0801e1ee8a70_ollama_intern_85",
+    "clm_0b75376a48e4_ollama_intern_10",
+    "clm_0b75376a48e4_ollama_intern_16",
+    "clm_0b75376a48e4_ollama_intern_19",
+    "clm_0b75376a48e4_ollama_intern_20",
+    "clm_0b75376a48e4_ollama_intern_21",
+    "clm_0b75376a48e4_ollama_intern_26",
+    "clm_0b75376a48e4_ollama_intern_27",
+    "clm_0b75376a48e4_ollama_intern_34",
+    "clm_0b75376a48e4_ollama_intern_46",
+    "clm_0b75376a48e4_ollama_intern_52",
+    "clm_126e07cf0d68_ollama_intern_13",
+    "clm_126e07cf0d68_ollama_intern_14",
+    "clm_126e07cf0d68_ollama_intern_15",
+    "clm_126e07cf0d68_ollama_intern_9",
+    "clm_155c4be7850d_ollama_intern_14",
+    "clm_155c4be7850d_ollama_intern_15",
+    "clm_155c4be7850d_ollama_intern_17",
+    "clm_155c4be7850d_ollama_intern_18",
+    "clm_155c4be7850d_ollama_intern_42",
+    "clm_155c4be7850d_ollama_intern_43",
+    "clm_155c4be7850d_ollama_intern_46",
+    "clm_27eaf34f91a3_ollama_intern_1",
+    "clm_27eaf34f91a3_ollama_intern_4",
+    "clm_27eaf34f91a3_ollama_intern_6",
+    "clm_2cc80fcf07ba_ollama_intern_4",
+    "clm_458d9788c68d_ollama_intern_12",
+    "clm_458d9788c68d_ollama_intern_13",
+    "clm_458d9788c68d_ollama_intern_19",
+    "clm_458d9788c68d_ollama_intern_29",
+    "clm_458d9788c68d_ollama_intern_30",
+    "clm_458d9788c68d_ollama_intern_32",
+    "clm_458d9788c68d_ollama_intern_35",
+    "clm_458d9788c68d_ollama_intern_62",
+    "clm_458d9788c68d_ollama_intern_75",
+    "clm_458d9788c68d_ollama_intern_76",
+    "clm_486f1e6121c8_ollama_intern_1",
+    "clm_486f1e6121c8_ollama_intern_12",
+    "clm_486f1e6121c8_ollama_intern_13",
+    "clm_486f1e6121c8_ollama_intern_14",
+    "clm_486f1e6121c8_ollama_intern_17",
+    "clm_486f1e6121c8_ollama_intern_29",
+    "clm_486f1e6121c8_ollama_intern_32",
+    "clm_486f1e6121c8_ollama_intern_33",
+    "clm_486f1e6121c8_ollama_intern_36",
+    "clm_486f1e6121c8_ollama_intern_6",
+    "clm_4b7a4ad94a3b_ollama_intern_1",
+    "clm_53ee6a9ec24b_ollama_intern_10",
+    "clm_53ee6a9ec24b_ollama_intern_12",
+    "clm_53ee6a9ec24b_ollama_intern_5",
+    "clm_53ee6a9ec24b_ollama_intern_6",
+    "clm_53ee6a9ec24b_ollama_intern_8",
+    "clm_55f4bfa87f54_ollama_intern_12",
+    "clm_55f4bfa87f54_ollama_intern_22",
+    "clm_55f4bfa87f54_ollama_intern_29",
+    "clm_55f4bfa87f54_ollama_intern_31",
+    "clm_55f4bfa87f54_ollama_intern_32",
+    "clm_55f4bfa87f54_ollama_intern_40",
+    "clm_56b5f3cd926b_ollama_intern_1",
+    "clm_56b5f3cd926b_ollama_intern_2",
+    "clm_56b5f3cd926b_ollama_intern_3",
+    "clm_5be2e21d45c9_ollama_intern_1",
+    "clm_5be2e21d45c9_ollama_intern_106",
+    "clm_5be2e21d45c9_ollama_intern_109",
+    "clm_5be2e21d45c9_ollama_intern_125",
+    "clm_5be2e21d45c9_ollama_intern_148",
+    "clm_5be2e21d45c9_ollama_intern_149",
+    "clm_5be2e21d45c9_ollama_intern_23",
+    "clm_5be2e21d45c9_ollama_intern_27",
+    "clm_5be2e21d45c9_ollama_intern_29",
+    "clm_5be2e21d45c9_ollama_intern_56",
+    "clm_5d98fdba0757_ollama_intern_4",
+    "clm_5d98fdba0757_ollama_intern_5",
+    "clm_5d98fdba0757_ollama_intern_6",
+    "clm_5d98fdba0757_ollama_intern_7",
+    "clm_5d98fdba0757_ollama_intern_9",
+    "clm_62d58636ae35_ollama_intern_10",
+    "clm_62d58636ae35_ollama_intern_11",
+    "clm_62d58636ae35_ollama_intern_13",
+    "clm_62d58636ae35_ollama_intern_17",
+    "clm_62d58636ae35_ollama_intern_19",
+    "clm_62d58636ae35_ollama_intern_23",
+    "clm_62d58636ae35_ollama_intern_28",
+    "clm_62d58636ae35_ollama_intern_29",
+    "clm_62d58636ae35_ollama_intern_8",
+    "clm_62d58636ae35_ollama_intern_9",
+    "clm_642e49ac2548_ollama_intern_11",
+    "clm_642e49ac2548_ollama_intern_7",
+    "clm_642e49ac2548_ollama_intern_9",
+    "clm_65308ebae4e9_ollama_intern_1",
+    "clm_676ddfa834cc_ollama_intern_1",
+    "clm_676ddfa834cc_ollama_intern_21",
+    "clm_676ddfa834cc_ollama_intern_22",
+    "clm_676ddfa834cc_ollama_intern_23",
+    "clm_676ddfa834cc_ollama_intern_24",
+    "clm_676ddfa834cc_ollama_intern_26",
+    "clm_676ddfa834cc_ollama_intern_27",
+    "clm_676ddfa834cc_ollama_intern_29",
+    "clm_676ddfa834cc_ollama_intern_5",
+    "clm_712838e1db63_ollama_intern_104",
+    "clm_712838e1db63_ollama_intern_122",
+    "clm_712838e1db63_ollama_intern_128",
+    "clm_712838e1db63_ollama_intern_141",
+    "clm_712838e1db63_ollama_intern_147",
+    "clm_712838e1db63_ollama_intern_16",
+    "clm_712838e1db63_ollama_intern_17",
+    "clm_712838e1db63_ollama_intern_20",
+    "clm_712838e1db63_ollama_intern_64",
+    "clm_712838e1db63_ollama_intern_82",
+    "clm_770d35522c16_ollama_intern_1",
+    "clm_770d35522c16_ollama_intern_2",
+    "clm_91705d06abdf_ollama_intern_10",
+    "clm_91705d06abdf_ollama_intern_11",
+    "clm_91705d06abdf_ollama_intern_12",
+    "clm_91705d06abdf_ollama_intern_14",
+    "clm_91705d06abdf_ollama_intern_4",
+    "clm_91705d06abdf_ollama_intern_5",
+    "clm_91705d06abdf_ollama_intern_6",
+    "clm_91705d06abdf_ollama_intern_7",
+    "clm_91705d06abdf_ollama_intern_8",
+    "clm_91705d06abdf_ollama_intern_9",
+    "clm_923564b918e1_ollama_intern_3",
+    "clm_9686dc1633cd_ollama_intern_16",
+    "clm_9686dc1633cd_ollama_intern_17",
+    "clm_9686dc1633cd_ollama_intern_18",
+    "clm_9686dc1633cd_ollama_intern_2",
+    "clm_9686dc1633cd_ollama_intern_20",
+    "clm_9686dc1633cd_ollama_intern_21",
+    "clm_9686dc1633cd_ollama_intern_22",
+    "clm_9686dc1633cd_ollama_intern_3",
+    "clm_9686dc1633cd_ollama_intern_30",
+    "clm_9686dc1633cd_ollama_intern_4",
+    "clm_96b9a35307c0_ollama_intern_1",
+    "clm_96b9a35307c0_ollama_intern_18",
+    "clm_96b9a35307c0_ollama_intern_2",
+    "clm_96b9a35307c0_ollama_intern_21",
+    "clm_96b9a35307c0_ollama_intern_23",
+    "clm_96b9a35307c0_ollama_intern_29",
+    "clm_96b9a35307c0_ollama_intern_32",
+    "clm_96b9a35307c0_ollama_intern_33",
+    "clm_96b9a35307c0_ollama_intern_34",
+    "clm_96b9a35307c0_ollama_intern_5",
+    "clm_96d4bf47e20b_ollama_intern_1",
+    "clm_98d43428beed_ollama_intern_3",
+    "clm_9a532b2b74e5_ollama_intern_15",
+    "clm_9a532b2b74e5_ollama_intern_3",
+    "clm_9a532b2b74e5_ollama_intern_6",
+    "clm_9a532b2b74e5_ollama_intern_8",
+    "clm_9a7d4217c64c_ollama_intern_1",
+    "clm_9a7d4217c64c_ollama_intern_14",
+    "clm_9a7d4217c64c_ollama_intern_15",
+    "clm_9a7d4217c64c_ollama_intern_16",
+    "clm_9a7d4217c64c_ollama_intern_29",
+    "clm_9a7d4217c64c_ollama_intern_3",
+    "clm_9a7d4217c64c_ollama_intern_30",
+    "clm_9a7d4217c64c_ollama_intern_31",
+    "clm_9a7d4217c64c_ollama_intern_35",
+    "clm_9a7d4217c64c_ollama_intern_40",
+    "clm_a135974ea838_ollama_intern_7",
+    "clm_a135974ea838_ollama_intern_8",
+    "clm_a135974ea838_ollama_intern_9",
+    "clm_a2f17fd8c9a6_ollama_intern_1",
+    "clm_a2f17fd8c9a6_ollama_intern_2",
+    "clm_a2f17fd8c9a6_ollama_intern_6",
+    "clm_a2f17fd8c9a6_ollama_intern_7",
+    "clm_a2f17fd8c9a6_ollama_intern_8",
+    "clm_a2f17fd8c9a6_ollama_intern_9",
+    "clm_ac6052de3047_ollama_intern_3",
+    "clm_ac6052de3047_ollama_intern_4",
+    "clm_ac6052de3047_ollama_intern_5",
+    "clm_ae13d4956c22_ollama_intern_9",
+    "clm_b1ed6cf92876_ollama_intern_1",
+    "clm_b1ed6cf92876_ollama_intern_2",
+    "clm_b1ed6cf92876_ollama_intern_3",
+    "clm_b1ed6cf92876_ollama_intern_4",
+    "clm_bbd08b91cbb6_ollama_intern_1",
+    "clm_bbd08b91cbb6_ollama_intern_2",
+    "clm_bbd08b91cbb6_ollama_intern_3",
+    "clm_bc94816a3373_ollama_intern_1",
+    "clm_bc94816a3373_ollama_intern_19",
+    "clm_bc94816a3373_ollama_intern_22",
+    "clm_bc94816a3373_ollama_intern_3",
+    "clm_bc94816a3373_ollama_intern_7",
+    "clm_bc94816a3373_ollama_intern_72",
+    "clm_bc94816a3373_ollama_intern_73",
+    "clm_c1e29cfcaa1e_ollama_intern_2",
+    "clm_c1e29cfcaa1e_ollama_intern_3",
+    "clm_c1e29cfcaa1e_ollama_intern_4",
+    "clm_c1e29cfcaa1e_ollama_intern_5",
+    "clm_c1e29cfcaa1e_ollama_intern_6",
+    "clm_c8975a95117b_ollama_intern_1",
+    "clm_c8975a95117b_ollama_intern_11",
+    "clm_c8975a95117b_ollama_intern_12",
+    "clm_c8975a95117b_ollama_intern_13",
+    "clm_c8975a95117b_ollama_intern_20",
+    "clm_c8975a95117b_ollama_intern_23",
+    "clm_c8975a95117b_ollama_intern_28",
+    "clm_c8975a95117b_ollama_intern_29",
+    "clm_c8975a95117b_ollama_intern_30",
+    "clm_c8975a95117b_ollama_intern_55",
+    "clm_caedf4b2d8e0_ollama_intern_101",
+    "clm_caedf4b2d8e0_ollama_intern_103",
+    "clm_caedf4b2d8e0_ollama_intern_104",
+    "clm_caedf4b2d8e0_ollama_intern_105",
+    "clm_caedf4b2d8e0_ollama_intern_127",
+    "clm_caedf4b2d8e0_ollama_intern_128",
+    "clm_caedf4b2d8e0_ollama_intern_374",
+    "clm_cf2238f43a01_ollama_intern_10",
+    "clm_cf2238f43a01_ollama_intern_105",
+    "clm_cf2238f43a01_ollama_intern_106",
+    "clm_cf2238f43a01_ollama_intern_11",
+    "clm_cf2238f43a01_ollama_intern_110",
+    "clm_cf2238f43a01_ollama_intern_114",
+    "clm_cf2238f43a01_ollama_intern_115",
+    "clm_cf2238f43a01_ollama_intern_118",
+    "clm_cf2238f43a01_ollama_intern_119",
+    "clm_cf2238f43a01_ollama_intern_98",
+    "clm_d2cd935fb884_ollama_intern_1",
+    "clm_d2cd935fb884_ollama_intern_2",
+    "clm_d2cd935fb884_ollama_intern_3",
+    "clm_d39cd3ba0ef2_ollama_intern_5",
+    "clm_d39cd3ba0ef2_ollama_intern_6",
+    "clm_d39cd3ba0ef2_ollama_intern_7",
+    "clm_d474bc1158c2_ollama_intern_19",
+    "clm_d474bc1158c2_ollama_intern_38",
+    "clm_d474bc1158c2_ollama_intern_58",
+    "clm_d474bc1158c2_ollama_intern_60",
+    "clm_d474bc1158c2_ollama_intern_62",
+    "clm_d574302fe3de_ollama_intern_4",
+    "clm_d81a8a3d6bba_ollama_intern_1",
+    "clm_d81a8a3d6bba_ollama_intern_2",
+    "clm_d81a8a3d6bba_ollama_intern_3",
+    "clm_d81a8a3d6bba_ollama_intern_30",
+    "clm_d81a8a3d6bba_ollama_intern_31",
+    "clm_d81a8a3d6bba_ollama_intern_35",
+    "clm_d81a8a3d6bba_ollama_intern_39",
+    "clm_d81a8a3d6bba_ollama_intern_5",
+    "clm_de50fc93ad72_ollama_intern_1",
+    "clm_de50fc93ad72_ollama_intern_2",
+    "clm_de50fc93ad72_ollama_intern_3",
+    "clm_de50fc93ad72_ollama_intern_4",
+    "clm_e15c2248a5d8_ollama_intern_10",
+    "clm_e15c2248a5d8_ollama_intern_103",
+    "clm_e15c2248a5d8_ollama_intern_105",
+    "clm_e15c2248a5d8_ollama_intern_113",
+    "clm_e15c2248a5d8_ollama_intern_124",
+    "clm_e15c2248a5d8_ollama_intern_3",
+    "clm_e15c2248a5d8_ollama_intern_37",
+    "clm_e15c2248a5d8_ollama_intern_52",
+    "clm_e15c2248a5d8_ollama_intern_55",
+    "clm_e15c2248a5d8_ollama_intern_58",
+    "clm_eefec92990cb_ollama_intern_19",
+    "clm_eefec92990cb_ollama_intern_20",
+    "clm_eefec92990cb_ollama_intern_21",
+    "clm_eefec92990cb_ollama_intern_22",
+    "clm_eefec92990cb_ollama_intern_24",
+    "clm_f0fe25b20f29_ollama_intern_1",
+    "clm_f0fe25b20f29_ollama_intern_13",
+    "clm_f0fe25b20f29_ollama_intern_14",
+    "clm_f0fe25b20f29_ollama_intern_15",
+    "clm_f0fe25b20f29_ollama_intern_3",
+    "clm_f0fe25b20f29_ollama_intern_4",
+    "clm_f0fe25b20f29_ollama_intern_43",
+    "clm_f0fe25b20f29_ollama_intern_44",
+    "clm_f0fe25b20f29_ollama_intern_5",
+    "clm_f0fe25b20f29_ollama_intern_6",
+    "clm_f110ffbdbe7c_ollama_intern_2",
+    "clm_f110ffbdbe7c_ollama_intern_3",
+    "clm_fb48d4730a5c_ollama_intern_1",
+    "clm_fb48d4730a5c_ollama_intern_11",
+    "clm_fb48d4730a5c_ollama_intern_12",
+    "clm_fb48d4730a5c_ollama_intern_13",
+    "clm_fb48d4730a5c_ollama_intern_3",
+    "clm_fb48d4730a5c_ollama_intern_6",
+    "clm_fb48d4730a5c_ollama_intern_7",
+    "clm_fb48d4730a5c_ollama_intern_8"
+  ],
+  "cited_claim_ids": [
+    "clm_c1e29cfcaa1e_ollama_intern_2",
+    "clm_c1e29cfcaa1e_ollama_intern_3",
+    "clm_0801e1ee8a70_ollama_intern_13",
+    "clm_e15c2248a5d8_ollama_intern_10",
+    "clm_9a532b2b74e5_ollama_intern_3",
+    "clm_53ee6a9ec24b_ollama_intern_8",
+    "clm_642e49ac2548_ollama_intern_11",
+    "clm_c1e29cfcaa1e_ollama_intern_5",
+    "clm_c1e29cfcaa1e_ollama_intern_6",
+    "clm_62d58636ae35_ollama_intern_8",
+    "clm_62d58636ae35_ollama_intern_9",
+    "clm_62d58636ae35_ollama_intern_10",
+    "clm_62d58636ae35_ollama_intern_28",
+    "clm_b1ed6cf92876_ollama_intern_1",
+    "clm_b1ed6cf92876_ollama_intern_4",
+    "clm_0801e1ee8a70_ollama_intern_83",
+    "clm_0801e1ee8a70_ollama_intern_85",
+    "clm_0801e1ee8a70_ollama_intern_109",
+    "clm_0801e1ee8a70_ollama_intern_111",
+    "clm_bc94816a3373_ollama_intern_1",
+    "clm_bc94816a3373_ollama_intern_19",
+    "clm_d81a8a3d6bba_ollama_intern_2",
+    "clm_d81a8a3d6bba_ollama_intern_5",
+    "clm_d81a8a3d6bba_ollama_intern_35",
+    "clm_d81a8a3d6bba_ollama_intern_30",
+    "clm_d81a8a3d6bba_ollama_intern_31",
+    "clm_d81a8a3d6bba_ollama_intern_39",
+    "clm_676ddfa834cc_ollama_intern_21",
+    "clm_676ddfa834cc_ollama_intern_22",
+    "clm_fb48d4730a5c_ollama_intern_11",
+    "clm_fb48d4730a5c_ollama_intern_12",
+    "clm_fb48d4730a5c_ollama_intern_13",
+    "clm_fb48d4730a5c_ollama_intern_8",
+    "clm_9a532b2b74e5_ollama_intern_6",
+    "clm_9a532b2b74e5_ollama_intern_8",
+    "clm_9a7d4217c64c_ollama_intern_3",
+    "clm_9a7d4217c64c_ollama_intern_30",
+    "clm_9a7d4217c64c_ollama_intern_29",
+    "clm_5be2e21d45c9_ollama_intern_149",
+    "clm_96b9a35307c0_ollama_intern_34",
+    "clm_96b9a35307c0_ollama_intern_33",
+    "clm_126e07cf0d68_ollama_intern_9",
+    "clm_9686dc1633cd_ollama_intern_3",
+    "clm_9686dc1633cd_ollama_intern_4",
+    "clm_e15c2248a5d8_ollama_intern_3",
+    "clm_e15c2248a5d8_ollama_intern_37",
+    "clm_e15c2248a5d8_ollama_intern_52",
+    "clm_e15c2248a5d8_ollama_intern_103",
+    "clm_e15c2248a5d8_ollama_intern_113",
+    "clm_05cae033cedc_ollama_intern_3",
+    "clm_05cae033cedc_ollama_intern_16",
+    "clm_05cae033cedc_ollama_intern_17",
+    "clm_91705d06abdf_ollama_intern_9",
+    "clm_ac6052de3047_ollama_intern_5",
+    "clm_458d9788c68d_ollama_intern_12",
+    "clm_458d9788c68d_ollama_intern_13",
+    "clm_458d9788c68d_ollama_intern_19",
+    "clm_de50fc93ad72_ollama_intern_2",
+    "clm_de50fc93ad72_ollama_intern_4",
+    "clm_0b75376a48e4_ollama_intern_16",
+    "clm_0b75376a48e4_ollama_intern_34",
+    "clm_0b75376a48e4_ollama_intern_46",
+    "clm_53ee6a9ec24b_ollama_intern_10",
+    "clm_53ee6a9ec24b_ollama_intern_12",
+    "clm_642e49ac2548_ollama_intern_7",
+    "clm_eefec92990cb_ollama_intern_19",
+    "clm_eefec92990cb_ollama_intern_20",
+    "clm_eefec92990cb_ollama_intern_24",
+    "clm_4b7a4ad94a3b_ollama_intern_1",
+    "clm_a2f17fd8c9a6_ollama_intern_1",
+    "clm_55f4bfa87f54_ollama_intern_12",
+    "clm_5d98fdba0757_ollama_intern_4",
+    "clm_eefec92990cb_ollama_intern_21",
+    "clm_676ddfa834cc_ollama_intern_26"
+  ],
+  "uncited_accepted_claim_ids": [
+    "clm_05cae033cedc_ollama_intern_23",
+    "clm_05cae033cedc_ollama_intern_25",
+    "clm_05cae033cedc_ollama_intern_27",
+    "clm_05cae033cedc_ollama_intern_32",
+    "clm_05cae033cedc_ollama_intern_33",
+    "clm_05cae033cedc_ollama_intern_35",
+    "clm_05cae033cedc_ollama_intern_36",
+    "clm_0801e1ee8a70_ollama_intern_110",
+    "clm_0801e1ee8a70_ollama_intern_127",
+    "clm_0801e1ee8a70_ollama_intern_132",
+    "clm_0801e1ee8a70_ollama_intern_52",
+    "clm_0801e1ee8a70_ollama_intern_80",
+    "clm_0b75376a48e4_ollama_intern_10",
+    "clm_0b75376a48e4_ollama_intern_19",
+    "clm_0b75376a48e4_ollama_intern_20",
+    "clm_0b75376a48e4_ollama_intern_21",
+    "clm_0b75376a48e4_ollama_intern_26",
+    "clm_0b75376a48e4_ollama_intern_27",
+    "clm_0b75376a48e4_ollama_intern_52",
+    "clm_126e07cf0d68_ollama_intern_13",
+    "clm_126e07cf0d68_ollama_intern_14",
+    "clm_126e07cf0d68_ollama_intern_15",
+    "clm_155c4be7850d_ollama_intern_14",
+    "clm_155c4be7850d_ollama_intern_15",
+    "clm_155c4be7850d_ollama_intern_17",
+    "clm_155c4be7850d_ollama_intern_18",
+    "clm_155c4be7850d_ollama_intern_42",
+    "clm_155c4be7850d_ollama_intern_43",
+    "clm_155c4be7850d_ollama_intern_46",
+    "clm_27eaf34f91a3_ollama_intern_1",
+    "clm_27eaf34f91a3_ollama_intern_4",
+    "clm_27eaf34f91a3_ollama_intern_6",
+    "clm_2cc80fcf07ba_ollama_intern_4",
+    "clm_458d9788c68d_ollama_intern_29",
+    "clm_458d9788c68d_ollama_intern_30",
+    "clm_458d9788c68d_ollama_intern_32",
+    "clm_458d9788c68d_ollama_intern_35",
+    "clm_458d9788c68d_ollama_intern_62",
+    "clm_458d9788c68d_ollama_intern_75",
+    "clm_458d9788c68d_ollama_intern_76",
+    "clm_486f1e6121c8_ollama_intern_1",
+    "clm_486f1e6121c8_ollama_intern_12",
+    "clm_486f1e6121c8_ollama_intern_13",
+    "clm_486f1e6121c8_ollama_intern_14",
+    "clm_486f1e6121c8_ollama_intern_17",
+    "clm_486f1e6121c8_ollama_intern_29",
+    "clm_486f1e6121c8_ollama_intern_32",
+    "clm_486f1e6121c8_ollama_intern_33",
+    "clm_486f1e6121c8_ollama_intern_36",
+    "clm_486f1e6121c8_ollama_intern_6",
+    "clm_53ee6a9ec24b_ollama_intern_5",
+    "clm_53ee6a9ec24b_ollama_intern_6",
+    "clm_55f4bfa87f54_ollama_intern_22",
+    "clm_55f4bfa87f54_ollama_intern_29",
+    "clm_55f4bfa87f54_ollama_intern_31",
+    "clm_55f4bfa87f54_ollama_intern_32",
+    "clm_55f4bfa87f54_ollama_intern_40",
+    "clm_56b5f3cd926b_ollama_intern_1",
+    "clm_56b5f3cd926b_ollama_intern_2",
+    "clm_56b5f3cd926b_ollama_intern_3",
+    "clm_5be2e21d45c9_ollama_intern_1",
+    "clm_5be2e21d45c9_ollama_intern_106",
+    "clm_5be2e21d45c9_ollama_intern_109",
+    "clm_5be2e21d45c9_ollama_intern_125",
+    "clm_5be2e21d45c9_ollama_intern_148",
+    "clm_5be2e21d45c9_ollama_intern_23",
+    "clm_5be2e21d45c9_ollama_intern_27",
+    "clm_5be2e21d45c9_ollama_intern_29",
+    "clm_5be2e21d45c9_ollama_intern_56",
+    "clm_5d98fdba0757_ollama_intern_5",
+    "clm_5d98fdba0757_ollama_intern_6",
+    "clm_5d98fdba0757_ollama_intern_7",
+    "clm_5d98fdba0757_ollama_intern_9",
+    "clm_62d58636ae35_ollama_intern_11",
+    "clm_62d58636ae35_ollama_intern_13",
+    "clm_62d58636ae35_ollama_intern_17",
+    "clm_62d58636ae35_ollama_intern_19",
+    "clm_62d58636ae35_ollama_intern_23",
+    "clm_62d58636ae35_ollama_intern_29",
+    "clm_642e49ac2548_ollama_intern_9",
+    "clm_65308ebae4e9_ollama_intern_1",
+    "clm_676ddfa834cc_ollama_intern_1",
+    "clm_676ddfa834cc_ollama_intern_23",
+    "clm_676ddfa834cc_ollama_intern_24",
+    "clm_676ddfa834cc_ollama_intern_27",
+    "clm_676ddfa834cc_ollama_intern_29",
+    "clm_676ddfa834cc_ollama_intern_5",
+    "clm_712838e1db63_ollama_intern_104",
+    "clm_712838e1db63_ollama_intern_122",
+    "clm_712838e1db63_ollama_intern_128",
+    "clm_712838e1db63_ollama_intern_141",
+    "clm_712838e1db63_ollama_intern_147",
+    "clm_712838e1db63_ollama_intern_16",
+    "clm_712838e1db63_ollama_intern_17",
+    "clm_712838e1db63_ollama_intern_20",
+    "clm_712838e1db63_ollama_intern_64",
+    "clm_712838e1db63_ollama_intern_82",
+    "clm_770d35522c16_ollama_intern_1",
+    "clm_770d35522c16_ollama_intern_2",
+    "clm_91705d06abdf_ollama_intern_10",
+    "clm_91705d06abdf_ollama_intern_11",
+    "clm_91705d06abdf_ollama_intern_12",
+    "clm_91705d06abdf_ollama_intern_14",
+    "clm_91705d06abdf_ollama_intern_4",
+    "clm_91705d06abdf_ollama_intern_5",
+    "clm_91705d06abdf_ollama_intern_6",
+    "clm_91705d06abdf_ollama_intern_7",
+    "clm_91705d06abdf_ollama_intern_8",
+    "clm_923564b918e1_ollama_intern_3",
+    "clm_9686dc1633cd_ollama_intern_16",
+    "clm_9686dc1633cd_ollama_intern_17",
+    "clm_9686dc1633cd_ollama_intern_18",
+    "clm_9686dc1633cd_ollama_intern_2",
+    "clm_9686dc1633cd_ollama_intern_20",
+    "clm_9686dc1633cd_ollama_intern_21",
+    "clm_9686dc1633cd_ollama_intern_22",
+    "clm_9686dc1633cd_ollama_intern_30",
+    "clm_96b9a35307c0_ollama_intern_1",
+    "clm_96b9a35307c0_ollama_intern_18",
+    "clm_96b9a35307c0_ollama_intern_2",
+    "clm_96b9a35307c0_ollama_intern_21",
+    "clm_96b9a35307c0_ollama_intern_23",
+    "clm_96b9a35307c0_ollama_intern_29",
+    "clm_96b9a35307c0_ollama_intern_32",
+    "clm_96b9a35307c0_ollama_intern_5",
+    "clm_96d4bf47e20b_ollama_intern_1",
+    "clm_98d43428beed_ollama_intern_3",
+    "clm_9a532b2b74e5_ollama_intern_15",
+    "clm_9a7d4217c64c_ollama_intern_1",
+    "clm_9a7d4217c64c_ollama_intern_14",
+    "clm_9a7d4217c64c_ollama_intern_15",
+    "clm_9a7d4217c64c_ollama_intern_16",
+    "clm_9a7d4217c64c_ollama_intern_31",
+    "clm_9a7d4217c64c_ollama_intern_35",
+    "clm_9a7d4217c64c_ollama_intern_40",
+    "clm_a135974ea838_ollama_intern_7",
+    "clm_a135974ea838_ollama_intern_8",
+    "clm_a135974ea838_ollama_intern_9",
+    "clm_a2f17fd8c9a6_ollama_intern_2",
+    "clm_a2f17fd8c9a6_ollama_intern_6",
+    "clm_a2f17fd8c9a6_ollama_intern_7",
+    "clm_a2f17fd8c9a6_ollama_intern_8",
+    "clm_a2f17fd8c9a6_ollama_intern_9",
+    "clm_ac6052de3047_ollama_intern_3",
+    "clm_ac6052de3047_ollama_intern_4",
+    "clm_ae13d4956c22_ollama_intern_9",
+    "clm_b1ed6cf92876_ollama_intern_2",
+    "clm_b1ed6cf92876_ollama_intern_3",
+    "clm_bbd08b91cbb6_ollama_intern_1",
+    "clm_bbd08b91cbb6_ollama_intern_2",
+    "clm_bbd08b91cbb6_ollama_intern_3",
+    "clm_bc94816a3373_ollama_intern_22",
+    "clm_bc94816a3373_ollama_intern_3",
+    "clm_bc94816a3373_ollama_intern_7",
+    "clm_bc94816a3373_ollama_intern_72",
+    "clm_bc94816a3373_ollama_intern_73",
+    "clm_c1e29cfcaa1e_ollama_intern_4",
+    "clm_c8975a95117b_ollama_intern_1",
+    "clm_c8975a95117b_ollama_intern_11",
+    "clm_c8975a95117b_ollama_intern_12",
+    "clm_c8975a95117b_ollama_intern_13",
+    "clm_c8975a95117b_ollama_intern_20",
+    "clm_c8975a95117b_ollama_intern_23",
+    "clm_c8975a95117b_ollama_intern_28",
+    "clm_c8975a95117b_ollama_intern_29",
+    "clm_c8975a95117b_ollama_intern_30",
+    "clm_c8975a95117b_ollama_intern_55",
+    "clm_caedf4b2d8e0_ollama_intern_101",
+    "clm_caedf4b2d8e0_ollama_intern_103",
+    "clm_caedf4b2d8e0_ollama_intern_104",
+    "clm_caedf4b2d8e0_ollama_intern_105",
+    "clm_caedf4b2d8e0_ollama_intern_127",
+    "clm_caedf4b2d8e0_ollama_intern_128",
+    "clm_caedf4b2d8e0_ollama_intern_374",
+    "clm_cf2238f43a01_ollama_intern_10",
+    "clm_cf2238f43a01_ollama_intern_105",
+    "clm_cf2238f43a01_ollama_intern_106",
+    "clm_cf2238f43a01_ollama_intern_11",
+    "clm_cf2238f43a01_ollama_intern_110",
+    "clm_cf2238f43a01_ollama_intern_114",
+    "clm_cf2238f43a01_ollama_intern_115",
+    "clm_cf2238f43a01_ollama_intern_118",
+    "clm_cf2238f43a01_ollama_intern_119",
+    "clm_cf2238f43a01_ollama_intern_98",
+    "clm_d2cd935fb884_ollama_intern_1",
+    "clm_d2cd935fb884_ollama_intern_2",
+    "clm_d2cd935fb884_ollama_intern_3",
+    "clm_d39cd3ba0ef2_ollama_intern_5",
+    "clm_d39cd3ba0ef2_ollama_intern_6",
+    "clm_d39cd3ba0ef2_ollama_intern_7",
+    "clm_d474bc1158c2_ollama_intern_19",
+    "clm_d474bc1158c2_ollama_intern_38",
+    "clm_d474bc1158c2_ollama_intern_58",
+    "clm_d474bc1158c2_ollama_intern_60",
+    "clm_d474bc1158c2_ollama_intern_62",
+    "clm_d574302fe3de_ollama_intern_4",
+    "clm_d81a8a3d6bba_ollama_intern_1",
+    "clm_d81a8a3d6bba_ollama_intern_3",
+    "clm_de50fc93ad72_ollama_intern_1",
+    "clm_de50fc93ad72_ollama_intern_3",
+    "clm_e15c2248a5d8_ollama_intern_105",
+    "clm_e15c2248a5d8_ollama_intern_124",
+    "clm_e15c2248a5d8_ollama_intern_55",
+    "clm_e15c2248a5d8_ollama_intern_58",
+    "clm_eefec92990cb_ollama_intern_22",
+    "clm_f0fe25b20f29_ollama_intern_1",
+    "clm_f0fe25b20f29_ollama_intern_13",
+    "clm_f0fe25b20f29_ollama_intern_14",
+    "clm_f0fe25b20f29_ollama_intern_15",
+    "clm_f0fe25b20f29_ollama_intern_3",
+    "clm_f0fe25b20f29_ollama_intern_4",
+    "clm_f0fe25b20f29_ollama_intern_43",
+    "clm_f0fe25b20f29_ollama_intern_44",
+    "clm_f0fe25b20f29_ollama_intern_5",
+    "clm_f0fe25b20f29_ollama_intern_6",
+    "clm_f110ffbdbe7c_ollama_intern_2",
+    "clm_f110ffbdbe7c_ollama_intern_3",
+    "clm_fb48d4730a5c_ollama_intern_1",
+    "clm_fb48d4730a5c_ollama_intern_3",
+    "clm_fb48d4730a5c_ollama_intern_6",
+    "clm_fb48d4730a5c_ollama_intern_7"
+  ],
+  "unresolved_contradictions": [],
+  "waivers_disclosed": [
+    {
+      "family": "source_floor",
+      "applied_to": "primary_sources_required",
+      "reason": "This pack researches the design intent of research-os itself. Primary sources for the design (Mike's spec decisions and the maintainer's reasoning) are operator input, not public publications. Public secondary sources about adjacent topics (citation systems, knowledge graphs, gating workflows, FTS5, Cowork patterns) provide independent corroboration where the design touches established practice.",
+      "compensating_controls": [
+        "Adversarial reviewer pass required on every section before synthesis.",
+        "Cross-section contradiction mapping required across all sections.",
+        "Each section must cite >=4 independent publishers; source cluster monopoly is a section-level blocker.",
+        "Final-report citations must be claim-level traceable via [claim:clm_...] references.",
+        "Every active waiver disclosed in synthesis/decision-brief.md and synthesis/final-report.md by family.applied_to."
+      ],
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "family": "source_floor",
+      "applied_to": "04-gates-and-waivers.primary_sources_required",
+      "reason": "This pack researches the design intent of research-os itself. Primary sources for the design (Mike's spec decisions and the maintainer's reasoning) are operator input, not public publications. Public secondary sources about adjacent topics (citation systems, knowledge graphs, gating workflows, FTS5, Cowork patterns) provide independent corroboration where the design touches established practice.",
+      "compensating_controls": [
+        "Adversarial reviewer pass required on every section before synthesis.",
+        "Cross-section contradiction mapping required across all sections.",
+        "Each section must cite >=4 independent publishers; source cluster monopoly is a section-level blocker.",
+        "Final-report citations must be claim-level traceable via [claim:clm_...] references.",
+        "Every active waiver disclosed in synthesis/decision-brief.md and synthesis/final-report.md by family.applied_to."
+      ],
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "family": "source_floor",
+      "applied_to": "07-cli-and-runtime-flow.primary_sources_required",
+      "reason": "This pack researches the design intent of research-os itself. Primary sources for the design (Mike's spec decisions and the maintainer's reasoning) are operator input, not public publications. Public secondary sources about adjacent topics (citation systems, knowledge graphs, gating workflows, FTS5, Cowork patterns) provide independent corroboration where the design touches established practice.",
+      "compensating_controls": [
+        "Adversarial reviewer pass required on every section before synthesis.",
+        "Cross-section contradiction mapping required across all sections.",
+        "Each section must cite >=4 independent publishers; source cluster monopoly is a section-level blocker.",
+        "Final-report citations must be claim-level traceable via [claim:clm_...] references.",
+        "Every active waiver disclosed in synthesis/decision-brief.md and synthesis/final-report.md by family.applied_to."
+      ],
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "01-product-thesis",
+      "status": "frozen",
+      "accepted_claims": 19,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "02-pack-artifact-contract",
+      "status": "frozen",
+      "accepted_claims": 50,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "03-source-and-claim-truth",
+      "status": "frozen",
+      "accepted_claims": 42,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "04-gates-and-waivers",
+      "status": "frozen",
+      "accepted_claims": 30,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "05-cowork-handoff",
+      "status": "frozen",
+      "accepted_claims": 68,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "06-repo-knowledge-integration",
+      "status": "frozen",
+      "accepted_claims": 43,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "07-cli-and-runtime-flow",
+      "status": "frozen",
+      "accepted_claims": 29,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "08-acceptance-suite",
+      "status": "frozen",
+      "accepted_claims": 15,
+      "sources": 0,
+      "contradictions": 0
+    }
+  ],
+  "source_count": 65,
+  "claim_count": 295,
+  "contradiction_count": 0,
+  "review_finding_count": 0,
+  "gate_result_count": 8,
+  "integrity_checks": [
+    {
+      "name": "pack_audit_ready",
+      "passed": true,
+      "detail": "pack-audit verdict=ready_for_synthesis"
+    },
+    {
+      "name": "handoff_synthesis_ready",
+      "passed": true,
+      "detail": "cowork-handoff mode=synthesis_ready"
+    },
+    {
+      "name": "synthesis_workspace_present",
+      "passed": true,
+      "detail": "5/5 synthesis files hashed"
+    },
+    {
+      "name": "final_report_cites_accepted_claims_only",
+      "passed": true,
+      "detail": "74 citation(s); 0 unknown, 0 repair/rejected"
+    },
+    {
+      "name": "unresolved_contradictions_disclosed",
+      "passed": true,
+      "detail": "0 contradiction(s) checked"
+    },
+    {
+      "name": "waivers_disclosed",
+      "passed": true,
+      "detail": "3 waiver(s) checked"
+    },
+    {
+      "name": "canonical_artifacts_fingerprinted",
+      "passed": true,
+      "detail": "126 artifact(s) hashed"
+    }
+  ]
+}

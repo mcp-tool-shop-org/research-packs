@@ -1,0 +1,23 @@
+{
+  "source_id": "src_486f1e6121c8",
+  "receipt_id": "rcpt_486f1e6121c8_1778190627060",
+  "section_id": "05-cowork-handoff",
+  "url": "https://docs.anthropic.com/en/docs/claude-code/skills",
+  "final_url": "https://code.claude.com/docs/en/skills",
+  "fetched_at": "2026-05-07T21:50:27.060Z",
+  "publisher": "code.claude.com",
+  "published_at": null,
+  "title": "Extend Claude with skills - Claude Code Docs",
+  "source_type": "primary",
+  "relevance": "unknown",
+  "key_points": [
+    "Fetch the complete documentation index at: https://code.claude.com/docs/llms.txt",
+    "Use this file to discover all available pages before exploring further."
+  ],
+  "limitations": [],
+  "asserts": "Create, manage, and share skills to extend Claude's capabilities in Claude Code. Includes custom commands and bundled skills.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:50:27.350Z"
+}

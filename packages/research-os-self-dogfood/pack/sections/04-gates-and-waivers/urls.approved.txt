@@ -1,0 +1,13 @@
+https://docs.puppetlabs.com/puppet/latest/reference/type.html#gates
+https://www.bmj.com/content/369/bmj.m7579.abstract
+https://en.wikipedia.org/wiki/Quality_gate
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6187950/
+https://www.owasp.org/www-community/vulnerabilities/Gates_in_Software
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6187951/
+https://www.riskrecon.com/blog/gates-waivers-controls-and-the-data-pipeline/
+https://ieeexplore.ieee.org/document/7480219
+https://www.nccgroup.com/us/about-us/newsroom-and-events/blog/2018/may/data-validation-in-the-data-pipeline/
+https://www.researchgate.net/publication/317652099_Gates_in_Software_Development
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2650394/
+https://www.isaca.org/resources/isacastandards/cobit/cobit-2019/framework.html
+https://www.sans.org/reading-room/whitepapers/best-practices/monitoring-gates-waivers-controls-3758

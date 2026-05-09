@@ -1,0 +1,84 @@
+{
+  "summary_id": "tris_1778208902277_05-cowork-handoff",
+  "section_id": "05-cowork-handoff",
+  "triaged_at": "2026-05-08T02:55:02.277Z",
+  "research_os_version": "0.1.0",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 548,
+  "decisions": {
+    "needs_scope_repair": 318,
+    "selected_for_review": 83,
+    "parked_weak_scope": 33,
+    "parked_overdense_source": 114
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 83,
+  "selected_per_source": [
+    {
+      "source_id": "src_5be2e21d45c9",
+      "selected": 10,
+      "total": 162
+    },
+    {
+      "source_id": "src_c8975a95117b",
+      "selected": 10,
+      "total": 81
+    },
+    {
+      "source_id": "src_9a7d4217c64c",
+      "selected": 10,
+      "total": 73
+    },
+    {
+      "source_id": "src_486f1e6121c8",
+      "selected": 10,
+      "total": 49
+    },
+    {
+      "source_id": "src_9686dc1633cd",
+      "selected": 10,
+      "total": 43
+    },
+    {
+      "source_id": "src_96b9a35307c0",
+      "selected": 10,
+      "total": 34
+    },
+    {
+      "source_id": "src_126e07cf0d68",
+      "selected": 4,
+      "total": 27
+    },
+    {
+      "source_id": "src_ea1a84785166",
+      "selected": 10,
+      "total": 23
+    },
+    {
+      "source_id": "src_9a532b2b74e5",
+      "selected": 4,
+      "total": 16
+    },
+    {
+      "source_id": "src_59b5d7b9e7e4",
+      "selected": 4,
+      "total": 13
+    },
+    {
+      "source_id": "src_67b29d913d85",
+      "selected": 0,
+      "total": 12
+    },
+    {
+      "source_id": "src_2fff6e91c56c",
+      "selected": 1,
+      "total": 10
+    },
+    {
+      "source_id": "src_b9c427878132",
+      "selected": 0,
+      "total": 5
+    }
+  ]
+}

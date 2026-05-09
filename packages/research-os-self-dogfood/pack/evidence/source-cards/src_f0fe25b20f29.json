@@ -1,0 +1,26 @@
+{
+  "source_id": "src_f0fe25b20f29",
+  "receipt_id": "rcpt_f0fe25b20f29_1778186833014",
+  "section_id": "04-gates-and-waivers",
+  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6187951/",
+  "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6187951/",
+  "fetched_at": "2026-05-07T20:47:13.014Z",
+  "publisher": "pmc.ncbi.nlm.nih.gov",
+  "published_at": null,
+  "title": "Patient Commitment and Its Relationship to A1C - PMC",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "Corresponding author: Jana Wardian, Jana/l/Wardian/ctr@mail.mil",
+    "Readers may use this article as long as the work is properly cited, the use is educational and not for profit, and the work is not altered. See http://creativecommons.org/licenses/by-nc-nd/3.0 for details.",
+    "IN BRIEF This study examined the relationship between patient commitment and A1C. Patients completed the Altarum Consumer Engagement (ACE) measure. Multiple A1C values were extracted from medical records for 273 military beneficiaries. Effects were analyzed with generalized linear models. The ACE Commitment subscale was significantly inversely related to A1C trends. Low-commitment patients were more likely to have a high A1C. High-commitment patients were 16% more likely to have an A1C <7.0%; this likelihood increased to 65% over time. The ACE Commitment domain may be a useful clinical tool. Increasing patients’ commitment to managing diabetes may improve their A1C over time.",
+    "Diabetes is a chronic disease that affects 25.8 million Americans, or about 8.3% of the U.S. population (1). About 95% of adults with diabetes are diagnosed with type 2 diabetes, and incidence rates for diabetes have been steadily increasing since the mid‐1990s (1). In addition, more is being asked of patients in health care interactions than ever before. The move toward patient‐centered medical homes is transforming primary care practices and driving patients toward a more active role in health care interactions (2).",
+    "Increasingly, patients must be more engaged in managing health information and making complex health care decisions (3). Patient engagement is key within the context of a chronic care model (4). Although being fully engaged in one’s health care can be challenging, the benefits are numerous, yielding safer (5), more effective (6), and less expensive (7) health care. Additionally, patients who actively participate in care decisions report higher satisfaction (5), faster recovery from illness (8), and improved quality of life. Finally, care plans resulting from a shared decision‐making process have been shown to result in more effective use of medication (9) and improved clinical outcomes (10,11)."
+  ],
+  "limitations": [],
+  "asserts": "IN BRIEF This study examined the relationship between patient commitment and A1C. Patients completed the Altarum Consumer Engagement (ACE) measure. Multiple A1C values were extracted from medical records for 273 military beneficiaries. Effects were ...",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T20:47:13.386Z"
+}

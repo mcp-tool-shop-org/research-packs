@@ -1,0 +1,50 @@
+{
+  "summary_id": "tris_1778186519286_07-cli-and-runtime-flow",
+  "section_id": "07-cli-and-runtime-flow",
+  "triaged_at": "2026-05-07T20:41:59.286Z",
+  "research_os_version": "0.1.0",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 175,
+  "decisions": {
+    "selected_for_review": 29,
+    "needs_scope_repair": 80,
+    "parked_weak_scope": 33,
+    "parked_low_value": 2,
+    "parked_overdense_source": 31
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 29,
+  "selected_per_source": [
+    {
+      "source_id": "src_458d9788c68d",
+      "selected": 10,
+      "total": 85
+    },
+    {
+      "source_id": "src_0b75376a48e4",
+      "selected": 10,
+      "total": 59
+    },
+    {
+      "source_id": "src_27eaf34f91a3",
+      "selected": 3,
+      "total": 11
+    },
+    {
+      "source_id": "src_de50fc93ad72",
+      "selected": 4,
+      "total": 10
+    },
+    {
+      "source_id": "src_96d4bf47e20b",
+      "selected": 1,
+      "total": 8
+    },
+    {
+      "source_id": "src_65308ebae4e9",
+      "selected": 1,
+      "total": 2
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "audit_id": "cda_1778204033052_08-acceptance-suite",
+  "section_id": "08-acceptance-suite",
+  "audited_at": "2026-05-08T01:33:53.052Z",
+  "research_os_version": "0.1.0",
+  "candidate_claim_count": 201,
+  "source_count": 7,
+  "total_source_word_count": 98789,
+  "claims_per_1k_words": 2.034639484153094,
+  "weak_scope_count": 59,
+  "generic_scope_count": 63,
+  "per_source": [
+    {
+      "source_id": "src_099defe2e6d6",
+      "publisher": "en.wikipedia.org",
+      "source_word_count": 16240,
+      "claim_count": 104,
+      "claims_per_1k_words": 6.403940886699507,
+      "share_of_section": 0.5174129353233831,
+      "weak_scope_count": 10,
+      "generic_scope_count": 53
+    },
+    {
+      "source_id": "src_eefec92990cb",
+      "publisher": "Agile Alliance | Promoting a more effective, humane, and sustainable way of working",
+      "source_word_count": 25940,
+      "claim_count": 26,
+      "claims_per_1k_words": 1.002313030069391,
+      "share_of_section": 0.12935323383084577,
+      "weak_scope_count": 14,
+      "generic_scope_count": 2
+    },
+    {
+      "source_id": "src_53ee6a9ec24b",
+      "publisher": "Guru99",
+      "source_word_count": 29814,
+      "claim_count": 17,
+      "claims_per_1k_words": 0.5702019185617495,
+      "share_of_section": 0.0845771144278607,
+      "weak_scope_count": 5,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_642e49ac2548",
+      "publisher": "cucumber.io",
+      "source_word_count": 1222,
+      "claim_count": 16,
+      "claims_per_1k_words": 13.093289689034371,
+      "share_of_section": 0.07960199004975124,
+      "weak_scope_count": 11,
+      "generic_scope_count": 1
+    },
+    {
+      "source_id": "src_ae13d4956c22",
+      "publisher": "International Software Testing Qualifications Board",
+      "source_word_count": 17465,
+      "claim_count": 14,
+      "claims_per_1k_words": 0.8016032064128257,
+      "share_of_section": 0.06965174129353234,
+      "weak_scope_count": 5,
+      "generic_scope_count": 3
+    },
+    {
+      "source_id": "src_2ed88e8cb886",
+      "publisher": "martinfowler.com",
+      "source_word_count": 1045,
+      "claim_count": 13,
+      "claims_per_1k_words": 12.440191387559809,
+      "share_of_section": 0.06467661691542288,
+      "weak_scope_count": 9,
+      "generic_scope_count": 1
+    },
+    {
+      "source_id": "src_4b7a4ad94a3b",
+      "publisher": "GitHub Docs",
+      "source_word_count": 7063,
+      "claim_count": 11,
+      "claims_per_1k_words": 1.5574118646467507,
+      "share_of_section": 0.05472636815920398,
+      "weak_scope_count": 5,
+      "generic_scope_count": 3
+    }
+  ],
+  "near_duplicate_clusters": [],
+  "flags": [
+    {
+      "type": "source_dominance",
+      "severity": "block",
+      "message": "Source src_099defe2e6d6 contributes 104 of 201 claims (52% of section).",
+      "affects_source_ids": [
+        "src_099defe2e6d6"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_099defe2e6d6 has 6.4 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_099defe2e6d6"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_642e49ac2548 has 13.1 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_642e49ac2548"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_2ed88e8cb886 has 12.4 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_2ed88e8cb886"
+      ],
+      "affects_claim_ids": []
+    }
+  ]
+}

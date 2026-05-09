@@ -1,0 +1,26 @@
+{
+  "source_id": "src_d39cd3ba0ef2",
+  "receipt_id": "rcpt_d39cd3ba0ef2_1778120259596",
+  "section_id": "03-source-and-claim-truth",
+  "url": "https://www.w3.org/TR/prov-overview/",
+  "final_url": "https://www.w3.org/TR/prov-overview/",
+  "fetched_at": "2026-05-07T02:17:39.596Z",
+  "publisher": "www.w3.org",
+  "published_at": null,
+  "title": "PROV-Overview",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "Copyright © 2013 W3C® (MIT, ERCIM, Keio, Beihang), All Rights Reserved. W3C liability, trademark and document use rules apply.",
+    "Provenance is information about entities, activities, and people involved in producing a piece of data or thing, which can be used to form assessments about its quality, reliability or trustworthiness. The PROV Family of Documents defines a model, corresponding serializations and other supporting definitions to enable the inter-operable interchange of provenance information in heterogeneous environments such as the Web. This document provides an overview of this family of documents.",
+    "This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current W3C publications and the latest revision of this technical report can be found in the W3C technical reports index at http://www.w3.org/TR/.",
+    "The Provenance Working Group encourages implementation of the specifications overviewed in this document. Although work on this document by the Provenance Working Group is complete, errors may be recorded in the errata and these may be addressed in future revisions.",
+    "This document was published by the Provenance Working Group as a Working Group Note. If you wish to make comments regarding this document, please send them to public-prov-comments@w3.org (subscribe, archives). All comments are welcome."
+  ],
+  "limitations": [],
+  "asserts": "Copyright © 2013 W3C® (MIT, ERCIM, Keio, Beihang), All Rights Reserved. W3C liability, trademark and document use rules apply.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T02:17:39.722Z"
+}

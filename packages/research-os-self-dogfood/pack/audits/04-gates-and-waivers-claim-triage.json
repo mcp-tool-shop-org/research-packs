@@ -1,0 +1,48 @@
+{
+  "summary_id": "tris_1778187340798_04-gates-and-waivers",
+  "section_id": "04-gates-and-waivers",
+  "triaged_at": "2026-05-07T20:55:40.798Z",
+  "research_os_version": "0.1.0",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 131,
+  "decisions": {
+    "needs_scope_repair": 96,
+    "parked_weak_scope": 5,
+    "selected_for_review": 30
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 30,
+  "selected_per_source": [
+    {
+      "source_id": "src_55f4bfa87f54",
+      "selected": 6,
+      "total": 60
+    },
+    {
+      "source_id": "src_f0fe25b20f29",
+      "selected": 10,
+      "total": 44
+    },
+    {
+      "source_id": "src_fb48d4730a5c",
+      "selected": 8,
+      "total": 15
+    },
+    {
+      "source_id": "src_09a48e752e9b",
+      "selected": 0,
+      "total": 6
+    },
+    {
+      "source_id": "src_d2cd935fb884",
+      "selected": 3,
+      "total": 3
+    },
+    {
+      "source_id": "src_bbd08b91cbb6",
+      "selected": 3,
+      "total": 3
+    }
+  ]
+}

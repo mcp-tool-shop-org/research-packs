@@ -1,0 +1,8 @@
+https://json-schema.org/docs
+https://json-schema.org/specification
+https://json-schema.org/draft/2020-12
+https://json-schema.org/understanding-json-schema/reference
+https://datatracker.ietf.org/doc/html/rfc8259
+https://jsonlines.org/
+https://yaml.org/spec/1.2.2/
+https://www.w3.org/TR/prov-dm/

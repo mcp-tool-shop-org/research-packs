@@ -1,0 +1,20 @@
+{
+  "source_id": "src_6ab0d27881d8",
+  "receipt_id": "rcpt_6ab0d27881d8_1778185669976",
+  "section_id": "07-cli-and-runtime-flow",
+  "url": "https://clibs.org/standalone-cli/latest/tutorial/",
+  "final_url": "https://clibs.org/standalone-cli/latest/tutorial/",
+  "fetched_at": "2026-05-07T20:27:49.976Z",
+  "publisher": "clibs.org",
+  "published_at": null,
+  "title": "clibs.org",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [],
+  "limitations": [],
+  "asserts": "clibs.org",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T20:27:50.667Z"
+}

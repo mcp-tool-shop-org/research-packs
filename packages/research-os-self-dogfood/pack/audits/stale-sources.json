@@ -1,0 +1,808 @@
+[
+  {
+    "source_id": "src_05cae033cedc",
+    "section_id": "06-repo-knowledge-integration",
+    "publisher": "sqlite.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_05cae033cedc.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_0801e1ee8a70",
+    "section_id": "02-pack-artifact-contract",
+    "publisher": "www.w3.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_0801e1ee8a70.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_099defe2e6d6",
+    "section_id": "08-acceptance-suite",
+    "publisher": "en.wikipedia.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_099defe2e6d6.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_09a48e752e9b",
+    "section_id": "04-gates-and-waivers",
+    "publisher": "help.puppet.com",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_09a48e752e9b.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_0b75376a48e4",
+    "section_id": "07-cli-and-runtime-flow",
+    "publisher": "GitHub",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_0b75376a48e4.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_126e07cf0d68",
+    "section_id": "05-cowork-handoff",
+    "publisher": "www.anthropic.com",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_126e07cf0d68.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_155c4be7850d",
+    "section_id": "03-source-and-claim-truth",
+    "publisher": "en.wikipedia.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_155c4be7850d.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_27eaf34f91a3",
+    "section_id": "07-cli-and-runtime-flow",
+    "publisher": "sourceware.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_27eaf34f91a3.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_2cc80fcf07ba",
+    "section_id": "02-pack-artifact-contract",
+    "publisher": "json-schema.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_2cc80fcf07ba.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_2ed88e8cb886",
+    "section_id": "08-acceptance-suite",
+    "publisher": "martinfowler.com",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_2ed88e8cb886.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_2fff6e91c56c",
+    "section_id": "05-cowork-handoff",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_2fff6e91c56c.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_308195df859c",
+    "section_id": "01-product-thesis",
+    "publisher": "arXiv.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_308195df859c.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_458d9788c68d",
+    "section_id": "07-cli-and-runtime-flow",
+    "publisher": "clig.dev",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_458d9788c68d.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_486f1e6121c8",
+    "section_id": "05-cowork-handoff",
+    "publisher": "code.claude.com",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_486f1e6121c8.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_4b7a4ad94a3b",
+    "section_id": "08-acceptance-suite",
+    "publisher": "GitHub Docs",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_4b7a4ad94a3b.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_53ee6a9ec24b",
+    "section_id": "08-acceptance-suite",
+    "publisher": "Guru99",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_53ee6a9ec24b.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_55f4bfa87f54",
+    "section_id": "04-gates-and-waivers",
+    "publisher": "pmc.ncbi.nlm.nih.gov",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_55f4bfa87f54.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_56b5f3cd926b",
+    "section_id": "01-product-thesis",
+    "publisher": "force11.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_56b5f3cd926b.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_59b5d7b9e7e4",
+    "section_id": "05-cowork-handoff",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_59b5d7b9e7e4.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_5be2e21d45c9",
+    "section_id": "05-cowork-handoff",
+    "publisher": "code.claude.com",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_5be2e21d45c9.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_5d98fdba0757",
+    "section_id": "06-repo-knowledge-integration",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_5d98fdba0757.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_62d58636ae35",
+    "section_id": "02-pack-artifact-contract",
+    "publisher": "IETF Datatracker",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_62d58636ae35.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_63e3516c85f3",
+    "section_id": "03-source-and-claim-truth",
+    "publisher": "plato.stanford.edu",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_63e3516c85f3.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_642e49ac2548",
+    "section_id": "08-acceptance-suite",
+    "publisher": "cucumber.io",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_642e49ac2548.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_65308ebae4e9",
+    "section_id": "07-cli-and-runtime-flow",
+    "publisher": "docs.npmjs.com",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_65308ebae4e9.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_676ddfa834cc",
+    "section_id": "06-repo-knowledge-integration",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_676ddfa834cc.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_67b29d913d85",
+    "section_id": "05-cowork-handoff",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_67b29d913d85.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_6ab0d27881d8",
+    "section_id": "07-cli-and-runtime-flow",
+    "publisher": "clibs.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_6ab0d27881d8.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_712838e1db63",
+    "section_id": "02-pack-artifact-contract",
+    "publisher": "yaml.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_712838e1db63.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_770d35522c16",
+    "section_id": "01-product-thesis",
+    "publisher": "www.doi.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_770d35522c16.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_876b66b88858",
+    "section_id": "02-pack-artifact-contract",
+    "publisher": "json-schema.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_876b66b88858.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_8cffc8f807a2",
+    "section_id": "08-acceptance-suite",
+    "publisher": "glossary.istqb.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_8cffc8f807a2.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_91705d06abdf",
+    "section_id": "06-repo-knowledge-integration",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_91705d06abdf.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_923564b918e1",
+    "section_id": "01-product-thesis",
+    "publisher": "arXiv.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_923564b918e1.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_9686dc1633cd",
+    "section_id": "05-cowork-handoff",
+    "publisher": "code.claude.com",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_9686dc1633cd.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_96b9a35307c0",
+    "section_id": "05-cowork-handoff",
+    "publisher": "code.claude.com",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_96b9a35307c0.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_96d4bf47e20b",
+    "section_id": "07-cli-and-runtime-flow",
+    "publisher": "nodejs.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_96d4bf47e20b.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_98d43428beed",
+    "section_id": "01-product-thesis",
+    "publisher": "arXiv.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_98d43428beed.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_9a532b2b74e5",
+    "section_id": "05-cowork-handoff",
+    "publisher": "code.claude.com",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_9a532b2b74e5.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_9a7d4217c64c",
+    "section_id": "05-cowork-handoff",
+    "publisher": "code.claude.com",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_9a7d4217c64c.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_a135974ea838",
+    "section_id": "03-source-and-claim-truth",
+    "publisher": "arXiv.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_a135974ea838.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_a2f17fd8c9a6",
+    "section_id": "01-product-thesis",
+    "publisher": "arXiv.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_a2f17fd8c9a6.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_ac6052de3047",
+    "section_id": "06-repo-knowledge-integration",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_ac6052de3047.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_b1ed6cf92876",
+    "section_id": "02-pack-artifact-contract",
+    "publisher": "json-schema.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_b1ed6cf92876.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_b9c427878132",
+    "section_id": "05-cowork-handoff",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_b9c427878132.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_bbd08b91cbb6",
+    "section_id": "04-gates-and-waivers",
+    "publisher": "pmc.ncbi.nlm.nih.gov",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_bbd08b91cbb6.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_bc94816a3373",
+    "section_id": "03-source-and-claim-truth",
+    "publisher": "en.wikipedia.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_bc94816a3373.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_bf5d0eef78f0",
+    "section_id": "02-pack-artifact-contract",
+    "publisher": "json-schema.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_bf5d0eef78f0.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_c1e29cfcaa1e",
+    "section_id": "02-pack-artifact-contract",
+    "publisher": "jsonlines.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_c1e29cfcaa1e.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_c8975a95117b",
+    "section_id": "05-cowork-handoff",
+    "publisher": "code.claude.com",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_c8975a95117b.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_cf2238f43a01",
+    "section_id": "02-pack-artifact-contract",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_cf2238f43a01.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_d2cd935fb884",
+    "section_id": "04-gates-and-waivers",
+    "publisher": "ieeexplore.ieee.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_d2cd935fb884.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_d39cd3ba0ef2",
+    "section_id": "03-source-and-claim-truth",
+    "publisher": "www.w3.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_d39cd3ba0ef2.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_d474bc1158c2",
+    "section_id": "01-product-thesis",
+    "publisher": "en.wikipedia.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_d474bc1158c2.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_d574302fe3de",
+    "section_id": "01-product-thesis",
+    "publisher": "GO FAIR",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_d574302fe3de.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_d81a8a3d6bba",
+    "section_id": "03-source-and-claim-truth",
+    "publisher": "en.wikipedia.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_d81a8a3d6bba.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_de50fc93ad72",
+    "section_id": "07-cli-and-runtime-flow",
+    "publisher": "12factor.net",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_de50fc93ad72.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_e15c2248a5d8",
+    "section_id": "06-repo-knowledge-integration",
+    "publisher": "sqlite.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_e15c2248a5d8.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_ea1a84785166",
+    "section_id": "05-cowork-handoff",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_ea1a84785166.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_f0fe25b20f29",
+    "section_id": "04-gates-and-waivers",
+    "publisher": "pmc.ncbi.nlm.nih.gov",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_f0fe25b20f29.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_f110ffbdbe7c",
+    "section_id": "06-repo-knowledge-integration",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_f110ffbdbe7c.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_fb48d4730a5c",
+    "section_id": "04-gates-and-waivers",
+    "publisher": "en.wikipedia.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_fb48d4730a5c.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  }
+]

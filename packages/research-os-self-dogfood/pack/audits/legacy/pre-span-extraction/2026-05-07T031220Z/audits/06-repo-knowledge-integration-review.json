@@ -1,0 +1,153 @@
+{
+  "section_id": "06-repo-knowledge-integration",
+  "reviewer": "heuristic",
+  "review_method": "heuristic_field_and_grounding_checks",
+  "reviewed_at": "2026-05-07T00:50:23.978Z",
+  "candidate_claims": 4,
+  "findings": [
+    {
+      "finding_id": "fnd_12fe9cb863d9",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_05cae033cedc_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_05cae033cedc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_05cae033cedc_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Since version 3.7.0 (2010-07-21), SQLite offers an alternative method for implementing atomic commit and rollback called Write-Ahead Logging (WAL).",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T00:50:23.977Z"
+    },
+    {
+      "finding_id": "fnd_b15ad40e558c",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_05cae033cedc_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_05cae033cedc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_05cae033cedc_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: In WAL mode, readers do not block writers and vice versa, allowing concurrent reading and writing.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T00:50:23.978Z"
+    },
+    {
+      "finding_id": "fnd_dca9cfd4490b",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_05cae033cedc_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_05cae033cedc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_05cae033cedc_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The wal-index helps readers locate pages in the WAL quickly, improving performance.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T00:50:23.978Z"
+    },
+    {
+      "finding_id": "fnd_bdcf33ac020e",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_e15c2248a5d8_ollama_intern_1",
+        "clm_05cae033cedc_ollama_intern_1",
+        "clm_05cae033cedc_ollama_intern_2",
+        "clm_05cae033cedc_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_05cae033cedc",
+        "src_e15c2248a5d8"
+      ],
+      "category": "source_cluster_monopoly",
+      "severity": "warn",
+      "summary": "Every source for this section traces to a single publisher (sqlite.org). Claims drawn from this section inherit a publisher-monopoly limitation.",
+      "evidence": "Section sources: 2; distinct publishers: 1 (sqlite.org).",
+      "required_action": "Add at least one source from an independent publisher before treating these claims as broadly corroborated.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "high",
+      "created_at": "2026-05-07T00:50:23.978Z"
+    }
+  ],
+  "claim_reviews": [
+    {
+      "claim_id": "clm_e15c2248a5d8_ollama_intern_1",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_cluster_monopoly (warn).",
+      "finding_ids": [
+        "fnd_bdcf33ac020e"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T00:50:23.978Z"
+    },
+    {
+      "claim_id": "clm_05cae033cedc_ollama_intern_1",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_cluster_monopoly (warn).",
+      "finding_ids": [
+        "fnd_12fe9cb863d9",
+        "fnd_bdcf33ac020e"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T00:50:23.978Z"
+    },
+    {
+      "claim_id": "clm_05cae033cedc_ollama_intern_2",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_cluster_monopoly (warn).",
+      "finding_ids": [
+        "fnd_b15ad40e558c",
+        "fnd_bdcf33ac020e"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T00:50:23.978Z"
+    },
+    {
+      "claim_id": "clm_05cae033cedc_ollama_intern_3",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_cluster_monopoly (warn).",
+      "finding_ids": [
+        "fnd_dca9cfd4490b",
+        "fnd_bdcf33ac020e"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T00:50:23.978Z"
+    }
+  ],
+  "decision_counts": {
+    "accepted_for_synthesis": 0,
+    "rejected": 0,
+    "needs_scope_repair": 0,
+    "needs_source_repair": 4,
+    "needs_contradiction_mapping": 0,
+    "needs_human_review": 0
+  },
+  "severity_counts": {
+    "info": 3,
+    "warn": 1,
+    "block": 0
+  },
+  "llm_findings_rejected_ungrounded": 0,
+  "promoted_to_reviewed": false
+}

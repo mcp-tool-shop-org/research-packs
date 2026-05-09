@@ -1,0 +1,24 @@
+{
+  "source_id": "src_923564b918e1",
+  "receipt_id": "rcpt_923564b918e1_1778188304355",
+  "section_id": "01-product-thesis",
+  "url": "https://arxiv.org/abs/2109.14633",
+  "final_url": "https://arxiv.org/abs/2109.14633",
+  "fetched_at": "2026-05-07T21:11:44.355Z",
+  "publisher": "arXiv.org",
+  "published_at": null,
+  "title": "Extremal black holes that are not extremal: maximal warm holes",
+  "source_type": "primary",
+  "relevance": "unknown",
+  "key_points": [
+    "arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.",
+    "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.",
+    "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs."
+  ],
+  "limitations": [],
+  "asserts": "We study a family of four-dimensional, asymptotically flat, charged black holes that develop (charged) scalar hair as one increases their charge at fixed mass. Surprisingly, the maximum charge for given mass is a nonsingular hairy black hole with nonzero Hawking temperature. The implications for Hawking evaporation are discussed.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:11:44.523Z"
+}

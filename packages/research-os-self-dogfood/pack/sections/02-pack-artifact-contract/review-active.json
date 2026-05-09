@@ -1,0 +1,15 @@
+{
+  "active_profile": "hermes-two-pass",
+  "promoted_at": "2026-05-07T21:49:47.556Z",
+  "promoted_method": "multi_pass(heuristic_field_and_grounding_checks)",
+  "promoted_reviewer": "heuristic",
+  "promotion_reason": "calibrated baseline (see fixture seeded-v1)",
+  "calibration_summary": {
+    "fixture": "seeded-v1",
+    "good_false_positive_rate": "0/5 (0%)",
+    "bad_any_flag_recall": "9/13 (69%)",
+    "strict_category_recall": "4/13 (31%)",
+    "unsupported_claim_recall": null,
+    "notes": null
+  }
+}

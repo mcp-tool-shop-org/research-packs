@@ -1,0 +1,26 @@
+{
+  "source_id": "src_126e07cf0d68",
+  "receipt_id": "rcpt_126e07cf0d68_1778190627594",
+  "section_id": "05-cowork-handoff",
+  "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+  "final_url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+  "fetched_at": "2026-05-07T21:50:27.594Z",
+  "publisher": "www.anthropic.com",
+  "published_at": null,
+  "title": "Effective context engineering for AI agents",
+  "source_type": "primary",
+  "relevance": "unknown",
+  "key_points": [
+    "After a few years of prompt engineering being the focus of attention in applied AI, a new term has come to prominence: context engineering. Building with language models is becoming less about finding the right words and phrases for your prompts, and more about answering the broader question of “what configuration of context is most likely to generate our model’s desired behavior?\"",
+    "Context refers to the set of tokens included when sampling from a large-language model (LLM). The engineering problem at hand is optimizing the utility of those tokens against the inherent constraints of LLMs in order to consistently achieve a desired outcome. Effectively wrangling LLMs often requires thinking in context — in other words: considering the holistic state available to the LLM at any given time and what potential behaviors that state might yield.",
+    "In this post, we’ll explore the emerging art of context engineering and offer a refined mental model for building steerable, effective agents.",
+    "At Anthropic, we view context engineering as the natural progression of prompt engineering. Prompt engineering refers to methods for writing and organizing LLM instructions for optimal outcomes (see our docs for an overview and useful prompt engineering strategies). Context engineering refers to the set of strategies for curating and maintaining the optimal set of tokens (information) during LLM inference, including all the other information that may land there outside of the prompts.",
+    "In the early days of engineering with LLMs, prompting was the biggest component of AI engineering work, as the majority of use cases outside of everyday chat interactions required prompts optimized for one-shot classification or text generation tasks. As the term implies, the primary focus of prompt engineering is how to write effective prompts, particularly system prompts. However, as we move towards engineering more capable agents that operate over multiple turns of inference and longer time horizons, we need strategies for managing the entire context state (system instructions, tools, Model Context Protocol (MCP), external data, message history, etc)."
+  ],
+  "limitations": [],
+  "asserts": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:50:30.257Z"
+}

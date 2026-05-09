@@ -1,0 +1,24 @@
+{
+  "source_id": "src_a135974ea838",
+  "receipt_id": "rcpt_a135974ea838_1778120260301",
+  "section_id": "03-source-and-claim-truth",
+  "url": "https://arxiv.org/abs/2003.02320",
+  "final_url": "https://arxiv.org/abs/2003.02320",
+  "fetched_at": "2026-05-07T02:17:40.301Z",
+  "publisher": "arXiv.org",
+  "published_at": null,
+  "title": "Knowledge Graphs",
+  "source_type": "primary",
+  "relevance": "unknown",
+  "key_points": [
+    "arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.",
+    "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.",
+    "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs."
+  ],
+  "limitations": [],
+  "asserts": "In this paper we provide a comprehensive introduction to knowledge graphs, which have recently garnered significant attention from both industry and academia in scenarios that require exploiting diverse, dynamic, large-scale collections of data. After some opening remarks, we motivate and contrast various graph-based data models and query languages that are used for knowledge graphs. We discuss the roles of schema, identity, and context in knowledge graphs. We explain how knowledge can be represented and extracted using a combination of deductive and inductive techniques. We summarise methods ",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T02:17:40.506Z"
+}

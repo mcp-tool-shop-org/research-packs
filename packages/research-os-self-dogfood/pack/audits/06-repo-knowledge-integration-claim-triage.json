@@ -1,0 +1,55 @@
+{
+  "summary_id": "tris_1778181412853_06-repo-knowledge-integration",
+  "section_id": "06-repo-knowledge-integration",
+  "triaged_at": "2026-05-07T19:16:52.853Z",
+  "research_os_version": "0.1.0",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 297,
+  "decisions": {
+    "needs_scope_repair": 191,
+    "selected_for_review": 43,
+    "parked_overdense_source": 33,
+    "parked_weak_scope": 29,
+    "parked_low_value": 1
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 43,
+  "selected_per_source": [
+    {
+      "source_id": "src_e15c2248a5d8",
+      "selected": 10,
+      "total": 188
+    },
+    {
+      "source_id": "src_05cae033cedc",
+      "selected": 10,
+      "total": 45
+    },
+    {
+      "source_id": "src_676ddfa834cc",
+      "selected": 3,
+      "total": 29
+    },
+    {
+      "source_id": "src_91705d06abdf",
+      "selected": 10,
+      "total": 14
+    },
+    {
+      "source_id": "src_5d98fdba0757",
+      "selected": 5,
+      "total": 9
+    },
+    {
+      "source_id": "src_ac6052de3047",
+      "selected": 3,
+      "total": 9
+    },
+    {
+      "source_id": "src_f110ffbdbe7c",
+      "selected": 2,
+      "total": 3
+    }
+  ]
+}

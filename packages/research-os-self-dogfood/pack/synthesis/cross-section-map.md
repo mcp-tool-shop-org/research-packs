@@ -1,0 +1,4722 @@
+# Cross-Section Map: How should research-os structure a research-pack so every research artifact becomes actionable implementation material for the repo?
+
+**Pack ID:** `5dca72a4300c`
+**Pack decision:** Lock the schemas, gates, prompt contracts, and CLI surface for research-os v0.1 so the remaining workflow links can be built against a real spec instead of guesses.
+**Generated:** 2026-05-08T06:14:58.545Z
+**Accepted claims:** 296
+
+> This map points at canonical artifacts. It does not synthesize. It does not infer across claims. Use it as a routing layer when drafting `decision-brief.md` and `working-report.md`. The pack is the source of authority.
+
+## Accepted claims by section
+
+### `01-product-thesis` — 19 accepted claim(s)
+
+- **Purpose:** What research-os is, what it refuses to become, and what workflow must not be broken.
+- **Status:** reviewed
+- **Accepted claims:**
+  - `clm_d474bc1158c2_ollama_intern_19`
+  - `clm_d474bc1158c2_ollama_intern_38`
+  - `clm_56b5f3cd926b_ollama_intern_1`
+  - `clm_56b5f3cd926b_ollama_intern_2`
+  - `clm_56b5f3cd926b_ollama_intern_3`
+  - `clm_d574302fe3de_ollama_intern_4`
+  - `clm_770d35522c16_ollama_intern_1`
+  - `clm_770d35522c16_ollama_intern_2`
+  - `clm_d474bc1158c2_ollama_intern_58`
+  - `clm_d474bc1158c2_ollama_intern_60`
+  - `clm_d474bc1158c2_ollama_intern_62`
+  - `clm_98d43428beed_ollama_intern_3`
+  - `clm_a2f17fd8c9a6_ollama_intern_1`
+  - `clm_a2f17fd8c9a6_ollama_intern_2`
+  - `clm_a2f17fd8c9a6_ollama_intern_6`
+  - `clm_a2f17fd8c9a6_ollama_intern_7`
+  - `clm_a2f17fd8c9a6_ollama_intern_8`
+  - `clm_a2f17fd8c9a6_ollama_intern_9`
+  - `clm_923564b918e1_ollama_intern_3`
+
+### `02-pack-artifact-contract` — 50 accepted claim(s)
+
+- **Purpose:** Exact folder structure, file schemas, required ledgers, receipts, and freeze outputs.
+- **Status:** gated
+- **Accepted claims:**
+  - `clm_cf2238f43a01_ollama_intern_10`
+  - `clm_cf2238f43a01_ollama_intern_11`
+  - `clm_cf2238f43a01_ollama_intern_98`
+  - `clm_cf2238f43a01_ollama_intern_105`
+  - `clm_cf2238f43a01_ollama_intern_106`
+  - `clm_cf2238f43a01_ollama_intern_110`
+  - `clm_cf2238f43a01_ollama_intern_114`
+  - `clm_cf2238f43a01_ollama_intern_115`
+  - `clm_cf2238f43a01_ollama_intern_118`
+  - `clm_cf2238f43a01_ollama_intern_119`
+  - `clm_2cc80fcf07ba_ollama_intern_4`
+  - `clm_b1ed6cf92876_ollama_intern_1`
+  - `clm_b1ed6cf92876_ollama_intern_2`
+  - `clm_b1ed6cf92876_ollama_intern_3`
+  - `clm_b1ed6cf92876_ollama_intern_4`
+  - `clm_62d58636ae35_ollama_intern_8`
+  - `clm_62d58636ae35_ollama_intern_9`
+  - `clm_62d58636ae35_ollama_intern_10`
+  - `clm_62d58636ae35_ollama_intern_11`
+  - `clm_62d58636ae35_ollama_intern_13`
+  - `clm_62d58636ae35_ollama_intern_17`
+  - `clm_62d58636ae35_ollama_intern_19`
+  - `clm_62d58636ae35_ollama_intern_23`
+  - `clm_62d58636ae35_ollama_intern_28`
+  - `clm_62d58636ae35_ollama_intern_29`
+  - `clm_c1e29cfcaa1e_ollama_intern_2`
+  - `clm_c1e29cfcaa1e_ollama_intern_3`
+  - `clm_c1e29cfcaa1e_ollama_intern_4`
+  - `clm_c1e29cfcaa1e_ollama_intern_5`
+  - `clm_c1e29cfcaa1e_ollama_intern_6`
+  - `clm_712838e1db63_ollama_intern_16`
+  - `clm_712838e1db63_ollama_intern_17`
+  - `clm_712838e1db63_ollama_intern_20`
+  - `clm_712838e1db63_ollama_intern_64`
+  - `clm_712838e1db63_ollama_intern_82`
+  - `clm_712838e1db63_ollama_intern_104`
+  - `clm_712838e1db63_ollama_intern_122`
+  - `clm_712838e1db63_ollama_intern_128`
+  - `clm_712838e1db63_ollama_intern_141`
+  - `clm_712838e1db63_ollama_intern_147`
+  - `clm_0801e1ee8a70_ollama_intern_13`
+  - `clm_0801e1ee8a70_ollama_intern_52`
+  - `clm_0801e1ee8a70_ollama_intern_80`
+  - `clm_0801e1ee8a70_ollama_intern_83`
+  - `clm_0801e1ee8a70_ollama_intern_85`
+  - `clm_0801e1ee8a70_ollama_intern_109`
+  - `clm_0801e1ee8a70_ollama_intern_110`
+  - `clm_0801e1ee8a70_ollama_intern_111`
+  - `clm_0801e1ee8a70_ollama_intern_127`
+  - `clm_0801e1ee8a70_ollama_intern_132`
+
+### `03-source-and-claim-truth` — 42 accepted claim(s)
+
+- **Purpose:** How source cards, claim extraction, citations, confidence, uncertainty, and unsupported claims work.
+- **Status:** reviewed
+- **Accepted claims:**
+  - `clm_676ddfa834cc_ollama_intern_1`
+  - `clm_d39cd3ba0ef2_ollama_intern_5`
+  - `clm_d39cd3ba0ef2_ollama_intern_6`
+  - `clm_d39cd3ba0ef2_ollama_intern_7`
+  - `clm_d81a8a3d6bba_ollama_intern_1`
+  - `clm_d81a8a3d6bba_ollama_intern_2`
+  - `clm_d81a8a3d6bba_ollama_intern_3`
+  - `clm_d81a8a3d6bba_ollama_intern_5`
+  - `clm_d81a8a3d6bba_ollama_intern_30`
+  - `clm_d81a8a3d6bba_ollama_intern_31`
+  - `clm_d81a8a3d6bba_ollama_intern_35`
+  - `clm_d81a8a3d6bba_ollama_intern_39`
+  - `clm_676ddfa834cc_ollama_intern_5`
+  - `clm_676ddfa834cc_ollama_intern_21`
+  - `clm_676ddfa834cc_ollama_intern_22`
+  - `clm_676ddfa834cc_ollama_intern_23`
+  - `clm_676ddfa834cc_ollama_intern_24`
+  - `clm_676ddfa834cc_ollama_intern_26`
+  - `clm_bc94816a3373_ollama_intern_1`
+  - `clm_bc94816a3373_ollama_intern_3`
+  - `clm_bc94816a3373_ollama_intern_7`
+  - `clm_bc94816a3373_ollama_intern_19`
+  - `clm_bc94816a3373_ollama_intern_22`
+  - `clm_bc94816a3373_ollama_intern_72`
+  - `clm_bc94816a3373_ollama_intern_73`
+  - `clm_155c4be7850d_ollama_intern_14`
+  - `clm_155c4be7850d_ollama_intern_15`
+  - `clm_155c4be7850d_ollama_intern_17`
+  - `clm_155c4be7850d_ollama_intern_18`
+  - `clm_155c4be7850d_ollama_intern_42`
+  - `clm_155c4be7850d_ollama_intern_43`
+  - `clm_155c4be7850d_ollama_intern_46`
+  - `clm_caedf4b2d8e0_ollama_intern_101`
+  - `clm_caedf4b2d8e0_ollama_intern_103`
+  - `clm_caedf4b2d8e0_ollama_intern_104`
+  - `clm_caedf4b2d8e0_ollama_intern_105`
+  - `clm_caedf4b2d8e0_ollama_intern_127`
+  - `clm_caedf4b2d8e0_ollama_intern_128`
+  - `clm_caedf4b2d8e0_ollama_intern_374`
+  - `clm_a135974ea838_ollama_intern_7`
+  - `clm_a135974ea838_ollama_intern_8`
+  - `clm_a135974ea838_ollama_intern_9`
+
+### `04-gates-and-waivers` — 30 accepted claim(s)
+
+- **Purpose:** Hard gates, soft gates, waiver reasons, compensating controls, and failure states.
+- **Status:** reviewed
+- **Accepted claims:**
+  - `clm_fb48d4730a5c_ollama_intern_1`
+  - `clm_fb48d4730a5c_ollama_intern_3`
+  - `clm_fb48d4730a5c_ollama_intern_6`
+  - `clm_fb48d4730a5c_ollama_intern_7`
+  - `clm_fb48d4730a5c_ollama_intern_8`
+  - `clm_fb48d4730a5c_ollama_intern_11`
+  - `clm_fb48d4730a5c_ollama_intern_12`
+  - `clm_fb48d4730a5c_ollama_intern_13`
+  - `clm_d2cd935fb884_ollama_intern_1`
+  - `clm_d2cd935fb884_ollama_intern_2`
+  - `clm_d2cd935fb884_ollama_intern_3`
+  - `clm_55f4bfa87f54_ollama_intern_12`
+  - `clm_55f4bfa87f54_ollama_intern_22`
+  - `clm_55f4bfa87f54_ollama_intern_29`
+  - `clm_55f4bfa87f54_ollama_intern_31`
+  - `clm_55f4bfa87f54_ollama_intern_32`
+  - `clm_55f4bfa87f54_ollama_intern_40`
+  - `clm_f0fe25b20f29_ollama_intern_1`
+  - `clm_f0fe25b20f29_ollama_intern_3`
+  - `clm_f0fe25b20f29_ollama_intern_4`
+  - `clm_f0fe25b20f29_ollama_intern_5`
+  - `clm_f0fe25b20f29_ollama_intern_6`
+  - `clm_f0fe25b20f29_ollama_intern_13`
+  - `clm_f0fe25b20f29_ollama_intern_14`
+  - `clm_f0fe25b20f29_ollama_intern_15`
+  - `clm_f0fe25b20f29_ollama_intern_43`
+  - `clm_f0fe25b20f29_ollama_intern_44`
+  - `clm_bbd08b91cbb6_ollama_intern_1`
+  - `clm_bbd08b91cbb6_ollama_intern_2`
+  - `clm_bbd08b91cbb6_ollama_intern_3`
+
+### `05-cowork-handoff` — 68 accepted claim(s)
+
+- **Purpose:** The real cowork-master.md contract, allowed actions, forbidden drift, synthesis responsibilities, and stop conditions.
+- **Status:** gated
+- **Accepted claims:**
+  - `clm_9a532b2b74e5_ollama_intern_3`
+  - `clm_9a532b2b74e5_ollama_intern_6`
+  - `clm_9a532b2b74e5_ollama_intern_8`
+  - `clm_9a7d4217c64c_ollama_intern_1`
+  - `clm_9a7d4217c64c_ollama_intern_3`
+  - `clm_9a7d4217c64c_ollama_intern_14`
+  - `clm_9a7d4217c64c_ollama_intern_15`
+  - `clm_9a7d4217c64c_ollama_intern_16`
+  - `clm_9a7d4217c64c_ollama_intern_29`
+  - `clm_9a7d4217c64c_ollama_intern_30`
+  - `clm_9a7d4217c64c_ollama_intern_31`
+  - `clm_9a7d4217c64c_ollama_intern_35`
+  - `clm_9a7d4217c64c_ollama_intern_40`
+  - `clm_5be2e21d45c9_ollama_intern_1`
+  - `clm_5be2e21d45c9_ollama_intern_23`
+  - `clm_5be2e21d45c9_ollama_intern_27`
+  - `clm_5be2e21d45c9_ollama_intern_29`
+  - `clm_5be2e21d45c9_ollama_intern_56`
+  - `clm_5be2e21d45c9_ollama_intern_106`
+  - `clm_5be2e21d45c9_ollama_intern_109`
+  - `clm_5be2e21d45c9_ollama_intern_125`
+  - `clm_5be2e21d45c9_ollama_intern_148`
+  - `clm_5be2e21d45c9_ollama_intern_149`
+  - `clm_96b9a35307c0_ollama_intern_1`
+  - `clm_96b9a35307c0_ollama_intern_2`
+  - `clm_96b9a35307c0_ollama_intern_5`
+  - `clm_96b9a35307c0_ollama_intern_18`
+  - `clm_96b9a35307c0_ollama_intern_21`
+  - `clm_96b9a35307c0_ollama_intern_23`
+  - `clm_96b9a35307c0_ollama_intern_29`
+  - `clm_96b9a35307c0_ollama_intern_32`
+  - `clm_96b9a35307c0_ollama_intern_33`
+  - `clm_96b9a35307c0_ollama_intern_34`
+  - `clm_c8975a95117b_ollama_intern_1`
+  - `clm_c8975a95117b_ollama_intern_11`
+  - `clm_c8975a95117b_ollama_intern_12`
+  - `clm_c8975a95117b_ollama_intern_13`
+  - `clm_c8975a95117b_ollama_intern_20`
+  - `clm_c8975a95117b_ollama_intern_23`
+  - `clm_c8975a95117b_ollama_intern_28`
+  - `clm_c8975a95117b_ollama_intern_29`
+  - `clm_c8975a95117b_ollama_intern_30`
+  - `clm_c8975a95117b_ollama_intern_55`
+  - `clm_486f1e6121c8_ollama_intern_1`
+  - `clm_486f1e6121c8_ollama_intern_6`
+  - `clm_486f1e6121c8_ollama_intern_12`
+  - `clm_486f1e6121c8_ollama_intern_13`
+  - `clm_486f1e6121c8_ollama_intern_14`
+  - `clm_486f1e6121c8_ollama_intern_17`
+  - `clm_486f1e6121c8_ollama_intern_29`
+  - `clm_486f1e6121c8_ollama_intern_32`
+  - `clm_486f1e6121c8_ollama_intern_33`
+  - `clm_486f1e6121c8_ollama_intern_36`
+  - `clm_9686dc1633cd_ollama_intern_2`
+  - `clm_9686dc1633cd_ollama_intern_3`
+  - `clm_9686dc1633cd_ollama_intern_4`
+  - `clm_9686dc1633cd_ollama_intern_16`
+  - `clm_9686dc1633cd_ollama_intern_17`
+  - `clm_9686dc1633cd_ollama_intern_18`
+  - `clm_9686dc1633cd_ollama_intern_20`
+  - `clm_9686dc1633cd_ollama_intern_21`
+  - `clm_9686dc1633cd_ollama_intern_22`
+  - `clm_9686dc1633cd_ollama_intern_30`
+  - `clm_126e07cf0d68_ollama_intern_9`
+  - `clm_126e07cf0d68_ollama_intern_13`
+  - `clm_126e07cf0d68_ollama_intern_14`
+  - `clm_126e07cf0d68_ollama_intern_15`
+  - `clm_9a532b2b74e5_ollama_intern_15`
+
+### `06-repo-knowledge-integration` — 43 accepted claim(s)
+
+- **Purpose:** How pack artifacts become searchable facts instead of dead markdown.
+- **Status:** gated
+- **Accepted claims:**
+  - `clm_e15c2248a5d8_ollama_intern_3`
+  - `clm_e15c2248a5d8_ollama_intern_10`
+  - `clm_e15c2248a5d8_ollama_intern_37`
+  - `clm_e15c2248a5d8_ollama_intern_52`
+  - `clm_e15c2248a5d8_ollama_intern_55`
+  - `clm_e15c2248a5d8_ollama_intern_58`
+  - `clm_e15c2248a5d8_ollama_intern_103`
+  - `clm_e15c2248a5d8_ollama_intern_105`
+  - `clm_e15c2248a5d8_ollama_intern_113`
+  - `clm_e15c2248a5d8_ollama_intern_124`
+  - `clm_05cae033cedc_ollama_intern_3`
+  - `clm_05cae033cedc_ollama_intern_16`
+  - `clm_05cae033cedc_ollama_intern_17`
+  - `clm_05cae033cedc_ollama_intern_23`
+  - `clm_05cae033cedc_ollama_intern_25`
+  - `clm_05cae033cedc_ollama_intern_27`
+  - `clm_05cae033cedc_ollama_intern_32`
+  - `clm_05cae033cedc_ollama_intern_33`
+  - `clm_05cae033cedc_ollama_intern_35`
+  - `clm_05cae033cedc_ollama_intern_36`
+  - `clm_5d98fdba0757_ollama_intern_4`
+  - `clm_5d98fdba0757_ollama_intern_5`
+  - `clm_5d98fdba0757_ollama_intern_6`
+  - `clm_5d98fdba0757_ollama_intern_7`
+  - `clm_5d98fdba0757_ollama_intern_9`
+  - `clm_91705d06abdf_ollama_intern_4`
+  - `clm_91705d06abdf_ollama_intern_5`
+  - `clm_91705d06abdf_ollama_intern_6`
+  - `clm_91705d06abdf_ollama_intern_7`
+  - `clm_91705d06abdf_ollama_intern_8`
+  - `clm_91705d06abdf_ollama_intern_9`
+  - `clm_91705d06abdf_ollama_intern_10`
+  - `clm_91705d06abdf_ollama_intern_11`
+  - `clm_91705d06abdf_ollama_intern_12`
+  - `clm_91705d06abdf_ollama_intern_14`
+  - `clm_676ddfa834cc_ollama_intern_26`
+  - `clm_676ddfa834cc_ollama_intern_27`
+  - `clm_676ddfa834cc_ollama_intern_29`
+  - `clm_f110ffbdbe7c_ollama_intern_2`
+  - `clm_f110ffbdbe7c_ollama_intern_3`
+  - `clm_ac6052de3047_ollama_intern_3`
+  - `clm_ac6052de3047_ollama_intern_4`
+  - `clm_ac6052de3047_ollama_intern_5`
+
+### `07-cli-and-runtime-flow` — 29 accepted claim(s)
+
+- **Purpose:** Commands, state transitions, status output, failure recovery, and section time budgeting.
+- **Status:** reviewed
+- **Accepted claims:**
+  - `clm_27eaf34f91a3_ollama_intern_1`
+  - `clm_27eaf34f91a3_ollama_intern_4`
+  - `clm_27eaf34f91a3_ollama_intern_6`
+  - `clm_458d9788c68d_ollama_intern_12`
+  - `clm_458d9788c68d_ollama_intern_13`
+  - `clm_458d9788c68d_ollama_intern_19`
+  - `clm_458d9788c68d_ollama_intern_29`
+  - `clm_458d9788c68d_ollama_intern_30`
+  - `clm_458d9788c68d_ollama_intern_32`
+  - `clm_458d9788c68d_ollama_intern_35`
+  - `clm_458d9788c68d_ollama_intern_62`
+  - `clm_458d9788c68d_ollama_intern_75`
+  - `clm_458d9788c68d_ollama_intern_76`
+  - `clm_de50fc93ad72_ollama_intern_1`
+  - `clm_de50fc93ad72_ollama_intern_2`
+  - `clm_de50fc93ad72_ollama_intern_3`
+  - `clm_de50fc93ad72_ollama_intern_4`
+  - `clm_0b75376a48e4_ollama_intern_10`
+  - `clm_0b75376a48e4_ollama_intern_16`
+  - `clm_0b75376a48e4_ollama_intern_19`
+  - `clm_0b75376a48e4_ollama_intern_20`
+  - `clm_0b75376a48e4_ollama_intern_21`
+  - `clm_0b75376a48e4_ollama_intern_26`
+  - `clm_0b75376a48e4_ollama_intern_27`
+  - `clm_0b75376a48e4_ollama_intern_34`
+  - `clm_0b75376a48e4_ollama_intern_46`
+  - `clm_0b75376a48e4_ollama_intern_52`
+  - `clm_65308ebae4e9_ollama_intern_1`
+  - `clm_96d4bf47e20b_ollama_intern_1`
+
+### `08-acceptance-suite` — 15 accepted claim(s)
+
+- **Purpose:** Tests that prove the whole workflow exists and cannot regress into a partial report generator.
+- **Status:** gated
+- **Accepted claims:**
+  - `clm_53ee6a9ec24b_ollama_intern_5`
+  - `clm_53ee6a9ec24b_ollama_intern_6`
+  - `clm_53ee6a9ec24b_ollama_intern_8`
+  - `clm_53ee6a9ec24b_ollama_intern_10`
+  - `clm_53ee6a9ec24b_ollama_intern_12`
+  - `clm_642e49ac2548_ollama_intern_7`
+  - `clm_642e49ac2548_ollama_intern_9`
+  - `clm_642e49ac2548_ollama_intern_11`
+  - `clm_ae13d4956c22_ollama_intern_9`
+  - `clm_eefec92990cb_ollama_intern_19`
+  - `clm_eefec92990cb_ollama_intern_20`
+  - `clm_eefec92990cb_ollama_intern_21`
+  - `clm_eefec92990cb_ollama_intern_22`
+  - `clm_eefec92990cb_ollama_intern_24`
+  - `clm_4b7a4ad94a3b_ollama_intern_1`
+
+## Shared source relationships
+
+- `src_d474bc1158c2` (publisher: en.wikipedia.org, type: secondary)
+  - Used by: `clm_d474bc1158c2_ollama_intern_19`, `clm_d474bc1158c2_ollama_intern_38`, `clm_d474bc1158c2_ollama_intern_58`, `clm_d474bc1158c2_ollama_intern_60`, `clm_d474bc1158c2_ollama_intern_62`
+  - Spans sections: `01-product-thesis`
+- `src_56b5f3cd926b` (publisher: force11.org, type: secondary)
+  - Used by: `clm_56b5f3cd926b_ollama_intern_1`, `clm_56b5f3cd926b_ollama_intern_2`, `clm_56b5f3cd926b_ollama_intern_3`
+  - Spans sections: `01-product-thesis`
+- `src_770d35522c16` (publisher: www.doi.org, type: secondary)
+  - Used by: `clm_770d35522c16_ollama_intern_1`, `clm_770d35522c16_ollama_intern_2`
+  - Spans sections: `01-product-thesis`
+- `src_a2f17fd8c9a6` (publisher: arXiv.org, type: primary)
+  - Used by: `clm_a2f17fd8c9a6_ollama_intern_1`, `clm_a2f17fd8c9a6_ollama_intern_2`, `clm_a2f17fd8c9a6_ollama_intern_6`, `clm_a2f17fd8c9a6_ollama_intern_7`, `clm_a2f17fd8c9a6_ollama_intern_8`, `clm_a2f17fd8c9a6_ollama_intern_9`
+  - Spans sections: `01-product-thesis`
+- `src_cf2238f43a01` (publisher: unknown, type: unknown)
+  - Used by: `clm_cf2238f43a01_ollama_intern_10`, `clm_cf2238f43a01_ollama_intern_105`, `clm_cf2238f43a01_ollama_intern_106`, `clm_cf2238f43a01_ollama_intern_11`, `clm_cf2238f43a01_ollama_intern_110`, `clm_cf2238f43a01_ollama_intern_114`, `clm_cf2238f43a01_ollama_intern_115`, `clm_cf2238f43a01_ollama_intern_118`, `clm_cf2238f43a01_ollama_intern_119`, `clm_cf2238f43a01_ollama_intern_98`
+  - Spans sections: `02-pack-artifact-contract`
+- `src_b1ed6cf92876` (publisher: json-schema.org, type: secondary)
+  - Used by: `clm_b1ed6cf92876_ollama_intern_1`, `clm_b1ed6cf92876_ollama_intern_2`, `clm_b1ed6cf92876_ollama_intern_3`, `clm_b1ed6cf92876_ollama_intern_4`
+  - Spans sections: `02-pack-artifact-contract`
+- `src_62d58636ae35` (publisher: IETF Datatracker, type: secondary)
+  - Used by: `clm_62d58636ae35_ollama_intern_10`, `clm_62d58636ae35_ollama_intern_11`, `clm_62d58636ae35_ollama_intern_13`, `clm_62d58636ae35_ollama_intern_17`, `clm_62d58636ae35_ollama_intern_19`, `clm_62d58636ae35_ollama_intern_23`, `clm_62d58636ae35_ollama_intern_28`, `clm_62d58636ae35_ollama_intern_29`, `clm_62d58636ae35_ollama_intern_8`, `clm_62d58636ae35_ollama_intern_9`
+  - Spans sections: `02-pack-artifact-contract`
+- `src_c1e29cfcaa1e` (publisher: jsonlines.org, type: secondary)
+  - Used by: `clm_c1e29cfcaa1e_ollama_intern_2`, `clm_c1e29cfcaa1e_ollama_intern_3`, `clm_c1e29cfcaa1e_ollama_intern_4`, `clm_c1e29cfcaa1e_ollama_intern_5`, `clm_c1e29cfcaa1e_ollama_intern_6`
+  - Spans sections: `02-pack-artifact-contract`
+- `src_712838e1db63` (publisher: yaml.org, type: secondary)
+  - Used by: `clm_712838e1db63_ollama_intern_104`, `clm_712838e1db63_ollama_intern_122`, `clm_712838e1db63_ollama_intern_128`, `clm_712838e1db63_ollama_intern_141`, `clm_712838e1db63_ollama_intern_147`, `clm_712838e1db63_ollama_intern_16`, `clm_712838e1db63_ollama_intern_17`, `clm_712838e1db63_ollama_intern_20`, `clm_712838e1db63_ollama_intern_64`, `clm_712838e1db63_ollama_intern_82`
+  - Spans sections: `02-pack-artifact-contract`
+- `src_0801e1ee8a70` (publisher: www.w3.org, type: secondary)
+  - Used by: `clm_0801e1ee8a70_ollama_intern_109`, `clm_0801e1ee8a70_ollama_intern_110`, `clm_0801e1ee8a70_ollama_intern_111`, `clm_0801e1ee8a70_ollama_intern_127`, `clm_0801e1ee8a70_ollama_intern_13`, `clm_0801e1ee8a70_ollama_intern_132`, `clm_0801e1ee8a70_ollama_intern_52`, `clm_0801e1ee8a70_ollama_intern_80`, `clm_0801e1ee8a70_ollama_intern_83`, `clm_0801e1ee8a70_ollama_intern_85`
+  - Spans sections: `02-pack-artifact-contract`
+- `src_676ddfa834cc` (publisher: unknown, type: unknown)
+  - Used by: `clm_676ddfa834cc_ollama_intern_1`, `clm_676ddfa834cc_ollama_intern_21`, `clm_676ddfa834cc_ollama_intern_22`, `clm_676ddfa834cc_ollama_intern_23`, `clm_676ddfa834cc_ollama_intern_24`, `clm_676ddfa834cc_ollama_intern_26`, `clm_676ddfa834cc_ollama_intern_27`, `clm_676ddfa834cc_ollama_intern_29`, `clm_676ddfa834cc_ollama_intern_5`
+  - Spans sections: `03-source-and-claim-truth`, `06-repo-knowledge-integration`
+- `src_d39cd3ba0ef2` (publisher: www.w3.org, type: secondary)
+  - Used by: `clm_d39cd3ba0ef2_ollama_intern_5`, `clm_d39cd3ba0ef2_ollama_intern_6`, `clm_d39cd3ba0ef2_ollama_intern_7`
+  - Spans sections: `03-source-and-claim-truth`
+- `src_d81a8a3d6bba` (publisher: en.wikipedia.org, type: secondary)
+  - Used by: `clm_d81a8a3d6bba_ollama_intern_1`, `clm_d81a8a3d6bba_ollama_intern_2`, `clm_d81a8a3d6bba_ollama_intern_3`, `clm_d81a8a3d6bba_ollama_intern_30`, `clm_d81a8a3d6bba_ollama_intern_31`, `clm_d81a8a3d6bba_ollama_intern_35`, `clm_d81a8a3d6bba_ollama_intern_39`, `clm_d81a8a3d6bba_ollama_intern_5`
+  - Spans sections: `03-source-and-claim-truth`
+- `src_bc94816a3373` (publisher: en.wikipedia.org, type: secondary)
+  - Used by: `clm_bc94816a3373_ollama_intern_1`, `clm_bc94816a3373_ollama_intern_19`, `clm_bc94816a3373_ollama_intern_22`, `clm_bc94816a3373_ollama_intern_3`, `clm_bc94816a3373_ollama_intern_7`, `clm_bc94816a3373_ollama_intern_72`, `clm_bc94816a3373_ollama_intern_73`
+  - Spans sections: `03-source-and-claim-truth`
+- `src_155c4be7850d` (publisher: en.wikipedia.org, type: secondary)
+  - Used by: `clm_155c4be7850d_ollama_intern_14`, `clm_155c4be7850d_ollama_intern_15`, `clm_155c4be7850d_ollama_intern_17`, `clm_155c4be7850d_ollama_intern_18`, `clm_155c4be7850d_ollama_intern_42`, `clm_155c4be7850d_ollama_intern_43`, `clm_155c4be7850d_ollama_intern_46`
+  - Spans sections: `03-source-and-claim-truth`
+- `src_caedf4b2d8e0` (publisher: www.w3.org, type: secondary)
+  - Used by: `clm_caedf4b2d8e0_ollama_intern_101`, `clm_caedf4b2d8e0_ollama_intern_103`, `clm_caedf4b2d8e0_ollama_intern_104`, `clm_caedf4b2d8e0_ollama_intern_105`, `clm_caedf4b2d8e0_ollama_intern_127`, `clm_caedf4b2d8e0_ollama_intern_128`, `clm_caedf4b2d8e0_ollama_intern_374`
+  - Spans sections: `03-source-and-claim-truth`
+- `src_a135974ea838` (publisher: arXiv.org, type: primary)
+  - Used by: `clm_a135974ea838_ollama_intern_7`, `clm_a135974ea838_ollama_intern_8`, `clm_a135974ea838_ollama_intern_9`
+  - Spans sections: `03-source-and-claim-truth`
+- `src_fb48d4730a5c` (publisher: en.wikipedia.org, type: secondary)
+  - Used by: `clm_fb48d4730a5c_ollama_intern_1`, `clm_fb48d4730a5c_ollama_intern_11`, `clm_fb48d4730a5c_ollama_intern_12`, `clm_fb48d4730a5c_ollama_intern_13`, `clm_fb48d4730a5c_ollama_intern_3`, `clm_fb48d4730a5c_ollama_intern_6`, `clm_fb48d4730a5c_ollama_intern_7`, `clm_fb48d4730a5c_ollama_intern_8`
+  - Spans sections: `04-gates-and-waivers`
+- `src_d2cd935fb884` (publisher: ieeexplore.ieee.org, type: secondary)
+  - Used by: `clm_d2cd935fb884_ollama_intern_1`, `clm_d2cd935fb884_ollama_intern_2`, `clm_d2cd935fb884_ollama_intern_3`
+  - Spans sections: `04-gates-and-waivers`
+- `src_55f4bfa87f54` (publisher: pmc.ncbi.nlm.nih.gov, type: secondary)
+  - Used by: `clm_55f4bfa87f54_ollama_intern_12`, `clm_55f4bfa87f54_ollama_intern_22`, `clm_55f4bfa87f54_ollama_intern_29`, `clm_55f4bfa87f54_ollama_intern_31`, `clm_55f4bfa87f54_ollama_intern_32`, `clm_55f4bfa87f54_ollama_intern_40`
+  - Spans sections: `04-gates-and-waivers`
+- `src_f0fe25b20f29` (publisher: pmc.ncbi.nlm.nih.gov, type: secondary)
+  - Used by: `clm_f0fe25b20f29_ollama_intern_1`, `clm_f0fe25b20f29_ollama_intern_13`, `clm_f0fe25b20f29_ollama_intern_14`, `clm_f0fe25b20f29_ollama_intern_15`, `clm_f0fe25b20f29_ollama_intern_3`, `clm_f0fe25b20f29_ollama_intern_4`, `clm_f0fe25b20f29_ollama_intern_43`, `clm_f0fe25b20f29_ollama_intern_44`, `clm_f0fe25b20f29_ollama_intern_5`, `clm_f0fe25b20f29_ollama_intern_6`
+  - Spans sections: `04-gates-and-waivers`
+- `src_bbd08b91cbb6` (publisher: pmc.ncbi.nlm.nih.gov, type: secondary)
+  - Used by: `clm_bbd08b91cbb6_ollama_intern_1`, `clm_bbd08b91cbb6_ollama_intern_2`, `clm_bbd08b91cbb6_ollama_intern_3`
+  - Spans sections: `04-gates-and-waivers`
+- `src_9a532b2b74e5` (publisher: code.claude.com, type: primary)
+  - Used by: `clm_9a532b2b74e5_ollama_intern_15`, `clm_9a532b2b74e5_ollama_intern_3`, `clm_9a532b2b74e5_ollama_intern_6`, `clm_9a532b2b74e5_ollama_intern_8`
+  - Spans sections: `05-cowork-handoff`
+- `src_9a7d4217c64c` (publisher: code.claude.com, type: primary)
+  - Used by: `clm_9a7d4217c64c_ollama_intern_1`, `clm_9a7d4217c64c_ollama_intern_14`, `clm_9a7d4217c64c_ollama_intern_15`, `clm_9a7d4217c64c_ollama_intern_16`, `clm_9a7d4217c64c_ollama_intern_29`, `clm_9a7d4217c64c_ollama_intern_3`, `clm_9a7d4217c64c_ollama_intern_30`, `clm_9a7d4217c64c_ollama_intern_31`, `clm_9a7d4217c64c_ollama_intern_35`, `clm_9a7d4217c64c_ollama_intern_40`
+  - Spans sections: `05-cowork-handoff`
+- `src_5be2e21d45c9` (publisher: code.claude.com, type: primary)
+  - Used by: `clm_5be2e21d45c9_ollama_intern_1`, `clm_5be2e21d45c9_ollama_intern_106`, `clm_5be2e21d45c9_ollama_intern_109`, `clm_5be2e21d45c9_ollama_intern_125`, `clm_5be2e21d45c9_ollama_intern_148`, `clm_5be2e21d45c9_ollama_intern_149`, `clm_5be2e21d45c9_ollama_intern_23`, `clm_5be2e21d45c9_ollama_intern_27`, `clm_5be2e21d45c9_ollama_intern_29`, `clm_5be2e21d45c9_ollama_intern_56`
+  - Spans sections: `05-cowork-handoff`
+- `src_96b9a35307c0` (publisher: code.claude.com, type: primary)
+  - Used by: `clm_96b9a35307c0_ollama_intern_1`, `clm_96b9a35307c0_ollama_intern_18`, `clm_96b9a35307c0_ollama_intern_2`, `clm_96b9a35307c0_ollama_intern_21`, `clm_96b9a35307c0_ollama_intern_23`, `clm_96b9a35307c0_ollama_intern_29`, `clm_96b9a35307c0_ollama_intern_32`, `clm_96b9a35307c0_ollama_intern_33`, `clm_96b9a35307c0_ollama_intern_34`, `clm_96b9a35307c0_ollama_intern_5`
+  - Spans sections: `05-cowork-handoff`
+- `src_c8975a95117b` (publisher: code.claude.com, type: primary)
+  - Used by: `clm_c8975a95117b_ollama_intern_1`, `clm_c8975a95117b_ollama_intern_11`, `clm_c8975a95117b_ollama_intern_12`, `clm_c8975a95117b_ollama_intern_13`, `clm_c8975a95117b_ollama_intern_20`, `clm_c8975a95117b_ollama_intern_23`, `clm_c8975a95117b_ollama_intern_28`, `clm_c8975a95117b_ollama_intern_29`, `clm_c8975a95117b_ollama_intern_30`, `clm_c8975a95117b_ollama_intern_55`
+  - Spans sections: `05-cowork-handoff`
+- `src_486f1e6121c8` (publisher: code.claude.com, type: primary)
+  - Used by: `clm_486f1e6121c8_ollama_intern_1`, `clm_486f1e6121c8_ollama_intern_12`, `clm_486f1e6121c8_ollama_intern_13`, `clm_486f1e6121c8_ollama_intern_14`, `clm_486f1e6121c8_ollama_intern_17`, `clm_486f1e6121c8_ollama_intern_29`, `clm_486f1e6121c8_ollama_intern_32`, `clm_486f1e6121c8_ollama_intern_33`, `clm_486f1e6121c8_ollama_intern_36`, `clm_486f1e6121c8_ollama_intern_6`
+  - Spans sections: `05-cowork-handoff`
+- `src_9686dc1633cd` (publisher: code.claude.com, type: primary)
+  - Used by: `clm_9686dc1633cd_ollama_intern_16`, `clm_9686dc1633cd_ollama_intern_17`, `clm_9686dc1633cd_ollama_intern_18`, `clm_9686dc1633cd_ollama_intern_2`, `clm_9686dc1633cd_ollama_intern_20`, `clm_9686dc1633cd_ollama_intern_21`, `clm_9686dc1633cd_ollama_intern_22`, `clm_9686dc1633cd_ollama_intern_3`, `clm_9686dc1633cd_ollama_intern_30`, `clm_9686dc1633cd_ollama_intern_4`
+  - Spans sections: `05-cowork-handoff`
+- `src_126e07cf0d68` (publisher: www.anthropic.com, type: primary)
+  - Used by: `clm_126e07cf0d68_ollama_intern_13`, `clm_126e07cf0d68_ollama_intern_14`, `clm_126e07cf0d68_ollama_intern_15`, `clm_126e07cf0d68_ollama_intern_9`
+  - Spans sections: `05-cowork-handoff`
+- `src_e15c2248a5d8` (publisher: sqlite.org, type: secondary)
+  - Used by: `clm_e15c2248a5d8_ollama_intern_10`, `clm_e15c2248a5d8_ollama_intern_103`, `clm_e15c2248a5d8_ollama_intern_105`, `clm_e15c2248a5d8_ollama_intern_113`, `clm_e15c2248a5d8_ollama_intern_124`, `clm_e15c2248a5d8_ollama_intern_3`, `clm_e15c2248a5d8_ollama_intern_37`, `clm_e15c2248a5d8_ollama_intern_52`, `clm_e15c2248a5d8_ollama_intern_55`, `clm_e15c2248a5d8_ollama_intern_58`
+  - Spans sections: `06-repo-knowledge-integration`
+- `src_05cae033cedc` (publisher: sqlite.org, type: secondary)
+  - Used by: `clm_05cae033cedc_ollama_intern_16`, `clm_05cae033cedc_ollama_intern_17`, `clm_05cae033cedc_ollama_intern_23`, `clm_05cae033cedc_ollama_intern_25`, `clm_05cae033cedc_ollama_intern_27`, `clm_05cae033cedc_ollama_intern_3`, `clm_05cae033cedc_ollama_intern_32`, `clm_05cae033cedc_ollama_intern_33`, `clm_05cae033cedc_ollama_intern_35`, `clm_05cae033cedc_ollama_intern_36`
+  - Spans sections: `06-repo-knowledge-integration`
+- `src_5d98fdba0757` (publisher: unknown, type: unknown)
+  - Used by: `clm_5d98fdba0757_ollama_intern_4`, `clm_5d98fdba0757_ollama_intern_5`, `clm_5d98fdba0757_ollama_intern_6`, `clm_5d98fdba0757_ollama_intern_7`, `clm_5d98fdba0757_ollama_intern_9`
+  - Spans sections: `06-repo-knowledge-integration`
+- `src_91705d06abdf` (publisher: unknown, type: unknown)
+  - Used by: `clm_91705d06abdf_ollama_intern_10`, `clm_91705d06abdf_ollama_intern_11`, `clm_91705d06abdf_ollama_intern_12`, `clm_91705d06abdf_ollama_intern_14`, `clm_91705d06abdf_ollama_intern_4`, `clm_91705d06abdf_ollama_intern_5`, `clm_91705d06abdf_ollama_intern_6`, `clm_91705d06abdf_ollama_intern_7`, `clm_91705d06abdf_ollama_intern_8`, `clm_91705d06abdf_ollama_intern_9`
+  - Spans sections: `06-repo-knowledge-integration`
+- `src_f110ffbdbe7c` (publisher: unknown, type: unknown)
+  - Used by: `clm_f110ffbdbe7c_ollama_intern_2`, `clm_f110ffbdbe7c_ollama_intern_3`
+  - Spans sections: `06-repo-knowledge-integration`
+- `src_ac6052de3047` (publisher: unknown, type: unknown)
+  - Used by: `clm_ac6052de3047_ollama_intern_3`, `clm_ac6052de3047_ollama_intern_4`, `clm_ac6052de3047_ollama_intern_5`
+  - Spans sections: `06-repo-knowledge-integration`
+- `src_27eaf34f91a3` (publisher: sourceware.org, type: secondary)
+  - Used by: `clm_27eaf34f91a3_ollama_intern_1`, `clm_27eaf34f91a3_ollama_intern_4`, `clm_27eaf34f91a3_ollama_intern_6`
+  - Spans sections: `07-cli-and-runtime-flow`
+- `src_458d9788c68d` (publisher: clig.dev, type: secondary)
+  - Used by: `clm_458d9788c68d_ollama_intern_12`, `clm_458d9788c68d_ollama_intern_13`, `clm_458d9788c68d_ollama_intern_19`, `clm_458d9788c68d_ollama_intern_29`, `clm_458d9788c68d_ollama_intern_30`, `clm_458d9788c68d_ollama_intern_32`, `clm_458d9788c68d_ollama_intern_35`, `clm_458d9788c68d_ollama_intern_62`, `clm_458d9788c68d_ollama_intern_75`, `clm_458d9788c68d_ollama_intern_76`
+  - Spans sections: `07-cli-and-runtime-flow`
+- `src_de50fc93ad72` (publisher: 12factor.net, type: secondary)
+  - Used by: `clm_de50fc93ad72_ollama_intern_1`, `clm_de50fc93ad72_ollama_intern_2`, `clm_de50fc93ad72_ollama_intern_3`, `clm_de50fc93ad72_ollama_intern_4`
+  - Spans sections: `07-cli-and-runtime-flow`
+- `src_0b75376a48e4` (publisher: GitHub, type: secondary)
+  - Used by: `clm_0b75376a48e4_ollama_intern_10`, `clm_0b75376a48e4_ollama_intern_16`, `clm_0b75376a48e4_ollama_intern_19`, `clm_0b75376a48e4_ollama_intern_20`, `clm_0b75376a48e4_ollama_intern_21`, `clm_0b75376a48e4_ollama_intern_26`, `clm_0b75376a48e4_ollama_intern_27`, `clm_0b75376a48e4_ollama_intern_34`, `clm_0b75376a48e4_ollama_intern_46`, `clm_0b75376a48e4_ollama_intern_52`
+  - Spans sections: `07-cli-and-runtime-flow`
+- `src_53ee6a9ec24b` (publisher: Guru99, type: secondary)
+  - Used by: `clm_53ee6a9ec24b_ollama_intern_10`, `clm_53ee6a9ec24b_ollama_intern_12`, `clm_53ee6a9ec24b_ollama_intern_5`, `clm_53ee6a9ec24b_ollama_intern_6`, `clm_53ee6a9ec24b_ollama_intern_8`
+  - Spans sections: `08-acceptance-suite`
+- `src_642e49ac2548` (publisher: cucumber.io, type: secondary)
+  - Used by: `clm_642e49ac2548_ollama_intern_11`, `clm_642e49ac2548_ollama_intern_7`, `clm_642e49ac2548_ollama_intern_9`
+  - Spans sections: `08-acceptance-suite`
+- `src_eefec92990cb` (publisher: Agile Alliance | Promoting a more effective, humane, and sustainable way of working, type: secondary)
+  - Used by: `clm_eefec92990cb_ollama_intern_19`, `clm_eefec92990cb_ollama_intern_20`, `clm_eefec92990cb_ollama_intern_21`, `clm_eefec92990cb_ollama_intern_22`, `clm_eefec92990cb_ollama_intern_24`
+  - Spans sections: `08-acceptance-suite`
+
+## Claim clusters (shared sources within an accepted set)
+
+### Cluster `cls_6f1ce0a27e57`
+
+- **Members:** `clm_d474bc1158c2_ollama_intern_19`, `clm_d474bc1158c2_ollama_intern_38`, `clm_d474bc1158c2_ollama_intern_58`, `clm_d474bc1158c2_ollama_intern_60`, `clm_d474bc1158c2_ollama_intern_62`
+- **Spans sections:** `01-product-thesis`
+- **Shared source IDs:** `src_d474bc1158c2`
+
+### Cluster `cls_6eaae090489f`
+
+- **Members:** `clm_56b5f3cd926b_ollama_intern_1`, `clm_56b5f3cd926b_ollama_intern_2`, `clm_56b5f3cd926b_ollama_intern_3`
+- **Spans sections:** `01-product-thesis`
+- **Shared source IDs:** `src_56b5f3cd926b`
+
+### Cluster `cls_5ab8ad6d83f5`
+
+- **Members:** `clm_d574302fe3de_ollama_intern_4`
+- **Spans sections:** `01-product-thesis`
+- **Shared source IDs:** (singleton)
+
+### Cluster `cls_8fd45feeae21`
+
+- **Members:** `clm_770d35522c16_ollama_intern_1`, `clm_770d35522c16_ollama_intern_2`
+- **Spans sections:** `01-product-thesis`
+- **Shared source IDs:** `src_770d35522c16`
+
+### Cluster `cls_528a0d355229`
+
+- **Members:** `clm_98d43428beed_ollama_intern_3`
+- **Spans sections:** `01-product-thesis`
+- **Shared source IDs:** (singleton)
+
+### Cluster `cls_ba27d44eab6f`
+
+- **Members:** `clm_a2f17fd8c9a6_ollama_intern_1`, `clm_a2f17fd8c9a6_ollama_intern_2`, `clm_a2f17fd8c9a6_ollama_intern_6`, `clm_a2f17fd8c9a6_ollama_intern_7`, `clm_a2f17fd8c9a6_ollama_intern_8`, `clm_a2f17fd8c9a6_ollama_intern_9`
+- **Spans sections:** `01-product-thesis`
+- **Shared source IDs:** `src_a2f17fd8c9a6`
+
+### Cluster `cls_c28636c2181a`
+
+- **Members:** `clm_923564b918e1_ollama_intern_3`
+- **Spans sections:** `01-product-thesis`
+- **Shared source IDs:** (singleton)
+
+### Cluster `cls_01cb1852b3a4`
+
+- **Members:** `clm_cf2238f43a01_ollama_intern_10`, `clm_cf2238f43a01_ollama_intern_105`, `clm_cf2238f43a01_ollama_intern_106`, `clm_cf2238f43a01_ollama_intern_11`, `clm_cf2238f43a01_ollama_intern_110`, `clm_cf2238f43a01_ollama_intern_114`, `clm_cf2238f43a01_ollama_intern_115`, `clm_cf2238f43a01_ollama_intern_118`, `clm_cf2238f43a01_ollama_intern_119`, `clm_cf2238f43a01_ollama_intern_98`
+- **Spans sections:** `02-pack-artifact-contract`
+- **Shared source IDs:** `src_cf2238f43a01`
+
+### Cluster `cls_542ac0a7e91f`
+
+- **Members:** `clm_2cc80fcf07ba_ollama_intern_4`
+- **Spans sections:** `02-pack-artifact-contract`
+- **Shared source IDs:** (singleton)
+
+### Cluster `cls_ff61ae0015d6`
+
+- **Members:** `clm_b1ed6cf92876_ollama_intern_1`, `clm_b1ed6cf92876_ollama_intern_2`, `clm_b1ed6cf92876_ollama_intern_3`, `clm_b1ed6cf92876_ollama_intern_4`
+- **Spans sections:** `02-pack-artifact-contract`
+- **Shared source IDs:** `src_b1ed6cf92876`
+
+### Cluster `cls_40e52658e965`
+
+- **Members:** `clm_62d58636ae35_ollama_intern_10`, `clm_62d58636ae35_ollama_intern_11`, `clm_62d58636ae35_ollama_intern_13`, `clm_62d58636ae35_ollama_intern_17`, `clm_62d58636ae35_ollama_intern_19`, `clm_62d58636ae35_ollama_intern_23`, `clm_62d58636ae35_ollama_intern_28`, `clm_62d58636ae35_ollama_intern_29`, `clm_62d58636ae35_ollama_intern_8`, `clm_62d58636ae35_ollama_intern_9`
+- **Spans sections:** `02-pack-artifact-contract`
+- **Shared source IDs:** `src_62d58636ae35`
+
+### Cluster `cls_99cb2841668c`
+
+- **Members:** `clm_c1e29cfcaa1e_ollama_intern_2`, `clm_c1e29cfcaa1e_ollama_intern_3`, `clm_c1e29cfcaa1e_ollama_intern_4`, `clm_c1e29cfcaa1e_ollama_intern_5`, `clm_c1e29cfcaa1e_ollama_intern_6`
+- **Spans sections:** `02-pack-artifact-contract`
+- **Shared source IDs:** `src_c1e29cfcaa1e`
+
+### Cluster `cls_a342d08eafe3`
+
+- **Members:** `clm_712838e1db63_ollama_intern_104`, `clm_712838e1db63_ollama_intern_122`, `clm_712838e1db63_ollama_intern_128`, `clm_712838e1db63_ollama_intern_141`, `clm_712838e1db63_ollama_intern_147`, `clm_712838e1db63_ollama_intern_16`, `clm_712838e1db63_ollama_intern_17`, `clm_712838e1db63_ollama_intern_20`, `clm_712838e1db63_ollama_intern_64`, `clm_712838e1db63_ollama_intern_82`
+- **Spans sections:** `02-pack-artifact-contract`
+- **Shared source IDs:** `src_712838e1db63`
+
+### Cluster `cls_ec3293e38a53`
+
+- **Members:** `clm_0801e1ee8a70_ollama_intern_109`, `clm_0801e1ee8a70_ollama_intern_110`, `clm_0801e1ee8a70_ollama_intern_111`, `clm_0801e1ee8a70_ollama_intern_127`, `clm_0801e1ee8a70_ollama_intern_13`, `clm_0801e1ee8a70_ollama_intern_132`, `clm_0801e1ee8a70_ollama_intern_52`, `clm_0801e1ee8a70_ollama_intern_80`, `clm_0801e1ee8a70_ollama_intern_83`, `clm_0801e1ee8a70_ollama_intern_85`
+- **Spans sections:** `02-pack-artifact-contract`
+- **Shared source IDs:** `src_0801e1ee8a70`
+
+### Cluster `cls_d7170c650869`
+
+- **Members:** `clm_676ddfa834cc_ollama_intern_1`, `clm_676ddfa834cc_ollama_intern_1`, `clm_676ddfa834cc_ollama_intern_21`, `clm_676ddfa834cc_ollama_intern_21`, `clm_676ddfa834cc_ollama_intern_22`, `clm_676ddfa834cc_ollama_intern_22`, `clm_676ddfa834cc_ollama_intern_23`, `clm_676ddfa834cc_ollama_intern_23`, `clm_676ddfa834cc_ollama_intern_24`, `clm_676ddfa834cc_ollama_intern_24`, `clm_676ddfa834cc_ollama_intern_26`, `clm_676ddfa834cc_ollama_intern_26`, `clm_676ddfa834cc_ollama_intern_27`, `clm_676ddfa834cc_ollama_intern_29`, `clm_676ddfa834cc_ollama_intern_5`, `clm_676ddfa834cc_ollama_intern_5`
+- **Spans sections:** `03-source-and-claim-truth`, `06-repo-knowledge-integration`
+- **Shared source IDs:** `src_676ddfa834cc`
+
+### Cluster `cls_424198370a43`
+
+- **Members:** `clm_d39cd3ba0ef2_ollama_intern_5`, `clm_d39cd3ba0ef2_ollama_intern_6`, `clm_d39cd3ba0ef2_ollama_intern_7`
+- **Spans sections:** `03-source-and-claim-truth`
+- **Shared source IDs:** `src_d39cd3ba0ef2`
+
+### Cluster `cls_12cf1b4bcf01`
+
+- **Members:** `clm_d81a8a3d6bba_ollama_intern_1`, `clm_d81a8a3d6bba_ollama_intern_2`, `clm_d81a8a3d6bba_ollama_intern_3`, `clm_d81a8a3d6bba_ollama_intern_30`, `clm_d81a8a3d6bba_ollama_intern_31`, `clm_d81a8a3d6bba_ollama_intern_35`, `clm_d81a8a3d6bba_ollama_intern_39`, `clm_d81a8a3d6bba_ollama_intern_5`
+- **Spans sections:** `03-source-and-claim-truth`
+- **Shared source IDs:** `src_d81a8a3d6bba`
+
+### Cluster `cls_dd31953f021d`
+
+- **Members:** `clm_bc94816a3373_ollama_intern_1`, `clm_bc94816a3373_ollama_intern_19`, `clm_bc94816a3373_ollama_intern_22`, `clm_bc94816a3373_ollama_intern_3`, `clm_bc94816a3373_ollama_intern_7`, `clm_bc94816a3373_ollama_intern_72`, `clm_bc94816a3373_ollama_intern_73`
+- **Spans sections:** `03-source-and-claim-truth`
+- **Shared source IDs:** `src_bc94816a3373`
+
+### Cluster `cls_35dcf5dbe858`
+
+- **Members:** `clm_155c4be7850d_ollama_intern_14`, `clm_155c4be7850d_ollama_intern_15`, `clm_155c4be7850d_ollama_intern_17`, `clm_155c4be7850d_ollama_intern_18`, `clm_155c4be7850d_ollama_intern_42`, `clm_155c4be7850d_ollama_intern_43`, `clm_155c4be7850d_ollama_intern_46`
+- **Spans sections:** `03-source-and-claim-truth`
+- **Shared source IDs:** `src_155c4be7850d`
+
+### Cluster `cls_c39ee1351bf9`
+
+- **Members:** `clm_caedf4b2d8e0_ollama_intern_101`, `clm_caedf4b2d8e0_ollama_intern_103`, `clm_caedf4b2d8e0_ollama_intern_104`, `clm_caedf4b2d8e0_ollama_intern_105`, `clm_caedf4b2d8e0_ollama_intern_127`, `clm_caedf4b2d8e0_ollama_intern_128`, `clm_caedf4b2d8e0_ollama_intern_374`
+- **Spans sections:** `03-source-and-claim-truth`
+- **Shared source IDs:** `src_caedf4b2d8e0`
+
+### Cluster `cls_81db31f5f290`
+
+- **Members:** `clm_a135974ea838_ollama_intern_7`, `clm_a135974ea838_ollama_intern_8`, `clm_a135974ea838_ollama_intern_9`
+- **Spans sections:** `03-source-and-claim-truth`
+- **Shared source IDs:** `src_a135974ea838`
+
+### Cluster `cls_c04d29713207`
+
+- **Members:** `clm_fb48d4730a5c_ollama_intern_1`, `clm_fb48d4730a5c_ollama_intern_11`, `clm_fb48d4730a5c_ollama_intern_12`, `clm_fb48d4730a5c_ollama_intern_13`, `clm_fb48d4730a5c_ollama_intern_3`, `clm_fb48d4730a5c_ollama_intern_6`, `clm_fb48d4730a5c_ollama_intern_7`, `clm_fb48d4730a5c_ollama_intern_8`
+- **Spans sections:** `04-gates-and-waivers`
+- **Shared source IDs:** `src_fb48d4730a5c`
+
+### Cluster `cls_f7cb37a17151`
+
+- **Members:** `clm_d2cd935fb884_ollama_intern_1`, `clm_d2cd935fb884_ollama_intern_2`, `clm_d2cd935fb884_ollama_intern_3`
+- **Spans sections:** `04-gates-and-waivers`
+- **Shared source IDs:** `src_d2cd935fb884`
+
+### Cluster `cls_eba6007d40f7`
+
+- **Members:** `clm_55f4bfa87f54_ollama_intern_12`, `clm_55f4bfa87f54_ollama_intern_22`, `clm_55f4bfa87f54_ollama_intern_29`, `clm_55f4bfa87f54_ollama_intern_31`, `clm_55f4bfa87f54_ollama_intern_32`, `clm_55f4bfa87f54_ollama_intern_40`
+- **Spans sections:** `04-gates-and-waivers`
+- **Shared source IDs:** `src_55f4bfa87f54`
+
+### Cluster `cls_5adf988c61d5`
+
+- **Members:** `clm_f0fe25b20f29_ollama_intern_1`, `clm_f0fe25b20f29_ollama_intern_13`, `clm_f0fe25b20f29_ollama_intern_14`, `clm_f0fe25b20f29_ollama_intern_15`, `clm_f0fe25b20f29_ollama_intern_3`, `clm_f0fe25b20f29_ollama_intern_4`, `clm_f0fe25b20f29_ollama_intern_43`, `clm_f0fe25b20f29_ollama_intern_44`, `clm_f0fe25b20f29_ollama_intern_5`, `clm_f0fe25b20f29_ollama_intern_6`
+- **Spans sections:** `04-gates-and-waivers`
+- **Shared source IDs:** `src_f0fe25b20f29`
+
+### Cluster `cls_ba734d14d10f`
+
+- **Members:** `clm_bbd08b91cbb6_ollama_intern_1`, `clm_bbd08b91cbb6_ollama_intern_2`, `clm_bbd08b91cbb6_ollama_intern_3`
+- **Spans sections:** `04-gates-and-waivers`
+- **Shared source IDs:** `src_bbd08b91cbb6`
+
+### Cluster `cls_95bf24ce9fbc`
+
+- **Members:** `clm_9a532b2b74e5_ollama_intern_15`, `clm_9a532b2b74e5_ollama_intern_3`, `clm_9a532b2b74e5_ollama_intern_6`, `clm_9a532b2b74e5_ollama_intern_8`
+- **Spans sections:** `05-cowork-handoff`
+- **Shared source IDs:** `src_9a532b2b74e5`
+
+### Cluster `cls_a5937caa9de1`
+
+- **Members:** `clm_9a7d4217c64c_ollama_intern_1`, `clm_9a7d4217c64c_ollama_intern_14`, `clm_9a7d4217c64c_ollama_intern_15`, `clm_9a7d4217c64c_ollama_intern_16`, `clm_9a7d4217c64c_ollama_intern_29`, `clm_9a7d4217c64c_ollama_intern_3`, `clm_9a7d4217c64c_ollama_intern_30`, `clm_9a7d4217c64c_ollama_intern_31`, `clm_9a7d4217c64c_ollama_intern_35`, `clm_9a7d4217c64c_ollama_intern_40`
+- **Spans sections:** `05-cowork-handoff`
+- **Shared source IDs:** `src_9a7d4217c64c`
+
+### Cluster `cls_e64cba242424`
+
+- **Members:** `clm_5be2e21d45c9_ollama_intern_1`, `clm_5be2e21d45c9_ollama_intern_106`, `clm_5be2e21d45c9_ollama_intern_109`, `clm_5be2e21d45c9_ollama_intern_125`, `clm_5be2e21d45c9_ollama_intern_148`, `clm_5be2e21d45c9_ollama_intern_149`, `clm_5be2e21d45c9_ollama_intern_23`, `clm_5be2e21d45c9_ollama_intern_27`, `clm_5be2e21d45c9_ollama_intern_29`, `clm_5be2e21d45c9_ollama_intern_56`
+- **Spans sections:** `05-cowork-handoff`
+- **Shared source IDs:** `src_5be2e21d45c9`
+
+### Cluster `cls_967e9a06d8be`
+
+- **Members:** `clm_96b9a35307c0_ollama_intern_1`, `clm_96b9a35307c0_ollama_intern_18`, `clm_96b9a35307c0_ollama_intern_2`, `clm_96b9a35307c0_ollama_intern_21`, `clm_96b9a35307c0_ollama_intern_23`, `clm_96b9a35307c0_ollama_intern_29`, `clm_96b9a35307c0_ollama_intern_32`, `clm_96b9a35307c0_ollama_intern_33`, `clm_96b9a35307c0_ollama_intern_34`, `clm_96b9a35307c0_ollama_intern_5`
+- **Spans sections:** `05-cowork-handoff`
+- **Shared source IDs:** `src_96b9a35307c0`
+
+### Cluster `cls_c75ab1aba35e`
+
+- **Members:** `clm_c8975a95117b_ollama_intern_1`, `clm_c8975a95117b_ollama_intern_11`, `clm_c8975a95117b_ollama_intern_12`, `clm_c8975a95117b_ollama_intern_13`, `clm_c8975a95117b_ollama_intern_20`, `clm_c8975a95117b_ollama_intern_23`, `clm_c8975a95117b_ollama_intern_28`, `clm_c8975a95117b_ollama_intern_29`, `clm_c8975a95117b_ollama_intern_30`, `clm_c8975a95117b_ollama_intern_55`
+- **Spans sections:** `05-cowork-handoff`
+- **Shared source IDs:** `src_c8975a95117b`
+
+### Cluster `cls_65a54ab3d89a`
+
+- **Members:** `clm_486f1e6121c8_ollama_intern_1`, `clm_486f1e6121c8_ollama_intern_12`, `clm_486f1e6121c8_ollama_intern_13`, `clm_486f1e6121c8_ollama_intern_14`, `clm_486f1e6121c8_ollama_intern_17`, `clm_486f1e6121c8_ollama_intern_29`, `clm_486f1e6121c8_ollama_intern_32`, `clm_486f1e6121c8_ollama_intern_33`, `clm_486f1e6121c8_ollama_intern_36`, `clm_486f1e6121c8_ollama_intern_6`
+- **Spans sections:** `05-cowork-handoff`
+- **Shared source IDs:** `src_486f1e6121c8`
+
+### Cluster `cls_1871e42c2f7a`
+
+- **Members:** `clm_9686dc1633cd_ollama_intern_16`, `clm_9686dc1633cd_ollama_intern_17`, `clm_9686dc1633cd_ollama_intern_18`, `clm_9686dc1633cd_ollama_intern_2`, `clm_9686dc1633cd_ollama_intern_20`, `clm_9686dc1633cd_ollama_intern_21`, `clm_9686dc1633cd_ollama_intern_22`, `clm_9686dc1633cd_ollama_intern_3`, `clm_9686dc1633cd_ollama_intern_30`, `clm_9686dc1633cd_ollama_intern_4`
+- **Spans sections:** `05-cowork-handoff`
+- **Shared source IDs:** `src_9686dc1633cd`
+
+### Cluster `cls_678964b757fd`
+
+- **Members:** `clm_126e07cf0d68_ollama_intern_13`, `clm_126e07cf0d68_ollama_intern_14`, `clm_126e07cf0d68_ollama_intern_15`, `clm_126e07cf0d68_ollama_intern_9`
+- **Spans sections:** `05-cowork-handoff`
+- **Shared source IDs:** `src_126e07cf0d68`
+
+### Cluster `cls_e93b111b92bb`
+
+- **Members:** `clm_e15c2248a5d8_ollama_intern_10`, `clm_e15c2248a5d8_ollama_intern_103`, `clm_e15c2248a5d8_ollama_intern_105`, `clm_e15c2248a5d8_ollama_intern_113`, `clm_e15c2248a5d8_ollama_intern_124`, `clm_e15c2248a5d8_ollama_intern_3`, `clm_e15c2248a5d8_ollama_intern_37`, `clm_e15c2248a5d8_ollama_intern_52`, `clm_e15c2248a5d8_ollama_intern_55`, `clm_e15c2248a5d8_ollama_intern_58`
+- **Spans sections:** `06-repo-knowledge-integration`
+- **Shared source IDs:** `src_e15c2248a5d8`
+
+### Cluster `cls_13ebe1caf0e0`
+
+- **Members:** `clm_05cae033cedc_ollama_intern_16`, `clm_05cae033cedc_ollama_intern_17`, `clm_05cae033cedc_ollama_intern_23`, `clm_05cae033cedc_ollama_intern_25`, `clm_05cae033cedc_ollama_intern_27`, `clm_05cae033cedc_ollama_intern_3`, `clm_05cae033cedc_ollama_intern_32`, `clm_05cae033cedc_ollama_intern_33`, `clm_05cae033cedc_ollama_intern_35`, `clm_05cae033cedc_ollama_intern_36`
+- **Spans sections:** `06-repo-knowledge-integration`
+- **Shared source IDs:** `src_05cae033cedc`
+
+### Cluster `cls_3e84772d7ef9`
+
+- **Members:** `clm_5d98fdba0757_ollama_intern_4`, `clm_5d98fdba0757_ollama_intern_5`, `clm_5d98fdba0757_ollama_intern_6`, `clm_5d98fdba0757_ollama_intern_7`, `clm_5d98fdba0757_ollama_intern_9`
+- **Spans sections:** `06-repo-knowledge-integration`
+- **Shared source IDs:** `src_5d98fdba0757`
+
+### Cluster `cls_5f85aee293a6`
+
+- **Members:** `clm_91705d06abdf_ollama_intern_10`, `clm_91705d06abdf_ollama_intern_11`, `clm_91705d06abdf_ollama_intern_12`, `clm_91705d06abdf_ollama_intern_14`, `clm_91705d06abdf_ollama_intern_4`, `clm_91705d06abdf_ollama_intern_5`, `clm_91705d06abdf_ollama_intern_6`, `clm_91705d06abdf_ollama_intern_7`, `clm_91705d06abdf_ollama_intern_8`, `clm_91705d06abdf_ollama_intern_9`
+- **Spans sections:** `06-repo-knowledge-integration`
+- **Shared source IDs:** `src_91705d06abdf`
+
+### Cluster `cls_297913f5724c`
+
+- **Members:** `clm_f110ffbdbe7c_ollama_intern_2`, `clm_f110ffbdbe7c_ollama_intern_3`
+- **Spans sections:** `06-repo-knowledge-integration`
+- **Shared source IDs:** `src_f110ffbdbe7c`
+
+### Cluster `cls_7ac85319f392`
+
+- **Members:** `clm_ac6052de3047_ollama_intern_3`, `clm_ac6052de3047_ollama_intern_4`, `clm_ac6052de3047_ollama_intern_5`
+- **Spans sections:** `06-repo-knowledge-integration`
+- **Shared source IDs:** `src_ac6052de3047`
+
+### Cluster `cls_e11e9b5c6331`
+
+- **Members:** `clm_27eaf34f91a3_ollama_intern_1`, `clm_27eaf34f91a3_ollama_intern_4`, `clm_27eaf34f91a3_ollama_intern_6`
+- **Spans sections:** `07-cli-and-runtime-flow`
+- **Shared source IDs:** `src_27eaf34f91a3`
+
+### Cluster `cls_1f312b1b3e09`
+
+- **Members:** `clm_458d9788c68d_ollama_intern_12`, `clm_458d9788c68d_ollama_intern_13`, `clm_458d9788c68d_ollama_intern_19`, `clm_458d9788c68d_ollama_intern_29`, `clm_458d9788c68d_ollama_intern_30`, `clm_458d9788c68d_ollama_intern_32`, `clm_458d9788c68d_ollama_intern_35`, `clm_458d9788c68d_ollama_intern_62`, `clm_458d9788c68d_ollama_intern_75`, `clm_458d9788c68d_ollama_intern_76`
+- **Spans sections:** `07-cli-and-runtime-flow`
+- **Shared source IDs:** `src_458d9788c68d`
+
+### Cluster `cls_d71f795b4a9f`
+
+- **Members:** `clm_de50fc93ad72_ollama_intern_1`, `clm_de50fc93ad72_ollama_intern_2`, `clm_de50fc93ad72_ollama_intern_3`, `clm_de50fc93ad72_ollama_intern_4`
+- **Spans sections:** `07-cli-and-runtime-flow`
+- **Shared source IDs:** `src_de50fc93ad72`
+
+### Cluster `cls_3841d303e0cd`
+
+- **Members:** `clm_0b75376a48e4_ollama_intern_10`, `clm_0b75376a48e4_ollama_intern_16`, `clm_0b75376a48e4_ollama_intern_19`, `clm_0b75376a48e4_ollama_intern_20`, `clm_0b75376a48e4_ollama_intern_21`, `clm_0b75376a48e4_ollama_intern_26`, `clm_0b75376a48e4_ollama_intern_27`, `clm_0b75376a48e4_ollama_intern_34`, `clm_0b75376a48e4_ollama_intern_46`, `clm_0b75376a48e4_ollama_intern_52`
+- **Spans sections:** `07-cli-and-runtime-flow`
+- **Shared source IDs:** `src_0b75376a48e4`
+
+### Cluster `cls_0290214fd849`
+
+- **Members:** `clm_65308ebae4e9_ollama_intern_1`
+- **Spans sections:** `07-cli-and-runtime-flow`
+- **Shared source IDs:** (singleton)
+
+### Cluster `cls_9e892e8a4ecd`
+
+- **Members:** `clm_96d4bf47e20b_ollama_intern_1`
+- **Spans sections:** `07-cli-and-runtime-flow`
+- **Shared source IDs:** (singleton)
+
+### Cluster `cls_5ffc983d0450`
+
+- **Members:** `clm_53ee6a9ec24b_ollama_intern_10`, `clm_53ee6a9ec24b_ollama_intern_12`, `clm_53ee6a9ec24b_ollama_intern_5`, `clm_53ee6a9ec24b_ollama_intern_6`, `clm_53ee6a9ec24b_ollama_intern_8`
+- **Spans sections:** `08-acceptance-suite`
+- **Shared source IDs:** `src_53ee6a9ec24b`
+
+### Cluster `cls_1a7dbfbe6d41`
+
+- **Members:** `clm_642e49ac2548_ollama_intern_11`, `clm_642e49ac2548_ollama_intern_7`, `clm_642e49ac2548_ollama_intern_9`
+- **Spans sections:** `08-acceptance-suite`
+- **Shared source IDs:** `src_642e49ac2548`
+
+### Cluster `cls_b3de54fe5f85`
+
+- **Members:** `clm_ae13d4956c22_ollama_intern_9`
+- **Spans sections:** `08-acceptance-suite`
+- **Shared source IDs:** (singleton)
+
+### Cluster `cls_bb2e5cc14511`
+
+- **Members:** `clm_eefec92990cb_ollama_intern_19`, `clm_eefec92990cb_ollama_intern_20`, `clm_eefec92990cb_ollama_intern_21`, `clm_eefec92990cb_ollama_intern_22`, `clm_eefec92990cb_ollama_intern_24`
+- **Spans sections:** `08-acceptance-suite`
+- **Shared source IDs:** `src_eefec92990cb`
+
+### Cluster `cls_828e0d67c74d`
+
+- **Members:** `clm_4b7a4ad94a3b_ollama_intern_1`
+- **Spans sections:** `08-acceptance-suite`
+- **Shared source IDs:** (singleton)
+
+## Scope overlap warnings
+
+- `clm_d474bc1158c2_ollama_intern_58` ↔ `clm_d474bc1158c2_ollama_intern_60` (jaccard 0.3, in-section)
+  - Scope A: The field of scientific research, particularly regarding openness and transparency.
+  - Scope B: The current state of scientific research regarding reproducibility.
+  - Warning: In-section scope overlap (jaccard=0.30). Synthesis must keep each claim's scope tag intact.
+- `clm_d474bc1158c2_ollama_intern_62` ↔ `clm_676ddfa834cc_ollama_intern_5` (jaccard 0.3333, cross-section)
+  - Scope A: The fields of ecology and evolution within scientific research.
+  - Scope B: Scientific research domain, with a focus on specific fields.
+  - Warning: Cross-section scope overlap (jaccard=0.33). Synthesis must not silently merge these claims; cite each separately and note their scope.
+- `clm_a2f17fd8c9a6_ollama_intern_1` ↔ `clm_a2f17fd8c9a6_ollama_intern_2` (jaccard 1, in-section)
+  - Scope A: The Galaxy
+  - Scope B: The Galaxy
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_a2f17fd8c9a6_ollama_intern_8` ↔ `clm_a2f17fd8c9a6_ollama_intern_9` (jaccard 0.3333, in-section)
+  - Scope A: Based on observations and studies about HR Car.
+  - Scope B: According to the observations and studies mentioned.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_cf2238f43a01_ollama_intern_10` ↔ `clm_cf2238f43a01_ollama_intern_11` (jaccard 1, in-section)
+  - Scope A: IANA Media Types Registry
+  - Scope B: IANA Media Types Registry
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_cf2238f43a01_ollama_intern_10` ↔ `clm_cf2238f43a01_ollama_intern_98` (jaccard 1, in-section)
+  - Scope A: IANA Media Types Registry
+  - Scope B: IANA Media Types registry
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_cf2238f43a01_ollama_intern_10` ↔ `clm_cf2238f43a01_ollama_intern_119` (jaccard 1, in-section)
+  - Scope A: IANA Media Types Registry
+  - Scope B: IANA Registry of Media Types
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_cf2238f43a01_ollama_intern_11` ↔ `clm_cf2238f43a01_ollama_intern_98` (jaccard 1, in-section)
+  - Scope A: IANA Media Types Registry
+  - Scope B: IANA Media Types registry
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_cf2238f43a01_ollama_intern_11` ↔ `clm_cf2238f43a01_ollama_intern_119` (jaccard 1, in-section)
+  - Scope A: IANA Media Types Registry
+  - Scope B: IANA Registry of Media Types
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_cf2238f43a01_ollama_intern_98` ↔ `clm_cf2238f43a01_ollama_intern_119` (jaccard 1, in-section)
+  - Scope A: IANA Media Types registry
+  - Scope B: IANA Registry of Media Types
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_cf2238f43a01_ollama_intern_105` ↔ `clm_cf2238f43a01_ollama_intern_106` (jaccard 0.5, in-section)
+  - Scope A: The majority of the contacts listed.
+  - Scope B: The minority of the contacts listed.
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_cf2238f43a01_ollama_intern_114` ↔ `clm_cf2238f43a01_ollama_intern_115` (jaccard 1, in-section)
+  - Scope A: OpenID Foundation
+  - Scope B: OpenID Foundation
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_2cc80fcf07ba_ollama_intern_4` ↔ `clm_b1ed6cf92876_ollama_intern_1` (jaccard 0.3333, in-section)
+  - Scope A: JSON Schema users, schema design basics
+  - Scope B: JSON Schema specification
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_2cc80fcf07ba_ollama_intern_4` ↔ `clm_b1ed6cf92876_ollama_intern_2` (jaccard 0.3333, in-section)
+  - Scope A: JSON Schema users, schema design basics
+  - Scope B: JSON Schema specification
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_2cc80fcf07ba_ollama_intern_4` ↔ `clm_b1ed6cf92876_ollama_intern_3` (jaccard 0.3333, in-section)
+  - Scope A: JSON Schema users, schema design basics
+  - Scope B: JSON Schema specification
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_2cc80fcf07ba_ollama_intern_4` ↔ `clm_b1ed6cf92876_ollama_intern_4` (jaccard 0.3333, in-section)
+  - Scope A: JSON Schema users, schema design basics
+  - Scope B: JSON Schema specification
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_b1ed6cf92876_ollama_intern_1` ↔ `clm_b1ed6cf92876_ollama_intern_2` (jaccard 1, in-section)
+  - Scope A: JSON Schema specification
+  - Scope B: JSON Schema specification
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_b1ed6cf92876_ollama_intern_1` ↔ `clm_b1ed6cf92876_ollama_intern_3` (jaccard 1, in-section)
+  - Scope A: JSON Schema specification
+  - Scope B: JSON Schema specification
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_b1ed6cf92876_ollama_intern_1` ↔ `clm_b1ed6cf92876_ollama_intern_4` (jaccard 1, in-section)
+  - Scope A: JSON Schema specification
+  - Scope B: JSON Schema specification
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_b1ed6cf92876_ollama_intern_1` ↔ `clm_62d58636ae35_ollama_intern_29` (jaccard 0.4, in-section)
+  - Scope A: JSON Schema specification
+  - Scope B: Historical context of the JSON specification.
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_b1ed6cf92876_ollama_intern_1` ↔ `clm_caedf4b2d8e0_ollama_intern_103` (jaccard 0.3333, cross-section)
+  - Scope A: JSON Schema specification
+  - Scope B: JSON-LD 1.1
+  - Warning: Cross-section scope overlap (jaccard=0.33). Synthesis must not silently merge these claims; cite each separately and note their scope.
+- `clm_b1ed6cf92876_ollama_intern_2` ↔ `clm_b1ed6cf92876_ollama_intern_3` (jaccard 1, in-section)
+  - Scope A: JSON Schema specification
+  - Scope B: JSON Schema specification
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_b1ed6cf92876_ollama_intern_2` ↔ `clm_b1ed6cf92876_ollama_intern_4` (jaccard 1, in-section)
+  - Scope A: JSON Schema specification
+  - Scope B: JSON Schema specification
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_b1ed6cf92876_ollama_intern_2` ↔ `clm_62d58636ae35_ollama_intern_29` (jaccard 0.4, in-section)
+  - Scope A: JSON Schema specification
+  - Scope B: Historical context of the JSON specification.
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_b1ed6cf92876_ollama_intern_2` ↔ `clm_caedf4b2d8e0_ollama_intern_103` (jaccard 0.3333, cross-section)
+  - Scope A: JSON Schema specification
+  - Scope B: JSON-LD 1.1
+  - Warning: Cross-section scope overlap (jaccard=0.33). Synthesis must not silently merge these claims; cite each separately and note their scope.
+- `clm_b1ed6cf92876_ollama_intern_3` ↔ `clm_b1ed6cf92876_ollama_intern_4` (jaccard 1, in-section)
+  - Scope A: JSON Schema specification
+  - Scope B: JSON Schema specification
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_b1ed6cf92876_ollama_intern_3` ↔ `clm_62d58636ae35_ollama_intern_29` (jaccard 0.4, in-section)
+  - Scope A: JSON Schema specification
+  - Scope B: Historical context of the JSON specification.
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_b1ed6cf92876_ollama_intern_3` ↔ `clm_caedf4b2d8e0_ollama_intern_103` (jaccard 0.3333, cross-section)
+  - Scope A: JSON Schema specification
+  - Scope B: JSON-LD 1.1
+  - Warning: Cross-section scope overlap (jaccard=0.33). Synthesis must not silently merge these claims; cite each separately and note their scope.
+- `clm_b1ed6cf92876_ollama_intern_4` ↔ `clm_62d58636ae35_ollama_intern_29` (jaccard 0.4, in-section)
+  - Scope A: JSON Schema specification
+  - Scope B: Historical context of the JSON specification.
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_b1ed6cf92876_ollama_intern_4` ↔ `clm_caedf4b2d8e0_ollama_intern_103` (jaccard 0.3333, cross-section)
+  - Scope A: JSON Schema specification
+  - Scope B: JSON-LD 1.1
+  - Warning: Cross-section scope overlap (jaccard=0.33). Synthesis must not silently merge these claims; cite each separately and note their scope.
+- `clm_62d58636ae35_ollama_intern_8` ↔ `clm_62d58636ae35_ollama_intern_9` (jaccard 0.5, in-section)
+  - Scope A: The structure of JSON data
+  - Scope B: The structure of JSON objects
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_62d58636ae35_ollama_intern_8` ↔ `clm_62d58636ae35_ollama_intern_10` (jaccard 0.5, in-section)
+  - Scope A: The structure of JSON data
+  - Scope B: The structure of JSON arrays
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_62d58636ae35_ollama_intern_8` ↔ `clm_62d58636ae35_ollama_intern_17` (jaccard 0.3333, in-section)
+  - Scope A: The structure of JSON data
+  - Scope B: Within the context of JSON data representation
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_62d58636ae35_ollama_intern_8` ↔ `clm_62d58636ae35_ollama_intern_19` (jaccard 0.3333, in-section)
+  - Scope A: The structure of JSON data
+  - Scope B: Within the context of JSON data representation
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_62d58636ae35_ollama_intern_8` ↔ `clm_caedf4b2d8e0_ollama_intern_103` (jaccard 0.3333, cross-section)
+  - Scope A: The structure of JSON data
+  - Scope B: JSON-LD 1.1
+  - Warning: Cross-section scope overlap (jaccard=0.33). Synthesis must not silently merge these claims; cite each separately and note their scope.
+- `clm_62d58636ae35_ollama_intern_9` ↔ `clm_62d58636ae35_ollama_intern_10` (jaccard 0.5, in-section)
+  - Scope A: The structure of JSON objects
+  - Scope B: The structure of JSON arrays
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_62d58636ae35_ollama_intern_9` ↔ `clm_caedf4b2d8e0_ollama_intern_103` (jaccard 0.3333, cross-section)
+  - Scope A: The structure of JSON objects
+  - Scope B: JSON-LD 1.1
+  - Warning: Cross-section scope overlap (jaccard=0.33). Synthesis must not silently merge these claims; cite each separately and note their scope.
+- `clm_62d58636ae35_ollama_intern_10` ↔ `clm_caedf4b2d8e0_ollama_intern_103` (jaccard 0.3333, cross-section)
+  - Scope A: The structure of JSON arrays
+  - Scope B: JSON-LD 1.1
+  - Warning: Cross-section scope overlap (jaccard=0.33). Synthesis must not silently merge these claims; cite each separately and note their scope.
+- `clm_62d58636ae35_ollama_intern_11` ↔ `clm_caedf4b2d8e0_ollama_intern_103` (jaccard 0.3333, cross-section)
+  - Scope A: The terminology used in JSON
+  - Scope B: JSON-LD 1.1
+  - Warning: Cross-section scope overlap (jaccard=0.33). Synthesis must not silently merge these claims; cite each separately and note their scope.
+- `clm_62d58636ae35_ollama_intern_17` ↔ `clm_62d58636ae35_ollama_intern_19` (jaccard 1, in-section)
+  - Scope A: Within the context of JSON data representation
+  - Scope B: Within the context of JSON data representation
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_c1e29cfcaa1e_ollama_intern_2` ↔ `clm_c1e29cfcaa1e_ollama_intern_3` (jaccard 1, in-section)
+  - Scope A: The JSON Lines text format
+  - Scope B: The JSON Lines text format
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_c1e29cfcaa1e_ollama_intern_2` ↔ `clm_c1e29cfcaa1e_ollama_intern_4` (jaccard 1, in-section)
+  - Scope A: The JSON Lines text format
+  - Scope B: The JSON Lines text format
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_c1e29cfcaa1e_ollama_intern_2` ↔ `clm_c1e29cfcaa1e_ollama_intern_5` (jaccard 1, in-section)
+  - Scope A: The JSON Lines text format
+  - Scope B: The JSON Lines text format
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_c1e29cfcaa1e_ollama_intern_2` ↔ `clm_c1e29cfcaa1e_ollama_intern_6` (jaccard 0.4, in-section)
+  - Scope A: The JSON Lines text format
+  - Scope B: JSON Lines files
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_c1e29cfcaa1e_ollama_intern_3` ↔ `clm_c1e29cfcaa1e_ollama_intern_4` (jaccard 1, in-section)
+  - Scope A: The JSON Lines text format
+  - Scope B: The JSON Lines text format
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_c1e29cfcaa1e_ollama_intern_3` ↔ `clm_c1e29cfcaa1e_ollama_intern_5` (jaccard 1, in-section)
+  - Scope A: The JSON Lines text format
+  - Scope B: The JSON Lines text format
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_c1e29cfcaa1e_ollama_intern_3` ↔ `clm_c1e29cfcaa1e_ollama_intern_6` (jaccard 0.4, in-section)
+  - Scope A: The JSON Lines text format
+  - Scope B: JSON Lines files
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_c1e29cfcaa1e_ollama_intern_4` ↔ `clm_c1e29cfcaa1e_ollama_intern_5` (jaccard 1, in-section)
+  - Scope A: The JSON Lines text format
+  - Scope B: The JSON Lines text format
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_c1e29cfcaa1e_ollama_intern_4` ↔ `clm_c1e29cfcaa1e_ollama_intern_6` (jaccard 0.4, in-section)
+  - Scope A: The JSON Lines text format
+  - Scope B: JSON Lines files
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_c1e29cfcaa1e_ollama_intern_5` ↔ `clm_c1e29cfcaa1e_ollama_intern_6` (jaccard 0.4, in-section)
+  - Scope A: The JSON Lines text format
+  - Scope B: JSON Lines files
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_c1e29cfcaa1e_ollama_intern_6` ↔ `clm_712838e1db63_ollama_intern_141` (jaccard 0.4, in-section)
+  - Scope A: JSON Lines files
+  - Scope B: When processing JSON files.
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_c1e29cfcaa1e_ollama_intern_6` ↔ `clm_caedf4b2d8e0_ollama_intern_103` (jaccard 0.3333, cross-section)
+  - Scope A: JSON Lines files
+  - Scope B: JSON-LD 1.1
+  - Warning: Cross-section scope overlap (jaccard=0.33). Synthesis must not silently merge these claims; cite each separately and note their scope.
+- `clm_712838e1db63_ollama_intern_141` ↔ `clm_caedf4b2d8e0_ollama_intern_104` (jaccard 0.4, cross-section)
+  - Scope A: When processing JSON files.
+  - Scope B: JSON-LD 1.1 processing of documents
+  - Warning: Cross-section scope overlap (jaccard=0.40). Synthesis must not silently merge these claims; cite each separately and note their scope.
+- `clm_712838e1db63_ollama_intern_141` ↔ `clm_caedf4b2d8e0_ollama_intern_105` (jaccard 0.4, cross-section)
+  - Scope A: When processing JSON files.
+  - Scope B: JSON-LD 1.1 document processing
+  - Warning: Cross-section scope overlap (jaccard=0.40). Synthesis must not silently merge these claims; cite each separately and note their scope.
+- `clm_712838e1db63_ollama_intern_141` ↔ `clm_96b9a35307c0_ollama_intern_32` (jaccard 0.3333, cross-section)
+  - Scope A: When processing JSON files.
+  - Scope B: When Claude reads CLAUDE.md files.
+  - Warning: Cross-section scope overlap (jaccard=0.33). Synthesis must not silently merge these claims; cite each separately and note their scope.
+- `clm_0801e1ee8a70_ollama_intern_13` ↔ `clm_0801e1ee8a70_ollama_intern_80` (jaccard 0.4, in-section)
+  - Scope A: The PROV data model organization.
+  - Scope B: The PROV-DM model for invalidation.
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_0801e1ee8a70_ollama_intern_13` ↔ `clm_0801e1ee8a70_ollama_intern_127` (jaccard 0.4286, in-section)
+  - Scope A: The PROV data model organization.
+  - Scope B: The explanation of 'QUALIFIED_NAME' in the PROV Data Model.
+  - Warning: In-section scope overlap (jaccard=0.43). Synthesis must keep each claim's scope tag intact.
+- `clm_0801e1ee8a70_ollama_intern_13` ↔ `clm_d39cd3ba0ef2_ollama_intern_7` (jaccard 0.3333, cross-section)
+  - Scope A: The PROV data model organization.
+  - Scope B: Developers needing a native XML serialization of the PROV data model.
+  - Warning: Cross-section scope overlap (jaccard=0.33). Synthesis must not silently merge these claims; cite each separately and note their scope.
+- `clm_0801e1ee8a70_ollama_intern_52` ↔ `clm_0801e1ee8a70_ollama_intern_111` (jaccard 0.3333, in-section)
+  - Scope A: As shown in Table 4 of PROV-DM.
+  - Scope B: In PROV-DM
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_0801e1ee8a70_ollama_intern_80` ↔ `clm_0801e1ee8a70_ollama_intern_111` (jaccard 0.3333, in-section)
+  - Scope A: The PROV-DM model for invalidation.
+  - Scope B: In PROV-DM
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_0801e1ee8a70_ollama_intern_83` ↔ `clm_0801e1ee8a70_ollama_intern_85` (jaccard 0.3333, in-section)
+  - Scope A: The structure of derivation descriptions in PROV-DM
+  - Scope B: The types of derivation relations in PROV-DM
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_676ddfa834cc_ollama_intern_1` ↔ `clm_676ddfa834cc_ollama_intern_1` (jaccard 0.75, cross-section)
+  - Scope A: In knowledge representation and reasoning.
+  - Scope B: Knowledge representation and reasoning domain.
+  - Warning: Cross-section scope overlap (jaccard=0.75). Synthesis must not silently merge these claims; cite each separately and note their scope.
+- `clm_d39cd3ba0ef2_ollama_intern_6` ↔ `clm_caedf4b2d8e0_ollama_intern_101` (jaccard 0.3333, in-section)
+  - Scope A: Linked Data and Semantic Web community.
+  - Scope B: Linked Data serialization
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_d81a8a3d6bba_ollama_intern_1` ↔ `clm_d81a8a3d6bba_ollama_intern_3` (jaccard 0.3571, in-section)
+  - Scope A: This assertion applies to intellectual works across various disciplines and academic journals.
+  - Scope B: This assertion applies to the diversity of citation systems and styles used across various academic fields and journals.
+  - Warning: In-section scope overlap (jaccard=0.36). Synthesis must keep each claim's scope tag intact.
+- `clm_155c4be7850d_ollama_intern_14` ↔ `clm_155c4be7850d_ollama_intern_15` (jaccard 1, in-section)
+  - Scope A: Serialization formats for Resource Description Framework (RDF) data
+  - Scope B: Serialization formats for Resource Description Framework (RDF) data
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_155c4be7850d_ollama_intern_14` ↔ `clm_155c4be7850d_ollama_intern_17` (jaccard 1, in-section)
+  - Scope A: Serialization formats for Resource Description Framework (RDF) data
+  - Scope B: Serialization formats for Resource Description Framework (RDF) data
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_155c4be7850d_ollama_intern_14` ↔ `clm_155c4be7850d_ollama_intern_18` (jaccard 1, in-section)
+  - Scope A: Serialization formats for Resource Description Framework (RDF) data
+  - Scope B: Serialization formats for Resource Description Framework (RDF) data
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_155c4be7850d_ollama_intern_15` ↔ `clm_155c4be7850d_ollama_intern_17` (jaccard 1, in-section)
+  - Scope A: Serialization formats for Resource Description Framework (RDF) data
+  - Scope B: Serialization formats for Resource Description Framework (RDF) data
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_155c4be7850d_ollama_intern_15` ↔ `clm_155c4be7850d_ollama_intern_18` (jaccard 1, in-section)
+  - Scope A: Serialization formats for Resource Description Framework (RDF) data
+  - Scope B: Serialization formats for Resource Description Framework (RDF) data
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_155c4be7850d_ollama_intern_17` ↔ `clm_155c4be7850d_ollama_intern_18` (jaccard 1, in-section)
+  - Scope A: Serialization formats for Resource Description Framework (RDF) data
+  - Scope B: Serialization formats for Resource Description Framework (RDF) data
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_155c4be7850d_ollama_intern_42` ↔ `clm_eefec92990cb_ollama_intern_24` (jaccard 0.3333, cross-section)
+  - Scope A: Software Plugins
+  - Scope B: Software products
+  - Warning: Cross-section scope overlap (jaccard=0.33). Synthesis must not silently merge these claims; cite each separately and note their scope.
+- `clm_caedf4b2d8e0_ollama_intern_103` ↔ `clm_caedf4b2d8e0_ollama_intern_104` (jaccard 0.3333, in-section)
+  - Scope A: JSON-LD 1.1
+  - Scope B: JSON-LD 1.1 processing of documents
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_caedf4b2d8e0_ollama_intern_103` ↔ `clm_caedf4b2d8e0_ollama_intern_105` (jaccard 0.3333, in-section)
+  - Scope A: JSON-LD 1.1
+  - Scope B: JSON-LD 1.1 document processing
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_caedf4b2d8e0_ollama_intern_104` ↔ `clm_caedf4b2d8e0_ollama_intern_105` (jaccard 0.5, in-section)
+  - Scope A: JSON-LD 1.1 processing of documents
+  - Scope B: JSON-LD 1.1 document processing
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_caedf4b2d8e0_ollama_intern_104` ↔ `clm_e15c2248a5d8_ollama_intern_113` (jaccard 0.3333, cross-section)
+  - Scope A: JSON-LD 1.1 processing of documents
+  - Scope B: When processing documents for FTS index
+  - Warning: Cross-section scope overlap (jaccard=0.33). Synthesis must not silently merge these claims; cite each separately and note their scope.
+- `clm_fb48d4730a5c_ollama_intern_8` ↔ `clm_fb48d4730a5c_ollama_intern_11` (jaccard 0.3333, in-section)
+  - Scope A: Business strategies and quality control.
+  - Scope B: The early development of quality control.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_55f4bfa87f54_ollama_intern_12` ↔ `clm_f0fe25b20f29_ollama_intern_13` (jaccard 0.5, in-section)
+  - Scope A: Methodology section, paragraph 92.
+  - Scope B: The methodology section of the source.
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_55f4bfa87f54_ollama_intern_12` ↔ `clm_f0fe25b20f29_ollama_intern_14` (jaccard 0.5, in-section)
+  - Scope A: Methodology section, paragraph 92.
+  - Scope B: The methodology section of the source.
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_55f4bfa87f54_ollama_intern_12` ↔ `clm_f0fe25b20f29_ollama_intern_15` (jaccard 0.5, in-section)
+  - Scope A: Methodology section, paragraph 92.
+  - Scope B: The methodology section of the source.
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_55f4bfa87f54_ollama_intern_22` ↔ `clm_f0fe25b20f29_ollama_intern_3` (jaccard 0.5, in-section)
+  - Scope A: The study
+  - Scope B: In the study population.
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_55f4bfa87f54_ollama_intern_22` ↔ `clm_f0fe25b20f29_ollama_intern_4` (jaccard 0.5, in-section)
+  - Scope A: The study
+  - Scope B: In the study population.
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_55f4bfa87f54_ollama_intern_22` ↔ `clm_f0fe25b20f29_ollama_intern_5` (jaccard 0.5, in-section)
+  - Scope A: The study
+  - Scope B: In the study population.
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_55f4bfa87f54_ollama_intern_22` ↔ `clm_f0fe25b20f29_ollama_intern_6` (jaccard 0.5, in-section)
+  - Scope A: The study
+  - Scope B: In the study population.
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_55f4bfa87f54_ollama_intern_22` ↔ `clm_f0fe25b20f29_ollama_intern_43` (jaccard 1, in-section)
+  - Scope A: The study
+  - Scope B: In this study.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_55f4bfa87f54_ollama_intern_29` ↔ `clm_55f4bfa87f54_ollama_intern_31` (jaccard 1, in-section)
+  - Scope A: OCTA images
+  - Scope B: OCTA images
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_55f4bfa87f54_ollama_intern_29` ↔ `clm_55f4bfa87f54_ollama_intern_32` (jaccard 0.5, in-section)
+  - Scope A: OCTA images
+  - Scope B: OCTA images, BVT analysis
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_55f4bfa87f54_ollama_intern_29` ↔ `clm_55f4bfa87f54_ollama_intern_40` (jaccard 0.3333, in-section)
+  - Scope A: OCTA images
+  - Scope B: Fundus images
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_55f4bfa87f54_ollama_intern_31` ↔ `clm_55f4bfa87f54_ollama_intern_32` (jaccard 0.5, in-section)
+  - Scope A: OCTA images
+  - Scope B: OCTA images, BVT analysis
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_55f4bfa87f54_ollama_intern_31` ↔ `clm_55f4bfa87f54_ollama_intern_40` (jaccard 0.3333, in-section)
+  - Scope A: OCTA images
+  - Scope B: Fundus images
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_f0fe25b20f29_ollama_intern_1` ↔ `clm_f0fe25b20f29_ollama_intern_44` (jaccard 0.3333, in-section)
+  - Scope A: In a population of military beneficiaries with diabetes.
+  - Scope B: For the 273 military beneficiaries in this study.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_f0fe25b20f29_ollama_intern_3` ↔ `clm_f0fe25b20f29_ollama_intern_4` (jaccard 1, in-section)
+  - Scope A: In the study population.
+  - Scope B: In the study population.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_f0fe25b20f29_ollama_intern_3` ↔ `clm_f0fe25b20f29_ollama_intern_5` (jaccard 1, in-section)
+  - Scope A: In the study population.
+  - Scope B: In the study population.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_f0fe25b20f29_ollama_intern_3` ↔ `clm_f0fe25b20f29_ollama_intern_6` (jaccard 1, in-section)
+  - Scope A: In the study population.
+  - Scope B: In the study population.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_f0fe25b20f29_ollama_intern_3` ↔ `clm_f0fe25b20f29_ollama_intern_43` (jaccard 0.5, in-section)
+  - Scope A: In the study population.
+  - Scope B: In this study.
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_f0fe25b20f29_ollama_intern_4` ↔ `clm_f0fe25b20f29_ollama_intern_5` (jaccard 1, in-section)
+  - Scope A: In the study population.
+  - Scope B: In the study population.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_f0fe25b20f29_ollama_intern_4` ↔ `clm_f0fe25b20f29_ollama_intern_6` (jaccard 1, in-section)
+  - Scope A: In the study population.
+  - Scope B: In the study population.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_f0fe25b20f29_ollama_intern_4` ↔ `clm_f0fe25b20f29_ollama_intern_43` (jaccard 0.5, in-section)
+  - Scope A: In the study population.
+  - Scope B: In this study.
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_f0fe25b20f29_ollama_intern_5` ↔ `clm_f0fe25b20f29_ollama_intern_6` (jaccard 1, in-section)
+  - Scope A: In the study population.
+  - Scope B: In the study population.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_f0fe25b20f29_ollama_intern_5` ↔ `clm_f0fe25b20f29_ollama_intern_43` (jaccard 0.5, in-section)
+  - Scope A: In the study population.
+  - Scope B: In this study.
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_f0fe25b20f29_ollama_intern_6` ↔ `clm_f0fe25b20f29_ollama_intern_43` (jaccard 0.5, in-section)
+  - Scope A: In the study population.
+  - Scope B: In this study.
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_f0fe25b20f29_ollama_intern_13` ↔ `clm_f0fe25b20f29_ollama_intern_14` (jaccard 1, in-section)
+  - Scope A: The methodology section of the source.
+  - Scope B: The methodology section of the source.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_f0fe25b20f29_ollama_intern_13` ↔ `clm_f0fe25b20f29_ollama_intern_15` (jaccard 1, in-section)
+  - Scope A: The methodology section of the source.
+  - Scope B: The methodology section of the source.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_f0fe25b20f29_ollama_intern_14` ↔ `clm_f0fe25b20f29_ollama_intern_15` (jaccard 1, in-section)
+  - Scope A: The methodology section of the source.
+  - Scope B: The methodology section of the source.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_bbd08b91cbb6_ollama_intern_1` ↔ `clm_bbd08b91cbb6_ollama_intern_2` (jaccard 1, in-section)
+  - Scope A: When accessing pmc.ncbi.nlm.nih.gov
+  - Scope B: When accessing pmc.ncbi.nlm.nih.gov
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_9a7d4217c64c_ollama_intern_3` (jaccard 1, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code platform
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_9a7d4217c64c_ollama_intern_14` (jaccard 0.4286, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code platform, specifically for project-specific subagents
+  - Warning: In-section scope overlap (jaccard=0.43). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_9a7d4217c64c_ollama_intern_15` (jaccard 0.4286, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code platform, specifically for command line usage
+  - Warning: In-section scope overlap (jaccard=0.43). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_9a7d4217c64c_ollama_intern_16` (jaccard 0.5, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code platform, specifically for managed settings
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_9a7d4217c64c_ollama_intern_29` (jaccard 0.5, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Subagents in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_9a7d4217c64c_ollama_intern_31` (jaccard 0.5, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Subagents in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_9a7d4217c64c_ollama_intern_35` (jaccard 0.5, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Subagents in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_5be2e21d45c9_ollama_intern_1` (jaccard 0.4, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Hook events in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_5be2e21d45c9_ollama_intern_27` (jaccard 0.4, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code hook configuration
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_5be2e21d45c9_ollama_intern_29` (jaccard 0.4, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code hook configuration
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_5be2e21d45c9_ollama_intern_56` (jaccard 0.4, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code hook events
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_5be2e21d45c9_ollama_intern_106` (jaccard 0.4, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code PostToolBatch hook
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_5be2e21d45c9_ollama_intern_109` (jaccard 0.5, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code hooks
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_5be2e21d45c9_ollama_intern_125` (jaccard 0.5, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Hooks in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_5be2e21d45c9_ollama_intern_148` (jaccard 0.4, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_5be2e21d45c9_ollama_intern_149` (jaccard 0.4, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_96b9a35307c0_ollama_intern_5` (jaccard 0.5, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code Docs
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_c8975a95117b_ollama_intern_55` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code's file suggestion settings
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_486f1e6121c8_ollama_intern_1` (jaccard 0.75, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.75). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_486f1e6121c8_ollama_intern_6` (jaccard 0.4286, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: When creating skills within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.43). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_486f1e6121c8_ollama_intern_12` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_486f1e6121c8_ollama_intern_13` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_486f1e6121c8_ollama_intern_14` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_9686dc1633cd_ollama_intern_2` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code's autonomy in coding tasks.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_1` ↔ `clm_9686dc1633cd_ollama_intern_16` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: When configuring Claude Code's environment.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_9a7d4217c64c_ollama_intern_14` (jaccard 0.4286, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code platform, specifically for project-specific subagents
+  - Warning: In-section scope overlap (jaccard=0.43). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_9a7d4217c64c_ollama_intern_15` (jaccard 0.4286, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code platform, specifically for command line usage
+  - Warning: In-section scope overlap (jaccard=0.43). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_9a7d4217c64c_ollama_intern_16` (jaccard 0.5, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code platform, specifically for managed settings
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_9a7d4217c64c_ollama_intern_29` (jaccard 0.5, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Subagents in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_9a7d4217c64c_ollama_intern_31` (jaccard 0.5, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Subagents in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_9a7d4217c64c_ollama_intern_35` (jaccard 0.5, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Subagents in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_5be2e21d45c9_ollama_intern_1` (jaccard 0.4, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Hook events in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_5be2e21d45c9_ollama_intern_27` (jaccard 0.4, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code hook configuration
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_5be2e21d45c9_ollama_intern_29` (jaccard 0.4, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code hook configuration
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_5be2e21d45c9_ollama_intern_56` (jaccard 0.4, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code hook events
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_5be2e21d45c9_ollama_intern_106` (jaccard 0.4, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code PostToolBatch hook
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_5be2e21d45c9_ollama_intern_109` (jaccard 0.5, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code hooks
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_5be2e21d45c9_ollama_intern_125` (jaccard 0.5, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Hooks in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_5be2e21d45c9_ollama_intern_148` (jaccard 0.4, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_5be2e21d45c9_ollama_intern_149` (jaccard 0.4, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_96b9a35307c0_ollama_intern_5` (jaccard 0.5, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code Docs
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_c8975a95117b_ollama_intern_55` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code's file suggestion settings
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_486f1e6121c8_ollama_intern_1` (jaccard 0.75, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.75). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_486f1e6121c8_ollama_intern_6` (jaccard 0.4286, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: When creating skills within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.43). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_486f1e6121c8_ollama_intern_12` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_486f1e6121c8_ollama_intern_13` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_486f1e6121c8_ollama_intern_14` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_9686dc1633cd_ollama_intern_2` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: Claude Code's autonomy in coding tasks.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_3` ↔ `clm_9686dc1633cd_ollama_intern_16` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code platform
+  - Scope B: When configuring Claude Code's environment.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_14` ↔ `clm_9a7d4217c64c_ollama_intern_15` (jaccard 0.4, in-section)
+  - Scope A: Claude Code platform, specifically for project-specific subagents
+  - Scope B: Claude Code platform, specifically for command line usage
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_14` ↔ `clm_9a7d4217c64c_ollama_intern_16` (jaccard 0.4444, in-section)
+  - Scope A: Claude Code platform, specifically for project-specific subagents
+  - Scope B: Claude Code platform, specifically for managed settings
+  - Warning: In-section scope overlap (jaccard=0.44). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_14` ↔ `clm_9a7d4217c64c_ollama_intern_29` (jaccard 0.4286, in-section)
+  - Scope A: Claude Code platform, specifically for project-specific subagents
+  - Scope B: Subagents in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.43). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_14` ↔ `clm_9a7d4217c64c_ollama_intern_31` (jaccard 0.4286, in-section)
+  - Scope A: Claude Code platform, specifically for project-specific subagents
+  - Scope B: Subagents in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.43). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_14` ↔ `clm_9a7d4217c64c_ollama_intern_35` (jaccard 0.4286, in-section)
+  - Scope A: Claude Code platform, specifically for project-specific subagents
+  - Scope B: Subagents in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.43). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_14` ↔ `clm_486f1e6121c8_ollama_intern_1` (jaccard 0.375, in-section)
+  - Scope A: Claude Code platform, specifically for project-specific subagents
+  - Scope B: Within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.38). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_15` ↔ `clm_9a7d4217c64c_ollama_intern_16` (jaccard 0.4444, in-section)
+  - Scope A: Claude Code platform, specifically for command line usage
+  - Scope B: Claude Code platform, specifically for managed settings
+  - Warning: In-section scope overlap (jaccard=0.44). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_15` ↔ `clm_486f1e6121c8_ollama_intern_1` (jaccard 0.375, in-section)
+  - Scope A: Claude Code platform, specifically for command line usage
+  - Scope B: Within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.38). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_16` ↔ `clm_c8975a95117b_ollama_intern_11` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code platform, specifically for managed settings
+  - Scope B: Managed settings
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_16` ↔ `clm_c8975a95117b_ollama_intern_12` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code platform, specifically for managed settings
+  - Scope B: Managed settings
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_16` ↔ `clm_c8975a95117b_ollama_intern_13` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code platform, specifically for managed settings
+  - Scope B: Managed settings
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_16` ↔ `clm_c8975a95117b_ollama_intern_55` (jaccard 0.375, in-section)
+  - Scope A: Claude Code platform, specifically for managed settings
+  - Scope B: Claude Code's file suggestion settings
+  - Warning: In-section scope overlap (jaccard=0.38). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_16` ↔ `clm_486f1e6121c8_ollama_intern_1` (jaccard 0.4286, in-section)
+  - Scope A: Claude Code platform, specifically for managed settings
+  - Scope B: Within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.43). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_16` ↔ `clm_486f1e6121c8_ollama_intern_6` (jaccard 0.3, in-section)
+  - Scope A: Claude Code platform, specifically for managed settings
+  - Scope B: When creating skills within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.30). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_29` ↔ `clm_9a7d4217c64c_ollama_intern_31` (jaccard 1, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Subagents in Claude Code
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_29` ↔ `clm_9a7d4217c64c_ollama_intern_35` (jaccard 1, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Subagents in Claude Code
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_29` ↔ `clm_5be2e21d45c9_ollama_intern_1` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Hook events in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_29` ↔ `clm_5be2e21d45c9_ollama_intern_27` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code hook configuration
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_29` ↔ `clm_5be2e21d45c9_ollama_intern_29` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code hook configuration
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_29` ↔ `clm_5be2e21d45c9_ollama_intern_56` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code hook events
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_29` ↔ `clm_5be2e21d45c9_ollama_intern_106` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code PostToolBatch hook
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_29` ↔ `clm_5be2e21d45c9_ollama_intern_109` (jaccard 0.5, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code hooks
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_29` ↔ `clm_5be2e21d45c9_ollama_intern_125` (jaccard 0.5, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Hooks in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_29` ↔ `clm_5be2e21d45c9_ollama_intern_148` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_29` ↔ `clm_5be2e21d45c9_ollama_intern_149` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_29` ↔ `clm_96b9a35307c0_ollama_intern_5` (jaccard 0.5, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code Docs
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_29` ↔ `clm_c8975a95117b_ollama_intern_55` (jaccard 0.3333, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code's file suggestion settings
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_29` ↔ `clm_486f1e6121c8_ollama_intern_1` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_29` ↔ `clm_486f1e6121c8_ollama_intern_12` (jaccard 0.3333, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_29` ↔ `clm_486f1e6121c8_ollama_intern_13` (jaccard 0.3333, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_29` ↔ `clm_486f1e6121c8_ollama_intern_14` (jaccard 0.3333, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_29` ↔ `clm_9686dc1633cd_ollama_intern_2` (jaccard 0.3333, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code's autonomy in coding tasks.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_29` ↔ `clm_9686dc1633cd_ollama_intern_16` (jaccard 0.3333, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: When configuring Claude Code's environment.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_31` ↔ `clm_9a7d4217c64c_ollama_intern_35` (jaccard 1, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Subagents in Claude Code
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_31` ↔ `clm_5be2e21d45c9_ollama_intern_1` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Hook events in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_31` ↔ `clm_5be2e21d45c9_ollama_intern_27` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code hook configuration
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_31` ↔ `clm_5be2e21d45c9_ollama_intern_29` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code hook configuration
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_31` ↔ `clm_5be2e21d45c9_ollama_intern_56` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code hook events
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_31` ↔ `clm_5be2e21d45c9_ollama_intern_106` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code PostToolBatch hook
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_31` ↔ `clm_5be2e21d45c9_ollama_intern_109` (jaccard 0.5, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code hooks
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_31` ↔ `clm_5be2e21d45c9_ollama_intern_125` (jaccard 0.5, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Hooks in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_31` ↔ `clm_5be2e21d45c9_ollama_intern_148` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_31` ↔ `clm_5be2e21d45c9_ollama_intern_149` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_31` ↔ `clm_96b9a35307c0_ollama_intern_5` (jaccard 0.5, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code Docs
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_31` ↔ `clm_c8975a95117b_ollama_intern_55` (jaccard 0.3333, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code's file suggestion settings
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_31` ↔ `clm_486f1e6121c8_ollama_intern_1` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_31` ↔ `clm_486f1e6121c8_ollama_intern_12` (jaccard 0.3333, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_31` ↔ `clm_486f1e6121c8_ollama_intern_13` (jaccard 0.3333, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_31` ↔ `clm_486f1e6121c8_ollama_intern_14` (jaccard 0.3333, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_31` ↔ `clm_9686dc1633cd_ollama_intern_2` (jaccard 0.3333, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code's autonomy in coding tasks.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_31` ↔ `clm_9686dc1633cd_ollama_intern_16` (jaccard 0.3333, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: When configuring Claude Code's environment.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_35` ↔ `clm_5be2e21d45c9_ollama_intern_1` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Hook events in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_35` ↔ `clm_5be2e21d45c9_ollama_intern_27` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code hook configuration
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_35` ↔ `clm_5be2e21d45c9_ollama_intern_29` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code hook configuration
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_35` ↔ `clm_5be2e21d45c9_ollama_intern_56` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code hook events
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_35` ↔ `clm_5be2e21d45c9_ollama_intern_106` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code PostToolBatch hook
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_35` ↔ `clm_5be2e21d45c9_ollama_intern_109` (jaccard 0.5, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code hooks
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_35` ↔ `clm_5be2e21d45c9_ollama_intern_125` (jaccard 0.5, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Hooks in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_35` ↔ `clm_5be2e21d45c9_ollama_intern_148` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_35` ↔ `clm_5be2e21d45c9_ollama_intern_149` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_35` ↔ `clm_96b9a35307c0_ollama_intern_5` (jaccard 0.5, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code Docs
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_35` ↔ `clm_c8975a95117b_ollama_intern_55` (jaccard 0.3333, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code's file suggestion settings
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_35` ↔ `clm_486f1e6121c8_ollama_intern_1` (jaccard 0.4, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_35` ↔ `clm_486f1e6121c8_ollama_intern_12` (jaccard 0.3333, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_35` ↔ `clm_486f1e6121c8_ollama_intern_13` (jaccard 0.3333, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_35` ↔ `clm_486f1e6121c8_ollama_intern_14` (jaccard 0.3333, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_35` ↔ `clm_9686dc1633cd_ollama_intern_2` (jaccard 0.3333, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: Claude Code's autonomy in coding tasks.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9a7d4217c64c_ollama_intern_35` ↔ `clm_9686dc1633cd_ollama_intern_16` (jaccard 0.3333, in-section)
+  - Scope A: Subagents in Claude Code
+  - Scope B: When configuring Claude Code's environment.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_1` ↔ `clm_5be2e21d45c9_ollama_intern_23` (jaccard 0.375, in-section)
+  - Scope A: Hook events in Claude Code
+  - Scope B: Common fields for all hook types in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.38). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_1` ↔ `clm_5be2e21d45c9_ollama_intern_27` (jaccard 0.6, in-section)
+  - Scope A: Hook events in Claude Code
+  - Scope B: Claude Code hook configuration
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_1` ↔ `clm_5be2e21d45c9_ollama_intern_29` (jaccard 0.6, in-section)
+  - Scope A: Hook events in Claude Code
+  - Scope B: Claude Code hook configuration
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_1` ↔ `clm_5be2e21d45c9_ollama_intern_56` (jaccard 1, in-section)
+  - Scope A: Hook events in Claude Code
+  - Scope B: Claude Code hook events
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_1` ↔ `clm_5be2e21d45c9_ollama_intern_106` (jaccard 0.6, in-section)
+  - Scope A: Hook events in Claude Code
+  - Scope B: Claude Code PostToolBatch hook
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_1` ↔ `clm_5be2e21d45c9_ollama_intern_109` (jaccard 0.4, in-section)
+  - Scope A: Hook events in Claude Code
+  - Scope B: Claude Code hooks
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_1` ↔ `clm_5be2e21d45c9_ollama_intern_125` (jaccard 0.4, in-section)
+  - Scope A: Hook events in Claude Code
+  - Scope B: Hooks in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_1` ↔ `clm_5be2e21d45c9_ollama_intern_148` (jaccard 0.6, in-section)
+  - Scope A: Hook events in Claude Code
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_1` ↔ `clm_5be2e21d45c9_ollama_intern_149` (jaccard 0.6, in-section)
+  - Scope A: Hook events in Claude Code
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_1` ↔ `clm_96b9a35307c0_ollama_intern_5` (jaccard 0.4, in-section)
+  - Scope A: Hook events in Claude Code
+  - Scope B: Claude Code Docs
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_1` ↔ `clm_486f1e6121c8_ollama_intern_1` (jaccard 0.3333, in-section)
+  - Scope A: Hook events in Claude Code
+  - Scope B: Within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_23` ↔ `clm_5be2e21d45c9_ollama_intern_27` (jaccard 0.375, in-section)
+  - Scope A: Common fields for all hook types in Claude Code
+  - Scope B: Claude Code hook configuration
+  - Warning: In-section scope overlap (jaccard=0.38). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_23` ↔ `clm_5be2e21d45c9_ollama_intern_29` (jaccard 0.375, in-section)
+  - Scope A: Common fields for all hook types in Claude Code
+  - Scope B: Claude Code hook configuration
+  - Warning: In-section scope overlap (jaccard=0.38). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_23` ↔ `clm_5be2e21d45c9_ollama_intern_56` (jaccard 0.375, in-section)
+  - Scope A: Common fields for all hook types in Claude Code
+  - Scope B: Claude Code hook events
+  - Warning: In-section scope overlap (jaccard=0.38). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_23` ↔ `clm_5be2e21d45c9_ollama_intern_106` (jaccard 0.375, in-section)
+  - Scope A: Common fields for all hook types in Claude Code
+  - Scope B: Claude Code PostToolBatch hook
+  - Warning: In-section scope overlap (jaccard=0.38). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_23` ↔ `clm_5be2e21d45c9_ollama_intern_148` (jaccard 0.375, in-section)
+  - Scope A: Common fields for all hook types in Claude Code
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.38). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_23` ↔ `clm_5be2e21d45c9_ollama_intern_149` (jaccard 0.375, in-section)
+  - Scope A: Common fields for all hook types in Claude Code
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.38). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_27` ↔ `clm_5be2e21d45c9_ollama_intern_29` (jaccard 1, in-section)
+  - Scope A: Claude Code hook configuration
+  - Scope B: Claude Code hook configuration
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_27` ↔ `clm_5be2e21d45c9_ollama_intern_56` (jaccard 0.6, in-section)
+  - Scope A: Claude Code hook configuration
+  - Scope B: Claude Code hook events
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_27` ↔ `clm_5be2e21d45c9_ollama_intern_106` (jaccard 0.6, in-section)
+  - Scope A: Claude Code hook configuration
+  - Scope B: Claude Code PostToolBatch hook
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_27` ↔ `clm_5be2e21d45c9_ollama_intern_109` (jaccard 0.4, in-section)
+  - Scope A: Claude Code hook configuration
+  - Scope B: Claude Code hooks
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_27` ↔ `clm_5be2e21d45c9_ollama_intern_125` (jaccard 0.4, in-section)
+  - Scope A: Claude Code hook configuration
+  - Scope B: Hooks in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_27` ↔ `clm_5be2e21d45c9_ollama_intern_148` (jaccard 0.6, in-section)
+  - Scope A: Claude Code hook configuration
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_27` ↔ `clm_5be2e21d45c9_ollama_intern_149` (jaccard 0.6, in-section)
+  - Scope A: Claude Code hook configuration
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_27` ↔ `clm_96b9a35307c0_ollama_intern_5` (jaccard 0.4, in-section)
+  - Scope A: Claude Code hook configuration
+  - Scope B: Claude Code Docs
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_27` ↔ `clm_486f1e6121c8_ollama_intern_1` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code hook configuration
+  - Scope B: Within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_29` ↔ `clm_5be2e21d45c9_ollama_intern_56` (jaccard 0.6, in-section)
+  - Scope A: Claude Code hook configuration
+  - Scope B: Claude Code hook events
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_29` ↔ `clm_5be2e21d45c9_ollama_intern_106` (jaccard 0.6, in-section)
+  - Scope A: Claude Code hook configuration
+  - Scope B: Claude Code PostToolBatch hook
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_29` ↔ `clm_5be2e21d45c9_ollama_intern_109` (jaccard 0.4, in-section)
+  - Scope A: Claude Code hook configuration
+  - Scope B: Claude Code hooks
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_29` ↔ `clm_5be2e21d45c9_ollama_intern_125` (jaccard 0.4, in-section)
+  - Scope A: Claude Code hook configuration
+  - Scope B: Hooks in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_29` ↔ `clm_5be2e21d45c9_ollama_intern_148` (jaccard 0.6, in-section)
+  - Scope A: Claude Code hook configuration
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_29` ↔ `clm_5be2e21d45c9_ollama_intern_149` (jaccard 0.6, in-section)
+  - Scope A: Claude Code hook configuration
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_29` ↔ `clm_96b9a35307c0_ollama_intern_5` (jaccard 0.4, in-section)
+  - Scope A: Claude Code hook configuration
+  - Scope B: Claude Code Docs
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_29` ↔ `clm_486f1e6121c8_ollama_intern_1` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code hook configuration
+  - Scope B: Within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_56` ↔ `clm_5be2e21d45c9_ollama_intern_106` (jaccard 0.6, in-section)
+  - Scope A: Claude Code hook events
+  - Scope B: Claude Code PostToolBatch hook
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_56` ↔ `clm_5be2e21d45c9_ollama_intern_109` (jaccard 0.4, in-section)
+  - Scope A: Claude Code hook events
+  - Scope B: Claude Code hooks
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_56` ↔ `clm_5be2e21d45c9_ollama_intern_125` (jaccard 0.4, in-section)
+  - Scope A: Claude Code hook events
+  - Scope B: Hooks in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_56` ↔ `clm_5be2e21d45c9_ollama_intern_148` (jaccard 0.6, in-section)
+  - Scope A: Claude Code hook events
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_56` ↔ `clm_5be2e21d45c9_ollama_intern_149` (jaccard 0.6, in-section)
+  - Scope A: Claude Code hook events
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_56` ↔ `clm_96b9a35307c0_ollama_intern_5` (jaccard 0.4, in-section)
+  - Scope A: Claude Code hook events
+  - Scope B: Claude Code Docs
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_56` ↔ `clm_486f1e6121c8_ollama_intern_1` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code hook events
+  - Scope B: Within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_106` ↔ `clm_5be2e21d45c9_ollama_intern_109` (jaccard 0.4, in-section)
+  - Scope A: Claude Code PostToolBatch hook
+  - Scope B: Claude Code hooks
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_106` ↔ `clm_5be2e21d45c9_ollama_intern_125` (jaccard 0.4, in-section)
+  - Scope A: Claude Code PostToolBatch hook
+  - Scope B: Hooks in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_106` ↔ `clm_5be2e21d45c9_ollama_intern_148` (jaccard 0.6, in-section)
+  - Scope A: Claude Code PostToolBatch hook
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_106` ↔ `clm_5be2e21d45c9_ollama_intern_149` (jaccard 0.6, in-section)
+  - Scope A: Claude Code PostToolBatch hook
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_106` ↔ `clm_96b9a35307c0_ollama_intern_5` (jaccard 0.4, in-section)
+  - Scope A: Claude Code PostToolBatch hook
+  - Scope B: Claude Code Docs
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_106` ↔ `clm_486f1e6121c8_ollama_intern_1` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code PostToolBatch hook
+  - Scope B: Within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_109` ↔ `clm_5be2e21d45c9_ollama_intern_125` (jaccard 1, in-section)
+  - Scope A: Claude Code hooks
+  - Scope B: Hooks in Claude Code
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_109` ↔ `clm_5be2e21d45c9_ollama_intern_148` (jaccard 0.4, in-section)
+  - Scope A: Claude Code hooks
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_109` ↔ `clm_5be2e21d45c9_ollama_intern_149` (jaccard 0.4, in-section)
+  - Scope A: Claude Code hooks
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_109` ↔ `clm_96b9a35307c0_ollama_intern_5` (jaccard 0.5, in-section)
+  - Scope A: Claude Code hooks
+  - Scope B: Claude Code Docs
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_109` ↔ `clm_c8975a95117b_ollama_intern_55` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code hooks
+  - Scope B: Claude Code's file suggestion settings
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_109` ↔ `clm_486f1e6121c8_ollama_intern_1` (jaccard 0.4, in-section)
+  - Scope A: Claude Code hooks
+  - Scope B: Within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_109` ↔ `clm_486f1e6121c8_ollama_intern_12` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code hooks
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_109` ↔ `clm_486f1e6121c8_ollama_intern_13` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code hooks
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_109` ↔ `clm_486f1e6121c8_ollama_intern_14` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code hooks
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_109` ↔ `clm_9686dc1633cd_ollama_intern_2` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code hooks
+  - Scope B: Claude Code's autonomy in coding tasks.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_109` ↔ `clm_9686dc1633cd_ollama_intern_16` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code hooks
+  - Scope B: When configuring Claude Code's environment.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_125` ↔ `clm_5be2e21d45c9_ollama_intern_148` (jaccard 0.4, in-section)
+  - Scope A: Hooks in Claude Code
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_125` ↔ `clm_5be2e21d45c9_ollama_intern_149` (jaccard 0.4, in-section)
+  - Scope A: Hooks in Claude Code
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_125` ↔ `clm_96b9a35307c0_ollama_intern_5` (jaccard 0.5, in-section)
+  - Scope A: Hooks in Claude Code
+  - Scope B: Claude Code Docs
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_125` ↔ `clm_c8975a95117b_ollama_intern_55` (jaccard 0.3333, in-section)
+  - Scope A: Hooks in Claude Code
+  - Scope B: Claude Code's file suggestion settings
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_125` ↔ `clm_486f1e6121c8_ollama_intern_1` (jaccard 0.4, in-section)
+  - Scope A: Hooks in Claude Code
+  - Scope B: Within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_125` ↔ `clm_486f1e6121c8_ollama_intern_12` (jaccard 0.3333, in-section)
+  - Scope A: Hooks in Claude Code
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_125` ↔ `clm_486f1e6121c8_ollama_intern_13` (jaccard 0.3333, in-section)
+  - Scope A: Hooks in Claude Code
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_125` ↔ `clm_486f1e6121c8_ollama_intern_14` (jaccard 0.3333, in-section)
+  - Scope A: Hooks in Claude Code
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_125` ↔ `clm_9686dc1633cd_ollama_intern_2` (jaccard 0.3333, in-section)
+  - Scope A: Hooks in Claude Code
+  - Scope B: Claude Code's autonomy in coding tasks.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_125` ↔ `clm_9686dc1633cd_ollama_intern_16` (jaccard 0.3333, in-section)
+  - Scope A: Hooks in Claude Code
+  - Scope B: When configuring Claude Code's environment.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_148` ↔ `clm_5be2e21d45c9_ollama_intern_149` (jaccard 1, in-section)
+  - Scope A: ElicitationResult hook in Claude Code
+  - Scope B: ElicitationResult hook in Claude Code
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_148` ↔ `clm_96b9a35307c0_ollama_intern_5` (jaccard 0.4, in-section)
+  - Scope A: ElicitationResult hook in Claude Code
+  - Scope B: Claude Code Docs
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_148` ↔ `clm_486f1e6121c8_ollama_intern_1` (jaccard 0.3333, in-section)
+  - Scope A: ElicitationResult hook in Claude Code
+  - Scope B: Within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_149` ↔ `clm_96b9a35307c0_ollama_intern_5` (jaccard 0.4, in-section)
+  - Scope A: ElicitationResult hook in Claude Code
+  - Scope B: Claude Code Docs
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_5be2e21d45c9_ollama_intern_149` ↔ `clm_486f1e6121c8_ollama_intern_1` (jaccard 0.3333, in-section)
+  - Scope A: ElicitationResult hook in Claude Code
+  - Scope B: Within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_96b9a35307c0_ollama_intern_5` ↔ `clm_c8975a95117b_ollama_intern_55` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code Docs
+  - Scope B: Claude Code's file suggestion settings
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_96b9a35307c0_ollama_intern_5` ↔ `clm_486f1e6121c8_ollama_intern_1` (jaccard 0.4, in-section)
+  - Scope A: Claude Code Docs
+  - Scope B: Within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_96b9a35307c0_ollama_intern_5` ↔ `clm_486f1e6121c8_ollama_intern_12` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code Docs
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_96b9a35307c0_ollama_intern_5` ↔ `clm_486f1e6121c8_ollama_intern_13` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code Docs
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_96b9a35307c0_ollama_intern_5` ↔ `clm_486f1e6121c8_ollama_intern_14` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code Docs
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_96b9a35307c0_ollama_intern_5` ↔ `clm_9686dc1633cd_ollama_intern_2` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code Docs
+  - Scope B: Claude Code's autonomy in coding tasks.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_96b9a35307c0_ollama_intern_5` ↔ `clm_9686dc1633cd_ollama_intern_16` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code Docs
+  - Scope B: When configuring Claude Code's environment.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_96b9a35307c0_ollama_intern_18` ↔ `clm_96b9a35307c0_ollama_intern_32` (jaccard 0.3333, in-section)
+  - Scope A: Organization of rules files for Claude.
+  - Scope B: When Claude reads CLAUDE.md files.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_96b9a35307c0_ollama_intern_29` ↔ `clm_96b9a35307c0_ollama_intern_33` (jaccard 0.3333, in-section)
+  - Scope A: When users interact with Claude during a session.
+  - Scope B: When users provide instructions in CLAUDE.md files.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_96b9a35307c0_ollama_intern_32` ↔ `clm_96b9a35307c0_ollama_intern_33` (jaccard 0.4286, in-section)
+  - Scope A: When Claude reads CLAUDE.md files.
+  - Scope B: When users provide instructions in CLAUDE.md files.
+  - Warning: In-section scope overlap (jaccard=0.43). Synthesis must keep each claim's scope tag intact.
+- `clm_96b9a35307c0_ollama_intern_32` ↔ `clm_9686dc1633cd_ollama_intern_21` (jaccard 0.375, in-section)
+  - Scope A: When Claude reads CLAUDE.md files.
+  - Scope B: When creating SKILL.md files in .claude/skills/ directory.
+  - Warning: In-section scope overlap (jaccard=0.38). Synthesis must keep each claim's scope tag intact.
+- `clm_96b9a35307c0_ollama_intern_33` ↔ `clm_9686dc1633cd_ollama_intern_21` (jaccard 0.3, in-section)
+  - Scope A: When users provide instructions in CLAUDE.md files.
+  - Scope B: When creating SKILL.md files in .claude/skills/ directory.
+  - Warning: In-section scope overlap (jaccard=0.30). Synthesis must keep each claim's scope tag intact.
+- `clm_c8975a95117b_ollama_intern_11` ↔ `clm_c8975a95117b_ollama_intern_12` (jaccard 1, in-section)
+  - Scope A: Managed settings
+  - Scope B: Managed settings
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_c8975a95117b_ollama_intern_11` ↔ `clm_c8975a95117b_ollama_intern_13` (jaccard 1, in-section)
+  - Scope A: Managed settings
+  - Scope B: Managed settings
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_c8975a95117b_ollama_intern_12` ↔ `clm_c8975a95117b_ollama_intern_13` (jaccard 1, in-section)
+  - Scope A: Managed settings
+  - Scope B: Managed settings
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_c8975a95117b_ollama_intern_28` ↔ `clm_c8975a95117b_ollama_intern_30` (jaccard 0.3333, in-section)
+  - Scope A: When using the modelOverrides setting.
+  - Scope B: When configuring with the outputStyle setting.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_486f1e6121c8_ollama_intern_1` ↔ `clm_486f1e6121c8_ollama_intern_6` (jaccard 0.5714, in-section)
+  - Scope A: Within Claude Code platform
+  - Scope B: When creating skills within Claude Code platform
+  - Warning: In-section scope overlap (jaccard=0.57). Synthesis must keep each claim's scope tag intact.
+- `clm_486f1e6121c8_ollama_intern_6` ↔ `clm_486f1e6121c8_ollama_intern_36` (jaccard 0.3333, in-section)
+  - Scope A: When creating skills within Claude Code platform
+  - Scope B: When configuring Claude's access to skills.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_486f1e6121c8_ollama_intern_6` ↔ `clm_9686dc1633cd_ollama_intern_16` (jaccard 0.3333, in-section)
+  - Scope A: When creating skills within Claude Code platform
+  - Scope B: When configuring Claude Code's environment.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_486f1e6121c8_ollama_intern_6` ↔ `clm_9686dc1633cd_ollama_intern_21` (jaccard 0.4, in-section)
+  - Scope A: When creating skills within Claude Code platform
+  - Scope B: When creating SKILL.md files in .claude/skills/ directory.
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_486f1e6121c8_ollama_intern_12` ↔ `clm_486f1e6121c8_ollama_intern_13` (jaccard 1, in-section)
+  - Scope A: API endpoint creation in Claude Code
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_486f1e6121c8_ollama_intern_12` ↔ `clm_486f1e6121c8_ollama_intern_14` (jaccard 1, in-section)
+  - Scope A: API endpoint creation in Claude Code
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_486f1e6121c8_ollama_intern_13` ↔ `clm_486f1e6121c8_ollama_intern_14` (jaccard 1, in-section)
+  - Scope A: API endpoint creation in Claude Code
+  - Scope B: API endpoint creation in Claude Code
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_486f1e6121c8_ollama_intern_29` ↔ `clm_486f1e6121c8_ollama_intern_33` (jaccard 0.3, in-section)
+  - Scope A: When using the 'migrate-component' skill.
+  - Scope B: When creating a skill with explicit instructions and using an agent type.
+  - Warning: In-section scope overlap (jaccard=0.30). Synthesis must keep each claim's scope tag intact.
+- `clm_486f1e6121c8_ollama_intern_36` ↔ `clm_9686dc1633cd_ollama_intern_16` (jaccard 0.4286, in-section)
+  - Scope A: When configuring Claude's access to skills.
+  - Scope B: When configuring Claude Code's environment.
+  - Warning: In-section scope overlap (jaccard=0.43). Synthesis must keep each claim's scope tag intact.
+- `clm_486f1e6121c8_ollama_intern_36` ↔ `clm_9686dc1633cd_ollama_intern_21` (jaccard 0.3333, in-section)
+  - Scope A: When configuring Claude's access to skills.
+  - Scope B: When creating SKILL.md files in .claude/skills/ directory.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9686dc1633cd_ollama_intern_2` ↔ `clm_9a532b2b74e5_ollama_intern_15` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code's autonomy in coding tasks.
+  - Scope B: Tasks mentioned in team chat that Claude Code is integrated with.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9686dc1633cd_ollama_intern_4` ↔ `clm_9686dc1633cd_ollama_intern_16` (jaccard 0.3333, in-section)
+  - Scope A: Claude Code's behavior when provided with verification criteria.
+  - Scope B: When configuring Claude Code's environment.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_9686dc1633cd_ollama_intern_21` ↔ `clm_9686dc1633cd_ollama_intern_22` (jaccard 0.3333, in-section)
+  - Scope A: When creating SKILL.md files in .claude/skills/ directory.
+  - Scope B: When defined in .claude/agents/ directory.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_126e07cf0d68_ollama_intern_9` ↔ `clm_126e07cf0d68_ollama_intern_13` (jaccard 0.5, in-section)
+  - Scope A: Building AI agents
+  - Scope B: AI agents
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_126e07cf0d68_ollama_intern_9` ↔ `clm_126e07cf0d68_ollama_intern_14` (jaccard 0.5, in-section)
+  - Scope A: Building AI agents
+  - Scope B: AI agents
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_126e07cf0d68_ollama_intern_9` ↔ `clm_126e07cf0d68_ollama_intern_15` (jaccard 0.5, in-section)
+  - Scope A: Building AI agents
+  - Scope B: AI agents
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_126e07cf0d68_ollama_intern_13` ↔ `clm_126e07cf0d68_ollama_intern_14` (jaccard 1, in-section)
+  - Scope A: AI agents
+  - Scope B: AI agents
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_126e07cf0d68_ollama_intern_13` ↔ `clm_126e07cf0d68_ollama_intern_15` (jaccard 1, in-section)
+  - Scope A: AI agents
+  - Scope B: AI agents
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_126e07cf0d68_ollama_intern_14` ↔ `clm_126e07cf0d68_ollama_intern_15` (jaccard 1, in-section)
+  - Scope A: AI agents
+  - Scope B: AI agents
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_e15c2248a5d8_ollama_intern_3` ↔ `clm_e15c2248a5d8_ollama_intern_37` (jaccard 0.3333, in-section)
+  - Scope A: Using FTS5 in SQLite.
+  - Scope B: FTS5 when using the trigram tokenizer.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_e15c2248a5d8_ollama_intern_3` ↔ `clm_e15c2248a5d8_ollama_intern_58` (jaccard 0.375, in-section)
+  - Scope A: Using FTS5 in SQLite.
+  - Scope B: In the context of full-text search using SQLite's FTS5 extension
+  - Warning: In-section scope overlap (jaccard=0.38). Synthesis must keep each claim's scope tag intact.
+- `clm_e15c2248a5d8_ollama_intern_10` ↔ `clm_e15c2248a5d8_ollama_intern_103` (jaccard 0.3333, in-section)
+  - Scope A: In database applications.
+  - Scope B: Within FTS5 module for SQLite database applications
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_e15c2248a5d8_ollama_intern_52` ↔ `clm_e15c2248a5d8_ollama_intern_55` (jaccard 0.3, in-section)
+  - Scope A: When performing DELETE operations on contentless tables.
+  - Scope B: When querying contentless FTS5 tables configured with columnsize=0.
+  - Warning: In-section scope overlap (jaccard=0.30). Synthesis must keep each claim's scope tag intact.
+- `clm_e15c2248a5d8_ollama_intern_58` ↔ `clm_91705d06abdf_ollama_intern_10` (jaccard 0.3, in-section)
+  - Scope A: In the context of full-text search using SQLite's FTS5 extension
+  - Scope B: Resource utilization of full-text search
+  - Warning: In-section scope overlap (jaccard=0.30). Synthesis must keep each claim's scope tag intact.
+- `clm_e15c2248a5d8_ollama_intern_103` ↔ `clm_e15c2248a5d8_ollama_intern_105` (jaccard 0.6667, in-section)
+  - Scope A: Within FTS5 module for SQLite database applications
+  - Scope B: Regarding the fts5_api structure within FTS5 module for SQLite database applications
+  - Warning: In-section scope overlap (jaccard=0.67). Synthesis must keep each claim's scope tag intact.
+- `clm_05cae033cedc_ollama_intern_23` ↔ `clm_05cae033cedc_ollama_intern_35` (jaccard 0.3333, in-section)
+  - Scope A: WAL mode
+  - Scope B: WAL databases
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_05cae033cedc_ollama_intern_23` ↔ `clm_05cae033cedc_ollama_intern_36` (jaccard 0.6667, in-section)
+  - Scope A: WAL mode
+  - Scope B: WAL-mode databases
+  - Warning: In-section scope overlap (jaccard=0.67). Synthesis must keep each claim's scope tag intact.
+- `clm_05cae033cedc_ollama_intern_35` ↔ `clm_05cae033cedc_ollama_intern_36` (jaccard 0.6667, in-section)
+  - Scope A: WAL databases
+  - Scope B: WAL-mode databases
+  - Warning: In-section scope overlap (jaccard=0.67). Synthesis must keep each claim's scope tag intact.
+- `clm_5d98fdba0757_ollama_intern_4` ↔ `clm_5d98fdba0757_ollama_intern_5` (jaccard 1, in-section)
+  - Scope A: Under the conditions specified in their main theorem.
+  - Scope B: Under the conditions specified in their main theorem.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_5d98fdba0757_ollama_intern_4` ↔ `clm_5d98fdba0757_ollama_intern_6` (jaccard 1, in-section)
+  - Scope A: Under the conditions specified in their main theorem.
+  - Scope B: Under the conditions specified in their main theorem.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_5d98fdba0757_ollama_intern_5` ↔ `clm_5d98fdba0757_ollama_intern_6` (jaccard 1, in-section)
+  - Scope A: Under the conditions specified in their main theorem.
+  - Scope B: Under the conditions specified in their main theorem.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_91705d06abdf_ollama_intern_4` ↔ `clm_91705d06abdf_ollama_intern_5` (jaccard 1, in-section)
+  - Scope A: AWS environment
+  - Scope B: AWS environment
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_91705d06abdf_ollama_intern_6` ↔ `clm_91705d06abdf_ollama_intern_7` (jaccard 1, in-section)
+  - Scope A: Microsoft Azure environment
+  - Scope B: Microsoft Azure environment
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_91705d06abdf_ollama_intern_11` ↔ `clm_91705d06abdf_ollama_intern_12` (jaccard 0.8, in-section)
+  - Scope A: The functionality of Elasticsearch's querying capabilities.
+  - Scope B: The functionality of Elasticsearch's querying capabilities via ES|QL.
+  - Warning: In-section scope overlap (jaccard=0.80). Synthesis must keep each claim's scope tag intact.
+- `clm_676ddfa834cc_ollama_intern_1` ↔ `clm_676ddfa834cc_ollama_intern_29` (jaccard 0.4, in-section)
+  - Scope A: Knowledge representation and reasoning domain.
+  - Scope B: Knowledge graph domain
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_676ddfa834cc_ollama_intern_22` ↔ `clm_676ddfa834cc_ollama_intern_29` (jaccard 0.4, in-section)
+  - Scope A: Introduction of the Knowledge Graph by Google
+  - Scope B: Knowledge graph domain
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_676ddfa834cc_ollama_intern_26` ↔ `clm_676ddfa834cc_ollama_intern_27` (jaccard 0.5, in-section)
+  - Scope A: As stated on the Neo4j website, retrieved in November 2023.
+  - Scope B: According to the Ontotext website, retrieved in November 2023.
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+- `clm_f110ffbdbe7c_ollama_intern_2` ↔ `clm_f110ffbdbe7c_ollama_intern_3` (jaccard 0.6667, in-section)
+  - Scope A: PostgreSQL version 18 documentation
+  - Scope B: PostgreSQL documentation
+  - Warning: In-section scope overlap (jaccard=0.67). Synthesis must keep each claim's scope tag intact.
+- `clm_ac6052de3047_ollama_intern_4` ↔ `clm_ac6052de3047_ollama_intern_5` (jaccard 0.3333, in-section)
+  - Scope A: The library's distribution
+  - Scope B: The library's architecture
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_27eaf34f91a3_ollama_intern_1` ↔ `clm_27eaf34f91a3_ollama_intern_4` (jaccard 0.6, in-section)
+  - Scope A: glibc manual distribution
+  - Scope B: glibc manual distribution, latest version
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_27eaf34f91a3_ollama_intern_1` ↔ `clm_27eaf34f91a3_ollama_intern_6` (jaccard 0.6, in-section)
+  - Scope A: glibc manual distribution
+  - Scope B: glibc manual distribution, latest version
+  - Warning: In-section scope overlap (jaccard=0.60). Synthesis must keep each claim's scope tag intact.
+- `clm_27eaf34f91a3_ollama_intern_4` ↔ `clm_27eaf34f91a3_ollama_intern_6` (jaccard 1, in-section)
+  - Scope A: glibc manual distribution, latest version
+  - Scope B: glibc manual distribution, latest version
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_458d9788c68d_ollama_intern_12` ↔ `clm_458d9788c68d_ollama_intern_13` (jaccard 0.3, in-section)
+  - Scope A: When commands dump pages of debugging output.
+  - Scope B: When commands hang for several minutes without output.
+  - Warning: In-section scope overlap (jaccard=0.30). Synthesis must keep each claim's scope tag intact.
+- `clm_458d9788c68d_ollama_intern_19` ↔ `clm_0b75376a48e4_ollama_intern_10` (jaccard 0.4, in-section)
+  - Scope A: Command-line programs
+  - Scope B: Command line interface syntax
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_458d9788c68d_ollama_intern_62` ↔ `clm_0b75376a48e4_ollama_intern_16` (jaccard 0.3, in-section)
+  - Scope A: When using progress indicators in a command-line program.
+  - Scope B: In commander.js, when parsing command-line arguments.
+  - Warning: In-section scope overlap (jaccard=0.30). Synthesis must keep each claim's scope tag intact.
+- `clm_de50fc93ad72_ollama_intern_1` ↔ `clm_de50fc93ad72_ollama_intern_2` (jaccard 1, in-section)
+  - Scope A: For software-as-a-service apps.
+  - Scope B: For software-as-a-service apps.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_de50fc93ad72_ollama_intern_1` ↔ `clm_de50fc93ad72_ollama_intern_3` (jaccard 1, in-section)
+  - Scope A: For software-as-a-service apps.
+  - Scope B: For software-as-a-service apps.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_de50fc93ad72_ollama_intern_1` ↔ `clm_de50fc93ad72_ollama_intern_4` (jaccard 1, in-section)
+  - Scope A: For software-as-a-service apps.
+  - Scope B: For software-as-a-service apps.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_de50fc93ad72_ollama_intern_2` ↔ `clm_de50fc93ad72_ollama_intern_3` (jaccard 1, in-section)
+  - Scope A: For software-as-a-service apps.
+  - Scope B: For software-as-a-service apps.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_de50fc93ad72_ollama_intern_2` ↔ `clm_de50fc93ad72_ollama_intern_4` (jaccard 1, in-section)
+  - Scope A: For software-as-a-service apps.
+  - Scope B: For software-as-a-service apps.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_de50fc93ad72_ollama_intern_3` ↔ `clm_de50fc93ad72_ollama_intern_4` (jaccard 1, in-section)
+  - Scope A: For software-as-a-service apps.
+  - Scope B: For software-as-a-service apps.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_0b75376a48e4_ollama_intern_16` ↔ `clm_0b75376a48e4_ollama_intern_26` (jaccard 0.3, in-section)
+  - Scope A: In commander.js, when parsing command-line arguments.
+  - Scope B: commander.js library, when handling commands with variadic arguments.
+  - Warning: In-section scope overlap (jaccard=0.30). Synthesis must keep each claim's scope tag intact.
+- `clm_0b75376a48e4_ollama_intern_16` ↔ `clm_0b75376a48e4_ollama_intern_27` (jaccard 0.3333, in-section)
+  - Scope A: In commander.js, when parsing command-line arguments.
+  - Scope B: commander.js library, when defining commands with arguments.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_0b75376a48e4_ollama_intern_16` ↔ `clm_0b75376a48e4_ollama_intern_46` (jaccard 0.3, in-section)
+  - Scope A: In commander.js, when parsing command-line arguments.
+  - Scope B: Commander.js library for creating command-line interfaces in node.js
+  - Warning: In-section scope overlap (jaccard=0.30). Synthesis must keep each claim's scope tag intact.
+- `clm_0b75376a48e4_ollama_intern_19` ↔ `clm_0b75376a48e4_ollama_intern_20` (jaccard 1, in-section)
+  - Scope A: In the context of argument parsing in commander.js.
+  - Scope B: In the context of argument parsing in commander.js.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_0b75376a48e4_ollama_intern_19` ↔ `clm_0b75376a48e4_ollama_intern_21` (jaccard 1, in-section)
+  - Scope A: In the context of argument parsing in commander.js.
+  - Scope B: In the context of argument parsing in commander.js.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_0b75376a48e4_ollama_intern_20` ↔ `clm_0b75376a48e4_ollama_intern_21` (jaccard 1, in-section)
+  - Scope A: In the context of argument parsing in commander.js.
+  - Scope B: In the context of argument parsing in commander.js.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_0b75376a48e4_ollama_intern_26` ↔ `clm_0b75376a48e4_ollama_intern_27` (jaccard 0.625, in-section)
+  - Scope A: commander.js library, when handling commands with variadic arguments.
+  - Scope B: commander.js library, when defining commands with arguments.
+  - Warning: In-section scope overlap (jaccard=0.63). Synthesis must keep each claim's scope tag intact.
+- `clm_0b75376a48e4_ollama_intern_26` ↔ `clm_0b75376a48e4_ollama_intern_34` (jaccard 0.4, in-section)
+  - Scope A: commander.js library, when handling commands with variadic arguments.
+  - Scope B: Commander.js library, specifically when using commands and subcommands.
+  - Warning: In-section scope overlap (jaccard=0.40). Synthesis must keep each claim's scope tag intact.
+- `clm_0b75376a48e4_ollama_intern_27` ↔ `clm_0b75376a48e4_ollama_intern_34` (jaccard 0.4444, in-section)
+  - Scope A: commander.js library, when defining commands with arguments.
+  - Scope B: Commander.js library, specifically when using commands and subcommands.
+  - Warning: In-section scope overlap (jaccard=0.44). Synthesis must keep each claim's scope tag intact.
+- `clm_53ee6a9ec24b_ollama_intern_5` ↔ `clm_eefec92990cb_ollama_intern_19` (jaccard 0.3333, in-section)
+  - Scope A: The sequence of software testing phases.
+  - Scope B: Software products and their acceptance testing.
+  - Warning: In-section scope overlap (jaccard=0.33). Synthesis must keep each claim's scope tag intact.
+- `clm_53ee6a9ec24b_ollama_intern_8` ↔ `clm_53ee6a9ec24b_ollama_intern_10` (jaccard 1, in-section)
+  - Scope A: The process of verifying a software system along with its sub-systems.
+  - Scope B: The process of verifying a software system along with its sub-systems.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_53ee6a9ec24b_ollama_intern_8` ↔ `clm_53ee6a9ec24b_ollama_intern_12` (jaccard 1, in-section)
+  - Scope A: The process of verifying a software system along with its sub-systems.
+  - Scope B: The process of verifying a software system along with its sub-systems.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_53ee6a9ec24b_ollama_intern_10` ↔ `clm_53ee6a9ec24b_ollama_intern_12` (jaccard 1, in-section)
+  - Scope A: The process of verifying a software system along with its sub-systems.
+  - Scope B: The process of verifying a software system along with its sub-systems.
+  - Warning: In-section scope overlap (jaccard=1.00). Synthesis must keep each claim's scope tag intact.
+- `clm_eefec92990cb_ollama_intern_19` ↔ `clm_eefec92990cb_ollama_intern_24` (jaccard 0.5, in-section)
+  - Scope A: Software products and their acceptance testing.
+  - Scope B: Software products
+  - Warning: In-section scope overlap (jaccard=0.50). Synthesis must keep each claim's scope tag intact.
+
+## Cross-section contradictions (must be preserved)
+
+_None recorded._
+
+## Waivers (must be disclosed in any synthesis output)
+
+- **pack.source_floor** applied to `primary_sources_required` — disclose in: both
+  - Reason: This pack researches the design intent of research-os itself. Primary sources for the design (Mike's spec decisions and the maintainer's reasoning) are operator input, not public publications. Public secondary sources about adjacent topics (citation systems, knowledge graphs, gating workflows, FTS5, Cowork patterns) provide independent corroboration where the design touches established practice.
+  - Compensating: Adversarial reviewer pass required on every section before synthesis.
+  - Compensating: Cross-section contradiction mapping required across all sections.
+  - Compensating: Each section must cite >=4 independent publishers; source cluster monopoly is a section-level blocker.
+  - Compensating: Final-report citations must be claim-level traceable via [claim:clm_...] references.
+  - Compensating: Every active waiver disclosed in synthesis/decision-brief.md and synthesis/final-report.md by family.applied_to.
+- **gate.source_floor** applied to `04-gates-and-waivers.primary_sources_required` — disclose in: both
+  - Reason: This pack researches the design intent of research-os itself. Primary sources for the design (Mike's spec decisions and the maintainer's reasoning) are operator input, not public publications. Public secondary sources about adjacent topics (citation systems, knowledge graphs, gating workflows, FTS5, Cowork patterns) provide independent corroboration where the design touches established practice.
+  - Compensating: Adversarial reviewer pass required on every section before synthesis.
+  - Compensating: Cross-section contradiction mapping required across all sections.
+  - Compensating: Each section must cite >=4 independent publishers; source cluster monopoly is a section-level blocker.
+  - Compensating: Final-report citations must be claim-level traceable via [claim:clm_...] references.
+  - Compensating: Every active waiver disclosed in synthesis/decision-brief.md and synthesis/final-report.md by family.applied_to.
+- **gate.source_floor** applied to `07-cli-and-runtime-flow.primary_sources_required` — disclose in: both
+  - Reason: This pack researches the design intent of research-os itself. Primary sources for the design (Mike's spec decisions and the maintainer's reasoning) are operator input, not public publications. Public secondary sources about adjacent topics (citation systems, knowledge graphs, gating workflows, FTS5, Cowork patterns) provide independent corroboration where the design touches established practice.
+  - Compensating: Adversarial reviewer pass required on every section before synthesis.
+  - Compensating: Cross-section contradiction mapping required across all sections.
+  - Compensating: Each section must cite >=4 independent publishers; source cluster monopoly is a section-level blocker.
+  - Compensating: Final-report citations must be claim-level traceable via [claim:clm_...] references.
+  - Compensating: Every active waiver disclosed in synthesis/decision-brief.md and synthesis/final-report.md by family.applied_to.
+
+## Sections excluded from synthesis
+
+_All sections contributed accepted claims._
+
+## Useful index queries
+
+- `research-os query "<scope-term>"` — pull claims by scope tag
+- `research-os query "<source-id>" --type claim` — claims that cite a specific source
+- `research-os query "blocking" --type gate_result` — re-confirm no blocking gate failures before drafting
+- `research-os query "unresolved" --type contradiction` — re-confirm cross-section contradictions are still tracked
+
+## Forbidden inputs
+
+Synthesis must not cite any of the following claims:
+
+- `clm_d474bc1158c2_ollama_intern_1` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_2` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_3` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_4` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_5` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_6` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_7` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_8` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_9` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_10` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_11` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_12` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_13` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_14` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_15` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_16` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_17` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_18` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_20` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_21` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_22` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_23` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_24` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_25` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_26` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_27` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_28` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_29` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_30` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_31` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_32` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_33` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_34` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_35` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_36` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_37` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_39` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_40` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_41` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_42` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_43` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_44` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_45` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_46` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_47` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_48` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_49` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_50` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_51` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_52` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_53` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_54` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_55` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_56b5f3cd926b_ollama_intern_4` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_56b5f3cd926b_ollama_intern_5` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_56b5f3cd926b_ollama_intern_6` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_56b5f3cd926b_ollama_intern_7` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_56b5f3cd926b_ollama_intern_8` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_56b5f3cd926b_ollama_intern_9` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_56b5f3cd926b_ollama_intern_10` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_56b5f3cd926b_ollama_intern_11` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d574302fe3de_ollama_intern_1` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d574302fe3de_ollama_intern_2` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d574302fe3de_ollama_intern_3` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d574302fe3de_ollama_intern_5` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d574302fe3de_ollama_intern_6` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_770d35522c16_ollama_intern_3` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_770d35522c16_ollama_intern_4` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_770d35522c16_ollama_intern_5` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_770d35522c16_ollama_intern_6` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_56` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_57` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_59` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_61` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_63` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_64` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d474bc1158c2_ollama_intern_65` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_770d35522c16_ollama_intern_7` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_98d43428beed_ollama_intern_1` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_98d43428beed_ollama_intern_2` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_a2f17fd8c9a6_ollama_intern_3` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_a2f17fd8c9a6_ollama_intern_4` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_a2f17fd8c9a6_ollama_intern_5` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_a2f17fd8c9a6_ollama_intern_10` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_923564b918e1_ollama_intern_1` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_923564b918e1_ollama_intern_2` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_308195df859c_ollama_intern_1` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_308195df859c_ollama_intern_2` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_308195df859c_ollama_intern_3` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_308195df859c_ollama_intern_4` (`01-product-thesis`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_1` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_2` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_3` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_4` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_5` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_6` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_7` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_8` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_9` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_12` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_13` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_14` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_15` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_16` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_17` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_18` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_19` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_20` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_21` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_22` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_23` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_24` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_25` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_26` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_27` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_28` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_29` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_30` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_31` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_32` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_33` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_34` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_35` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_36` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_37` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_38` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_39` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_40` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_41` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_42` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_43` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_44` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_45` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_46` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_47` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_48` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_49` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_50` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_51` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_52` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_53` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_54` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_55` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_56` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_57` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_58` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_59` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_60` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_61` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_62` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_63` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_64` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_65` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_66` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_67` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_68` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_69` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_70` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_71` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_72` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_73` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_74` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_75` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_76` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_77` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_78` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_79` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_80` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_81` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_82` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_83` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_84` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_85` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_86` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_87` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_88` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_89` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_90` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_91` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_92` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_93` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_94` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_95` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_96` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_97` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_99` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_100` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_101` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_102` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_103` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_104` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_107` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_108` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_109` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_111` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_112` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_113` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_116` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_cf2238f43a01_ollama_intern_117` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2cc80fcf07ba_ollama_intern_1` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2cc80fcf07ba_ollama_intern_2` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2cc80fcf07ba_ollama_intern_3` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2cc80fcf07ba_ollama_intern_5` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2cc80fcf07ba_ollama_intern_6` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_876b66b88858_ollama_intern_1` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_876b66b88858_ollama_intern_2` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_876b66b88858_ollama_intern_3` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_876b66b88858_ollama_intern_4` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bf5d0eef78f0_ollama_intern_1` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bf5d0eef78f0_ollama_intern_2` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bf5d0eef78f0_ollama_intern_3` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bf5d0eef78f0_ollama_intern_4` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bf5d0eef78f0_ollama_intern_5` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bf5d0eef78f0_ollama_intern_6` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bf5d0eef78f0_ollama_intern_7` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_62d58636ae35_ollama_intern_1` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_62d58636ae35_ollama_intern_2` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_62d58636ae35_ollama_intern_3` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_62d58636ae35_ollama_intern_4` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_62d58636ae35_ollama_intern_5` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_62d58636ae35_ollama_intern_6` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_62d58636ae35_ollama_intern_7` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_62d58636ae35_ollama_intern_12` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_62d58636ae35_ollama_intern_14` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_62d58636ae35_ollama_intern_15` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_62d58636ae35_ollama_intern_16` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_62d58636ae35_ollama_intern_18` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_62d58636ae35_ollama_intern_20` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_62d58636ae35_ollama_intern_21` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_62d58636ae35_ollama_intern_22` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_62d58636ae35_ollama_intern_24` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_62d58636ae35_ollama_intern_25` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_62d58636ae35_ollama_intern_26` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_62d58636ae35_ollama_intern_27` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c1e29cfcaa1e_ollama_intern_1` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_1` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_2` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_3` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_4` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_5` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_6` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_7` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_8` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_9` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_10` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_11` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_12` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_13` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_14` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_15` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_18` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_19` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_21` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_22` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_23` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_24` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_25` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_26` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_27` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_28` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_29` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_30` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_31` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_32` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_33` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_34` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_35` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_36` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_37` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_38` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_39` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_40` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_41` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_42` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_43` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_44` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_45` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_46` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_47` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_48` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_49` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_50` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_51` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_52` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_53` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_54` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_55` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_56` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_57` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_58` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_59` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_60` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_61` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_62` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_63` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_65` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_66` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_67` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_68` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_69` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_70` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_71` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_72` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_73` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_74` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_75` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_76` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_77` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_78` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_79` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_80` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_81` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_83` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_84` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_85` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_86` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_87` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_88` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_89` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_90` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_91` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_92` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_93` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_94` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_95` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_96` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_97` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_98` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_99` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_100` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_101` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_102` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_103` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_105` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_106` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_107` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_108` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_109` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_110` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_111` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_112` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_113` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_114` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_115` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_116` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_117` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_118` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_119` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_120` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_121` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_123` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_124` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_125` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_126` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_127` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_129` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_130` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_131` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_132` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_133` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_134` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_135` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_136` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_137` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_138` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_139` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_140` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_142` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_143` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_144` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_145` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_146` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_148` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_149` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_712838e1db63_ollama_intern_150` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_1` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_2` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_3` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_4` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_5` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_6` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_7` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_8` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_9` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_10` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_11` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_12` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_14` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_15` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_16` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_17` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_18` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_19` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_20` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_21` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_22` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_23` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_24` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_25` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_26` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_27` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_28` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_29` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_30` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_31` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_32` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_33` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_34` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_35` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_36` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_37` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_38` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_39` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_40` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_41` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_42` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_43` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_44` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_45` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_46` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_47` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_48` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_49` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_50` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_51` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_53` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_54` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_55` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_56` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_57` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_58` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_59` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_60` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_61` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_62` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_63` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_64` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_65` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_66` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_67` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_68` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_69` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_70` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_71` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_72` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_73` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_74` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_75` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_76` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_77` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_78` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_79` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_81` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_82` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_84` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_86` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_87` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_88` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_89` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_90` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_91` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_92` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_93` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_94` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_95` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_96` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_97` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_98` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_99` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_100` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_101` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_102` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_103` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_104` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_105` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_106` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_107` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_108` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_112` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_113` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_114` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_115` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_116` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_117` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_118` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_119` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_120` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_121` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_122` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_123` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_124` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_125` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_126` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_128` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_129` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_130` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_131` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_133` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_134` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_135` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_136` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_137` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_138` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_139` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_140` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_141` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_142` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_143` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_144` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_145` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0801e1ee8a70_ollama_intern_146` (`02-pack-artifact-contract`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_2` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_3` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_1` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_2` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_3` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_4` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_a135974ea838_ollama_intern_1` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_a135974ea838_ollama_intern_2` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_a135974ea838_ollama_intern_3` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_a135974ea838_ollama_intern_4` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_a135974ea838_ollama_intern_5` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_a135974ea838_ollama_intern_6` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_4` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_6` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_7` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_8` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_9` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_10` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_11` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_12` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_13` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_14` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_15` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_16` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_17` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_18` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_19` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_20` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_21` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_22` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_23` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_24` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_25` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_26` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_27` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_28` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_29` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_32` (`03-source-and-claim-truth`, decision=needs_scope_repair): Claim status is "needs_scope_repair"; only accepted_for_synthesis claims may enter synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_33` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_34` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_36` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_37` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_38` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_40` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_41` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_42` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_43` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_44` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_45` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_46` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_47` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_48` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_49` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_50` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_51` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_52` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_53` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_54` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_55` (`03-source-and-claim-truth`, decision=needs_scope_repair): Claim status is "needs_scope_repair"; only accepted_for_synthesis claims may enter synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_56` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_57` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_58` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_59` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_60` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_61` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_62` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_63` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_64` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_65` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_66` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_67` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_68` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_69` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_70` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_71` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_72` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_73` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_74` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_75` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d81a8a3d6bba_ollama_intern_76` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_4` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_6` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_7` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_8` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_9` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_10` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_11` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_12` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_13` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_14` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_15` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_16` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_17` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_18` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_19` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_20` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_25` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_2` (`03-source-and-claim-truth`, decision=rejected): Claim rejected by adversarial review.
+- `clm_bc94816a3373_ollama_intern_4` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_5` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_6` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_8` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_9` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_10` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_11` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_12` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_13` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_14` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_15` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_16` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_17` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_18` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_20` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_21` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_23` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_24` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_25` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_26` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_27` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_28` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_29` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_30` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_31` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_32` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_33` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_34` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_35` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_36` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_37` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_38` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_39` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_40` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_41` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_42` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_43` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_44` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_45` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_46` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_47` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_48` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_49` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_50` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_51` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_52` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_53` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_54` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_55` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_56` (`03-source-and-claim-truth`, decision=needs_scope_repair): Claim status is "needs_scope_repair"; only accepted_for_synthesis claims may enter synthesis.
+- `clm_bc94816a3373_ollama_intern_57` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_58` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_59` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_60` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_61` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_62` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_63` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_64` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_65` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_66` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_67` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_68` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_69` (`03-source-and-claim-truth`, decision=needs_scope_repair): Claim status is "needs_scope_repair"; only accepted_for_synthesis claims may enter synthesis.
+- `clm_bc94816a3373_ollama_intern_70` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_71` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_74` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_75` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_76` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_77` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_78` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_79` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_80` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_81` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_82` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_83` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_84` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_85` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_86` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_87` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_88` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_bc94816a3373_ollama_intern_89` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_1` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_2` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_3` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_4` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_5` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_6` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_7` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_8` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_9` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_10` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_11` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_12` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_13` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_16` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_19` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_20` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_21` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_22` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_23` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_24` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_25` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_26` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_27` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_28` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_29` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_30` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_31` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_32` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_33` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_34` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_35` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_36` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_37` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_38` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_39` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_40` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_41` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_44` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_45` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_47` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_48` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_49` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_50` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_155c4be7850d_ollama_intern_51` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_8` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_9` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_10` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_11` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_12` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_13` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_14` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_15` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_16` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_17` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_18` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_19` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_20` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_21` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_22` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_23` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_24` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_25` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_d39cd3ba0ef2_ollama_intern_26` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_1` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_2` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_3` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_4` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_5` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_6` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_7` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_8` (`03-source-and-claim-truth`, decision=needs_scope_repair): Claim status is "needs_scope_repair"; only accepted_for_synthesis claims may enter synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_9` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_10` (`03-source-and-claim-truth`, decision=needs_scope_repair): Claim status is "needs_scope_repair"; only accepted_for_synthesis claims may enter synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_11` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_12` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_13` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_14` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_15` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_16` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_17` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_18` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_19` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_20` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_21` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_22` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_23` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_24` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_25` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_26` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_27` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_28` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_29` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_30` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_31` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_32` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_33` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_34` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_35` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_36` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_37` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_38` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_39` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_40` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_41` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_42` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_43` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_44` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_45` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_46` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_47` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_48` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_49` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_50` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_51` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_52` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_53` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_54` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_55` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_56` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_57` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_58` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_59` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_60` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_61` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_62` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_63` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_64` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_65` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_66` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_67` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_68` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_69` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_70` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_71` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_72` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_73` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_74` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_75` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_76` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_77` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_78` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_79` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_80` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_81` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_82` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_83` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_84` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_85` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_86` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_87` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_88` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_89` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_90` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_91` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_92` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_93` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_94` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_95` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_96` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_97` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_98` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_99` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_100` (`03-source-and-claim-truth`, decision=needs_human_review): Claim status is "needs_human_review"; only accepted_for_synthesis claims may enter synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_102` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_106` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_107` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_108` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_109` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_110` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_111` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_112` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_113` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_114` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_115` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_116` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_117` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_118` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_119` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_120` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_121` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_122` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_123` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_124` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_125` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_126` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_129` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_130` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_131` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_132` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_133` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_134` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_135` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_136` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_137` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_138` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_139` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_140` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_141` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_142` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_143` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_144` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_145` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_146` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_147` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_148` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_149` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_150` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_151` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_152` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_153` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_154` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_155` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_156` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_157` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_158` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_159` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_160` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_161` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_162` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_163` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_164` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_165` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_166` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_167` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_168` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_169` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_170` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_171` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_172` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_173` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_174` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_175` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_176` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_177` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_178` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_179` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_180` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_181` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_182` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_183` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_184` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_185` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_186` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_187` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_188` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_189` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_190` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_191` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_192` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_193` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_194` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_195` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_196` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_197` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_198` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_199` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_200` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_201` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_202` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_203` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_204` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_205` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_206` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_207` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_208` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_209` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_210` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_211` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_212` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_213` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_214` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_215` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_216` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_217` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_218` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_219` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_220` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_221` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_222` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_223` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_224` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_225` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_226` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_227` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_228` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_229` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_230` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_231` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_232` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_233` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_234` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_235` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_236` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_237` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_238` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_239` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_240` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_241` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_242` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_243` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_244` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_245` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_246` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_247` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_248` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_249` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_250` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_251` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_252` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_253` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_254` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_255` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_256` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_257` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_258` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_259` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_260` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_261` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_262` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_263` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_264` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_265` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_266` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_267` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_268` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_269` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_270` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_271` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_272` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_273` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_274` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_275` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_276` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_277` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_278` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_279` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_280` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_281` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_282` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_283` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_284` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_285` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_286` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_287` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_288` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_289` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_290` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_291` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_292` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_293` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_294` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_295` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_296` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_297` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_298` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_299` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_300` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_301` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_302` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_303` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_304` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_305` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_306` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_307` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_308` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_309` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_310` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_311` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_312` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_313` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_314` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_315` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_316` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_317` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_318` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_319` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_320` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_321` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_322` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_323` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_324` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_325` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_326` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_327` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_328` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_329` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_330` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_331` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_332` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_333` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_334` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_335` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_336` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_337` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_338` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_339` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_340` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_341` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_342` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_343` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_344` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_345` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_346` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_347` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_348` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_349` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_350` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_351` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_352` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_353` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_354` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_355` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_356` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_357` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_358` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_359` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_360` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_361` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_362` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_363` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_364` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_365` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_366` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_367` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_368` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_369` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_370` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_371` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_372` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_373` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_375` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_376` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_377` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_378` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_379` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_380` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_381` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_382` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_383` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_384` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_385` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_386` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_387` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_388` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_389` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_390` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_391` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_392` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_393` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_394` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_395` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_396` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_397` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_398` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_399` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_400` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_401` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_402` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_403` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_404` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_405` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_406` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_407` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_408` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_409` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_410` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_411` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_412` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_413` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_414` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_415` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_416` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_417` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_418` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_419` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_420` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_421` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_422` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_423` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_424` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_425` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_426` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_427` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_428` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_429` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_430` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_431` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_432` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_433` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_434` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_435` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_436` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_437` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_caedf4b2d8e0_ollama_intern_438` (`03-source-and-claim-truth`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_09a48e752e9b_ollama_intern_1` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_09a48e752e9b_ollama_intern_2` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_09a48e752e9b_ollama_intern_3` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_fb48d4730a5c_ollama_intern_2` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_fb48d4730a5c_ollama_intern_4` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_fb48d4730a5c_ollama_intern_5` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_fb48d4730a5c_ollama_intern_9` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_fb48d4730a5c_ollama_intern_10` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_fb48d4730a5c_ollama_intern_14` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_fb48d4730a5c_ollama_intern_15` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_09a48e752e9b_ollama_intern_4` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_09a48e752e9b_ollama_intern_5` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_09a48e752e9b_ollama_intern_6` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_1` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_2` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_3` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_4` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_5` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_6` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_7` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_8` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_9` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_10` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_11` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_13` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_14` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_15` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_16` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_17` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_18` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_19` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_20` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_21` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_23` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_24` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_25` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_26` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_27` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_28` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_30` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_33` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_34` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_35` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_36` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_37` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_38` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_39` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_41` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_42` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_43` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_44` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_45` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_46` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_47` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_48` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_49` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_50` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_51` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_52` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_53` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_54` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_55` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_56` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_57` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_58` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_59` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_55f4bfa87f54_ollama_intern_60` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_2` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_7` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_8` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_9` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_10` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_11` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_12` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_16` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_17` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_18` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_19` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_20` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_21` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_22` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_23` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_24` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_25` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_26` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_27` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_28` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_29` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_30` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_31` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_32` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_33` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_34` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_35` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_36` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_37` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_38` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_39` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_40` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_41` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f0fe25b20f29_ollama_intern_42` (`04-gates-and-waivers`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_67b29d913d85_ollama_intern_1` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_67b29d913d85_ollama_intern_2` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_67b29d913d85_ollama_intern_3` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_67b29d913d85_ollama_intern_4` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_67b29d913d85_ollama_intern_5` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_67b29d913d85_ollama_intern_6` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_67b29d913d85_ollama_intern_7` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_67b29d913d85_ollama_intern_8` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_67b29d913d85_ollama_intern_9` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_b9c427878132_ollama_intern_1` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_b9c427878132_ollama_intern_2` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_b9c427878132_ollama_intern_3` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_b9c427878132_ollama_intern_4` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2fff6e91c56c_ollama_intern_1` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2fff6e91c56c_ollama_intern_2` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2fff6e91c56c_ollama_intern_3` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2fff6e91c56c_ollama_intern_4` (`05-cowork-handoff`, decision=rejected): Claim rejected by adversarial review.
+- `clm_2fff6e91c56c_ollama_intern_5` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2fff6e91c56c_ollama_intern_6` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2fff6e91c56c_ollama_intern_7` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2fff6e91c56c_ollama_intern_8` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2fff6e91c56c_ollama_intern_9` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2fff6e91c56c_ollama_intern_10` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_59b5d7b9e7e4_ollama_intern_1` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_59b5d7b9e7e4_ollama_intern_2` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_59b5d7b9e7e4_ollama_intern_3` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_59b5d7b9e7e4_ollama_intern_4` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_59b5d7b9e7e4_ollama_intern_5` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_59b5d7b9e7e4_ollama_intern_6` (`05-cowork-handoff`, decision=rejected): Claim rejected by adversarial review.
+- `clm_59b5d7b9e7e4_ollama_intern_7` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_59b5d7b9e7e4_ollama_intern_8` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_59b5d7b9e7e4_ollama_intern_9` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_59b5d7b9e7e4_ollama_intern_10` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ea1a84785166_ollama_intern_1` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ea1a84785166_ollama_intern_2` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ea1a84785166_ollama_intern_3` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ea1a84785166_ollama_intern_4` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ea1a84785166_ollama_intern_5` (`05-cowork-handoff`, decision=rejected): Claim rejected by adversarial review.
+- `clm_ea1a84785166_ollama_intern_6` (`05-cowork-handoff`, decision=rejected): Claim rejected by adversarial review.
+- `clm_ea1a84785166_ollama_intern_7` (`05-cowork-handoff`, decision=rejected): Claim rejected by adversarial review.
+- `clm_ea1a84785166_ollama_intern_8` (`05-cowork-handoff`, decision=rejected): Claim rejected by adversarial review.
+- `clm_ea1a84785166_ollama_intern_9` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ea1a84785166_ollama_intern_10` (`05-cowork-handoff`, decision=rejected): Claim rejected by adversarial review.
+- `clm_ea1a84785166_ollama_intern_11` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ea1a84785166_ollama_intern_12` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ea1a84785166_ollama_intern_13` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ea1a84785166_ollama_intern_14` (`05-cowork-handoff`, decision=rejected): Claim rejected by adversarial review.
+- `clm_ea1a84785166_ollama_intern_15` (`05-cowork-handoff`, decision=rejected): Claim rejected by adversarial review.
+- `clm_ea1a84785166_ollama_intern_16` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ea1a84785166_ollama_intern_17` (`05-cowork-handoff`, decision=rejected): Claim rejected by adversarial review.
+- `clm_ea1a84785166_ollama_intern_18` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ea1a84785166_ollama_intern_19` (`05-cowork-handoff`, decision=rejected): Claim rejected by adversarial review.
+- `clm_ea1a84785166_ollama_intern_20` (`05-cowork-handoff`, decision=rejected): Claim rejected by adversarial review.
+- `clm_ea1a84785166_ollama_intern_21` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_67b29d913d85_ollama_intern_10` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_67b29d913d85_ollama_intern_11` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_67b29d913d85_ollama_intern_12` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_59b5d7b9e7e4_ollama_intern_11` (`05-cowork-handoff`, decision=rejected): Claim rejected by adversarial review.
+- `clm_9a532b2b74e5_ollama_intern_1` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a532b2b74e5_ollama_intern_2` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a532b2b74e5_ollama_intern_4` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a532b2b74e5_ollama_intern_5` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a532b2b74e5_ollama_intern_7` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a532b2b74e5_ollama_intern_9` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a532b2b74e5_ollama_intern_10` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a532b2b74e5_ollama_intern_11` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a532b2b74e5_ollama_intern_12` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_2` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_4` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_5` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_6` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_7` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_8` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_9` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_10` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_11` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_12` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_13` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_17` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_18` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_19` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_20` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_21` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_22` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_23` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_24` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_25` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_26` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_27` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_28` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_32` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_33` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_34` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_36` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_37` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_38` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_39` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_41` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_42` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_43` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_44` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_45` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_46` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_47` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_48` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_49` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_50` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_51` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_52` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_53` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_54` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_55` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_56` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_57` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_58` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_59` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_60` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_61` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_62` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_63` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_64` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_65` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_66` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_67` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_68` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_69` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_70` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_71` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_72` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a7d4217c64c_ollama_intern_73` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_2` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_3` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_4` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_5` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_6` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_7` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_8` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_9` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_10` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_11` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_12` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_13` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_14` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_15` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_16` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_17` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_18` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_19` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_20` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_21` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_22` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_24` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_25` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_26` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_28` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_30` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_31` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_32` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_33` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_34` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_35` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_36` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_37` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_38` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_39` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_40` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_41` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_42` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_43` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_44` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_45` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_46` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_47` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_48` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_49` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_50` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_51` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_52` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_53` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_54` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_55` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_57` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_58` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_59` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_60` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_61` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_62` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_63` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_64` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_65` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_66` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_67` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_68` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_69` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_70` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_71` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_72` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_73` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_74` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_75` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_76` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_77` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_78` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_79` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_80` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_81` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_82` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_83` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_84` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_85` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_86` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_87` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_88` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_89` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_90` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_91` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_92` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_93` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_94` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_95` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_96` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_97` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_98` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_99` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_100` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_101` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_102` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_103` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_104` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_105` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_107` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_108` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_110` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_111` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_112` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_113` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_114` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_115` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_116` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_117` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_118` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_119` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_120` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_121` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_122` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_123` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_124` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_126` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_127` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_128` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_129` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_130` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_131` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_132` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_133` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_134` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_135` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_136` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_137` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_138` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_139` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_140` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_141` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_142` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_143` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_144` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_145` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_146` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_147` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_150` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_151` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_152` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_153` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_154` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_155` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_156` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_157` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_158` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_159` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_160` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_161` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5be2e21d45c9_ollama_intern_162` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_3` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_4` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_6` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_7` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_8` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_9` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_10` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_11` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_12` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_13` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_14` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_15` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_16` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_17` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_19` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_20` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_22` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_24` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_25` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_26` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_27` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_28` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_30` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96b9a35307c0_ollama_intern_31` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_2` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_3` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_4` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_5` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_6` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_7` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_8` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_9` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_10` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_14` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_15` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_16` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_17` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_18` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_19` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_21` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_22` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_24` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_25` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_26` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_27` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_31` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_32` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_33` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_34` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_35` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_36` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_37` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_38` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_39` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_40` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_41` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_42` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_43` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_44` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_45` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_46` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_47` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_48` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_49` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_50` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_51` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_52` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_53` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_54` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_56` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_57` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_58` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_59` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_60` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_61` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_62` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_63` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_64` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_65` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_66` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_67` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_68` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_69` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_70` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_71` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_72` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_73` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_74` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_75` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_76` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_77` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_78` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_79` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_80` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_c8975a95117b_ollama_intern_81` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_2` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_3` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_4` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_5` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_7` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_8` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_9` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_10` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_11` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_15` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_16` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_18` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_19` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_20` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_21` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_22` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_23` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_24` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_25` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_26` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_27` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_28` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_30` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_31` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_34` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_35` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_37` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_38` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_39` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_40` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_41` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_42` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_43` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_44` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_45` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_46` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_47` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_48` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_486f1e6121c8_ollama_intern_49` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_1` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_5` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_6` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_7` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_8` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_9` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_10` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_11` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_12` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_13` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_14` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_15` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_19` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_23` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_24` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_25` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_26` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_27` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_28` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_29` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_31` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_32` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_33` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_34` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_35` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_36` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_37` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_38` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_39` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_40` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_41` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_42` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9686dc1633cd_ollama_intern_43` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_1` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_2` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_3` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_4` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_5` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_6` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_7` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_8` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_10` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_11` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_12` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_16` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_17` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_18` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_19` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_20` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_21` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_22` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_23` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_24` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_25` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_26` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_126e07cf0d68_ollama_intern_27` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_b9c427878132_ollama_intern_5` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_59b5d7b9e7e4_ollama_intern_12` (`05-cowork-handoff`, decision=rejected): Claim rejected by adversarial review.
+- `clm_59b5d7b9e7e4_ollama_intern_13` (`05-cowork-handoff`, decision=rejected): Claim rejected by adversarial review.
+- `clm_ea1a84785166_ollama_intern_22` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ea1a84785166_ollama_intern_23` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a532b2b74e5_ollama_intern_13` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a532b2b74e5_ollama_intern_14` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_9a532b2b74e5_ollama_intern_16` (`05-cowork-handoff`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_1` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_2` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_4` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_5` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_6` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_7` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_8` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_9` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_11` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_12` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_13` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_14` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_15` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_16` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_17` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_18` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_19` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_20` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_21` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_22` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_23` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_24` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_25` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_26` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_27` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_28` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_29` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_30` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_31` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_32` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_33` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_34` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_35` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_36` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_38` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_39` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_40` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_41` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_42` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_43` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_44` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_45` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_46` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_47` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_48` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_49` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_50` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_51` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_53` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_54` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_56` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_57` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_59` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_60` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_61` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_62` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_63` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_64` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_65` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_66` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_67` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_68` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_69` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_70` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_71` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_72` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_73` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_74` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_75` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_76` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_77` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_78` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_79` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_80` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_81` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_82` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_83` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_84` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_85` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_86` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_87` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_88` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_89` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_90` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_91` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_92` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_93` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_94` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_95` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_96` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_97` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_98` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_99` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_100` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_101` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_102` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_104` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_106` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_107` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_108` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_109` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_110` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_111` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_112` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_114` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_115` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_116` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_117` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_118` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_119` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_120` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_121` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_122` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_123` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_125` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_126` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_127` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_128` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_129` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_130` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_131` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_132` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_133` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_134` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_135` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_136` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_137` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_138` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_139` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_140` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_141` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_142` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_143` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_144` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_145` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_146` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_147` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_148` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_149` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_150` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_151` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_152` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_153` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_154` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_155` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_156` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_157` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_158` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_159` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_160` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_161` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_162` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_163` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_164` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_165` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_166` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_167` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_168` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_169` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_170` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_171` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_172` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_173` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_174` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_175` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_176` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_177` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_178` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_179` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_180` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_181` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_182` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_183` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_184` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_185` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_186` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_187` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_e15c2248a5d8_ollama_intern_188` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_1` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_2` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_4` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_5` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_6` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_7` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_8` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_9` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_10` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_11` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_12` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_13` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_14` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_15` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_18` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_19` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_20` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_21` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_22` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_24` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_26` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_28` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_29` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_30` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_31` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_34` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_37` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_38` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_39` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_40` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_41` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_42` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_43` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_44` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_05cae033cedc_ollama_intern_45` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5d98fdba0757_ollama_intern_1` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5d98fdba0757_ollama_intern_2` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5d98fdba0757_ollama_intern_3` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_5d98fdba0757_ollama_intern_8` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_91705d06abdf_ollama_intern_1` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_91705d06abdf_ollama_intern_2` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_91705d06abdf_ollama_intern_3` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_91705d06abdf_ollama_intern_13` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_2` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_3` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_4` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_6` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_7` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_8` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_9` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_10` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_11` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_12` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_13` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_14` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_15` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_16` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_17` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_18` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_19` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_20` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_25` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_676ddfa834cc_ollama_intern_28` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_f110ffbdbe7c_ollama_intern_1` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ac6052de3047_ollama_intern_1` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ac6052de3047_ollama_intern_2` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ac6052de3047_ollama_intern_6` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ac6052de3047_ollama_intern_7` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ac6052de3047_ollama_intern_8` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ac6052de3047_ollama_intern_9` (`06-repo-knowledge-integration`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_27eaf34f91a3_ollama_intern_2` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_27eaf34f91a3_ollama_intern_3` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_27eaf34f91a3_ollama_intern_5` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_27eaf34f91a3_heuristic_1` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_27eaf34f91a3_heuristic_2` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_27eaf34f91a3_heuristic_3` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_27eaf34f91a3_heuristic_4` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_27eaf34f91a3_heuristic_5` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_heuristic_1` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_heuristic_2` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_heuristic_3` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_heuristic_4` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_heuristic_5` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_de50fc93ad72_heuristic_1` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_de50fc93ad72_heuristic_2` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_de50fc93ad72_heuristic_3` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_de50fc93ad72_heuristic_4` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_de50fc93ad72_heuristic_5` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_heuristic_1` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_heuristic_2` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_heuristic_3` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_heuristic_4` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_heuristic_5` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_65308ebae4e9_heuristic_1` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96d4bf47e20b_heuristic_1` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96d4bf47e20b_heuristic_2` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_1` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_2` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_3` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_4` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_5` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_6` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_7` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_8` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_9` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_10` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_11` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_14` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_15` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_16` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_17` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_18` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_20` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_21` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_22` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_23` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_24` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_25` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_26` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_27` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_28` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_31` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_33` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_34` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_36` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_37` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_38` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_39` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_40` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_41` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_42` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_43` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_44` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_45` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_46` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_47` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_48` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_49` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_50` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_51` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_52` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_53` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_54` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_55` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_56` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_57` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_58` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_59` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_60` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_61` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_63` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_64` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_65` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_66` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_67` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_68` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_69` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_70` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_71` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_72` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_73` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_74` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_77` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_78` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_79` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_458d9788c68d_ollama_intern_80` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_de50fc93ad72_ollama_intern_5` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_1` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_2` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_3` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_4` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_5` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_6` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_7` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_8` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_9` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_11` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_12` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_13` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_14` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_15` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_17` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_18` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_22` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_23` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_24` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_25` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_28` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_29` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_30` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_31` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_32` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_33` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_35` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_36` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_37` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_38` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_39` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_40` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_41` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_42` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_43` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_44` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_45` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_47` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_48` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_49` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_50` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_51` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_53` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_0b75376a48e4_ollama_intern_54` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96d4bf47e20b_ollama_intern_2` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96d4bf47e20b_ollama_intern_3` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96d4bf47e20b_ollama_intern_4` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96d4bf47e20b_ollama_intern_5` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_96d4bf47e20b_ollama_intern_6` (`07-cli-and-runtime-flow`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_53ee6a9ec24b_ollama_intern_1` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_53ee6a9ec24b_ollama_intern_2` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_53ee6a9ec24b_ollama_intern_3` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_53ee6a9ec24b_ollama_intern_4` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_53ee6a9ec24b_ollama_intern_7` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_53ee6a9ec24b_ollama_intern_9` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_53ee6a9ec24b_ollama_intern_11` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_1` (`08-acceptance-suite`, decision=needs_human_review): Claim status is "needs_human_review"; only accepted_for_synthesis claims may enter synthesis.
+- `clm_099defe2e6d6_ollama_intern_2` (`08-acceptance-suite`, decision=needs_human_review): Claim status is "needs_human_review"; only accepted_for_synthesis claims may enter synthesis.
+- `clm_099defe2e6d6_ollama_intern_3` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_4` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_5` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_6` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_7` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_8` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_9` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_10` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_11` (`08-acceptance-suite`, decision=needs_human_review): Claim status is "needs_human_review"; only accepted_for_synthesis claims may enter synthesis.
+- `clm_099defe2e6d6_ollama_intern_12` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_13` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_14` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_15` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_16` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_17` (`08-acceptance-suite`, decision=needs_human_review): Claim status is "needs_human_review"; only accepted_for_synthesis claims may enter synthesis.
+- `clm_099defe2e6d6_ollama_intern_18` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_19` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_20` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_21` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_22` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_23` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_24` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_25` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_26` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_27` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_28` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_29` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_30` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_31` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_32` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_33` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_34` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_35` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_36` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_37` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_38` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_39` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_40` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_41` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_42` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_43` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_44` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_45` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_46` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_47` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_48` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_49` (`08-acceptance-suite`, decision=needs_human_review): Claim status is "needs_human_review"; only accepted_for_synthesis claims may enter synthesis.
+- `clm_099defe2e6d6_ollama_intern_50` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_51` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_52` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_53` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_54` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_55` (`08-acceptance-suite`, decision=needs_human_review): Claim status is "needs_human_review"; only accepted_for_synthesis claims may enter synthesis.
+- `clm_099defe2e6d6_ollama_intern_56` (`08-acceptance-suite`, decision=needs_human_review): Claim status is "needs_human_review"; only accepted_for_synthesis claims may enter synthesis.
+- `clm_099defe2e6d6_ollama_intern_57` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_58` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_59` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_60` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_61` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_62` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_63` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_64` (`08-acceptance-suite`, decision=needs_human_review): Claim status is "needs_human_review"; only accepted_for_synthesis claims may enter synthesis.
+- `clm_099defe2e6d6_ollama_intern_65` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_66` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_67` (`08-acceptance-suite`, decision=needs_human_review): Claim status is "needs_human_review"; only accepted_for_synthesis claims may enter synthesis.
+- `clm_099defe2e6d6_ollama_intern_68` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_69` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_70` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_71` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_72` (`08-acceptance-suite`, decision=needs_human_review): Claim status is "needs_human_review"; only accepted_for_synthesis claims may enter synthesis.
+- `clm_099defe2e6d6_ollama_intern_73` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_74` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_75` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_76` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_77` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_78` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_79` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_80` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_81` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_82` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_83` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_84` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_85` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_86` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_87` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_88` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_89` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_90` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_91` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_92` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_93` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_94` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_642e49ac2548_ollama_intern_1` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_642e49ac2548_ollama_intern_2` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_642e49ac2548_ollama_intern_3` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_642e49ac2548_ollama_intern_4` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_642e49ac2548_ollama_intern_5` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_642e49ac2548_ollama_intern_6` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_642e49ac2548_ollama_intern_8` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_642e49ac2548_ollama_intern_10` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_53ee6a9ec24b_heuristic_1` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_53ee6a9ec24b_heuristic_2` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_53ee6a9ec24b_heuristic_3` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_53ee6a9ec24b_heuristic_4` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_53ee6a9ec24b_heuristic_5` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_heuristic_1` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_heuristic_2` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_heuristic_3` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_heuristic_4` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_heuristic_5` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_642e49ac2548_heuristic_1` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_642e49ac2548_heuristic_2` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_642e49ac2548_heuristic_3` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_642e49ac2548_heuristic_4` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_642e49ac2548_heuristic_5` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ae13d4956c22_heuristic_1` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ae13d4956c22_heuristic_2` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ae13d4956c22_heuristic_3` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ae13d4956c22_heuristic_4` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ae13d4956c22_heuristic_5` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_heuristic_1` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2ed88e8cb886_heuristic_1` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2ed88e8cb886_heuristic_2` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2ed88e8cb886_heuristic_3` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2ed88e8cb886_heuristic_4` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2ed88e8cb886_heuristic_5` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_4b7a4ad94a3b_heuristic_1` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_4b7a4ad94a3b_heuristic_2` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_4b7a4ad94a3b_heuristic_3` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_4b7a4ad94a3b_heuristic_4` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_4b7a4ad94a3b_heuristic_5` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_95` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_96` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_97` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_98` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_099defe2e6d6_ollama_intern_99` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ae13d4956c22_ollama_intern_1` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ae13d4956c22_ollama_intern_2` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ae13d4956c22_ollama_intern_3` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ae13d4956c22_ollama_intern_4` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ae13d4956c22_ollama_intern_5` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ae13d4956c22_ollama_intern_6` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ae13d4956c22_ollama_intern_7` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_ae13d4956c22_ollama_intern_8` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_1` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_2` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_3` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_4` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_5` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_6` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_7` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_8` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_9` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_10` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_11` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_12` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_13` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_14` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_15` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_16` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_17` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_18` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_23` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_eefec92990cb_ollama_intern_25` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2ed88e8cb886_ollama_intern_1` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2ed88e8cb886_ollama_intern_2` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2ed88e8cb886_ollama_intern_3` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2ed88e8cb886_ollama_intern_4` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2ed88e8cb886_ollama_intern_5` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2ed88e8cb886_ollama_intern_6` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2ed88e8cb886_ollama_intern_7` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_2ed88e8cb886_ollama_intern_8` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_4b7a4ad94a3b_ollama_intern_2` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_4b7a4ad94a3b_ollama_intern_3` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_4b7a4ad94a3b_ollama_intern_4` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_4b7a4ad94a3b_ollama_intern_5` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+- `clm_4b7a4ad94a3b_ollama_intern_6` (`08-acceptance-suite`, decision=no_review): Claim has no review decision; cannot be cited in synthesis.
+
+## Cross-section weave synthesis
+
+This section records which mechanically detected clusters produced honest prose weaves and which could not. A weave is valid only when at least one accepted claim exists in each section being woven, and the prose does not infer a claim that exists in neither section.
+
+### Cluster `cls_d7170c650869` — Knowledge graphs (Sections 03 and 06)
+
+**Status: VALID WEAVE — prose authored.**
+
+This is the only multi-section cluster in the pack. It spans `03-source-and-claim-truth` and `06-repo-knowledge-integration` via shared source `src_676ddfa834cc` (the Wikipedia article on knowledge graphs).
+
+**Section 03 side (source-and-claim-truth):**
+- `clm_676ddfa834cc_ollama_intern_1` — A knowledge graph uses a graph-structured data model to represent knowledge (scope: "In knowledge representation and reasoning").
+- `clm_676ddfa834cc_ollama_intern_5` — The term 'knowledge graph' was coined as early as 1972 (scope: "discussion of how to build modular instructional systems for courses").
+- `clm_676ddfa834cc_ollama_intern_21` — A knowledge graph is a knowledge base that uses a graph-structured data model to represent and operate on entities and their relationships (scope: "Knowledge representation and reasoning, specifically in the context of knowledge graphs").
+- `clm_676ddfa834cc_ollama_intern_22` — Knowledge graphs often encode the free-form semantics or relationships underlying entities (scope: "The additional functionality provided by knowledge graphs beyond basic data storage").
+- `clm_676ddfa834cc_ollama_intern_23` — Knowledge graphs are used to store and represent data in a graph-structured model that allows for encoding relationships between entities (scope: "The general purpose and use case for knowledge graphs").
+- `clm_676ddfa834cc_ollama_intern_24` — accepted in Section 03.
+- `clm_676ddfa834cc_ollama_intern_26` — Knowledge graphs encode the underlying relationships between entities (scope: "A key feature of knowledge graphs related to capturing relationships between entities"). **Present in both sections.**
+
+**Section 06 side (repo-knowledge-integration):**
+- `clm_676ddfa834cc_ollama_intern_26` — Neo4j is a graph database management system (scope: "As stated on the Neo4j website, retrieved in November 2023"). **Same claim ID appears in both sections' accepted sets.**
+- `clm_676ddfa834cc_ollama_intern_27` — Ontotext's GraphDB is a graph database management system (scope: "According to the Ontotext website, retrieved in November 2023").
+- `clm_676ddfa834cc_ollama_intern_29` — Scholia has a topic profile for knowledge graph (scope: "Knowledge graph domain").
+
+**Weave prose (honest statement):** Section 03 establishes the abstract model — knowledge graphs represent knowledge via a graph-structured data model encoding entity relationships (`clm_676ddfa834cc_ollama_intern_21`, `clm_676ddfa834cc_ollama_intern_26`). Section 06 grounds this in concrete implementations — Neo4j (`clm_676ddfa834cc_ollama_intern_26`), GraphDB (`clm_676ddfa834cc_ollama_intern_27`), and Scholia (`clm_676ddfa834cc_ollama_intern_29`) are examples of graph database management systems that realize the knowledge-graph model. These are consistent (`clm_676ddfa834cc_ollama_intern_26`, `clm_676ddfa834cc_ollama_intern_27`, `clm_676ddfa834cc_ollama_intern_29`). The weave does not leap to any design recommendation for research-os; it records that the pack's evidence for "knowledge graph" as a concept spans both the provenance/source-truth section and the repo-knowledge-integration section.
+
+**Weave validity check:**
+- At least one accepted claim in each section: ✓ (multiple in Section 03; `clm_676ddfa834cc_ollama_intern_26`, `clm_676ddfa834cc_ollama_intern_27`, `clm_676ddfa834cc_ollama_intern_29` in Section 06).
+- Prose does not infer a claim that exists in neither section: ✓ (only states what the claims directly assert).
+- Each cited claim ID verified in `claim-reviews.jsonl` with `accepted_for_synthesis`: ✓.
+
+### All other clusters
+
+All 50 remaining clusters (`cls_6f1ce0a27e57` through `cls_5ffc983d0450` and others) span only a single section — confirmed by the `spans_sections` arrays in `cross-section-map.json`. No other multi-section weave was machine-detected or can be honestly authored. Machine-detected scope overlaps (375 total in the JSON) represent claim-level keyword similarity, not multi-section clusters; none resolve to honest prose weaves beyond `cls_d7170c650869`.
+

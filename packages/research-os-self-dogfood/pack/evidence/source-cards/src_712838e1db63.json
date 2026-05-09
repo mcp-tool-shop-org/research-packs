@@ -1,0 +1,26 @@
+{
+  "source_id": "src_712838e1db63",
+  "receipt_id": "rcpt_712838e1db63_1778188778644",
+  "section_id": "02-pack-artifact-contract",
+  "url": "https://yaml.org/spec/1.2.2/",
+  "final_url": "https://yaml.org/spec/1.2.2/",
+  "fetched_at": "2026-05-07T21:19:38.644Z",
+  "publisher": "yaml.org",
+  "published_at": null,
+  "title": "YAML Ain’t Markup Language (YAML™) revision 1.2.2",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "Copyright presently by YAML Language Development Team1 Copyright 2001-2009 by Oren Ben-Kiki, Clark Evans, Ingy döt Net",
+    "This document may be freely copied, provided it is not modified.",
+    "This is the YAML specification v1.2.2. It defines the YAML 1.2 data language. There are no normative changes from the YAML specification v1.2. The primary objectives of this revision are to correct errors and add clarity.",
+    "This revision also strives to make the YAML language development process more open, more transparent and easier for people to contribute to. The input format is now Markdown instead of DocBook, and the images are made from plain text LaTeX files rather than proprietary drawing software. All the source content for the specification is publicly hosted2.",
+    "The previous YAML specification3 was published 12 years ago. In that time span, YAML’s popularity has grown significantly. Efforts are ongoing to improve the language and grow it to meet the needs and expectations of its users. While this revision of the specification makes no actual changes to YAML, it begins a process by which the language intends to evolve and stay modern."
+  ],
+  "limitations": [],
+  "asserts": "Copyright presently by YAML Language Development Team1 Copyright 2001-2009 by Oren Ben-Kiki, Clark Evans, Ingy döt Net",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:19:38.882Z"
+}

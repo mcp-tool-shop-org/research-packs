@@ -1,0 +1,26 @@
+{
+  "source_id": "src_099defe2e6d6",
+  "receipt_id": "rcpt_099defe2e6d6_1778203349991",
+  "section_id": "08-acceptance-suite",
+  "url": "https://en.wikipedia.org/wiki/Software_testing#End-to-end_testing",
+  "final_url": "https://en.wikipedia.org/wiki/Software_testing",
+  "fetched_at": "2026-05-08T01:22:29.991Z",
+  "publisher": "en.wikipedia.org",
+  "published_at": null,
+  "title": "Software testing - Wikipedia",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "Software testing is the act of checking whether software meets its intended objectives and satisfies expectations.",
+    "Software testing can provide objective, independent information about the quality of software and the risk of its failure to a user or sponsor or any other stakeholder.[1]",
+    "Software testing can determine the correctness of software for specific scenarios but cannot determine correctness for all scenarios.[2][3] It cannot find all bugs.",
+    "Based on the criteria for measuring correctness from an oracle, software testing employs principles and mechanisms that might recognize a problem. Examples of oracles include specifications, contracts,[4] comparable products, past versions of the same product, inferences about intended or expected purpose, user or customer expectations, relevant standards, and applicable laws.",
+    "Software testing can be functional or non-functional in nature."
+  ],
+  "limitations": [],
+  "asserts": "Software testing is the act of checking whether software meets its intended objectives and satisfies expectations.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-08T01:22:30.283Z"
+}

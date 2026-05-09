@@ -1,0 +1,20 @@
+{
+  "source_id": "src_91705d06abdf",
+  "receipt_id": "rcpt_91705d06abdf_1778180218047",
+  "section_id": "06-repo-knowledge-integration",
+  "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-search.html",
+  "final_url": "https://www.elastic.co/docs/solutions/search/full-text",
+  "fetched_at": "2026-05-07T18:56:58.047Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "(untitled)",
+  "source_type": "unknown",
+  "relevance": "unknown",
+  "key_points": [],
+  "limitations": [],
+  "asserts": "(no assertion extracted)",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-07T18:57:08.605Z"
+}

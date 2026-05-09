@@ -1,0 +1,12 @@
+{
+  "summary_id": "disum_1778180158654_06-repo-knowledge-integration",
+  "section_id": "06-repo-knowledge-integration",
+  "ran_at": "2026-05-07T18:55:58.654Z",
+  "research_os_version": "0.1.0",
+  "query": "knowledge graph indexing full text search SQLite database artifact search research knowledge base",
+  "provider": "llm-heuristic",
+  "candidates_proposed": 12,
+  "candidates_validated": 12,
+  "candidates_rejected_invalid_url": 0,
+  "warnings": []
+}

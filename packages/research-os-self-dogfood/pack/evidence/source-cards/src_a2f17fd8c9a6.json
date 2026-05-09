@@ -1,0 +1,24 @@
+{
+  "source_id": "src_a2f17fd8c9a6",
+  "receipt_id": "rcpt_a2f17fd8c9a6_1778188298600",
+  "section_id": "01-product-thesis",
+  "url": "https://arxiv.org/abs/2109.13416",
+  "final_url": "https://arxiv.org/abs/2109.13416",
+  "fetched_at": "2026-05-07T21:11:38.600Z",
+  "publisher": "arXiv.org",
+  "published_at": null,
+  "title": "LBV phenomenon and binarity: The environment of HR Car",
+  "source_type": "primary",
+  "relevance": "unknown",
+  "key_points": [
+    "arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.",
+    "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.",
+    "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs."
+  ],
+  "limitations": [],
+  "asserts": "Luminous blue variable stars (LBVs) are of great interest in massive-star evolution as they experience very high mass-loss episodes within short periods of time. HR Car is a famous member of this class in the Galaxy. It has a large circumstellar nebula and has also been confirmed as being in a binary system. One means of gaining information about the evolutionary status and physical nature of LBVs is studying their environments. We investigated the stellar content within ~100 pc of HR Car and also its circumstellar nebula. Very Large Telescope (VLT) Multi Unit Spectroscopic Explorer (MUSE) obs",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:11:38.667Z"
+}

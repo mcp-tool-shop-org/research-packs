@@ -1,0 +1,8 @@
+https://arxiv.org/abs/1904.08365
+https://www.sqlite.org/fulltextsearch.html
+https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-search.html
+https://en.wikipedia.org/wiki/Knowledge_graph
+https://www.w3.org/TR/owl-webont/
+https://datascience.stackexchange.com/questions/4162/how-to-index-a-large-dataset-for-full-text-search-in-sqlite
+https://www.postgresql.org/docs/current/textsearch.html
+https://github.com/facebookresearch/faiss

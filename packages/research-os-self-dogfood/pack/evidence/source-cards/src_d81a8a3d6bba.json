@@ -1,0 +1,26 @@
+{
+  "source_id": "src_d81a8a3d6bba",
+  "receipt_id": "rcpt_d81a8a3d6bba_1778120258617",
+  "section_id": "03-source-and-claim-truth",
+  "url": "https://en.wikipedia.org/wiki/Citation",
+  "final_url": "https://en.wikipedia.org/wiki/Citation",
+  "fetched_at": "2026-05-07T02:17:38.617Z",
+  "publisher": "en.wikipedia.org",
+  "published_at": null,
+  "title": "Citation - Wikipedia",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "A citation is a reference to a source. More precisely, a citation is an abbreviated alphanumeric expression embedded in the body of an intellectual work that denotes an entry in the bibliographic references section of the work, for the purpose of acknowledging the relevance of the works of others to the topic of discussion at the spot where the citation appears.",
+    "Generally, the combination of both the in-body citation and the bibliographic entry constitutes what is commonly thought of as a citation (whereas bibliographic entries by themselves are not).",
+    "Citations have several important purposes. While their uses for upholding intellectual honesty and bolstering claims are typically foregrounded in teaching materials and style guides (e.g.,[2][3]), correct attribution of insights to previous sources is just one of these purposes.[4] Linguistic analysis of citation practices has indicated that they also serve critical roles in orchestrating the state of knowledge on a particular topic, identifying gaps in the existing knowledge that should be filled or describing areas where inquiries should be continued or replicated.[5] Citation has also been identified as a critical means by which researchers establish stance: aligning themselves with or against subgroups of fellow researchers working on similar projects and staking out opportunities for creating new knowledge.[6]",
+    "Conventions of citation (e.g., placement of dates within parentheses, superscripted endnotes vs. footnotes, colons or commas for page numbers, etc.) vary by the citation system used (e.g., Oxford,[7] Harvard, MLA, NLM, American Sociological Association (ASA), American Psychological Association (APA), etc.). Each system is associated with different academic disciplines, and academic journals associated with these disciplines maintain the relevant citational style by recommending and adhering to the relevant style guides.",
+    "A bibliographic citation is a reference to a book, article, web page, or other published item. Citations should supply sufficient detail to identify the item uniquely.[8] Different citation systems and styles are used in scientific citation, legal citation, prior art, the arts, and the humanities. Regarding the use of citations in the scientific literature, some scholars also put forward \"the right to refuse unwanted citations\" in certain situations deemed inappropriate.[9] Citation makes easy to read the sentence by giving hits, where to pause, stop and either short or long, it makes the sentence meaningful and emotional as well."
+  ],
+  "limitations": [],
+  "asserts": "A citation is a reference to a source. More precisely, a citation is an abbreviated alphanumeric expression embedded in the body of an intellectual work that denotes an entry in the bibliographic references section of the work, for the purpose of acknowledging the relevance of the works of others to the topic of discussion at the spot where the citation appears.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T02:17:38.932Z"
+}

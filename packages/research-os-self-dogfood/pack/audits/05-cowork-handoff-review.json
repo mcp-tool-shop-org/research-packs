@@ -1,0 +1,2627 @@
+{
+  "section_id": "05-cowork-handoff",
+  "reviewer": "heuristic",
+  "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+  "reviewed_at": "2026-05-08T04:32:07.036Z",
+  "candidate_claims": 83,
+  "findings": [
+    {
+      "finding_id": "fnd_fd18861813d8",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_2fff6e91c56c_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_2fff6e91c56c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_2fff6e91c56c_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Recovery time has significant impact on propagation of disruptions.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.033Z"
+    },
+    {
+      "finding_id": "fnd_8bd58b6e6595",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_2fff6e91c56c_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_2fff6e91c56c"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_2fff6e91c56c_ollama_intern_4 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_c9d800c84bcf",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_59b5d7b9e7e4_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_59b5d7b9e7e4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_59b5d7b9e7e4_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: CATS is robust to overparameterization and large batch size training.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_16f5c7925acf",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_59b5d7b9e7e4_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_59b5d7b9e7e4"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_59b5d7b9e7e4_ollama_intern_6 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_795755b5439c",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Vicuna-7B requires around 14GB of GPU memory for inference",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_7c88e6bd82ae",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_5 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_c71739ffc08f",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Vicuna-7B can run on a 32GB M1 Macbook with 1 - 2 words per second",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_db45cf79fadb",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_6 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_72b591bbd102",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_7 has no 'not' constraint recorded.",
+      "evidence": "Asserts: To enable XPU/GPU acceleration when running Vicuna-7B, use --device xpu.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_c4a3bb0aa0a0",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_7 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_c585a9f81ca3",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Vicuna-7B can run on an Intel Arc A770 16GB GPU.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_2fc3fd1018cd",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_8 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_646382ceec1c",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Vicuna-13B with 8-bit compression can run on a single GPU with 16 GB of VRAM.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_c16397b005f1",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_10 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_fdf21750ec80",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_14 has no 'not' constraint recorded.",
+      "evidence": "Asserts: FastChat provides OpenAI-compatible APIs for its supported models.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_98186a9bb06c",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_14 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_629753d66c98",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_15 has no 'not' constraint recorded.",
+      "evidence": "Asserts: MT-bench is the new recommended way to benchmark your models.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_663328a0ee3b",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_15 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_753168400c78",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_17 has no 'not' constraint recorded.",
+      "evidence": "Asserts: You can use the following command to train Vicuna-7B with 4 x A100 (40GB).",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_3d0e5ea6c61a",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_17 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_c115138e5270",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_19"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_19 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The model used for training is Llama-2-7b-hf.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_9f295d17f6e9",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_19"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_19 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_41d96d90e8a7",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_20"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_20 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The training data path is data/dummy_conversation.json.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_19e80bbc6bad",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_ea1a84785166_ollama_intern_20"
+      ],
+      "source_ids": [
+        "src_ea1a84785166"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_ea1a84785166_ollama_intern_20 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_118ae9cea234",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_59b5d7b9e7e4_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_59b5d7b9e7e4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_59b5d7b9e7e4_ollama_intern_11 has no 'not' constraint recorded.",
+      "evidence": "Asserts: arXiv offers a way to subscribe to their mailings.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_d562f6641606",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_59b5d7b9e7e4_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_59b5d7b9e7e4"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_59b5d7b9e7e4_ollama_intern_11 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_49b77d38245c",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_9a532b2b74e5_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_9a532b2b74e5"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9a532b2b74e5_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code is available in the terminal, IDE, desktop app, and browser.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_6923a372eff0",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_9a532b2b74e5_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_9a532b2b74e5"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9a532b2b74e5_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code can create commits and pull requests as it works directly with git.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_483ee7e7a10f",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_9a532b2b74e5_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_9a532b2b74e5"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9a532b2b74e5_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code can run routines on a schedule to automate repeated tasks.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_9a81a3777ab0",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_9a7d4217c64c_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_9a7d4217c64c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9a7d4217c64c_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code allows creating custom subagents for task-specific workflows.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_ddd52e87f65e",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_9a7d4217c64c_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_9a7d4217c64c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9a7d4217c64c_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude delegates tasks to subagents based on their descriptions.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_777d93d0158d",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_9a7d4217c64c_ollama_intern_29"
+      ],
+      "source_ids": [
+        "src_9a7d4217c64c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9a7d4217c64c_ollama_intern_29 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The permissionMode field controls how the subagent handles permission prompts.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_821273020a94",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_9a7d4217c64c_ollama_intern_31"
+      ],
+      "source_ids": [
+        "src_9a7d4217c64c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9a7d4217c64c_ollama_intern_31 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The default permission mode is Standard, which involves checking prompts.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_89ce83c21f06",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_9a7d4217c64c_ollama_intern_40"
+      ],
+      "source_ids": [
+        "src_9a7d4217c64c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9a7d4217c64c_ollama_intern_40 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code passes hook input as JSON via stdin to hook commands.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_4a37e081fc8f",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_5be2e21d45c9_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_5be2e21d45c9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5be2e21d45c9_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code hook events fire at specific points during a session.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_77a5ef8255ba",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_5be2e21d45c9_ollama_intern_23"
+      ],
+      "source_ids": [
+        "src_5be2e21d45c9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5be2e21d45c9_ollama_intern_23 has no 'not' constraint recorded.",
+      "evidence": "Asserts: These fields apply to all hook types: type, if, timeout, statusMessage, once.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_b3630cb50974",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_5be2e21d45c9_ollama_intern_27"
+      ],
+      "source_ids": [
+        "src_5be2e21d45c9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5be2e21d45c9_ollama_intern_27 has no 'not' constraint recorded.",
+      "evidence": "Asserts: HTTP hooks accept 'url', 'headers', 'allowedEnvVars', and other common fields.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_6ea1f9483d7c",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_5be2e21d45c9_ollama_intern_29"
+      ],
+      "source_ids": [
+        "src_5be2e21d45c9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5be2e21d45c9_ollama_intern_29 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Prompt and agent hooks accept 'prompt' field in addition to common fields.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_454c5eaa4452",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_5be2e21d45c9_ollama_intern_56"
+      ],
+      "source_ids": [
+        "src_5be2e21d45c9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5be2e21d45c9_ollama_intern_56 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Some hook events allow for more detailed control via hookSpecificOutput",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_394c8f396a3d",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_5be2e21d45c9_ollama_intern_106"
+      ],
+      "source_ids": [
+        "src_5be2e21d45c9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5be2e21d45c9_ollama_intern_106 has no 'not' constraint recorded.",
+      "evidence": "Asserts: PostToolBatch hook can inject context for Claude with 'additionalContext' field.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_076fcbde98db",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_5be2e21d45c9_ollama_intern_109"
+      ],
+      "source_ids": [
+        "src_5be2e21d45c9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5be2e21d45c9_ollama_intern_109 has no 'not' constraint recorded.",
+      "evidence": "Asserts: PermissionDenied hooks receive tool_name, tool_input, tool_use_id, and reason.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_84cc72ffaee3",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_5be2e21d45c9_ollama_intern_125"
+      ],
+      "source_ids": [
+        "src_5be2e21d45c9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5be2e21d45c9_ollama_intern_125 has no 'not' constraint recorded.",
+      "evidence": "Asserts: TeammateIdle hooks fire on every occurrence and do not support matchers.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_5c738d663b8e",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_5be2e21d45c9_ollama_intern_148"
+      ],
+      "source_ids": [
+        "src_5be2e21d45c9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5be2e21d45c9_ollama_intern_148 has no 'not' constraint recorded.",
+      "evidence": "Asserts: To override the user’s response, return a JSON object with hookSpecificOutput.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_ef813d33a359",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_5be2e21d45c9_ollama_intern_149"
+      ],
+      "source_ids": [
+        "src_5be2e21d45c9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5be2e21d45c9_ollama_intern_149 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Exit code 2 blocks the response, changing the effective action to decline.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_77c616704b4b",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_96b9a35307c0_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_96b9a35307c0"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_96b9a35307c0_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude remembers user-provided instructions via CLAUDE.md files.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_833f30ce9201",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_96b9a35307c0_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_96b9a35307c0"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_96b9a35307c0_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude can accumulate learnings automatically with auto memory.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_dcbb2624507b",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_96b9a35307c0_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_96b9a35307c0"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_96b9a35307c0_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: CLAUDE.md files are used to provide persistent instructions to Claude",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_5dfe656bbdff",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_96b9a35307c0_ollama_intern_18"
+      ],
+      "source_ids": [
+        "src_96b9a35307c0"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_96b9a35307c0_ollama_intern_18 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Each markdown file should cover one topic and have a descriptive filename.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_c3d9ba5381be",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_96b9a35307c0_ollama_intern_21"
+      ],
+      "source_ids": [
+        "src_96b9a35307c0"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_96b9a35307c0_ollama_intern_21 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The .claude/rules/ directory supports symlinks to share rules across projects.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_7f0c98c45e8e",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_96b9a35307c0_ollama_intern_23"
+      ],
+      "source_ids": [
+        "src_96b9a35307c0"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_96b9a35307c0_ollama_intern_23 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude automatically accumulates learnings with auto memory.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_4909f06165dc",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_96b9a35307c0_ollama_intern_29"
+      ],
+      "source_ids": [
+        "src_96b9a35307c0"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_96b9a35307c0_ollama_intern_29 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude stores user instructions automatically in auto memory.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_149f9f18adda",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_c8975a95117b_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_c8975a95117b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c8975a95117b_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code offers a variety of settings to configure its behavior.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_9c7bed6501b0",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_c8975a95117b_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_c8975a95117b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c8975a95117b_ollama_intern_11 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code allows specifying allowedChannelPlugins for managed settings.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_d8ffd6de9305",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_c8975a95117b_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_c8975a95117b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c8975a95117b_ollama_intern_12 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code enables allowing or denying HTTP hook URLs via allowedHttpHookUrls.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_585d38687f18",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_c8975a95117b_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_c8975a95117b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c8975a95117b_ollama_intern_13 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code allows configuring allowedMcpServers for managed settings.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_d57fc9bc003b",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_c8975a95117b_ollama_intern_23"
+      ],
+      "source_ids": [
+        "src_c8975a95117b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c8975a95117b_ollama_intern_23 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code can list specific MCP servers from .mcp.json files to approve.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_f392054c5a76",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_c8975a95117b_ollama_intern_28"
+      ],
+      "source_ids": [
+        "src_c8975a95117b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c8975a95117b_ollama_intern_28 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code maps Anthropic model IDs to provider-specific IDs for API calls.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_9955c9437a8a",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_c8975a95117b_ollama_intern_29"
+      ],
+      "source_ids": [
+        "src_c8975a95117b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c8975a95117b_ollama_intern_29 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code generates dynamic OpenTelemetry headers periodically.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_7bce7a228ba4",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_c8975a95117b_ollama_intern_30"
+      ],
+      "source_ids": [
+        "src_c8975a95117b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c8975a95117b_ollama_intern_30 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code allows customizing the output style to adjust system prompts.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_5f74d11eead1",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_c8975a95117b_ollama_intern_55"
+      ],
+      "source_ids": [
+        "src_c8975a95117b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c8975a95117b_ollama_intern_55 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code allows configuring a custom command for file path autocomplete.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_d23a9f6091e4",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_486f1e6121c8_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_486f1e6121c8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_486f1e6121c8_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code allows users to extend Claude's capabilities through skills.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_4962fb4c78e2",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_486f1e6121c8_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_486f1e6121c8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_486f1e6121c8_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Every skill needs a SKILL.md file with frontmatter and markdown content.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_d200631c166d",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_486f1e6121c8_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_486f1e6121c8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_486f1e6121c8_ollama_intern_12 has no 'not' constraint recorded.",
+      "evidence": "Asserts: When writing API endpoints in Claude Code, use RESTful naming conventions.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_273aa755d540",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_486f1e6121c8_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_486f1e6121c8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_486f1e6121c8_ollama_intern_13 has no 'not' constraint recorded.",
+      "evidence": "Asserts: In API endpoint creation in Claude Code, return consistent error formats.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_71dac079f22c",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_486f1e6121c8_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_486f1e6121c8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_486f1e6121c8_ollama_intern_14 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Include request validation when writing API endpoints in Claude Code.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_32b1d56cd11a",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_486f1e6121c8_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_486f1e6121c8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_486f1e6121c8_ollama_intern_17 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Skills support string substitution for dynamic values in the skill content.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_2d03f036a76f",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_486f1e6121c8_ollama_intern_29"
+      ],
+      "source_ids": [
+        "src_486f1e6121c8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_486f1e6121c8_ollama_intern_29 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Skills can be created to migrate a component from one framework to another.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_923535662160",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_486f1e6121c8_ollama_intern_32"
+      ],
+      "source_ids": [
+        "src_486f1e6121c8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_486f1e6121c8_ollama_intern_32 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Each '!`<command>`' executes immediately before Claude sees anything.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_19539488fb58",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_486f1e6121c8_ollama_intern_33"
+      ],
+      "source_ids": [
+        "src_486f1e6121c8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_486f1e6121c8_ollama_intern_33 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Skills can be created to run in isolation using the 'context: fork' directive.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_d5d84d35fd97",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_486f1e6121c8_ollama_intern_36"
+      ],
+      "source_ids": [
+        "src_486f1e6121c8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_486f1e6121c8_ollama_intern_36 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Specific skills can be allowed or denied using permission rules.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_d88f0912c731",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_9686dc1633cd_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_9686dc1633cd"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9686dc1633cd_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code figures out how to build code based on user descriptions.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_56677558693d",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_9686dc1633cd_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_9686dc1633cd"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9686dc1633cd_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code's performance degrades as the context window fills up.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_7b3b6ac434b2",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_9686dc1633cd_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_9686dc1633cd"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9686dc1633cd_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Giving Claude a way to verify its work is crucial for better performance.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_9f1696b0be7d",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_9686dc1633cd_ollama_intern_16"
+      ],
+      "source_ids": [
+        "src_9686dc1633cd"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9686dc1633cd_ollama_intern_16 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code allows specific tools through permission allowlists.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_f288d117a035",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_9686dc1633cd_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_9686dc1633cd"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9686dc1633cd_ollama_intern_17 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Sandboxing restricts filesystem and network access in Claude Code.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_3e675e69e6f2",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_9686dc1633cd_ollama_intern_18"
+      ],
+      "source_ids": [
+        "src_9686dc1633cd"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9686dc1633cd_ollama_intern_18 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code can use CLI tools like gh, aws, gcloud for external services.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_717ca4a01da7",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_9686dc1633cd_ollama_intern_20"
+      ],
+      "source_ids": [
+        "src_9686dc1633cd"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9686dc1633cd_ollama_intern_20 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Hooks in Claude Code run scripts automatically at specific points.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_ca47dac33a97",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_9686dc1633cd_ollama_intern_21"
+      ],
+      "source_ids": [
+        "src_9686dc1633cd"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9686dc1633cd_ollama_intern_21 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Skills extend Claude Code's knowledge with project-specific information.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_2b2ffef41c53",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_9686dc1633cd_ollama_intern_22"
+      ],
+      "source_ids": [
+        "src_9686dc1633cd"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9686dc1633cd_ollama_intern_22 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code has specialized assistants (subagents) for isolated tasks.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_2a2a825b846c",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_9686dc1633cd_ollama_intern_30"
+      ],
+      "source_ids": [
+        "src_9686dc1633cd"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9686dc1633cd_ollama_intern_30 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code provides instructions to customize compaction behavior in CLAUDE.md.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_7b5f6b4a915f",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_126e07cf0d68_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_126e07cf0d68"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_126e07cf0d68_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Thoughtful context engineering is essential for building capable AI agents.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.034Z"
+    },
+    {
+      "finding_id": "fnd_9d0a723a54ad",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_126e07cf0d68_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_126e07cf0d68"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_126e07cf0d68_ollama_intern_13 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Few-shot prompting is a well-known best practice for LLMs.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "finding_id": "fnd_9ebc23f6bdc6",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_126e07cf0d68_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_126e07cf0d68"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_126e07cf0d68_ollama_intern_14 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Stuffing a laundry list of edge cases into a prompt is not recommended.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "finding_id": "fnd_f9b6d60efba0",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_126e07cf0d68_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_126e07cf0d68"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_126e07cf0d68_ollama_intern_15 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Curating diverse, canonical examples is recommended for LLM prompting.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "finding_id": "fnd_44e83067531a",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_59b5d7b9e7e4_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_59b5d7b9e7e4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_59b5d7b9e7e4_ollama_intern_12 has no 'not' constraint recorded.",
+      "evidence": "Asserts: arXiv provides a contact link for users to reach out.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "finding_id": "fnd_72b6c3d19b06",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_59b5d7b9e7e4_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_59b5d7b9e7e4"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_59b5d7b9e7e4_ollama_intern_12 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "finding_id": "fnd_ba3bc990c0e8",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_59b5d7b9e7e4_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_59b5d7b9e7e4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_59b5d7b9e7e4_ollama_intern_13 has no 'not' constraint recorded.",
+      "evidence": "Asserts: arXiv offers a subscription link for users to join mailings.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "finding_id": "fnd_7900c6176e7e",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_59b5d7b9e7e4_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_59b5d7b9e7e4"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_59b5d7b9e7e4_ollama_intern_13 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "finding_id": "fnd_b5fcbe5d8686",
+      "section_id": "05-cowork-handoff",
+      "claim_ids": [
+        "clm_9a532b2b74e5_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_9a532b2b74e5"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9a532b2b74e5_ollama_intern_15 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Claude Code can route tasks from team chat to a pull request.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    }
+  ],
+  "claim_reviews": [
+    {
+      "claim_id": "clm_2fff6e91c56c_ollama_intern_4",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_fd18861813d8",
+        "fnd_8bd58b6e6595"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_59b5d7b9e7e4_ollama_intern_6",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_c9d800c84bcf",
+        "fnd_16f5c7925acf"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_ea1a84785166_ollama_intern_5",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_795755b5439c",
+        "fnd_7c88e6bd82ae"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_ea1a84785166_ollama_intern_6",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_c71739ffc08f",
+        "fnd_db45cf79fadb"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_ea1a84785166_ollama_intern_7",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_72b591bbd102",
+        "fnd_c4a3bb0aa0a0"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_ea1a84785166_ollama_intern_8",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_c585a9f81ca3",
+        "fnd_2fc3fd1018cd"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_ea1a84785166_ollama_intern_10",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_646382ceec1c",
+        "fnd_c16397b005f1"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_ea1a84785166_ollama_intern_14",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_fdf21750ec80",
+        "fnd_98186a9bb06c"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_ea1a84785166_ollama_intern_15",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_629753d66c98",
+        "fnd_663328a0ee3b"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_ea1a84785166_ollama_intern_17",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_753168400c78",
+        "fnd_3d0e5ea6c61a"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_ea1a84785166_ollama_intern_19",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_c115138e5270",
+        "fnd_9f295d17f6e9"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_ea1a84785166_ollama_intern_20",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_41d96d90e8a7",
+        "fnd_19e80bbc6bad"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_59b5d7b9e7e4_ollama_intern_11",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_118ae9cea234",
+        "fnd_d562f6641606"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9a532b2b74e5_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_49b77d38245c"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9a532b2b74e5_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_6923a372eff0"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9a532b2b74e5_ollama_intern_8",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_483ee7e7a10f"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9a7d4217c64c_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_9a81a3777ab0"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9a7d4217c64c_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ddd52e87f65e"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9a7d4217c64c_ollama_intern_14",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9a7d4217c64c_ollama_intern_15",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9a7d4217c64c_ollama_intern_16",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9a7d4217c64c_ollama_intern_29",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_777d93d0158d"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9a7d4217c64c_ollama_intern_30",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9a7d4217c64c_ollama_intern_31",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_821273020a94"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9a7d4217c64c_ollama_intern_35",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9a7d4217c64c_ollama_intern_40",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_89ce83c21f06"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_5be2e21d45c9_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_4a37e081fc8f"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_5be2e21d45c9_ollama_intern_23",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_77a5ef8255ba"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_5be2e21d45c9_ollama_intern_27",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_b3630cb50974"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_5be2e21d45c9_ollama_intern_29",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_6ea1f9483d7c"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_5be2e21d45c9_ollama_intern_56",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_454c5eaa4452"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_5be2e21d45c9_ollama_intern_106",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_394c8f396a3d"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_5be2e21d45c9_ollama_intern_109",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_076fcbde98db"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_5be2e21d45c9_ollama_intern_125",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_84cc72ffaee3"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_5be2e21d45c9_ollama_intern_148",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_5c738d663b8e"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_5be2e21d45c9_ollama_intern_149",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ef813d33a359"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_96b9a35307c0_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_77c616704b4b"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_96b9a35307c0_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_833f30ce9201"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_96b9a35307c0_ollama_intern_5",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_dcbb2624507b"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_96b9a35307c0_ollama_intern_18",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_5dfe656bbdff"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_96b9a35307c0_ollama_intern_21",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_c3d9ba5381be"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_96b9a35307c0_ollama_intern_23",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_7f0c98c45e8e"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_96b9a35307c0_ollama_intern_29",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_4909f06165dc"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_96b9a35307c0_ollama_intern_32",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_96b9a35307c0_ollama_intern_33",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_96b9a35307c0_ollama_intern_34",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_c8975a95117b_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_149f9f18adda"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_c8975a95117b_ollama_intern_11",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_9c7bed6501b0"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_c8975a95117b_ollama_intern_12",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_d8ffd6de9305"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_c8975a95117b_ollama_intern_13",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_585d38687f18"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_c8975a95117b_ollama_intern_20",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_c8975a95117b_ollama_intern_23",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_d57fc9bc003b"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_c8975a95117b_ollama_intern_28",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_f392054c5a76"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_c8975a95117b_ollama_intern_29",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_9955c9437a8a"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_c8975a95117b_ollama_intern_30",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_7bce7a228ba4"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_c8975a95117b_ollama_intern_55",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_5f74d11eead1"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_486f1e6121c8_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_d23a9f6091e4"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_486f1e6121c8_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_4962fb4c78e2"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_486f1e6121c8_ollama_intern_12",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_d200631c166d"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_486f1e6121c8_ollama_intern_13",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_273aa755d540"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_486f1e6121c8_ollama_intern_14",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_71dac079f22c"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_486f1e6121c8_ollama_intern_17",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_32b1d56cd11a"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_486f1e6121c8_ollama_intern_29",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_2d03f036a76f"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_486f1e6121c8_ollama_intern_32",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_923535662160"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_486f1e6121c8_ollama_intern_33",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_19539488fb58"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_486f1e6121c8_ollama_intern_36",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_d5d84d35fd97"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9686dc1633cd_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_d88f0912c731"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9686dc1633cd_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_56677558693d"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9686dc1633cd_ollama_intern_4",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_7b3b6ac434b2"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9686dc1633cd_ollama_intern_16",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_9f1696b0be7d"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9686dc1633cd_ollama_intern_17",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_f288d117a035"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9686dc1633cd_ollama_intern_18",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_3e675e69e6f2"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9686dc1633cd_ollama_intern_20",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_717ca4a01da7"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9686dc1633cd_ollama_intern_21",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ca47dac33a97"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9686dc1633cd_ollama_intern_22",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_2b2ffef41c53"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9686dc1633cd_ollama_intern_30",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_2a2a825b846c"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_126e07cf0d68_ollama_intern_9",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_7b5f6b4a915f"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_126e07cf0d68_ollama_intern_13",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_9d0a723a54ad"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_126e07cf0d68_ollama_intern_14",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_9ebc23f6bdc6"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_126e07cf0d68_ollama_intern_15",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_f9b6d60efba0"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_59b5d7b9e7e4_ollama_intern_12",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_44e83067531a",
+        "fnd_72b6c3d19b06"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_59b5d7b9e7e4_ollama_intern_13",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_ba3bc990c0e8",
+        "fnd_7900c6176e7e"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    },
+    {
+      "claim_id": "clm_9a532b2b74e5_ollama_intern_15",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_b5fcbe5d8686"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-08T04:32:07.035Z"
+    }
+  ],
+  "decision_counts": {
+    "accepted_for_synthesis": 68,
+    "rejected": 0,
+    "needs_scope_repair": 0,
+    "needs_source_repair": 15,
+    "needs_contradiction_mapping": 0,
+    "needs_human_review": 0
+  },
+  "severity_counts": {
+    "info": 74,
+    "warn": 15,
+    "block": 0
+  },
+  "llm_findings_rejected_ungrounded": 0,
+  "promoted_to_reviewed": false
+}

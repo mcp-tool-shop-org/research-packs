@@ -1,0 +1,20 @@
+{
+  "source_id": "src_cf2238f43a01",
+  "receipt_id": "rcpt_cf2238f43a01_1778182277963",
+  "section_id": "02-pack-artifact-contract",
+  "url": "https://www.iana.org/assignments/media-types/media-types.xhtml",
+  "final_url": "https://www.iana.org/assignments/media-types/media-types.xhtml",
+  "fetched_at": "2026-05-07T19:31:17.963Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "(untitled)",
+  "source_type": "unknown",
+  "relevance": "unknown",
+  "key_points": [],
+  "limitations": [],
+  "asserts": "(no assertion extracted)",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-07T19:31:30.019Z"
+}

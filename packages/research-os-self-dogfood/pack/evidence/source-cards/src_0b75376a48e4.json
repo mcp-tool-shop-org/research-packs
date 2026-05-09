@@ -1,0 +1,26 @@
+{
+  "source_id": "src_0b75376a48e4",
+  "receipt_id": "rcpt_0b75376a48e4_1778185671165",
+  "section_id": "07-cli-and-runtime-flow",
+  "url": "https://github.com/tj/commander.js/",
+  "final_url": "https://github.com/tj/commander.js/",
+  "fetched_at": "2026-05-07T20:27:51.165Z",
+  "publisher": "GitHub",
+  "published_at": null,
+  "title": "GitHub - tj/commander.js: node.js command-line interfaces made easy",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "The complete solution for node.js command-line interfaces.",
+    "Read this in other languages: English | 简体中文",
+    "For information about terms used in this document see: terminology",
+    "You write code to describe your command line interface. Commander looks after parsing the arguments into options and command-arguments, displays usage errors for problems, and implements a help system.",
+    "Commander is strict and displays an error for unrecognised options. The two most used option types are a boolean option, and an option which takes its value from the following argument."
+  ],
+  "limitations": [],
+  "asserts": "node.js command-line interfaces made easy. Contribute to tj/commander.js development by creating an account on GitHub.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T20:27:51.846Z"
+}

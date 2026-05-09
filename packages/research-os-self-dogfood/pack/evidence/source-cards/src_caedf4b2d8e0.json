@@ -1,0 +1,26 @@
+{
+  "source_id": "src_caedf4b2d8e0",
+  "receipt_id": "rcpt_caedf4b2d8e0_1778120259744",
+  "section_id": "03-source-and-claim-truth",
+  "url": "https://www.w3.org/TR/json-ld11/",
+  "final_url": "https://www.w3.org/TR/json-ld11/",
+  "fetched_at": "2026-05-07T02:17:39.744Z",
+  "publisher": "www.w3.org",
+  "published_at": "2020-07-16",
+  "title": "JSON-LD 1.1",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "Please check the errata for any errors or issues reported since publication.",
+    "This document is also available in this non-normative format: EPUB",
+    "Copyright © 2010-2020 W3C® (MIT, ERCIM, Keio, Beihang). W3C liability, trademark and permissive document license rules apply.",
+    "JSON is a useful data serialization and messaging format. This specification defines JSON-LD 1.1, a JSON-based format to serialize Linked Data. The syntax is designed to easily integrate into deployed systems that already use JSON, and provides a smooth upgrade path from JSON to JSON-LD. It is primarily intended to be a way to use Linked Data in Web-based programming environments, to build interoperable Web services, and to store Linked Data in JSON-based storage engines.",
+    "This specification describes a superset of the features defined in JSON-LD 1.0 [JSON-LD10] and, except where noted, documents created using the 1.0 version of this specification remain compatible with JSON-LD 1.1."
+  ],
+  "limitations": [],
+  "asserts": "JSON is a useful data serialization and messaging format. This specification defines JSON-LD 1.1, a JSON-based format to serialize Linked Data. The syntax is designed to easily integrate into deployed systems that already use JSON, and provides a smooth upgrade path from JSON to JSON-LD. It is primarily intended to be a way to use Linked Data in Web-based programming environments, to build interoperable Web services, and to store Linked Data in JSON-based storage engines.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T02:17:39.919Z"
+}

@@ -1,0 +1,876 @@
+{
+  "section_id": "03-source-and-claim-truth",
+  "reviewer": "heuristic",
+  "review_method": "heuristic_field_and_grounding_checks",
+  "reviewed_at": "2026-05-07T02:36:43.691Z",
+  "candidate_claims": 23,
+  "findings": [
+    {
+      "finding_id": "fnd_ee0a9ccf8c46",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_d81a8a3d6bba_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_d81a8a3d6bba"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d81a8a3d6bba_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: A citation is a reference to a source.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_0a6b8b84056c",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_d81a8a3d6bba_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_d81a8a3d6bba"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "Claim clm_d81a8a3d6bba_ollama_intern_2 has scope=null with a substantive assertion. It cannot be treated as broad without scope-widening evidence.",
+      "evidence": "Asserts: A citation is not just a bibliographic entry by itself.",
+      "required_action": "Add an explicit scope tag or restrict the claim to the source's actual scope.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "medium",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_7f81604996ba",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_d81a8a3d6bba_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_d81a8a3d6bba"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d81a8a3d6bba_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: A citation is not just a bibliographic entry by itself.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_5bc5b2125144",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_d81a8a3d6bba_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_d81a8a3d6bba"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "Claim clm_d81a8a3d6bba_ollama_intern_3 has scope=null with a substantive assertion. It cannot be treated as broad without scope-widening evidence.",
+      "evidence": "Asserts: Citation practices also serve critical roles in identifying gaps in existing knowledge and describing areas for continued research.",
+      "required_action": "Add an explicit scope tag or restrict the claim to the source's actual scope.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "medium",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_0672a3b1a754",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_d81a8a3d6bba_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_d81a8a3d6bba"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d81a8a3d6bba_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Citation practices also serve critical roles in identifying gaps in existing knowledge and describing areas for continued research.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_bb6bfe8613ba",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_d81a8a3d6bba_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_d81a8a3d6bba"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "Claim clm_d81a8a3d6bba_ollama_intern_4 has scope=null with a substantive assertion. It cannot be treated as broad without scope-widening evidence.",
+      "evidence": "Asserts: Citation is a means by which researchers establish stance and align themselves with subgroups of fellow researchers.",
+      "required_action": "Add an explicit scope tag or restrict the claim to the source's actual scope.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "medium",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_1436f1fb08f5",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_d81a8a3d6bba_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_d81a8a3d6bba"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d81a8a3d6bba_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Citation is a means by which researchers establish stance and align themselves with subgroups of fellow researchers.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_2064ccf8dd08",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_676ddfa834cc_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_676ddfa834cc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_676ddfa834cc_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Knowledge graphs are used by search engines like Google, Bing, Yahoo, question-answering services such as Wolfram Alpha, Apple's Siri, Amazon Alexa, and social ",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_b4a23c26ffd9",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_676ddfa834cc_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_676ddfa834cc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_676ddfa834cc_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Knowledge graphs have broadened their scope to scientific research, with notable applications in fields like genomics, proteomics, and systems biology.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_c29300a83bb1",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_155c4be7850d_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_155c4be7850d"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "Claim clm_155c4be7850d_ollama_intern_1 has scope=null with a substantive assertion. It cannot be treated as broad without scope-widening evidence.",
+      "evidence": "Asserts: The Resource Description Framework (RDF) is a method to describe and exchange graph data.",
+      "required_action": "Add an explicit scope tag or restrict the claim to the source's actual scope.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "medium",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_357a6568a37f",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_155c4be7850d_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_155c4be7850d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_155c4be7850d_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The Resource Description Framework (RDF) is a method to describe and exchange graph data.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_ac59a90b1082",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_155c4be7850d_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_155c4be7850d"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "Claim clm_155c4be7850d_ollama_intern_2 has scope=null with a substantive assertion. It cannot be treated as broad without scope-widening evidence.",
+      "evidence": "Asserts: RDF was originally designed as a data model for metadata by the World Wide Web Consortium (W3C).",
+      "required_action": "Add an explicit scope tag or restrict the claim to the source's actual scope.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "medium",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_32a6698c17b9",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_155c4be7850d_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_155c4be7850d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_155c4be7850d_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: RDF was originally designed as a data model for metadata by the World Wide Web Consortium (W3C).",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_b70e8faa7084",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_155c4be7850d_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_155c4be7850d"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "Claim clm_155c4be7850d_ollama_intern_3 has scope=null with a substantive assertion. It cannot be treated as broad without scope-widening evidence.",
+      "evidence": "Asserts: The most widely used serialization format for RDF is Turtle (Terse RDF Triple Language).",
+      "required_action": "Add an explicit scope tag or restrict the claim to the source's actual scope.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "medium",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_9ad45d8b6b21",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_155c4be7850d_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_155c4be7850d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_155c4be7850d_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The most widely used serialization format for RDF is Turtle (Terse RDF Triple Language).",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_74e2f2e5aa78",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_155c4be7850d_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_155c4be7850d"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "Claim clm_155c4be7850d_ollama_intern_4 has scope=null with a substantive assertion. It cannot be treated as broad without scope-widening evidence.",
+      "evidence": "Asserts: RDF is a directed graph composed of triple statements.",
+      "required_action": "Add an explicit scope tag or restrict the claim to the source's actual scope.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "medium",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_948082a9780b",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_155c4be7850d_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_155c4be7850d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_155c4be7850d_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: RDF is a directed graph composed of triple statements.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_3e11a6a4b736",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_155c4be7850d_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_155c4be7850d"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "Claim clm_155c4be7850d_ollama_intern_5 has scope=null with a substantive assertion. It cannot be treated as broad without scope-widening evidence.",
+      "evidence": "Asserts: Each part of an RDF statement (subject, predicate, object) can be identified by an Internationalized Resource Identifier (IRI).",
+      "required_action": "Add an explicit scope tag or restrict the claim to the source's actual scope.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "medium",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_21b28d02d93c",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_155c4be7850d_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_155c4be7850d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_155c4be7850d_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Each part of an RDF statement (subject, predicate, object) can be identified by an Internationalized Resource Identifier (IRI).",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_9ecf0390662f",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_caedf4b2d8e0_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_caedf4b2d8e0"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_caedf4b2d8e0_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: JSON-LD is designed for use directly as JSON, without requiring knowledge of RDF.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.690Z"
+    },
+    {
+      "finding_id": "fnd_184a43b02e50",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_caedf4b2d8e0_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_caedf4b2d8e0"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_caedf4b2d8e0_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: JSON-LD can also be used as another RDF syntax alongside Turtle and TriG.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "finding_id": "fnd_0bc0585d59c8",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_a135974ea838_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_a135974ea838"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_a135974ea838_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Knowledge graphs have garnered significant attention from both industry and academia for scenarios requiring diverse, dynamic, large-scale data collections.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "finding_id": "fnd_2784eb49cff1",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_a135974ea838_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_a135974ea838"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_a135974ea838_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The paper motivates and contrasts various graph-based data models and query languages used for knowledge graphs.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "finding_id": "fnd_1cd490954b72",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_a135974ea838_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_a135974ea838"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_a135974ea838_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The roles of schema, identity, and context are discussed in the context of knowledge graphs.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "finding_id": "fnd_b262ed12380e",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_a135974ea838_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_a135974ea838"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_a135974ea838_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Knowledge can be represented and extracted using a combination of deductive and inductive techniques.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "finding_id": "fnd_e441c47df156",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_a135974ea838_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_a135974ea838"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_a135974ea838_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Methods for the creation, enrichment, quality assessment, refinement, and publication of knowledge graphs are summarized.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "finding_id": "fnd_788185c9f5ed",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_a135974ea838_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_a135974ea838"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_a135974ea838_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: An overview of prominent open knowledge graphs and enterprise knowledge graphs is provided, including their applications and techniques used.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "finding_id": "fnd_3cad868e6533",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_63e3516c85f3_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_63e3516c85f3"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_63e3516c85f3_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Evidence is central to both epistemology and philosophy of science.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "finding_id": "fnd_3641bea1db14",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_63e3516c85f3_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_63e3516c85f3"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_63e3516c85f3_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Philosophical accounts of evidence differ from non-philosophical contexts.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "finding_id": "fnd_51d91171cdc8",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_63e3516c85f3_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_63e3516c85f3"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_63e3516c85f3_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Evidence can be physical objects or arranged physical objects, but philosophical accounts often differ from this view.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "finding_id": "fnd_46feb18f9d6d",
+      "section_id": "03-source-and-claim-truth",
+      "claim_ids": [
+        "clm_63e3516c85f3_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_63e3516c85f3"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_63e3516c85f3_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Philosophers have proposed diverse theories about what sorts of things are eligible to serve as evidence.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "confidence": "low",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    }
+  ],
+  "claim_reviews": [
+    {
+      "claim_id": "clm_d81a8a3d6bba_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ee0a9ccf8c46"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_d81a8a3d6bba_ollama_intern_2",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_0a6b8b84056c",
+        "fnd_7f81604996ba"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_d81a8a3d6bba_ollama_intern_3",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_5bc5b2125144",
+        "fnd_0672a3b1a754"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_d81a8a3d6bba_ollama_intern_4",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_bb6bfe8613ba",
+        "fnd_1436f1fb08f5"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_676ddfa834cc_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_2064ccf8dd08"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_676ddfa834cc_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_b4a23c26ffd9"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_155c4be7850d_ollama_intern_1",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_c29300a83bb1",
+        "fnd_357a6568a37f"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_155c4be7850d_ollama_intern_2",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_ac59a90b1082",
+        "fnd_32a6698c17b9"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_155c4be7850d_ollama_intern_3",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_b70e8faa7084",
+        "fnd_9ad45d8b6b21"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_155c4be7850d_ollama_intern_4",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_74e2f2e5aa78",
+        "fnd_948082a9780b"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_155c4be7850d_ollama_intern_5",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_3e11a6a4b736",
+        "fnd_21b28d02d93c"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_caedf4b2d8e0_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_9ecf0390662f"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_caedf4b2d8e0_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_184a43b02e50"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_a135974ea838_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_0bc0585d59c8"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_a135974ea838_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_2784eb49cff1"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_a135974ea838_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_1cd490954b72"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_a135974ea838_ollama_intern_4",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_b262ed12380e"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_a135974ea838_ollama_intern_5",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_e441c47df156"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_a135974ea838_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_788185c9f5ed"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_63e3516c85f3_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_3cad868e6533"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_63e3516c85f3_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_3641bea1db14"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_63e3516c85f3_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_51d91171cdc8"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    },
+    {
+      "claim_id": "clm_63e3516c85f3_ollama_intern_4",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_46feb18f9d6d"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "heuristic_field_and_grounding_checks",
+      "created_at": "2026-05-07T02:36:43.691Z"
+    }
+  ],
+  "decision_counts": {
+    "accepted_for_synthesis": 15,
+    "rejected": 0,
+    "needs_scope_repair": 8,
+    "needs_source_repair": 0,
+    "needs_contradiction_mapping": 0,
+    "needs_human_review": 0
+  },
+  "severity_counts": {
+    "info": 23,
+    "warn": 8,
+    "block": 0
+  },
+  "llm_findings_rejected_ungrounded": 0,
+  "promoted_to_reviewed": false
+}

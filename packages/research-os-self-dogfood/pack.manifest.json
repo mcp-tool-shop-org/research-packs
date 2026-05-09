@@ -1,0 +1,64 @@
+{
+  "name": "research-os-self-dogfood",
+  "topic": "How should research-os structure a research-pack so every research artifact becomes actionable implementation material for the repo?",
+  "frozen_at": "2026-05-08T07:41:33.924Z",
+  "research_os_version": "0.1.0",
+  "sections": [
+    {
+      "id": "01-product-thesis",
+      "accepted_claims": 19,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "02-pack-artifact-contract",
+      "accepted_claims": 50,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "03-source-and-claim-truth",
+      "accepted_claims": 42,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "04-gates-and-waivers",
+      "accepted_claims": 30,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "05-cowork-handoff",
+      "accepted_claims": 68,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "06-repo-knowledge-integration",
+      "accepted_claims": 43,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "07-cli-and-runtime-flow",
+      "accepted_claims": 29,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "08-acceptance-suite",
+      "accepted_claims": 15,
+      "gate": "warn",
+      "synthesis_eligible": true
+    }
+  ],
+  "totals": {
+    "sections": 8,
+    "accepted_claims": 296,
+    "dispositioned": 17,
+    "unresolved_contradictions": 0
+  },
+  "freeze_receipt_sha256": "368d23613783ef48b36cccd814463b3f413d514eb7a37792653142ef1fd5d466",
+  "operator_notes": "Recursive proof: this pack researches research-os's own spec using research-os itself. Frozen 2026-05-08 using mistral-nemo:12b (hermes3:8b not pulled at the time; documented substitution). Section 03 is the primary regression fixture; its 7 dispositioned claims (out_of_bounds_regression_fixture) must not be cited. Primary-source waiver active for all 8 sections — design intent is operator input, not public publications."
+}

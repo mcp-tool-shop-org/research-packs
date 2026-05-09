@@ -1,0 +1,22 @@
+{
+  "source_id": "src_d2cd935fb884",
+  "receipt_id": "rcpt_d2cd935fb884_1778186833632",
+  "section_id": "04-gates-and-waivers",
+  "url": "https://ieeexplore.ieee.org/document/7480219",
+  "final_url": "https://ieeexplore.ieee.org/document/7480219",
+  "fetched_at": "2026-05-07T20:47:13.632Z",
+  "publisher": "ieeexplore.ieee.org",
+  "published_at": null,
+  "title": "Functional view of a smart city architecture: the SCDA greenfield approach",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "A not-for-profit organization, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.© Copyright 2026 IEEE - All rights reserved. Use of this web site signifies your agreement to the terms and conditions."
+  ],
+  "limitations": [],
+  "asserts": "Smart cities are typical examples of distributed cyber-physical systems because they closely integrate multiple technical and social domains providing novel solutions to improve the cities' ecological footprint. Smart city architectures couple these domains and thus have to cover manifold control loops of different characteristic time constants. The wide granularity spectrum and multiple domains make modeling and simulation of smart cities a challenging task. In this paper, we present a greenfield architecture considering buildings, electric power grid, and communication infrastructure. This i",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T20:47:13.927Z"
+}

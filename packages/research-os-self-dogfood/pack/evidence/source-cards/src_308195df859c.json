@@ -1,0 +1,24 @@
+{
+  "source_id": "src_308195df859c",
+  "receipt_id": "rcpt_308195df859c_1778188304640",
+  "section_id": "01-product-thesis",
+  "url": "https://arxiv.org/abs/2106.08547",
+  "final_url": "https://arxiv.org/abs/2106.08547",
+  "fetched_at": "2026-05-07T21:11:44.640Z",
+  "publisher": "arXiv.org",
+  "published_at": null,
+  "title": "Connections on trivial vector bundles over projective schemes",
+  "source_type": "primary",
+  "relevance": "unknown",
+  "key_points": [
+    "arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.",
+    "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.",
+    "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs."
+  ],
+  "limitations": [],
+  "asserts": "Over a smooth and proper complex scheme, the differential Galois group of an integrable connection may be obtained as the closure of the transcendental monodromy representation. In this paper, we employ a completely algebraic variation of this idea by restricting attention to connections on trivial vector bundles and replacing the fundamental group by a certain Lie algebra constructed from the regular forms. In more detail, we show that the differential Galois group is a certain ``closure'' of the aforementioned Lie algebra. This is then applied to construct connections on curves with prescrib",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:11:44.687Z"
+}

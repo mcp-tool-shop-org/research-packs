@@ -1,0 +1,25 @@
+{
+  "source_id": "src_96b9a35307c0",
+  "receipt_id": "rcpt_96b9a35307c0_1778190626433",
+  "section_id": "05-cowork-handoff",
+  "url": "https://docs.anthropic.com/en/docs/claude-code/memory",
+  "final_url": "https://code.claude.com/docs/en/memory",
+  "fetched_at": "2026-05-07T21:50:26.433Z",
+  "publisher": "code.claude.com",
+  "published_at": null,
+  "title": "How Claude remembers your project - Claude Code Docs",
+  "source_type": "primary",
+  "relevance": "unknown",
+  "key_points": [
+    "Fetch the complete documentation index at: https://code.claude.com/docs/llms.txt",
+    "Use this file to discover all available pages before exploring further.",
+    "Create the file at the managed policy location",
+    "Deploy with your configuration management system"
+  ],
+  "limitations": [],
+  "asserts": "Give Claude persistent instructions with CLAUDE.md files, and let Claude accumulate learnings automatically with auto memory.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:50:26.687Z"
+}

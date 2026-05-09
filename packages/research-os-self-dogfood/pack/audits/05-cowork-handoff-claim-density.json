@@ -1,0 +1,258 @@
+{
+  "audit_id": "cda_1778208897914_05-cowork-handoff",
+  "section_id": "05-cowork-handoff",
+  "audited_at": "2026-05-08T02:54:57.914Z",
+  "research_os_version": "0.1.0",
+  "candidate_claim_count": 548,
+  "source_count": 13,
+  "total_source_word_count": 1130493,
+  "claims_per_1k_words": 0.48474426643950913,
+  "weak_scope_count": 33,
+  "generic_scope_count": 210,
+  "per_source": [
+    {
+      "source_id": "src_5be2e21d45c9",
+      "publisher": "code.claude.com",
+      "source_word_count": 297622,
+      "claim_count": 162,
+      "claims_per_1k_words": 0.544314600399164,
+      "share_of_section": 0.2956204379562044,
+      "weak_scope_count": 7,
+      "generic_scope_count": 101
+    },
+    {
+      "source_id": "src_c8975a95117b",
+      "publisher": "code.claude.com",
+      "source_word_count": 169680,
+      "claim_count": 81,
+      "claims_per_1k_words": 0.47736916548797736,
+      "share_of_section": 0.1478102189781022,
+      "weak_scope_count": 10,
+      "generic_scope_count": 41
+    },
+    {
+      "source_id": "src_9a7d4217c64c",
+      "publisher": "code.claude.com",
+      "source_word_count": 151705,
+      "claim_count": 73,
+      "claims_per_1k_words": 0.4811970600837151,
+      "share_of_section": 0.1332116788321168,
+      "weak_scope_count": 0,
+      "generic_scope_count": 33
+    },
+    {
+      "source_id": "src_486f1e6121c8",
+      "publisher": "code.claude.com",
+      "source_word_count": 150637,
+      "claim_count": 49,
+      "claims_per_1k_words": 0.3252852884749431,
+      "share_of_section": 0.08941605839416059,
+      "weak_scope_count": 7,
+      "generic_scope_count": 14
+    },
+    {
+      "source_id": "src_9686dc1633cd",
+      "publisher": "code.claude.com",
+      "source_word_count": 113446,
+      "claim_count": 43,
+      "claims_per_1k_words": 0.37903495936392645,
+      "share_of_section": 0.07846715328467153,
+      "weak_scope_count": 2,
+      "generic_scope_count": 6
+    },
+    {
+      "source_id": "src_96b9a35307c0",
+      "publisher": "code.claude.com",
+      "source_word_count": 107414,
+      "claim_count": 34,
+      "claims_per_1k_words": 0.316532295603925,
+      "share_of_section": 0.06204379562043796,
+      "weak_scope_count": 5,
+      "generic_scope_count": 6
+    },
+    {
+      "source_id": "src_126e07cf0d68",
+      "publisher": "www.anthropic.com",
+      "source_word_count": 14320,
+      "claim_count": 27,
+      "claims_per_1k_words": 1.8854748603351954,
+      "share_of_section": 0.04927007299270073,
+      "weak_scope_count": 0,
+      "generic_scope_count": 7
+    },
+    {
+      "source_id": "src_ea1a84785166",
+      "publisher": null,
+      "source_word_count": 22100,
+      "claim_count": 23,
+      "claims_per_1k_words": 1.0407239819004526,
+      "share_of_section": 0.041970802919708027,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_9a532b2b74e5",
+      "publisher": "code.claude.com",
+      "source_word_count": 100382,
+      "claim_count": 16,
+      "claims_per_1k_words": 0.15939112589906557,
+      "share_of_section": 0.029197080291970802,
+      "weak_scope_count": 0,
+      "generic_scope_count": 2
+    },
+    {
+      "source_id": "src_59b5d7b9e7e4",
+      "publisher": null,
+      "source_word_count": 832,
+      "claim_count": 13,
+      "claims_per_1k_words": 15.625,
+      "share_of_section": 0.023722627737226276,
+      "weak_scope_count": 2,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_67b29d913d85",
+      "publisher": null,
+      "source_word_count": 833,
+      "claim_count": 12,
+      "claims_per_1k_words": 14.405762304921968,
+      "share_of_section": 0.021897810218978103,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_2fff6e91c56c",
+      "publisher": null,
+      "source_word_count": 823,
+      "claim_count": 10,
+      "claims_per_1k_words": 12.150668286755772,
+      "share_of_section": 0.01824817518248175,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_b9c427878132",
+      "publisher": null,
+      "source_word_count": 699,
+      "claim_count": 5,
+      "claims_per_1k_words": 7.15307582260372,
+      "share_of_section": 0.009124087591240875,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    }
+  ],
+  "near_duplicate_clusters": [
+    {
+      "representative_assert": "arXiv is committed to the values of openness, community, excellence, and user data privacy.",
+      "member_count": 3,
+      "claim_ids": [
+        "clm_67b29d913d85_ollama_intern_8",
+        "clm_2fff6e91c56c_ollama_intern_8",
+        "clm_67b29d913d85_ollama_intern_10"
+      ]
+    }
+  ],
+  "flags": [
+    {
+      "type": "source_dominance",
+      "severity": "block",
+      "message": "Source src_5be2e21d45c9 contributes 162 of 548 claims (30% of section).",
+      "affects_source_ids": [
+        "src_5be2e21d45c9"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "block",
+      "message": "Source src_c8975a95117b contributes 81 of 548 claims (15% of section).",
+      "affects_source_ids": [
+        "src_c8975a95117b"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "block",
+      "message": "Source src_9a7d4217c64c contributes 73 of 548 claims (13% of section).",
+      "affects_source_ids": [
+        "src_9a7d4217c64c"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_486f1e6121c8 contributes 49 of 548 claims (9% of section).",
+      "affects_source_ids": [
+        "src_486f1e6121c8"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_9686dc1633cd contributes 43 of 548 claims (8% of section).",
+      "affects_source_ids": [
+        "src_9686dc1633cd"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_96b9a35307c0 contributes 34 of 548 claims (6% of section).",
+      "affects_source_ids": [
+        "src_96b9a35307c0"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_59b5d7b9e7e4 has 15.6 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_59b5d7b9e7e4"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_67b29d913d85 has 14.4 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_67b29d913d85"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_2fff6e91c56c has 12.2 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_2fff6e91c56c"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_b9c427878132 has 7.2 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_b9c427878132"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "large_near_duplicate_cluster",
+      "severity": "warn",
+      "message": "Cluster of 3 claims share a normalised assertion: \"arXiv is committed to the values of openness, community, excellence, and user data privacy.\".",
+      "affects_source_ids": [],
+      "affects_claim_ids": [
+        "clm_67b29d913d85_ollama_intern_8",
+        "clm_2fff6e91c56c_ollama_intern_8",
+        "clm_67b29d913d85_ollama_intern_10"
+      ]
+    }
+  ]
+}

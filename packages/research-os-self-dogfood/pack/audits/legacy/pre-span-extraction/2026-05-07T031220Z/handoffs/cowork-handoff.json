@@ -1,0 +1,205 @@
+{
+  "pack_id": "5dca72a4300c",
+  "pack_topic": "How should research-os structure a research-pack so every research artifact becomes actionable implementation material for the repo?",
+  "generated_at": "2026-05-07T01:12:19.248Z",
+  "mode": "repair_required",
+  "synthesis_allowed": false,
+  "summary": "Pack mode=repair_required; 8 section(s) total, 0 synthesis-eligible, 8 blocked or unrun. 0 accepted claim(s); 4 need repair; 0 rejected; 0 unresolved contradiction(s); 0 waiver(s).",
+  "sections": [
+    {
+      "section_id": "01-product-thesis",
+      "purpose": "What research-os is, what it refuses to become, and what workflow must not be broken.",
+      "status": "draft",
+      "has_gate_run": false,
+      "has_review_run": false,
+      "gate_verdict": null,
+      "synthesis_eligible": false,
+      "accepted_claim_ids": [],
+      "repair_claim_ids": [],
+      "rejected_claim_ids": [],
+      "candidate_claims_total": 0,
+      "unresolved_contradiction_ids": [],
+      "blocking_reasons": [],
+      "blocking_contradictions_unresolved": 0
+    },
+    {
+      "section_id": "02-pack-artifact-contract",
+      "purpose": "Exact folder structure, file schemas, required ledgers, receipts, and freeze outputs.",
+      "status": "draft",
+      "has_gate_run": false,
+      "has_review_run": false,
+      "gate_verdict": null,
+      "synthesis_eligible": false,
+      "accepted_claim_ids": [],
+      "repair_claim_ids": [],
+      "rejected_claim_ids": [],
+      "candidate_claims_total": 0,
+      "unresolved_contradiction_ids": [],
+      "blocking_reasons": [],
+      "blocking_contradictions_unresolved": 0
+    },
+    {
+      "section_id": "03-source-and-claim-truth",
+      "purpose": "How source cards, claim extraction, citations, confidence, uncertainty, and unsupported claims work.",
+      "status": "draft",
+      "has_gate_run": false,
+      "has_review_run": false,
+      "gate_verdict": null,
+      "synthesis_eligible": false,
+      "accepted_claim_ids": [],
+      "repair_claim_ids": [],
+      "rejected_claim_ids": [],
+      "candidate_claims_total": 0,
+      "unresolved_contradiction_ids": [],
+      "blocking_reasons": [],
+      "blocking_contradictions_unresolved": 0
+    },
+    {
+      "section_id": "04-gates-and-waivers",
+      "purpose": "Hard gates, soft gates, waiver reasons, compensating controls, and failure states.",
+      "status": "draft",
+      "has_gate_run": false,
+      "has_review_run": false,
+      "gate_verdict": null,
+      "synthesis_eligible": false,
+      "accepted_claim_ids": [],
+      "repair_claim_ids": [],
+      "rejected_claim_ids": [],
+      "candidate_claims_total": 0,
+      "unresolved_contradiction_ids": [],
+      "blocking_reasons": [],
+      "blocking_contradictions_unresolved": 0
+    },
+    {
+      "section_id": "05-cowork-handoff",
+      "purpose": "The real cowork-master.md contract, allowed actions, forbidden drift, synthesis responsibilities, and stop conditions.",
+      "status": "draft",
+      "has_gate_run": false,
+      "has_review_run": false,
+      "gate_verdict": null,
+      "synthesis_eligible": false,
+      "accepted_claim_ids": [],
+      "repair_claim_ids": [],
+      "rejected_claim_ids": [],
+      "candidate_claims_total": 0,
+      "unresolved_contradiction_ids": [],
+      "blocking_reasons": [],
+      "blocking_contradictions_unresolved": 0
+    },
+    {
+      "section_id": "06-repo-knowledge-integration",
+      "purpose": "How pack artifacts become searchable facts instead of dead markdown.",
+      "status": "draft",
+      "has_gate_run": true,
+      "has_review_run": true,
+      "gate_verdict": "blocked",
+      "synthesis_eligible": false,
+      "accepted_claim_ids": [],
+      "repair_claim_ids": [
+        "clm_e15c2248a5d8_ollama_intern_1",
+        "clm_05cae033cedc_ollama_intern_1",
+        "clm_05cae033cedc_ollama_intern_2",
+        "clm_05cae033cedc_ollama_intern_3"
+      ],
+      "rejected_claim_ids": [],
+      "candidate_claims_total": 4,
+      "unresolved_contradiction_ids": [],
+      "blocking_reasons": [
+        "source_floor.min_sources: Found 2 source card(s); minimum 8 required.",
+        "source_floor.min_independent_publishers: Found 1 independent publisher(s); minimum 4 required.",
+        "source_floor.primary_sources_required: Found 0 primary source(s); minimum 2 required. Pre-waiver."
+      ],
+      "blocking_contradictions_unresolved": 0
+    },
+    {
+      "section_id": "07-cli-and-runtime-flow",
+      "purpose": "Commands, state transitions, status output, failure recovery, and section time budgeting.",
+      "status": "draft",
+      "has_gate_run": false,
+      "has_review_run": false,
+      "gate_verdict": null,
+      "synthesis_eligible": false,
+      "accepted_claim_ids": [],
+      "repair_claim_ids": [],
+      "rejected_claim_ids": [],
+      "candidate_claims_total": 0,
+      "unresolved_contradiction_ids": [],
+      "blocking_reasons": [],
+      "blocking_contradictions_unresolved": 0
+    },
+    {
+      "section_id": "08-acceptance-suite",
+      "purpose": "Tests that prove the whole workflow exists and cannot regress into a partial report generator.",
+      "status": "draft",
+      "has_gate_run": false,
+      "has_review_run": false,
+      "gate_verdict": null,
+      "synthesis_eligible": false,
+      "accepted_claim_ids": [],
+      "repair_claim_ids": [],
+      "rejected_claim_ids": [],
+      "candidate_claims_total": 0,
+      "unresolved_contradiction_ids": [],
+      "blocking_reasons": [],
+      "blocking_contradictions_unresolved": 0
+    }
+  ],
+  "accepted_claim_ids": [],
+  "repair_claim_ids": [
+    "clm_e15c2248a5d8_ollama_intern_1",
+    "clm_05cae033cedc_ollama_intern_1",
+    "clm_05cae033cedc_ollama_intern_2",
+    "clm_05cae033cedc_ollama_intern_3"
+  ],
+  "blocked_claim_ids": [],
+  "unresolved_contradiction_ids": [],
+  "waivers": [],
+  "gate_verdicts": [
+    {
+      "section_id": "06-repo-knowledge-integration",
+      "verdict": "blocked",
+      "synthesis_eligible": false
+    }
+  ],
+  "review_decisions": [
+    {
+      "section_id": "06-repo-knowledge-integration",
+      "decision": "needs_source_repair",
+      "count": 4
+    }
+  ],
+  "recommended_next_actions": [
+    "Run `research-os gate 01-product-thesis` (no gate result on file yet).",
+    "Run `research-os gate 02-pack-artifact-contract` (no gate result on file yet).",
+    "Run `research-os gate 03-source-and-claim-truth` (no gate result on file yet).",
+    "Run `research-os gate 04-gates-and-waivers` (no gate result on file yet).",
+    "Run `research-os gate 05-cowork-handoff` (no gate result on file yet).",
+    "[06-repo-knowledge-integration] address blocking gate failure: source_floor.min_sources: Found 2 source card(s); minimum 8 required.",
+    "[06-repo-knowledge-integration] address blocking gate failure: source_floor.min_independent_publishers: Found 1 independent publisher(s); minimum 4 required.",
+    "[06-repo-knowledge-integration] address blocking gate failure: source_floor.primary_sources_required: Found 0 primary source(s); minimum 2 required. Pre-waiver.",
+    "[06-repo-knowledge-integration] 4 claim(s) need repair per latest review — re-run gather/extract for affected sources, then re-run review.",
+    "Run `research-os gate 07-cli-and-runtime-flow` (no gate result on file yet).",
+    "Run `research-os gate 08-acceptance-suite` (no gate result on file yet)."
+  ],
+  "allowed_write_paths": [
+    "handoffs/cowork-options.md",
+    "handoffs/cowork-notes.md",
+    "sections/<id>/open_questions.md",
+    "sections/<id>/brief.md (working notes only — final brief lands at synthesis time)",
+    "audits/<id>-cowork-repair-notes.md"
+  ],
+  "forbidden_actions": [
+    "Mutate sections/<id>/claims.jsonl directly — it is extraction truth (append-only via research-os tools)",
+    "Mutate evidence/source-cards/*.json or evidence/fetch-log.jsonl — these are fetched-truth artifacts",
+    "Mutate audits/*-gate.json or audits/*-review.json — these are immutable audit snapshots",
+    "Cite a source_id that is not present in evidence/source-cards/",
+    "Cite a claim_id that is not present in sections/<id>/claims.jsonl",
+    "Treat a claim with scope=null as broadly applicable — null-scope means scope-undetermined, not scope-universal",
+    "Widen the scope of a claim beyond what the source explicitly supports",
+    "Flatten an unresolved contradiction; preserve it deliberately or route it through claim-reviews",
+    "Write final synthesis prose unless mode == synthesis_ready",
+    "Reconcile contradictions silently — use research-os contradict map / research-os review with explicit decisions"
+  ],
+  "index_status": "present",
+  "warnings": []
+}

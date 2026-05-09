@@ -1,0 +1,26 @@
+{
+  "source_id": "src_876b66b88858",
+  "receipt_id": "rcpt_876b66b88858_1778188778099",
+  "section_id": "02-pack-artifact-contract",
+  "url": "https://json-schema.org/draft/2020-12",
+  "final_url": "https://json-schema.org/draft/2020-12",
+  "fetched_at": "2026-05-07T21:19:38.099Z",
+  "publisher": "json-schema.org",
+  "published_at": null,
+  "title": "JSON Schema",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "The JSON Schema Draft 2020-12 is a comprehensive update to the previous draft 2019-09, addressing feedback and implementation experiences. This draft introduces features to simplify creating and validating JSON schemas.",
+    "Here's an overview of updates to Draft 2020-12;",
+    "These were updated without changing functionality or meta-schemas due to a few errors and unclear sections.",
+    "At JSON Schema, we value docs contributions as much as every other type of contribution!",
+    "Learning JSON Schema is often confusing, but don't worry, we are here to help!."
+  ],
+  "limitations": [],
+  "asserts": "JSON Schema",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:19:38.166Z"
+}

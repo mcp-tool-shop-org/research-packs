@@ -1,0 +1,168 @@
+{
+  "receipt_id": "inv_1778123540977_pre-span-extraction",
+  "contract_label": "pre-span-extraction",
+  "superseded_contract": "authored-evidence-excerpt",
+  "new_contract": "span-first-extraction",
+  "reason": "Span-first extraction supersedes the authored-evidence-excerpt contract: claims authored under the legacy model directly produced evidence_excerpt text, conflating interpretation with evidence and creating paraphrase-as-quote 'hallucinations'. Span-first removes that authority — the model now picks excerpt IDs from a deterministic ledger; research-os copies the literal text. New law: models may interpret source spans; they may not author evidence spans.",
+  "invalidated_at": "2026-05-07T03:12:20.977Z",
+  "research_os_version": "0.1.0",
+  "affected_sections": [
+    "03-source-and-claim-truth",
+    "06-repo-knowledge-integration"
+  ],
+  "archived_artifacts": [
+    {
+      "src": "sections/03-source-and-claim-truth/claims.jsonl",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/sections/03-source-and-claim-truth/claims.jsonl"
+    },
+    {
+      "src": "sections/03-source-and-claim-truth/claim-reviews.jsonl",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/sections/03-source-and-claim-truth/claim-reviews.jsonl"
+    },
+    {
+      "src": "sections/03-source-and-claim-truth/contradictions.md",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/sections/03-source-and-claim-truth/contradictions.md"
+    },
+    {
+      "src": "sections/06-repo-knowledge-integration/claims.jsonl",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/sections/06-repo-knowledge-integration/claims.jsonl"
+    },
+    {
+      "src": "sections/06-repo-knowledge-integration/claim-reviews.jsonl",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/sections/06-repo-knowledge-integration/claim-reviews.jsonl"
+    },
+    {
+      "src": "sections/06-repo-knowledge-integration/contradictions.md",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/sections/06-repo-knowledge-integration/contradictions.md"
+    },
+    {
+      "src": "handoffs/cowork-handoff.json",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/handoffs/cowork-handoff.json"
+    },
+    {
+      "src": "handoffs/cowork-master.md",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/handoffs/cowork-master.md"
+    },
+    {
+      "src": "audits/03-source-and-claim-truth-findings.jsonl",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/03-source-and-claim-truth-findings.jsonl"
+    },
+    {
+      "src": "audits/03-source-and-claim-truth-gate.json",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/03-source-and-claim-truth-gate.json"
+    },
+    {
+      "src": "audits/03-source-and-claim-truth-gate.md",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/03-source-and-claim-truth-gate.md"
+    },
+    {
+      "src": "audits/03-source-and-claim-truth-review.json",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/03-source-and-claim-truth-review.json"
+    },
+    {
+      "src": "audits/03-source-and-claim-truth-review.md",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/03-source-and-claim-truth-review.md"
+    },
+    {
+      "src": "audits/06-repo-knowledge-integration-findings.jsonl",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/06-repo-knowledge-integration-findings.jsonl"
+    },
+    {
+      "src": "audits/06-repo-knowledge-integration-gate.json",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/06-repo-knowledge-integration-gate.json"
+    },
+    {
+      "src": "audits/06-repo-knowledge-integration-gate.md",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/06-repo-knowledge-integration-gate.md"
+    },
+    {
+      "src": "audits/06-repo-knowledge-integration-review.json",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/06-repo-knowledge-integration-review.json"
+    },
+    {
+      "src": "audits/06-repo-knowledge-integration-review.md",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/06-repo-knowledge-integration-review.md"
+    },
+    {
+      "src": "audits/freeze-refusal.json",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/freeze-refusal.json"
+    },
+    {
+      "src": "audits/freeze-refusal.md",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/freeze-refusal.md"
+    },
+    {
+      "src": "audits/orphan-claims.json",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/orphan-claims.json"
+    },
+    {
+      "src": "audits/orphan-claims.md",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/orphan-claims.md"
+    },
+    {
+      "src": "audits/pack-audit.json",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/pack-audit.json"
+    },
+    {
+      "src": "audits/pack-audit.md",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/pack-audit.md"
+    },
+    {
+      "src": "audits/scope-widening-risks.json",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/scope-widening-risks.json"
+    },
+    {
+      "src": "audits/scope-widening-risks.md",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/scope-widening-risks.md"
+    },
+    {
+      "src": "audits/source-diversity-gaps.json",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/source-diversity-gaps.json"
+    },
+    {
+      "src": "audits/source-diversity-gaps.md",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/source-diversity-gaps.md"
+    },
+    {
+      "src": "audits/stale-sources.json",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/stale-sources.json"
+    },
+    {
+      "src": "audits/stale-sources.md",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/stale-sources.md"
+    },
+    {
+      "src": "audits/synthesis-readiness.json",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/synthesis-readiness.json"
+    },
+    {
+      "src": "audits/synthesis-readiness.md",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/synthesis-readiness.md"
+    },
+    {
+      "src": "audits/unresolved-contradictions.json",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/unresolved-contradictions.json"
+    },
+    {
+      "src": "audits/unresolved-contradictions.md",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/unresolved-contradictions.md"
+    },
+    {
+      "src": "audits/weak-sources.json",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/weak-sources.json"
+    },
+    {
+      "src": "audits/weak-sources.md",
+      "dst": "audits/legacy/pre-span-extraction/2026-05-07T031220Z/audits/weak-sources.md"
+    }
+  ],
+  "section_status_changes": [
+    {
+      "section_id": "03-source-and-claim-truth",
+      "before": "gated",
+      "after": "draft"
+    }
+  ],
+  "frozen_at_cleared": false,
+  "notes": "Section 03's mistral-nemo run rejected 23/23 claims under the OLD text-substring grounding check; section 06 had 4 surviving claims from earlier hermes-style extraction. Both sections need re-extraction under span-first."
+}

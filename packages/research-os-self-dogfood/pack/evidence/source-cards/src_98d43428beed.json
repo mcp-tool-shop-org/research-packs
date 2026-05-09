@@ -1,0 +1,24 @@
+{
+  "source_id": "src_98d43428beed",
+  "receipt_id": "rcpt_98d43428beed_1778188295456",
+  "section_id": "01-product-thesis",
+  "url": "https://arxiv.org/abs/1909.11748",
+  "final_url": "https://arxiv.org/abs/1909.11748",
+  "fetched_at": "2026-05-07T21:11:35.456Z",
+  "publisher": "arXiv.org",
+  "published_at": null,
+  "title": "Machine learning approaches for analyzing and enhancing molecular dynamics simulations",
+  "source_type": "primary",
+  "relevance": "unknown",
+  "key_points": [
+    "arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.",
+    "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.",
+    "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs."
+  ],
+  "limitations": [],
+  "asserts": "Molecular dynamics (MD) has become a powerful tool for studying biophysical systems, due to increasing computational power and availability of software. Although MD has made many contributions to better understanding these complex biophysical systems, there remain methodological difficulties to be surmounted. First, how to make the deluge of data generated in running even a microsecond long MD simulation human comprehensible. Second, how to efficiently sample the underlying free energy surface and kinetics. In this short perspective, we summarize machine learning based ideas that are solving b",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:11:35.601Z"
+}

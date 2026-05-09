@@ -1,0 +1,12 @@
+{
+  "summary_id": "disum_1778178757555_05-cowork-handoff",
+  "section_id": "05-cowork-handoff",
+  "ran_at": "2026-05-07T18:32:37.555Z",
+  "research_os_version": "0.1.0",
+  "query": "LLM agent synthesis workflow prompt contract constraints boundaries forbidden actions AI research assistant workflow",
+  "provider": "llm-heuristic",
+  "candidates_proposed": 12,
+  "candidates_validated": 12,
+  "candidates_rejected_invalid_url": 0,
+  "warnings": []
+}

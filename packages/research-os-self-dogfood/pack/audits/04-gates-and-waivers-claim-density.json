@@ -1,0 +1,122 @@
+{
+  "audit_id": "cda_1778187340541_04-gates-and-waivers",
+  "section_id": "04-gates-and-waivers",
+  "audited_at": "2026-05-07T20:55:40.541Z",
+  "research_os_version": "0.1.0",
+  "candidate_claim_count": 131,
+  "source_count": 6,
+  "total_source_word_count": 25109,
+  "claims_per_1k_words": 5.217252777888407,
+  "weak_scope_count": 5,
+  "generic_scope_count": 15,
+  "per_source": [
+    {
+      "source_id": "src_55f4bfa87f54",
+      "publisher": "pmc.ncbi.nlm.nih.gov",
+      "source_word_count": 8540,
+      "claim_count": 60,
+      "claims_per_1k_words": 7.02576112412178,
+      "share_of_section": 0.4580152671755725,
+      "weak_scope_count": 1,
+      "generic_scope_count": 9
+    },
+    {
+      "source_id": "src_f0fe25b20f29",
+      "publisher": "pmc.ncbi.nlm.nih.gov",
+      "source_word_count": 7042,
+      "claim_count": 44,
+      "claims_per_1k_words": 6.248224936097699,
+      "share_of_section": 0.33587786259541985,
+      "weak_scope_count": 0,
+      "generic_scope_count": 1
+    },
+    {
+      "source_id": "src_fb48d4730a5c",
+      "publisher": "en.wikipedia.org",
+      "source_word_count": 4865,
+      "claim_count": 15,
+      "claims_per_1k_words": 3.083247687564234,
+      "share_of_section": 0.11450381679389313,
+      "weak_scope_count": 0,
+      "generic_scope_count": 3
+    },
+    {
+      "source_id": "src_09a48e752e9b",
+      "publisher": "help.puppet.com",
+      "source_word_count": 268,
+      "claim_count": 6,
+      "claims_per_1k_words": 22.388059701492537,
+      "share_of_section": 0.04580152671755725,
+      "weak_scope_count": 4,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_bbd08b91cbb6",
+      "publisher": "pmc.ncbi.nlm.nih.gov",
+      "source_word_count": 1656,
+      "claim_count": 3,
+      "claims_per_1k_words": 1.8115942028985508,
+      "share_of_section": 0.022900763358778626,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_d2cd935fb884",
+      "publisher": "ieeexplore.ieee.org",
+      "source_word_count": 2738,
+      "claim_count": 3,
+      "claims_per_1k_words": 1.095690284879474,
+      "share_of_section": 0.022900763358778626,
+      "weak_scope_count": 0,
+      "generic_scope_count": 2
+    }
+  ],
+  "near_duplicate_clusters": [],
+  "flags": [
+    {
+      "type": "source_dominance",
+      "severity": "block",
+      "message": "Source src_55f4bfa87f54 contributes 60 of 131 claims (46% of section).",
+      "affects_source_ids": [
+        "src_55f4bfa87f54"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_f0fe25b20f29 contributes 44 of 131 claims (34% of section).",
+      "affects_source_ids": [
+        "src_f0fe25b20f29"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_55f4bfa87f54 has 7.0 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_55f4bfa87f54"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_f0fe25b20f29 has 6.2 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_f0fe25b20f29"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_09a48e752e9b has 22.4 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_09a48e752e9b"
+      ],
+      "affects_claim_ids": []
+    }
+  ]
+}

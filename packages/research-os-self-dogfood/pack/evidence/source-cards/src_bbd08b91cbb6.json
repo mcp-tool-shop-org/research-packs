@@ -1,0 +1,20 @@
+{
+  "source_id": "src_bbd08b91cbb6",
+  "receipt_id": "rcpt_bbd08b91cbb6_1778186834874",
+  "section_id": "04-gates-and-waivers",
+  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2650394/",
+  "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2650394/",
+  "fetched_at": "2026-05-07T20:47:14.874Z",
+  "publisher": "pmc.ncbi.nlm.nih.gov",
+  "published_at": null,
+  "title": "Checking your browser - reCAPTCHA",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [],
+  "limitations": [],
+  "asserts": "Checking your browser - reCAPTCHA",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T20:47:15.140Z"
+}

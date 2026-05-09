@@ -1,0 +1,26 @@
+{
+  "source_id": "src_155c4be7850d",
+  "receipt_id": "rcpt_155c4be7850d_1778120259504",
+  "section_id": "03-source-and-claim-truth",
+  "url": "https://en.wikipedia.org/wiki/Resource_Description_Framework",
+  "final_url": "https://en.wikipedia.org/wiki/Resource_Description_Framework",
+  "fetched_at": "2026-05-07T02:17:39.504Z",
+  "publisher": "en.wikipedia.org",
+  "published_at": null,
+  "title": "Resource Description Framework - Wikipedia",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "The Resource Description Framework (RDF) is a method to describe and exchange graph data. It was originally designed as a data model for metadata by the World Wide Web Consortium (W3C). It provides a variety of syntax notations and formats, of which the most widely used is Turtle (Terse RDF Triple Language).[citation needed]",
+    "RDF is a directed graph composed of triple statements. An RDF graph statement is represented by: (1) a node for the subject, (2) an arc from subject to object, representing a predicate, and (3) a node for the object. Each of these parts can be identified by a Internationalized Resource Identifier (IRI). An object can also be a literal value. This simple, flexible data model has a lot of expressive power to represent complex situations, relationships, and other things of interest, while also being appropriately abstract.",
+    "RDF was adopted as a W3C recommendation in 1999. The RDF 1.0 specification was published in 2004, and the RDF 1.1 specification in 2014. SPARQL is a standard query language for RDF graphs. RDF Schema (RDFS), Web Ontology Language (OWL) and SHACL (Shapes Constraint Language) are ontology languages that are used to describe RDF data.",
+    "The RDF data model[1] is similar to classical conceptual modeling approaches (such as entity–relationship or class diagrams). It is based on the idea of making statements about resources (in particular web resources) in expressions of the form subject–predicate–object, known as triples. The subject denotes the resource; the predicate denotes traits or aspects of the resource, and expresses a relationship between the subject and the object.",
+    "For example, one way to represent the notion \"The sky has the color blue\" in RDF is as the triple: a subject denoting \"the sky\", a predicate denoting \"has the color\", and an object denoting \"blue\". Therefore, RDF uses subject instead of object (or entity) in contrast to the typical approach of an entity–attribute–value model in object-oriented design: entity (sky), attribute (color), and value (blue)."
+  ],
+  "limitations": [],
+  "asserts": "The Resource Description Framework (RDF) is a method to describe and exchange graph data. It was originally designed as a data model for metadata by the World Wide Web Consortium (W3C). It provides a variety of syntax notations and formats, of which the most widely used is Turtle (Terse RDF Triple Language).[citation needed]",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T02:17:39.574Z"
+}

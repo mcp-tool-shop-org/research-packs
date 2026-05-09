@@ -1,0 +1,26 @@
+{
+  "source_id": "src_ae13d4956c22",
+  "receipt_id": "rcpt_ae13d4956c22_1778203360212",
+  "section_id": "08-acceptance-suite",
+  "url": "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/",
+  "final_url": "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/",
+  "fetched_at": "2026-05-08T01:22:40.212Z",
+  "publisher": "International Software Testing Qualifications Board",
+  "published_at": "2024-10-19T09:18:37+00:00",
+  "title": "Certified Tester Foundation Level (CTFL) v4.0 Overview",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "The ISTQB® Certified Tester Foundation Level (CTFL) certification is the cornerstone of essential testing knowledge that can be applied to real-world scenarios. The syllabus provides a comprehensive understanding of the terminology and concepts used in the testing domain worldwide, making it relevant for all software delivery approaches and practices, including Waterfall, Agile, DevOps, and Continuous Delivery.",
+    "CTFL certification is recognized as a prerequisite to all other ISTQB® certifications where Foundation Level is required.",
+    "The CTFL 4.0 certification is suitable for anyone who needs to demonstrate practical knowledge of the fundamental concepts of software testing. It is relevant for individuals in roles such as testers, test analysts, test engineers, test consultants, test managers, user acceptance testers, and software developers. Additionally, it is appropriate for those who require a basic understanding of software testing, including project managers, quality managers, software development managers, business analysts, IT directors, and management consultants.",
+    "With the ISTQB® Certified Tester Scheme, testing professionals at all stages of their careers can benefit from the breadth and depth of knowledge offered, with the opportunity to pursue higher-level software testing qualifications such as the Core Advanced Levels, Specialist, and Expert Level certifications.",
+    "ISTQB® Certified Tester Foundation Level (CTFL)"
+  ],
+  "limitations": [],
+  "asserts": "Explore ISTQB® Certified Tester Foundation Level certification essentials for effective software testing knowledge and real-world application.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-08T01:22:49.668Z"
+}

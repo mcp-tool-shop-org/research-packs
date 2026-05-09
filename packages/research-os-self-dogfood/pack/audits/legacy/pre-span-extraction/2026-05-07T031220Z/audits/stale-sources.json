@@ -1,0 +1,28 @@
+[
+  {
+    "source_id": "src_05cae033cedc",
+    "section_id": "06-repo-knowledge-integration",
+    "publisher": "sqlite.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_05cae033cedc.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_e15c2248a5d8",
+    "section_id": "06-repo-knowledge-integration",
+    "publisher": "sqlite.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_e15c2248a5d8.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  }
+]

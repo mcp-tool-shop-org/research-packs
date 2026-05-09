@@ -1,0 +1,26 @@
+{
+  "source_id": "src_c1e29cfcaa1e",
+  "receipt_id": "rcpt_c1e29cfcaa1e_1778188778474",
+  "section_id": "02-pack-artifact-contract",
+  "url": "https://jsonlines.org/",
+  "final_url": "https://jsonlines.org/",
+  "fetched_at": "2026-05-07T21:19:38.474Z",
+  "publisher": "jsonlines.org",
+  "published_at": null,
+  "title": "JSON Lines",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "This page describes the JSON Lines text format, also called newline-delimited JSON. JSON Lines is a convenient format for storing structured data that may be processed one record at a time. It works well with unix-style text processing tools and shell pipelines. It's a great format for log files. It's also a flexible format for passing messages between cooperating processes.",
+    "The JSON Lines format has three requirements:",
+    "JSON allows encoding Unicode strings with only ASCII escape sequences, however those escapes will be hard to read when viewed in a text editor. The author of the JSON Lines file may choose to escape characters to work with plain ASCII files.",
+    "Encodings other than UTF-8 are very unlikely to be valid when decoded as UTF-8 so the chance of accidentally misinterpreting characters in JSON Lines files is low.",
+    "Like the JSON standard a byte order mark (U+FEFF) must NOT be included."
+  ],
+  "limitations": [],
+  "asserts": "This page describes the JSON Lines text format, also called newline-delimited JSON. JSON Lines is a convenient format for storing structured data that may be processed one record at a time. It works well with unix-style text processing tools and shell pipelines. It's a great format for log files. It's also a flexible format for passing messages between cooperating processes.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:19:38.628Z"
+}

@@ -1,0 +1,20 @@
+{
+  "source_id": "src_b9c427878132",
+  "receipt_id": "rcpt_b9c427878132_1778178899389",
+  "section_id": "05-cowork-handoff",
+  "url": "https://arxiv.org/abs/2004.05789",
+  "final_url": "https://arxiv.org/abs/2004.05789",
+  "fetched_at": "2026-05-07T18:34:59.389Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "(untitled)",
+  "source_type": "unknown",
+  "relevance": "unknown",
+  "key_points": [],
+  "limitations": [],
+  "asserts": "(no assertion extracted)",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-07T18:35:05.663Z"
+}

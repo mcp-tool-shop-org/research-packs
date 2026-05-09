@@ -1,0 +1,14 @@
+{
+  "summary_id": "disum_1778182222748_02-pack-artifact-contract",
+  "section_id": "02-pack-artifact-contract",
+  "ran_at": "2026-05-07T19:30:22.748Z",
+  "research_os_version": "0.1.0",
+  "query": "YAML schema specification data model folder structure file format metadata versioning research data management immutable append-only log",
+  "provider": "llm-heuristic",
+  "candidates_proposed": 11,
+  "candidates_validated": 10,
+  "candidates_rejected_invalid_url": 1,
+  "warnings": [
+    "Rejected non-https URL: https://docs.merger lay.tech/docs/artifacts/contracts/ folder-structure"
+  ]
+}

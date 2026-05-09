@@ -1,0 +1,26 @@
+{
+  "source_id": "src_27eaf34f91a3",
+  "receipt_id": "rcpt_27eaf34f91a3_1778185669236",
+  "section_id": "07-cli-and-runtime-flow",
+  "url": "https://www.gnu.org/software/libc/manual/html_node/Command-Line.html",
+  "final_url": "https://sourceware.org/glibc/manual/",
+  "fetched_at": "2026-05-07T20:27:49.236Z",
+  "publisher": "sourceware.org",
+  "published_at": null,
+  "title": "The GNU C Library - GNU Project - Free Software Foundation (FSF)",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "This glibc manual version 2.43 (latest) is available in the following formats:",
+    "The manual is available for the following releases of glibc:",
+    "Please send FSF & GNU inquiries to gnu@gnu.org. There are also other ways to contact the FSF. Please report broken links and other corrections (or suggestions) to the libc maintainers.",
+    "Copyright 2026 Free Software Foundation, Inc.",
+    "Verbatim copying and distribution of this entire article is permitted in any medium, provided this notice is preserved."
+  ],
+  "limitations": [],
+  "asserts": "This glibc manual version 2.43 (latest) is available in the following formats:",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T20:27:49.729Z"
+}

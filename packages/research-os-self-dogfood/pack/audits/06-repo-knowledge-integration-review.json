@@ -1,0 +1,1588 @@
+{
+  "section_id": "06-repo-knowledge-integration",
+  "reviewer": "heuristic",
+  "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+  "reviewed_at": "2026-05-07T19:17:11.113Z",
+  "candidate_claims": 43,
+  "findings": [
+    {
+      "finding_id": "fnd_e8c7a10d0579",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_e15c2248a5d8_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_e15c2248a5d8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e15c2248a5d8_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: To use FTS5, a user creates an FTS5 virtual table with one or more columns.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.112Z"
+    },
+    {
+      "finding_id": "fnd_10bf8019e128",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_e15c2248a5d8_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_e15c2248a5d8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e15c2248a5d8_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The SQLite FTS5 extension provides full-text search functionality.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.112Z"
+    },
+    {
+      "finding_id": "fnd_3a5c0bdcf66b",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_e15c2248a5d8_ollama_intern_103"
+      ],
+      "source_ids": [
+        "src_e15c2248a5d8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e15c2248a5d8_ollama_intern_103 has no 'not' constraint recorded.",
+      "evidence": "Asserts: FTS5 uses an fts5_tokenizer_v2 struct to describe a custom tokenizer",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.112Z"
+    },
+    {
+      "finding_id": "fnd_61f8c1e95ea5",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_e15c2248a5d8_ollama_intern_105"
+      ],
+      "source_ids": [
+        "src_e15c2248a5d8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e15c2248a5d8_ollama_intern_105 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The fts5_api structure methods are described individually in subsequent sections",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.112Z"
+    },
+    {
+      "finding_id": "fnd_b49f8cdc7e83",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_e15c2248a5d8_ollama_intern_113"
+      ],
+      "source_ids": [
+        "src_e15c2248a5d8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e15c2248a5d8_ollama_intern_113 has no 'not' constraint recorded.",
+      "evidence": "Asserts: FTS5 allows adding multiple synonyms for a single token to the FTS index.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.112Z"
+    },
+    {
+      "finding_id": "fnd_75412c1acdb4",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_e15c2248a5d8_ollama_intern_124"
+      ],
+      "source_ids": [
+        "src_e15c2248a5d8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e15c2248a5d8_ollama_intern_124 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Phrases in FTS5 queries are numbered starting from 0 in order of appearance.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.112Z"
+    },
+    {
+      "finding_id": "fnd_dca9cfd4490b",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_05cae033cedc_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_05cae033cedc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_05cae033cedc_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: WAL is significantly faster than the rollback journal in most scenarios.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.112Z"
+    },
+    {
+      "finding_id": "fnd_825869dcaf4c",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_05cae033cedc_ollama_intern_16"
+      ],
+      "source_ids": [
+        "src_05cae033cedc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_05cae033cedc_ollama_intern_16 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Read performance deteriorates as the WAL file grows in size.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.112Z"
+    },
+    {
+      "finding_id": "fnd_e7d2db377fe7",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_05cae033cedc_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_05cae033cedc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_05cae033cedc_ollama_intern_17 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Checkpointing requires sync operations to avoid database corruption.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.112Z"
+    },
+    {
+      "finding_id": "fnd_1d2ffb0008bc",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_05cae033cedc_ollama_intern_23"
+      ],
+      "source_ids": [
+        "src_05cae033cedc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_05cae033cedc_ollama_intern_23 has no 'not' constraint recorded.",
+      "evidence": "Asserts: There are three subtypes of checkpoints in WAL mode: PASSIVE, FULL, and RESTART.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.112Z"
+    },
+    {
+      "finding_id": "fnd_7ee8a81242dc",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_05cae033cedc_ollama_intern_25"
+      ],
+      "source_ids": [
+        "src_05cae033cedc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_05cae033cedc_ollama_intern_25 has no 'not' constraint recorded.",
+      "evidence": "Asserts: In older versions of SQLite, reading a WAL-mode database required write access.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.112Z"
+    },
+    {
+      "finding_id": "fnd_950dcc29b637",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_05cae033cedc_ollama_intern_27"
+      ],
+      "source_ids": [
+        "src_05cae033cedc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_05cae033cedc_ollama_intern_27 has no 'not' constraint recorded.",
+      "evidence": "Asserts: One such condition is the existence and readability of -shm and -wal files.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.112Z"
+    },
+    {
+      "finding_id": "fnd_7f9fd4477881",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_5d98fdba0757_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_5d98fdba0757"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5d98fdba0757_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The presence of a noisy channel always reduces capacity.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.112Z"
+    },
+    {
+      "finding_id": "fnd_e920259b9833",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_5d98fdba0757_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_5d98fdba0757"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_5d98fdba0757_ollama_intern_4 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_62ba932117ba",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_5d98fdba0757_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_5d98fdba0757"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5d98fdba0757_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: More memory for the allocation policy always improves capacity.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_f20a3fa608da",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_5d98fdba0757_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_5d98fdba0757"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_5d98fdba0757_ollama_intern_5 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_e6dc9c933490",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_5d98fdba0757_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_5d98fdba0757"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5d98fdba0757_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: More memory for the encoding policy has little to no effect on capacity.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_3442a39b2112",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_5d98fdba0757_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_5d98fdba0757"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_5d98fdba0757_ollama_intern_6 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_209c47c2afaa",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_5d98fdba0757_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_5d98fdba0757"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5d98fdba0757_ollama_intern_7 has no 'not' constraint recorded.",
+      "evidence": "Asserts: arXiv Labs embraces openness, community, excellence, and user data privacy.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_01283897f1b5",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_5d98fdba0757_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_5d98fdba0757"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_5d98fdba0757_ollama_intern_7 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_d0001a555a2c",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_5d98fdba0757_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_5d98fdba0757"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5d98fdba0757_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: arXiv encourages community members to propose projects that add value.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_d87af6de38f2",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Elasticsearch can monitor AWS using Amazon Data Firehose.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_63f7c3fff4fa",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_4 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_3e658454aa49",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Elasticsearch can monitor AWS using Elastic Serverless Forwarder.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_4d9be83f3439",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_5 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_6e403da5920c",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Elasticsearch can monitor Microsoft Azure using Elastic Agent.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_892bc590503f",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_6 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_b7ed24453a9d",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_7 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Elasticsearch can monitor Microsoft Azure using Beats.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_a07a2157c4e0",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_7 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_d1a0af9a623d",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Elastic Defend requires configuring Linux file system monitoring.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_73537cf8b9ac",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_8 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_d0f9d0826f8d",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Elasticsearch provides full-text search capabilities.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_af5c68fdea10",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_9 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_37249bda917a",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Full-text search in Elasticsearch runs efficiently on CPUs.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_ad699bc82ae7",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_10 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_6f01b7c162d0",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_11 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Elasticsearch supports full-text queries using Query DSL.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_56d29e0bc4be",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_11 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_446a43e7dd19",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_12 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Elasticsearch provides full-text search functions in ES|QL.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_e4df821102d5",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_12 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_ca08254d4ba3",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_14 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Elasticsearch offers guidance on optimizing search relevance.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_40670408c48f",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_91705d06abdf_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_91705d06abdf"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_91705d06abdf_ollama_intern_14 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_c11bda99f206",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_676ddfa834cc_ollama_intern_26"
+      ],
+      "source_ids": [
+        "src_676ddfa834cc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_676ddfa834cc_ollama_intern_26 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Neo4j is a graph database management system.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_c270f2691756",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_676ddfa834cc_ollama_intern_26"
+      ],
+      "source_ids": [
+        "src_676ddfa834cc"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_676ddfa834cc_ollama_intern_26 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_d6965c37f237",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_676ddfa834cc_ollama_intern_27"
+      ],
+      "source_ids": [
+        "src_676ddfa834cc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_676ddfa834cc_ollama_intern_27 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Ontotext's GraphDB is a graph database management system.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_b88338aff1f6",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_676ddfa834cc_ollama_intern_27"
+      ],
+      "source_ids": [
+        "src_676ddfa834cc"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_676ddfa834cc_ollama_intern_27 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_9d29d371da8a",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_676ddfa834cc_ollama_intern_29"
+      ],
+      "source_ids": [
+        "src_676ddfa834cc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_676ddfa834cc_ollama_intern_29 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Scholia has a topic profile for Knowledge graph.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_8f907972be7c",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_676ddfa834cc_ollama_intern_29"
+      ],
+      "source_ids": [
+        "src_676ddfa834cc"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_676ddfa834cc_ollama_intern_29 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_080393f791a8",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_f110ffbdbe7c_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_f110ffbdbe7c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f110ffbdbe7c_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The PostgreSQL documentation for version 18 is available.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_e8631f7a3670",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_f110ffbdbe7c_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_f110ffbdbe7c"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_f110ffbdbe7c_ollama_intern_2 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_c5723c5a3140",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_f110ffbdbe7c_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_f110ffbdbe7c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f110ffbdbe7c_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Full Text Search is a chapter in the PostgreSQL documentation.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_bf510d2651a5",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_f110ffbdbe7c_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_f110ffbdbe7c"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_f110ffbdbe7c_ollama_intern_3 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_8a0269329507",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_ac6052de3047_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_ac6052de3047"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ac6052de3047_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Faiss supports GPU implementation for faster searching.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_df38aa823a87",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_ac6052de3047_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_ac6052de3047"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_ac6052de3047_ollama_intern_3 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_76b51d258b7b",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_ac6052de3047_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_ac6052de3047"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ac6052de3047_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Faiss comes with precompiled libraries for Anaconda in Python.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_077248701460",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_ac6052de3047_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_ac6052de3047"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_ac6052de3047_ollama_intern_4 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_9e0d633253ae",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_ac6052de3047_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_ac6052de3047"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ac6052de3047_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Faiss is built around an index type that stores a set of vectors.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "finding_id": "fnd_3f357f6bfa81",
+      "section_id": "06-repo-knowledge-integration",
+      "claim_ids": [
+        "clm_ac6052de3047_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_ac6052de3047"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_ac6052de3047_ollama_intern_5 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    }
+  ],
+  "claim_reviews": [
+    {
+      "claim_id": "clm_e15c2248a5d8_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_e8c7a10d0579"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_e15c2248a5d8_ollama_intern_10",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_10bf8019e128"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_e15c2248a5d8_ollama_intern_37",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_e15c2248a5d8_ollama_intern_52",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_e15c2248a5d8_ollama_intern_55",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_e15c2248a5d8_ollama_intern_58",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_e15c2248a5d8_ollama_intern_103",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_3a5c0bdcf66b"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_e15c2248a5d8_ollama_intern_105",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_61f8c1e95ea5"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_e15c2248a5d8_ollama_intern_113",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_b49f8cdc7e83"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_e15c2248a5d8_ollama_intern_124",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_75412c1acdb4"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_05cae033cedc_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_dca9cfd4490b"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_05cae033cedc_ollama_intern_16",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_825869dcaf4c"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_05cae033cedc_ollama_intern_17",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_e7d2db377fe7"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_05cae033cedc_ollama_intern_23",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_1d2ffb0008bc"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_05cae033cedc_ollama_intern_25",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_7ee8a81242dc"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_05cae033cedc_ollama_intern_27",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_950dcc29b637"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_05cae033cedc_ollama_intern_32",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_05cae033cedc_ollama_intern_33",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_05cae033cedc_ollama_intern_35",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_05cae033cedc_ollama_intern_36",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_5d98fdba0757_ollama_intern_4",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_7f9fd4477881",
+        "fnd_e920259b9833"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_5d98fdba0757_ollama_intern_5",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_62ba932117ba",
+        "fnd_f20a3fa608da"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_5d98fdba0757_ollama_intern_6",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_e6dc9c933490",
+        "fnd_3442a39b2112"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_5d98fdba0757_ollama_intern_7",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_209c47c2afaa",
+        "fnd_01283897f1b5"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_5d98fdba0757_ollama_intern_9",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_d0001a555a2c"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_91705d06abdf_ollama_intern_4",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_d87af6de38f2",
+        "fnd_63f7c3fff4fa"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_91705d06abdf_ollama_intern_5",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_3e658454aa49",
+        "fnd_4d9be83f3439"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_91705d06abdf_ollama_intern_6",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_6e403da5920c",
+        "fnd_892bc590503f"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_91705d06abdf_ollama_intern_7",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_b7ed24453a9d",
+        "fnd_a07a2157c4e0"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_91705d06abdf_ollama_intern_8",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_d1a0af9a623d",
+        "fnd_73537cf8b9ac"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_91705d06abdf_ollama_intern_9",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_d0f9d0826f8d",
+        "fnd_af5c68fdea10"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_91705d06abdf_ollama_intern_10",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_37249bda917a",
+        "fnd_ad699bc82ae7"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_91705d06abdf_ollama_intern_11",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_6f01b7c162d0",
+        "fnd_56d29e0bc4be"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_91705d06abdf_ollama_intern_12",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_446a43e7dd19",
+        "fnd_e4df821102d5"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_91705d06abdf_ollama_intern_14",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_ca08254d4ba3",
+        "fnd_40670408c48f"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_676ddfa834cc_ollama_intern_26",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_c11bda99f206",
+        "fnd_c270f2691756"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_676ddfa834cc_ollama_intern_27",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_d6965c37f237",
+        "fnd_b88338aff1f6"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_676ddfa834cc_ollama_intern_29",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_9d29d371da8a",
+        "fnd_8f907972be7c"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_f110ffbdbe7c_ollama_intern_2",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_080393f791a8",
+        "fnd_e8631f7a3670"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_f110ffbdbe7c_ollama_intern_3",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_c5723c5a3140",
+        "fnd_bf510d2651a5"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_ac6052de3047_ollama_intern_3",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_8a0269329507",
+        "fnd_df38aa823a87"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_ac6052de3047_ollama_intern_4",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_76b51d258b7b",
+        "fnd_077248701460"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    },
+    {
+      "claim_id": "clm_ac6052de3047_ollama_intern_5",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_9e0d633253ae",
+        "fnd_3f357f6bfa81"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T19:17:11.113Z"
+    }
+  ],
+  "decision_counts": {
+    "accepted_for_synthesis": 21,
+    "rejected": 0,
+    "needs_scope_repair": 0,
+    "needs_source_repair": 22,
+    "needs_contradiction_mapping": 0,
+    "needs_human_review": 0
+  },
+  "severity_counts": {
+    "info": 35,
+    "warn": 22,
+    "block": 0
+  },
+  "llm_findings_rejected_ungrounded": 0,
+  "promoted_to_reviewed": false
+}

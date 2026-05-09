@@ -1,0 +1,26 @@
+{
+  "source_id": "src_d574302fe3de",
+  "receipt_id": "rcpt_d574302fe3de_1778188298691",
+  "section_id": "01-product-thesis",
+  "url": "https://www.go-fair.org/",
+  "final_url": "https://www.go-fair.org/",
+  "fetched_at": "2026-05-07T21:11:38.691Z",
+  "publisher": "GO FAIR",
+  "published_at": null,
+  "title": "GO FAIR initiative: Make your data & services FAIR",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "FAIR Data Austria has created and published an Open Educational Resources package for Research Data Management. It includes brief information, videos, quizzes and further links on RDM topics in German and English. More",
+    "Participants from several countries will join experts on research data…",
+    "The Polish Chapter of the Data Stewardship Competence Centers IN…",
+    "The GO FAIR Implementation Network GO Unite! is an interactive…",
+    "Authors: Christiane Stork (Center for Research Data Management – TU…"
+  ],
+  "limitations": [],
+  "asserts": "A bottom-up international approach for the practical implementation of the European Open Science Cloud (EOSC) as part of a global Internet of FAIR Data & Services",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:11:39.429Z"
+}

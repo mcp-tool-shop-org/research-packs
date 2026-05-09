@@ -1,0 +1,58 @@
+{
+  "summary_id": "tris_1778188698847_01-product-thesis",
+  "section_id": "01-product-thesis",
+  "triaged_at": "2026-05-07T21:18:18.847Z",
+  "research_os_version": "0.1.0",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 109,
+  "decisions": {
+    "parked_weak_scope": 11,
+    "needs_scope_repair": 79,
+    "selected_for_review": 19
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 19,
+  "selected_per_source": [
+    {
+      "source_id": "src_d474bc1158c2",
+      "selected": 5,
+      "total": 65
+    },
+    {
+      "source_id": "src_56b5f3cd926b",
+      "selected": 3,
+      "total": 11
+    },
+    {
+      "source_id": "src_a2f17fd8c9a6",
+      "selected": 6,
+      "total": 10
+    },
+    {
+      "source_id": "src_770d35522c16",
+      "selected": 2,
+      "total": 7
+    },
+    {
+      "source_id": "src_d574302fe3de",
+      "selected": 1,
+      "total": 6
+    },
+    {
+      "source_id": "src_308195df859c",
+      "selected": 0,
+      "total": 4
+    },
+    {
+      "source_id": "src_98d43428beed",
+      "selected": 1,
+      "total": 3
+    },
+    {
+      "source_id": "src_923564b918e1",
+      "selected": 1,
+      "total": 3
+    }
+  ]
+}

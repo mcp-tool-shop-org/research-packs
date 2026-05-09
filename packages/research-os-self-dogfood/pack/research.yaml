@@ -1,0 +1,105 @@
+research_os_version: 0.1.0
+created_at: 2026-05-06T22:02:32.953Z
+topic: How should research-os structure a research-pack so every research artifact becomes actionable implementation material for the repo?
+decision: Lock the schemas, gates, prompt contracts, and CLI surface for research-os v0.1 so the remaining workflow links can be built against a real spec instead of guesses.
+audience: research-os maintainer
+desired_output: "implementation-ready spec artifacts: docs/, schemas/, templates/, tests/"
+max_runtime_minutes: 480
+freshness:
+  required: true
+  max_source_age_months: null
+excluded_sources: []
+primary_source_waiver:
+  status: granted
+  reason: This pack researches the design intent of research-os itself. Primary sources for the design (Mike's spec decisions and the maintainer's reasoning) are operator input, not public publications. Public secondary sources about adjacent topics (citation systems, knowledge graphs, gating workflows, FTS5, Cowork patterns) provide independent corroboration where the design touches established practice.
+  compensating_controls:
+    - Adversarial reviewer pass required on every section before synthesis.
+    - Cross-section contradiction mapping required across all sections.
+    - Each section must cite >=4 independent publishers; source cluster monopoly is a section-level blocker.
+    - Final-report citations must be claim-level traceable via [claim:clm_...] references.
+    - Every active waiver disclosed in synthesis/decision-brief.md and synthesis/final-report.md by family.applied_to.
+sections:
+  - id: 01-product-thesis
+    purpose: What research-os is, what it refuses to become, and what workflow must not be broken.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 02-pack-artifact-contract
+    purpose: Exact folder structure, file schemas, required ledgers, receipts, and freeze outputs.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 03-source-and-claim-truth
+    purpose: How source cards, claim extraction, citations, confidence, uncertainty, and unsupported claims work.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 04-gates-and-waivers
+    purpose: Hard gates, soft gates, waiver reasons, compensating controls, and failure states.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 05-cowork-handoff
+    purpose: The real cowork-master.md contract, allowed actions, forbidden drift, synthesis responsibilities, and stop conditions.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 06-repo-knowledge-integration
+    purpose: How pack artifacts become searchable facts instead of dead markdown.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 07-cli-and-runtime-flow
+    purpose: Commands, state transitions, status output, failure recovery, and section time budgeting.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 08-acceptance-suite
+    purpose: Tests that prove the whole workflow exists and cannot regress into a partial report generator.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+gates:
+  source_floor:
+    min_sources: 8
+    min_independent_publishers: 4
+    primary_sources_required: 2
+    primary_source_waiver_allowed: true
+  claim_integrity:
+    every_claim_needs_source: true
+    no_orphan_claims: true
+    no_source_cluster_monopoly: true
+  freshness:
+    required_for_current_topics: true
+    stale_source_policy: warn
+  contradiction:
+    required: true
+    unresolved_contradictions_block_synthesis: true
+  section_budget:
+    max_time_minutes: 45
+    extension_requires_evidence: true
+review_profiles:
+  hermes-two-pass:
+    general_model: hermes3:8b
+    critic_model: hermes3:8b
+    review_window: 10
+    mode: two_pass
+    status: calibrated_baseline
+    notes: Calibrated baseline as of v0.1. 0% good-claim FPR on the seeded fixture; bad-claim any-flag recall 9/13 (69%). Smaller window required because hermes3:8b at 4-bit on a 5080 cannot complete 25-claim windows within a 3-minute budget.
+frozen_at: 2026-05-08T07:41:33.924Z

@@ -1,0 +1,12 @@
+{
+  "summary_id": "disum_1778188201294_01-product-thesis",
+  "section_id": "01-product-thesis",
+  "ran_at": "2026-05-07T21:10:01.294Z",
+  "research_os_version": "0.1.0",
+  "query": "retrieval augmented generation evidence grounding source quality systematic review automation AI research synthesis pipeline hallucination grounded LLM",
+  "provider": "llm-heuristic",
+  "candidates_proposed": 10,
+  "candidates_validated": 10,
+  "candidates_rejected_invalid_url": 0,
+  "warnings": []
+}

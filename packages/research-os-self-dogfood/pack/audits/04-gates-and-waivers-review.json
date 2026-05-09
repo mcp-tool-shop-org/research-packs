@@ -1,0 +1,821 @@
+{
+  "section_id": "04-gates-and-waivers",
+  "reviewer": "heuristic",
+  "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+  "reviewed_at": "2026-05-07T20:56:08.106Z",
+  "candidate_claims": 30,
+  "findings": [
+    {
+      "finding_id": "fnd_4fff72637bdb",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_fb48d4730a5c_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_fb48d4730a5c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_fb48d4730a5c_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Quality control is a process focused on fulfilling quality requirements.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_5803da531928",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_fb48d4730a5c_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_fb48d4730a5c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_fb48d4730a5c_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Inspection is a major component of quality control.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_49152af1cce6",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_fb48d4730a5c_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_fb48d4730a5c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_fb48d4730a5c_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Total quality control (TQC) involves all departments in quality management.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_e47dd0325e4e",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_fb48d4730a5c_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_fb48d4730a5c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_fb48d4730a5c_ollama_intern_7 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Total Quality Control originated in the United States Department of Defense.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_93e522c54b35",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_fb48d4730a5c_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_fb48d4730a5c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_fb48d4730a5c_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Six Sigma was first applied to business strategy by Motorola in 1986.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_1d882cbe4799",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_fb48d4730a5c_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_fb48d4730a5c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_fb48d4730a5c_ollama_intern_11 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Quality control originated in the manufacturing industry.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_72b1cc1392aa",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_fb48d4730a5c_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_fb48d4730a5c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_fb48d4730a5c_ollama_intern_12 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Walter Shewhart introduced the concept of statistical process control in 1924.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_015302cf665a",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_fb48d4730a5c_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_fb48d4730a5c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_fb48d4730a5c_ollama_intern_13 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Joseph Juran's work in the 1950s focused on quality planning and management.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_ac05eb8d700d",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_d2cd935fb884_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_d2cd935fb884"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d2cd935fb884_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The paper presents a functional view of smart city architecture.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_cef5cceb1e5b",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_d2cd935fb884_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_d2cd935fb884"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d2cd935fb884_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The paper discusses privacy and opting out of cookies.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_625e28a3c797",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_d2cd935fb884_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_d2cd935fb884"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d2cd935fb884_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: IEEE is a not-for-profit organization dedicated to advancing technology.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_bf6a2bac11e9",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_55f4bfa87f54_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_55f4bfa87f54"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55f4bfa87f54_ollama_intern_12 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The automated artery-vein classification used fundus image guidance.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_a67969c06b0e",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_55f4bfa87f54_ollama_intern_22"
+      ],
+      "source_ids": [
+        "src_55f4bfa87f54"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55f4bfa87f54_ollama_intern_22 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The study used a dataset of 120 eyes, including 40 control and 80 NPDR images.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_10f02edbae68",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_55f4bfa87f54_ollama_intern_29"
+      ],
+      "source_ids": [
+        "src_55f4bfa87f54"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55f4bfa87f54_ollama_intern_29 has no 'not' constraint recorded.",
+      "evidence": "Asserts: AVR-BVC is the best feature to differentiate control from mild NPDR using OCTA.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_bf145b18735e",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_55f4bfa87f54_ollama_intern_31"
+      ],
+      "source_ids": [
+        "src_55f4bfa87f54"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55f4bfa87f54_ollama_intern_31 has no 'not' constraint recorded.",
+      "evidence": "Asserts: AVR-BVC provided excellent sensitivity to differentiate control and NPDR stages.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_ec5b5eca60e2",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_55f4bfa87f54_ollama_intern_32"
+      ],
+      "source_ids": [
+        "src_55f4bfa87f54"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55f4bfa87f54_ollama_intern_32 has no 'not' constraint recorded.",
+      "evidence": "Asserts: AVR-BVT improved sensitivity compared with m-BVT for BVT analysis.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_b0ee67c0f11f",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_55f4bfa87f54_ollama_intern_40"
+      ],
+      "source_ids": [
+        "src_55f4bfa87f54"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55f4bfa87f54_ollama_intern_40 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Approximately 11% of fundus images were excluded due to quality control issues.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_6cef0cd1eed0",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_f0fe25b20f29_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_f0fe25b20f29"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f0fe25b20f29_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The study examines the relationship between patient commitment and A1C levels.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_9867b0e87b78",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_f0fe25b20f29_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_f0fe25b20f29"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f0fe25b20f29_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Multiple A1C values were extracted from medical records for each patient.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_ab35e92bab54",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_f0fe25b20f29_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_f0fe25b20f29"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f0fe25b20f29_ollama_intern_13 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The Commitment domain of the ACE Measure was used for this study.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_09758cbcf313",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_f0fe25b20f29_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_f0fe25b20f29"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f0fe25b20f29_ollama_intern_14 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The Commitment domain consists of items C1, C2, C3, C5, and C6.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_4c3dc96dca72",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_f0fe25b20f29_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_f0fe25b20f29"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f0fe25b20f29_ollama_intern_15 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The ACE Commitment domain score ranges from 0 to 25.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_414799f6c228",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_bbd08b91cbb6_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_bbd08b91cbb6"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_bbd08b91cbb6_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The website checks the user's browser.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_2e7946c3410d",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_bbd08b91cbb6_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_bbd08b91cbb6"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_bbd08b91cbb6_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: If not automatically redirected after 5 seconds, the user should click a link.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    },
+    {
+      "finding_id": "fnd_0f330783dcda",
+      "section_id": "04-gates-and-waivers",
+      "claim_ids": [
+        "clm_bbd08b91cbb6_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_bbd08b91cbb6"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_bbd08b91cbb6_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The service is called reCAPTCHA.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-07T20:56:08.095Z"
+    }
+  ],
+  "claim_reviews": [
+    {
+      "claim_id": "clm_fb48d4730a5c_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_4fff72637bdb"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_fb48d4730a5c_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_5803da531928"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_fb48d4730a5c_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_49152af1cce6"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_fb48d4730a5c_ollama_intern_7",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_e47dd0325e4e"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_fb48d4730a5c_ollama_intern_8",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_93e522c54b35"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_fb48d4730a5c_ollama_intern_11",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_1d882cbe4799"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_fb48d4730a5c_ollama_intern_12",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_72b1cc1392aa"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_fb48d4730a5c_ollama_intern_13",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_015302cf665a"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_d2cd935fb884_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ac05eb8d700d"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_d2cd935fb884_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_cef5cceb1e5b"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_d2cd935fb884_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_625e28a3c797"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_55f4bfa87f54_ollama_intern_12",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_bf6a2bac11e9"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_55f4bfa87f54_ollama_intern_22",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_a67969c06b0e"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_55f4bfa87f54_ollama_intern_29",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_10f02edbae68"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_55f4bfa87f54_ollama_intern_31",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_bf145b18735e"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_55f4bfa87f54_ollama_intern_32",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ec5b5eca60e2"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_55f4bfa87f54_ollama_intern_40",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_b0ee67c0f11f"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_f0fe25b20f29_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_6cef0cd1eed0"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_f0fe25b20f29_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_9867b0e87b78"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_f0fe25b20f29_ollama_intern_4",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_f0fe25b20f29_ollama_intern_5",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_f0fe25b20f29_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_f0fe25b20f29_ollama_intern_13",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ab35e92bab54"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_f0fe25b20f29_ollama_intern_14",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_09758cbcf313"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_f0fe25b20f29_ollama_intern_15",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_4c3dc96dca72"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_f0fe25b20f29_ollama_intern_43",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_f0fe25b20f29_ollama_intern_44",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_bbd08b91cbb6_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_414799f6c228"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_bbd08b91cbb6_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_2e7946c3410d"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    },
+    {
+      "claim_id": "clm_bbd08b91cbb6_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_0f330783dcda"
+      ],
+      "reviewer": "heuristic",
+      "review_method": "multi_pass(heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-07T20:56:08.096Z"
+    }
+  ],
+  "decision_counts": {
+    "accepted_for_synthesis": 30,
+    "rejected": 0,
+    "needs_scope_repair": 0,
+    "needs_source_repair": 0,
+    "needs_contradiction_mapping": 0,
+    "needs_human_review": 0
+  },
+  "severity_counts": {
+    "info": 25,
+    "warn": 0,
+    "block": 0
+  },
+  "llm_findings_rejected_ungrounded": 0,
+  "promoted_to_reviewed": true
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "reason": "section_has_no_sources",
+    "section_id": "01-product-thesis",
+    "details": "Section has no source cards on file.",
+    "evidence_ids": []
+  },
+  {
+    "reason": "section_has_no_sources",
+    "section_id": "02-pack-artifact-contract",
+    "details": "Section has no source cards on file.",
+    "evidence_ids": []
+  },
+  {
+    "reason": "section_has_no_sources",
+    "section_id": "03-source-and-claim-truth",
+    "details": "Section has no source cards on file.",
+    "evidence_ids": []
+  },
+  {
+    "reason": "section_has_no_sources",
+    "section_id": "04-gates-and-waivers",
+    "details": "Section has no source cards on file.",
+    "evidence_ids": []
+  },
+  {
+    "reason": "section_has_no_sources",
+    "section_id": "05-cowork-handoff",
+    "details": "Section has no source cards on file.",
+    "evidence_ids": []
+  },
+  {
+    "reason": "section_publisher_monopoly",
+    "section_id": "06-repo-knowledge-integration",
+    "details": "Section sources monopolized by sqlite.org.",
+    "evidence_ids": [
+      "src_05cae033cedc",
+      "src_e15c2248a5d8"
+    ]
+  },
+  {
+    "reason": "section_has_no_sources",
+    "section_id": "07-cli-and-runtime-flow",
+    "details": "Section has no source cards on file.",
+    "evidence_ids": []
+  },
+  {
+    "reason": "section_has_no_sources",
+    "section_id": "08-acceptance-suite",
+    "details": "Section has no source cards on file.",
+    "evidence_ids": []
+  }
+]

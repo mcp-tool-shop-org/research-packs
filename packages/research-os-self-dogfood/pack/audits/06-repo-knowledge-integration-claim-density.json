@@ -1,0 +1,141 @@
+{
+  "audit_id": "cda_1778181412591_06-repo-knowledge-integration",
+  "section_id": "06-repo-knowledge-integration",
+  "audited_at": "2026-05-07T19:16:52.591Z",
+  "research_os_version": "0.1.0",
+  "candidate_claim_count": 297,
+  "source_count": 7,
+  "total_source_word_count": 49268,
+  "claims_per_1k_words": 6.0282536331899,
+  "weak_scope_count": 29,
+  "generic_scope_count": 54,
+  "per_source": [
+    {
+      "source_id": "src_e15c2248a5d8",
+      "publisher": "sqlite.org",
+      "source_word_count": 26555,
+      "claim_count": 188,
+      "claims_per_1k_words": 7.079646017699115,
+      "share_of_section": 0.632996632996633,
+      "weak_scope_count": 7,
+      "generic_scope_count": 47
+    },
+    {
+      "source_id": "src_05cae033cedc",
+      "publisher": "sqlite.org",
+      "source_word_count": 5549,
+      "claim_count": 45,
+      "claims_per_1k_words": 8.10956929176428,
+      "share_of_section": 0.15151515151515152,
+      "weak_scope_count": 12,
+      "generic_scope_count": 7
+    },
+    {
+      "source_id": "src_676ddfa834cc",
+      "publisher": null,
+      "source_word_count": 5976,
+      "claim_count": 29,
+      "claims_per_1k_words": 4.852744310575636,
+      "share_of_section": 0.09764309764309764,
+      "weak_scope_count": 4,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_91705d06abdf",
+      "publisher": null,
+      "source_word_count": 2843,
+      "claim_count": 14,
+      "claims_per_1k_words": 4.924375659514597,
+      "share_of_section": 0.04713804713804714,
+      "weak_scope_count": 3,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_5d98fdba0757",
+      "publisher": null,
+      "source_word_count": 796,
+      "claim_count": 9,
+      "claims_per_1k_words": 11.306532663316583,
+      "share_of_section": 0.030303030303030304,
+      "weak_scope_count": 1,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_ac6052de3047",
+      "publisher": null,
+      "source_word_count": 7211,
+      "claim_count": 9,
+      "claims_per_1k_words": 1.2480931909582582,
+      "share_of_section": 0.030303030303030304,
+      "weak_scope_count": 2,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_f110ffbdbe7c",
+      "publisher": null,
+      "source_word_count": 338,
+      "claim_count": 3,
+      "claims_per_1k_words": 8.875739644970414,
+      "share_of_section": 0.010101010101010102,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    }
+  ],
+  "near_duplicate_clusters": [],
+  "flags": [
+    {
+      "type": "source_dominance",
+      "severity": "block",
+      "message": "Source src_e15c2248a5d8 contributes 188 of 297 claims (63% of section).",
+      "affects_source_ids": [
+        "src_e15c2248a5d8"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_05cae033cedc contributes 45 of 297 claims (15% of section).",
+      "affects_source_ids": [
+        "src_05cae033cedc"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_e15c2248a5d8 has 7.1 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_e15c2248a5d8"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_05cae033cedc has 8.1 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_05cae033cedc"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_5d98fdba0757 has 11.3 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_5d98fdba0757"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_f110ffbdbe7c has 8.9 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_f110ffbdbe7c"
+      ],
+      "affects_claim_ids": []
+    }
+  ]
+}

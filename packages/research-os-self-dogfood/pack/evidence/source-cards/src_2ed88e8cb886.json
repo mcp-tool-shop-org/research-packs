@@ -1,0 +1,26 @@
+{
+  "source_id": "src_2ed88e8cb886",
+  "receipt_id": "rcpt_2ed88e8cb886_1778203371214",
+  "section_id": "08-acceptance-suite",
+  "url": "https://martinfowler.com/bliki/TestPyramid.html",
+  "final_url": "https://martinfowler.com/bliki/TestPyramid.html",
+  "fetched_at": "2026-05-08T01:22:51.214Z",
+  "publisher": "martinfowler.com",
+  "published_at": null,
+  "title": "bliki: Test Pyramid",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "The test pyramid is a way of thinking about how different kinds of automated tests should be used to create a balanced portfolio. Its essential point is that you should have many more low-level UnitTests than high level BroadStackTests running through a GUI.",
+    "For much of my career test automation meant tests that drove an application through its user-interface. Such tools would often provide the facility to record an interaction with the application and then allow you to play back that interaction, checking that the application returned the same results. Such an approach works well initially. It's easy to record tests, and the tests can be recorded by people with no knowledge of programming.",
+    "But this kind of approach quickly runs into trouble, becoming an ice-cream cone. Testing through the UI like this is slow, increasing build times. Often it requires installed licences for the test automation software, which means it can only be done on particular machines. Usually these cannot easily be run in a “headless” mode, monitored by scripts to put in a proper deployment pipeline.",
+    "Most importantly such tests are very brittle. An enhancement to the system can easily end up breaking lots of such tests, which then have to be re-recorded. You can reduce this problem by abandoning record-playback tools, but that makes the tests harder to write. 1 Even with good practices on writing them, end-to-end tests are more prone to non-determinism problems, which can undermine trust in them. In short, tests that run end-to-end through the UI are: brittle, expensive to write, and time consuming to run. So the pyramid argues that you should do much more automated testing through unit tests than you should through traditional GUI based testing. 2",
+    "1: Record-playback tools are almost always a bad idea for any kind of automation, since they resist changeability and obstruct useful abstractions. They are only worth having as a tool to generate fragments of scripts which you can then edit as a proper programming language, in the manner of the venerable Emacs."
+  ],
+  "limitations": [],
+  "asserts": "Write most of your tests at a low level (unit tests) with a few broad-stack tests, eg via UI. UI tests tend to be fragile and slow.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-08T01:22:51.371Z"
+}

@@ -1,0 +1,20 @@
+{
+  "source_id": "src_ea1a84785166",
+  "receipt_id": "rcpt_ea1a84785166_1778178940953",
+  "section_id": "05-cowork-handoff",
+  "url": "https://github.com/lm-sys/FastChat#prompt-engineering-and-agent-handoff",
+  "final_url": "https://github.com/lm-sys/FastChat",
+  "fetched_at": "2026-05-07T18:35:40.953Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "(untitled)",
+  "source_type": "unknown",
+  "relevance": "unknown",
+  "key_points": [],
+  "limitations": [],
+  "asserts": "(no assertion extracted)",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-07T18:35:52.088Z"
+}

@@ -1,0 +1,18 @@
+{
+  "receipt_id": "cle_1778181402661_06-repo-knowledge-integration",
+  "section_id": "06-repo-knowledge-integration",
+  "extracted_at": "2026-05-07T19:16:42.661Z",
+  "research_os_version": "0.1.0",
+  "extractor": "ollama-intern",
+  "extraction_method": "ollama_intern_propositional_paged",
+  "sources_processed": 7,
+  "sources_skipped": 0,
+  "sources_failed": 0,
+  "excerpt_ledgers_built": 6,
+  "claims_added": 297,
+  "claims_deduped": 0,
+  "claims_rejected_ungrounded": 0,
+  "claims_rejected_excerpt_id_missing": 0,
+  "claims_rejected_excerpt_id_malformed": 0,
+  "failures": []
+}

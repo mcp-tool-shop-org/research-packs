@@ -1,0 +1,23 @@
+[
+  {
+    "reason": "missing_not_flagged",
+    "claim_id": "clm_05cae033cedc_ollama_intern_1",
+    "section_id": "06-repo-knowledge-integration",
+    "details": "Claim clm_05cae033cedc_ollama_intern_1 has no 'not' constraint recorded.",
+    "artifact_path": "audits/06-repo-knowledge-integration-findings.jsonl"
+  },
+  {
+    "reason": "missing_not_flagged",
+    "claim_id": "clm_05cae033cedc_ollama_intern_2",
+    "section_id": "06-repo-knowledge-integration",
+    "details": "Claim clm_05cae033cedc_ollama_intern_2 has no 'not' constraint recorded.",
+    "artifact_path": "audits/06-repo-knowledge-integration-findings.jsonl"
+  },
+  {
+    "reason": "missing_not_flagged",
+    "claim_id": "clm_05cae033cedc_ollama_intern_3",
+    "section_id": "06-repo-knowledge-integration",
+    "details": "Claim clm_05cae033cedc_ollama_intern_3 has no 'not' constraint recorded.",
+    "artifact_path": "audits/06-repo-knowledge-integration-findings.jsonl"
+  }
+]

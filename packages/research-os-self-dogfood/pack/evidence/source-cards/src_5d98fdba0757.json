@@ -1,0 +1,20 @@
+{
+  "source_id": "src_5d98fdba0757",
+  "receipt_id": "rcpt_5d98fdba0757_1778180206782",
+  "section_id": "06-repo-knowledge-integration",
+  "url": "https://arxiv.org/abs/1904.08365",
+  "final_url": "https://arxiv.org/abs/1904.08365",
+  "fetched_at": "2026-05-07T18:56:46.782Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "(untitled)",
+  "source_type": "unknown",
+  "relevance": "unknown",
+  "key_points": [],
+  "limitations": [],
+  "asserts": "(no assertion extracted)",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-07T18:56:57.779Z"
+}

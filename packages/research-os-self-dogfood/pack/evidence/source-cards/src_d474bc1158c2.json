@@ -1,0 +1,26 @@
+{
+  "source_id": "src_d474bc1158c2",
+  "receipt_id": "rcpt_d474bc1158c2_1778188295171",
+  "section_id": "01-product-thesis",
+  "url": "https://en.wikipedia.org/wiki/Research_integrity",
+  "final_url": "https://en.wikipedia.org/wiki/Research_integrity",
+  "fetched_at": "2026-05-07T21:11:35.171Z",
+  "publisher": "en.wikipedia.org",
+  "published_at": null,
+  "title": "Scientific integrity - Wikipedia",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "Research integrity or scientific integrity is an aspect of research ethics that deals with best practice or rules of professional practice of scientists.",
+    "First introduced in the 19th century by Charles Babbage, the concept of research integrity came to the fore in the late 1970s. A series of publicized scandals in the United States led to heightened debate on the ethical norms of sciences and the limitations of the self-regulation processes implemented by scientific communities and institutions. Formalized definitions of scientific misconduct, and codes of conduct, became the main policy response after 1990. In the 21st century, codes of conduct or ethics codes for research integrity are widespread. Along with codes of conduct at institutional and national levels, major international texts include the European Charter for Researchers (2005), the Singapore Statement on Research Integrity (2010), the European Code of Conduct for Research Integrity (2011 & 2017), and the Hong Kong Principles for assessing researchers (2020).",
+    "Scientific literature on research integrity falls mostly into two categories: first, mapping of the definitions and categories, especially in regard to scientific misconduct, and second, empirical surveys of the attitudes and practices of scientists.[1] Following the development of codes of conduct, taxonomies of non-ethical uses have been significantly expanded, beyond the long-established forms of scientific fraud (plagiarism, falsification and fabrication of results). Definitions of \"questionable research practices\" and the debate over reproducibility also target a grey area of dubious scientific results, which may not be the outcome of voluntary manipulations.",
+    "The concrete impact of codes of conduct and other measures put in place to ensure research integrity remain uncertain. Several case studies have highlighted that while the principles of typical codes of conduct adhere to common scientific ideals, they are seen as remote from actual work practices and their efficiency is criticized.",
+    "After 2010, debates on research integrity have been increasingly linked to open science. International codes of conduct and national legislation on research integrity have officially endorsed open sharing of scientific output (publications, data, and code used to perform statistical analyses on the data[clarification needed]) as ways to limit questionable research practices and to enhance reproducibility. Having both the data and the actual code enables others to reproduce the results for themselves (or to uncover problems in the analyses when trying to do so). The European Code of Conduct for Research Integrity 2023 states, for example, the principles that, \"Researchers, research institutions, and organisations ensure that access to data is as open as possible, as closed as necessary, and where appropriate in line with the FAIR Principles (Findable, Accessible, Interoperable and Reusable) for data management\" and that \"Researchers, research institutions, and organisations are transparent about how to access and gain permission to use data, metadata, protocols, code, software, and other research materials\".[2] References to open science have incidentally opened up the debate over scientific integrity beyond academic communities, as it increasingly concerns a wider audience of scientific readers."
+  ],
+  "limitations": [],
+  "asserts": "Research integrity or scientific integrity is an aspect of research ethics that deals with best practice or rules of professional practice of scientists.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:11:35.451Z"
+}

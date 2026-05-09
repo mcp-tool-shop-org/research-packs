@@ -1,0 +1,26 @@
+{
+  "source_id": "src_bc94816a3373",
+  "receipt_id": "rcpt_bc94816a3373_1778120259379",
+  "section_id": "03-source-and-claim-truth",
+  "url": "https://en.wikipedia.org/wiki/Provenance",
+  "final_url": "https://en.wikipedia.org/wiki/Provenance",
+  "fetched_at": "2026-05-07T02:17:39.379Z",
+  "publisher": "en.wikipedia.org",
+  "published_at": null,
+  "title": "Provenance - Wikipedia",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "Provenance (from French provenir 'to come from/forth') is the chronology of the ownership, custody or location of a historical object.[1] The term was originally mostly used in relation to works of art,[citation needed] but is now used in similar senses in a wide range of fields, including archaeology, paleontology, archival science, economy, computing, and scientific enquiry in general.",
+    "The primary purpose of tracing the provenance of an object or entity is normally to provide contextual and circumstantial evidence for its original production or discovery, by establishing, as far as practicable, its later history, especially the sequences of its formal ownership, custody and places of storage. The practice has a particular value in helping authenticate objects. Comparative techniques, expert opinions and the results of scientific tests may also be used to these ends, but establishing provenance is essentially a matter of documentation. The term dates to the 1780s in English. Provenance is conceptually comparable to the legal term chain of custody.",
+    "For museums and the art trade, in addition to helping establish the authorship and authenticity of an object, provenance has become increasingly important in helping establish the moral and legal validity of a chain of custody, given the increasing amount of looted art. These issues first became a major concern regarding works that had changed hands in Nazi-controlled areas in Europe before and during World War II. Many museums began compiling pro-active registers of such works and their history. Recently the same concerns have come to prominence for works of African art, often exported illegally, and antiquities from many parts of the world, but currently especially in Iraq, and then Syria.[2]",
+    "In archaeology and paleontology, the derived term provenience is used with a related but very particular meaning, to refer to the location (in modern research, recorded precisely in three dimensions) where an artifact or other ancient item was found.[3] Provenance covers an object's complete documented history. An artifact may thus have both a provenience and a provenance.",
+    "The provenance of works of fine art, antiques and antiquities is of great importance, especially to their owner. There are a number of reasons why painting provenance is important, which mostly also apply to other types of fine art. A good provenance increases the value of a painting, and establishing provenance may help confirm the date, artist and, especially for portraits, the subject of a painting. It may confirm whether a painting is genuinely of the period it seems to date from. The provenance of paintings can help resolve ownership disputes. For example, provenance between 1933 and 1945 can determine whether a painting was looted by the Nazis.[4]"
+  ],
+  "limitations": [],
+  "asserts": "Provenance (from French provenir 'to come from/forth') is the chronology of the ownership, custody or location of a historical object.[1] The term was originally mostly used in relation to works of art,[citation needed] but is now used in similar senses in a wide range of fields, including archaeology, paleontology, archival science, economy, computing, and scientific enquiry in general.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T02:17:39.484Z"
+}

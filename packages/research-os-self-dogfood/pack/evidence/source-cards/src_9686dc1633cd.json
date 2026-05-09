@@ -1,0 +1,23 @@
+{
+  "source_id": "src_9686dc1633cd",
+  "receipt_id": "rcpt_9686dc1633cd_1778190627368",
+  "section_id": "05-cowork-handoff",
+  "url": "https://code.claude.com/docs/en/best-practices",
+  "final_url": "https://code.claude.com/docs/en/best-practices",
+  "fetched_at": "2026-05-07T21:50:27.368Z",
+  "publisher": "code.claude.com",
+  "published_at": null,
+  "title": "Best practices for Claude Code - Claude Code Docs",
+  "source_type": "primary",
+  "relevance": "unknown",
+  "key_points": [
+    "Fetch the complete documentation index at: https://code.claude.com/docs/llms.txt",
+    "Use this file to discover all available pages before exploring further."
+  ],
+  "limitations": [],
+  "asserts": "Tips and patterns for getting the most out of Claude Code, from configuring your environment to scaling across parallel sessions.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:50:27.590Z"
+}

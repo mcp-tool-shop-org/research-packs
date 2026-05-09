@@ -1,0 +1,20 @@
+{
+  "source_id": "src_8cffc8f807a2",
+  "receipt_id": "rcpt_8cffc8f807a2_1778203359371",
+  "section_id": "08-acceptance-suite",
+  "url": "https://glossary.istqb.org/en_US/home",
+  "final_url": "https://glossary.istqb.org/en_US/home",
+  "fetched_at": "2026-05-08T01:22:39.371Z",
+  "publisher": "glossary.istqb.org",
+  "published_at": null,
+  "title": "ISTQB Glossary",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [],
+  "limitations": [],
+  "asserts": "ISTQB Glossary",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-08T01:22:40.158Z"
+}

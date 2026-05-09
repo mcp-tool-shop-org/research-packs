@@ -1,0 +1,54 @@
+{
+  "summary_id": "tris_1778204033308_08-acceptance-suite",
+  "section_id": "08-acceptance-suite",
+  "triaged_at": "2026-05-08T01:33:53.308Z",
+  "research_os_version": "0.1.0",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 201,
+  "decisions": {
+    "needs_scope_repair": 96,
+    "selected_for_review": 25,
+    "parked_overdense_source": 21,
+    "parked_weak_scope": 59
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 25,
+  "selected_per_source": [
+    {
+      "source_id": "src_099defe2e6d6",
+      "selected": 10,
+      "total": 104
+    },
+    {
+      "source_id": "src_eefec92990cb",
+      "selected": 5,
+      "total": 26
+    },
+    {
+      "source_id": "src_53ee6a9ec24b",
+      "selected": 5,
+      "total": 17
+    },
+    {
+      "source_id": "src_642e49ac2548",
+      "selected": 3,
+      "total": 16
+    },
+    {
+      "source_id": "src_ae13d4956c22",
+      "selected": 1,
+      "total": 14
+    },
+    {
+      "source_id": "src_2ed88e8cb886",
+      "selected": 0,
+      "total": 13
+    },
+    {
+      "source_id": "src_4b7a4ad94a3b",
+      "selected": 1,
+      "total": 11
+    }
+  ]
+}

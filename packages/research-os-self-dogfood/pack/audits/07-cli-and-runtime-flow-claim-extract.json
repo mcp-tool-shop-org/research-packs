@@ -1,0 +1,18 @@
+{
+  "receipt_id": "cle_1778186501643_07-cli-and-runtime-flow",
+  "section_id": "07-cli-and-runtime-flow",
+  "extracted_at": "2026-05-07T20:41:41.643Z",
+  "research_os_version": "0.1.0",
+  "extractor": "ollama-intern",
+  "extraction_method": "ollama_intern_propositional",
+  "sources_processed": 6,
+  "sources_skipped": 1,
+  "sources_failed": 0,
+  "excerpt_ledgers_built": 1,
+  "claims_added": 146,
+  "claims_deduped": 5,
+  "claims_rejected_ungrounded": 0,
+  "claims_rejected_excerpt_id_missing": 0,
+  "claims_rejected_excerpt_id_malformed": 0,
+  "failures": []
+}

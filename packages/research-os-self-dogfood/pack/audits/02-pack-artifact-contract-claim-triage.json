@@ -1,0 +1,65 @@
+{
+  "summary_id": "tris_1778190538783_02-pack-artifact-contract",
+  "section_id": "02-pack-artifact-contract",
+  "triaged_at": "2026-05-07T21:48:58.783Z",
+  "research_os_version": "0.1.0",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 471,
+  "decisions": {
+    "parked_overdense_source": 151,
+    "needs_scope_repair": 208,
+    "selected_for_review": 50,
+    "parked_weak_scope": 57,
+    "parked_low_value": 5
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 50,
+  "selected_per_source": [
+    {
+      "source_id": "src_712838e1db63",
+      "selected": 10,
+      "total": 150
+    },
+    {
+      "source_id": "src_0801e1ee8a70",
+      "selected": 10,
+      "total": 146
+    },
+    {
+      "source_id": "src_cf2238f43a01",
+      "selected": 10,
+      "total": 119
+    },
+    {
+      "source_id": "src_62d58636ae35",
+      "selected": 10,
+      "total": 29
+    },
+    {
+      "source_id": "src_bf5d0eef78f0",
+      "selected": 0,
+      "total": 7
+    },
+    {
+      "source_id": "src_2cc80fcf07ba",
+      "selected": 1,
+      "total": 6
+    },
+    {
+      "source_id": "src_c1e29cfcaa1e",
+      "selected": 5,
+      "total": 6
+    },
+    {
+      "source_id": "src_b1ed6cf92876",
+      "selected": 4,
+      "total": 4
+    },
+    {
+      "source_id": "src_876b66b88858",
+      "selected": 0,
+      "total": 4
+    }
+  ]
+}

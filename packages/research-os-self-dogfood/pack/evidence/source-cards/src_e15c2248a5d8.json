@@ -1,0 +1,26 @@
+{
+  "source_id": "src_e15c2248a5d8",
+  "receipt_id": "rcpt_e15c2248a5d8_1778106806810",
+  "section_id": "06-repo-knowledge-integration",
+  "url": "https://sqlite.org/fts5.html",
+  "final_url": "https://sqlite.org/fts5.html",
+  "fetched_at": "2026-05-06T22:33:26.810Z",
+  "publisher": "sqlite.org",
+  "published_at": null,
+  "title": "SQLite FTS5 Extension",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "FTS5 is an SQLite virtual table module that provides full-text search functionality to database applications. In their most elementary form, full-text search engines allow the user to efficiently search a large collection of documents for the subset that contain one or more instances of a search term. The search functionality provided to world wide web users by Google is, among other things, a full-text search engine, as it allows users to search for all documents on the web that contain, for example, the term \"fts5\".",
+    "To use FTS5, the user creates an FTS5 virtual table with one or more columns. For example:",
+    "It is an error to add types, constraints or PRIMARY KEY declarations to a CREATE VIRTUAL TABLE statement used to create an FTS5 table. Once created, an FTS5 table may be populated using INSERT, UPDATE or DELETE statements like any other table. Like any other table with no PRIMARY KEY declaration, an FTS5 table has an implicit INTEGER PRIMARY KEY field named rowid.",
+    "Not shown in the example above is that there are also various options that may be provided to FTS5 as part of the CREATE VIRTUAL TABLE statement to configure various aspects of the new table. These may be used to modify the way in which the FTS5 table extracts terms from documents and queries, to create extra indexes on disk to speed up prefix queries, or to create an FTS5 table that acts as an index on content stored elsewhere.",
+    "Once populated, there are three ways to execute a full-text query against the contents of an FTS5 table:"
+  ],
+  "limitations": [],
+  "asserts": "FTS5 is an SQLite virtual table module that provides full-text search functionality to database applications. In their most elementary form, full-text search engines allow the user to efficiently search a large collection of documents for the subset that contain one or more instances of a search term. The search functionality provided to world wide web users by Google is, among other things, a full-text search engine, as it allows users to search for all documents on the web that contain, for example, the term \"fts5\".",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-06T22:33:27.194Z"
+}

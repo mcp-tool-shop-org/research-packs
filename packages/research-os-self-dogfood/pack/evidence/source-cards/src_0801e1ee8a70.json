@@ -1,0 +1,26 @@
+{
+  "source_id": "src_0801e1ee8a70",
+  "receipt_id": "rcpt_0801e1ee8a70_1778188778899",
+  "section_id": "02-pack-artifact-contract",
+  "url": "https://www.w3.org/TR/prov-dm/",
+  "final_url": "https://www.w3.org/TR/prov-dm/",
+  "fetched_at": "2026-05-07T21:19:38.899Z",
+  "publisher": "www.w3.org",
+  "published_at": null,
+  "title": "PROV-DM: The PROV Data Model",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "Please refer to the errata for this document, which may include some normative corrections.",
+    "The English version of this specification is the only normative version. Non-normative translations may also be available.",
+    "Copyright © 2011-2013 W3C® (MIT, ERCIM, Keio, Beihang), All Rights Reserved. W3C liability, trademark and document use rules apply.",
+    "Provenance is information about entities, activities, and people involved in producing a piece of data or thing, which can be used to form assessments about its quality, reliability or trustworthiness. PROV-DM is the conceptual data model that forms a basis for the W3C provenance (PROV) family of specifications. PROV-DM distinguishes core structures, forming the essence of provenance information, from extended structures catering for more specific uses of provenance. PROV-DM is organized in six components, respectively dealing with: (1) entities and activities, and the time at which they were created, used, or ended; (2) derivations of entities from entities; (3) agents bearing responsibility for entities that were generated and activities that happened; (4) a notion of bundle, a mechanism to support provenance of provenance; (5) properties to link entities that refer to the same thing; and, (6) collections forming a logical structure for its members.",
+    "This document introduces the provenance concepts found in PROV and defines PROV-DM types and relations. The PROV data model is domain-agnostic, but is equipped with extensibility points allowing domain-specific information to be included."
+  ],
+  "limitations": [],
+  "asserts": "Please refer to the errata for this document, which may include some normative corrections.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:19:39.051Z"
+}

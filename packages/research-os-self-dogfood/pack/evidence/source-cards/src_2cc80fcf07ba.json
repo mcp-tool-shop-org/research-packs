@@ -1,0 +1,26 @@
+{
+  "source_id": "src_2cc80fcf07ba",
+  "receipt_id": "rcpt_2cc80fcf07ba_1778188777399",
+  "section_id": "02-pack-artifact-contract",
+  "url": "https://json-schema.org/docs",
+  "final_url": "https://json-schema.org/docs",
+  "fetched_at": "2026-05-07T21:19:37.399Z",
+  "publisher": "json-schema.org",
+  "published_at": null,
+  "title": "Welcome",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "JSON Schema is a declarative language for annotating and validating JSON documents' structure, constraints, and data types. It helps you standardize and define expectations for JSON data.Our documentation will guide you through the basics and beyond of defining and validating JSON data.Explore the docs",
+    "Discover JSON Schema: its purpose and role in data validation.",
+    "New to JSON Schema? Learn the basics of schema design.",
+    "Master advanced skills such as validation with our hands-on guides.",
+    "Dive deeper into JSON Schema keywords with our clear explanations and usage examples."
+  ],
+  "limitations": [],
+  "asserts": "JSON Schema - a declarative language for validating JSON documents",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T21:19:37.677Z"
+}

@@ -1,0 +1,23 @@
+{
+  "source_id": "src_96d4bf47e20b",
+  "receipt_id": "rcpt_96d4bf47e20b_1778185672072",
+  "section_id": "07-cli-and-runtime-flow",
+  "url": "https://nodejs.org/en",
+  "final_url": "https://nodejs.org/en",
+  "fetched_at": "2026-05-07T20:27:52.072Z",
+  "publisher": "nodejs.org",
+  "published_at": null,
+  "title": "Node.js — Run JavaScript Everywhere",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "Node.js® is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.",
+    "Learn more what Node.js is able to offer with our Learning materials."
+  ],
+  "limitations": [],
+  "asserts": "Node.js® is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T20:27:52.252Z"
+}

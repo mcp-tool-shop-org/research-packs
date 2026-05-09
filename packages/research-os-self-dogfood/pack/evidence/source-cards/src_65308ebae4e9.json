@@ -1,0 +1,20 @@
+{
+  "source_id": "src_65308ebae4e9",
+  "receipt_id": "rcpt_65308ebae4e9_1778185671870",
+  "section_id": "07-cli-and-runtime-flow",
+  "url": "https://docs.npmjs.com/cli-documentation/",
+  "final_url": "https://docs.npmjs.com/cli-documentation/",
+  "fetched_at": "2026-05-07T20:27:51.870Z",
+  "publisher": "docs.npmjs.com",
+  "published_at": null,
+  "title": "(untitled)",
+  "source_type": "docs",
+  "relevance": "unknown",
+  "key_points": [],
+  "limitations": [],
+  "asserts": "(untitled)",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T20:27:52.038Z"
+}

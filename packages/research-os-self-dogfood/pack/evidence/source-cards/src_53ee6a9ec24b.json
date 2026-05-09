@@ -1,0 +1,26 @@
+{
+  "source_id": "src_53ee6a9ec24b",
+  "receipt_id": "rcpt_53ee6a9ec24b_1778203349216",
+  "section_id": "08-acceptance-suite",
+  "url": "https://www.guru99.com/end-to-end-testing.html",
+  "final_url": "https://www.guru99.com/end-to-end-testing.html",
+  "fetched_at": "2026-05-08T01:22:29.216Z",
+  "publisher": "Guru99",
+  "published_at": null,
+  "title": "What is END-To-END Testing? E2E Example",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "End To End Testing is a software testing method that validates entire software from starting to the end along with its integration with external interfaces. The purpose of end-to-end testing is testing whole software for dependencies, data integrity and communication with other systems, interfaces and databases to exercise complete production like scenario.",
+    "Along with the software system, it also validates batch/data processing from other upstream/downstream systems. Hence, the name “End-to-End”. End to End Testing is usually executed after functional and System Testing. It uses actual production like data and test environment to simulate real-time settings. E2E Testing is also called Chain Testing.",
+    "End To End Testing verifies complete system flow and increases confidence by detecting issues and increasing Test Coverage of subsystems. Modern software systems are complex and interconnected with multiple subsystems that may differ from current systems. The whole system can collapse by failure of any subsystem that is major risk which can be avoided by End-to-End testing.",
+    "The following diagram gives an overview of the End to End testing process.",
+    "The chief activities involved in End to End Testing are –"
+  ],
+  "limitations": [],
+  "asserts": "END-TO-END TESTING is a type of Software Testing that validates the software system along with its integration with external interfaces. The purpose of end-to-end Test is to exercise a complete production-like scenario.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-08T01:22:29.490Z"
+}

@@ -1,0 +1,26 @@
+{
+  "source_id": "src_4b7a4ad94a3b",
+  "receipt_id": "rcpt_4b7a4ad94a3b_1778203371394",
+  "section_id": "08-acceptance-suite",
+  "url": "https://docs.github.com/en/actions/use-cases-and-examples/building-and-testing",
+  "final_url": "https://docs.github.com/en/actions/tutorials/build-and-test-code",
+  "fetched_at": "2026-05-08T01:22:51.394Z",
+  "publisher": "GitHub Docs",
+  "published_at": null,
+  "title": "Building and testing your code - GitHub Docs",
+  "source_type": "docs",
+  "relevance": "unknown",
+  "key_points": [
+    "You can automatically build and test your projects with GitHub Actions.",
+    "Learn how to create a continuous integration (CI) workflow to build and test your Go project.",
+    "Learn how to create a continuous integration (CI) workflow in GitHub Actions to build and test your Java project with Ant.",
+    "Learn how to create a continuous integration (CI) workflow in GitHub Actions to build and test your Java project with Gradle.",
+    "Learn how to create a continuous integration (CI) workflow in GitHub Actions to build and test your Java project with Maven."
+  ],
+  "limitations": [],
+  "asserts": "You can automatically build and test your projects with GitHub Actions.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-08T01:22:52.987Z"
+}

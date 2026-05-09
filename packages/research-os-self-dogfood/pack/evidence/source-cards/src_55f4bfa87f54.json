@@ -1,0 +1,26 @@
+{
+  "source_id": "src_55f4bfa87f54",
+  "receipt_id": "rcpt_55f4bfa87f54_1778186832015",
+  "section_id": "04-gates-and-waivers",
+  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6187950/",
+  "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6187950/",
+  "fetched_at": "2026-05-07T20:47:12.015Z",
+  "publisher": "pmc.ncbi.nlm.nih.gov",
+  "published_at": null,
+  "title": "Color Fundus Image Guided Artery-Vein Differentiation in Optical Coherence Tomography Angiography - PMC",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "Correspondence: Xincheng Yao, Department of Bioengineering (MC 563), University of Illinois at Chicago (UIC), Clinical Sciences North, Suite W103, Room 164D, 820 South Wood Street, Chicago, IL 60612, USA; xcy@uic.edu.",
+    "Jennifer I. Lim, Illinois Eye and Ear Infirmary, University of Illinois at Chicago, 1855 W. Taylor Street, Suite 2.50, M/C 648, Chicago, IL 60612, USA; jennylim@uic.edu.",
+    "Received 2018 May 18; Accepted 2018 Sep 4.",
+    "This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.",
+    "This study aimed to develop a method for automated artery-vein classification in optical coherence tomography angiography (OCTA), and to verify that differential artery-vein analysis can improve the sensitivity of OCTA detection and staging of diabetic retinopathy (DR)."
+  ],
+  "limitations": [],
+  "asserts": "This study aimed to develop a method for automated artery-vein classification in optical coherence tomography angiography (OCTA), and to verify that differential artery-vein analysis can improve the sensitivity of OCTA detection and staging of ...",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-07T20:47:12.659Z"
+}
