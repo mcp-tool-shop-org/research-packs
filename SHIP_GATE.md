@@ -56,8 +56,8 @@
 ## E. Identity (soft gate — does not block ship)
 
 - [x] `[all]` Logo in README header (2026-05-09)
-- [ ] `[all]` Translations (polyglot-mcp, 8 languages) — DEFERRED: user runs locally; not blocking
-- [ ] `[org]` Landing page (@mcptoolshop/site-theme) — DEFERRED: archive monorepo; handbook-playbook does not apply (no Starlight); landing page is Phase 2 of full treatment
+- [x] `[all]` Translations (polyglot-mcp, 8 languages) (2026-05-09) — 6 languages generated locally by user (es, fr, hi, it, ja, zh)
+- [x] `[org]` Landing page + Starlight handbook (2026-05-09) — site-theme init + handbook --accent cyan; 5 handbook pages; deployed to https://mcp-tool-shop-org.github.io/research-packs/
 - [x] `[all]` GitHub repo metadata: description, homepage, topics (2026-05-09) — description + 6 topics + homepage set to https://mcp-tool-shop-org.github.io/research-packs/
 
 ---
