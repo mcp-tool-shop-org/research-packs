@@ -1,0 +1,19 @@
+{
+  "name": "research-packs",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Frozen research packs with source truth, claim traceability, and audit receipts.",
+  "scripts": {
+    "test": "vitest run",
+    "verify": "node scripts/verify-pack.mjs packages/*",
+    "lint": "eslint scripts/ tests/"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "vitest": "^2.0.0",
+    "zod": "^3.23.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
