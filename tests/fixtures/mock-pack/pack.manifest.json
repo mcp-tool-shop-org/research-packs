@@ -1,0 +1,28 @@
+{
+  "name": "mock-pack",
+  "topic": "A mock research topic for testing purposes",
+  "frozen_at": "2026-01-01T00:00:00.000Z",
+  "research_os_version": "0.1.0",
+  "sections": [
+    {
+      "id": "01-intro",
+      "accepted_claims": 5,
+      "gate": "pass",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "02-methods",
+      "accepted_claims": 3,
+      "gate": "warn",
+      "synthesis_eligible": true
+    }
+  ],
+  "totals": {
+    "sections": 2,
+    "accepted_claims": 8,
+    "dispositioned": 1,
+    "unresolved_contradictions": 0
+  },
+  "freeze_receipt_sha256": "PLACEHOLDER_REPLACED_BY_TEST_SETUP",
+  "operator_notes": "This is a test fixture."
+}
