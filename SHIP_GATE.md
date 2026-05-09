@@ -58,7 +58,7 @@
 - [x] `[all]` Logo in README header (2026-05-09)
 - [ ] `[all]` Translations (polyglot-mcp, 8 languages) — DEFERRED: user runs locally; not blocking
 - [ ] `[org]` Landing page (@mcptoolshop/site-theme) — DEFERRED: archive monorepo; handbook-playbook does not apply (no Starlight); landing page is Phase 2 of full treatment
-- [ ] `[all]` GitHub repo metadata: description, homepage, topics — IN PROGRESS: will be set during gh repo create
+- [x] `[all]` GitHub repo metadata: description, homepage, topics (2026-05-09) — description + 6 topics set; homepage omitted (no landing page for archive monorepo)
 
 ---
 
