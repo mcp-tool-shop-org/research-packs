@@ -1,0 +1,134 @@
+{
+  "audit_id": "cda_1778296648480_01-node-dependency-fragility",
+  "section_id": "01-node-dependency-fragility",
+  "audited_at": "2026-05-09T03:17:28.480Z",
+  "research_os_version": "0.1.0",
+  "candidate_claim_count": 169,
+  "source_count": 9,
+  "total_source_word_count": 975453,
+  "claims_per_1k_words": 0.17325283739964917,
+  "weak_scope_count": 9,
+  "generic_scope_count": 45,
+  "per_source": [
+    {
+      "source_id": "src_e519c32165e4",
+      "publisher": null,
+      "source_word_count": 25082,
+      "claim_count": 38,
+      "claims_per_1k_words": 1.5150306993062754,
+      "share_of_section": 0.22485207100591717,
+      "weak_scope_count": 0,
+      "generic_scope_count": 5
+    },
+    {
+      "source_id": "src_118111ce7028",
+      "publisher": null,
+      "source_word_count": 3086,
+      "claim_count": 30,
+      "claims_per_1k_words": 9.721322099805572,
+      "share_of_section": 0.17751479289940827,
+      "weak_scope_count": 0,
+      "generic_scope_count": 19
+    },
+    {
+      "source_id": "src_ed31f644833c",
+      "publisher": null,
+      "source_word_count": 10835,
+      "claim_count": 27,
+      "claims_per_1k_words": 2.491924319335487,
+      "share_of_section": 0.15976331360946747,
+      "weak_scope_count": 4,
+      "generic_scope_count": 3
+    },
+    {
+      "source_id": "src_55456d4dedfa",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 191240,
+      "claim_count": 20,
+      "claims_per_1k_words": 0.10458063166701527,
+      "share_of_section": 0.11834319526627218,
+      "weak_scope_count": 0,
+      "generic_scope_count": 8
+    },
+    {
+      "source_id": "src_aede2f10d470",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 194116,
+      "claim_count": 19,
+      "claims_per_1k_words": 0.09787961837251952,
+      "share_of_section": 0.11242603550295859,
+      "weak_scope_count": 0,
+      "generic_scope_count": 3
+    },
+    {
+      "source_id": "src_bd638b8de92f",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 191641,
+      "claim_count": 12,
+      "claims_per_1k_words": 0.06261708089605042,
+      "share_of_section": 0.07100591715976332,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_f9b159fab5ef",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 179781,
+      "claim_count": 11,
+      "claims_per_1k_words": 0.06118555353457818,
+      "share_of_section": 0.0650887573964497,
+      "weak_scope_count": 0,
+      "generic_scope_count": 6
+    },
+    {
+      "source_id": "src_2c5240f22e27",
+      "publisher": null,
+      "source_word_count": 4150,
+      "claim_count": 6,
+      "claims_per_1k_words": 1.4457831325301205,
+      "share_of_section": 0.03550295857988166,
+      "weak_scope_count": 5,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_df4ad7d6f9c0",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 175522,
+      "claim_count": 6,
+      "claims_per_1k_words": 0.03418374904570367,
+      "share_of_section": 0.03550295857988166,
+      "weak_scope_count": 0,
+      "generic_scope_count": 1
+    }
+  ],
+  "near_duplicate_clusters": [],
+  "flags": [
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_e519c32165e4 contributes 38 of 169 claims (22% of section).",
+      "affects_source_ids": [
+        "src_e519c32165e4"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_118111ce7028 contributes 30 of 169 claims (18% of section).",
+      "affects_source_ids": [
+        "src_118111ce7028"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_118111ce7028 has 9.7 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_118111ce7028"
+      ],
+      "affects_claim_ids": []
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "source_id": "src_df4ad7d6f9c0",
+  "receipt_id": "rcpt_df4ad7d6f9c0_1778295967451",
+  "section_id": "01-node-dependency-fragility",
+  "url": "https://docs.comfy.org/custom-nodes/overview",
+  "final_url": "https://docs.comfy.org/custom-nodes/overview",
+  "fetched_at": "2026-05-09T03:06:07.451Z",
+  "publisher": "docs.comfy.org",
+  "published_at": null,
+  "title": "Overview - ComfyUI",
+  "source_type": "docs",
+  "relevance": "unknown",
+  "key_points": [
+    "Fetch the complete documentation index at: https://docs.comfy.org/llms.txt",
+    "Use this file to discover all available pages before exploring further."
+  ],
+  "limitations": [],
+  "asserts": "Fetch the complete documentation index at: https://docs.comfy.org/llms.txt",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-09T03:06:07.749Z"
+}

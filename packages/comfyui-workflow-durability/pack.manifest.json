@@ -1,0 +1,65 @@
+{
+  "name": "comfyui-workflow-durability",
+  "topic": "What makes ComfyUI workflows durable over time, and what should a local-first workflow control plane track to keep them runnable?",
+  "frozen_at": "2026-05-09T08:30:02.276Z",
+  "research_os_version": "0.1.1",
+  "sections": [
+    {
+      "id": "01-node-dependency-fragility",
+      "accepted_claims": 40,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "02-model-file-identity",
+      "accepted_claims": 29,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "03-workflow-schema-stability",
+      "accepted_claims": 39,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "04-environment-reproducibility",
+      "accepted_claims": 74,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "05-community-distribution-patterns",
+      "accepted_claims": 15,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "06-comfyui-core-versioning",
+      "accepted_claims": 33,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "07-existing-control-plane-attempts",
+      "accepted_claims": 21,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "08-failure-taxonomy",
+      "accepted_claims": 51,
+      "gate": "warn",
+      "synthesis_eligible": true
+    }
+  ],
+  "totals": {
+    "sections": 8,
+    "accepted_claims": 302,
+    "dispositioned": 0,
+    "unresolved_contradictions": 0,
+    "preserved_contradiction_records": 171
+  },
+  "freeze_receipt_sha256": "d71943c6444d4bb5ba38ae577089498d119b95f00caed8f068f0ee09c79038eb",
+  "operator_notes": "ComfyUI arc operating mode: operator-staged URLs over LLM discovery; text-accessible sources only (raw.githubusercontent.com, docs.comfy.org, api.github.com/search); GitHub Search API canonical form for keyword filtering — the /issues?q= parameter is silently dropped; heuristic contradiction detector for narrow-topic sections (5/5 sessions: ollama-intern stalled every time); llms.txt aggregate-source acceptance with triage capping; community-distribution surfaces inaccessible (JS-shell + paywall + stale-URL — strongest Experiment 1 finding); publisher-null is non-deterministic across all source types, not just GitHub — min_independent_publishers: 0 workaround required for the full arc; hermes3:8b two-pass calibrated reviewer used for sections 04–08; Pattern 2 predicate fix (commit 22b5dba) shipped mid-arc when hermes3 full decision vocabulary exposed stale candidate-set-completeness predicates in audit and cowork handoff."
+}

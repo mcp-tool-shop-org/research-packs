@@ -103,6 +103,18 @@ describe('generateReadme', () => {
     expect(() => generateReadme({ name: 'x' }, FINAL_REPORT)).toThrow();
   });
 
+  it('shows "Preserved contradiction records: N" when preserved_contradiction_records is set', () => {
+    const manifest = { ...VALID_MANIFEST, totals: { ...VALID_MANIFEST.totals, preserved_contradiction_records: 171 } };
+    const readme = generateReadme(manifest, FINAL_REPORT);
+    expect(readme).toContain('Preserved contradiction records: 171');
+    expect(readme).not.toContain('171 unresolved contradictions');
+  });
+
+  it('falls back to "N unresolved contradictions" when preserved_contradiction_records is absent', () => {
+    const readme = generateReadme(VALID_MANIFEST, FINAL_REPORT);
+    expect(readme).toContain('0 unresolved contradictions');
+  });
+
   it('handles missing Summary heading gracefully (returns empty summary block)', () => {
     const reportWithoutSummary = '# Final Report\n\n## Body\n\nJust body.\n';
     const readme = generateReadme(VALID_MANIFEST, reportWithoutSummary);

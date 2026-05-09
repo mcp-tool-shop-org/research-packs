@@ -1,0 +1,24 @@
+{
+  "source_id": "src_b81c03003037",
+  "receipt_id": "rcpt_b81c03003037_1778304170436",
+  "section_id": "04-environment-reproducibility",
+  "url": "https://docs.comfy.org/installation/desktop/windows",
+  "final_url": "https://docs.comfy.org/installation/desktop/windows",
+  "fetched_at": "2026-05-09T05:22:50.436Z",
+  "publisher": "docs.comfy.org",
+  "published_at": null,
+  "title": "Windows Desktop — Local Self-Hosted - ComfyUI",
+  "source_type": "docs",
+  "relevance": "unknown",
+  "key_points": [
+    "Fetch the complete documentation index at: https://docs.comfy.org/llms.txt",
+    "Use this file to discover all available pages before exploring further.",
+    "Migrate from Existing Installation (Optional)"
+  ],
+  "limitations": [],
+  "asserts": "This article introduces how to download, install and use ComfyUI Desktop for Windows",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-09T05:22:50.913Z"
+}

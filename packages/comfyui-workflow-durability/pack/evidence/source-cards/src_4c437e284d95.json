@@ -1,0 +1,22 @@
+{
+  "source_id": "src_4c437e284d95",
+  "receipt_id": "rcpt_4c437e284d95_1778289770441",
+  "section_id": "07-existing-control-plane-attempts",
+  "url": "https://api.github.com/repos/ltdrdata/ComfyUI-Manager/releases?per_page=20",
+  "final_url": "https://api.github.com/repositories/631600154/releases?per_page=20",
+  "fetched_at": "2026-05-09T01:22:50.441Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "[]",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "[]"
+  ],
+  "limitations": [],
+  "asserts": "[]",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-09T01:22:50.858Z"
+}

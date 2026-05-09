@@ -1,0 +1,20 @@
+{
+  "source_id": "src_d44182697e02",
+  "receipt_id": "rcpt_d44182697e02_1778299508457",
+  "section_id": "02-model-file-identity",
+  "url": "https://api.github.com/repos/Comfy-Org/ComfyUI_frontend/issues?state=all&labels=bug&per_page=20",
+  "final_url": "https://api.github.com/repos/Comfy-Org/ComfyUI_frontend/issues?state=all&labels=bug&per_page=20",
+  "fetched_at": "2026-05-09T04:05:08.457Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "fix: add LoadImage and LoadVideo to canvas preview node types",
+  "source_type": "primary",
+  "relevance": "unknown",
+  "key_points": [],
+  "limitations": [],
+  "asserts": "(no assertion extracted)",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T04:05:21.416Z"
+}

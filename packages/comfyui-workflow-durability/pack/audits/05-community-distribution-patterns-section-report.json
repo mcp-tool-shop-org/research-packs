@@ -1,0 +1,97 @@
+{
+  "report_id": "secrep_1778312486053_05-community-distribution-patterns",
+  "section_id": "05-community-distribution-patterns",
+  "reported_at": "2026-05-09T07:41:26.053Z",
+  "research_os_version": "0.1.0",
+  "status": "gated",
+  "sources": {
+    "fetched_ok": 6,
+    "source_cards": 6,
+    "publishers": [
+      "Comfy-Org/ComfyUI"
+    ],
+    "primary_source_waiver": {
+      "status": "granted",
+      "reason": "ComfyUI core versioning behavior is defined by the canonical maintainer surfaces: Comfy-Org repositories, GitHub release data, and docs.comfy.org. Independent third-party sources can discuss usage but are not primary sources for platform version semantics.",
+      "compensating_controls": [
+        "Sources span multiple official artifact types: README, release metadata, CLI documentation, and docs.comfy.org pages.",
+        "GitHub API release data provides structured version history directly from the maintainer.",
+        "docs.comfy.org is the official documentation surface for workflow, custom node, and interface behavior.",
+        "Accepted claims still require span-grounded excerpts and promoted review decisions."
+      ]
+    }
+  },
+  "extraction": {
+    "candidate_claims": 108,
+    "claims_per_source": [
+      {
+        "source_id": "src_cea54dbbe5e3",
+        "claims": 39
+      },
+      {
+        "source_id": "src_d56e68044c24",
+        "claims": 23
+      },
+      {
+        "source_id": "src_e19e5e376175",
+        "claims": 21
+      },
+      {
+        "source_id": "src_fcdd7f1c90e9",
+        "claims": 20
+      },
+      {
+        "source_id": "src_e7045b6bccdb",
+        "claims": 5
+      }
+    ],
+    "claims_per_1k_words": 0.5610039893617021,
+    "excerpt_pages_processed": 3,
+    "excerpt_id_failures": 0,
+    "malformed_extractor_outputs": 0,
+    "near_duplicate_clusters": 0,
+    "weak_scope_count": 0,
+    "generic_scope_count": 22,
+    "density_flags": 1
+  },
+  "contradictions": {
+    "pairs_compared": 5778,
+    "contradiction_candidates": 0,
+    "overgeneralization_risks": 0
+  },
+  "review": {
+    "reviewed": true,
+    "accepted_for_synthesis": 15,
+    "needs_scope_repair": 2,
+    "needs_source_repair": 15,
+    "needs_contradiction_mapping": 0,
+    "rejected": 0,
+    "needs_human_review": 0,
+    "rejection_or_repair_by_category": [
+      {
+        "category": "source_quality_problem",
+        "count": 15
+      },
+      {
+        "category": "overgeneralized_claim",
+        "count": 2
+      },
+      {
+        "category": "definition_drift",
+        "count": 1
+      }
+    ]
+  },
+  "acceptance": {
+    "candidate_claims": 108,
+    "accepted_for_synthesis": 15,
+    "acceptance_ratio": 0.1388888888888889,
+    "accepted_per_source": 2.5,
+    "accepted_per_1k_words": 0.07791722074468085,
+    "top_rejection_category": "source_quality_problem",
+    "claim_overproduction_fired": false,
+    "synthesis_ready": true
+  },
+  "gate_verdict": "warn",
+  "gate_synthesis_eligible": true
+}

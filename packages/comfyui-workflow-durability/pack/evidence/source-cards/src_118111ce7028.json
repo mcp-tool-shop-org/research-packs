@@ -1,0 +1,24 @@
+{
+  "source_id": "src_118111ce7028",
+  "receipt_id": "rcpt_118111ce7028_1778295968137",
+  "section_id": "01-node-dependency-fragility",
+  "url": "https://raw.githubusercontent.com/Comfy-Org/ComfyUI-Manager/main/README.md",
+  "final_url": "https://raw.githubusercontent.com/Comfy-Org/ComfyUI-Manager/main/README.md",
+  "fetched_at": "2026-05-09T03:06:08.137Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "# ComfyUI Manager",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "# ComfyUI Manager **ComfyUI-Manager** is an extension designed to enhance the usability of [ComfyUI](https://github.com/comfyanonymous/ComfyUI).",
+    "It offers management functions to **install, remove, disable, and enable** various custom nodes of ComfyUI.",
+    "Furthermore, this extension provides a hub feature and convenience functions to access a wide range of information within ComfyUI."
+  ],
+  "limitations": [],
+  "asserts": "# ComfyUI Manager",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-09T03:06:08.345Z"
+}

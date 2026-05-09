@@ -1,0 +1,24 @@
+{
+  "source_id": "src_19f4e9c54b47",
+  "receipt_id": "rcpt_19f4e9c54b47_1778273557727",
+  "section_id": "06-comfyui-core-versioning",
+  "url": "https://api.github.com/repos/Comfy-Org/ComfyUI/releases?per_page=20",
+  "final_url": "https://api.github.com/repos/Comfy-Org/ComfyUI/releases?per_page=20",
+  "fetched_at": "2026-05-08T20:52:37.727Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "v0.20.1",
+  "source_type": "unknown",
+  "relevance": "medium",
+  "key_points": [
+    "SUPIR model support added",
+    "Optimizations for Ernie inference speed",
+    "Fixes and improvements in various nodes"
+  ],
+  "limitations": [],
+  "asserts": "ComfyUI v0.20.1 released with new features, optimizations, fixes, and improvements.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-08T20:53:08.521Z"
+}

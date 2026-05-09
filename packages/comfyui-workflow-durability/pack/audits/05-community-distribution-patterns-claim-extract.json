@@ -1,0 +1,24 @@
+{
+  "receipt_id": "cle_1778309288131_05-community-distribution-patterns",
+  "section_id": "05-community-distribution-patterns",
+  "extracted_at": "2026-05-09T06:48:08.131Z",
+  "research_os_version": "0.1.0",
+  "extractor": "ollama-intern",
+  "extraction_method": "ollama_intern_propositional_paged",
+  "sources_processed": 5,
+  "sources_skipped": 0,
+  "sources_failed": 1,
+  "excerpt_ledgers_built": 3,
+  "claims_added": 108,
+  "claims_deduped": 0,
+  "claims_rejected_ungrounded": 0,
+  "claims_rejected_excerpt_id_missing": 0,
+  "claims_rejected_excerpt_id_malformed": 0,
+  "failures": [
+    {
+      "source_id": "src_07437ed8d167",
+      "reason": "This operation was aborted",
+      "kind": "extractor_timeout"
+    }
+  ]
+}

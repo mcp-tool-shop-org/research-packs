@@ -1,0 +1,89 @@
+{
+  "summary_id": "tris_1778274978103_06-comfyui-core-versioning",
+  "section_id": "06-comfyui-core-versioning",
+  "triaged_at": "2026-05-08T21:16:18.103Z",
+  "research_os_version": "0.1.0",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 377,
+  "decisions": {
+    "selected_for_review": 85,
+    "needs_scope_repair": 90,
+    "parked_overdense_source": 184,
+    "parked_weak_scope": 18
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 85,
+  "selected_per_source": [
+    {
+      "source_id": "src_f311c690b666",
+      "selected": 10,
+      "total": 194
+    },
+    {
+      "source_id": "src_990ca9d75d8b",
+      "selected": 10,
+      "total": 32
+    },
+    {
+      "source_id": "src_f4ce9a16c6b4",
+      "selected": 10,
+      "total": 31
+    },
+    {
+      "source_id": "src_e804faef8c79",
+      "selected": 10,
+      "total": 24
+    },
+    {
+      "source_id": "src_fbbdece73b76",
+      "selected": 9,
+      "total": 23
+    },
+    {
+      "source_id": "src_55456d4dedfa",
+      "selected": 10,
+      "total": 22
+    },
+    {
+      "source_id": "src_8a319c76148c",
+      "selected": 9,
+      "total": 14
+    },
+    {
+      "source_id": "src_bd638b8de92f",
+      "selected": 3,
+      "total": 11
+    },
+    {
+      "source_id": "src_b507da5fa466",
+      "selected": 6,
+      "total": 6
+    },
+    {
+      "source_id": "src_07437ed8d167",
+      "selected": 1,
+      "total": 6
+    },
+    {
+      "source_id": "src_2ae04b870db8",
+      "selected": 3,
+      "total": 5
+    },
+    {
+      "source_id": "src_df4ad7d6f9c0",
+      "selected": 0,
+      "total": 5
+    },
+    {
+      "source_id": "src_19f4e9c54b47",
+      "selected": 3,
+      "total": 3
+    },
+    {
+      "source_id": "src_155d801f1917",
+      "selected": 1,
+      "total": 1
+    }
+  ]
+}

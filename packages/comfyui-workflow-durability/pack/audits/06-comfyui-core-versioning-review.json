@@ -1,0 +1,4138 @@
+{
+  "section_id": "06-comfyui-core-versioning",
+  "reviewer": "ollama-intern",
+  "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+  "reviewed_at": "2026-05-09T00:51:57.709Z",
+  "candidate_claims": 85,
+  "findings": [
+    {
+      "finding_id": "fnd_424e5cbf0883",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_1",
+        "clm_8a319c76148c_ollama_intern_3",
+        "clm_8a319c76148c_ollama_intern_4",
+        "clm_8a319c76148c_ollama_intern_5",
+        "clm_8a319c76148c_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "Claim overstates the functionality of ComfyUI's desktop release.",
+      "evidence": "The source mentions GitHub Copilot, Models, MCP Registry, Codespaces, and Code Review, but these are features of GitHub itself, not necessarily included in ComfyUI's desktop release.",
+      "required_action": "Reviewers should ensure that claimed functionalities are explicitly stated as part of the ComfyUI desktop release.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.705Z"
+    },
+    {
+      "finding_id": "fnd_1f9a93a38f88",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_8",
+        "clm_8a319c76148c_ollama_intern_9",
+        "clm_8a319c76148c_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "claim_overproduction",
+      "severity": "info",
+      "summary": "Multiple redundant claims about ComfyUI desktop release versions.",
+      "evidence": "Claims clm_8a319c76148c_ollama_intern_8, clm_8a319c76148c_ollama_intern_9, and clm_8a319c76148c_ollama_intern_14 all relate to ComfyUI desktop release versions.",
+      "required_action": "Consolidate these claims into one that covers the version changes across both releases.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.705Z"
+    },
+    {
+      "finding_id": "fnd_ffba06978e70",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_2",
+        "clm_fbbdece73b76_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "Claim overstates the ease of ComfyUI installation across platforms.",
+      "evidence": "The source mentions cross-platform compatibility but does not explicitly state 'easy installation' for all platforms.",
+      "required_action": "Clarify or narrow down the claim to reflect the actual information provided in the source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.705Z"
+    },
+    {
+      "finding_id": "fnd_d489142fe13b",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_2",
+        "clm_fbbdece73b76_ollama_intern_4",
+        "clm_fbbdece73b76_ollama_intern_5",
+        "clm_fbbdece73b76_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "definition_drift",
+      "severity": "info",
+      "summary": "Different claims use 'ComfyUI' and 'Comfy CLI' interchangeably.",
+      "evidence": "Some claims refer to ComfyUI while others refer to Comfy CLI without clarifying the distinction.",
+      "required_action": "Consolidate or define terms consistently across claims.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.705Z"
+    },
+    {
+      "finding_id": "fnd_3ebfdac59c2e",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_2",
+        "clm_fbbdece73b76_ollama_intern_4",
+        "clm_fbbdece73b76_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "claim_overproduction",
+      "severity": "warn",
+      "summary": "Multiple redundant claims about Comfy CLI's cross-platform compatibility.",
+      "evidence": "Claims 2, 4, and 5 all state similar information about cross-platform compatibility.",
+      "required_action": "Combine or remove duplicate claims to avoid synthesis noise.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.705Z"
+    },
+    {
+      "finding_id": "fnd_10c2207eee42",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_30",
+        "clm_b507da5fa466_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b",
+        "src_b507da5fa466"
+      ],
+      "category": "definition_drift",
+      "severity": "info",
+      "summary": "Different claims use 'release' inconsistently",
+      "evidence": "clm_990ca9d75d8b_ollama_intern_30 asserts 'immutable release', while clm_b507da5fa466_ollama_intern_1 refers to packaging approaches",
+      "required_action": "Clarify what is meant by 'release' in future claims",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.705Z"
+    },
+    {
+      "finding_id": "fnd_bd46a17509f6",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_13",
+        "clm_990ca9d75d8b_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "claim_overproduction",
+      "severity": "warn",
+      "summary": "Redundant claims about new nodes added in ComfyUI version releases",
+      "evidence": "clm_990ca9d75d8b_ollama_intern_13 and clm_990ca9d75d8b_ollama_intern_14 both assert new nodes added but with different details",
+      "required_action": "Merge or remove one of the duplicate claims",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.705Z"
+    },
+    {
+      "finding_id": "fnd_6680e0ad8cd9",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_32"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim about user reaction is not synthesis-worthy",
+      "evidence": "clm_990ca9d75d8b_ollama_intern_32 restates user reaction without context or deeper insight",
+      "required_action": "Remove claim or provide more analysis on its significance",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_8d3bceb89e0b",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f4ce9a16c6b4_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "info",
+      "summary": "Claim overrepresents the frequency of ComfyUI Core releases.",
+      "evidence": "The source mentions 'roughly every 2 weeks', but the claim states 'every 2 weeks' without qualification.",
+      "required_action": "Rephrase the claim to accurately reflect the source's statement about release frequency.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_318f3b3e5e3a",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f4ce9a16c6b4_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "warn",
+      "summary": "Claim restates common keybinding without additional context or synthesis.",
+      "evidence": "The claim merely restates a keybinding from the source without adding new insights.",
+      "required_action": "Either remove the claim or add additional value by explaining how this keybinding is used in practice.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_37554dc6337a",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f4ce9a16c6b4_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "category": "claim_overproduction",
+      "severity": "warn",
+      "summary": "Multiple claims from the same source present low-leverage details about ComfyUI installation methods.",
+      "evidence": "Claims clm_f4ce9a16c6b4_ollama_intern_12 and possibly others provide trivial details that could be merged or synthesized into a single, higher-level claim.",
+      "required_action": "Consider merging or synthesizing these claims to reduce redundancy and noise in the pack.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_41564c84837c",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f4ce9a16c6b4_ollama_intern_25"
+      ],
+      "source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim overstates the support for C-style comments in dynamic prompts.",
+      "evidence": "The source only explicitly mentions `// comment` and `/* comment */`, but the claim implies all types of C-style comments are supported.",
+      "required_action": "Amend the claim to accurately reflect the specific types of C-style comments mentioned in the source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_2f84ecfc132f",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f4ce9a16c6b4_ollama_intern_30"
+      ],
+      "source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "category": "recommendation_exceeds_evidence",
+      "severity": "block",
+      "summary": "The claim implies user endorsement for GPU recommendations, but the source only provides information.",
+      "evidence": "The source merely provides a link to GPU recommendations without endorsing them or mentioning their reliability.",
+      "required_action": "Remove any implied endorsement or reword the claim to reflect that it's simply providing information.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_52bd0de665ee",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_e804faef8c79_ollama_intern_2",
+        "clm_e804faef8c79_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_e804faef8c79"
+      ],
+      "category": "hidden_synthesis",
+      "severity": "warn",
+      "summary": "The claim synthesizes a conclusion about comfy-cli's cross-platform compatibility not explicitly stated in the source.",
+      "evidence": "The source mentions compatibility with specific platforms (Windows, macOS, Linux), but it doesn't explicitly state 'cross-platform compatibility'.",
+      "required_action": "Either remove the synthesized part or add explicit support from the source to strengthen the claim.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_bcd4fb5615f4",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_e804faef8c79_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_e804faef8c79"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim restates the obvious functionality of the 'comfy which' command.",
+      "evidence": "The claim merely states that 'comfy which' checks the path of the target workspace, which is its inherent function and doesn't provide new insight or context.",
+      "required_action": "Remove this claim as it's low-leverage detail.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_a3f38961acca",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f311c690b666_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_f311c690b666"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "info",
+      "summary": "Claim overrepresents the functionality of ComfyUI's API for job management.",
+      "evidence": "`Get execution history (v2)` is deprecated but still available due to compatibility reasons, not because it's actively maintained or recommended.",
+      "required_action": "Rephrase claim clm_f311c690b666_ollama_intern_8 to clarify that it covers both active and deprecated APIs for job management.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_92c5e5a22750",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f311c690b666_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_f311c690b666"
+      ],
+      "category": "hidden_synthesis",
+      "severity": "warn",
+      "summary": "Claim implies that ComfyUI offers APIs for cancelling pending jobs without evidence.",
+      "evidence": "`/api/queue` endpoint is not mentioned in the provided source and does not seem to be related to cancelling pending jobs according to the documentation.",
+      "required_action": "Remove or rephrase claim clm_f311c690b666_ollama_intern_10 regarding canceling pending jobs, as it lacks sufficient evidence from the provided source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_753cf489d1ce",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "hidden_synthesis",
+      "severity": "warn",
+      "summary": "Claim suggests a conclusion not present in the cited source",
+      "evidence": "The source mentions 'Handling custom node dependency conflicts' but doesn't elaborate on how to do it.",
+      "required_action": "Either modify the claim to reflect the actual content of the source or provide additional context for the synthesis made.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_6afadff598c9",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "recommendation_exceeds_evidence",
+      "severity": "info",
+      "summary": "Claim implies recommendation without sufficient evidence",
+      "evidence": "The source merely states that ComfyUI Manager is 'a highly significant tool' but doesn't explicitly recommend it over other methods.",
+      "required_action": "Either amend the claim to reflect the nuance in the source or provide additional context for the recommendation made.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_087fff5f5bf4",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim provides low-leverage detail that's not synthesis-worthy",
+      "evidence": "Checking if Git is installed isn't directly related to the purpose of the section.",
+      "required_action": "Consider removing this claim or including it only in a context where checking for Git installation is relevant.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_551ddf1e8c02",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_16"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "hidden_synthesis",
+      "severity": "warn",
+      "summary": "Claim asserts a conclusion not present in the cited source.",
+      "evidence": "Source discusses 'two different plugin version management methods' but does not explicitly state which method is better or recommended.",
+      "required_action": "Remove or adjust claim clm_55456d4dedfa_ollama_intern_16 to avoid asserting an unsupported conclusion.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_606da2c0592a",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "info",
+      "summary": "Claim overgeneralizes the scope of custom node installation methods.",
+      "evidence": "Source mentions 'two different plugin version management methods' but claim asserts that manual installation is never recommended.",
+      "required_action": "Revisit claim clm_55456d4dedfa_ollama_intern_9 and adjust to reflect the limitations of manual installation rather than recommending against it entirely.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_14a22747620f",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_19",
+        "clm_55456d4dedfa_ollama_intern_20",
+        "clm_bd638b8de92f_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa",
+        "src_bd638b8de92f"
+      ],
+      "category": "claim_overproduction",
+      "severity": "info",
+      "summary": "Cluster of redundant claims about ComfyUI Manager.",
+      "evidence": "Claims clm_55456d4dedfa_ollama_intern_19, clm_55456d4dedfa_ollama_intern_20, and clm_bd638b8de92f_ollama_intern_1 provide similar information about ComfyUI Manager.",
+      "required_action": "Consider merging these claims or removing duplicates to reduce synthesis noise.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_f1b5d0d251db",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_bd638b8de92f_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_bd638b8de92f"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "Claim overstates the function of a custom node's main function.",
+      "evidence": "The source only discusses the functionality of the choose_image function for a specific example, but the claim generalizes this to all custom nodes in ComfyUI.",
+      "required_action": "Rephrase or qualify the claim to reflect the specific example discussed in the source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_89b9e883fef7",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_bd638b8de92f_ollama_intern_5",
+        "clm_bd638b8de92f_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_bd638b8de92f"
+      ],
+      "category": "definition_drift",
+      "severity": "warn",
+      "summary": "Term 'custom node' used differently across claims.",
+      "evidence": "In clm_bd638b8de92f_ollama_intern_5, 'custom node' refers to a specific example, while in other claims from the same source, it's used more broadly.",
+      "required_action": "Clarify the context or usage of 'custom node' in each claim.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_28a05ce93533",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_19f4e9c54b47_ollama_intern_1",
+        "clm_19f4e9c54b47_ollama_intern_2",
+        "clm_19f4e9c54b47_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_19f4e9c54b47"
+      ],
+      "category": "claim_overproduction",
+      "severity": "info",
+      "summary": "Multiple redundant claims from the same source about a single release.",
+      "evidence": "Three claims (clm_19f4e9c54b47_ollama_intern_1, clm_19f4e9c54b47_ollama_intern_2, clm_19f4e9c54b47_ollama_intern_3) from the same source report different aspects of the same release.",
+      "required_action": "Consider merging or prioritizing these claims to avoid redundancy.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_0d93e0a4c0fe",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "scope_widening",
+      "severity": "warn",
+      "summary": "The asserts uses 'includes' which implies a universal quantification but the scope is narrow ('This release')",
+      "evidence": "The desktop release includes GitHub Models for managing and comparing prompts.",
+      "required_action": "Either provide evidence that this is true for all releases or rephrase to make it clear that this is only true for some or one release.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_3533f652d2fe",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "temporal_mismatch",
+      "severity": "block",
+      "summary": "The asserts implies a current state ('has been bumped') but the scope mentions an old date or stale context ('on GitHub')",
+      "evidence": "The desktop version has been bumped to 0.8.33.",
+      "required_action": "Update the asserts to reflect the current state or clarify that it refers to a specific past state.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_30e8361aa241",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "scope_widening",
+      "severity": "block",
+      "summary": "The asserts uses 'must' but the scope is specific to frontend testing.",
+      "evidence": "'Node.js and npm must be installed...'",
+      "required_action": "Narrow down the scope of claim asserts to align with its purpose.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_7879e8df6b36",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "temporal_mismatch",
+      "severity": "block",
+      "summary": "The asserts implies a current/recent state but the scope mentions 'GitHub page of ComfyUI' without specifying its timeliness.",
+      "evidence": "'ComfyUI provides releases for users to access.'",
+      "required_action": "Specify the date or context of the GitHub page mentioned in the claim asserts.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_f00a416d988e",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "scope_widening",
+      "severity": "warn",
+      "summary": "The asserts uses 'has been added' with a universal quantifier, but the scope is narrow (a single node).",
+      "evidence": "asserts: A new node for the Topaz model has been added in the API Nodes category.\nscope: ComfyUI version releases",
+      "required_action": "Narrow down or specify that this addition applies only to this particular release.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_a6b1f5fe647f",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_b507da5fa466_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_b507da5fa466"
+      ],
+      "category": "temporal_mismatch",
+      "severity": "block",
+      "summary": "The asserts implies a current state ('provides packaging approaches'), but the scope mentions the ComfyUI Wiki page (which could be outdated).",
+      "evidence": "asserts: ComfyUI provides packaging approaches.\nscope: On the ComfyUI Wiki page.",
+      "required_action": "Check if the packaging approaches are still accurate and up-to-date, or modify the asserts to reflect what was available on the wiki at that time.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_8bf8a2756dd1",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f4ce9a16c6b4_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "category": "scope_widening",
+      "severity": "block",
+      "summary": "The asserts uses universal quantifier 'every' but the scope is limited to ComfyUI's packaging approaches.",
+      "evidence": "Every 2+ weeks frontend updates are merged into the core repository",
+      "required_action": "Rephrase the asserts to reflect the specific context mentioned in the scope.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_22e065135774",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f4ce9a16c6b4_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "category": "temporal_mismatch",
+      "severity": "warn",
+      "summary": "The asserts implies a current state but the evidence excerpt mentions an old context.",
+      "evidence": "Releases a new major stable version (e.g., v0.7.0) roughly every 2 weeks.",
+      "required_action": "Update the asserts to match the current release pattern, if it has changed since the referenced source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_2f8a9fa31e40",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f4ce9a16c6b4_ollama_intern_24"
+      ],
+      "source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "category": "scope_widening",
+      "severity": "block",
+      "summary": "The asserts uses 'all' but the evidence_excerpt only mentions a specific case.",
+      "evidence": "You can use {day|night}, for wildcard/dynamic prompts.",
+      "required_action": "Remove 'all' from the asserts or provide more evidence to support its usage.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_fa833c7ae7c0",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_e804faef8c79_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_e804faef8c79"
+      ],
+      "category": "scope_widening",
+      "severity": "block",
+      "summary": "'comfy node simple-show installed' shows the list of currently installed nodes, but scope mentions 'all', implying all nodes are shown which is not necessarily true.",
+      "evidence": "'comfy node simple-show installed'",
+      "required_action": "Revise scope to reflect specific nodes or clarify that only installed nodes are shown.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_64e6e03d24c0",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f311c690b666_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_f311c690b666"
+      ],
+      "category": "temporal_mismatch",
+      "severity": "block",
+      "summary": "'ComfyUI offers functionality to create, delete, and log in to user accounts' implies current state but evidence excerpt mentions deprecated endpoints.",
+      "evidence": "- [Create a Comfy account](https://docs.comfy.org/account/create-account.md): Learn how to create a new Comfy account for ComfyUI...",
+      "required_action": "Update the assert statement to reflect the current practices or clarify that the scope includes historical practices.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_f62c381b8af3",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f311c690b666_ollama_intern_104"
+      ],
+      "source_ids": [
+        "src_f311c690b666"
+      ],
+      "category": "scope_widening",
+      "severity": "warn",
+      "summary": "'All' is used but scope is narrow, mentioning only one node.",
+      "evidence": "ComfyUI provides complete documentation for all its nodes.",
+      "required_action": "Narrow the asserts to mention specific nodes or modify 'all' to a more accurate quantifier.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_8cba89fb5889",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "temporal_mismatch",
+      "severity": "block",
+      "summary": "'Currently' implies recent state but scope mentions 'is'.",
+      "evidence": "ComfyUI currently supports installing custom nodes through multiple methods, including:",
+      "required_action": "Change 'currently' to a timeless phrase like 'supports' or provide an old date.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_a7b6e0276f87",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "scope_widening",
+      "severity": "warn",
+      "summary": "The asserts uses 'is based on' but the scope is narrow (ComfyUI Manager).",
+      "evidence": "Custom node version control is actually based on Git version control.",
+      "required_action": "Change 'is based on' to 'can be managed through' in the asserts to reflect the narrower scope of ComfyUI Manager.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_c7e693245165",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_19"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "temporal_mismatch",
+      "severity": "block",
+      "summary": "The asserts implies a current state but the scope mentions an old date ('future iterations').",
+      "evidence": "In future iterations, we will greatly optimize the use of ComfyUI Manager",
+      "required_action": "Change 'will greatly optimize' to reflect the past tense or update the scope to indicate that these are current practices.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_76753865ca14",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_bd638b8de92f_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_bd638b8de92f"
+      ],
+      "category": "scope_widening",
+      "severity": "warn",
+      "summary": "The assert 'all' implies a universal scope but the scope is limited to 'the example node'.",
+      "evidence": "'Initially, the node will return the image which is, on average, the lightest in color;'",
+      "required_action": "Narrow down the assert to specify that it applies only to the example node.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_99f5dc4e57a1",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_19f4e9c54b47_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_19f4e9c54b47"
+      ],
+      "category": "temporal_mismatch",
+      "severity": "block",
+      "summary": "The assert implies a current/recent state but the scope mentions an old date (October 19, 2023).",
+      "evidence": "'ComfyUI v0.20.1 was released on October 19, 2023.'",
+      "required_action": "Update the claim to reflect the current state or remove it altogether.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_08b7e074747f",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8a319c76148c_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The desktop release includes GitHub Copilot for writing code with AI assistance.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_272700890d94",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_8a319c76148c_ollama_intern_1 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_a641c588a870",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8a319c76148c_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The desktop release includes GitHub Models for managing and comparing prompts.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_d1986df2731c",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_8a319c76148c_ollama_intern_3 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_23e005e80fa4",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8a319c76148c_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The desktop release includes MCP Registry for integrating external tools.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_190c418cf7ce",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_8a319c76148c_ollama_intern_4 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_3e67b6660884",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8a319c76148c_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The desktop release includes Codespaces for instant dev environments.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_bd7d53997d4d",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_8a319c76148c_ollama_intern_5 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_899d96323485",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8a319c76148c_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The desktop release includes Code Review for managing code changes.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_5aee0cc2d7fa",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_8a319c76148c_ollama_intern_6 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_40bde91cda41",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8a319c76148c_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The desktop version has been bumped to 0.8.33.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_63b36a681d86",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_8a319c76148c_ollama_intern_8 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_c848b0f15712",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8a319c76148c_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The full changelog is available for versions v0.8.32 to v0.8.33.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_eff9963cf759",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_8a319c76148c_ollama_intern_9 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_8610a8324d82",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8a319c76148c_ollama_intern_11 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The Windows download link is https://download.comfy.org/windows/nsis/x64.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_9e90b56ebf91",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_8a319c76148c_ollama_intern_11 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_a09123835b93",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8a319c76148c_ollama_intern_14 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The ComfyUI desktop app has been updated to version 0.18.3.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_607620eedf69",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_8a319c76148c_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_8a319c76148c"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_8a319c76148c_ollama_intern_14 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_08bf882bf455",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_fbbdece73b76_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Comfy CLI is a command line tool for managing ComfyUI.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_8befb652fc2d",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_fbbdece73b76_ollama_intern_1 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_bdfd7220953c",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_fbbdece73b76_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Comfy CLI allows easy installation of ComfyUI with a single command.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_7f57f3c17c7e",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_fbbdece73b76_ollama_intern_2 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_f2c149a38aca",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_fbbdece73b76_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Comfy CLI enables cross-platform compatibility for Windows, macOS, and Linux.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_f0b2320c7ef7",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_fbbdece73b76_ollama_intern_4 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_1a7cc491b959",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_fbbdece73b76_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: To install Comfy CLI, Python 3.9 or higher is required.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_c3a59e037a47",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_fbbdece73b76_ollama_intern_5 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_a94cbf259469",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_fbbdece73b76_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Running 'comfy install' downloads and sets up the latest version of ComfyUI.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_ad36bc6792af",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_fbbdece73b76_ollama_intern_6 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_860b5fc1ed5e",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_fbbdece73b76_ollama_intern_14 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Node.js and npm must be installed to build the frontend.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_3fb9ebe8900c",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_fbbdece73b76_ollama_intern_14 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_ffaecdab3903",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_19"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_fbbdece73b76_ollama_intern_19 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The action cannot be performed at the current moment.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_968d877e1a5b",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI provides releases for users to access.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_e24f54279caf",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_1 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_09323ade7754",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI integrates with GitHub Copilot for improved coding assistance.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_abaab78ec30b",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_2 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_0fd8f3508949",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI allows users to manage and compare prompts with GitHub Models.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_1089f06d18d7",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_4 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_0304a81c3cda",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI provides integration with external tools through the MCP Registry.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_ebf97ea59621",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_5 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_dceb181b683e",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_13 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Qwen 8B has been made compatible with the TextGenerate node.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_0c8b6e039138",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_13 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_aabceda0c6da",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_14 has no 'not' constraint recorded.",
+      "evidence": "Asserts: A new node for the Topaz model has been added in the API Nodes category.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_00ab52f6010f",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_14 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_886a42b6e4ea",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_16"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_16 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The blur and sharpen nodes now work with fp16 intermediates.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_5d48695ed56a",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_16"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_16 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_f9625ba9b26a",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_17 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The register image/svg+xml MIME type for .svg files has been fixed.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_7b4c30c19be7",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_17 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_9d1da1ab1156",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_30"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_30 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The release is immutable; only the title and notes can be modified.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_78d036e09c1e",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_30"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_30 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_b0c658c1df8c",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_32"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_32 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Users reacted positively to the update from v0.17.0 to v0.17.1.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_893732f3a853",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_990ca9d75d8b_ollama_intern_32"
+      ],
+      "source_ids": [
+        "src_990ca9d75d8b"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_990ca9d75d8b_ollama_intern_32 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_12b5a8055a2a",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_155d801f1917_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_155d801f1917"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_155d801f1917_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI did not introduce any new breaking changes.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_1fc74a821ee9",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_155d801f1917_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_155d801f1917"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_155d801f1917_ollama_intern_1 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_239acaa9ef8c",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_b507da5fa466_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_b507da5fa466"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_b507da5fa466_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI provides packaging approaches.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_48c94dc34af6",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_b507da5fa466_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_b507da5fa466"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_b507da5fa466_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: GitHub Copilot is mentioned as a way to write better code with AI.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_2e594c5bbaea",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_b507da5fa466_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_b507da5fa466"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_b507da5fa466_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: GitHub Spark is mentioned for building and deploying intelligent apps.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_5fb4129b12c5",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_b507da5fa466_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_b507da5fa466"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_b507da5fa466_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The MCP Registry is mentioned for integrating external tools.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_0a476688a1b8",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_b507da5fa466_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_b507da5fa466"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_b507da5fa466_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Codespaces are mentioned for instant development environments.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_824e7c2fe325",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_b507da5fa466_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_b507da5fa466"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_b507da5fa466_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: GitHub Sponsors is mentioned for funding open source developers.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_10116bd5e3fd",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_20"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_fbbdece73b76_ollama_intern_20 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI-Manager can be disabled by not passing any manager flags to ComfyUI.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_85aa31ba32ca",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_20"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_fbbdece73b76_ollama_intern_20 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_419eefc8d4f1",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_23"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_fbbdece73b76_ollama_intern_23 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The user cannot perform an action at the current moment.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_838e6b6f4af1",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_fbbdece73b76_ollama_intern_23"
+      ],
+      "source_ids": [
+        "src_fbbdece73b76"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_fbbdece73b76_ollama_intern_23 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_033fe60feb93",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f4ce9a16c6b4_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f4ce9a16c6b4_ollama_intern_7 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI Core releases a new major stable version roughly every 2 weeks.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_de4ab9b85245",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f4ce9a16c6b4_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f4ce9a16c6b4_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI Desktop builds a new release using the latest stable core version.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_18110ff0c53c",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f4ce9a16c6b4_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f4ce9a16c6b4_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI Frontend updates are merged into the core repository every 2+ weeks.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_8f8e0248f622",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f4ce9a16c6b4_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f4ce9a16c6b4_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: `Ctrl` + `Enter` queues up the current graph for generation.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_e4f77f1d1e9b",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f4ce9a16c6b4_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f4ce9a16c6b4_ollama_intern_12 has no 'not' constraint recorded.",
+      "evidence": "Asserts: You can install and start ComfyUI using comfy-cli.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_e19df61d647d",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f4ce9a16c6b4_ollama_intern_24"
+      ],
+      "source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f4ce9a16c6b4_ollama_intern_24 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Wildcard characters in prompts can be dynamically replaced.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_8432e1118c2e",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f4ce9a16c6b4_ollama_intern_25"
+      ],
+      "source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f4ce9a16c6b4_ollama_intern_25 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Dynamic prompts support C-style comments.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.706Z"
+    },
+    {
+      "finding_id": "fnd_106d754afeae",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f4ce9a16c6b4_ollama_intern_27"
+      ],
+      "source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f4ce9a16c6b4_ollama_intern_27 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The default preview method can be enabled using `--preview-method auto`.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_2c45410e9451",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f4ce9a16c6b4_ollama_intern_29"
+      ],
+      "source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f4ce9a16c6b4_ollama_intern_29 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The current ComfyUI frontend will be a snapshot from the legacy repository.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_59b85b3c5c37",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f4ce9a16c6b4_ollama_intern_30"
+      ],
+      "source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f4ce9a16c6b4_ollama_intern_30 has no 'not' constraint recorded.",
+      "evidence": "Asserts: There are recommendations available for purchasing a GPU suitable for ComfyUI.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_9382710b45b9",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_e804faef8c79_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_e804faef8c79"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e804faef8c79_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI is installed and managed using comfy-cli",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_7930069e1e51",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_e804faef8c79_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_e804faef8c79"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e804faef8c79_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: comfy-cli provides easy installation of ComfyUI with a single command",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_f04ad555f2ac",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_e804faef8c79_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_e804faef8c79"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e804faef8c79_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: comfy-cli manages custom nodes for ComfyUI's functionality extension",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_0fae981bb7de",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_e804faef8c79_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_e804faef8c79"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e804faef8c79_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: comfy-cli allows installation of ComfyUI into a specified workspace path",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_709e2a7426d6",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_e804faef8c79_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_e804faef8c79"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e804faef8c79_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: 'comfy which' command can be used to check the path of the target workspace.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_6ac34dd55808",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_e804faef8c79_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_e804faef8c79"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e804faef8c79_ollama_intern_11 has no 'not' constraint recorded.",
+      "evidence": "Asserts: 'comfy set-default' command sets the default workspace path for ComfyUI.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_e68f693dd0da",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_e804faef8c79_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_e804faef8c79"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e804faef8c79_ollama_intern_15 has no 'not' constraint recorded.",
+      "evidence": "Asserts: `comfy node simple-show installed` shows the list of currently installed nodes.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_2cea3ae5f546",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_e804faef8c79_ollama_intern_16"
+      ],
+      "source_ids": [
+        "src_e804faef8c79"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e804faef8c79_ollama_intern_16 has no 'not' constraint recorded.",
+      "evidence": "Asserts: `comfy node install comfyui-impact-pack` installs a specific custom node pack.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_fb23c124cdc6",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_e804faef8c79_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_e804faef8c79"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e804faef8c79_ollama_intern_17 has no 'not' constraint recorded.",
+      "evidence": "Asserts: `comfy node restore-snapshot <snapshot name>` restores a specific snapshot.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_2185029c3bb0",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_e804faef8c79_ollama_intern_24"
+      ],
+      "source_ids": [
+        "src_e804faef8c79"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e804faef8c79_ollama_intern_24 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The `--uv-compile` flag is the default behavior for all custom node operations.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_fdf3f525e6e5",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f311c690b666_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_f311c690b666"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f311c690b666_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI offers functionality to create, delete, and log in to user accounts.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_1b407fc9500d",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f311c690b666_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_f311c690b666"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f311c690b666_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI supports direct file upload and URL-based upload methods.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_31926401ac73",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f311c690b666_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_f311c690b666"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f311c690b666_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI provides job management APIs for status, history, and queue information.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_741449f36d0d",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f311c690b666_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_f311c690b666"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f311c690b666_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI offers APIs for listing jobs with pagination and filtering.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_ba71153750c5",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f311c690b666_ollama_intern_100"
+      ],
+      "source_ids": [
+        "src_f311c690b666"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f311c690b666_ollama_intern_100 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI offers detailed documentation for the LoraLoaderBypassModelOnly node.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_f10ff944747d",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f311c690b666_ollama_intern_101"
+      ],
+      "source_ids": [
+        "src_f311c690b666"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f311c690b666_ollama_intern_101 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI provides documentation for the MagnificImageStyleTransferNode node.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_d2fe999942be",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f311c690b666_ollama_intern_103"
+      ],
+      "source_ids": [
+        "src_f311c690b666"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f311c690b666_ollama_intern_103 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI provides documentation for the MagnificImageUpscalerPreciseV2Node node.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_d00eb1266203",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f311c690b666_ollama_intern_104"
+      ],
+      "source_ids": [
+        "src_f311c690b666"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f311c690b666_ollama_intern_104 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI provides complete documentation for MeshyTextureNode.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_d0e87e1a9a45",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f311c690b666_ollama_intern_105"
+      ],
+      "source_ids": [
+        "src_f311c690b666"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f311c690b666_ollama_intern_105 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI offers detailed information about MinimaxHailuoVideoNode.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_497ca0981a48",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_f311c690b666_ollama_intern_106"
+      ],
+      "source_ids": [
+        "src_f311c690b666"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f311c690b666_ollama_intern_106 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI provides comprehensive documentation for MinimaxImageToVideoNode.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_b4b4fedd8efe",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_07437ed8d167_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_07437ed8d167"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_07437ed8d167_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI uses nodes connected in a network to form workflows.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_3ff71328db4d",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55456d4dedfa_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Custom Nodes can be installed through ComfyUI Manager.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_197dbc1f7e83",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55456d4dedfa_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Installing via ComfyUI Manager is the recommended method for custom nodes.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_7a6503d02b07",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55456d4dedfa_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Custom Node dependency conflicts can occur and need to be handled.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_4e1e379fcb3c",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55456d4dedfa_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: First, ensure Git is installed before installing custom nodes.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_fe79abe76a1d",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55456d4dedfa_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Custom nodes can be installed using the `git clone` command.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_6972db16e094",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55456d4dedfa_ollama_intern_15 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Custom node version control is based on Git version control.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_0d39434950f6",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_16"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55456d4dedfa_ollama_intern_16 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI Manager integrates version management functionality for custom nodes.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_872f4b42028c",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_19"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55456d4dedfa_ollama_intern_19 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI Manager has officially joined Comfy Org as a core dependency of ComfyUI.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_4c110d68aaf5",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_20"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55456d4dedfa_ollama_intern_20 has no 'not' constraint recorded.",
+      "evidence": "Asserts: To install ComfyUI Manager, Git must be installed first.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_17bfc681c5f7",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_2ae04b870db8_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_2ae04b870db8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_2ae04b870db8_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI introduces Nodes 2.0, a Vue-based node rendering system.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_5bafad8c6dbd",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_2ae04b870db8_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_2ae04b870db8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_2ae04b870db8_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Nodes 2.0 is available in ComfyUI Desktop, portable, and stable releases.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_13b2eb10a455",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_2ae04b870db8_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_2ae04b870db8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_2ae04b870db8_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Some custom nodes may require updates to be fully supported in Nodes 2.0.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_4e75dbc0fd7d",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_bd638b8de92f_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_bd638b8de92f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_bd638b8de92f_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The custom node creation process will guide users step-by-step.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_963894fe0835",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_bd638b8de92f_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_bd638b8de92f"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_bd638b8de92f_ollama_intern_1 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_86fec69aaad5",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_bd638b8de92f_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_bd638b8de92f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_bd638b8de92f_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The example custom node will initially return the lightest image from a batch.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_12a4240ccc9f",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_bd638b8de92f_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_bd638b8de92f"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_bd638b8de92f_ollama_intern_2 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_cc50e96c52d8",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_bd638b8de92f_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_bd638b8de92f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_bd638b8de92f_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The main function of a custom node receives named arguments and returns a tuple.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_6a61d3726b6b",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_bd638b8de92f_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_bd638b8de92f"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_bd638b8de92f_ollama_intern_5 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_b31a0e036354",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_19f4e9c54b47_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_19f4e9c54b47"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_19f4e9c54b47_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI v0.20.1 was released on October 19, 2023.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_1faafa189256",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_19f4e9c54b47_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_19f4e9c54b47"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_19f4e9c54b47_ollama_intern_1 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_69b10704e22c",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_19f4e9c54b47_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_19f4e9c54b47"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_19f4e9c54b47_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The release notes include a URL to the assets of this release.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_01929d08abf1",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_19f4e9c54b47_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_19f4e9c54b47"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_19f4e9c54b47_ollama_intern_2 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_3018048aecf2",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_19f4e9c54b47_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_19f4e9c54b47"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_19f4e9c54b47_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The release was created by github-actions[bot] on behalf of Comfy-Org.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    },
+    {
+      "finding_id": "fnd_ecb4dea420a3",
+      "section_id": "06-comfyui-core-versioning",
+      "claim_ids": [
+        "clm_19f4e9c54b47_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_19f4e9c54b47"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_19f4e9c54b47_ollama_intern_3 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: unknown",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T00:51:57.707Z"
+    }
+  ],
+  "claim_reviews": [
+    {
+      "claim_id": "clm_8a319c76148c_ollama_intern_1",
+      "decision": "needs_source_repair",
+      "reason": "Findings: overgeneralized_claim (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_424e5cbf0883",
+        "fnd_08b7e074747f",
+        "fnd_272700890d94"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_8a319c76148c_ollama_intern_3",
+      "decision": "needs_source_repair",
+      "reason": "Findings: overgeneralized_claim (warn); scope_widening (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_424e5cbf0883",
+        "fnd_0d93e0a4c0fe",
+        "fnd_a641c588a870",
+        "fnd_d1986df2731c"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_8a319c76148c_ollama_intern_4",
+      "decision": "needs_source_repair",
+      "reason": "Findings: overgeneralized_claim (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_424e5cbf0883",
+        "fnd_23e005e80fa4",
+        "fnd_190c418cf7ce"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_8a319c76148c_ollama_intern_5",
+      "decision": "needs_source_repair",
+      "reason": "Findings: overgeneralized_claim (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_424e5cbf0883",
+        "fnd_3e67b6660884",
+        "fnd_bd7d53997d4d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_8a319c76148c_ollama_intern_6",
+      "decision": "needs_source_repair",
+      "reason": "Findings: overgeneralized_claim (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_424e5cbf0883",
+        "fnd_899d96323485",
+        "fnd_5aee0cc2d7fa"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_8a319c76148c_ollama_intern_8",
+      "decision": "needs_source_repair",
+      "reason": "Findings: temporal_mismatch (block); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_1f9a93a38f88",
+        "fnd_3533f652d2fe",
+        "fnd_40bde91cda41",
+        "fnd_63b36a681d86"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_8a319c76148c_ollama_intern_9",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_1f9a93a38f88",
+        "fnd_c848b0f15712",
+        "fnd_eff9963cf759"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_8a319c76148c_ollama_intern_11",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_8610a8324d82",
+        "fnd_9e90b56ebf91"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_8a319c76148c_ollama_intern_14",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_1f9a93a38f88",
+        "fnd_a09123835b93",
+        "fnd_607620eedf69"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_fbbdece73b76_ollama_intern_1",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_08bf882bf455",
+        "fnd_8befb652fc2d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_fbbdece73b76_ollama_intern_2",
+      "decision": "needs_source_repair",
+      "reason": "Findings: overgeneralized_claim (warn); claim_overproduction (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_ffba06978e70",
+        "fnd_d489142fe13b",
+        "fnd_3ebfdac59c2e",
+        "fnd_bdfd7220953c",
+        "fnd_7f57f3c17c7e"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_fbbdece73b76_ollama_intern_4",
+      "decision": "needs_source_repair",
+      "reason": "Findings: overgeneralized_claim (warn); claim_overproduction (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_ffba06978e70",
+        "fnd_d489142fe13b",
+        "fnd_3ebfdac59c2e",
+        "fnd_f2c149a38aca",
+        "fnd_f0b2320c7ef7"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_fbbdece73b76_ollama_intern_5",
+      "decision": "needs_source_repair",
+      "reason": "Findings: claim_overproduction (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_d489142fe13b",
+        "fnd_3ebfdac59c2e",
+        "fnd_1a7cc491b959",
+        "fnd_c3a59e037a47"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_fbbdece73b76_ollama_intern_6",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_d489142fe13b",
+        "fnd_a94cbf259469",
+        "fnd_ad36bc6792af"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_fbbdece73b76_ollama_intern_14",
+      "decision": "needs_source_repair",
+      "reason": "Findings: scope_widening (block); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_30e8361aa241",
+        "fnd_860b5fc1ed5e",
+        "fnd_3fb9ebe8900c"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_fbbdece73b76_ollama_intern_19",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ffaecdab3903"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_990ca9d75d8b_ollama_intern_1",
+      "decision": "needs_source_repair",
+      "reason": "Findings: temporal_mismatch (block); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_7879e8df6b36",
+        "fnd_968d877e1a5b",
+        "fnd_e24f54279caf"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_990ca9d75d8b_ollama_intern_2",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_09323ade7754",
+        "fnd_abaab78ec30b"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_990ca9d75d8b_ollama_intern_4",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_0fd8f3508949",
+        "fnd_1089f06d18d7"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_990ca9d75d8b_ollama_intern_5",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_0304a81c3cda",
+        "fnd_ebf97ea59621"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_990ca9d75d8b_ollama_intern_13",
+      "decision": "needs_source_repair",
+      "reason": "Findings: claim_overproduction (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_bd46a17509f6",
+        "fnd_dceb181b683e",
+        "fnd_0c8b6e039138"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_990ca9d75d8b_ollama_intern_14",
+      "decision": "needs_source_repair",
+      "reason": "Findings: claim_overproduction (warn); scope_widening (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_bd46a17509f6",
+        "fnd_f00a416d988e",
+        "fnd_aabceda0c6da",
+        "fnd_00ab52f6010f"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_990ca9d75d8b_ollama_intern_16",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_886a42b6e4ea",
+        "fnd_5d48695ed56a"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_990ca9d75d8b_ollama_intern_17",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_f9625ba9b26a",
+        "fnd_7b4c30c19be7"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_990ca9d75d8b_ollama_intern_30",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_10c2207eee42",
+        "fnd_9d1da1ab1156",
+        "fnd_78d036e09c1e"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_990ca9d75d8b_ollama_intern_32",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_6680e0ad8cd9",
+        "fnd_b0c658c1df8c",
+        "fnd_893732f3a853"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_155d801f1917_ollama_intern_1",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_12b5a8055a2a",
+        "fnd_1fc74a821ee9"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_b507da5fa466_ollama_intern_1",
+      "decision": "needs_source_repair",
+      "reason": "Findings: temporal_mismatch (block).",
+      "finding_ids": [
+        "fnd_10c2207eee42",
+        "fnd_a6b1f5fe647f",
+        "fnd_239acaa9ef8c"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_b507da5fa466_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_48c94dc34af6"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_b507da5fa466_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_2e594c5bbaea"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_b507da5fa466_ollama_intern_4",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_5fb4129b12c5"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_b507da5fa466_ollama_intern_5",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_0a476688a1b8"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_b507da5fa466_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_824e7c2fe325"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_fbbdece73b76_ollama_intern_20",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_10116bd5e3fd",
+        "fnd_85aa31ba32ca"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_fbbdece73b76_ollama_intern_23",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_419eefc8d4f1",
+        "fnd_838e6b6f4af1"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f4ce9a16c6b4_ollama_intern_7",
+      "decision": "accepted_for_synthesis",
+      "reason": "Findings: temporal_mismatch (warn).",
+      "finding_ids": [
+        "fnd_8d3bceb89e0b",
+        "fnd_22e065135774",
+        "fnd_033fe60feb93"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f4ce9a16c6b4_ollama_intern_8",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_de4ab9b85245"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f4ce9a16c6b4_ollama_intern_9",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: scope_widening (block).",
+      "finding_ids": [
+        "fnd_8bf8a2756dd1",
+        "fnd_18110ff0c53c"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f4ce9a16c6b4_ollama_intern_10",
+      "decision": "needs_human_review",
+      "reason": "Findings: valid_but_low_value (warn).",
+      "finding_ids": [
+        "fnd_318f3b3e5e3a",
+        "fnd_8f8e0248f622"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f4ce9a16c6b4_ollama_intern_12",
+      "decision": "needs_human_review",
+      "reason": "Findings: claim_overproduction (warn).",
+      "finding_ids": [
+        "fnd_37554dc6337a",
+        "fnd_e4f77f1d1e9b"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f4ce9a16c6b4_ollama_intern_24",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: scope_widening (block).",
+      "finding_ids": [
+        "fnd_2f8a9fa31e40",
+        "fnd_e19df61d647d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f4ce9a16c6b4_ollama_intern_25",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_41564c84837c",
+        "fnd_8432e1118c2e"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f4ce9a16c6b4_ollama_intern_27",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_106d754afeae"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f4ce9a16c6b4_ollama_intern_29",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_2c45410e9451"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f4ce9a16c6b4_ollama_intern_30",
+      "decision": "rejected",
+      "reason": "Findings: recommendation_exceeds_evidence (block).",
+      "finding_ids": [
+        "fnd_2f84ecfc132f",
+        "fnd_59b85b3c5c37"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_e804faef8c79_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_9382710b45b9"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_e804faef8c79_ollama_intern_2",
+      "decision": "needs_human_review",
+      "reason": "Findings: hidden_synthesis (warn).",
+      "finding_ids": [
+        "fnd_52bd0de665ee",
+        "fnd_7930069e1e51"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_e804faef8c79_ollama_intern_3",
+      "decision": "needs_human_review",
+      "reason": "Findings: hidden_synthesis (warn).",
+      "finding_ids": [
+        "fnd_52bd0de665ee",
+        "fnd_f04ad555f2ac"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_e804faef8c79_ollama_intern_5",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_0fae981bb7de"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_e804faef8c79_ollama_intern_10",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_bcd4fb5615f4",
+        "fnd_709e2a7426d6"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_e804faef8c79_ollama_intern_11",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_6ac34dd55808"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_e804faef8c79_ollama_intern_15",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: scope_widening (block).",
+      "finding_ids": [
+        "fnd_fa833c7ae7c0",
+        "fnd_e68f693dd0da"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_e804faef8c79_ollama_intern_16",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_2cea3ae5f546"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_e804faef8c79_ollama_intern_17",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_fb23c124cdc6"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_e804faef8c79_ollama_intern_24",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_2185029c3bb0"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f311c690b666_ollama_intern_1",
+      "decision": "needs_source_repair",
+      "reason": "Findings: temporal_mismatch (block).",
+      "finding_ids": [
+        "fnd_64e6e03d24c0",
+        "fnd_fdf3f525e6e5"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f311c690b666_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_1b407fc9500d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f311c690b666_ollama_intern_8",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_a3f38961acca",
+        "fnd_31926401ac73"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f311c690b666_ollama_intern_10",
+      "decision": "needs_human_review",
+      "reason": "Findings: hidden_synthesis (warn).",
+      "finding_ids": [
+        "fnd_92c5e5a22750",
+        "fnd_741449f36d0d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f311c690b666_ollama_intern_100",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ba71153750c5"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f311c690b666_ollama_intern_101",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_f10ff944747d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f311c690b666_ollama_intern_103",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_d2fe999942be"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f311c690b666_ollama_intern_104",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: scope_widening (warn).",
+      "finding_ids": [
+        "fnd_f62c381b8af3",
+        "fnd_d00eb1266203"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f311c690b666_ollama_intern_105",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_d0e87e1a9a45"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_f311c690b666_ollama_intern_106",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_497ca0981a48"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_07437ed8d167_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_b4b4fedd8efe"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_1",
+      "decision": "needs_source_repair",
+      "reason": "Findings: temporal_mismatch (block).",
+      "finding_ids": [
+        "fnd_8cba89fb5889",
+        "fnd_3ff71328db4d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_6afadff598c9",
+        "fnd_197dbc1f7e83"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_5",
+      "decision": "needs_human_review",
+      "reason": "Findings: hidden_synthesis (warn).",
+      "finding_ids": [
+        "fnd_753cf489d1ce",
+        "fnd_7a6503d02b07"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_087fff5f5bf4",
+        "fnd_4e1e379fcb3c"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_8",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_fe79abe76a1d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_9",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_606da2c0592a"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_15",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: scope_widening (warn).",
+      "finding_ids": [
+        "fnd_a7b6e0276f87",
+        "fnd_6972db16e094"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_16",
+      "decision": "needs_human_review",
+      "reason": "Findings: hidden_synthesis (warn).",
+      "finding_ids": [
+        "fnd_551ddf1e8c02",
+        "fnd_0d39434950f6"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_19",
+      "decision": "needs_source_repair",
+      "reason": "Findings: temporal_mismatch (block).",
+      "finding_ids": [
+        "fnd_14a22747620f",
+        "fnd_c7e693245165",
+        "fnd_872f4b42028c"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_20",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_14a22747620f",
+        "fnd_4c110d68aaf5"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_2ae04b870db8_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_17bfc681c5f7"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_2ae04b870db8_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_5bafad8c6dbd"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_2ae04b870db8_ollama_intern_4",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_13b2eb10a455"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_bd638b8de92f_ollama_intern_1",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_14a22747620f",
+        "fnd_4e75dbc0fd7d",
+        "fnd_963894fe0835"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_bd638b8de92f_ollama_intern_2",
+      "decision": "needs_source_repair",
+      "reason": "Findings: definition_drift (warn); scope_widening (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_89b9e883fef7",
+        "fnd_76753865ca14",
+        "fnd_86fec69aaad5",
+        "fnd_12a4240ccc9f"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_bd638b8de92f_ollama_intern_5",
+      "decision": "needs_source_repair",
+      "reason": "Findings: overgeneralized_claim (warn); definition_drift (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_f1b5d0d251db",
+        "fnd_89b9e883fef7",
+        "fnd_cc50e96c52d8",
+        "fnd_6a61d3726b6b"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_19f4e9c54b47_ollama_intern_1",
+      "decision": "needs_source_repair",
+      "reason": "Findings: temporal_mismatch (block); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_28a05ce93533",
+        "fnd_99f5dc4e57a1",
+        "fnd_b31a0e036354",
+        "fnd_1faafa189256"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_19f4e9c54b47_ollama_intern_2",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_28a05ce93533",
+        "fnd_69b10704e22c",
+        "fnd_01929d08abf1"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    },
+    {
+      "claim_id": "clm_19f4e9c54b47_ollama_intern_3",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_28a05ce93533",
+        "fnd_3018048aecf2",
+        "fnd_ecb4dea420a3"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T00:51:57.708Z"
+    }
+  ],
+  "decision_counts": {
+    "accepted_for_synthesis": 33,
+    "rejected": 1,
+    "needs_scope_repair": 6,
+    "needs_source_repair": 38,
+    "needs_contradiction_mapping": 0,
+    "needs_human_review": 7
+  },
+  "severity_counts": {
+    "info": 96,
+    "warn": 53,
+    "block": 12
+  },
+  "llm_findings_rejected_ungrounded": 1,
+  "promoted_to_reviewed": false
+}

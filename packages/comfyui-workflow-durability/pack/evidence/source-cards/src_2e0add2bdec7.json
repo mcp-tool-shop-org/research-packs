@@ -1,0 +1,23 @@
+{
+  "source_id": "src_2e0add2bdec7",
+  "receipt_id": "rcpt_2e0add2bdec7_1778304172499",
+  "section_id": "04-environment-reproducibility",
+  "url": "https://docs.comfy.org/development/core-concepts/models",
+  "final_url": "https://docs.comfy.org/development/core-concepts/models",
+  "fetched_at": "2026-05-09T05:22:52.499Z",
+  "publisher": "docs.comfy.org",
+  "published_at": null,
+  "title": "Models - ComfyUI",
+  "source_type": "docs",
+  "relevance": "unknown",
+  "key_points": [
+    "Fetch the complete documentation index at: https://docs.comfy.org/llms.txt",
+    "Use this file to discover all available pages before exploring further."
+  ],
+  "limitations": [],
+  "asserts": "How model files fit into ComfyUI workflows: where they go, how to load them, and common fixes.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-09T05:22:52.844Z"
+}

@@ -1,0 +1,80 @@
+{
+  "summary_id": "tris_1778305381801_04-environment-reproducibility",
+  "section_id": "04-environment-reproducibility",
+  "triaged_at": "2026-05-09T05:43:01.801Z",
+  "research_os_version": "0.1.0",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 284,
+  "decisions": {
+    "parked_weak_scope": 67,
+    "selected_for_review": 86,
+    "needs_scope_repair": 107,
+    "parked_overdense_source": 23,
+    "parked_low_value": 1
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 86,
+  "selected_per_source": [
+    {
+      "source_id": "src_2086dbbb6560",
+      "selected": 10,
+      "total": 59
+    },
+    {
+      "source_id": "src_aa570bcb9060",
+      "selected": 10,
+      "total": 40
+    },
+    {
+      "source_id": "src_b81c03003037",
+      "selected": 7,
+      "total": 30
+    },
+    {
+      "source_id": "src_f4ce9a16c6b4",
+      "selected": 10,
+      "total": 30
+    },
+    {
+      "source_id": "src_fcdd7f1c90e9",
+      "selected": 10,
+      "total": 23
+    },
+    {
+      "source_id": "src_2e0add2bdec7",
+      "selected": 5,
+      "total": 18
+    },
+    {
+      "source_id": "src_664a4a54b4c3",
+      "selected": 10,
+      "total": 17
+    },
+    {
+      "source_id": "src_2a30a3ff7502",
+      "selected": 5,
+      "total": 17
+    },
+    {
+      "source_id": "src_f9b159fab5ef",
+      "selected": 1,
+      "total": 16
+    },
+    {
+      "source_id": "src_a8c5d541c698",
+      "selected": 8,
+      "total": 14
+    },
+    {
+      "source_id": "src_75194fe21c45",
+      "selected": 4,
+      "total": 13
+    },
+    {
+      "source_id": "src_ccc15b6a3971",
+      "selected": 6,
+      "total": 7
+    }
+  ]
+}

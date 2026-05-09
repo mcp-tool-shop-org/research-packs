@@ -1,0 +1,26 @@
+{
+  "source_id": "src_6ccf8c48cc5a",
+  "receipt_id": "rcpt_6ccf8c48cc5a_1778299409800",
+  "section_id": "02-model-file-identity",
+  "url": "https://docs.comfy.org/development/core-concepts/nodes",
+  "final_url": "https://docs.comfy.org/development/core-concepts/nodes",
+  "fetched_at": "2026-05-09T04:03:29.800Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Nodes",
+  "source_type": "docs",
+  "relevance": "medium",
+  "key_points": [
+    "A node in ComfyUI represents a processing unit that takes inputs and produces outputs.",
+    "Nodes can be connected together to form graphs for complex tasks.",
+    "Each node has inputs and outputs, with types like float (numbers), int (integers), bool (boolean), image (image data), etc."
+  ],
+  "limitations": [
+    "This source is a documentation page, not an original research or analysis."
+  ],
+  "asserts": "ComfyUI uses nodes as building blocks for processing units.",
+  "scope": "The context of this claim is the design and functionality of ComfyUI software.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T04:04:15.521Z"
+}

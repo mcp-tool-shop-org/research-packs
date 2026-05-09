@@ -1,0 +1,76 @@
+{
+  "audit_id": "cda_1778309321797_05-community-distribution-patterns",
+  "section_id": "05-community-distribution-patterns",
+  "audited_at": "2026-05-09T06:48:41.797Z",
+  "research_os_version": "0.1.0",
+  "candidate_claim_count": 108,
+  "source_count": 5,
+  "total_source_word_count": 433283,
+  "claims_per_1k_words": 0.24925972170613664,
+  "weak_scope_count": 0,
+  "generic_scope_count": 22,
+  "per_source": [
+    {
+      "source_id": "src_cea54dbbe5e3",
+      "publisher": null,
+      "source_word_count": 13196,
+      "claim_count": 39,
+      "claims_per_1k_words": 2.9554410427402242,
+      "share_of_section": 0.3611111111111111,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_d56e68044c24",
+      "publisher": "Comfy-Org/ComfyUI",
+      "source_word_count": 14045,
+      "claim_count": 23,
+      "claims_per_1k_words": 1.6375934496262015,
+      "share_of_section": 0.21296296296296297,
+      "weak_scope_count": 0,
+      "generic_scope_count": 15
+    },
+    {
+      "source_id": "src_e19e5e376175",
+      "publisher": null,
+      "source_word_count": 19350,
+      "claim_count": 21,
+      "claims_per_1k_words": 1.0852713178294573,
+      "share_of_section": 0.19444444444444445,
+      "weak_scope_count": 0,
+      "generic_scope_count": 2
+    },
+    {
+      "source_id": "src_fcdd7f1c90e9",
+      "publisher": null,
+      "source_word_count": 204525,
+      "claim_count": 20,
+      "claims_per_1k_words": 0.09778755653343112,
+      "share_of_section": 0.18518518518518517,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_e7045b6bccdb",
+      "publisher": null,
+      "source_word_count": 182167,
+      "claim_count": 5,
+      "claims_per_1k_words": 0.027447342273847625,
+      "share_of_section": 0.046296296296296294,
+      "weak_scope_count": 0,
+      "generic_scope_count": 5
+    }
+  ],
+  "near_duplicate_clusters": [],
+  "flags": [
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_cea54dbbe5e3 contributes 39 of 108 claims (36% of section).",
+      "affects_source_ids": [
+        "src_cea54dbbe5e3"
+      ],
+      "affects_claim_ids": []
+    }
+  ]
+}

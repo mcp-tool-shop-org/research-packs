@@ -1,0 +1,20 @@
+{
+  "source_id": "src_fbbdece73b76",
+  "receipt_id": "rcpt_fbbdece73b76_1778271039158",
+  "section_id": "06-comfyui-core-versioning",
+  "url": "https://github.com/Comfy-Org/comfy-cli",
+  "final_url": "https://github.com/Comfy-Org/comfy-cli",
+  "fetched_at": "2026-05-08T20:10:39.158Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Comfy CLI",
+  "source_type": "unknown",
+  "relevance": "unknown",
+  "key_points": [],
+  "limitations": [],
+  "asserts": "(no assertion extracted)",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-08T20:10:57.811Z"
+}

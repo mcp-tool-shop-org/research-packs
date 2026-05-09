@@ -1,0 +1,23 @@
+{
+  "source_id": "src_2a30a3ff7502",
+  "receipt_id": "rcpt_2a30a3ff7502_1778304170963",
+  "section_id": "04-environment-reproducibility",
+  "url": "https://docs.comfy.org/installation/comfyui_portable_windows",
+  "final_url": "https://docs.comfy.org/installation/comfyui_portable_windows",
+  "fetched_at": "2026-05-09T05:22:50.963Z",
+  "publisher": "docs.comfy.org",
+  "published_at": null,
+  "title": "ComfyUI(portable) Windows — Local Self-Hosted - ComfyUI",
+  "source_type": "docs",
+  "relevance": "unknown",
+  "key_points": [
+    "Fetch the complete documentation index at: https://docs.comfy.org/llms.txt",
+    "Use this file to discover all available pages before exploring further."
+  ],
+  "limitations": [],
+  "asserts": "This tutorial will guide you on how to download and start using ComfyUI Portable and run the corresponding programs",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-09T05:22:51.305Z"
+}

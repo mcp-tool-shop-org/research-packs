@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="README.ja.md">日本語</a> | <a href="README.zh.md">中文</a> | <a href="README.es.md">Español</a> | <a href="README.fr.md">Français</a> | <a href="README.hi.md">हिन्दी</a> | <a href="README.it.md">Italiano</a>
+  <a href="README.ja.md">日本語</a> | <a href="README.zh.md">中文</a> | <a href="README.es.md">Español</a> | <a href="README.fr.md">Français</a> | <a href="README.hi.md">हिन्दी</a> | <a href="README.it.md">Italiano</a> | <a href="README.pt-BR.md">Português (BR)</a>
 </p>
 
 <div align="center">
@@ -51,6 +51,7 @@ Each package's `pack/` directory contains the full frozen pack: source cards, ex
 
 | Package | Topic | Frozen | Accepted claims |
 |---------|-------|--------|-----------------|
+| [comfyui-workflow-durability](packages/comfyui-workflow-durability/) | ComfyUI workflow durability (Experiment 1) | 2026-05-09 | 302 |
 | [research-os-self-dogfood](packages/research-os-self-dogfood/) | research-os pack structure | 2026-05-08 | 296 |
 
 ---

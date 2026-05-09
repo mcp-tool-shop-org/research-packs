@@ -1,0 +1,28 @@
+{
+  "source_id": "src_e1e83dbebd28",
+  "receipt_id": "rcpt_e1e83dbebd28_1778299279568",
+  "section_id": "02-model-file-identity",
+  "url": "https://docs.comfy.org/troubleshooting/model-issues",
+  "final_url": "https://docs.comfy.org/troubleshooting/model-issues",
+  "fetched_at": "2026-05-09T04:01:19.568Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "How to Troubleshoot and Solve ComfyUI Model Issues",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Architecture mismatches can cause model loading errors.",
+    "Missing models require reinstallation or proper path specification.",
+    "Incompatible versions of dependencies may lead to issues."
+  ],
+  "limitations": [
+    "This document assumes familiarity with Python and the command line.",
+    "It does not cover hardware-related issues.",
+    "Some solutions require advanced knowledge of system configurations."
+  ],
+  "asserts": "Troubleshooting model-related problems including architecture mismatches, missing models, and loading errors is essential for resolving ComfyUI model issues.",
+  "scope": "ComfyUI software package",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T04:02:05.877Z"
+}

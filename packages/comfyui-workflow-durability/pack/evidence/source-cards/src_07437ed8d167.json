@@ -1,0 +1,28 @@
+{
+  "source_id": "src_07437ed8d167",
+  "receipt_id": "rcpt_07437ed8d167_1778307727380",
+  "section_id": "05-community-distribution-patterns",
+  "url": "https://docs.comfy.org/development/core-concepts/workflow",
+  "final_url": "https://docs.comfy.org/development/core-concepts/workflow",
+  "fetched_at": "2026-05-09T06:22:07.380Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Workflow",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "ComfyUI provides a modular and customizable design system for developing web applications.",
+    "The workflow in ComfyUI is designed to be simple, efficient, and consistent across different components.",
+    "ComfyUI offers a set of guidelines and best practices to ensure a smooth development process."
+  ],
+  "limitations": [
+    "The documentation may not cover all specific use cases or edge cases in developing web applications using ComfyUI.",
+    "The quality and accuracy of the information provided depend on the completeness and correctness of the documentation.",
+    "The scope of the workflow guidelines is limited to the design system and may not encompass the entire development process."
+  ],
+  "asserts": "ComfyUI's workflow emphasizes simplicity, efficiency, and consistency in developing web applications using a modular and customizable design system.",
+  "scope": "The scope of this document covers the workflow provided by ComfyUI for developing web applications using its design system.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T06:22:54.345Z"
+}

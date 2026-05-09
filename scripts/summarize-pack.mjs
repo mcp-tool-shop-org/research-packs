@@ -66,7 +66,7 @@ ${summary}
 |---------|-----------------|------|-------------------|
 ${sectionTable}
 
-**Totals:** ${m.totals.accepted_claims} accepted, ${m.totals.dispositioned} dispositioned, ${m.totals.unresolved_contradictions} unresolved contradictions
+**Totals:** ${m.totals.accepted_claims} accepted, ${m.totals.dispositioned} dispositioned, ${m.totals.preserved_contradiction_records != null ? `Preserved contradiction records: ${m.totals.preserved_contradiction_records}` : `${m.totals.unresolved_contradictions} unresolved contradictions`}
 
 ---
 

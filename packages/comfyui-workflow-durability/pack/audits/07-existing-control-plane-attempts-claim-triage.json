@@ -1,0 +1,70 @@
+{
+  "summary_id": "tris_1778290481507_07-existing-control-plane-attempts",
+  "section_id": "07-existing-control-plane-attempts",
+  "triaged_at": "2026-05-09T01:34:41.507Z",
+  "research_os_version": "0.1.0",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 140,
+  "decisions": {
+    "parked_weak_scope": 29,
+    "parked_low_value": 2,
+    "selected_for_review": 36,
+    "needs_scope_repair": 69,
+    "parked_overdense_source": 4
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 36,
+  "selected_per_source": [
+    {
+      "source_id": "src_cf20a276ca4d",
+      "selected": 10,
+      "total": 35
+    },
+    {
+      "source_id": "src_1e2124f6f8d4",
+      "selected": 10,
+      "total": 33
+    },
+    {
+      "source_id": "src_e804faef8c79",
+      "selected": 6,
+      "total": 25
+    },
+    {
+      "source_id": "src_a295cc4f28d3",
+      "selected": 3,
+      "total": 12
+    },
+    {
+      "source_id": "src_8f706291ff12",
+      "selected": 1,
+      "total": 9
+    },
+    {
+      "source_id": "src_a52f23a8cbd2",
+      "selected": 1,
+      "total": 8
+    },
+    {
+      "source_id": "src_417fb676dd7b",
+      "selected": 2,
+      "total": 8
+    },
+    {
+      "source_id": "src_f6c7ab7a2205",
+      "selected": 0,
+      "total": 4
+    },
+    {
+      "source_id": "src_c39e382ce301",
+      "selected": 2,
+      "total": 4
+    },
+    {
+      "source_id": "src_4c437e284d95",
+      "selected": 1,
+      "total": 2
+    }
+  ]
+}

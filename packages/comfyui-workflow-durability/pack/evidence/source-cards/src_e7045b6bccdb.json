@@ -1,0 +1,28 @@
+{
+  "source_id": "src_e7045b6bccdb",
+  "receipt_id": "rcpt_e7045b6bccdb_1778307774464",
+  "section_id": "05-community-distribution-patterns",
+  "url": "https://docs.comfy.org/manager/legacy-ui",
+  "final_url": "https://docs.comfy.org/manager/legacy-ui",
+  "fetched_at": "2026-05-09T06:22:54.464Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Managing custom nodes with ComfyUI-Manager (legacy UI)",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "ComfyUI-Manager allows installation, updating, and management of custom nodes using the legacy interface.",
+    "The documentation provides a guide on how to use the ComfyUI-Manager for these purposes.",
+    "It includes steps and explanations on performing these tasks with the ComfyUI-Manager."
+  ],
+  "limitations": [
+    "Limited information about updates or changes to the legacy UI",
+    "Depends on the state of the documentations's own website and server",
+    "Does not cover potential future changes"
+  ],
+  "asserts": "The documentation asserts that it provides a guide for using ComfyUI-Manager (legacy UI) to install, update, and manage custom nodes.",
+  "scope": "The scope asserted by this source is the installation, updating, and management of custom nodes within the legacy interface of the ComfyUI-Manager system.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T06:23:30.521Z"
+}

@@ -1,0 +1,8 @@
+section_id: 07-existing-control-plane-attempts
+purpose: Survey what tooling already exists to manage ComfyUI workflow environments and characterize what each tracks, what each misses, and what gaps remain unaddressed by any existing tool.
+status: draft
+created_at: 2026-05-08T20:05:01.128Z
+max_time_minutes: 45
+min_sources: 8
+primary_sources_required: 2
+contradictions_required: true

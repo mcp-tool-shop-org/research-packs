@@ -1,0 +1,26 @@
+{
+  "source_id": "src_cf20a276ca4d",
+  "receipt_id": "rcpt_cf20a276ca4d_1778289771028",
+  "section_id": "07-existing-control-plane-attempts",
+  "url": "https://pypi.org/project/comfy-cli/",
+  "final_url": "https://pypi.org/project/comfy-cli/",
+  "fetched_at": "2026-05-09T01:22:51.028Z",
+  "publisher": "PyPI",
+  "published_at": "2026-04-24T06:43:17+0000",
+  "title": "comfy-cli",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "pip install comfy-cli Copy PIP instructions",
+    "A CLI tool for installing and using ComfyUI.",
+    "comfy-cli is a command line tool that helps users easily install and manage ComfyUI, a powerful open-source machine learning framework. With comfy-cli, you can quickly set up ComfyUI, install packages, and manage custom nodes, all from the convenience of your terminal.",
+    "(Recommended, but not necessary) Enable virtual environment (venv/conda)",
+    "To install comfy-cli, make sure you have Python 3.9 or higher installed on your system. Then, run the following command:"
+  ],
+  "limitations": [],
+  "asserts": "A CLI tool for installing and using ComfyUI.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-09T01:22:51.203Z"
+}

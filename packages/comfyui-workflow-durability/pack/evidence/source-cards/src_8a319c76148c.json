@@ -1,0 +1,22 @@
+{
+  "source_id": "src_8a319c76148c",
+  "receipt_id": "rcpt_8a319c76148c_1778271006719",
+  "section_id": "06-comfyui-core-versioning",
+  "url": "https://github.com/Comfy-Org/desktop/releases",
+  "final_url": "https://github.com/Comfy-Org/desktop/releases",
+  "fetched_at": "2026-05-08T20:10:06.719Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "(untitled)",
+  "source_type": "unknown",
+  "relevance": "medium",
+  "key_points": [],
+  "limitations": [
+    "Source is a website, not a document"
+  ],
+  "asserts": "(no assertion extracted)",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-08T20:10:38.800Z"
+}

@@ -12,6 +12,7 @@ export const TotalsSchema = z.object({
   accepted_claims: z.number().int().min(0),
   dispositioned: z.number().int().min(0),
   unresolved_contradictions: z.number().int().min(0),
+  preserved_contradiction_records: z.number().int().min(0).optional(),
 });
 
 export const PackManifestSchema = z.object({

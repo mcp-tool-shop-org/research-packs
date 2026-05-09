@@ -1,0 +1,25 @@
+# Operator-pre-staged canonical URLs for Section 07
+# Per mission: prefer raw.githubusercontent.com, api.github.com, and official docs sites
+# All GitHub UI HTML URLs from discover run rejected (wrong repos, hallucinated, or GitHub HTML)
+
+# ComfyUI-Manager (ltdrdata) — the primary node-management control plane
+https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/README.md
+https://api.github.com/repos/ltdrdata/ComfyUI-Manager/releases?per_page=20
+
+# comfy-cli (Comfy-Org) — official CLI for ComfyUI install/workflow management
+https://raw.githubusercontent.com/Comfy-Org/comfy-cli/main/README.md
+https://pypi.org/project/comfy-cli/
+
+# comfyui-deploy (BennyKok) — production deployment tool with workflow versioning
+https://raw.githubusercontent.com/BennyKok/comfyui-deploy/main/README.md
+https://api.github.com/repos/BennyKok/comfyui-deploy/releases?per_page=20
+
+# Pinokio (pinokiocomputer) — app-store-style launcher for local AI apps including ComfyUI
+https://raw.githubusercontent.com/pinokiocomputer/pinokio/main/README.md
+https://docs.pinokio.computer/
+
+# Docker-based ComfyUI deployments (ai-dock) — containerized reproducible environment
+https://raw.githubusercontent.com/ai-dock/comfyui/main/README.md
+
+# docs.comfy.org — official ComfyUI docs on workflow portability and export
+https://docs.comfy.org/tutorials/basic/your-first-comfyui-workflow

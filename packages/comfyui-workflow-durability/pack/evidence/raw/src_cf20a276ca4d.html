@@ -1,0 +1,3579 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="defaultLanguage" content="en">
+    <meta name="availableLanguages"
+          content="en, es, fr, ja, pt_BR, uk, el, de, zh_Hans, zh_Hant, ru, he, eo, ko">
+    <title>comfy-cli · PyPI</title>
+    <meta name="description"
+          content="A CLI tool for installing and using ComfyUI.">
+    <link rel="stylesheet"
+          href="/static/css/warehouse-ltr.0f58843e.css">
+    <link rel="stylesheet"
+          href="/static/css/fontawesome.379f9724.css">
+    <link rel="stylesheet"
+          href="/static/css/fonts.3b5d1a1c.css">
+    <noscript>
+      <link rel="stylesheet"
+            href="/static/css/noscript.0673c9ea.css">
+    </noscript>
+    <link rel="icon"
+          href="/static/images/favicon.35549fe8.ico"
+          type="image/x-icon">
+    <link rel="alternate"
+          type="application/rss+xml"
+          title="RSS: 40 latest updates"
+          href="/rss/updates.xml">
+    <link rel="alternate"
+          type="application/rss+xml"
+          title="RSS: 40 newest packages"
+          href="/rss/packages.xml">
+<link rel="alternate"
+        type="application/rss+xml"
+        title="RSS: latest releases for comfy-cli"
+        href="/rss/project/comfy-cli/releases.xml">      <link rel="canonical" href="https://pypi.org/project/comfy-cli/">
+    <meta property="og:url"
+          content="https://pypi.org/project/comfy-cli/">
+    <meta property="og:site_name" content="PyPI">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+          content="https://pypi.org/static/images/twitter.abaf4b19.webp">
+    <meta property="og:title"
+          content="comfy-cli">
+    <meta property="og:description" content="A CLI tool for installing and using ComfyUI.">
+<meta name="source-commit" content="19fa79fa00df780ba837680399bdcc867fdd97cf">    <link rel="search"
+          type="application/opensearchdescription+xml"
+          title="PyPI"
+          href="/opensearch.xml">
+    <script defer src="/static/js/warehouse.e9abdc3b.js">
+    </script>
+  <script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+};
+  </script>
+  <script async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"
+          integrity="sha256-1CldwzdEg2k1wTmf7s5RWVd7NMXI/7nxxjJM2C4DqII="
+          crossorigin="anonymous"></script>
+      <script defer
+              data-domain="pypi.org"
+              src="https://analytics.python.org/js/script.js"></script>
+    <script async
+            src="https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js"
+            integrity="sha256-U3hKDidudIaxBDEzwGJApJgPEf2mWk6cfMWghrAa6i0= sha384-UcmsCqcNRSLW/dV3Lo1oCi2/VaurXbib6p4HyUEOeIa/4OpsrnucrugAefzVZJfI sha512-q4t1L4xEjGV2R4hzqCa41P8jrgFUS8xTb8rdNv4FGvw7FpydVj/kkxBJHOiaoxHa8olCcx1Slk9K+3sNbsM4ug=="
+            crossorigin="anonymous"></script>
+  </head>
+  <body data-controller="viewport-toggle">
+      <!-- Accessibility: this link should always be the first piece of content inside the body-->
+      <a href="#content" class="skip-to-content">Skip to main content</a>
+      <button type="button"
+              class="button button--primary button--switch-to-mobile hidden"
+              data-viewport-toggle-target="switchToMobile"
+              data-action="viewport-toggle#switchToMobile">Switch to mobile version</button>
+      <div id="sticky-notifications" class="stick-to-top js-stick-to-top">
+        <!-- Add browser warning. Will show for ie9 and below -->
+        <!--[if IE]>
+      <div class="notification-bar notification-bar--warning" role="status">
+        <span class="notification-bar__icon">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <span class="sr-only">Warning</span>
+        </span>
+        <span class="notification-bar__message">You are using an unsupported browser, upgrade to a newer version.</span>
+      </div>
+      <![endif]-->
+        <noscript>
+          <div class="notification-bar notification-bar--warning" role="status">
+            <span class="notification-bar__icon">
+              <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+              <span class="sr-only">Warning</span>
+            </span>
+            <span class="notification-bar__message">Some features may not work without JavaScript. Please try enabling it if you encounter problems.</span>
+          </div>
+        </noscript>
+<div data-html-include="/_includes/unauthed/notification-banners/"></div>    </div>
+<div data-html-include="/_includes/unauthed/flash-messages/"></div><div data-html-include="/_includes/authed/session-notifications/"></div><header class="site-header ">
+  <div class="site-container">
+    <div class="split-layout">
+        <div class="split-layout">
+          <div>
+            <a class="site-header__logo" href="/">
+              <img alt="PyPI"
+                   src="/static/images/logo-small.8998e9d1.svg">
+            </a>
+          </div>
+          <form class="search-form search-form--primary"
+                action="/search/"
+                role="search">
+            <label for="search" class="sr-only">Search PyPI</label>
+            <input id="search"
+                   class="search-form__search"
+                   type="text"
+                   name="q"
+                   placeholder="Type '/' to search projects"
+                   value=""
+                   autocomplete="off"
+                   autocapitalize="off"
+                   spellcheck="false"
+                   data-controller="search-focus"
+                   data-action="keydown@window->search-focus#focusSearchField"
+                   data-search-focus-target="searchField">
+            <button type="submit" class="search-form__button">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <span class="sr-only">Search</span>
+            </button>
+          </form>
+        </div>
+<div data-html-include="/_includes/authed/current-user-indicator/">        <div id="user-indicator"
+       class="horizontal-menu horizontal-menu--light horizontal-menu--tall">
+    <nav class="horizontal-menu horizontal-menu--light horizontal-menu--tall hide-on-tablet"
+         aria-label="Main navigation">
+      <ul>
+        <li class="horizontal-menu__item">
+          <a href="/help/" class="horizontal-menu__link">Help</a>
+        </li>
+        <li class="horizontal-menu__item">
+          <a href="https://docs.pypi.org/" class="horizontal-menu__link">Docs</a>
+        </li>
+        <li class="horizontal-menu__item">
+          <a href="/sponsors/"
+             class="horizontal-menu__link">Sponsors</a>
+        </li>
+        <li class="horizontal-menu__item">
+          <a href="/account/login/?next=https%3A%2F%2Fpypi.org%2Fproject%2Fcomfy-cli%2F" class="horizontal-menu__link">Log in</a>
+        </li>
+        <li class="horizontal-menu__item">
+          <a href="/account/register/"
+             class="horizontal-menu__link">Register</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="dropdown dropdown--on-menu hidden show-on-tablet"
+         aria-label="Main navigation">
+      <button type="button"
+              class="horizontal-menu__link dropdown__trigger"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-label="View menu">
+Menu        <span class="dropdown__trigger-caret">
+          <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </span>
+      </button>
+      <ul class="dropdown__content"
+          aria-hidden="true"
+          aria-label="Main menu">
+        <li>
+          <a class="dropdown__link" href="/help/">Help</a>
+        </li>
+        <li>
+          <a class="dropdown__link" href="https://docs.pypi.org/">Docs</a>
+        </li>
+        <li>
+          <a class="dropdown__link" href="/sponsors/">Sponsors</a>
+        </li>
+        <li>
+          <a class="dropdown__link" href="/account/login/?next=https%3A%2F%2Fpypi.org%2Fproject%2Fcomfy-cli%2F">Log in</a>
+        </li>
+        <li>
+          <a class="dropdown__link"
+             href="/account/register/">Register</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>  </div>
+</div>
+</header>
+  <div class="mobile-search">
+    <form class="search-form search-form--fullwidth"
+          action="/search/"
+          role="search">
+      <label for="mobile-search" class="sr-only">Search PyPI</label>
+      <input id="mobile-search"
+             class="search-form__search"
+             type="text"
+             name="q"
+             placeholder="Search projects"
+             value=""
+             autocomplete="off"
+             autocapitalize="off"
+             spellcheck="false">
+      
+      <button type="submit" class="search-form__button">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <span class="sr-only">Search</span>
+      </button>
+    </form>
+  </div>
+<main id="content">
+    <div class="hidden"
+         data-controller="github-repo-stats"
+         data-github-repo-stats-github-repo-info-outlet=".github-repo-info"
+         data-github-repo-stats-url-value="https://api.github.com/repos/Comfy-Org/comfy-cli"
+         data-github-repo-stats-issue-url-value="https://api.github.com/search/issues?q=repo:Comfy-Org/comfy-cli+type:issue+state:open&amp;per_page=1"></div>
+  <div class="banner">
+    <div class="package-header">
+      <div class="package-header__left">
+        <h1 class="package-header__name">comfy-cli 1.7.3</h1>
+          <div data-controller="clipboard">
+            <p class="package-header__pip-instructions">
+              <span id="pip-command" data-clipboard-target="source">pip install comfy-cli</span>
+              <button type="button"
+                      class="copy-tooltip copy-tooltip-s"
+                      data-action="clipboard#copy"
+                      data-clipboard-target="tooltip"
+                      data-clipboard-tooltip-value="Copy to clipboard">
+                <i class="fa fa-copy" aria-hidden="true"></i>
+                <span class="sr-only">Copy PIP instructions</span>
+              </button>
+            </p>
+          </div>
+      </div>
+      <div class="package-header__right">
+            <a class="status-badge status-badge--good"
+               href="/project/comfy-cli/">
+              <span>Latest version</span>
+            </a>
+        <p class="package-header__date">
+Released: <time datetime="2026-04-24T06:43:17+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Apr 24, 2026
+  </time>        </p>
+      </div>
+    </div>
+  </div>
+  <div class="horizontal-section horizontal-section--grey horizontal-section--thin">
+    <div class="site-container">
+<div data-html-include="/_includes/authed/administer-project-include/comfy-cli"></div>    <div class="split-layout split-layout--middle package-description">
+        <p class="package-description__summary">A CLI tool for installing and using ComfyUI.</p>
+<div data-html-include="/_includes/authed/edit-project-button/comfy-cli"></div>  </div>
+</div>
+</div>
+<div data-controller="project-tabs">
+  <div class="tabs-container">
+    <div class="vertical-tabs">
+      <div class="vertical-tabs__tabs">
+        <div class="sidebar-section">
+          <h3 class="sidebar-section__title">Navigation</h3>
+          <nav aria-label="Navigation for comfy-cli">
+            <ul class="vertical-tabs__list" role="tablist">
+              <li role="tab">
+                <a id="description-tab"
+                   href="#description"
+                   data-project-tabs-target="tab"
+                   data-action="project-tabs#onTabClick"
+                   class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--is-active"
+                   aria-selected="true"
+                   aria-label="Project description. Focus will be moved to the description.">
+                  <i class="fa fa-align-left" aria-hidden="true"></i>
+Project description                </a>
+              </li>
+              <li role="tab">
+                <a id="history-tab"
+                   href="#history"
+                   data-project-tabs-target="tab"
+                   data-action="project-tabs#onTabClick"
+                   class="vertical-tabs__tab vertical-tabs__tab--with-icon"
+                   aria-label="Release history. Focus will be moved to the history panel.">
+                  <i class="fa fa-history" aria-hidden="true"></i>
+Release history                </a>
+              </li>
+                <li role="tab">
+                  <a id="files-tab"
+                     href="#files"
+                     data-project-tabs-target="tab"
+                     data-action="project-tabs#onTabClick"
+                     class="vertical-tabs__tab vertical-tabs__tab--with-icon"
+                     aria-label="Download files. Focus will be moved to the project files.">
+                    <i class="fa fa-download" aria-hidden="true"></i>
+Download files                  </a>
+                </li>
+            </ul>
+          </nav>
+        </div>
+<div class="sidebar-section verified">
+  <h3 class="sidebar-section__title">
+Verified details    <i class="fa fa-circle-check check"
+       title="Verified by PyPI on 2026-04-24"></i>
+  </h3>
+  <small><i>These details have been <a href="https://docs.pypi.org/project_metadata/#verified-details">verified by PyPI</a></i></small>
+    <h6>Project links</h6>
+    <ul class="vertical-tabs__list">
+          <li>
+            <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+               href="https://github.com/Comfy-Org/comfy-cli.git"
+               rel="nofollow">  <i class="fab fa-github" aria-hidden="true"></i>Repository</a>
+          </li>
+    </ul>
+    <h6>Owner</h6>
+    <ul class="vertical-tabs__list">
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+           href="/org/Comfy-Org/"
+           aria-label="Comfy-Org">
+          <i class="fa fa-sitemap" aria-hidden="true"></i>
+          Comfy-Org
+        </a>
+      </li>
+    </ul>
+    <h6>GitHub Statistics</h6>
+    <div class="hidden github-repo-info" data-controller="github-repo-info">
+      <ul class="vertical-tabs__list">
+        <li>
+          <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+             rel="noopener"
+             href="https://github.com/Comfy-Org/comfy-cli">
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <strong>Repository</strong>
+          </a>
+        </li>
+        <li>
+          <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+             data-github-repo-info-target="stargazersUrl"
+             rel="noopener">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <strong>Stars:</strong>
+            <span data-github-repo-info-target="stargazersCount"></span>
+          </a>
+        </li>
+        <li>
+          <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+             data-github-repo-info-target="forksUrl"
+             rel="noopener">
+            <i class="fa fa-code-branch" aria-hidden="true"></i>
+            <strong>Forks:</strong>
+            <span data-github-repo-info-target="forksCount"></span>
+          </a>
+        </li>
+        <li>
+          <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+             data-github-repo-info-target="openIssuesUrl"
+             rel="noopener">
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <strong>Open issues:</strong>
+            <span data-github-repo-info-target="openIssuesCount"></span>
+          </a>
+        </li>
+        <li>
+          <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+             data-github-repo-info-target="openPRsUrl"
+             rel="noopener">
+            <i class="fa fa-code-pull-request" aria-hidden="true"></i>
+            <strong>Open PRs:</strong>
+            <span data-github-repo-info-target="openPRsCount"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <h6>Maintainers</h6>
+      <span class="sidebar-section__maintainer">
+        <a href="/user/hongil0316/"
+           aria-label="">
+          <span class="sidebar-section__user-gravatar">
+            <img src="https://pypi-camo.freetls.fastly.net/4811af2a6105aa2a7f69490bdd215cb26b5aba06/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f39363430363139393966663061303765613563303339656435393766623265313f73697a653d3530"
+                 height="50"
+                 width="50"
+                 alt="Avatar for hongil0316 from gravatar.com"
+                 title="Avatar for hongil0316 from gravatar.com">
+          </span>
+          <span class="sidebar-section__user-gravatar-text">hongil0316</span>
+        </a>
+      </span>
+      <span class="sidebar-section__maintainer">
+        <a href="/user/yolandy/"
+           aria-label="">
+          <span class="sidebar-section__user-gravatar">
+            <img src="https://pypi-camo.freetls.fastly.net/36d1e05dab4de37aad93861bb5581b7f510e7577/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f30343865333132643365333062383062373966333862656537303136383461633f73697a653d3530"
+                 height="50"
+                 width="50"
+                 alt="Avatar for yolandy from gravatar.com"
+                 title="Avatar for yolandy from gravatar.com">
+          </span>
+          <span class="sidebar-section__user-gravatar-text">yolandy</span>
+        </a>
+      </span>
+</div>
+<div class="sidebar-section unverified">
+  <h3 class="sidebar-section__title">Unverified details</h3>
+  <small><i>These details have <b>not</b> been verified by PyPI</i></small>
+    <div class="sidebar-section unverified">
+      <h6>Meta</h6>
+      <ul>
+          <li>
+            <span>
+              <strong>License:</strong> GNU General Public License v3 (GPLv3) (GPL-3.0-only)
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>Maintainer:</strong> <a href="mailto:yoland@drip.art">Yoland Yan</a>
+            </span>
+          </li>
+          <li class="tags">
+            <span>
+              <i class="fa fa-tags" aria-hidden="true"></i>
+              <span class="sr-only">Tags</span>
+                <span class="package-keyword">
+                  comfyui
+,                </span>
+                <span class="package-keyword">
+                  stable diffusion
+                </span>
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>Requires:</strong> Python &gt;=3.10
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>Provides-Extra:</strong>
+                <code>dev</code>
+            </span>
+          </li>
+      </ul>
+    </div>
+    <div class="sidebar-section unverified">
+      <h6 class="sidebar-section__title">Classifiers</h6>
+      <ul class="sidebar-section__classifiers">
+          <li>
+            <strong>Development Status</strong>
+            <ul>
+                <li>
+                  <a href="/search/?c=Development+Status+%3A%3A+4+-+Beta">
+                    4 - Beta
+                  </a>
+                </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Intended Audience</strong>
+            <ul>
+                <li>
+                  <a href="/search/?c=Intended+Audience+%3A%3A+Developers">
+                    Developers
+                  </a>
+                </li>
+            </ul>
+          </li>
+          <li>
+            <strong>License</strong>
+            <ul>
+                <li>
+                  <a href="/search/?c=License+%3A%3A+OSI+Approved+%3A%3A+GNU+General+Public+License+v3+%28GPLv3%29">
+                    OSI Approved :: GNU General Public License v3 (GPLv3)
+                  </a>
+                </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Programming Language</strong>
+            <ul>
+                <li>
+                  <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3+%3A%3A+Only">
+                    Python :: 3 :: Only
+                  </a>
+                </li>
+                <li>
+                  <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.10">
+                    Python :: 3.10
+                  </a>
+                </li>
+                <li>
+                  <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.11">
+                    Python :: 3.11
+                  </a>
+                </li>
+                <li>
+                  <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.12">
+                    Python :: 3.12
+                  </a>
+                </li>
+                <li>
+                  <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.13">
+                    Python :: 3.13
+                  </a>
+                </li>
+            </ul>
+          </li>
+      </ul>
+    </div>
+</div>        <div class="sidebar-section">
+          <a class="button button--full-width button--warning"
+             href="https://pypi.org/project/comfy-cli/submit-malware-report/"
+             rel="nofollow"
+             role="button">Report project as malware</a>
+        </div>
+      </div>
+      <div class="vertical-tabs__panel">
+        <!-- mobile menu -->
+        <nav aria-label="Navigation for comfy-cli">
+          <ul class="vertical-tabs__list" role="tablist">
+            <li role="tab">
+              <a id="mobile-description-tab"
+                 href="#description"
+                 data-project-tabs-target="mobileTab"
+                 data-action="project-tabs#onTabClick"
+                 class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile vertical-tabs__tab--no-top-border vertical-tabs__tab--is-active"
+                 aria-selected="true"
+                 aria-label="Project description. Focus will be moved to the description.">
+                <i class="fa fa-align-left" aria-hidden="true"></i>
+Project description              </a>
+            </li>
+            <li role="tab">
+              <a id="mobile-data-tab"
+                 href="#data"
+                 data-project-tabs-target="mobileTab"
+                 data-action="project-tabs#onTabClick"
+                 class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile"
+                 aria-label="Project details. Focus will be moved to the project details.">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+Project details              </a>
+            </li>
+            <li role="tab">
+              <a id="mobile-history-tab"
+                 href="#history"
+                 data-project-tabs-target="mobileTab"
+                 data-action="project-tabs#onTabClick"
+                 class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile"
+                 aria-label="Release history. Focus will be moved to the history panel.">
+                <i class="fa fa-history" aria-hidden="true"></i>
+Release history              </a>
+            </li>
+              <li role="tab">
+                <a id="mobile-files-tab"
+                   href="#files"
+                   data-project-tabs-target="mobileTab"
+                   data-action="project-tabs#onTabClick"
+                   class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile"
+                   aria-label="Download files. Focus will be moved to the project files.">
+                  <i class="fa fa-download" aria-hidden="true"></i>
+Download files                </a>
+              </li>
+          </ul>
+        </nav>
+        <div id="description"
+             data-project-tabs-target="content"
+             class="vertical-tabs__content"
+             role="tabpanel"
+             aria-labelledby="description-tab mobile-description-tab"
+             tabindex="-1">
+    <h2 class="page-title">Project description</h2>
+      <div class="project-description"><h1>comfy-cli: A Command Line Tool for ComfyUI</h1>
+<p><a href="https://github.com/Comfy-Org/comfy-cli/actions/workflows/pytest.yml" rel=nofollow><img src="https://pypi-camo.freetls.fastly.net/de394cb5b0befaca95d169cf62b9b22c9a09bfeb/68747470733a2f2f6769746875622e636f6d2f436f6d66792d4f72672f636f6d66792d636c692f616374696f6e732f776f726b666c6f77732f7079746573742e796d6c2f62616467652e737667" alt="Run pytest"></a>
+<a href="https://codecov.io/github/Comfy-Org/comfy-cli" rel=nofollow><img src="https://pypi-camo.freetls.fastly.net/68b6fad07842a4a31a40e887e9203336e71b8b0f/68747470733a2f2f636f6465636f762e696f2f6769746875622f436f6d66792d4f72672f636f6d66792d636c692f67726170682f62616467652e7376673f746f6b656e3d533634574a5744325a58" alt=codecov></a>
+<a href="https://pypi.org/project/comfy-cli/" rel=nofollow><img src="https://pypi-camo.freetls.fastly.net/e62898042e3fefa924d32dbc2c89b55120d5b9b2/68747470733a2f2f696d672e736869656c64732e696f2f707970692f762f636f6d66792d636c692e737667" alt=PyPI></a>
+<a href="https://pepy.tech/project/comfy-cli" rel=nofollow><img src="https://pypi-camo.freetls.fastly.net/b126bc3b9c8ef70b724fd70d43b7243dc36f77ad/68747470733a2f2f7374617469632e706570792e746563682f62616467652f636f6d66792d636c692f6d6f6e7468" alt=Downloads></a>
+<a href="https://pypi.org/project/comfy-cli/" rel=nofollow><img src="https://pypi-camo.freetls.fastly.net/2064bac6a139fbd5e1bc47b2f5068c4d36e667fc/68747470733a2f2f696d672e736869656c64732e696f2f707970692f707976657273696f6e732f636f6d66792d636c69" alt=Python></a>
+<a href="https://github.com/Comfy-Org/comfy-cli/blob/main/LICENSE" rel=nofollow><img src="https://pypi-camo.freetls.fastly.net/410927e29b9943b67c1990c2ca5808c67f365b89/68747470733a2f2f696d672e736869656c64732e696f2f707970692f6c2f636f6d66792d636c69" alt=License></a></p>
+<p>comfy-cli is a command line tool that helps users easily install and manage
+<a href="https://github.com/comfyanonymous/ComfyUI" rel=nofollow>ComfyUI</a>, a powerful open-source
+machine learning framework. With comfy-cli, you can quickly set up ComfyUI,
+install packages, and manage custom nodes, all from the convenience of your
+terminal.</p>
+<h2>Demo</h2>
+<img src="https://pypi-camo.freetls.fastly.net/55260ca4d4c04e55e8e34a035e1ea045eb6e51f8/68747470733a2f2f6769746875622e636f6d2f796f6c616e6436382f636f6d66792d636c692f7261772f6d61696e2f6173736574732f636f6d66792d64656d6f2e676966" width=400 alt="Comfy Command Demo">
+<h2>Features</h2>
+<ul>
+<li>🚀 Easy installation of ComfyUI with a single command</li>
+<li>📦 Seamless package management for ComfyUI extensions and dependencies</li>
+<li>🔧 Custom node management for extending ComfyUI's functionality</li>
+<li>🗄️ Download checkpoints and save model hash</li>
+<li>💻 Cross-platform compatibility (Windows, macOS, Linux)</li>
+<li>📖 Comprehensive documentation and examples</li>
+<li>🎉 install pull request to ComfyUI automatically</li>
+</ul>
+<h2>Installation</h2>
+<ol>
+<li>
+<p>(Recommended, but not necessary) Enable virtual environment (<a href="https://docs.python.org/3/library/venv.html" rel=nofollow>venv</a>/<a href="https://conda.io/projects/conda/en/latest/user-guide/getting-started.html" rel=nofollow>conda</a>)</p>
+</li>
+<li>
+<p>To install comfy-cli, make sure you have Python 3.9 or higher installed on your system. Then, run the following command:</p>
+<p><code>pip install comfy-cli</code></p>
+</li>
+</ol>
+<h3>Shell Autocomplete</h3>
+<p>To install autocompletion hints in your shell run:</p>
+<p><code>comfy --install-completion</code></p>
+<p>This enables you to type <code>comfy [TAP]</code> to autocomplete commands and options</p>
+<h2>Usage</h2>
+<h3>Installing ComfyUI</h3>
+<p>To install ComfyUI using comfy, simply run:</p>
+<p><code>comfy install</code></p>
+<p>This command will download and set up the latest version of ComfyUI and ComfyUI-Manager on your
+system. If you run in a ComfyUI repo that has already been setup. The command
+will simply update the comfy.yaml file to reflect the local setup</p>
+<ul>
+<li><code>comfy install --skip-manager</code>: Install ComfyUI without ComfyUI-Manager.
+To use a custom Manager fork or specific version, skip the default installation
+and install your own into the workspace venv:
+<pre lang=bash>comfy<span class=w> </span>install<span class=w> </span>--skip-manager
+<span class=c1># Then install your custom Manager:</span>
+pip<span class=w> </span>install<span class=w> </span>-e<span class=w> </span>/path/to/your-manager-fork<span class=w>   </span><span class=c1># editable install</span>
+<span class=c1># or</span>
+pip<span class=w> </span>install<span class=w> </span>comfyui-manager<span class=o>==</span><span class=m>4</span>.1b8<span class=w>          </span><span class=c1># specific version</span>
+</pre>
+</li>
+<li><code>comfy --workspace=&lt;path&gt; install</code>: Install ComfyUI into <code>&lt;path&gt;/ComfyUI</code>.</li>
+<li><code>comfy install --fast-deps</code>: Use <code>uv</code> instead of <code>pip</code> for faster dependency resolution
+during initial ComfyUI installation. comfy-cli's built-in resolver compiles all requirements (core + custom nodes)
+into a single lockfile and installs from it. Also handles GPU-specific PyTorch wheel selection automatically.</li>
+<li>For <code>comfy install</code>, if no path specification like <code>--workspace, --recent, or --here</code> is provided, it will be implicitly installed in <code>&lt;HOME&gt;/comfy</code>.</li>
+</ul>
+<h4>Python environment handling</h4>
+<p>When you run <code>comfy install</code>, comfy-cli picks a Python environment for ComfyUI
+dependencies using the following precedence:</p>
+<ol>
+<li>An <strong>active virtualenv or conda</strong> environment (<code>VIRTUAL_ENV</code> / <code>CONDA_PREFIX</code>) is used as-is.</li>
+<li>An <strong>existing <code>.venv</code> or <code>venv</code></strong> directory inside the workspace is reused.</li>
+<li>Otherwise the choice depends on how comfy-cli was installed:
+<ul>
+<li><strong><code>pip install comfy-cli</code></strong> (global / system Python): dependencies go
+directly into the same Python environment. This is the typical Docker setup.</li>
+<li><strong><code>pipx install comfy-cli</code></strong> or <strong><code>uv tool install comfy-cli</code></strong> (isolated
+tool environment): a <code>.venv</code> is created inside the ComfyUI workspace.
+Use <code>comfy launch</code> to start ComfyUI with the correct Python.</li>
+</ul>
+</li>
+</ol>
+<h3>Specifying execution path</h3>
+<ul>
+<li>
+<p>You can specify the path of ComfyUI where the command will be applied through path indicators as follows:</p>
+<ul>
+<li><code>comfy --workspace=&lt;path&gt;</code>: Run from the ComfyUI installed in the specified workspace.</li>
+<li><code>comfy --recent</code>: Run from the recently executed or installed ComfyUI.</li>
+<li><code>comfy --here</code>: Run from the ComfyUI located in the current directory.</li>
+</ul>
+</li>
+<li>
+<p>--workspace, --recent, and --here options cannot be used simultaneously.</p>
+</li>
+<li>
+<p>If there is no path indicator, the following priority applies:</p>
+<ul>
+<li>Run from the default ComfyUI at the path specified by <code>comfy set-default &lt;path&gt;</code>.</li>
+<li>Run from the recently executed or installed ComfyUI.</li>
+<li>Run from the ComfyUI located in the current directory.</li>
+</ul>
+</li>
+<li>
+<p>Example 1: To run the recently executed ComfyUI:</p>
+<ul>
+<li><code>comfy --recent launch</code></li>
+</ul>
+</li>
+<li>
+<p>Example 2: To install a package on the ComfyUI in the current directory:</p>
+<ul>
+<li><code>comfy --here node install comfyui-impact-pack</code></li>
+</ul>
+</li>
+<li>
+<p>Example 3: To update the automatically selected path of ComfyUI and custom nodes based on priority:</p>
+<ul>
+<li><code>comfy node update all</code></li>
+</ul>
+</li>
+<li>
+<p>You can use the <code>comfy which</code> command to check the path of the target workspace.</p>
+<ul>
+<li>e.g <code>comfy --recent which</code>, <code>comfy --here which</code>, <code>comfy which</code>, ...</li>
+</ul>
+</li>
+</ul>
+<h3>Default Setup</h3>
+<p>The default sets the option that will be executed by default when no specific workspace's ComfyUI has been set for the command.</p>
+<p><code>comfy set-default &lt;workspace path&gt; ?[--launch-extras="&lt;extra args&gt;"]</code></p>
+<ul>
+<li><code>--launch-extras</code> option specifies extra args that are applied only during launch by default. However, if extras are specified at the time of launch, this setting is ignored.</li>
+</ul>
+<h3>Launch ComfyUI</h3>
+<p>Comfy provides commands that allow you to easily run the installed ComfyUI.</p>
+<p><code>comfy launch</code></p>
+<ul>
+<li>
+<p>To run with default ComfyUI options:</p>
+<p><code>comfy launch -- &lt;extra args...&gt;</code></p>
+<p><code>comfy launch -- --cpu --listen 0.0.0.0</code></p>
+<ul>
+<li>When you manually configure the extra options, the extras set by set-default will be overridden.</li>
+</ul>
+</li>
+<li>
+<p>To run background</p>
+<p><code>comfy launch --background</code></p>
+<p><code>comfy --workspace=~/comfy launch --background -- --listen 10.0.0.10 --port 8000</code></p>
+<ul>
+<li>Instances launched with <code>--background</code> are displayed in the "Background ComfyUI" section of <code>comfy env</code>, providing management functionalities for a single background instance only.</li>
+<li>Since "Comfy Server Running" in <code>comfy env</code> only shows the default port 8188, it doesn't display ComfyUI running on a different port.</li>
+<li>Background-running ComfyUI can be stopped with <code>comfy stop</code>.</li>
+</ul>
+</li>
+<li>
+<p>to run ComfyUI with a specific pull request:</p>
+<p><code>comfy install --pr "#1234"</code></p>
+<p><code>comfy install --pr "jtydhr88:load-3d-nodes"</code></p>
+<p><code>comfy install --pr "https://github.com/comfyanonymous/ComfyUI/pull/1234"</code></p>
+<ul>
+<li>If you want to run ComfyUI with a specific pull request, you can use the <code>--pr</code> option. This will automatically install the specified pull request and run ComfyUI with it.</li>
+<li>Important: The --pr option cannot be combined with --version or --commit and will be rejected if used together.</li>
+</ul>
+</li>
+<li>
+<p>To test a frontend pull request:</p>
+<pre><code>comfy launch --frontend-pr "#456"
+comfy launch --frontend-pr "username:branch-name"
+comfy launch --frontend-pr "https://github.com/Comfy-Org/ComfyUI_frontend/pull/456"
+</code></pre>
+<ul>
+<li>The <code>--frontend-pr</code> option allows you to test frontend PRs by automatically cloning, building, and using the frontend for that session.</li>
+<li>Requirements: Node.js and npm must be installed to build the frontend.</li>
+<li>Builds are cached for quick switching between PRs - subsequent uses of the same PR are instant.</li>
+<li>Each PR is used only for that launch session. Normal launches use the default frontend.</li>
+</ul>
+<p><strong>Managing PR cache</strong>:</p>
+<pre><code>comfy pr-cache list              # List cached PR builds
+comfy pr-cache clean             # Clean all cached builds
+comfy pr-cache clean 456         # Clean specific PR cache
+</code></pre>
+<ul>
+<li>Cache automatically expires after 7 days</li>
+<li>Maximum of 10 PR builds are kept (oldest are removed automatically)</li>
+<li>Cache limits help manage disk space while keeping recent builds available</li>
+</ul>
+</li>
+</ul>
+<h3>Managing Custom Nodes</h3>
+<p>comfy provides a convenient way to manage custom nodes for extending ComfyUI's functionality. Here are some examples:</p>
+<ul>
+<li>Show custom nodes' information:</li>
+</ul>
+<pre><code>comfy node [show|simple-show] [installed|enabled|not-installed|disabled|all|snapshot|snapshot-list]
+                             ?[--channel &lt;channel name&gt;]
+                             ?[--mode [remote|local|cache]]
+</code></pre>
+<ul>
+<li>
+<p><code>comfy node show all --channel recent</code></p>
+<p><code>comfy node simple-show installed</code></p>
+<p><code>comfy node update all</code></p>
+<p><code>comfy node install comfyui-impact-pack</code></p>
+</li>
+<li>
+<p>Managing snapshot:</p>
+<p><code>comfy node save-snapshot</code></p>
+<p><code>comfy node restore-snapshot &lt;snapshot name&gt;</code></p>
+</li>
+<li>
+<p>Install dependencies:</p>
+<p><code>comfy node install-deps --deps=&lt;deps .json file&gt;</code></p>
+<p><code>comfy node install-deps --workflow=&lt;workflow .json/.png file&gt;</code></p>
+</li>
+<li>
+<p>Generate deps:</p>
+<p><code>comfy node deps-in-workflow --workflow=&lt;workflow .json/.png file&gt; --output=&lt;output deps .json file&gt;</code></p>
+</li>
+</ul>
+<h4>Unified Dependency Resolution (--uv-compile)</h4>
+<p>Requires ComfyUI-Manager v4.1+. Instead of installing dependencies per-node with
+<code>pip install</code>, <code>--uv-compile</code> delegates to ComfyUI-Manager's unified resolver which batch-resolves
+all custom node dependencies via <code>uv pip compile</code> with <strong>cross-node conflict detection</strong> —
+it can identify which node packs have incompatible dependencies and why.</p>
+<ul>
+<li>
+<p>Install with unified resolution:</p>
+<p><code>comfy node install comfyui-impact-pack --uv-compile</code></p>
+</li>
+<li>
+<p>Available on: <code>install</code>, <code>reinstall</code>, <code>update</code>, <code>fix</code>, <code>restore-snapshot</code>,
+<code>restore-dependencies</code>, <code>install-deps</code></p>
+</li>
+<li>
+<p>Run standalone (resolve all existing custom node dependencies):</p>
+<p><code>comfy node uv-sync</code></p>
+</li>
+<li>
+<p><code>--uv-compile</code> is mutually exclusive with <code>--fast-deps</code> and <code>--no-deps</code>.</p>
+</li>
+<li>
+<p>To make <code>--uv-compile</code> the default for all commands, see
+<a href=#uv-compile-default rel=nofollow>uv-compile default</a> below.</p>
+</li>
+<li>
+<p>Use <code>--no-uv-compile</code> to override the default for a single command:</p>
+<p><code>comfy node install comfyui-impact-pack --no-uv-compile</code></p>
+</li>
+</ul>
+<h4>--fast-deps vs --uv-compile</h4>
+<p>Both flags use <code>uv</code> for faster dependency resolution, but they work differently:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><code>--fast-deps</code></th>
+<th><code>--uv-compile</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Resolver</strong></td>
+<td>comfy-cli built-in (<code>DependencyCompiler</code>)</td>
+<td>ComfyUI-Manager (<code>UnifiedDepResolver</code>)</td>
+</tr>
+<tr>
+<td><strong>Scope</strong></td>
+<td><code>comfy install</code>, <code>comfy node install/reinstall</code></td>
+<td>Custom node commands only</td>
+</tr>
+<tr>
+<td><strong>Conflict handling</strong></td>
+<td>Interactive prompt to pick a version</td>
+<td>Automatic detection with node attribution</td>
+</tr>
+<tr>
+<td><strong>Config default</strong></td>
+<td>No</td>
+<td>Yes (<code>comfy manager uv-compile-default true</code>)</td>
+</tr>
+<tr>
+<td><strong>Requires</strong></td>
+<td>Only <code>uv</code></td>
+<td>ComfyUI-Manager v4.1+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>When to use which:</strong></p>
+<ul>
+<li>For initial ComfyUI installation with uv: <code>comfy install --fast-deps</code></li>
+<li>For custom node management with Manager v4.1+: <code>--uv-compile</code> (recommended)</li>
+<li>For custom node management with older Manager: <code>--fast-deps</code></li>
+</ul>
+<h4>Bisect custom nodes</h4>
+<p>If you encounter bugs only with custom nodes enabled, and want to find out which custom node(s) causes the bug,
+the bisect tool can help you pinpoint the custom node that causes the issue.</p>
+<ul>
+<li><code>comfy node bisect start</code>: Start a new bisect session with optional ComfyUI launch args. It automatically marks the starting state as bad, and takes all enabled nodes when the command executes as the test set.</li>
+<li><code>comfy node bisect good</code>: Mark the current active set as good, indicating the problem is not within the test set.</li>
+<li><code>comfy node bisect bad</code>: Mark the current active set as bad, indicating the problem is within the test set.</li>
+<li><code>comfy node bisect reset</code>: Reset the current bisect session.</li>
+</ul>
+<h3>Managing Models</h3>
+<ul>
+<li>
+<p>Model downloading</p>
+<p><code>comfy model download --url &lt;URL&gt; ?[--relative-path &lt;PATH&gt;] ?[--set-civitai-api-token &lt;TOKEN&gt;] ?[--set-hf-api-token &lt;TOKEN&gt;]</code></p>
+<ul>
+<li>URL: CivitAI page, Hugging Face file URL, etc...</li>
+<li>You can also specify your API tokens via the <code>CIVITAI_API_TOKEN</code> and <code>HF_API_TOKEN</code> environment variables. The order of priority is <code>--set-X-token</code> (always highest priority), then the environment variables if they exist, and lastly your config's stored tokens from previous <code>--set-X-token</code> usage (which remembers your most recently set token values).</li>
+<li>Tokens provided via the environment variables are never stored persistently in your config file. They are intended as a way to easily and safely provide transient secrets.</li>
+</ul>
+</li>
+<li>
+<p>Model remove</p>
+<p><code>comfy model remove ?[--relative-path &lt;PATH&gt;] --model-names &lt;model names&gt;</code></p>
+</li>
+<li>
+<p>Model list</p>
+<p><code>comfy model list ?[--relative-path &lt;PATH&gt;]</code></p>
+</li>
+</ul>
+<h3>Managing ComfyUI-Manager</h3>
+<ul>
+<li>
+<p>Disable ComfyUI-Manager completely (no manager flags passed to ComfyUI):</p>
+<p><code>comfy manager disable</code></p>
+</li>
+<li>
+<p>Enable ComfyUI-Manager with new GUI:</p>
+<p><code>comfy manager enable-gui</code></p>
+</li>
+<li>
+<p>Enable ComfyUI-Manager without GUI (manager runs but UI is hidden):</p>
+<p><code>comfy manager disable-gui</code></p>
+</li>
+<li>
+<p>Enable ComfyUI-Manager with legacy GUI:</p>
+<p><code>comfy manager enable-legacy-gui</code></p>
+</li>
+<li>
+<p>Clear reserved startup action:</p>
+<p><code>comfy manager clear</code></p>
+</li>
+<li>
+<p>Migrate legacy git-cloned ComfyUI-Manager to pip package:</p>
+<p><code>comfy manager migrate-legacy</code></p>
+</li>
+</ul>
+<h4>uv-compile default</h4>
+<p>Set <code>--uv-compile</code> as the default behavior for all custom node operations:</p>
+<p><code>comfy manager uv-compile-default true</code></p>
+<p>When enabled, all node commands (<code>install</code>, <code>reinstall</code>, <code>update</code>, <code>fix</code>,
+<code>restore-snapshot</code>, <code>restore-dependencies</code>, <code>install-deps</code>) will automatically
+use <code>--uv-compile</code>. Use <code>--no-uv-compile</code> on any individual command to override.</p>
+<p>To disable:</p>
+<p><code>comfy manager uv-compile-default false</code></p>
+<h2>Beta Feature: format of comfy-lock.yaml (WIP)</h2>
+<pre><code>basic:
+
+models:
+  - model: [name of the model]
+    url: [url of the source, e.g. https://huggingface.co/...]
+    paths: [list of paths to the model]
+      - path: [path to the model]
+      - path: [path to the model]
+    hashes: [hashes for the model]
+      - hash: [hash]
+        type: [AutoV1, AutoV2, SHA256, CRC32, and Blake3]
+    type: [type of the model, e.g. diffuser, lora, etc.]
+
+  - model:
+  ...
+
+# compatible with ComfyUI-Manager's .yaml snapshot
+custom_nodes:
+  comfyui: [commit hash]
+  file_custom_nodes:
+  - disabled: [bool]
+    filename: [.py filename]
+    ...
+  git_custom_nodes:
+    [git-url]:
+      disabled: [bool]
+      hash: [commit hash]
+    ...
+</code></pre>
+<h2>Analytics</h2>
+<p>We track analytics using Mixpanel to help us understand usage patterns and know where to prioritize our efforts. When you first download the cli, it will ask you to give consent. If at any point you wish to opt out:</p>
+<pre><code>comfy tracking disable
+</code></pre>
+<p>Check out the usage here: <a href="https://mixpanel.com/p/13hGfPfEPdRkjPtNaS7BYQ" rel=nofollow>Mixpanel Board</a></p>
+<h2>Contributing</h2>
+<p>We welcome contributions to comfy-cli! If you have any ideas, suggestions, or
+bug reports, please open an issue on our <a href="https://github.com/yoland68/comfy-cli/issues" rel=nofollow>GitHub
+repository</a>. If you'd like to contribute code,
+please fork the repository and submit a pull request.</p>
+<p>Check out the <a href="/DEV_README.md" rel=nofollow>Dev Guide</a> for more details.</p>
+<h2>License</h2>
+<p>comfy is released under the <a href="https://github.com/yoland68/comfy-cli/blob/master/LICENSE" rel=nofollow>GNU General Public License v3.0</a>.</p>
+<h2>Support</h2>
+<p>If you encounter any issues or have questions about comfy-cli, please <a href="https://github.com/comfy-cli/issues" rel=nofollow>open an issue</a> on our GitHub repository or contact us on <a href="https://discord.com/invite/comfyorg" rel=nofollow>Discord</a>. We'll be happy to assist you!</p>
+<p>Happy diffusing with ComfyUI and comfy-cli! 🎉</p>
+</div>
+  </div>
+  <div id="data"
+       data-project-tabs-target="content"
+       class="vertical-tabs__content"
+       role="tabpanel"
+       aria-labelledby="mobile-data-tab"
+       tabindex="-1">
+    <h2 class="page-title">Project details</h2>
+<div class="sidebar-section verified">
+  <h3 class="sidebar-section__title">
+Verified details    <i class="fa fa-circle-check check"
+       title="Verified by PyPI on 2026-04-24"></i>
+  </h3>
+  <small><i>These details have been <a href="https://docs.pypi.org/project_metadata/#verified-details">verified by PyPI</a></i></small>
+    <h6>Project links</h6>
+    <ul class="vertical-tabs__list">
+          <li>
+            <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+               href="https://github.com/Comfy-Org/comfy-cli.git"
+               rel="nofollow">  <i class="fab fa-github" aria-hidden="true"></i>Repository</a>
+          </li>
+    </ul>
+    <h6>Owner</h6>
+    <ul class="vertical-tabs__list">
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+           href="/org/Comfy-Org/"
+           aria-label="Comfy-Org">
+          <i class="fa fa-sitemap" aria-hidden="true"></i>
+          Comfy-Org
+        </a>
+      </li>
+    </ul>
+    <h6>GitHub Statistics</h6>
+    <div class="hidden github-repo-info" data-controller="github-repo-info">
+      <ul class="vertical-tabs__list">
+        <li>
+          <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+             rel="noopener"
+             href="https://github.com/Comfy-Org/comfy-cli">
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <strong>Repository</strong>
+          </a>
+        </li>
+        <li>
+          <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+             data-github-repo-info-target="stargazersUrl"
+             rel="noopener">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <strong>Stars:</strong>
+            <span data-github-repo-info-target="stargazersCount"></span>
+          </a>
+        </li>
+        <li>
+          <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+             data-github-repo-info-target="forksUrl"
+             rel="noopener">
+            <i class="fa fa-code-branch" aria-hidden="true"></i>
+            <strong>Forks:</strong>
+            <span data-github-repo-info-target="forksCount"></span>
+          </a>
+        </li>
+        <li>
+          <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+             data-github-repo-info-target="openIssuesUrl"
+             rel="noopener">
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <strong>Open issues:</strong>
+            <span data-github-repo-info-target="openIssuesCount"></span>
+          </a>
+        </li>
+        <li>
+          <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+             data-github-repo-info-target="openPRsUrl"
+             rel="noopener">
+            <i class="fa fa-code-pull-request" aria-hidden="true"></i>
+            <strong>Open PRs:</strong>
+            <span data-github-repo-info-target="openPRsCount"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <h6>Maintainers</h6>
+      <span class="sidebar-section__maintainer">
+        <a href="/user/hongil0316/"
+           aria-label="">
+          <span class="sidebar-section__user-gravatar">
+            <img src="https://pypi-camo.freetls.fastly.net/4811af2a6105aa2a7f69490bdd215cb26b5aba06/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f39363430363139393966663061303765613563303339656435393766623265313f73697a653d3530"
+                 height="50"
+                 width="50"
+                 alt="Avatar for hongil0316 from gravatar.com"
+                 title="Avatar for hongil0316 from gravatar.com">
+          </span>
+          <span class="sidebar-section__user-gravatar-text">hongil0316</span>
+        </a>
+      </span>
+      <span class="sidebar-section__maintainer">
+        <a href="/user/yolandy/"
+           aria-label="">
+          <span class="sidebar-section__user-gravatar">
+            <img src="https://pypi-camo.freetls.fastly.net/36d1e05dab4de37aad93861bb5581b7f510e7577/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f30343865333132643365333062383062373966333862656537303136383461633f73697a653d3530"
+                 height="50"
+                 width="50"
+                 alt="Avatar for yolandy from gravatar.com"
+                 title="Avatar for yolandy from gravatar.com">
+          </span>
+          <span class="sidebar-section__user-gravatar-text">yolandy</span>
+        </a>
+      </span>
+</div>
+<div class="sidebar-section unverified">
+  <h3 class="sidebar-section__title">Unverified details</h3>
+  <small><i>These details have <b>not</b> been verified by PyPI</i></small>
+    <div class="sidebar-section unverified">
+      <h6>Meta</h6>
+      <ul>
+          <li>
+            <span>
+              <strong>License:</strong> GNU General Public License v3 (GPLv3) (GPL-3.0-only)
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>Maintainer:</strong> <a href="mailto:yoland@drip.art">Yoland Yan</a>
+            </span>
+          </li>
+          <li class="tags">
+            <span>
+              <i class="fa fa-tags" aria-hidden="true"></i>
+              <span class="sr-only">Tags</span>
+                <span class="package-keyword">
+                  comfyui
+,                </span>
+                <span class="package-keyword">
+                  stable diffusion
+                </span>
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>Requires:</strong> Python &gt;=3.10
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>Provides-Extra:</strong>
+                <code>dev</code>
+            </span>
+          </li>
+      </ul>
+    </div>
+    <div class="sidebar-section unverified">
+      <h6 class="sidebar-section__title">Classifiers</h6>
+      <ul class="sidebar-section__classifiers">
+          <li>
+            <strong>Development Status</strong>
+            <ul>
+                <li>
+                  <a href="/search/?c=Development+Status+%3A%3A+4+-+Beta">
+                    4 - Beta
+                  </a>
+                </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Intended Audience</strong>
+            <ul>
+                <li>
+                  <a href="/search/?c=Intended+Audience+%3A%3A+Developers">
+                    Developers
+                  </a>
+                </li>
+            </ul>
+          </li>
+          <li>
+            <strong>License</strong>
+            <ul>
+                <li>
+                  <a href="/search/?c=License+%3A%3A+OSI+Approved+%3A%3A+GNU+General+Public+License+v3+%28GPLv3%29">
+                    OSI Approved :: GNU General Public License v3 (GPLv3)
+                  </a>
+                </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Programming Language</strong>
+            <ul>
+                <li>
+                  <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3+%3A%3A+Only">
+                    Python :: 3 :: Only
+                  </a>
+                </li>
+                <li>
+                  <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.10">
+                    Python :: 3.10
+                  </a>
+                </li>
+                <li>
+                  <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.11">
+                    Python :: 3.11
+                  </a>
+                </li>
+                <li>
+                  <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.12">
+                    Python :: 3.12
+                  </a>
+                </li>
+                <li>
+                  <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.13">
+                    Python :: 3.13
+                  </a>
+                </li>
+            </ul>
+          </li>
+      </ul>
+    </div>
+</div>    <br>
+  </div>
+  <div id="history"
+       data-project-tabs-target="content"
+       class="vertical-tabs__content"
+       role="tabpanel"
+       aria-labelledby="history-tab mobile-history-tab"
+       tabindex="-1">
+    <h2 class="page-title split-layout">
+      <span>Release history</span>
+      <span class="reset-text margin-top">
+        <a href="/help/#project-release-notifications">Release notifications</a> |
+        <a href="/rss/project/comfy-cli/releases.xml">RSS feed <i class="fa fa-rss" aria-hidden="true"></i></a>
+      </span>
+    </h2>
+    <div class="release-timeline">
+        <div class="release release--latest release--current">
+          <div class="release__meta">
+              <span class="badge">This version</span>
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/blue-cube.572a5bfb.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.7.3/">
+            <p class="release__version">
+              1.7.3
+            </p>
+            <p class="release__version-date"><time datetime="2026-04-24T06:43:17+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Apr 24, 2026
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.7.2/">
+            <p class="release__version">
+              1.7.2
+            </p>
+            <p class="release__version-date"><time datetime="2026-04-12T14:32:04+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Apr 12, 2026
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.7.1/">
+            <p class="release__version">
+              1.7.1
+            </p>
+            <p class="release__version-date"><time datetime="2026-04-01T07:42:04+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Apr 1, 2026
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.7.0/">
+            <p class="release__version">
+              1.7.0
+            </p>
+            <p class="release__version-date"><time datetime="2026-03-28T13:01:28+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Mar 28, 2026
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.6.1/">
+            <p class="release__version">
+              1.6.1
+            </p>
+            <p class="release__version-date"><time datetime="2026-03-26T13:19:57+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Mar 26, 2026
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.6.0/">
+            <p class="release__version">
+              1.6.0
+            </p>
+            <p class="release__version-date"><time datetime="2026-03-13T10:51:43+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Mar 13, 2026
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.5.4/">
+            <p class="release__version">
+              1.5.4
+            </p>
+            <p class="release__version-date"><time datetime="2026-01-11T11:38:24+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Jan 11, 2026
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.5.3/">
+            <p class="release__version">
+              1.5.3
+            </p>
+            <p class="release__version-date"><time datetime="2025-11-08T06:57:43+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Nov 8, 2025
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.5.2/">
+            <p class="release__version">
+              1.5.2
+            </p>
+            <p class="release__version-date"><time datetime="2025-09-30T07:20:29+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Sep 30, 2025
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.5.1/">
+            <p class="release__version">
+              1.5.1
+            </p>
+            <p class="release__version-date"><time datetime="2025-09-04T19:57:10+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Sep 4, 2025
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.5.0/">
+            <p class="release__version">
+              1.5.0
+            </p>
+            <p class="release__version-date"><time datetime="2025-08-12T05:08:08+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Aug 12, 2025
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.4.1/">
+            <p class="release__version">
+              1.4.1
+            </p>
+            <p class="release__version-date"><time datetime="2025-06-09T16:36:53+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Jun 9, 2025
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.4.0/">
+            <p class="release__version">
+              1.4.0
+            </p>
+            <p class="release__version-date"><time datetime="2025-05-29T22:22:46+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 29, 2025
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.3.9/">
+            <p class="release__version">
+              1.3.9
+            </p>
+            <p class="release__version-date"><time datetime="2025-05-13T23:14:10+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 13, 2025
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.3.8/">
+            <p class="release__version">
+              1.3.8
+            </p>
+            <p class="release__version-date"><time datetime="2025-02-25T04:27:39+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Feb 25, 2025
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.3.7/">
+            <p class="release__version">
+              1.3.7
+            </p>
+            <p class="release__version-date"><time datetime="2025-02-11T00:47:06+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Feb 11, 2025
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.3.6/">
+            <p class="release__version">
+              1.3.6
+            </p>
+            <p class="release__version-date"><time datetime="2025-02-01T21:00:10+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Feb 1, 2025
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.3.5/">
+            <p class="release__version">
+              1.3.5
+            </p>
+            <p class="release__version-date"><time datetime="2025-01-03T23:37:11+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Jan 3, 2025
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.3.4/">
+            <p class="release__version">
+              1.3.4
+            </p>
+            <p class="release__version-date"><time datetime="2025-01-03T01:43:46+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Jan 3, 2025
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.3.3/">
+            <p class="release__version">
+              1.3.3
+            </p>
+            <p class="release__version-date"><time datetime="2024-12-31T22:13:26+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Dec 31, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.3.2/">
+            <p class="release__version">
+              1.3.2
+            </p>
+            <p class="release__version-date"><time datetime="2024-12-27T23:41:47+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Dec 27, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.3.1/">
+            <p class="release__version">
+              1.3.1
+            </p>
+            <p class="release__version-date"><time datetime="2024-11-13T22:20:00+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Nov 13, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.3.0/">
+            <p class="release__version">
+              1.3.0
+            </p>
+            <p class="release__version-date"><time datetime="2024-11-12T04:08:14+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Nov 12, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.2.9/">
+            <p class="release__version">
+              1.2.9
+            </p>
+            <p class="release__version-date"><time datetime="2024-11-08T02:11:54+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Nov 8, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.2.8/">
+            <p class="release__version">
+              1.2.8
+            </p>
+            <p class="release__version-date"><time datetime="2024-10-31T01:01:22+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Oct 31, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.2.7/">
+            <p class="release__version">
+              1.2.7
+            </p>
+            <p class="release__version-date"><time datetime="2024-10-09T23:44:41+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Oct 9, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.2.6/">
+            <p class="release__version">
+              1.2.6
+            </p>
+            <p class="release__version-date"><time datetime="2024-10-08T21:53:54+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Oct 8, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.2.5/">
+            <p class="release__version">
+              1.2.5
+            </p>
+            <p class="release__version-date"><time datetime="2024-10-04T19:59:52+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Oct 4, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.2.4/">
+            <p class="release__version">
+              1.2.4
+            </p>
+            <p class="release__version-date"><time datetime="2024-10-03T07:50:00+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Oct 3, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.2.3/">
+            <p class="release__version">
+              1.2.3
+            </p>
+            <p class="release__version-date"><time datetime="2024-09-15T13:17:41+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Sep 15, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.2.2/">
+            <p class="release__version">
+              1.2.2
+            </p>
+            <p class="release__version-date"><time datetime="2024-09-15T11:55:09+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Sep 15, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.2.1/">
+            <p class="release__version">
+              1.2.1
+            </p>
+            <p class="release__version-date"><time datetime="2024-09-13T12:46:21+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Sep 13, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.2.0/">
+            <p class="release__version">
+              1.2.0
+            </p>
+            <p class="release__version-date"><time datetime="2024-09-13T11:54:56+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Sep 13, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.1.8/">
+            <p class="release__version">
+              1.1.8
+            </p>
+            <p class="release__version-date"><time datetime="2024-09-11T02:00:41+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Sep 11, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.1.7/">
+            <p class="release__version">
+              1.1.7
+            </p>
+            <p class="release__version-date"><time datetime="2024-09-07T09:58:19+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Sep 7, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.1.6/">
+            <p class="release__version">
+              1.1.6
+            </p>
+            <p class="release__version-date"><time datetime="2024-08-30T05:04:00+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Aug 30, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.1.5/">
+            <p class="release__version">
+              1.1.5
+            </p>
+            <p class="release__version-date"><time datetime="2024-08-29T00:20:42+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Aug 29, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.1.4/">
+            <p class="release__version">
+              1.1.4
+            </p>
+            <p class="release__version-date"><time datetime="2024-08-28T22:01:33+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Aug 28, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.1.3/">
+            <p class="release__version">
+              1.1.3
+            </p>
+            <p class="release__version-date"><time datetime="2024-08-28T20:36:58+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Aug 28, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.1.2/">
+            <p class="release__version">
+              1.1.2
+            </p>
+            <p class="release__version-date"><time datetime="2024-08-27T23:09:14+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Aug 27, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.1.1/">
+            <p class="release__version">
+              1.1.1
+            </p>
+            <p class="release__version-date"><time datetime="2024-08-27T21:20:03+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Aug 27, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.1.0/">
+            <p class="release__version">
+              1.1.0
+            </p>
+            <p class="release__version-date"><time datetime="2024-08-27T18:03:38+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Aug 27, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.0.36/">
+            <p class="release__version">
+              1.0.36
+            </p>
+            <p class="release__version-date"><time datetime="2024-08-13T17:11:56+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Aug 13, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.0.35/">
+            <p class="release__version">
+              1.0.35
+            </p>
+            <p class="release__version-date"><time datetime="2024-07-29T23:14:41+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Jul 29, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.0.34/">
+            <p class="release__version">
+              1.0.34
+            </p>
+            <p class="release__version-date"><time datetime="2024-07-18T00:17:21+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Jul 18, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.0.33/">
+            <p class="release__version">
+              1.0.33
+            </p>
+            <p class="release__version-date"><time datetime="2024-07-03T17:51:19+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Jul 3, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/1.0.32/">
+            <p class="release__version">
+              1.0.32
+            </p>
+            <p class="release__version-date"><time datetime="2024-06-15T22:47:59+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Jun 15, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.32/">
+            <p class="release__version">
+              0.0.32
+            </p>
+            <p class="release__version-date"><time datetime="2024-06-15T22:36:14+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Jun 15, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.31/">
+            <p class="release__version">
+              0.0.31
+            </p>
+            <p class="release__version-date"><time datetime="2024-06-03T21:36:33+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Jun 3, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.29/">
+            <p class="release__version">
+              0.0.29
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-24T01:04:14+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 24, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.28/">
+            <p class="release__version">
+              0.0.28
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-21T00:18:39+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 21, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.26/">
+            <p class="release__version">
+              0.0.26
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-20T22:35:38+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 20, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.25/">
+            <p class="release__version">
+              0.0.25
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-16T16:32:12+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 16, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.24/">
+            <p class="release__version">
+              0.0.24
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-16T14:17:10+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 16, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.23/">
+            <p class="release__version">
+              0.0.23
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-14T22:04:13+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 14, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.22/">
+            <p class="release__version">
+              0.0.22
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-09T15:38:26+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 9, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.21/">
+            <p class="release__version">
+              0.0.21
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-08T22:22:47+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 8, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.21.dev14/">
+            <p class="release__version">
+              0.0.21.dev14
+                <span class="badge badge--warning">pre-release</span>
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-09T15:29:39+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 9, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.21.dev13/">
+            <p class="release__version">
+              0.0.21.dev13
+                <span class="badge badge--warning">pre-release</span>
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-09T15:24:13+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 9, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.21.dev9/">
+            <p class="release__version">
+              0.0.21.dev9
+                <span class="badge badge--warning">pre-release</span>
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-09T14:16:43+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 9, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.21.dev8/">
+            <p class="release__version">
+              0.0.21.dev8
+                <span class="badge badge--warning">pre-release</span>
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-09T14:08:25+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 9, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.21.dev4/">
+            <p class="release__version">
+              0.0.21.dev4
+                <span class="badge badge--warning">pre-release</span>
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-09T13:15:23+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 9, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.21.dev3/">
+            <p class="release__version">
+              0.0.21.dev3
+                <span class="badge badge--warning">pre-release</span>
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-09T13:09:44+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 9, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.21.dev2/">
+            <p class="release__version">
+              0.0.21.dev2
+                <span class="badge badge--warning">pre-release</span>
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-09T13:01:40+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 9, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.21.dev1/">
+            <p class="release__version">
+              0.0.21.dev1
+                <span class="badge badge--warning">pre-release</span>
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-08T22:47:32+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 8, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.21.dev0/">
+            <p class="release__version">
+              0.0.21.dev0
+                <span class="badge badge--warning">pre-release</span>
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-08T22:39:53+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 8, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.20/">
+            <p class="release__version">
+              0.0.20
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-08T02:46:23+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 8, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.20.dev1/">
+            <p class="release__version">
+              0.0.20.dev1
+                <span class="badge badge--warning">pre-release</span>
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-08T22:13:40+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 8, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.20.dev0/">
+            <p class="release__version">
+              0.0.20.dev0
+                <span class="badge badge--warning">pre-release</span>
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-08T17:37:51+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 8, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.19/">
+            <p class="release__version">
+              0.0.19
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-07T13:47:27+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 7, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.18/">
+            <p class="release__version">
+              0.0.18
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-07T13:40:08+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 7, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.17/">
+            <p class="release__version">
+              0.0.17
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-06T23:51:54+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 6, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.16/">
+            <p class="release__version">
+              0.0.16
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-05T04:15:04+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 5, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.15/">
+            <p class="release__version">
+              0.0.15
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-04T00:56:21+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 4, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.14/">
+            <p class="release__version">
+              0.0.14
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-02T01:48:35+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 2, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.13/">
+            <p class="release__version">
+              0.0.13
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-02T01:38:30+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 2, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.12/">
+            <p class="release__version">
+              0.0.12
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-02T01:29:13+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 2, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.11/">
+            <p class="release__version">
+              0.0.11
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-02T01:16:21+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 2, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.10/">
+            <p class="release__version">
+              0.0.10
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-02T01:11:45+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 2, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.9/">
+            <p class="release__version">
+              0.0.9
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-02T01:09:08+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 2, 2024
+  </time></p>
+          </a>
+        </div>
+        <div class="release release--oldest">
+          <div class="release__meta">
+          </div>
+          <div class="release__graphic">
+<div class="release__line"></div>              <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+          </div>
+          <a class="card release__card"
+             href="/project/comfy-cli/0.0.8/">
+            <p class="release__version">
+              0.0.8
+            </p>
+            <p class="release__version-date"><time datetime="2024-05-02T01:05:05+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    May 2, 2024
+  </time></p>
+          </a>
+        </div>
+    </div>
+  </div>
+    <div id="files"
+         data-project-tabs-target="content"
+         class="vertical-tabs__content"
+         role="tabpanel"
+         aria-labelledby="files-tab mobile-files-tab"
+         tabindex="-1"
+         data-controller="filter-list">
+      <h2 class="page-title">Download files</h2>
+      <p>
+Download the file for your platform. If you're not sure which to choose, learn more about <a href="https://packaging.python.org/tutorials/installing-packages/" title="External link" target="_blank" rel="noopener">installing packages</a>.      </p>
+      <h3>
+Source Distribution    </h3>
+          <div class="file"
+>
+      <div class="file__graphic">
+        <i class="far fa-file" aria-hidden="true"></i>
+      </div>
+      <div class="card file__card">
+        <a href="https://files.pythonhosted.org/packages/81/9a/ba5c7670e4d655364309c789b74f111ca02249ab1eb33f9210dc60d6039c/comfy_cli-1.7.3.tar.gz">comfy_cli-1.7.3.tar.gz</a>
+        (106.3 kB
+        <a href="#comfy_cli-1.7.3.tar.gz"
+           data-project-tabs-target="tab mobileTab"
+           data-action="project-tabs#onTabClick">view details</a>)
+        <p class="file__meta">
+          Uploaded <time datetime="2026-04-24T06:43:18+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Apr 24, 2026
+  </time>
+<code>Source</code>        </p>
+      </div>
+    </div>
+
+      <h3>
+Built Distribution    </h3>
+    <p class="hidden initial-toggle-visibility">
+Filter files by name, interpreter, ABI, and platform.    </p>
+    <p>
+If you're not sure about the file name format, learn more about <a href="https://packaging.python.org/en/latest/specifications/binary-distribution-format/" title="External link" target="_blank" rel="noopener">wheel file names</a>.    </p>
+    <noscript>
+      <p class="initial-toggle-visibility">
+The dropdown lists show the available interpreters, ABIs, and platforms.      </p>
+      <p class="initial-toggle-visibility">
+Enable javascript to be able to filter the list of wheel files.      </p>
+    </noscript>
+    <p class="hidden initial-toggle-visibility" data-controller="clipboard">
+Copy a direct link to the current filters      <a class="hidden"
+         href="https://pypi.org/project/comfy-cli/#files"
+         data-clipboard-target="source"
+         data-filter-list-target="url"></a>
+      <button type="button"
+              class="button button--small copy-tooltip copy-tooltip-w"
+              data-action="clipboard#copy"
+              data-clipboard-target="tooltip"
+              data-clipboard-tooltip-value="Copy to clipboard">
+Copy      </button>
+    </p>
+    <p class="hidden initial-toggle-visibility">
+      <span data-filter-list-target="summary"></span>
+    </p>
+    <div>
+      <div class="form-group hidden initial-toggle-visibility">
+        <label class="form-group__label sr-only" for="bdist-filenames-filter">File name</label>
+        <input class="form-group__field"
+               type="text"
+               id="bdist-filenames-filter"
+               name="bdist-filenames-filter"
+               placeholder="File name"
+               autocapitalize="none"
+               autocomplete=""
+               spellcheck="false"
+               data-action="filter-list#filter"
+               data-filter-list-target="filter"
+               data-filtered-source="filename">
+      </div>
+      <div class="col-grid">
+        <div class="form-group col-third">  <label class="form-group__label sr-only" for="bdist-tags-interpreters">Interpreter</label>
+  <select class="form-group__field"
+          id="bdist-tags-interpreters"
+          name="bdist-tags-interpreters"
+          data-action="filter-list#filter"
+          data-filter-list-target="filter"
+          data-filtered-source="interpreters">
+    <option selected value="">Interpreter</option>
+      <option               value="py3">py3</option>
+  </select>
+</div>
+        <div class="form-group col-third">  <label class="form-group__label sr-only" for="bdist-tags-abis">ABI</label>
+  <select class="form-group__field"
+          id="bdist-tags-abis"
+          name="bdist-tags-abis"
+          data-action="filter-list#filter"
+          data-filter-list-target="filter"
+          data-filtered-source="abis">
+    <option selected value="">ABI</option>
+      <option               value="none">none</option>
+  </select>
+</div>
+        <div class="form-group col-third">  <label class="form-group__label sr-only" for="bdist-tags-platforms">Platform</label>
+  <select class="form-group__field"
+          id="bdist-tags-platforms"
+          name="bdist-tags-platforms"
+          data-action="filter-list#filter"
+          data-filter-list-target="filter"
+          data-filtered-source="platforms">
+    <option selected value="">Platform</option>
+      <option               value="any">any</option>
+  </select>
+</div>
+      </div>
+    </div>
+        <div class="file"
+ data-filter-list-target="item" data-filtered-target-filename='["comfy_cli-1.7.3-py3-none-any.whl"]'  data-filtered-target-interpreters='["py3"]'  data-filtered-target-abis='["none"]'  data-filtered-target-platforms='["any"]' >
+      <div class="file__graphic">
+        <i class="far fa-file" aria-hidden="true"></i>
+      </div>
+      <div class="card file__card">
+        <a href="https://files.pythonhosted.org/packages/de/9b/bdee0da7d895f69d6283b6d212c0a0de6a6711e4c2d90c6d03e44002b554/comfy_cli-1.7.3-py3-none-any.whl">comfy_cli-1.7.3-py3-none-any.whl</a>
+        (108.5 kB
+        <a href="#comfy_cli-1.7.3-py3-none-any.whl"
+           data-project-tabs-target="tab mobileTab"
+           data-action="project-tabs#onTabClick">view details</a>)
+        <p class="file__meta">
+          Uploaded <time datetime="2026-04-24T06:43:17+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Apr 24, 2026
+  </time>
+<code>Python 3</code>        </p>
+      </div>
+    </div>
+
+</div>
+<div id="comfy_cli-1.7.3.tar.gz"
+     data-project-tabs-target="content"
+     class="vertical-tabs__content"
+     role="tabpanel"
+     aria-labelledby="file-tab mobile-file-tab"
+     tabindex="-1">
+  <h2 class="page-title">File details</h2>
+  <p>
+    Details for the file <code>comfy_cli-1.7.3.tar.gz</code>.
+  </p>
+  <h3>File metadata</h3>
+  <div>
+    <ul>
+      <li>
+        Download URL: <a href="https://files.pythonhosted.org/packages/81/9a/ba5c7670e4d655364309c789b74f111ca02249ab1eb33f9210dc60d6039c/comfy_cli-1.7.3.tar.gz">comfy_cli-1.7.3.tar.gz</a>
+      </li>
+      <li>Upload date: <time datetime="2026-04-24T06:43:18+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Apr 24, 2026
+  </time></li>
+      <li>
+Size: 106.3 kB      </li>
+      <li>Tags: Source</li>
+      <li>
+Uploaded using Trusted Publishing? Yes    </li>
+      <li>Uploaded via: twine/6.1.0 CPython/3.13.7</li>
+  </ul>
+</div>
+<h3>File hashes</h3>
+<div>
+  <table class="table table--hashes">
+    <caption class="sr-only">Hashes for comfy_cli-1.7.3.tar.gz</caption>
+    <thead>
+      <tr>
+        <th scope="col">Algorithm</th>
+        <th scope="col">Hash digest</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-controller="clipboard">
+        <th scope="row">SHA256</th>
+        <td>
+          <code data-clipboard-target="source">2f6fb01afec74d6a1b44747cae0fc61dd56b7aeda9f86a03d495686d35cd257b</code>
+        </td>
+        <td class="table__align-right">
+          <button type="button"
+                  class="button button--small copy-tooltip copy-tooltip-w"
+                  data-action="clipboard#copy"
+                  data-clipboard-target="tooltip"
+                  data-clipboard-tooltip-value="Copy to clipboard">
+Copy          </button>
+        </td>
+      </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">MD5</th>
+        <td>
+          <code data-clipboard-target="source">95154a061e7e424520022e632aa14707</code>
+        </td>
+        <td class="table__align-right">
+          <button type="button"
+                  class="button button--small copy-tooltip copy-tooltip-w"
+                  data-action="clipboard#copy"
+                  data-clipboard-target="tooltip"
+                  data-clipboard-tooltip-value="Copy to clipboard">
+Copy          </button>
+        </td>
+      </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">BLAKE2b-256</th>
+        <td>
+          <code data-clipboard-target="source">819aba5c7670e4d655364309c789b74f111ca02249ab1eb33f9210dc60d6039c</code>
+        </td>
+        <td class="table__align-right">
+          <button type="button"
+                  class="button button--small copy-tooltip copy-tooltip-w"
+                  data-action="clipboard#copy"
+                  data-clipboard-target="tooltip"
+                  data-clipboard-tooltip-value="Copy to clipboard">
+Copy          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+<a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">See more details on using hashes here.</a></p>
+</div>
+  <h3>Provenance</h3>
+  <p>
+    The following attestation bundles were made for <code>comfy_cli-1.7.3.tar.gz</code>:
+  </p>
+    <div class="file">
+      <div class="file__graphic">
+        <i class="fa-solid fa-file-circle-check" aria-hidden="true"></i>
+      </div>
+      <div class="card file__card">
+            <p>
+      Publisher: <a href="https://github.com/Comfy-Org/comfy-cli/blob/HEAD/.github/workflows/publish_package.yml">
+      <i class="fa-brands fa-github" aria-hidden="true"></i>
+      <code>publish_package.yml</code> on Comfy-Org/comfy-cli
+    </a>
+  </p>
+
+        Attestations:
+        <small>
+          <i>Values shown here reflect the state when the release was signed and may no longer be current.</i>
+        </small>
+        <ul>
+            <li>
+              Statement:
+              <ul>
+                <li>
+                  Statement type: <a href="https://in-toto.io/Statement/v1"><code>https://in-toto.io/Statement/v1</code></a>
+                </li>
+                <li>
+                  Predicate type: <a href="https://docs.pypi.org/attestations/publish/v1"><code>https://docs.pypi.org/attestations/publish/v1</code></a>
+                </li>
+                <li>
+                  Subject name: <code>comfy_cli-1.7.3.tar.gz</code>
+                </li>
+                <li>
+                  Subject digest: <code>2f6fb01afec74d6a1b44747cae0fc61dd56b7aeda9f86a03d495686d35cd257b</code>
+                </li>
+                <li>
+                  Sigstore transparency entry: <a href="https://search.sigstore.dev/?logIndex=1367792638">1367792638</a>
+                </li>
+                <li>Sigstore integration time: <time datetime="2026-04-24T06:43:14+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="true">
+    Apr 24, 2026
+  </time></li>
+              </ul>
+                Source repository:
+                <ul>
+                  <li>
+                    Permalink: <a href="https://github.com/Comfy-Org/comfy-cli/tree/1150586d6db87d8bdbc8c09675a646f2b8aa5515">
+                    <code>Comfy-Org/comfy-cli@1150586d6db87d8bdbc8c09675a646f2b8aa5515</code>
+                  </a>
+                </li>
+                <li>
+                  Branch / Tag: <a href="https://github.com/Comfy-Org/comfy-cli/tree/refs/tags/v1.7.3">
+                  <code>refs/tags/v1.7.3</code>
+                </a>
+              </li>
+              <li>
+                Owner: <a href="https://github.com/Comfy-Org">https://github.com/Comfy-Org</a>
+              </li>
+              <li>
+                Access: <code>public</code>
+              </li>
+            </ul>
+          Publication detail:
+          <ul>
+            <li>
+              Token Issuer: <code>https://token.actions.githubusercontent.com</code>
+            </li>
+              <li>
+                Runner Environment: <code>github-hosted</code>
+              </li>
+              <li>
+                Publication workflow:
+                <a href="https://github.com/Comfy-Org/comfy-cli/blob/1150586d6db87d8bdbc8c09675a646f2b8aa5515/.github/workflows/publish_package.yml">
+                  <code>publish_package.yml@1150586d6db87d8bdbc8c09675a646f2b8aa5515</code>
+                </a>
+              </li>
+              <li>
+                Trigger Event: <code>release</code>
+              </li>
+          </ul>
+        </li>
+    </ul>
+  </div>
+</div>
+</div><div id="comfy_cli-1.7.3-py3-none-any.whl"
+     data-project-tabs-target="content"
+     class="vertical-tabs__content"
+     role="tabpanel"
+     aria-labelledby="file-tab mobile-file-tab"
+     tabindex="-1">
+  <h2 class="page-title">File details</h2>
+  <p>
+    Details for the file <code>comfy_cli-1.7.3-py3-none-any.whl</code>.
+  </p>
+  <h3>File metadata</h3>
+  <div>
+    <ul>
+      <li>
+        Download URL: <a href="https://files.pythonhosted.org/packages/de/9b/bdee0da7d895f69d6283b6d212c0a0de6a6711e4c2d90c6d03e44002b554/comfy_cli-1.7.3-py3-none-any.whl">comfy_cli-1.7.3-py3-none-any.whl</a>
+      </li>
+      <li>Upload date: <time datetime="2026-04-24T06:43:17+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="false">
+    Apr 24, 2026
+  </time></li>
+      <li>
+Size: 108.5 kB      </li>
+      <li>Tags: Python 3</li>
+      <li>
+Uploaded using Trusted Publishing? Yes    </li>
+      <li>Uploaded via: twine/6.1.0 CPython/3.13.7</li>
+  </ul>
+</div>
+<h3>File hashes</h3>
+<div>
+  <table class="table table--hashes">
+    <caption class="sr-only">Hashes for comfy_cli-1.7.3-py3-none-any.whl</caption>
+    <thead>
+      <tr>
+        <th scope="col">Algorithm</th>
+        <th scope="col">Hash digest</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-controller="clipboard">
+        <th scope="row">SHA256</th>
+        <td>
+          <code data-clipboard-target="source">9e9e3bc2aa8ff2a612d001d0b4995e2fe743a4cc4c41ae378b795bd998d72dd8</code>
+        </td>
+        <td class="table__align-right">
+          <button type="button"
+                  class="button button--small copy-tooltip copy-tooltip-w"
+                  data-action="clipboard#copy"
+                  data-clipboard-target="tooltip"
+                  data-clipboard-tooltip-value="Copy to clipboard">
+Copy          </button>
+        </td>
+      </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">MD5</th>
+        <td>
+          <code data-clipboard-target="source">89dbef50421cfb39418f8d29e6072450</code>
+        </td>
+        <td class="table__align-right">
+          <button type="button"
+                  class="button button--small copy-tooltip copy-tooltip-w"
+                  data-action="clipboard#copy"
+                  data-clipboard-target="tooltip"
+                  data-clipboard-tooltip-value="Copy to clipboard">
+Copy          </button>
+        </td>
+      </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">BLAKE2b-256</th>
+        <td>
+          <code data-clipboard-target="source">de9bbdee0da7d895f69d6283b6d212c0a0de6a6711e4c2d90c6d03e44002b554</code>
+        </td>
+        <td class="table__align-right">
+          <button type="button"
+                  class="button button--small copy-tooltip copy-tooltip-w"
+                  data-action="clipboard#copy"
+                  data-clipboard-target="tooltip"
+                  data-clipboard-tooltip-value="Copy to clipboard">
+Copy          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+<a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">See more details on using hashes here.</a></p>
+</div>
+  <h3>Provenance</h3>
+  <p>
+    The following attestation bundles were made for <code>comfy_cli-1.7.3-py3-none-any.whl</code>:
+  </p>
+    <div class="file">
+      <div class="file__graphic">
+        <i class="fa-solid fa-file-circle-check" aria-hidden="true"></i>
+      </div>
+      <div class="card file__card">
+            <p>
+      Publisher: <a href="https://github.com/Comfy-Org/comfy-cli/blob/HEAD/.github/workflows/publish_package.yml">
+      <i class="fa-brands fa-github" aria-hidden="true"></i>
+      <code>publish_package.yml</code> on Comfy-Org/comfy-cli
+    </a>
+  </p>
+
+        Attestations:
+        <small>
+          <i>Values shown here reflect the state when the release was signed and may no longer be current.</i>
+        </small>
+        <ul>
+            <li>
+              Statement:
+              <ul>
+                <li>
+                  Statement type: <a href="https://in-toto.io/Statement/v1"><code>https://in-toto.io/Statement/v1</code></a>
+                </li>
+                <li>
+                  Predicate type: <a href="https://docs.pypi.org/attestations/publish/v1"><code>https://docs.pypi.org/attestations/publish/v1</code></a>
+                </li>
+                <li>
+                  Subject name: <code>comfy_cli-1.7.3-py3-none-any.whl</code>
+                </li>
+                <li>
+                  Subject digest: <code>9e9e3bc2aa8ff2a612d001d0b4995e2fe743a4cc4c41ae378b795bd998d72dd8</code>
+                </li>
+                <li>
+                  Sigstore transparency entry: <a href="https://search.sigstore.dev/?logIndex=1367792681">1367792681</a>
+                </li>
+                <li>Sigstore integration time: <time datetime="2026-04-24T06:43:15+0000"
+        data-controller="localized-time"
+        data-localized-time-relative="true"
+        data-localized-time-show-time="true">
+    Apr 24, 2026
+  </time></li>
+              </ul>
+                Source repository:
+                <ul>
+                  <li>
+                    Permalink: <a href="https://github.com/Comfy-Org/comfy-cli/tree/1150586d6db87d8bdbc8c09675a646f2b8aa5515">
+                    <code>Comfy-Org/comfy-cli@1150586d6db87d8bdbc8c09675a646f2b8aa5515</code>
+                  </a>
+                </li>
+                <li>
+                  Branch / Tag: <a href="https://github.com/Comfy-Org/comfy-cli/tree/refs/tags/v1.7.3">
+                  <code>refs/tags/v1.7.3</code>
+                </a>
+              </li>
+              <li>
+                Owner: <a href="https://github.com/Comfy-Org">https://github.com/Comfy-Org</a>
+              </li>
+              <li>
+                Access: <code>public</code>
+              </li>
+            </ul>
+          Publication detail:
+          <ul>
+            <li>
+              Token Issuer: <code>https://token.actions.githubusercontent.com</code>
+            </li>
+              <li>
+                Runner Environment: <code>github-hosted</code>
+              </li>
+              <li>
+                Publication workflow:
+                <a href="https://github.com/Comfy-Org/comfy-cli/blob/1150586d6db87d8bdbc8c09675a646f2b8aa5515/.github/workflows/publish_package.yml">
+                  <code>publish_package.yml@1150586d6db87d8bdbc8c09675a646f2b8aa5515</code>
+                </a>
+              </li>
+              <li>
+                Trigger Event: <code>release</code>
+              </li>
+          </ul>
+        </li>
+    </ul>
+  </div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</main>
+<footer class="footer">
+  <div class="footer__logo">
+    <img src="/static/images/white-cube.2351a86c.svg"
+         alt=""
+         class="-js-white-cube">
+  </div>
+  <div class="footer__menus">
+    <div class="footer__menu">
+      <h2>Help</h2>
+      <nav aria-label="Help navigation">
+        <ul>
+          <li>
+            <a href="https://packaging.python.org/tutorials/installing-packages/"
+               title="External link"
+               target="_blank"
+               rel="noopener">Installing packages</a>
+          </li>
+          <li>
+            <a href="https://packaging.python.org/tutorials/packaging-projects/"
+               title="External link"
+               target="_blank"
+               rel="noopener">Uploading packages</a>
+          </li>
+          <li>
+            <a href="https://packaging.python.org/"
+               title="External link"
+               target="_blank"
+               rel="noopener">User guide</a>
+          </li>
+          <li>
+            <a href="https://www.python.org/dev/peps/pep-0541/"
+               title="External link"
+               target="_blank"
+               rel="noopener">Project name retention</a>
+          </li>
+          <li>
+            <a href="/help/">FAQs</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__menu">
+      <h2>About PyPI</h2>
+      <nav aria-label="About PyPI navigation">
+        <ul>
+          <li>
+            <a href="https://blog.pypi.org"
+               title="External link"
+               target="_blank"
+               rel="noopener">PyPI Blog</a>
+          </li>
+          <li>
+            <a href="https://dtdg.co/pypi"
+               title="External link"
+               target="_blank"
+               rel="noopener">Infrastructure dashboard</a>
+          </li>
+          <li>
+            <a href="/stats/">Statistics</a>
+          </li>
+          <li>
+            <a href="/trademarks/">Logos & trademarks</a>
+          </li>
+          <li>
+            <a href="/sponsors/">Our sponsors</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__menu">
+      <h2>Contributing to PyPI</h2>
+      <nav aria-label="How to contribute navigation">
+        <ul>
+          <li>
+            <a href="/help/#feedback">Bugs and feedback</a>
+          </li>
+          <li>
+            <a href="https://github.com/pypi/warehouse"
+               title="External link"
+               target="_blank"
+               rel="noopener">Contribute on GitHub</a>
+          </li>
+          <li>
+            <a href="https://hosted.weblate.org/projects/pypa/warehouse/"
+               title="External link"
+               target="_blank"
+               rel="noopener">Translate PyPI</a>
+          </li>
+          <li>
+            <a href="/sponsors/">Sponsor PyPI</a>
+          </li>
+          <li>
+            <a href="https://github.com/pypi/warehouse/graphs/contributors"
+               title="External link"
+               target="_blank"
+               rel="noopener">Development credits</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__menu">
+      <h2>Using PyPI</h2>
+      <nav aria-label="Using PyPI navigation">
+        <ul>
+          <li>
+            <a href="https://policies.python.org/pypi.org/Terms-of-Service/"
+               title="External link"
+               target="_blank"
+               rel="noopener">Terms of Service</a>
+          </li>
+          <li>
+            <a href="/security/">Report security issue</a>
+          </li>
+          <li>
+            <a href="https://policies.python.org/python.org/code-of-conduct/"
+               title="External link"
+               target="_blank"
+               rel="noopener">Code of conduct</a>
+          </li>
+          <li>
+            <a href="https://policies.python.org/pypi.org/Privacy-Notice/"
+               title="External link"
+               target="_blank"
+               rel="noopener">Privacy Notice</a>
+          </li>
+          <li>
+            <a href="https://policies.python.org/pypi.org/Acceptable-Use-Policy/"
+               title="External link"
+               target="_blank"
+               rel="noopener">Acceptable Use Policy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <hr class="footer__divider">
+  <div class="footer__text">
+      <p>
+Status:<a href="https://status.python.org/"
+   title="External link"
+   target="_blank"
+   rel="noopener">
+        <span data-statuspage-domain="https://2p66nmmycsj3.statuspage.io">all systems operational</span></a>
+    </p>
+  <p>
+Developed and maintained by the Python community, for the Python community.    <br>
+    <a href="https://donate.pypi.org">Donate today!</a>
+  </p>
+  <p>
+    "PyPI", "Python Package Index", and the blocks logos are registered <a href="/trademarks/">trademarks</a> of the <a href="https://www.python.org/psf-landing" target="_blank" rel="noopener">Python Software Foundation</a>.
+    <br>
+  </p>
+  <p>
+    © 2026 <a href="https://www.python.org/psf-landing/"
+    title="External link"
+    target="_blank"
+    rel="noopener">Python Software Foundation</a>
+    <br>
+    <a href="/sitemap/">Site map</a>
+  </p>
+    <p>
+Deployed from <a href="https://github.com/pypi/warehouse/commit/19fa79fa00df780ba837680399bdcc867fdd97cf" title="External link" target="_blank" rel="noopener"><code>19fa79f</code></a>    </p>
+</div>
+<div class="centered hide-on-desktop">
+  <button type="button"
+          class="button button--switch-to-desktop hidden"
+          data-viewport-toggle-target="switchToDesktop"
+          data-action="viewport-toggle#switchToDesktop">Switch to desktop version</button>
+</div>
+</footer>
+<div class="language-switcher">
+  <form action="/locale/">
+    <ul>
+        <li>
+          <button class="language-switcher__selected"                  name="locale_id"
+                  value="en"
+                  type="submit">English</button>
+        </li>
+        <li>
+          <button                   name="locale_id"
+                  value="es"
+                  type="submit">español</button>
+        </li>
+        <li>
+          <button                   name="locale_id"
+                  value="fr"
+                  type="submit">français</button>
+        </li>
+        <li>
+          <button                   name="locale_id"
+                  value="ja"
+                  type="submit">日本語</button>
+        </li>
+        <li>
+          <button                   name="locale_id"
+                  value="pt_BR"
+                  type="submit">português (Brasil)</button>
+        </li>
+        <li>
+          <button                   name="locale_id"
+                  value="uk"
+                  type="submit">українська</button>
+        </li>
+        <li>
+          <button                   name="locale_id"
+                  value="el"
+                  type="submit">Ελληνικά</button>
+        </li>
+        <li>
+          <button                   name="locale_id"
+                  value="de"
+                  type="submit">Deutsch</button>
+        </li>
+        <li>
+          <button                   name="locale_id"
+                  value="zh_Hans"
+                  type="submit">中文 (简体)</button>
+        </li>
+        <li>
+          <button                   name="locale_id"
+                  value="zh_Hant"
+                  type="submit">中文 (繁體)</button>
+        </li>
+        <li>
+          <button                   name="locale_id"
+                  value="ru"
+                  type="submit">русский</button>
+        </li>
+        <li>
+          <button                   name="locale_id"
+                  value="he"
+                  type="submit">עברית</button>
+        </li>
+        <li>
+          <button                   name="locale_id"
+                  value="eo"
+                  type="submit">Esperanto</button>
+        </li>
+        <li>
+          <button                   name="locale_id"
+                  value="ko"
+                  type="submit">한국어</button>
+        </li>
+    </ul>
+  </form>
+</div>
+<div class="sponsors">
+  <p class="sponsors__title">Supported by</p>
+  <div class="sponsors__divider"></div>
+        <a class="sponsors__sponsor"
+           target="_blank"
+           rel="noopener"
+           href="https://aws.amazon.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/ed7074cadad1a06f56bc520ad9bd3e00d0704c5b/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f6177732d77686974652d6c6f676f2d7443615473387a432e706e67" alt="" loading=lazy>
+          <span class="sponsors__name">AWS</span>
+          <span class="sponsors__service">
+              Cloud computing and Security Sponsor
+          </span>
+        </a>
+        <a class="sponsors__sponsor"
+           target="_blank"
+           rel="noopener"
+           href="https://www.datadoghq.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/8855f7c063a3bdb5b0ce8d91bfc50cf851cc5c51/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f64617461646f672d77686974652d6c6f676f2d6668644c4e666c6f2e706e67" alt="" loading=lazy>
+          <span class="sponsors__name">Datadog</span>
+          <span class="sponsors__service">
+              Monitoring
+          </span>
+        </a>
+        <a class="sponsors__sponsor"
+           target="_blank"
+           rel="noopener"
+           href="https://depot.dev">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/60f709d24f3e4d469f9adc77c65e2f5291a3d165/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f6465706f742d77686974652d6c6f676f2d7038506f476831302e706e67" alt="" loading=lazy>
+          <span class="sponsors__name">Depot</span>
+          <span class="sponsors__service">
+              Continuous Integration
+          </span>
+        </a>
+        <a class="sponsors__sponsor"
+           target="_blank"
+           rel="noopener"
+           href="https://www.fastly.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/df6fe8829cbff2d7f668d98571df1fd011f36192/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f666173746c792d77686974652d6c6f676f2d65684d3077735f6f2e706e67" alt="" loading=lazy>
+          <span class="sponsors__name">Fastly</span>
+          <span class="sponsors__service">
+              CDN
+          </span>
+        </a>
+        <a class="sponsors__sponsor"
+           target="_blank"
+           rel="noopener"
+           href="https://careers.google.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/420cc8cf360bac879e24c923b2f50ba7d1314fb0/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f676f6f676c652d77686974652d6c6f676f2d616734424e3774332e706e67" alt="" loading=lazy>
+          <span class="sponsors__name">Google</span>
+          <span class="sponsors__service">
+              Download Analytics
+          </span>
+        </a>
+        <a class="sponsors__sponsor"
+           target="_blank"
+           rel="noopener"
+           href="https://www.pingdom.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/d01053c02f3a626b73ffcb06b96367fdbbf9e230/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f70696e67646f6d2d77686974652d6c6f676f2d67355831547546362e706e67" alt="" loading=lazy>
+          <span class="sponsors__name">Pingdom</span>
+          <span class="sponsors__service">
+              Monitoring
+          </span>
+        </a>
+        <a class="sponsors__sponsor"
+           target="_blank"
+           rel="noopener"
+           href="https://sentry.io/for/python/?utm_source=pypi&amp;utm_medium=paid-community&amp;utm_campaign=python-na-evergreen&amp;utm_content=static-ad-pypi-sponsor-learnmore">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/67af7117035e2345bacb5a82e9aa8b5b3e70701d/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f73656e7472792d77686974652d6c6f676f2d4a2d6b64742d706e2e706e67" alt="" loading=lazy>
+          <span class="sponsors__name">Sentry</span>
+          <span class="sponsors__service">
+              Error logging
+          </span>
+        </a>
+        <a class="sponsors__sponsor"
+           target="_blank"
+           rel="noopener"
+           href="https://statuspage.io">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/b611884ff90435a0575dbab7d9b0d3e60f136466/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f737461747573706167652d77686974652d6c6f676f2d5467476c6a4a2d502e706e67" alt="" loading=lazy>
+          <span class="sponsors__name">StatusPage</span>
+          <span class="sponsors__service">
+              Status page
+          </span>
+        </a>
+</div></body>
+</html>

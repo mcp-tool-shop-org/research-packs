@@ -1,0 +1,64 @@
+{
+  "summary_id": "tris_1778300365902_02-model-file-identity",
+  "section_id": "02-model-file-identity",
+  "triaged_at": "2026-05-09T04:19:25.902Z",
+  "research_os_version": "0.1.0",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 162,
+  "decisions": {
+    "needs_scope_repair": 79,
+    "selected_for_review": 61,
+    "parked_overdense_source": 21,
+    "parked_low_value": 1
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 61,
+  "selected_per_source": [
+    {
+      "source_id": "src_e519c32165e4",
+      "selected": 10,
+      "total": 37
+    },
+    {
+      "source_id": "src_f4ce9a16c6b4",
+      "selected": 10,
+      "total": 30
+    },
+    {
+      "source_id": "src_fcdd7f1c90e9",
+      "selected": 10,
+      "total": 20
+    },
+    {
+      "source_id": "src_c038edbf6251",
+      "selected": 10,
+      "total": 18
+    },
+    {
+      "source_id": "src_07126047391f",
+      "selected": 7,
+      "total": 16
+    },
+    {
+      "source_id": "src_2e0add2bdec7",
+      "selected": 5,
+      "total": 14
+    },
+    {
+      "source_id": "src_6ccf8c48cc5a",
+      "selected": 3,
+      "total": 13
+    },
+    {
+      "source_id": "src_e1e83dbebd28",
+      "selected": 4,
+      "total": 11
+    },
+    {
+      "source_id": "src_d44182697e02",
+      "selected": 2,
+      "total": 3
+    }
+  ]
+}

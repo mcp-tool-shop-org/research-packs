@@ -1,0 +1,8 @@
+section_id: 08-failure-taxonomy
+purpose: Compile an empirical taxonomy of documented workflow-breakage incidents — how failures manifest, what caused them, and what recovery paths worked — to ground the control plane's detection and repair vocabulary.
+status: draft
+created_at: 2026-05-08T20:05:01.466Z
+max_time_minutes: 45
+min_sources: 8
+primary_sources_required: 2
+contradictions_required: true

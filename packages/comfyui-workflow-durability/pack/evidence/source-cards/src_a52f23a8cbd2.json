@@ -1,0 +1,24 @@
+{
+  "source_id": "src_a52f23a8cbd2",
+  "receipt_id": "rcpt_a52f23a8cbd2_1778289771218",
+  "section_id": "07-existing-control-plane-attempts",
+  "url": "https://raw.githubusercontent.com/BennyKok/comfyui-deploy/main/README.md",
+  "final_url": "https://raw.githubusercontent.com/BennyKok/comfyui-deploy/main/README.md",
+  "fetched_at": "2026-05-09T01:22:51.218Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "# ComfyUI Deploy",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "# ComfyUI Deploy Open source comfyui deployment platform, a `vercel` for generative workflow infra.",
+    "(serverless hosted gpu with vertical intergation with comfyui) Check out our latest lcoal demo -> https://github.com/comfy-deploy/comfyui-api-comfydeploy Full backend and frontend is here -> https://github.com/comfy-deploy/comfydeploy > [!NOTE] > Im looking for creative hacker to join ComfyDeploy's core team!",
+    "DM me on [twitter](https://x.com/BennyKokMusic) Join [Discord](https://discord.gg/EEYcQmdYZw) to chat more or visit [Comfy Deploy](https://comfydeploy.com/) to get started!"
+  ],
+  "limitations": [],
+  "asserts": "# ComfyUI Deploy",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-09T01:22:51.345Z"
+}

@@ -1,0 +1,125 @@
+{
+  "report_id": "secrep_1778312485560_04-environment-reproducibility",
+  "section_id": "04-environment-reproducibility",
+  "reported_at": "2026-05-09T07:41:25.560Z",
+  "research_os_version": "0.1.0",
+  "status": "gated",
+  "sources": {
+    "fetched_ok": 12,
+    "source_cards": 12,
+    "publishers": [
+      "docs.comfy.org"
+    ],
+    "primary_source_waiver": {
+      "status": "granted",
+      "reason": "ComfyUI core versioning behavior is defined by the canonical maintainer surfaces: Comfy-Org repositories, GitHub release data, and docs.comfy.org. Independent third-party sources can discuss usage but are not primary sources for platform version semantics.",
+      "compensating_controls": [
+        "Sources span multiple official artifact types: README, release metadata, CLI documentation, and docs.comfy.org pages.",
+        "GitHub API release data provides structured version history directly from the maintainer.",
+        "docs.comfy.org is the official documentation surface for workflow, custom node, and interface behavior.",
+        "Accepted claims still require span-grounded excerpts and promoted review decisions."
+      ]
+    }
+  },
+  "extraction": {
+    "candidate_claims": 284,
+    "claims_per_source": [
+      {
+        "source_id": "src_2086dbbb6560",
+        "claims": 59
+      },
+      {
+        "source_id": "src_aa570bcb9060",
+        "claims": 40
+      },
+      {
+        "source_id": "src_b81c03003037",
+        "claims": 30
+      },
+      {
+        "source_id": "src_f4ce9a16c6b4",
+        "claims": 30
+      },
+      {
+        "source_id": "src_fcdd7f1c90e9",
+        "claims": 23
+      },
+      {
+        "source_id": "src_2e0add2bdec7",
+        "claims": 18
+      },
+      {
+        "source_id": "src_664a4a54b4c3",
+        "claims": 17
+      },
+      {
+        "source_id": "src_2a30a3ff7502",
+        "claims": 17
+      },
+      {
+        "source_id": "src_f9b159fab5ef",
+        "claims": 16
+      },
+      {
+        "source_id": "src_a8c5d541c698",
+        "claims": 14
+      },
+      {
+        "source_id": "src_75194fe21c45",
+        "claims": 13
+      },
+      {
+        "source_id": "src_ccc15b6a3971",
+        "claims": 7
+      }
+    ],
+    "claims_per_1k_words": 0.5546008436181846,
+    "excerpt_pages_processed": 0,
+    "excerpt_id_failures": 0,
+    "malformed_extractor_outputs": 0,
+    "near_duplicate_clusters": 2,
+    "weak_scope_count": 67,
+    "generic_scope_count": 70,
+    "density_flags": 8
+  },
+  "contradictions": {
+    "pairs_compared": 40186,
+    "contradiction_candidates": 0,
+    "overgeneralization_risks": 0
+  },
+  "review": {
+    "reviewed": true,
+    "accepted_for_synthesis": 74,
+    "needs_scope_repair": 11,
+    "needs_source_repair": 0,
+    "needs_contradiction_mapping": 0,
+    "rejected": 1,
+    "needs_human_review": 0,
+    "rejection_or_repair_by_category": [
+      {
+        "category": "overgeneralized_claim",
+        "count": 10
+      },
+      {
+        "category": "scope_widening",
+        "count": 3
+      },
+      {
+        "category": "recommendation_exceeds_evidence",
+        "count": 1
+      }
+    ]
+  },
+  "acceptance": {
+    "candidate_claims": 284,
+    "accepted_for_synthesis": 74,
+    "acceptance_ratio": 0.2605633802816901,
+    "accepted_per_source": 6.166666666666667,
+    "accepted_per_1k_words": 0.14450867052023122,
+    "top_rejection_category": "overgeneralized_claim",
+    "claim_overproduction_fired": false,
+    "synthesis_ready": true
+  },
+  "gate_verdict": "warn",
+  "gate_synthesis_eligible": true
+}

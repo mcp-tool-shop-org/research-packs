@@ -1,0 +1,8 @@
+section_id: 06-comfyui-core-versioning
+purpose: Characterize how ComfyUI core is versioned in practice, how core updates break workflow and node compatibility, and what portable and desktop packaging approaches do to address versioning.
+status: draft
+created_at: 2026-05-08T20:05:00.801Z
+max_time_minutes: 45
+min_sources: 8
+primary_sources_required: 2
+contradictions_required: true

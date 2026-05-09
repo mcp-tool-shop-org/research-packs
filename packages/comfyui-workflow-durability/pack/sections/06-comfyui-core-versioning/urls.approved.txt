@@ -1,0 +1,9 @@
+https://raw.githubusercontent.com/Comfy-Org/ComfyUI/master/README.md
+https://raw.githubusercontent.com/Comfy-Org/comfy-cli/main/README.md
+https://docs.comfy.org/llms.txt
+https://docs.comfy.org/development/core-concepts/workflow
+https://docs.comfy.org/development/core-concepts/custom-nodes
+https://docs.comfy.org/interface/nodes-2
+https://docs.comfy.org/custom-nodes/overview
+https://docs.comfy.org/custom-nodes/walkthrough
+https://api.github.com/repos/Comfy-Org/ComfyUI/releases?per_page=20

@@ -1,0 +1,43 @@
+{
+  "summary_id": "tris_1778309337717_05-community-distribution-patterns",
+  "section_id": "05-community-distribution-patterns",
+  "triaged_at": "2026-05-09T06:48:57.717Z",
+  "research_os_version": "0.1.0",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 108,
+  "decisions": {
+    "needs_scope_repair": 70,
+    "selected_for_review": 32,
+    "parked_overdense_source": 6
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 32,
+  "selected_per_source": [
+    {
+      "source_id": "src_cea54dbbe5e3",
+      "selected": 10,
+      "total": 39
+    },
+    {
+      "source_id": "src_d56e68044c24",
+      "selected": 7,
+      "total": 23
+    },
+    {
+      "source_id": "src_e19e5e376175",
+      "selected": 3,
+      "total": 21
+    },
+    {
+      "source_id": "src_fcdd7f1c90e9",
+      "selected": 10,
+      "total": 20
+    },
+    {
+      "source_id": "src_e7045b6bccdb",
+      "selected": 2,
+      "total": 5
+    }
+  ]
+}

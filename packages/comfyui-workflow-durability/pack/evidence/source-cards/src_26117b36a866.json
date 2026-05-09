@@ -1,0 +1,24 @@
+{
+  "source_id": "src_26117b36a866",
+  "receipt_id": "rcpt_26117b36a866_1778301632815",
+  "section_id": "03-workflow-schema-stability",
+  "url": "https://api.github.com/search/issues?q=repo:Comfy-Org/ComfyUI+workflow+json+schema&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:Comfy-Org/ComfyUI+workflow+json+schema&per_page=20",
+  "fetched_at": "2026-05-09T04:40:32.815Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "{\"total_count\":53,\"incomplete_results\":false,\"items\":[{\"url\":\"https://api.github.com/repos/Comfy-Org/ComfyUI/issues/13652\",\"repository_url\":\"https://api.github.com/repos/Comfy-Org/ComfyUI\",\"labels_url",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "{\"total_count\":53,\"incomplete_results\":false,\"items\":[{\"url\":\"https://api.github.com/repos/Comfy-Org/ComfyUI/issues/13652\",\"repository_url\":\"https://api.github.com/repos/Comfy-Org/ComfyUI\",\"labels_url\":\"https://api.github.com/repos/Comfy-Org/ComfyUI/issues/13652/labels{/name}\",\"comments_url\":\"https://api.github.com/repos/Comfy-Org/ComfyUI/issues/13652/comments\",\"events_url\":\"https://api.github.com/repos/Comfy-Org/ComfyUI/issues/13652/events\",\"html_url\":\"https://github.com/Comfy-Org/ComfyUI/issues/13652\",\"id\":4363233153,\"node_id\":\"I_kwDOIygeJs8AAAABBBGngQ\",\"number\":13652,\"title\":\"After editing a workflow it saves it as the old workflow or as another workflow opened at the same time.\",\"user\":{\"login\":\"shaunnichol-star\",\"id\":235436077,\"node_id\":\"U_kgDODgh4LQ\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/235436077?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/shaunnichol-star\",\"html_url\":\"https://github.com/shaunnichol-star\",\"followers_url\":\"https://api.github.com/users/shaunnichol-star/followers\",\"following_url\":\"https://api.github.com/users/shaunnichol-star/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/shaunnichol-star/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/shaunnichol-star/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/shaunnichol-star/subscriptions\",\"organizations_url\":\"https://api.github.com/users/shaunnichol-star/orgs\",\"repos_url\":\"https://api.github.com/users/shaunnichol-star/repos\",\"events_url\":\"https://api.github.com/users/shaunnichol-star/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/shaunnichol-star/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"labels\":[{\"id\":7127458596,\"node_id\":\"LA_kwDOIygeJs8AAAABqNRjJA\",\"url\":\"https://api.github.com/repos/Comfy-Org/ComfyUI/labels/Potential%20Bug\",\"name\":\"Potential Bug\",\"color\":\"B35717\",\"default\":false,\"description\":\"User is reporting a bug.",
+    "This should be tested.\"}],\"state\":\"open\",\"locked\":false,\"assignees\":[],\"milestone\":null,\"comments\":2,\"created_at\":\"2026-05-01T06:47:18Z\",\"updated_at\":\"2026-05-06T05:52:46Z\",\"closed_at\":null,\"assignee\":null,\"author_association\":\"NONE\",\"type\":null,\"active_lock_reason\":null,\"sub_issues_summary\":{\"total\":0,\"completed\":0,\"percent_completed\":0},\"issue_dependencies_summary\":{\"blocked_by\":0,\"total_blocked_by\":0,\"blocking\":0,\"total_blocking\":0},\"body\":\"### Custom Node Testing\\n\\n- [x] I have tried disabling custom nodes and the issue persists (see [how to disable custom nodes](https://docs.comfy.org/troubleshooting/custom-node-issues#step-1%3A-test-with-all-custom-nodes-disabled) if you need help)\\n\\n### Expected Behavior\\n\\nI expected ComfyUI to save the changes I make to a workflow and not overwrite the workflow with the previous unedited version (prior to the changes) or with the contents of a completely different workflow opened in another ComfyUI tab.\\n\\n### Actual Behavior\\n\\nMany, many and I mean many times when I edit a workflow I have opened it will not save the changes, it will save the previous version before any edits were made.",
+    "It also has the habit after editing a workflow and if any other workflow is open in another tab, the edited workflow on save becomes the workflow from the other opened workflow."
+  ],
+  "limitations": [],
+  "asserts": "{\"total_count\":53,\"incomplete_results\":false,\"items\":[{\"url\":\"https://api.github.com/repos/Comfy-Org/ComfyUI/issues/13652\",\"repository_url\":\"https://api.github.com/repos/Comfy-Org/ComfyUI\",\"labels_url",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-09T04:40:33.495Z"
+}

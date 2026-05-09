@@ -1,0 +1,26 @@
+{
+  "source_id": "src_d56e68044c24",
+  "receipt_id": "rcpt_d56e68044c24_1778307880457",
+  "section_id": "05-community-distribution-patterns",
+  "url": "https://api.github.com/search/issues?q=repo:Comfy-Org/ComfyUI+workflow+missing+models&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:Comfy-Org/ComfyUI+workflow+missing+models&per_page=20",
+  "fetched_at": "2026-05-09T06:24:40.457Z",
+  "publisher": "Comfy-Org/ComfyUI",
+  "published_at": null,
+  "title": "Missing-Models-Downloads, [Bug] \"Download All\" button for missing models is unresponsive on Windows, bug: Missing model download buttons do nothing",
+  "source_type": "forum",
+  "relevance": "high",
+  "key_points": [
+    "Users report that the 'Download All' button for missing models is unresponsive, not starting any downloads or showing progress.",
+    "Individual download buttons for each model are also reported as unresponsive.",
+    "Missing-model functionality is considered a step backwards compared to previous individual download capability."
+  ],
+  "limitations": [
+    "Reports are based on user experiences and observations, not verified by the source itself."
+  ],
+  "asserts": "The 'Download All' button for missing models does not initiate any downloads or show progress.",
+  "scope": "ComfyUI's missing-model download functionality on Windows operating systems",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T06:25:10.543Z"
+}

@@ -1,0 +1,18 @@
+{
+  "receipt_id": "cle_1778290467353_07-existing-control-plane-attempts",
+  "section_id": "07-existing-control-plane-attempts",
+  "extracted_at": "2026-05-09T01:34:27.353Z",
+  "research_os_version": "0.1.0",
+  "extractor": "ollama-intern",
+  "extraction_method": "ollama_intern_propositional",
+  "sources_processed": 10,
+  "sources_skipped": 0,
+  "sources_failed": 0,
+  "excerpt_ledgers_built": 0,
+  "claims_added": 115,
+  "claims_deduped": 0,
+  "claims_rejected_ungrounded": 0,
+  "claims_rejected_excerpt_id_missing": 0,
+  "claims_rejected_excerpt_id_malformed": 0,
+  "failures": []
+}

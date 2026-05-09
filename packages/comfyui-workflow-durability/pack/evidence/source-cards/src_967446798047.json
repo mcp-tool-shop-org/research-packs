@@ -1,0 +1,23 @@
+{
+  "source_id": "src_967446798047",
+  "receipt_id": "rcpt_967446798047_1778301632303",
+  "section_id": "03-workflow-schema-stability",
+  "url": "https://docs.comfy.org/development/comfyui-server/comms_routes",
+  "final_url": "https://docs.comfy.org/development/comfyui-server/comms_routes",
+  "fetched_at": "2026-05-09T04:40:32.303Z",
+  "publisher": "docs.comfy.org",
+  "published_at": null,
+  "title": "Routes - ComfyUI",
+  "source_type": "docs",
+  "relevance": "unknown",
+  "key_points": [
+    "Fetch the complete documentation index at: https://docs.comfy.org/llms.txt",
+    "Use this file to discover all available pages before exploring further."
+  ],
+  "limitations": [],
+  "asserts": "Fetch the complete documentation index at: https://docs.comfy.org/llms.txt",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-09T04:40:32.597Z"
+}

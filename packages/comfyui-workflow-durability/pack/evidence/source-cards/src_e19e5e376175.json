@@ -1,0 +1,28 @@
+{
+  "source_id": "src_e19e5e376175",
+  "receipt_id": "rcpt_e19e5e376175_1778307910874",
+  "section_id": "05-community-distribution-patterns",
+  "url": "https://api.github.com/search/issues?q=repo:Comfy-Org/ComfyUI_frontend+workflow+metadata&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:Comfy-Org/ComfyUI_frontend+workflow+metadata&per_page=20",
+  "fetched_at": "2026-05-09T06:25:10.874Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "fix: sync widget values to workflow metadata in graphToPrompt",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "When batch count > 1, every saved image embeds the first iteration's metadata (seed, prompt), making images 2-N non-reproducible.",
+    "The root cause is that `graphToPrompt` captures the workflow snapshot via `graph.serialize()` before the widget loop, so `serializeValue` transforms are never reflected in `extra_pnginfo`.",
+    "This PR syncs each widget's resolved value back into the serialized workflow node's `widgets_values` array after serialization, so the embedded metadata always matches the actual execution inputs."
+  ],
+  "limitations": [
+    "The sync only touches widgets where `widget.serialize !== false`, matching the existing filter",
+    "Object values are deep-cloned to prevent reference sharing between batches",
+    "Subgraph inner nodes (colon-separated IDs) are not in the root workflow node list and are safely skipped"
+  ],
+  "asserts": "This pull request fixes an issue where images saved in a batch with count > 1 embed the metadata from the first iteration's execution, making later images non-reproducible by altering their embedded metadata.",
+  "scope": "The scope of this assertion is limited to syncing each widget's resolved value back into the serialized workflow node's `widgets_values` array after serialization, so the embedded metadata matches the actual execution inputs.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T06:25:57.039Z"
+}

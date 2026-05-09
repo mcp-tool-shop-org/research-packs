@@ -1,0 +1,74 @@
+{
+  "summary_id": "tris_1778302395997_03-workflow-schema-stability",
+  "section_id": "03-workflow-schema-stability",
+  "triaged_at": "2026-05-09T04:53:15.997Z",
+  "research_os_version": "0.1.0",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 198,
+  "decisions": {
+    "selected_for_review": 55,
+    "needs_scope_repair": 66,
+    "parked_weak_scope": 42,
+    "parked_overdense_source": 35
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 55,
+  "selected_per_source": [
+    {
+      "source_id": "src_26117b36a866",
+      "selected": 10,
+      "total": 63
+    },
+    {
+      "source_id": "src_484224037767",
+      "selected": 6,
+      "total": 35
+    },
+    {
+      "source_id": "src_f4ce9a16c6b4",
+      "selected": 10,
+      "total": 33
+    },
+    {
+      "source_id": "src_5941285ed842",
+      "selected": 10,
+      "total": 24
+    },
+    {
+      "source_id": "src_72d8ae653457",
+      "selected": 9,
+      "total": 13
+    },
+    {
+      "source_id": "src_07437ed8d167",
+      "selected": 0,
+      "total": 7
+    },
+    {
+      "source_id": "src_0a3149c031c5",
+      "selected": 0,
+      "total": 6
+    },
+    {
+      "source_id": "src_981216eba718",
+      "selected": 4,
+      "total": 5
+    },
+    {
+      "source_id": "src_967446798047",
+      "selected": 2,
+      "total": 5
+    },
+    {
+      "source_id": "src_7c8ae5fe342a",
+      "selected": 4,
+      "total": 4
+    },
+    {
+      "source_id": "src_049006574d3f",
+      "selected": 0,
+      "total": 3
+    }
+  ]
+}

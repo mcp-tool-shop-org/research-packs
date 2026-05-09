@@ -1,0 +1,22 @@
+{
+  "source_id": "src_ccc15b6a3971",
+  "receipt_id": "rcpt_ccc15b6a3971_1778304172983",
+  "section_id": "04-environment-reproducibility",
+  "url": "https://raw.githubusercontent.com/Comfy-Org/ComfyUI/master/requirements.txt",
+  "final_url": "https://raw.githubusercontent.com/Comfy-Org/ComfyUI/master/requirements.txt",
+  "fetched_at": "2026-05-09T05:22:52.983Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "comfyui-frontend-package==1.43.17",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "comfyui-frontend-package==1.43.17 comfyui-workflow-templates==0.9.72 comfyui-embedded-docs==0.4.4 torch torchsde torchvision torchaudio numpy>=1.25.0 einops transformers>=4.50.3 tokenizers>=0.13.3 sentencepiece safetensors>=0.4.2 aiohttp>=3.11.8 yarl>=1.18.0 pyyaml Pillow scipy tqdm psutil alembic SQLAlchemy>=2.0.0 filelock av>=14.2.0 comfy-kitchen>=0.2.8 comfy-aimdo==0.3.0 requests simpleeval>=1.0.0 blake3 #non essential dependencies: kornia>=0.7.1 spandrel pydantic~=2.0 pydantic-settings~=2.0 PyOpenGL glfw"
+  ],
+  "limitations": [],
+  "asserts": "comfyui-frontend-package==1.43.17",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-09T05:22:53.075Z"
+}

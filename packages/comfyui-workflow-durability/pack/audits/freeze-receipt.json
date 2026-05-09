@@ -1,0 +1,3248 @@
+{
+  "pack_id": "000063d75a07",
+  "pack_topic": "What makes ComfyUI workflows durable over time, and what should a local-first workflow control plane track to keep them runnable?",
+  "frozen_at": "2026-05-09T08:30:02.276Z",
+  "verdict": "frozen",
+  "pack_audit_hash": "bbca495b700cbe242658ce6a8b784e61a5b72d099a13208d67fe747c5b688030",
+  "handoff_hash": "d41e0475dbdb983a19e8d15022a577f9e5309e78f1cff9a7c0bd909c5d121633",
+  "synthesis_hashes": [
+    {
+      "path": "synthesis/cross-section-map.json",
+      "sha256": "d2c6b41056fda6b78589a87c8f776984e0d5bc00e5252cafc5d36816747facb2",
+      "bytes": 2256998
+    },
+    {
+      "path": "synthesis/cross-section-map.md",
+      "sha256": "a8565adb5e3c6465fb56df917a30c1c43a6fb41e8e3853e70e7b18f4019a6437",
+      "bytes": 1579414
+    },
+    {
+      "path": "synthesis/decision-brief.md",
+      "sha256": "06b1fa25b403296399881b5ff61a3c217e570fc139e3c02b8d336b02b9384fd7",
+      "bytes": 21211
+    },
+    {
+      "path": "synthesis/working-report.md",
+      "sha256": "5f43baf9f013a76a1a702da05c470f403816035e5495242c84862781b374e6b2",
+      "bytes": 11973
+    },
+    {
+      "path": "synthesis/final-report.md",
+      "sha256": "217d9cadc3da3a3735de396713420320e85a170c1d5f458a3282f6f21d985e90",
+      "bytes": 26259
+    }
+  ],
+  "canonical_artifact_hashes": [
+    {
+      "path": "research.yaml",
+      "sha256": "caed1d79267e8c6a947b5fa43a9ade183b3e532507d803c9891ddd518cc567cb",
+      "bytes": 4834
+    },
+    {
+      "path": "sections/01-node-dependency-fragility/claims.jsonl",
+      "sha256": "9a78d4942e5eefc4fbb4db8c84d4285b0e98f48bb8ff0e774b3507a4cf0637e6",
+      "bytes": 186721
+    },
+    {
+      "path": "sections/01-node-dependency-fragility/sources.jsonl",
+      "sha256": "e9e8840f54b3a8f4d466649190753113b94d776ed554ff244171b0990314a956",
+      "bytes": 639
+    },
+    {
+      "path": "sections/01-node-dependency-fragility/claim-reviews.jsonl",
+      "sha256": "4faf4e25e66e6ebb824e46dd3eb091c5f66c0f96297af00a8a73d4aced75453d",
+      "bytes": 21738
+    },
+    {
+      "path": "sections/01-node-dependency-fragility/gates.yaml",
+      "sha256": "710ae794c5df738285705787b6f03ba2308944950571c6af52da6bf710a1edbb",
+      "bytes": 326
+    },
+    {
+      "path": "audits/01-node-dependency-fragility-gate.json",
+      "sha256": "9316024fd08b75d707fdaa466dcd18f352b0df44d5b6d293ac97f75c37d63030",
+      "bytes": 43765
+    },
+    {
+      "path": "audits/01-node-dependency-fragility-review.json",
+      "sha256": "4f8923b7a1e63d591f56070f500400cfdfe1c18b1a18e6690fed9b98bda1bf3e",
+      "bytes": 98431
+    },
+    {
+      "path": "audits/01-node-dependency-fragility-findings.jsonl",
+      "sha256": "e4dc506b17ea37c34bb9d8275da13294a13dd35a7b474fbf7f699c126b6e583e",
+      "bytes": 59813
+    },
+    {
+      "path": "sections/02-model-file-identity/claims.jsonl",
+      "sha256": "7d1b143c8d48565e666962fcaed0b295ca73152e4bc2217a553864fc538dd47e",
+      "bytes": 167610
+    },
+    {
+      "path": "sections/02-model-file-identity/sources.jsonl",
+      "sha256": "af4acf273408396685595bda1f8a5daa524d6b1f4c540283d443b22ddd155df3",
+      "bytes": 639
+    },
+    {
+      "path": "sections/02-model-file-identity/claim-reviews.jsonl",
+      "sha256": "9d98a386e460fd35ef9d6d1d9d2b2a581ee6cfd9dab34a6d7853ad3abf65267e",
+      "bytes": 25376
+    },
+    {
+      "path": "sections/02-model-file-identity/gates.yaml",
+      "sha256": "cfbe4cb12751ab7e81611f02ad84d24533cdabe76e54d2c647a132eedec9878a",
+      "bytes": 334
+    },
+    {
+      "path": "audits/02-model-file-identity-gate.json",
+      "sha256": "4457633531f1131da68510101980641451a4777ca21acd3113b1b45a69ad7684",
+      "bytes": 41200
+    },
+    {
+      "path": "audits/02-model-file-identity-review.json",
+      "sha256": "c9daac336344e6980d257b0c91e12d974bdd36ef92d863b90fdb16af277ca6b0",
+      "bytes": 126803
+    },
+    {
+      "path": "audits/02-model-file-identity-findings.jsonl",
+      "sha256": "a186a796682ee5fad6e9a5da60837c392d4bf26d6364e20a779fca513947d799",
+      "bytes": 79691
+    },
+    {
+      "path": "sections/03-workflow-schema-stability/claims.jsonl",
+      "sha256": "fa303212e27cfd3b392d84d6e0fd920fb9cca4ba8d4d20644004876a631a7a8a",
+      "bytes": 212459
+    },
+    {
+      "path": "sections/03-workflow-schema-stability/sources.jsonl",
+      "sha256": "fcfd0ca063c413c21c9ab8ba4c3fc9978c1b63884e21d9b94a79ad868902cd97",
+      "bytes": 781
+    },
+    {
+      "path": "sections/03-workflow-schema-stability/claim-reviews.jsonl",
+      "sha256": "82bf14227211d6b00c505bd3be2dddac4718ac3f70a93f20d3bb982b13c7bc93",
+      "bytes": 22774
+    },
+    {
+      "path": "sections/03-workflow-schema-stability/gates.yaml",
+      "sha256": "7c621c8ebb322623a8dc54a4605d5aa8e0036ebb799d0942954b2252ee29e37f",
+      "bytes": 369
+    },
+    {
+      "path": "audits/03-workflow-schema-stability-gate.json",
+      "sha256": "dad1835cee1088574477994e7a34434a1a75c803d6dd9b78e1f62891d8a6a09d",
+      "bytes": 52027
+    },
+    {
+      "path": "audits/03-workflow-schema-stability-review.json",
+      "sha256": "cbdeabcd5b62c106bf133d8cd0fe71b1d741435daa7112217f6be20877a050e8",
+      "bytes": 105114
+    },
+    {
+      "path": "audits/03-workflow-schema-stability-findings.jsonl",
+      "sha256": "b1a63f4db8d2a0e52cfd3d0295df27e8c076f8b7b387fd5741b40a48f528681d",
+      "bytes": 64316
+    },
+    {
+      "path": "sections/04-environment-reproducibility/claims.jsonl",
+      "sha256": "d21eff5fe4bc96ae52a89a61f1fb1fa70bdf2ca036ac24d64cfc9a399753c4ca",
+      "bytes": 287837
+    },
+    {
+      "path": "sections/04-environment-reproducibility/sources.jsonl",
+      "sha256": "41b138abc73ae2face67d3369f1e932606cdd5071336aedd0928a20034919909",
+      "bytes": 852
+    },
+    {
+      "path": "sections/04-environment-reproducibility/claim-reviews.jsonl",
+      "sha256": "e21c80705cbbf63e711d3776807c497e7f505bc4b51fe1f1be40cba484be160e",
+      "bytes": 111550
+    },
+    {
+      "path": "sections/04-environment-reproducibility/gates.yaml",
+      "sha256": "2fb1a00b85bc4b2b61f719ca1258f4999c25f6095cd0048b10ee1b4b474ea86e",
+      "bytes": 338
+    },
+    {
+      "path": "audits/04-environment-reproducibility-gate.json",
+      "sha256": "3ba2759814aa24c949a4f0b02efb86bb22a066d968b2c9b77cb1e439b117a936",
+      "bytes": 68957
+    },
+    {
+      "path": "audits/04-environment-reproducibility-review.json",
+      "sha256": "8f7b5fa83bf05722ebed7e247dedfe5ce7c8114d2521c433ecddc3c35b78e3ab",
+      "bytes": 145528
+    },
+    {
+      "path": "audits/04-environment-reproducibility-findings.jsonl",
+      "sha256": "52113588b625df67bd8b1c8d149362ab1a7f22dc015ddd835911a391f6688ff8",
+      "bytes": 232627
+    },
+    {
+      "path": "sections/05-community-distribution-patterns/claims.jsonl",
+      "sha256": "59243776d7d47d52b2a4e440e536e0754af7dae9f006776070f1c8489d6d2325",
+      "bytes": 132091
+    },
+    {
+      "path": "sections/05-community-distribution-patterns/sources.jsonl",
+      "sha256": "90df0c4e9870942eb5f5adc583a834bdaa9337be5f970aefa1e489e5da68db32",
+      "bytes": 426
+    },
+    {
+      "path": "sections/05-community-distribution-patterns/claim-reviews.jsonl",
+      "sha256": "0b6f050f377ef9a4dd2f246978547a55d704ec6d2be045b2531fe05492a3706e",
+      "bytes": 13114
+    },
+    {
+      "path": "sections/05-community-distribution-patterns/gates.yaml",
+      "sha256": "24c70f6aa511cba8f697669553dc41221512b5f3bf58788ac4de7aac9a8c3d00",
+      "bytes": 374
+    },
+    {
+      "path": "audits/05-community-distribution-patterns-gate.json",
+      "sha256": "40be37be1d72a1f5502d3c143cb0607c0388321181510641b2e2c7bfd875c2a4",
+      "bytes": 31661
+    },
+    {
+      "path": "audits/05-community-distribution-patterns-review.json",
+      "sha256": "5b1cb8005129f7eefd3d9b01906e538b5f6e7f91864e653e000eb01deab5a986",
+      "bytes": 62536
+    },
+    {
+      "path": "audits/05-community-distribution-patterns-findings.jsonl",
+      "sha256": "27c4dcf158549183abc1a73e58cb7dad677a9629c6abe0634723f7f4cde41862",
+      "bytes": 38455
+    },
+    {
+      "path": "sections/06-comfyui-core-versioning/claims.jsonl",
+      "sha256": "fa65febeec7def14adb685c57d0de8d5db97df8f256aa759651b9d67c90216b4",
+      "bytes": 331055
+    },
+    {
+      "path": "sections/06-comfyui-core-versioning/sources.jsonl",
+      "sha256": "a8a39936b1e3dc3b367b009caeba50699ddfed7082ecdaf70b2e87a875e7e810",
+      "bytes": 994
+    },
+    {
+      "path": "sections/06-comfyui-core-versioning/contradictions.jsonl",
+      "sha256": "9465c18a43d97c1178777719a655b989c73c90e14dffa4b33015cb4f5095cedf",
+      "bytes": 964776
+    },
+    {
+      "path": "sections/06-comfyui-core-versioning/claim-reviews.jsonl",
+      "sha256": "f81d4a758190b7b9ae2d56938fca2a7c327ee795df25157598eaac19a71f2988",
+      "bytes": 355839
+    },
+    {
+      "path": "sections/06-comfyui-core-versioning/gates.yaml",
+      "sha256": "8b9339f16585c831a7bcd45626774eb3c2768a02d43bce6145d69326b8e3bc6f",
+      "bytes": 382
+    },
+    {
+      "path": "audits/06-comfyui-core-versioning-gate.json",
+      "sha256": "7d0b50bbb119b24b3ce5b9b0ce0c4623ace5f415010a5a0aa377024a89bbff16",
+      "bytes": 80482
+    },
+    {
+      "path": "audits/06-comfyui-core-versioning-review.json",
+      "sha256": "be06bc9310cfdf9df8fde4c99b571a1560af4ebfeee68c75b89deeb9c875428f",
+      "bytes": 189270
+    },
+    {
+      "path": "audits/06-comfyui-core-versioning-findings.jsonl",
+      "sha256": "a4049594a819a81cad4da3a2706098c691c6ca49629727bfcbd9c22410b9c1d5",
+      "bytes": 1799916
+    },
+    {
+      "path": "sections/07-existing-control-plane-attempts/claims.jsonl",
+      "sha256": "0856eba8fc2f00c67bbab68a8c1f647dbfcf26391b71091e11ea3f8b690b0ae1",
+      "bytes": 137670
+    },
+    {
+      "path": "sections/07-existing-control-plane-attempts/sources.jsonl",
+      "sha256": "a3371947c770abff012f6fccbadc016c726224dd44927d0969e70c5586e83787",
+      "bytes": 710
+    },
+    {
+      "path": "sections/07-existing-control-plane-attempts/claim-reviews.jsonl",
+      "sha256": "47d084e4d42104bf055d985d1069ffeb1d7e301e8744d32fb1eb85674a9211db",
+      "bytes": 14977
+    },
+    {
+      "path": "sections/07-existing-control-plane-attempts/gates.yaml",
+      "sha256": "4f308e9439434389be22c3fc0697d3e7322f59d4650266672cea57cc647c5e62",
+      "bytes": 384
+    },
+    {
+      "path": "audits/07-existing-control-plane-attempts-gate.json",
+      "sha256": "ed5e17d87639f49bab31c6828720bba4b5332ad0e4b7f83ac442111e5b96d5cf",
+      "bytes": 39025
+    },
+    {
+      "path": "audits/07-existing-control-plane-attempts-review.json",
+      "sha256": "bea7e460c62c97786116486e5201475f2168336474f2bc96c6ec837e795d3813",
+      "bytes": 68247
+    },
+    {
+      "path": "audits/07-existing-control-plane-attempts-findings.jsonl",
+      "sha256": "a2f4a7b87d5b669d47333b68938fefac8e3eefe20e650442ae8dfd9cfb042bc5",
+      "bytes": 41494
+    },
+    {
+      "path": "sections/08-failure-taxonomy/claims.jsonl",
+      "sha256": "1359eaa2aff5e9c3cd9c2ba4fe525b42ff29e829bb9e39f5c08f8dfe737e96c7",
+      "bytes": 192443
+    },
+    {
+      "path": "sections/08-failure-taxonomy/sources.jsonl",
+      "sha256": "b0e5d78c408e143f588c0444cc5adb49c249d646c2fa87fe5734de5fbc5d1179",
+      "bytes": 781
+    },
+    {
+      "path": "sections/08-failure-taxonomy/claim-reviews.jsonl",
+      "sha256": "fa48200666d1c8304d69bade22f479c4a28d4a7b3502fc5d6a40a0b8e3ccc824",
+      "bytes": 63996
+    },
+    {
+      "path": "sections/08-failure-taxonomy/gates.yaml",
+      "sha256": "c199b12da8a8d9cafe011b492bf7c0bae355b17c55604ebc88555ae32331ffb4",
+      "bytes": 401
+    },
+    {
+      "path": "audits/08-failure-taxonomy-gate.json",
+      "sha256": "d6a643a38354c3f735b523c1a74c0995db3146837cf07a5b717681f5a6a4c74c",
+      "bytes": 46456
+    },
+    {
+      "path": "audits/08-failure-taxonomy-review.json",
+      "sha256": "b56044168a3b498162fac22a53d745e70206e01e9e9a7c87b793929b01cc592f",
+      "bytes": 138519
+    },
+    {
+      "path": "audits/08-failure-taxonomy-findings.jsonl",
+      "sha256": "4722b66fca485a8e14c60f2bd1bdc865429f42d5d3e6435c71a6201e223cd4cd",
+      "bytes": 165366
+    },
+    {
+      "path": "evidence/fetch-log.jsonl",
+      "sha256": "e7d8c5501cc45bfb8fa04ddbdf82fc2a1db0d4f350eeabe2ec6c17530ed2d6b1",
+      "bytes": 61558
+    },
+    {
+      "path": "evidence/citation-ledger.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "evidence/source-cards/src_049006574d3f.json",
+      "sha256": "0ec182eeea2a2d8ebf442866cf42593f1771fe720ee2dce82d5c1ff89b423cc8",
+      "bytes": 808
+    },
+    {
+      "path": "evidence/source-cards/src_07126047391f.json",
+      "sha256": "862e76eff627c571448e77c222724346ed884ae87cb857ea493b995a97bcb1bd",
+      "bytes": 1373
+    },
+    {
+      "path": "evidence/source-cards/src_07437ed8d167.json",
+      "sha256": "19f7d87ebd2d8037de774e9590ab3c307da7f5550c96d77cdbadf98d4720f7eb",
+      "bytes": 1580
+    },
+    {
+      "path": "evidence/source-cards/src_0a0723012f3c.json",
+      "sha256": "8a4b1dd073bfb71660fdb875809f4ae9052535ffda12fb0692dad85f71d96c49",
+      "bytes": 5116
+    },
+    {
+      "path": "evidence/source-cards/src_0a3149c031c5.json",
+      "sha256": "5831a80fb118447f900c41ff02f7013473e11ca03125fec0104d6e2898f4d5f4",
+      "bytes": 885
+    },
+    {
+      "path": "evidence/source-cards/src_118111ce7028.json",
+      "sha256": "eb5fedfc387b12160aacf2c75cda8b226a4ebeb90a8c28d91487a27a618106a6",
+      "bytes": 1084
+    },
+    {
+      "path": "evidence/source-cards/src_155d801f1917.json",
+      "sha256": "380f548c0fcc047c995af2a9731a4b052afed4c647a4ea264d2e4b7664c62787",
+      "bytes": 702
+    },
+    {
+      "path": "evidence/source-cards/src_19e3c332733b.json",
+      "sha256": "300d88a147eb6a0598c12f25e6c2f24d5d30520b85d33dce165fb100b637fab4",
+      "bytes": 700
+    },
+    {
+      "path": "evidence/source-cards/src_19f4e9c54b47.json",
+      "sha256": "53a8bc09f4c18fd3837ae7346466beec453c7661309b719150e9274574cfaf32",
+      "bytes": 847
+    },
+    {
+      "path": "evidence/source-cards/src_1e2124f6f8d4.json",
+      "sha256": "72de6e6550b9230d7e620bbe6d2fb99329493097383fa948dad79464f987912e",
+      "bytes": 1088
+    },
+    {
+      "path": "evidence/source-cards/src_2086dbbb6560.json",
+      "sha256": "8ffcb34286d281d3f0e62a27a7fe2aea621ff611c89ab264723ed93fafe6bf20",
+      "bytes": 4063
+    },
+    {
+      "path": "evidence/source-cards/src_26117b36a866.json",
+      "sha256": "40368c1681e0cd4b71cadd40f73c817b7693fbe4b03625e586f4b1f8a1ef5413",
+      "bytes": 4631
+    },
+    {
+      "path": "evidence/source-cards/src_2a30a3ff7502.json",
+      "sha256": "e97f114303a0a8065f0e6603bd28eb5b94ec9c9354049078fc9d0c91c2cae199",
+      "bytes": 959
+    },
+    {
+      "path": "evidence/source-cards/src_2ae04b870db8.json",
+      "sha256": "48cc7a09ec1e10926a486f0fed43b2700d7dfea15a861b0d1f7aa688fe2b903c",
+      "bytes": 904
+    },
+    {
+      "path": "evidence/source-cards/src_2c5240f22e27.json",
+      "sha256": "be17acfe330979b52bf38faf901d9eb8e68dc848c19c68788518c33b826d8dcd",
+      "bytes": 18120
+    },
+    {
+      "path": "evidence/source-cards/src_2e0add2bdec7.json",
+      "sha256": "12f73b0d1f03f3e34115919863535e5bebfb7b9540575831f264564833518808",
+      "bytes": 887
+    },
+    {
+      "path": "evidence/source-cards/src_417fb676dd7b.json",
+      "sha256": "9c8cdc1fe55b8621118009c1447a94203fbff7c5239f7d8ae173ce2b98c5b7ac",
+      "bytes": 1550
+    },
+    {
+      "path": "evidence/source-cards/src_484224037767.json",
+      "sha256": "51fc6d7a7477f28ed6c8eac62bbff101534cc2d065fa9ffc26a6da4e53f40330",
+      "bytes": 7680
+    },
+    {
+      "path": "evidence/source-cards/src_4c437e284d95.json",
+      "sha256": "d7f31783478d26691441f7e3b2a2eb0646463747c9143f7c264898fa05f6b874",
+      "bytes": 657
+    },
+    {
+      "path": "evidence/source-cards/src_55456d4dedfa.json",
+      "sha256": "cd735c58e48a3e80bf17d3cd423932b932084ce31ea214e6aa3eccd6b542e1a3",
+      "bytes": 1019
+    },
+    {
+      "path": "evidence/source-cards/src_5941285ed842.json",
+      "sha256": "a15fc63285bd2c7dd02409f2582846942a550640feec2cabb970f26e742ab8a4",
+      "bytes": 859
+    },
+    {
+      "path": "evidence/source-cards/src_664a4a54b4c3.json",
+      "sha256": "3786a78a439350bd6d640f8614e11a7b05be1d7d30f5a625f6c030b4eeb67bc8",
+      "bytes": 913
+    },
+    {
+      "path": "evidence/source-cards/src_6ccf8c48cc5a.json",
+      "sha256": "e3919ed9fab3a31a01c9aae3fbceb3d57d14fa890fa4f0f2cc7f75eaaf81436c",
+      "bytes": 1119
+    },
+    {
+      "path": "evidence/source-cards/src_72d8ae653457.json",
+      "sha256": "835fd353ede136db9edbb0b76615285ea9d25a7a4f5a8620a57eebbbff128c3f",
+      "bytes": 1000
+    },
+    {
+      "path": "evidence/source-cards/src_75194fe21c45.json",
+      "sha256": "79795705d9672bf602369e6a881e52d6040e7ec95076102232ed8cb3c387ca3c",
+      "bytes": 845
+    },
+    {
+      "path": "evidence/source-cards/src_7c8ae5fe342a.json",
+      "sha256": "47022676fbd00e05640d4f6c0276bd5985cd4f813eb79d186b2bd8db5b73a4f4",
+      "bytes": 819
+    },
+    {
+      "path": "evidence/source-cards/src_8a319c76148c.json",
+      "sha256": "3fb37c0bf2b43f26e84e5641985367a521708cbb8b9e55b0685f5d09fdec6da4",
+      "bytes": 663
+    },
+    {
+      "path": "evidence/source-cards/src_8f706291ff12.json",
+      "sha256": "97b97941495696cf79938e79c6430b085a890bc95aed8e1a0235e6454adb1f09",
+      "bytes": 866
+    },
+    {
+      "path": "evidence/source-cards/src_967446798047.json",
+      "sha256": "ed672082575a11334cd7ee6e1eea7b460d628fed0aacb5217442e6a3823ae8b0",
+      "bytes": 879
+    },
+    {
+      "path": "evidence/source-cards/src_981216eba718.json",
+      "sha256": "1131725c9226ef7ffc223ad97057db96e2a20e60f52925c6ad36e2c58df39812",
+      "bytes": 807
+    },
+    {
+      "path": "evidence/source-cards/src_990ca9d75d8b.json",
+      "sha256": "5fad700295ef1b15673f1fe785b9a31eb3fcaddff5a4127983f501c535e36d09",
+      "bytes": 652
+    },
+    {
+      "path": "evidence/source-cards/src_a295cc4f28d3.json",
+      "sha256": "8d3eca6a667fb38a0fa376b632e99cb0a15567d2131624aa628dd55889627c08",
+      "bytes": 906
+    },
+    {
+      "path": "evidence/source-cards/src_a52f23a8cbd2.json",
+      "sha256": "f2165cbe2cec0462da9c4997e573c11d86eb3410083978cbc2780cf4b08fc2db",
+      "bytes": 1284
+    },
+    {
+      "path": "evidence/source-cards/src_a8c5d541c698.json",
+      "sha256": "c9a011c8baf68fa2516eccc7e7a2d216d3b1c8eaa69a7f34ee9e59dbc8545129",
+      "bytes": 910
+    },
+    {
+      "path": "evidence/source-cards/src_aa570bcb9060.json",
+      "sha256": "bb07fcced8f0f77afbd419644876e76bd14293b65d06acbc3724dceb10012464",
+      "bytes": 7769
+    },
+    {
+      "path": "evidence/source-cards/src_aede2f10d470.json",
+      "sha256": "2f3b1edb1f6f335e8368e6c514579a0de3441a413bc6cfba72db30b26a4e1a75",
+      "bytes": 1057
+    },
+    {
+      "path": "evidence/source-cards/src_b507da5fa466.json",
+      "sha256": "e57edd4521495f0f588acab5e0684b848615bc0c88155ff7fe7d5c5a2fc81f87",
+      "bytes": 719
+    },
+    {
+      "path": "evidence/source-cards/src_b81c03003037.json",
+      "sha256": "7818ce5084d591d64420520ece44da5851e80367226936c5106e9dfb9f4a3308",
+      "bytes": 953
+    },
+    {
+      "path": "evidence/source-cards/src_bd638b8de92f.json",
+      "sha256": "bb370ef7922949e057c8401a9b896436bfb9815122ac9552578f0a21ca73f138",
+      "bytes": 858
+    },
+    {
+      "path": "evidence/source-cards/src_c038edbf6251.json",
+      "sha256": "517c59afe1fccf476ad5f6690f13f6af5c0e43d31886c345a267f2d325e7d8a1",
+      "bytes": 896
+    },
+    {
+      "path": "evidence/source-cards/src_c39e382ce301.json",
+      "sha256": "c913d09012c7eb43d58df3f1a085a9df899313a14574c50089e336c3d909bd29",
+      "bytes": 10133
+    },
+    {
+      "path": "evidence/source-cards/src_ccc15b6a3971.json",
+      "sha256": "8921d67988544a91f77296307fb694f05ef48256bdcd3d5683634bb38ec9247f",
+      "bytes": 1236
+    },
+    {
+      "path": "evidence/source-cards/src_cea54dbbe5e3.json",
+      "sha256": "2eaad062a9f6b080d52c76057195049c1169dab3a85bf390f6a198ce1890f53e",
+      "bytes": 1911
+    },
+    {
+      "path": "evidence/source-cards/src_cf20a276ca4d.json",
+      "sha256": "5fd537bb8a9c724a26cd6d4463e605746a3503d320279d7c83b8d92ad59e75bf",
+      "bytes": 1238
+    },
+    {
+      "path": "evidence/source-cards/src_d44182697e02.json",
+      "sha256": "36251cee59a03d1ff744b51c1aedb07e5f8ecf1b8b3859fb40c9c1e12f82bf9c",
+      "bytes": 766
+    },
+    {
+      "path": "evidence/source-cards/src_d56e68044c24.json",
+      "sha256": "d9a355c44682b28cddc75ebc0d123fae8cc39d89280e8c32aa716340e8cf1db5",
+      "bytes": 1464
+    },
+    {
+      "path": "evidence/source-cards/src_df4ad7d6f9c0.json",
+      "sha256": "86bf2c4d467ca973cb01ce38df426c91abcac2dc801c9bb5f30b932fadb89113",
+      "bytes": 845
+    },
+    {
+      "path": "evidence/source-cards/src_e19e5e376175.json",
+      "sha256": "adf144726a9e5c56fe2494d317f3d86f862a64bcf358e9ef27673e7bc1a8ac67",
+      "bytes": 2029
+    },
+    {
+      "path": "evidence/source-cards/src_e1e83dbebd28.json",
+      "sha256": "f77d01e61871af5188f3f469fbbac61b6c9fd98f15ff1e20264d7008124ab4e7",
+      "bytes": 1223
+    },
+    {
+      "path": "evidence/source-cards/src_e519c32165e4.json",
+      "sha256": "abe5d1ec600f4d770d4e6aabb485dc79db0dee06e166946e0dee3be53610070b",
+      "bytes": 1439
+    },
+    {
+      "path": "evidence/source-cards/src_e7045b6bccdb.json",
+      "sha256": "93e5645bcb89b662f6552a2024c9f051d9faf7437b9a1116916a566426b56457",
+      "bytes": 1414
+    },
+    {
+      "path": "evidence/source-cards/src_e804faef8c79.json",
+      "sha256": "7a3e72974eb6095f80833245652855233f9385bf170508e38216340c2d5aa6c6",
+      "bytes": 2391
+    },
+    {
+      "path": "evidence/source-cards/src_ed31f644833c.json",
+      "sha256": "ad57fdf812c1bec7c5f8485885f4fb526d4f9f019be9e31ec7af99c65f090d05",
+      "bytes": 40665
+    },
+    {
+      "path": "evidence/source-cards/src_f311c690b666.json",
+      "sha256": "bdab26974439523c5b4dfd94551d782734c45f649a3296ff4b4ad848f882f548",
+      "bytes": 1255
+    },
+    {
+      "path": "evidence/source-cards/src_f4ce9a16c6b4.json",
+      "sha256": "265a4e799f93372a33ccf17b1c82814701f5255897b5fcbef92bb0c1029a97e7",
+      "bytes": 3108
+    },
+    {
+      "path": "evidence/source-cards/src_f6c7ab7a2205.json",
+      "sha256": "116e9a9ed05fd6847d9df91f809146481ecec576ad14fadb0dccadcfb6d6959e",
+      "bytes": 2986
+    },
+    {
+      "path": "evidence/source-cards/src_f9b159fab5ef.json",
+      "sha256": "be948e32909d63c695dde77af886d06fd50ef231de4d3fe69bca04388b88c818",
+      "bytes": 1033
+    },
+    {
+      "path": "evidence/source-cards/src_fbbdece73b76.json",
+      "sha256": "74749be5f62114c1628d2210643f91a3e8b9fe1652b099c3dcbe674979c17dc5",
+      "bytes": 604
+    },
+    {
+      "path": "evidence/source-cards/src_fcdd7f1c90e9.json",
+      "sha256": "66149240064d468d18dc820ea36aff08d8016c02ea7983b48ed8475415746a7e",
+      "bytes": 1156
+    }
+  ],
+  "accepted_claim_ids": [
+    "clm_07126047391f_ollama_intern_2",
+    "clm_07437ed8d167_ollama_intern_1",
+    "clm_0a0723012f3c_ollama_intern_13",
+    "clm_0a0723012f3c_ollama_intern_18",
+    "clm_0a0723012f3c_ollama_intern_21",
+    "clm_0a0723012f3c_ollama_intern_22",
+    "clm_0a0723012f3c_ollama_intern_5",
+    "clm_118111ce7028_ollama_intern_11",
+    "clm_118111ce7028_ollama_intern_2",
+    "clm_118111ce7028_ollama_intern_21",
+    "clm_118111ce7028_ollama_intern_27",
+    "clm_118111ce7028_ollama_intern_5",
+    "clm_118111ce7028_ollama_intern_6",
+    "clm_118111ce7028_ollama_intern_9",
+    "clm_1e2124f6f8d4_ollama_intern_1",
+    "clm_1e2124f6f8d4_ollama_intern_21",
+    "clm_1e2124f6f8d4_ollama_intern_24",
+    "clm_1e2124f6f8d4_ollama_intern_27",
+    "clm_2086dbbb6560_ollama_intern_15",
+    "clm_2086dbbb6560_ollama_intern_16",
+    "clm_2086dbbb6560_ollama_intern_17",
+    "clm_2086dbbb6560_ollama_intern_24",
+    "clm_2086dbbb6560_ollama_intern_35",
+    "clm_2086dbbb6560_ollama_intern_39",
+    "clm_2086dbbb6560_ollama_intern_4",
+    "clm_2086dbbb6560_ollama_intern_47",
+    "clm_2086dbbb6560_ollama_intern_7",
+    "clm_26117b36a866_ollama_intern_1",
+    "clm_26117b36a866_ollama_intern_18",
+    "clm_26117b36a866_ollama_intern_25",
+    "clm_26117b36a866_ollama_intern_26",
+    "clm_26117b36a866_ollama_intern_3",
+    "clm_26117b36a866_ollama_intern_38",
+    "clm_26117b36a866_ollama_intern_40",
+    "clm_26117b36a866_ollama_intern_42",
+    "clm_2a30a3ff7502_ollama_intern_2",
+    "clm_2a30a3ff7502_ollama_intern_3",
+    "clm_2a30a3ff7502_ollama_intern_7",
+    "clm_2ae04b870db8_ollama_intern_1",
+    "clm_2ae04b870db8_ollama_intern_3",
+    "clm_2ae04b870db8_ollama_intern_4",
+    "clm_2c5240f22e27_ollama_intern_3",
+    "clm_2e0add2bdec7_ollama_intern_10",
+    "clm_2e0add2bdec7_ollama_intern_13",
+    "clm_2e0add2bdec7_ollama_intern_3",
+    "clm_2e0add2bdec7_ollama_intern_4",
+    "clm_2e0add2bdec7_ollama_intern_6",
+    "clm_2e0add2bdec7_ollama_intern_7",
+    "clm_2e0add2bdec7_ollama_intern_9",
+    "clm_417fb676dd7b_ollama_intern_5",
+    "clm_484224037767_ollama_intern_16",
+    "clm_484224037767_ollama_intern_7",
+    "clm_4c437e284d95_ollama_intern_1",
+    "clm_55456d4dedfa_ollama_intern_1",
+    "clm_55456d4dedfa_ollama_intern_13",
+    "clm_55456d4dedfa_ollama_intern_17",
+    "clm_55456d4dedfa_ollama_intern_19",
+    "clm_55456d4dedfa_ollama_intern_2",
+    "clm_55456d4dedfa_ollama_intern_20",
+    "clm_55456d4dedfa_ollama_intern_3",
+    "clm_55456d4dedfa_ollama_intern_5",
+    "clm_55456d4dedfa_ollama_intern_6",
+    "clm_55456d4dedfa_ollama_intern_8",
+    "clm_55456d4dedfa_ollama_intern_9",
+    "clm_5941285ed842_ollama_intern_13",
+    "clm_5941285ed842_ollama_intern_14",
+    "clm_5941285ed842_ollama_intern_15",
+    "clm_5941285ed842_ollama_intern_18",
+    "clm_5941285ed842_ollama_intern_2",
+    "clm_5941285ed842_ollama_intern_22",
+    "clm_5941285ed842_ollama_intern_3",
+    "clm_664a4a54b4c3_ollama_intern_12",
+    "clm_664a4a54b4c3_ollama_intern_13",
+    "clm_664a4a54b4c3_ollama_intern_14",
+    "clm_664a4a54b4c3_ollama_intern_15",
+    "clm_664a4a54b4c3_ollama_intern_2",
+    "clm_664a4a54b4c3_ollama_intern_3",
+    "clm_664a4a54b4c3_ollama_intern_4",
+    "clm_664a4a54b4c3_ollama_intern_5",
+    "clm_664a4a54b4c3_ollama_intern_7",
+    "clm_664a4a54b4c3_ollama_intern_9",
+    "clm_6ccf8c48cc5a_ollama_intern_1",
+    "clm_6ccf8c48cc5a_ollama_intern_14",
+    "clm_6ccf8c48cc5a_ollama_intern_6",
+    "clm_6ccf8c48cc5a_ollama_intern_7",
+    "clm_6ccf8c48cc5a_ollama_intern_9",
+    "clm_72d8ae653457_ollama_intern_11",
+    "clm_72d8ae653457_ollama_intern_12",
+    "clm_72d8ae653457_ollama_intern_2",
+    "clm_72d8ae653457_ollama_intern_3",
+    "clm_72d8ae653457_ollama_intern_4",
+    "clm_72d8ae653457_ollama_intern_8",
+    "clm_75194fe21c45_ollama_intern_1",
+    "clm_75194fe21c45_ollama_intern_3",
+    "clm_75194fe21c45_ollama_intern_5",
+    "clm_75194fe21c45_ollama_intern_6",
+    "clm_7c8ae5fe342a_ollama_intern_2",
+    "clm_7c8ae5fe342a_ollama_intern_3",
+    "clm_7c8ae5fe342a_ollama_intern_4",
+    "clm_8f706291ff12_ollama_intern_4",
+    "clm_967446798047_ollama_intern_4",
+    "clm_967446798047_ollama_intern_5",
+    "clm_981216eba718_ollama_intern_1",
+    "clm_981216eba718_ollama_intern_3",
+    "clm_981216eba718_ollama_intern_5",
+    "clm_a295cc4f28d3_ollama_intern_2",
+    "clm_a295cc4f28d3_ollama_intern_3",
+    "clm_a295cc4f28d3_ollama_intern_9",
+    "clm_a52f23a8cbd2_ollama_intern_5",
+    "clm_a8c5d541c698_ollama_intern_11",
+    "clm_a8c5d541c698_ollama_intern_4",
+    "clm_a8c5d541c698_ollama_intern_5",
+    "clm_a8c5d541c698_ollama_intern_6",
+    "clm_a8c5d541c698_ollama_intern_7",
+    "clm_a8c5d541c698_ollama_intern_8",
+    "clm_aa570bcb9060_ollama_intern_10",
+    "clm_aa570bcb9060_ollama_intern_12",
+    "clm_aa570bcb9060_ollama_intern_14",
+    "clm_aa570bcb9060_ollama_intern_16",
+    "clm_aa570bcb9060_ollama_intern_17",
+    "clm_aa570bcb9060_ollama_intern_27",
+    "clm_aa570bcb9060_ollama_intern_4",
+    "clm_aede2f10d470_ollama_intern_10",
+    "clm_aede2f10d470_ollama_intern_11",
+    "clm_aede2f10d470_ollama_intern_12",
+    "clm_aede2f10d470_ollama_intern_13",
+    "clm_aede2f10d470_ollama_intern_14",
+    "clm_aede2f10d470_ollama_intern_17",
+    "clm_aede2f10d470_ollama_intern_19",
+    "clm_aede2f10d470_ollama_intern_2",
+    "clm_aede2f10d470_ollama_intern_3",
+    "clm_b507da5fa466_ollama_intern_2",
+    "clm_b507da5fa466_ollama_intern_3",
+    "clm_b507da5fa466_ollama_intern_4",
+    "clm_b507da5fa466_ollama_intern_5",
+    "clm_b507da5fa466_ollama_intern_6",
+    "clm_b81c03003037_ollama_intern_17",
+    "clm_b81c03003037_ollama_intern_21",
+    "clm_b81c03003037_ollama_intern_3",
+    "clm_b81c03003037_ollama_intern_5",
+    "clm_b81c03003037_ollama_intern_8",
+    "clm_b81c03003037_ollama_intern_9",
+    "clm_bd638b8de92f_ollama_intern_1",
+    "clm_bd638b8de92f_ollama_intern_10",
+    "clm_bd638b8de92f_ollama_intern_3",
+    "clm_c038edbf6251_ollama_intern_1",
+    "clm_c038edbf6251_ollama_intern_13",
+    "clm_c038edbf6251_ollama_intern_16",
+    "clm_c038edbf6251_ollama_intern_17",
+    "clm_c038edbf6251_ollama_intern_18",
+    "clm_c038edbf6251_ollama_intern_2",
+    "clm_c038edbf6251_ollama_intern_3",
+    "clm_c038edbf6251_ollama_intern_4",
+    "clm_c038edbf6251_ollama_intern_5",
+    "clm_c038edbf6251_ollama_intern_8",
+    "clm_c39e382ce301_ollama_intern_1",
+    "clm_c39e382ce301_ollama_intern_3",
+    "clm_ccc15b6a3971_ollama_intern_1",
+    "clm_ccc15b6a3971_ollama_intern_2",
+    "clm_ccc15b6a3971_ollama_intern_3",
+    "clm_ccc15b6a3971_ollama_intern_4",
+    "clm_ccc15b6a3971_ollama_intern_5",
+    "clm_ccc15b6a3971_ollama_intern_6",
+    "clm_cf20a276ca4d_ollama_intern_10",
+    "clm_cf20a276ca4d_ollama_intern_14",
+    "clm_cf20a276ca4d_ollama_intern_15",
+    "clm_cf20a276ca4d_ollama_intern_8",
+    "clm_cf20a276ca4d_ollama_intern_9",
+    "clm_d44182697e02_ollama_intern_2",
+    "clm_d56e68044c24_ollama_intern_21",
+    "clm_d56e68044c24_ollama_intern_7",
+    "clm_e19e5e376175_ollama_intern_12",
+    "clm_e19e5e376175_ollama_intern_21",
+    "clm_e1e83dbebd28_ollama_intern_1",
+    "clm_e1e83dbebd28_ollama_intern_10",
+    "clm_e1e83dbebd28_ollama_intern_11",
+    "clm_e1e83dbebd28_ollama_intern_3",
+    "clm_e1e83dbebd28_ollama_intern_4",
+    "clm_e1e83dbebd28_ollama_intern_9",
+    "clm_e519c32165e4_ollama_intern_10",
+    "clm_e519c32165e4_ollama_intern_24",
+    "clm_e519c32165e4_ollama_intern_25",
+    "clm_e519c32165e4_ollama_intern_26",
+    "clm_e519c32165e4_ollama_intern_27",
+    "clm_e519c32165e4_ollama_intern_28",
+    "clm_e519c32165e4_ollama_intern_7",
+    "clm_e519c32165e4_ollama_intern_8",
+    "clm_e7045b6bccdb_ollama_intern_1",
+    "clm_e7045b6bccdb_ollama_intern_3",
+    "clm_e7045b6bccdb_ollama_intern_4",
+    "clm_e7045b6bccdb_ollama_intern_5",
+    "clm_e7045b6bccdb_ollama_intern_7",
+    "clm_e7045b6bccdb_ollama_intern_8",
+    "clm_e804faef8c79_ollama_intern_10",
+    "clm_e804faef8c79_ollama_intern_11",
+    "clm_e804faef8c79_ollama_intern_16",
+    "clm_e804faef8c79_ollama_intern_17",
+    "clm_e804faef8c79_ollama_intern_24",
+    "clm_e804faef8c79_ollama_intern_4",
+    "clm_e804faef8c79_ollama_intern_8",
+    "clm_e804faef8c79_ollama_intern_9",
+    "clm_ed31f644833c_ollama_intern_1",
+    "clm_ed31f644833c_ollama_intern_14",
+    "clm_ed31f644833c_ollama_intern_21",
+    "clm_ed31f644833c_ollama_intern_3",
+    "clm_ed31f644833c_ollama_intern_5",
+    "clm_ed31f644833c_ollama_intern_6",
+    "clm_ed31f644833c_ollama_intern_7",
+    "clm_ed31f644833c_ollama_intern_9",
+    "clm_f311c690b666_ollama_intern_100",
+    "clm_f311c690b666_ollama_intern_101",
+    "clm_f311c690b666_ollama_intern_103",
+    "clm_f311c690b666_ollama_intern_105",
+    "clm_f311c690b666_ollama_intern_106",
+    "clm_f311c690b666_ollama_intern_6",
+    "clm_f311c690b666_ollama_intern_8",
+    "clm_f4ce9a16c6b4_ollama_intern_10",
+    "clm_f4ce9a16c6b4_ollama_intern_13",
+    "clm_f4ce9a16c6b4_ollama_intern_14",
+    "clm_f4ce9a16c6b4_ollama_intern_16",
+    "clm_f4ce9a16c6b4_ollama_intern_17",
+    "clm_f4ce9a16c6b4_ollama_intern_21",
+    "clm_f4ce9a16c6b4_ollama_intern_23",
+    "clm_f4ce9a16c6b4_ollama_intern_26",
+    "clm_f4ce9a16c6b4_ollama_intern_27",
+    "clm_f4ce9a16c6b4_ollama_intern_29",
+    "clm_f4ce9a16c6b4_ollama_intern_3",
+    "clm_f4ce9a16c6b4_ollama_intern_31",
+    "clm_f4ce9a16c6b4_ollama_intern_5",
+    "clm_f4ce9a16c6b4_ollama_intern_6",
+    "clm_f4ce9a16c6b4_ollama_intern_7",
+    "clm_f4ce9a16c6b4_ollama_intern_8",
+    "clm_f4ce9a16c6b4_ollama_intern_9",
+    "clm_f9b159fab5ef_ollama_intern_2",
+    "clm_f9b159fab5ef_ollama_intern_4",
+    "clm_f9b159fab5ef_ollama_intern_5",
+    "clm_f9b159fab5ef_ollama_intern_8",
+    "clm_fbbdece73b76_ollama_intern_19",
+    "clm_fcdd7f1c90e9_ollama_intern_10",
+    "clm_fcdd7f1c90e9_ollama_intern_11",
+    "clm_fcdd7f1c90e9_ollama_intern_12",
+    "clm_fcdd7f1c90e9_ollama_intern_13",
+    "clm_fcdd7f1c90e9_ollama_intern_14",
+    "clm_fcdd7f1c90e9_ollama_intern_15",
+    "clm_fcdd7f1c90e9_ollama_intern_16",
+    "clm_fcdd7f1c90e9_ollama_intern_17",
+    "clm_fcdd7f1c90e9_ollama_intern_18",
+    "clm_fcdd7f1c90e9_ollama_intern_19",
+    "clm_fcdd7f1c90e9_ollama_intern_20",
+    "clm_fcdd7f1c90e9_ollama_intern_3",
+    "clm_fcdd7f1c90e9_ollama_intern_4",
+    "clm_fcdd7f1c90e9_ollama_intern_5"
+  ],
+  "cited_claim_ids": [
+    "clm_d56e68044c24_ollama_intern_7",
+    "clm_e7045b6bccdb_ollama_intern_5",
+    "clm_e19e5e376175_ollama_intern_12",
+    "clm_981216eba718_ollama_intern_1",
+    "clm_7c8ae5fe342a_ollama_intern_4",
+    "clm_e1e83dbebd28_ollama_intern_4",
+    "clm_f4ce9a16c6b4_ollama_intern_7",
+    "clm_f4ce9a16c6b4_ollama_intern_8",
+    "clm_f4ce9a16c6b4_ollama_intern_29",
+    "clm_664a4a54b4c3_ollama_intern_2",
+    "clm_664a4a54b4c3_ollama_intern_5",
+    "clm_a8c5d541c698_ollama_intern_6",
+    "clm_a8c5d541c698_ollama_intern_7",
+    "clm_55456d4dedfa_ollama_intern_3",
+    "clm_55456d4dedfa_ollama_intern_13",
+    "clm_f9b159fab5ef_ollama_intern_2",
+    "clm_55456d4dedfa_ollama_intern_19",
+    "clm_2e0add2bdec7_ollama_intern_3",
+    "clm_e1e83dbebd28_ollama_intern_3",
+    "clm_e1e83dbebd28_ollama_intern_9",
+    "clm_1e2124f6f8d4_ollama_intern_1",
+    "clm_1e2124f6f8d4_ollama_intern_21",
+    "clm_e804faef8c79_ollama_intern_4",
+    "clm_e804faef8c79_ollama_intern_17",
+    "clm_e804faef8c79_ollama_intern_10",
+    "clm_d56e68044c24_ollama_intern_21",
+    "clm_e19e5e376175_ollama_intern_21",
+    "clm_e7045b6bccdb_ollama_intern_4",
+    "clm_...",
+    "clm_55456d4dedfa_ollama_intern_2",
+    "clm_aede2f10d470_ollama_intern_2",
+    "clm_c038edbf6251_ollama_intern_17",
+    "clm_981216eba718_ollama_intern_3",
+    "clm_981216eba718_ollama_intern_5",
+    "clm_a8c5d541c698_ollama_intern_11",
+    "clm_a8c5d541c698_ollama_intern_4",
+    "clm_e804faef8c79_ollama_intern_11",
+    "clm_4c437e284d95_ollama_intern_1",
+    "clm_cf20a276ca4d_ollama_intern_10",
+    "clm_cf20a276ca4d_ollama_intern_14",
+    "clm_cf20a276ca4d_ollama_intern_15",
+    "clm_a295cc4f28d3_ollama_intern_3",
+    "clm_8f706291ff12_ollama_intern_4",
+    "clm_e1e83dbebd28_ollama_intern_1",
+    "clm_aede2f10d470_ollama_intern_3",
+    "clm_fcdd7f1c90e9_ollama_intern_15",
+    "clm_aede2f10d470_ollama_intern_12"
+  ],
+  "uncited_accepted_claim_ids": [
+    "clm_07126047391f_ollama_intern_2",
+    "clm_07437ed8d167_ollama_intern_1",
+    "clm_0a0723012f3c_ollama_intern_13",
+    "clm_0a0723012f3c_ollama_intern_18",
+    "clm_0a0723012f3c_ollama_intern_21",
+    "clm_0a0723012f3c_ollama_intern_22",
+    "clm_0a0723012f3c_ollama_intern_5",
+    "clm_118111ce7028_ollama_intern_11",
+    "clm_118111ce7028_ollama_intern_2",
+    "clm_118111ce7028_ollama_intern_21",
+    "clm_118111ce7028_ollama_intern_27",
+    "clm_118111ce7028_ollama_intern_5",
+    "clm_118111ce7028_ollama_intern_6",
+    "clm_118111ce7028_ollama_intern_9",
+    "clm_1e2124f6f8d4_ollama_intern_24",
+    "clm_1e2124f6f8d4_ollama_intern_27",
+    "clm_2086dbbb6560_ollama_intern_15",
+    "clm_2086dbbb6560_ollama_intern_16",
+    "clm_2086dbbb6560_ollama_intern_17",
+    "clm_2086dbbb6560_ollama_intern_24",
+    "clm_2086dbbb6560_ollama_intern_35",
+    "clm_2086dbbb6560_ollama_intern_39",
+    "clm_2086dbbb6560_ollama_intern_4",
+    "clm_2086dbbb6560_ollama_intern_47",
+    "clm_2086dbbb6560_ollama_intern_7",
+    "clm_26117b36a866_ollama_intern_1",
+    "clm_26117b36a866_ollama_intern_18",
+    "clm_26117b36a866_ollama_intern_25",
+    "clm_26117b36a866_ollama_intern_26",
+    "clm_26117b36a866_ollama_intern_3",
+    "clm_26117b36a866_ollama_intern_38",
+    "clm_26117b36a866_ollama_intern_40",
+    "clm_26117b36a866_ollama_intern_42",
+    "clm_2a30a3ff7502_ollama_intern_2",
+    "clm_2a30a3ff7502_ollama_intern_3",
+    "clm_2a30a3ff7502_ollama_intern_7",
+    "clm_2ae04b870db8_ollama_intern_1",
+    "clm_2ae04b870db8_ollama_intern_3",
+    "clm_2ae04b870db8_ollama_intern_4",
+    "clm_2c5240f22e27_ollama_intern_3",
+    "clm_2e0add2bdec7_ollama_intern_10",
+    "clm_2e0add2bdec7_ollama_intern_13",
+    "clm_2e0add2bdec7_ollama_intern_4",
+    "clm_2e0add2bdec7_ollama_intern_6",
+    "clm_2e0add2bdec7_ollama_intern_7",
+    "clm_2e0add2bdec7_ollama_intern_9",
+    "clm_417fb676dd7b_ollama_intern_5",
+    "clm_484224037767_ollama_intern_16",
+    "clm_484224037767_ollama_intern_7",
+    "clm_55456d4dedfa_ollama_intern_1",
+    "clm_55456d4dedfa_ollama_intern_17",
+    "clm_55456d4dedfa_ollama_intern_20",
+    "clm_55456d4dedfa_ollama_intern_5",
+    "clm_55456d4dedfa_ollama_intern_6",
+    "clm_55456d4dedfa_ollama_intern_8",
+    "clm_55456d4dedfa_ollama_intern_9",
+    "clm_5941285ed842_ollama_intern_13",
+    "clm_5941285ed842_ollama_intern_14",
+    "clm_5941285ed842_ollama_intern_15",
+    "clm_5941285ed842_ollama_intern_18",
+    "clm_5941285ed842_ollama_intern_2",
+    "clm_5941285ed842_ollama_intern_22",
+    "clm_5941285ed842_ollama_intern_3",
+    "clm_664a4a54b4c3_ollama_intern_12",
+    "clm_664a4a54b4c3_ollama_intern_13",
+    "clm_664a4a54b4c3_ollama_intern_14",
+    "clm_664a4a54b4c3_ollama_intern_15",
+    "clm_664a4a54b4c3_ollama_intern_3",
+    "clm_664a4a54b4c3_ollama_intern_4",
+    "clm_664a4a54b4c3_ollama_intern_7",
+    "clm_664a4a54b4c3_ollama_intern_9",
+    "clm_6ccf8c48cc5a_ollama_intern_1",
+    "clm_6ccf8c48cc5a_ollama_intern_14",
+    "clm_6ccf8c48cc5a_ollama_intern_6",
+    "clm_6ccf8c48cc5a_ollama_intern_7",
+    "clm_6ccf8c48cc5a_ollama_intern_9",
+    "clm_72d8ae653457_ollama_intern_11",
+    "clm_72d8ae653457_ollama_intern_12",
+    "clm_72d8ae653457_ollama_intern_2",
+    "clm_72d8ae653457_ollama_intern_3",
+    "clm_72d8ae653457_ollama_intern_4",
+    "clm_72d8ae653457_ollama_intern_8",
+    "clm_75194fe21c45_ollama_intern_1",
+    "clm_75194fe21c45_ollama_intern_3",
+    "clm_75194fe21c45_ollama_intern_5",
+    "clm_75194fe21c45_ollama_intern_6",
+    "clm_7c8ae5fe342a_ollama_intern_2",
+    "clm_7c8ae5fe342a_ollama_intern_3",
+    "clm_967446798047_ollama_intern_4",
+    "clm_967446798047_ollama_intern_5",
+    "clm_a295cc4f28d3_ollama_intern_2",
+    "clm_a295cc4f28d3_ollama_intern_9",
+    "clm_a52f23a8cbd2_ollama_intern_5",
+    "clm_a8c5d541c698_ollama_intern_5",
+    "clm_a8c5d541c698_ollama_intern_8",
+    "clm_aa570bcb9060_ollama_intern_10",
+    "clm_aa570bcb9060_ollama_intern_12",
+    "clm_aa570bcb9060_ollama_intern_14",
+    "clm_aa570bcb9060_ollama_intern_16",
+    "clm_aa570bcb9060_ollama_intern_17",
+    "clm_aa570bcb9060_ollama_intern_27",
+    "clm_aa570bcb9060_ollama_intern_4",
+    "clm_aede2f10d470_ollama_intern_10",
+    "clm_aede2f10d470_ollama_intern_11",
+    "clm_aede2f10d470_ollama_intern_13",
+    "clm_aede2f10d470_ollama_intern_14",
+    "clm_aede2f10d470_ollama_intern_17",
+    "clm_aede2f10d470_ollama_intern_19",
+    "clm_b507da5fa466_ollama_intern_2",
+    "clm_b507da5fa466_ollama_intern_3",
+    "clm_b507da5fa466_ollama_intern_4",
+    "clm_b507da5fa466_ollama_intern_5",
+    "clm_b507da5fa466_ollama_intern_6",
+    "clm_b81c03003037_ollama_intern_17",
+    "clm_b81c03003037_ollama_intern_21",
+    "clm_b81c03003037_ollama_intern_3",
+    "clm_b81c03003037_ollama_intern_5",
+    "clm_b81c03003037_ollama_intern_8",
+    "clm_b81c03003037_ollama_intern_9",
+    "clm_bd638b8de92f_ollama_intern_1",
+    "clm_bd638b8de92f_ollama_intern_10",
+    "clm_bd638b8de92f_ollama_intern_3",
+    "clm_c038edbf6251_ollama_intern_1",
+    "clm_c038edbf6251_ollama_intern_13",
+    "clm_c038edbf6251_ollama_intern_16",
+    "clm_c038edbf6251_ollama_intern_18",
+    "clm_c038edbf6251_ollama_intern_2",
+    "clm_c038edbf6251_ollama_intern_3",
+    "clm_c038edbf6251_ollama_intern_4",
+    "clm_c038edbf6251_ollama_intern_5",
+    "clm_c038edbf6251_ollama_intern_8",
+    "clm_c39e382ce301_ollama_intern_1",
+    "clm_c39e382ce301_ollama_intern_3",
+    "clm_ccc15b6a3971_ollama_intern_1",
+    "clm_ccc15b6a3971_ollama_intern_2",
+    "clm_ccc15b6a3971_ollama_intern_3",
+    "clm_ccc15b6a3971_ollama_intern_4",
+    "clm_ccc15b6a3971_ollama_intern_5",
+    "clm_ccc15b6a3971_ollama_intern_6",
+    "clm_cf20a276ca4d_ollama_intern_8",
+    "clm_cf20a276ca4d_ollama_intern_9",
+    "clm_d44182697e02_ollama_intern_2",
+    "clm_e1e83dbebd28_ollama_intern_10",
+    "clm_e1e83dbebd28_ollama_intern_11",
+    "clm_e519c32165e4_ollama_intern_10",
+    "clm_e519c32165e4_ollama_intern_24",
+    "clm_e519c32165e4_ollama_intern_25",
+    "clm_e519c32165e4_ollama_intern_26",
+    "clm_e519c32165e4_ollama_intern_27",
+    "clm_e519c32165e4_ollama_intern_28",
+    "clm_e519c32165e4_ollama_intern_7",
+    "clm_e519c32165e4_ollama_intern_8",
+    "clm_e7045b6bccdb_ollama_intern_1",
+    "clm_e7045b6bccdb_ollama_intern_3",
+    "clm_e7045b6bccdb_ollama_intern_7",
+    "clm_e7045b6bccdb_ollama_intern_8",
+    "clm_e804faef8c79_ollama_intern_16",
+    "clm_e804faef8c79_ollama_intern_24",
+    "clm_e804faef8c79_ollama_intern_8",
+    "clm_e804faef8c79_ollama_intern_9",
+    "clm_ed31f644833c_ollama_intern_1",
+    "clm_ed31f644833c_ollama_intern_14",
+    "clm_ed31f644833c_ollama_intern_21",
+    "clm_ed31f644833c_ollama_intern_3",
+    "clm_ed31f644833c_ollama_intern_5",
+    "clm_ed31f644833c_ollama_intern_6",
+    "clm_ed31f644833c_ollama_intern_7",
+    "clm_ed31f644833c_ollama_intern_9",
+    "clm_f311c690b666_ollama_intern_100",
+    "clm_f311c690b666_ollama_intern_101",
+    "clm_f311c690b666_ollama_intern_103",
+    "clm_f311c690b666_ollama_intern_105",
+    "clm_f311c690b666_ollama_intern_106",
+    "clm_f311c690b666_ollama_intern_6",
+    "clm_f311c690b666_ollama_intern_8",
+    "clm_f4ce9a16c6b4_ollama_intern_10",
+    "clm_f4ce9a16c6b4_ollama_intern_13",
+    "clm_f4ce9a16c6b4_ollama_intern_14",
+    "clm_f4ce9a16c6b4_ollama_intern_16",
+    "clm_f4ce9a16c6b4_ollama_intern_17",
+    "clm_f4ce9a16c6b4_ollama_intern_21",
+    "clm_f4ce9a16c6b4_ollama_intern_23",
+    "clm_f4ce9a16c6b4_ollama_intern_26",
+    "clm_f4ce9a16c6b4_ollama_intern_27",
+    "clm_f4ce9a16c6b4_ollama_intern_3",
+    "clm_f4ce9a16c6b4_ollama_intern_31",
+    "clm_f4ce9a16c6b4_ollama_intern_5",
+    "clm_f4ce9a16c6b4_ollama_intern_6",
+    "clm_f4ce9a16c6b4_ollama_intern_9",
+    "clm_f9b159fab5ef_ollama_intern_4",
+    "clm_f9b159fab5ef_ollama_intern_5",
+    "clm_f9b159fab5ef_ollama_intern_8",
+    "clm_fbbdece73b76_ollama_intern_19",
+    "clm_fcdd7f1c90e9_ollama_intern_10",
+    "clm_fcdd7f1c90e9_ollama_intern_11",
+    "clm_fcdd7f1c90e9_ollama_intern_12",
+    "clm_fcdd7f1c90e9_ollama_intern_13",
+    "clm_fcdd7f1c90e9_ollama_intern_14",
+    "clm_fcdd7f1c90e9_ollama_intern_16",
+    "clm_fcdd7f1c90e9_ollama_intern_17",
+    "clm_fcdd7f1c90e9_ollama_intern_18",
+    "clm_fcdd7f1c90e9_ollama_intern_19",
+    "clm_fcdd7f1c90e9_ollama_intern_20",
+    "clm_fcdd7f1c90e9_ollama_intern_3",
+    "clm_fcdd7f1c90e9_ollama_intern_4",
+    "clm_fcdd7f1c90e9_ollama_intern_5"
+  ],
+  "unresolved_contradictions": [
+    {
+      "contradiction_id": "cnt_f38573f37716_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_21c3d1e7419f_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_f42b263bbe62_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_080bb959a2a3_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_e79326b001b6_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_a1a719a9f2b8_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_1e4f2129c53b_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_9c8a42519e8e_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "high",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_382cf9771f4c_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_59443972b2ea_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_8840323d580f_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_7082f21290d5_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_8ee37f1d24b8_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_04b7c4c0218d_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_19a1573b6bcf_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_d407a1e37818_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_686027a58ad2_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_4de62f0af7ef_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_8344053d4de9_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_23268c1b5807_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_3acb816e79d0_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_42e98f1fffac_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_96f2f2ebc956_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_7a50a26fd3a8_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_f74a31118f9c_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_33ad73d19ff8_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_fc6dd10e8d28_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_9816bacd934b_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_2f16e9a70413_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_b3b52e152b21_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_062b6f6968dc_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_d21ab772a096_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_711664a1c9fa_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_c123be12bf60_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_24e058ab675e_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_cd7eaebdfbf5_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_03f6ac6d1c6f_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_b5234b07fd98_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_7a9a9527acfd_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_716685b980ed_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_30e5d5d55574_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_10f12ecc47de_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_4df7383d5230_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_2065d5fcfa19_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_c2711d345695_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_af58528b5d74_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "high",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_c5879e570d1e_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_9303efa95382_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_e89ecdbdb2b1_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_33c7fe8da3c5_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_2a3b7dd292c0_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "temporal_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_ce4921f79d3c_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_88a9b747da83_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_1e62c83bf6de_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_41168affb7d2_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_ab7d95eae2e6_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_a3a402f76fb2_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_30e19f900471_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_93911c456c08_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_723895670f4b_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_97163970cf72_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_97b89c687fe2_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_e16821cff583_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_e133db9cb19c_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_454ef29ba13e_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_41316f0bdd4c_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_b81438c05a3b_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_3d61c06ad520_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_e820ae557c91_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_0c831e08af09_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_99fb7401356b_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_f05a0af91b70_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_96005502ff1f_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_ce3411c340a2_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_b645eafb675f_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_13ddda82c8cc_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_4da1593c9998_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_e5d5e9310dd2_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_0cca54e9f42d_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_38523ee8ca75_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_0a2b07adc2c7_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "high",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_a19727c2d637_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_cc80cd5d0928_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_507a116a8d26_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_3168941441c0_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_89b0f98cf55c_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_8020bc7dcd0d_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_c7dbefd712be_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_636e9ae9f130_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_b8a1ebda2a53_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_09d4340580f4_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_9fc5c0e8be88_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_7402f0cd0c38_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_8167a5b07d8c_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_374b8c855c8f_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_accb4df71fa6_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_64c403533b5a_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_3320766588e3_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_7774b59a012e_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_4330eccaea5d_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_38b8504f8100_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_be4547a36b2c_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_52db8e3fa5a1_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "high",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_a2238c1c8a5b_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_161e476670cf_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_f7852374658c_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_8624b6a29a9a_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_d767c5461688_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_a2752a72a8a9_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_8d7b13df2fad_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_945e2a434dba_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_d275955c98a7_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_f0cdc21e659e_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "high",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_310aa75f0593_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_643c271b7c55_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_9ed270871d67_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_9a49d7b945dc_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_ecc8affa92d2_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_5f1dda93f541_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_dd89dbd0b46d_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_693030b1a884_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_45199cb0b478_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_c02ca7349707_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_f6188b8e436d_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_c7dbcf05f985_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_a381905cdf3c_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_80d337453717_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_a8dc9b448567_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_90e9c5cbfc0a_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "temporal_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_4444c501fc92_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_687cbdde2af6_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_9bace00a1253_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_f0ffc366debd_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_af76424fc415_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_45b99cbf9d4c_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_6e732ec1791f_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_48bcf184604f_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_dbe25141d7cd_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_8f017ec5eab7_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "temporal_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_eee6851d4afd_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_38f2d2a465d4_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_6759af3377ac_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_22b641b58d06_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_b44bd062f4c2_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_d8f140641cb3_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_bc3930125525_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_6d87eb5155f9_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_741d84053481_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_c91da8e6735c_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_c12d98d73a8f_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_e16be69aa29f_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_733eef12c03a_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_321b0dae0b47_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_9a3f96fcca35_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_ccc6413766b8_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_dc27527f561a_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_4f743ac9014f_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_b7b0a9c9ed06_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_95eb8245bc6f_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "temporal_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_ca1f561ae168_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_7f07900cb405_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_7b4768dfe09d_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_b580e61187b2_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_6ee9aa0a66f4_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_7c6372f2a527_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_d04575443743_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_123d6a0d9e84_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_2c145ac0a0be_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "direct_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_d000531908cf_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_4b17e2373d63_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "definition_conflict",
+      "severity": "low",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "contradiction_id": "cnt_60dc6780d54d_ollama_intern",
+      "section_id": "06-comfyui-core-versioning,07-existing-control-plane-attempts",
+      "type": "scope_conflict",
+      "severity": "medium",
+      "status": "unresolved",
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    }
+  ],
+  "waivers_disclosed": [
+    {
+      "family": "source_floor",
+      "applied_to": "primary_sources_required",
+      "reason": "ComfyUI core versioning behavior is defined by the canonical maintainer surfaces: Comfy-Org repositories, GitHub release data, and docs.comfy.org. Independent third-party sources can discuss usage but are not primary sources for platform version semantics.",
+      "compensating_controls": [
+        "Sources span multiple official artifact types: README, release metadata, CLI documentation, and docs.comfy.org pages.",
+        "GitHub API release data provides structured version history directly from the maintainer.",
+        "docs.comfy.org is the official documentation surface for workflow, custom node, and interface behavior.",
+        "Accepted claims still require span-grounded excerpts and promoted review decisions."
+      ],
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "family": "source_floor",
+      "applied_to": "01-node-dependency-fragility.primary_sources_required",
+      "reason": "ComfyUI core versioning behavior is defined by the canonical maintainer surfaces: Comfy-Org repositories, GitHub release data, and docs.comfy.org. Independent third-party sources can discuss usage but are not primary sources for platform version semantics.",
+      "compensating_controls": [
+        "Sources span multiple official artifact types: README, release metadata, CLI documentation, and docs.comfy.org pages.",
+        "GitHub API release data provides structured version history directly from the maintainer.",
+        "docs.comfy.org is the official documentation surface for workflow, custom node, and interface behavior.",
+        "Accepted claims still require span-grounded excerpts and promoted review decisions."
+      ],
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "family": "source_floor",
+      "applied_to": "02-model-file-identity.primary_sources_required",
+      "reason": "ComfyUI core versioning behavior is defined by the canonical maintainer surfaces: Comfy-Org repositories, GitHub release data, and docs.comfy.org. Independent third-party sources can discuss usage but are not primary sources for platform version semantics.",
+      "compensating_controls": [
+        "Sources span multiple official artifact types: README, release metadata, CLI documentation, and docs.comfy.org pages.",
+        "GitHub API release data provides structured version history directly from the maintainer.",
+        "docs.comfy.org is the official documentation surface for workflow, custom node, and interface behavior.",
+        "Accepted claims still require span-grounded excerpts and promoted review decisions."
+      ],
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "family": "source_floor",
+      "applied_to": "03-workflow-schema-stability.primary_sources_required",
+      "reason": "ComfyUI core versioning behavior is defined by the canonical maintainer surfaces: Comfy-Org repositories, GitHub release data, and docs.comfy.org. Independent third-party sources can discuss usage but are not primary sources for platform version semantics.",
+      "compensating_controls": [
+        "Sources span multiple official artifact types: README, release metadata, CLI documentation, and docs.comfy.org pages.",
+        "GitHub API release data provides structured version history directly from the maintainer.",
+        "docs.comfy.org is the official documentation surface for workflow, custom node, and interface behavior.",
+        "Accepted claims still require span-grounded excerpts and promoted review decisions."
+      ],
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "family": "source_floor",
+      "applied_to": "04-environment-reproducibility.primary_sources_required",
+      "reason": "ComfyUI core versioning behavior is defined by the canonical maintainer surfaces: Comfy-Org repositories, GitHub release data, and docs.comfy.org. Independent third-party sources can discuss usage but are not primary sources for platform version semantics.",
+      "compensating_controls": [
+        "Sources span multiple official artifact types: README, release metadata, CLI documentation, and docs.comfy.org pages.",
+        "GitHub API release data provides structured version history directly from the maintainer.",
+        "docs.comfy.org is the official documentation surface for workflow, custom node, and interface behavior.",
+        "Accepted claims still require span-grounded excerpts and promoted review decisions."
+      ],
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "family": "source_floor",
+      "applied_to": "06-comfyui-core-versioning.primary_sources_required",
+      "reason": "ComfyUI core versioning behavior is defined by the canonical maintainer surfaces: Comfy-Org repositories, GitHub release data, and docs.comfy.org. Independent third-party sources can discuss usage but are not primary sources for platform version semantics.",
+      "compensating_controls": [
+        "Sources span multiple official artifact types: README, release metadata, CLI documentation, and docs.comfy.org pages.",
+        "GitHub API release data provides structured version history directly from the maintainer.",
+        "docs.comfy.org is the official documentation surface for workflow, custom node, and interface behavior.",
+        "Accepted claims still require span-grounded excerpts and promoted review decisions."
+      ],
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "family": "source_floor",
+      "applied_to": "07-existing-control-plane-attempts.primary_sources_required",
+      "reason": "ComfyUI core versioning behavior is defined by the canonical maintainer surfaces: Comfy-Org repositories, GitHub release data, and docs.comfy.org. Independent third-party sources can discuss usage but are not primary sources for platform version semantics.",
+      "compensating_controls": [
+        "Sources span multiple official artifact types: README, release metadata, CLI documentation, and docs.comfy.org pages.",
+        "GitHub API release data provides structured version history directly from the maintainer.",
+        "docs.comfy.org is the official documentation surface for workflow, custom node, and interface behavior.",
+        "Accepted claims still require span-grounded excerpts and promoted review decisions."
+      ],
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "family": "source_floor",
+      "applied_to": "08-failure-taxonomy.primary_sources_required",
+      "reason": "ComfyUI core versioning behavior is defined by the canonical maintainer surfaces: Comfy-Org repositories, GitHub release data, and docs.comfy.org. Independent third-party sources can discuss usage but are not primary sources for platform version semantics.",
+      "compensating_controls": [
+        "Sources span multiple official artifact types: README, release metadata, CLI documentation, and docs.comfy.org pages.",
+        "GitHub API release data provides structured version history directly from the maintainer.",
+        "docs.comfy.org is the official documentation surface for workflow, custom node, and interface behavior.",
+        "Accepted claims still require span-grounded excerpts and promoted review decisions."
+      ],
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "01-node-dependency-fragility",
+      "status": "frozen",
+      "accepted_claims": 40,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "02-model-file-identity",
+      "status": "frozen",
+      "accepted_claims": 29,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "03-workflow-schema-stability",
+      "status": "frozen",
+      "accepted_claims": 39,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "04-environment-reproducibility",
+      "status": "frozen",
+      "accepted_claims": 74,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "05-community-distribution-patterns",
+      "status": "frozen",
+      "accepted_claims": 15,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "06-comfyui-core-versioning",
+      "status": "frozen",
+      "accepted_claims": 33,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "07-existing-control-plane-attempts",
+      "status": "frozen",
+      "accepted_claims": 21,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "08-failure-taxonomy",
+      "status": "frozen",
+      "accepted_claims": 51,
+      "sources": 0,
+      "contradictions": 0
+    }
+  ],
+  "source_count": 59,
+  "claim_count": 252,
+  "contradiction_count": 171,
+  "review_finding_count": 0,
+  "gate_result_count": 8,
+  "integrity_checks": [
+    {
+      "name": "pack_audit_ready",
+      "passed": true,
+      "detail": "pack-audit verdict=ready_for_synthesis"
+    },
+    {
+      "name": "handoff_synthesis_ready",
+      "passed": true,
+      "detail": "cowork-handoff mode=synthesis_ready"
+    },
+    {
+      "name": "synthesis_workspace_present",
+      "passed": true,
+      "detail": "5/5 synthesis files hashed"
+    },
+    {
+      "name": "final_report_cites_accepted_claims_only",
+      "passed": true,
+      "detail": "28 citation(s); 0 unknown, 0 repair/rejected"
+    },
+    {
+      "name": "unresolved_contradictions_disclosed",
+      "passed": true,
+      "detail": "171 contradiction(s) checked"
+    },
+    {
+      "name": "waivers_disclosed",
+      "passed": true,
+      "detail": "8 waiver(s) checked"
+    },
+    {
+      "name": "canonical_artifacts_fingerprinted",
+      "passed": true,
+      "detail": "119 artifact(s) hashed"
+    }
+  ]
+}

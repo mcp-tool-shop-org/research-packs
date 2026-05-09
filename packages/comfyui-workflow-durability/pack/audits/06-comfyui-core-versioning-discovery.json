@@ -1,0 +1,12 @@
+{
+  "summary_id": "disum_1778270858138_06-comfyui-core-versioning",
+  "section_id": "06-comfyui-core-versioning",
+  "ran_at": "2026-05-08T20:07:38.138Z",
+  "research_os_version": "0.1.0",
+  "query": "ComfyUI core versioning releases breaking changes ComfyUI Desktop comfy-cli portable version management",
+  "provider": "llm-heuristic",
+  "candidates_proposed": 12,
+  "candidates_validated": 12,
+  "candidates_rejected_invalid_url": 0,
+  "warnings": []
+}

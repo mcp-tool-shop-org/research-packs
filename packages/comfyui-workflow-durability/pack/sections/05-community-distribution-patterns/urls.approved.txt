@@ -1,0 +1,6 @@
+https://docs.comfy.org/development/core-concepts/workflow
+https://docs.comfy.org/manager/legacy-ui
+https://docs.comfy.org/troubleshooting/overview
+https://api.github.com/search/issues?q=repo:Comfy-Org/ComfyUI+shared+workflow+missing+nodes&per_page=20
+https://api.github.com/search/issues?q=repo:Comfy-Org/ComfyUI+workflow+missing+models&per_page=20
+https://api.github.com/search/issues?q=repo:Comfy-Org/ComfyUI_frontend+workflow+metadata&per_page=20

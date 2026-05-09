@@ -1,0 +1,8 @@
+section_id: 03-workflow-schema-stability
+purpose: Characterize the ComfyUI workflow JSON schema — what is formally guaranteed, what has changed historically, and which fields are load-bearing for a control plane snapshot.
+status: draft
+created_at: 2026-05-08T20:04:59.797Z
+max_time_minutes: 45
+min_sources: 8
+primary_sources_required: 2
+contradictions_required: true

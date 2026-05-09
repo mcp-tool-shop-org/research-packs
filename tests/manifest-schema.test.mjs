@@ -95,4 +95,15 @@ describe('PackManifestSchema', () => {
     const m = { ...VALID_MANIFEST, sections: [{ id: '01', accepted_claims: 3, gate: 'unknown', synthesis_eligible: true }] };
     expect(parseManifest(m).success).toBe(false);
   });
+
+  it('accepts preserved_contradiction_records as an optional totals field', () => {
+    const m = { ...VALID_MANIFEST, totals: { ...VALID_MANIFEST.totals, preserved_contradiction_records: 171 } };
+    const result = parseManifest(m);
+    expect(result.success).toBe(true);
+    if (result.success) expect(result.data.totals.preserved_contradiction_records).toBe(171);
+  });
+
+  it('accepts manifest without preserved_contradiction_records (field is optional)', () => {
+    expect(parseManifest(VALID_MANIFEST).success).toBe(true);
+  });
 });

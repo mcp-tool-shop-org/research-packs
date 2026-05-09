@@ -1,0 +1,15 @@
+{
+  "active_profile": "hermes-two-pass",
+  "promoted_at": "2026-05-09T04:24:10.433Z",
+  "promoted_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+  "promoted_reviewer": "ollama-intern",
+  "promotion_reason": "calibrated baseline; Section 02 model-file-identity from official docs and GitHub API issue sources",
+  "calibration_summary": {
+    "fixture": "seeded-v1",
+    "good_false_positive_rate": "0/5 (0%)",
+    "bad_any_flag_recall": "9/13 (69%)",
+    "strict_category_recall": "4/13 (31%)",
+    "unsupported_claim_recall": null,
+    "notes": null
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "source_id": "src_c038edbf6251",
+  "receipt_id": "rcpt_c038edbf6251_1778299373359",
+  "section_id": "02-model-file-identity",
+  "url": "https://docs.comfy.org/interface/settings/comfy",
+  "final_url": "https://docs.comfy.org/interface/settings/comfy",
+  "fetched_at": "2026-05-09T04:02:53.359Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Comfy Settings",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "ComfyUI provides settings for core features",
+    "Options include UI, data processing, and generation",
+    "Settings can be adjusted to customize ComfyUI behavior"
+  ],
+  "limitations": [],
+  "asserts": "This document explains the various settings available in ComfyUI.",
+  "scope": "The context of this information is ComfyUI's core setting options.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T04:03:29.164Z"
+}

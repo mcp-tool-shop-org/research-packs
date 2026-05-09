@@ -1,0 +1,104 @@
+research_os_version: 0.1.0
+created_at: 2026-05-08T20:03:58.436Z
+topic: What makes ComfyUI workflows durable over time, and what should a local-first workflow control plane track to keep them runnable?
+decision: ""
+audience: self
+desired_output: ""
+max_runtime_minutes: 240
+freshness:
+  required: true
+  max_source_age_months: null
+excluded_sources: []
+primary_source_waiver:
+  status: granted
+  reason: "ComfyUI core versioning behavior is defined by the canonical maintainer surfaces: Comfy-Org repositories, GitHub release data, and docs.comfy.org. Independent third-party sources can discuss usage but are not primary sources for platform version semantics."
+  compensating_controls:
+    - "Sources span multiple official artifact types: README, release metadata, CLI documentation, and docs.comfy.org pages."
+    - GitHub API release data provides structured version history directly from the maintainer.
+    - docs.comfy.org is the official documentation surface for workflow, custom node, and interface behavior.
+    - Accepted claims still require span-grounded excerpts and promoted review decisions.
+sections:
+  - id: 01-node-dependency-fragility
+    purpose: Characterize how custom-node version drift causes workflow breakage and what mitigation mechanisms the ecosystem currently offers.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 02-model-file-identity
+    purpose: Characterize how ComfyUI workflows identify model dependencies, what makes those identifiers fragile, and what stable identity mechanisms exist.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 03-workflow-schema-stability
+    purpose: Characterize the ComfyUI workflow JSON schema — what is formally guaranteed, what has changed historically, and which fields are load-bearing for a control plane snapshot.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 04-environment-reproducibility
+    purpose: Characterize what execution environment state beyond the workflow JSON affects run outcomes and what current tooling attempts to capture it.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 05-community-distribution-patterns
+    purpose: Characterize how the ComfyUI community currently shares, versions, and documents workflows — what metadata travels with a shared workflow and what consistently gets lost.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 06-comfyui-core-versioning
+    purpose: Characterize how ComfyUI core is versioned in practice, how core updates break workflow and node compatibility, and what portable and desktop packaging approaches do to address versioning.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 07-existing-control-plane-attempts
+    purpose: Survey what tooling already exists to manage ComfyUI workflow environments and characterize what each tracks, what each misses, and what gaps remain unaddressed by any existing tool.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 08-failure-taxonomy
+    purpose: Compile an empirical taxonomy of documented workflow-breakage incidents — how failures manifest, what caused them, and what recovery paths worked — to ground the control plane's detection and repair vocabulary.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+gates:
+  source_floor:
+    min_sources: 8
+    min_independent_publishers: 0
+    primary_sources_required: 2
+    primary_source_waiver_allowed: true
+  claim_integrity:
+    every_claim_needs_source: true
+    no_orphan_claims: true
+    no_source_cluster_monopoly: true
+  freshness:
+    required_for_current_topics: true
+    stale_source_policy: warn
+  contradiction:
+    required: true
+    unresolved_contradictions_block_synthesis: true
+  section_budget:
+    max_time_minutes: 45
+    extension_requires_evidence: true
+review_profiles:
+  hermes-two-pass:
+    general_model: hermes3:8b
+    critic_model: hermes3:8b
+    review_window: 10
+    mode: two_pass
+    status: calibrated_baseline
+    notes: Calibrated baseline as of v0.1. 0% good-claim FPR on the seeded fixture; bad-claim any-flag recall 9/13 (69%). Smaller window required because hermes3:8b at 4-bit on a 5080 cannot complete 25-claim windows within a 3-minute budget.
+frozen_at: 2026-05-09T08:30:02.276Z

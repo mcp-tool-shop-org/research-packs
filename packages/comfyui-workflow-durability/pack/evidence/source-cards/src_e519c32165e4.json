@@ -1,0 +1,27 @@
+{
+  "source_id": "src_e519c32165e4",
+  "receipt_id": "rcpt_e519c32165e4_1778299459427",
+  "section_id": "02-model-file-identity",
+  "url": "https://api.github.com/repos/Comfy-Org/ComfyUI/issues?state=all&labels=bug&per_page=20",
+  "final_url": "https://api.github.com/repos/Comfy-Org/ComfyUI/issues?state=all&labels=bug&per_page=20",
+  "fetched_at": "2026-05-09T04:04:19.427Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "fix: use no-store cache headers to prevent stale frontend chunks",
+  "source_type": "forum",
+  "relevance": "medium",
+  "key_points": [
+    "Bug in ComfyUI causing stale frontend chunks due to incorrect cache headers",
+    "Problem is caused by Windows registry misconfiguration affecting Python mimetypes.guess_type()",
+    "Fix involves changing Cache-Control from no-cache to no-store for index.html, JS, CSS, and JSON entry points"
+  ],
+  "limitations": [
+    "Information may not be up-to-date due to the source being a pull request comment",
+    "Context is specific to ComfyUI software and might not apply universally"
+  ],
+  "asserts": "The main issue in this source is stale frontend chunks caused by incorrect cache headers, which can be fixed by changing Cache-Control from no-cache to no-store.",
+  "scope": "This issue specifically applies to the ComfyUI software's frontend caching behavior.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T04:05:08.125Z"
+}

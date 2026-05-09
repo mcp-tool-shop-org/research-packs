@@ -1,0 +1,25 @@
+{
+  "source_id": "src_55456d4dedfa",
+  "receipt_id": "rcpt_55456d4dedfa_1778295967030",
+  "section_id": "01-node-dependency-fragility",
+  "url": "https://docs.comfy.org/development/core-concepts/custom-nodes",
+  "final_url": "https://docs.comfy.org/development/core-concepts/custom-nodes",
+  "fetched_at": "2026-05-09T03:06:07.030Z",
+  "publisher": "docs.comfy.org",
+  "published_at": null,
+  "title": "Custom Nodes - ComfyUI",
+  "source_type": "docs",
+  "relevance": "unknown",
+  "key_points": [
+    "Fetch the complete documentation index at: https://docs.comfy.org/llms.txt",
+    "Use this file to discover all available pages before exploring further.",
+    "Copy Files to ComfyUI Custom Nodes Directory",
+    "Find the Corresponding Custom Node Package"
+  ],
+  "limitations": [],
+  "asserts": "Learn about installing, enabling dependencies, updating, disabling, and uninstalling custom nodes in ComfyUI",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-09T03:06:07.393Z"
+}

@@ -1,0 +1,24 @@
+{
+  "source_id": "src_2ae04b870db8",
+  "receipt_id": "rcpt_2ae04b870db8_1778273463642",
+  "section_id": "06-comfyui-core-versioning",
+  "url": "https://docs.comfy.org/interface/nodes-2",
+  "final_url": "https://docs.comfy.org/interface/nodes-2",
+  "fetched_at": "2026-05-08T20:51:03.642Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Nodes 2.0",
+  "source_type": "docs",
+  "relevance": "medium",
+  "key_points": [
+    "Nodes 2.0 is a new Vue-based node rendering system in ComfyUI.",
+    "It enables faster development and richer interactions.",
+    "Nodes can now have their own state management."
+  ],
+  "limitations": [],
+  "asserts": "ComfyUI introduces Nodes 2.0, a Vue-based node rendering system that enhances development speed and interaction richness.",
+  "scope": "ComfyUI interface",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-08T20:51:40.159Z"
+}

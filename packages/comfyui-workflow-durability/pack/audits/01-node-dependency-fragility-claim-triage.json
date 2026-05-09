@@ -1,0 +1,64 @@
+{
+  "summary_id": "tris_1778296656165_01-node-dependency-fragility",
+  "section_id": "01-node-dependency-fragility",
+  "triaged_at": "2026-05-09T03:17:36.165Z",
+  "research_os_version": "0.1.0",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 169,
+  "decisions": {
+    "needs_scope_repair": 98,
+    "selected_for_review": 53,
+    "parked_overdense_source": 9,
+    "parked_weak_scope": 9
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 53,
+  "selected_per_source": [
+    {
+      "source_id": "src_e519c32165e4",
+      "selected": 10,
+      "total": 38
+    },
+    {
+      "source_id": "src_118111ce7028",
+      "selected": 9,
+      "total": 30
+    },
+    {
+      "source_id": "src_ed31f644833c",
+      "selected": 9,
+      "total": 27
+    },
+    {
+      "source_id": "src_55456d4dedfa",
+      "selected": 10,
+      "total": 20
+    },
+    {
+      "source_id": "src_aede2f10d470",
+      "selected": 8,
+      "total": 19
+    },
+    {
+      "source_id": "src_bd638b8de92f",
+      "selected": 4,
+      "total": 12
+    },
+    {
+      "source_id": "src_f9b159fab5ef",
+      "selected": 2,
+      "total": 11
+    },
+    {
+      "source_id": "src_df4ad7d6f9c0",
+      "selected": 0,
+      "total": 6
+    },
+    {
+      "source_id": "src_2c5240f22e27",
+      "selected": 1,
+      "total": 6
+    }
+  ]
+}

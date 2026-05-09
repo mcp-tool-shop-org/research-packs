@@ -1,0 +1,12 @@
+{
+  "summary_id": "disum_1778289657240_07-existing-control-plane-attempts",
+  "section_id": "07-existing-control-plane-attempts",
+  "ran_at": "2026-05-09T01:20:57.240Z",
+  "research_os_version": "0.1.0",
+  "query": "ComfyUI workflow durability control plane tools: ComfyUI-Manager ltdrdata, comfy-cli Comfy-Org, comfyui-deploy BennyKok, Pinokio launcher, Docker-based ComfyUI deployments, workflow export utilities - what durability guarantees do these tools provide and what gaps remain",
+  "provider": "llm-heuristic",
+  "candidates_proposed": 8,
+  "candidates_validated": 8,
+  "candidates_rejected_invalid_url": 0,
+  "warnings": []
+}

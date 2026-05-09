@@ -1,0 +1,163 @@
+{
+  "audit_id": "cda_1778302389173_03-workflow-schema-stability",
+  "section_id": "03-workflow-schema-stability",
+  "audited_at": "2026-05-09T04:53:09.173Z",
+  "research_os_version": "0.1.0",
+  "candidate_claim_count": 198,
+  "source_count": 11,
+  "total_source_word_count": 1905626,
+  "claims_per_1k_words": 0.10390286446553522,
+  "weak_scope_count": 42,
+  "generic_scope_count": 18,
+  "per_source": [
+    {
+      "source_id": "src_26117b36a866",
+      "publisher": null,
+      "source_word_count": 35370,
+      "claim_count": 63,
+      "claims_per_1k_words": 1.78117048346056,
+      "share_of_section": 0.3181818181818182,
+      "weak_scope_count": 15,
+      "generic_scope_count": 2
+    },
+    {
+      "source_id": "src_484224037767",
+      "publisher": null,
+      "source_word_count": 14667,
+      "claim_count": 35,
+      "claims_per_1k_words": 2.386309402059044,
+      "share_of_section": 0.17676767676767677,
+      "weak_scope_count": 16,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_f4ce9a16c6b4",
+      "publisher": null,
+      "source_word_count": 3865,
+      "claim_count": 33,
+      "claims_per_1k_words": 8.538163001293661,
+      "share_of_section": 0.16666666666666666,
+      "weak_scope_count": 4,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_5941285ed842",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 346062,
+      "claim_count": 24,
+      "claims_per_1k_words": 0.06935173466026319,
+      "share_of_section": 0.12121212121212122,
+      "weak_scope_count": 0,
+      "generic_scope_count": 5
+    },
+    {
+      "source_id": "src_72d8ae653457",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 282377,
+      "claim_count": 13,
+      "claims_per_1k_words": 0.04603774386724131,
+      "share_of_section": 0.06565656565656566,
+      "weak_scope_count": 0,
+      "generic_scope_count": 3
+    },
+    {
+      "source_id": "src_07437ed8d167",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 176464,
+      "claim_count": 7,
+      "claims_per_1k_words": 0.03966814761084414,
+      "share_of_section": 0.03535353535353535,
+      "weak_scope_count": 7,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_0a3149c031c5",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 181084,
+      "claim_count": 6,
+      "claims_per_1k_words": 0.03313379426122683,
+      "share_of_section": 0.030303030303030304,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_967446798047",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 181697,
+      "claim_count": 5,
+      "claims_per_1k_words": 0.027518340974259342,
+      "share_of_section": 0.025252525252525252,
+      "weak_scope_count": 0,
+      "generic_scope_count": 2
+    },
+    {
+      "source_id": "src_981216eba718",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 235363,
+      "claim_count": 5,
+      "claims_per_1k_words": 0.02124378088314646,
+      "share_of_section": 0.025252525252525252,
+      "weak_scope_count": 0,
+      "generic_scope_count": 3
+    },
+    {
+      "source_id": "src_7c8ae5fe342a",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 228055,
+      "claim_count": 4,
+      "claims_per_1k_words": 0.01753962859836443,
+      "share_of_section": 0.020202020202020204,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_049006574d3f",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 220622,
+      "claim_count": 3,
+      "claims_per_1k_words": 0.013597918611924468,
+      "share_of_section": 0.015151515151515152,
+      "weak_scope_count": 0,
+      "generic_scope_count": 3
+    }
+  ],
+  "near_duplicate_clusters": [],
+  "flags": [
+    {
+      "type": "source_dominance",
+      "severity": "block",
+      "message": "Source src_26117b36a866 contributes 63 of 198 claims (32% of section).",
+      "affects_source_ids": [
+        "src_26117b36a866"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_484224037767 contributes 35 of 198 claims (18% of section).",
+      "affects_source_ids": [
+        "src_484224037767"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_f4ce9a16c6b4 contributes 33 of 198 claims (17% of section).",
+      "affects_source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_f4ce9a16c6b4 has 8.5 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "affects_claim_ids": []
+    }
+  ]
+}

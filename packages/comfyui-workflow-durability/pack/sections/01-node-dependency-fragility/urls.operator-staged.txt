@@ -1,0 +1,18 @@
+# Operator-pre-staged canonical URLs for Section 01
+# Per mission: prefer raw.githubusercontent.com, api.github.com, and official docs sites
+# Skip discover run (proven 100% hallucination rate for this domain)
+
+# docs.comfy.org — custom node documentation
+https://docs.comfy.org/troubleshooting/custom-node-issues
+https://docs.comfy.org/installation/install_custom_node
+https://docs.comfy.org/development/core-concepts/custom-nodes
+https://docs.comfy.org/custom-nodes/overview
+https://docs.comfy.org/custom-nodes/walkthrough
+
+# ComfyUI-Manager (Comfy-Org) — node management control plane
+https://raw.githubusercontent.com/Comfy-Org/ComfyUI-Manager/main/README.md
+
+# GitHub Issues API — ComfyUI and ComfyUI-Manager bug/fragility signals
+https://api.github.com/repos/Comfy-Org/ComfyUI/issues?state=all&labels=bug&per_page=20
+https://api.github.com/repos/Comfy-Org/ComfyUI-Manager/issues?state=all&labels=bug&per_page=20
+https://api.github.com/repos/Comfy-Org/ComfyUI-Manager/issues?state=all&per_page=20

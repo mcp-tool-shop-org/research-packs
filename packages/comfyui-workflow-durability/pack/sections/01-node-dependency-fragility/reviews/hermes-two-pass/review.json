@@ -1,0 +1,2138 @@
+{
+  "section_id": "01-node-dependency-fragility",
+  "reviewer": "ollama-intern",
+  "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+  "reviewed_at": "2026-05-09T03:53:09.145Z",
+  "candidate_claims": 53,
+  "findings": [
+    {
+      "finding_id": "fnd_b1ede48ad208",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_aede2f10d470_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_aede2f10d470"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "Claim incorrectly states that binary search can be used to locate problematic nodes in ComfyUI, while the source only discusses troubleshooting custom node issues generally.",
+      "evidence": "The source mentions 'Among these two different types of custom node issues' suggesting it is not exclusively about ComfyUI issues",
+      "required_action": "Revise claim clm_aede2f10d470_ollama_intern_9 to clarify its scope as general troubleshooting, not specifically for ComfyUI.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T03:53:09.142Z"
+    },
+    {
+      "finding_id": "fnd_1f477297665f",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_aede2f10d470_ollama_intern_3",
+        "clm_aede2f10d470_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_aede2f10d470"
+      ],
+      "category": "definition_drift",
+      "severity": "info",
+      "summary": "Terms 'custom nodes with frontend extensions' and 'ComfyUI-Nunchaku' used differently across claims.",
+      "evidence": "Claim clm_aede2f10d470_ollama_intern_3 uses a specific term for custom nodes with frontend issues, while claim clm_aede2f10d470_ollama_intern_7 mentions ComfyUI-Nunchaku without defining it",
+      "required_action": "Clarify definitions or use consistent terms across claims.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_0f587fcac8bd",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_aede2f10d470_ollama_intern_3",
+        "clm_aede2f10d470_ollama_intern_7",
+        "clm_aede2f10d470_ollama_intern_9",
+        "clm_aede2f10d470_ollama_intern_12",
+        "clm_aede2f10d470_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_aede2f10d470"
+      ],
+      "category": "claim_overproduction",
+      "severity": "info",
+      "summary": "Multiple claims from source src_aede2f10d470 are atomized and redundant, collectively not synthesis-worthy.",
+      "evidence": "Claims clm_aede2f10d470_ollama_intern_3, clm_aede2f10d470_ollama_intern_7, clm_aede2f10d470_ollama_intern_9, clm_aede2f10d470_ollama_intern_12, clm_aede2f10d470_ollama_intern_14 focus on different aspects of troubleshooting but could be consolidated.",
+      "required_action": "Consider consolidating these claims or providing a high-level overview with references to specific steps.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_40f67ae39b0e",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_4",
+        "clm_55456d4dedfa_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "claim_overproduction",
+      "severity": "warn",
+      "summary": "Redundant claims about ComfyUI Manager installation",
+      "evidence": "clm_55456d4dedfa_ollama_intern_4, clm_55456d4dedfa_ollama_intern_12",
+      "required_action": "Merge these claims or remove duplicates to avoid redundancy.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_ab47a2c48e1f",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "info",
+      "summary": "Claim about ComfyUI Manager maintenance is overgeneralized",
+      "evidence": "clm_55456d4dedfa_ollama_intern_17 asserts 'is maintained' while source implies 'was maintained as of a specific time'.",
+      "required_action": "Rephrase the claim to reflect the specific time period.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_b913575893b1",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_118111ce7028_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_118111ce7028"
+      ],
+      "category": "hidden_synthesis",
+      "severity": "warn",
+      "summary": "Claim asserts that ComfyUI-Manager supports the `uv` function under certain conditions, but the source only mentions its addition without stating it's supported.",
+      "evidence": "The source mentions 'Support for `uv` has been added' but doesn't explicitly state it's supported by ComfyUI-Manager",
+      "required_action": "Rephrase claim clm_118111ce7028_ollama_intern_4 to reflect the uncertainty or clarify with the source author.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_20476cb75230",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_bd638b8de92f_ollama_intern_5",
+        "clm_bd638b8de92f_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_bd638b8de92f"
+      ],
+      "category": "definition_drift",
+      "severity": "info",
+      "summary": "Term 'main function' used differently across claims.",
+      "evidence": "Claim clm_bd638b8de92f_ollama_intern_5 defines main function while claim clm_bd638b8de92f_ollama_intern_10 uses it without definition",
+      "required_action": "Ensure consistent use and definition of 'main function' across claims.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_5af5efdeab7b",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_118111ce7028_ollama_intern_26"
+      ],
+      "source_ids": [
+        "src_118111ce7028"
+      ],
+      "category": "scope_widening",
+      "severity": "warn",
+      "summary": "Claim overstates the functionality of `pip_overrides.json` file.",
+      "evidence": "Source says 'specific pip packages', claim generalizes to 'all pip packages'.",
+      "required_action": "Revise claim to accurately reflect source's specificity about pip package installation.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_bed50a8edca3",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_e519c32165e4_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_e519c32165e4"
+      ],
+      "category": "hidden_synthesis",
+      "severity": "block",
+      "summary": "Claim asserts a conclusion not present in the source.",
+      "evidence": "Source mentions 'cannot handle this data type', claim synthesizes to 'Image module cannot handle'.",
+      "required_action": "Remove or revise claim to accurately reflect source's assertion about data type handling.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_b083b909b852",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_e519c32165e4_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_e519c32165e4"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "info",
+      "summary": "Claim overgeneralizes the issue to all custom nodes.",
+      "evidence": "Source indicates issue with specific custom nodes, claim generalizes to 'all custom nodes'.",
+      "required_action": "Revise claim to reflect source's specificity about affected custom nodes.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_e3905f8b440b",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_e519c32165e4_ollama_intern_15",
+        "clm_e519c32165e4_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_e519c32165e4"
+      ],
+      "category": "definition_drift",
+      "severity": "warn",
+      "summary": "Inconsistent usage of 'UI elements' across claims.",
+      "evidence": "'Some UI elements' in clm_e519c32165e4_ollama_intern_15 vs. 'drop down menu from settings' in clm_e519c32165e4_ollama_intern_17.",
+      "required_action": "Standardize usage of terms across claims or clarify differences.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_5dbb4d99143f",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_e519c32165e4_ollama_intern_15",
+        "clm_e519c32165e4_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_e519c32165e4"
+      ],
+      "category": "claim_overproduction",
+      "severity": "info",
+      "summary": "Cluster of redundant claims about UI unresponsiveness.",
+      "evidence": "Similar claims about unclickable UI elements and dropdown menus.",
+      "required_action": "Merge or remove redundant claims to reduce synthesis noise.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_4943e12c250a",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_e519c32165e4_ollama_intern_19"
+      ],
+      "source_ids": [
+        "src_e519c32165e4"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim restates low-leverage detail about software environment.",
+      "evidence": "Claim merely states current Python and PyTorch versions.",
+      "required_action": "Remove or revise claim to provide more valuable synthesis.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_d807aeb033e2",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_e519c32165e4_ollama_intern_33"
+      ],
+      "source_ids": [
+        "src_e519c32165e4"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "Claim widens beyond what the source supports.",
+      "evidence": "The source (src_e519c32165e4) only discusses a specific user's issue, but the claim clm_e519c32165e4_ollama_intern_33 asserts that updating ComfyUI_frontend via Comfy Manager resolved the issue for 'the user', implying this is generally applicable.",
+      "required_action": "Revise the claim to reflect its scope, i.e., 'In the specific case of the user who encountered and reported the issue.'",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_40a86065048e",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_e519c32165e4_ollama_intern_37"
+      ],
+      "source_ids": [
+        "src_e519c32165e4"
+      ],
+      "category": "scope_widening",
+      "severity": "warn",
+      "summary": "Claim's scope is broader than evidence justifies.",
+      "evidence": "The source (src_e519c32165e4) discusses a specific GitHub API limit error, but the claim clm_e519c32165e4_ollama_intern_37 asserts its solution prevents unnecessary calls in general.",
+      "required_action": "Narrow down the scope of the claim to match the source's context, e.g., 'In cases where the user is not default and has a version starting with 'v', this simple check can prevent unnecessary calls.'",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_c7dd7fcdc1fb",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_ed31f644833c_ollama_intern_7",
+        "clm_ed31f644833c_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_ed31f644833c"
+      ],
+      "category": "definition_drift",
+      "severity": "info",
+      "summary": "Terms used differently across claims.",
+      "evidence": "The term 'node' in claim clm_ed31f644833c_ollama_intern_7 refers to a GitHub repository and node listing, but in claim clm_ed31f644833c_ollama_intern_9 it refers to an item in extension-node-map.json.",
+      "required_action": "Ensure consistent usage of terms across claims. Consider defining key terms when they are used differently.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_25fab1cdca8d",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_ed31f644833c_ollama_intern_7",
+        "clm_ed31f644833c_ollama_intern_9",
+        "clm_ed31f644833c_ollama_intern_21"
+      ],
+      "source_ids": [
+        "src_ed31f644833c"
+      ],
+      "category": "claim_overproduction",
+      "severity": "info",
+      "summary": "Cluster of grounded but redundant claims from one source.",
+      "evidence": "Claims clm_ed31f644833c_ollama_intern_7, clm_ed31f644833c_ollama_intern_9, and clm_ed31f644833c_ollama_intern_21 are all grounded in src_ed31f644833c but provide atomized details about pull requests.",
+      "required_action": "Combine these claims into a single claim that captures the essence of their shared source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_2aaac2226d5f",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_ed31f644833c_ollama_intern_26",
+        "clm_ed31f644833c_ollama_intern_27"
+      ],
+      "source_ids": [
+        "src_ed31f644833c"
+      ],
+      "category": "claim_overproduction",
+      "severity": "warn",
+      "summary": "A cluster of redundant claims from the same source.",
+      "evidence": "All three claims make factual statements about the ComfyUI Particle Toolkit that are directly supported by the same evidence excerpt.",
+      "required_action": "Combine these claims into one that covers all the mentioned features and compatibility.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_3cc99df8932c",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_aede2f10d470_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_aede2f10d470"
+      ],
+      "category": "scope_widening",
+      "severity": "warn",
+      "summary": "The asserts uses 'can cause issues' implying generality but the scope is narrow to ComfyUI-Nunchaku.",
+      "evidence": "asserts: Custom nodes requiring additional wheels like ComfyUI-Nunchaku can cause issues.\nscope: When troubleshooting dependency-related custom node issues in ComfyUI.",
+      "required_action": "Narrow down or specify that this applies mainly to ComfyUI-Nunchaku when troubleshooting in ComfyUI.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_7d67dc600423",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_bd638b8de92f_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_bd638b8de92f"
+      ],
+      "category": "scope_widening",
+      "severity": "block",
+      "summary": "Asserts uses 'all' but scope is narrow (a single node).",
+      "evidence": "Since we’re dealing with images, which are internally stored as torch.Tensor",
+      "required_action": "Narrow the assert to apply only to images or clarify that it's a general rule.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_d697e2dd2d49",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_118111ce7028_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_118111ce7028"
+      ],
+      "category": "temporal_mismatch",
+      "severity": "block",
+      "summary": "Asserts implies current state but scope mentions an old date (V3.16).",
+      "evidence": "Support for `uv` has been added. Set `use_uv` in `config.ini`.",
+      "required_action": "Update the asserts to reflect the most recent version or clarify that it's about an older state.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T03:53:09.143Z"
+    },
+    {
+      "finding_id": "fnd_8e0c9a4b54b2",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_e519c32165e4_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_e519c32165e4"
+      ],
+      "category": "temporal_mismatch",
+      "severity": "warn",
+      "summary": "The asserts implies a current state, but the evidence_excerpt mentions old dates and logs.",
+      "evidence": "traceback... (most recent call last)",
+      "required_action": "Clarify whether the issue is still relevant in the current version or provide context for the old logs.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_ae759c2fe4c3",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_e519c32165e4_ollama_intern_33"
+      ],
+      "source_ids": [],
+      "category": "scope_widening",
+      "severity": "block",
+      "summary": "The asserts claims that 'Updating ComfyUI_frontend via Comfy Manager resolved the issue for the user', but the scope is only specific to one user.",
+      "evidence": "In the specific case of the user who encountered and reported the issue.",
+      "required_action": "Narrow the scope or provide more evidence to generalise beyond this single case.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_0ef5eddea7b1",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_ed31f644833c_ollama_intern_21"
+      ],
+      "source_ids": [],
+      "category": "temporal_mismatch",
+      "severity": "warn",
+      "summary": "The asserts implies a current/recent state but the scope mentions an old date or stale context.",
+      "evidence": "The ComfyUI-Manager's `queue_batch` function.",
+      "required_action": "Update the evidence to reflect the current situation or clarify that it is about past behavior.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_50a66e142d77",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_ed31f644833c_ollama_intern_24"
+      ],
+      "source_ids": [
+        "src_ed31f644833c"
+      ],
+      "category": "scope_widening",
+      "severity": "warn",
+      "summary": "The asserts uses 'any' which implies a universal statement, but the scope is limited to 'Within the toolkit's features'. This could be seen as scope_widening.",
+      "evidence": "The ComfyUI Particle Toolkit can capture any frame as an image output.",
+      "required_action": "Limit the asserts to the scope mentioned or provide additional evidence that supports a wider scope.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_6795320dd732",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_aede2f10d470_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_aede2f10d470"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_aede2f10d470_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Binary search can be used to identify problematic custom nodes.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_1b8dd9f28766",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_aede2f10d470_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_aede2f10d470"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_aede2f10d470_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Common issues with custom nodes include preview image display problems.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_a900dcb80028",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_aede2f10d470_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_aede2f10d470"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_aede2f10d470_ollama_intern_7 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Custom nodes requiring additional wheels like ComfyUI-Nunchaku can cause issues.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_3a6e8b4298fc",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_aede2f10d470_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_aede2f10d470"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_aede2f10d470_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Binary search can be used to locate problematic custom nodes in ComfyUI.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_dc989cf7d7e6",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_aede2f10d470_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_aede2f10d470"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_aede2f10d470_ollama_intern_12 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Backing up all custom nodes is the first step in troubleshooting.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_42c0d4224343",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_aede2f10d470_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_aede2f10d470"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_aede2f10d470_ollama_intern_14 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Once the problematic node is identified, updating it might resolve the issue.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_dc3383b3f611",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_aede2f10d470_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_aede2f10d470"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_aede2f10d470_ollama_intern_17 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI has separate pages for troubleshooting issues with its frontend.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_43338cf0b96d",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_aede2f10d470_ollama_intern_19"
+      ],
+      "source_ids": [
+        "src_aede2f10d470"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_aede2f10d470_ollama_intern_19 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI provides a dedicated guide for troubleshooting and solving model issues.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_d8aa8dcb1c9a",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_f9b159fab5ef_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_f9b159fab5ef"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f9b159fab5ef_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI offers different methods to install custom nodes.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_a4b2953500c2",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_f9b159fab5ef_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_f9b159fab5ef"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_f9b159fab5ef_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI Manager is the recommended method for installing custom nodes.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_a5391dcfd0de",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55456d4dedfa_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Custom node dependencies can be installed in ComfyUI.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_7cd42b85405d",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55456d4dedfa_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Custom nodes in ComfyUI can be temporarily disabled.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_419cc44303f8",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55456d4dedfa_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Custom node dependency conflicts can occur in ComfyUI.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_3ade298d24c4",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55456d4dedfa_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI Manager is recommended for custom node management.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_2e179e157cb0",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55456d4dedfa_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Git is required for installing custom nodes via ComfyUI Manager.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_1de84e308ee6",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55456d4dedfa_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Cloning the GitHub repository is the first step to install ComfyUI-Manager",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_052719c89fe0",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55456d4dedfa_ollama_intern_12 has no 'not' constraint recorded.",
+      "evidence": "Asserts: It is recommended to use ComfyUI Manager for installing custom nodes.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_5dca809ba4db",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55456d4dedfa_ollama_intern_13 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Custom node version control is based on Git version control.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_4d278b98d00a",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55456d4dedfa_ollama_intern_17 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI Manager is maintained by the original author Dr.Lt.Data.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_ee02b5b740da",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_55456d4dedfa_ollama_intern_19"
+      ],
+      "source_ids": [
+        "src_55456d4dedfa"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55456d4dedfa_ollama_intern_19 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The manager can detect missing nodes after installation.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_236271611320",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_bd638b8de92f_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_bd638b8de92f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_bd638b8de92f_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI provides a step-by-step guide for creating custom nodes.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_7957ed6d743e",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_bd638b8de92f_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_bd638b8de92f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_bd638b8de92f_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: A working ComfyUI installation is recommended for development.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_0faf38e46066",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_bd638b8de92f_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_bd638b8de92f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_bd638b8de92f_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The main function of a custom node receives named arguments and returns a tuple.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_5977c6c08b15",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_bd638b8de92f_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_bd638b8de92f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_bd638b8de92f_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The INPUT_TYPES method in ComfyUI determines the required inputs for a node.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_fd88624aff61",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_118111ce7028_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_118111ce7028"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_118111ce7028_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI-Manager provides a hub feature to access information within ComfyUI.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_17426ff5c9f0",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_118111ce7028_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_118111ce7028"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_118111ce7028_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI-Manager supports the `uv` function when `use_uv` is set in `config.ini`.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_f6ff3cd74b5d",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_118111ce7028_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_118111ce7028"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_118111ce7028_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI-Manager officially supports the ComfyUI Nodes Info page.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_b3ada1e254f4",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_118111ce7028_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_118111ce7028"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_118111ce7028_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI-Manager can be installed using the general installation method.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_970a0767d7fc",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_118111ce7028_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_118111ce7028"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_118111ce7028_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Clicking the 'Manager' button on the main menu opens the Manager interface.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_f267a152893d",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_118111ce7028_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_118111ce7028"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_118111ce7028_ollama_intern_11 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The 'Fetch Updates' menu retrieves update data for custom nodes locally.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_2d2e97da8141",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_118111ce7028_ollama_intern_21"
+      ],
+      "source_ids": [
+        "src_118111ce7028"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_118111ce7028_ollama_intern_21 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The `config.ini` file can be modified to apply settings for ComfyUI Manager.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_d5612f86eea2",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_118111ce7028_ollama_intern_26"
+      ],
+      "source_ids": [
+        "src_118111ce7028"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_118111ce7028_ollama_intern_26 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Creating a `pip_overrides.json` file enables custom pip package installation.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_147630b5eccb",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_118111ce7028_ollama_intern_27"
+      ],
+      "source_ids": [
+        "src_118111ce7028"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_118111ce7028_ollama_intern_27 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Listing package names in `pip_blacklist.list` prevents their installation.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_c93e3a921df0",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_e519c32165e4_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_e519c32165e4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e519c32165e4_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI's Image module cannot handle data type (1, 1, 1) with mode '|u1'.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_07a4bb5d4a0c",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_e519c32165e4_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_e519c32165e4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e519c32165e4_ollama_intern_7 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI's audio generation workflow fails with device mismatch error.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.144Z"
+    },
+    {
+      "finding_id": "fnd_642ce493ab10",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_e519c32165e4_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_e519c32165e4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e519c32165e4_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ComfyUI user expects native workflow example to run without issues.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "finding_id": "fnd_743ae8c74296",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_e519c32165e4_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_e519c32165e4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e519c32165e4_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: An exception occurred during processing, leading to a traceback.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "finding_id": "fnd_e4be0b3d7f9e",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_e519c32165e4_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_e519c32165e4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e519c32165e4_ollama_intern_15 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Some UI elements are unclickable and unresponsive due to blocking divs.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "finding_id": "fnd_33199ef32b90",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_e519c32165e4_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_e519c32165e4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e519c32165e4_ollama_intern_17 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The dropdown menus in the settings panel are not selectable.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "finding_id": "fnd_72f183cd5b05",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_e519c32165e4_ollama_intern_19"
+      ],
+      "source_ids": [
+        "src_e519c32165e4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e519c32165e4_ollama_intern_19 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The application is using Python 3.13.3 and PyTorch version 2.7.0+cu128.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "finding_id": "fnd_566713476b3c",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_e519c32165e4_ollama_intern_27"
+      ],
+      "source_ids": [
+        "src_e519c32165e4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e519c32165e4_ollama_intern_27 has no 'not' constraint recorded.",
+      "evidence": "Asserts: After restarting the ComfyUI server, workflow 2 executed normally.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "finding_id": "fnd_0e22a5e65a07",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_e519c32165e4_ollama_intern_33"
+      ],
+      "source_ids": [
+        "src_e519c32165e4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e519c32165e4_ollama_intern_33 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Updating ComfyUI_frontend via Comfy Manager resolved the issue for the user.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "finding_id": "fnd_633e6987cec7",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_e519c32165e4_ollama_intern_37"
+      ],
+      "source_ids": [
+        "src_e519c32165e4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e519c32165e4_ollama_intern_37 has no 'not' constraint recorded.",
+      "evidence": "Asserts: A simple check can prevent unnecessary calls to the GitHub API.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "finding_id": "fnd_05bc9efef013",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_2c5240f22e27_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_2c5240f22e27"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_2c5240f22e27_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The error code displayed is 400.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "finding_id": "fnd_ebcea4b03f69",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_ed31f644833c_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_ed31f644833c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ed31f644833c_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The ComfyUI-BodyRatioMapper is a custom node for pose alignment.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "finding_id": "fnd_5bebce9aa8e4",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_ed31f644833c_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_ed31f644833c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ed31f644833c_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The ComfyUI-BodyRatioMapper node has been added to the ComfyUI Manager.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "finding_id": "fnd_6183c24fcbb9",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_ed31f644833c_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_ed31f644833c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ed31f644833c_ollama_intern_7 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The project ComfyUI Manager has been rebranded from ComfyOrg to SOLRICKS.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "finding_id": "fnd_5f0ef1e813ce",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_ed31f644833c_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_ed31f644833c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ed31f644833c_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Underscores have been removed from node names in extension-node-map.json.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "finding_id": "fnd_42fd274ed2d0",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_ed31f644833c_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_ed31f644833c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ed31f644833c_ollama_intern_14 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The user should see an actual error message explaining why the install failed.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "finding_id": "fnd_d12224e74b13",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_ed31f644833c_ollama_intern_21"
+      ],
+      "source_ids": [
+        "src_ed31f644833c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ed31f644833c_ollama_intern_21 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Legacy UI batch flows invoke route handlers internally with request=None.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "finding_id": "fnd_1cb533f248a9",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_ed31f644833c_ollama_intern_24"
+      ],
+      "source_ids": [
+        "src_ed31f644833c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ed31f644833c_ollama_intern_24 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The ComfyUI Particle Toolkit can capture any frame as an image output.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "finding_id": "fnd_58dcfe019a19",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_ed31f644833c_ollama_intern_26"
+      ],
+      "source_ids": [
+        "src_ed31f644833c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ed31f644833c_ollama_intern_26 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The ComfyUI Particle Toolkit includes 13 post-effect filters.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "finding_id": "fnd_70a70feae444",
+      "section_id": "01-node-dependency-fragility",
+      "claim_ids": [
+        "clm_ed31f644833c_ollama_intern_27"
+      ],
+      "source_ids": [
+        "src_ed31f644833c"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ed31f644833c_ollama_intern_27 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The ComfyUI Particle Toolkit has been tested and works with ComfyUI.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    }
+  ],
+  "claim_reviews": [
+    {
+      "claim_id": "clm_aede2f10d470_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_6795320dd732"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_aede2f10d470_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_1f477297665f",
+        "fnd_0f587fcac8bd",
+        "fnd_1b8dd9f28766"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_aede2f10d470_ollama_intern_7",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: scope_widening (warn).",
+      "finding_ids": [
+        "fnd_1f477297665f",
+        "fnd_0f587fcac8bd",
+        "fnd_3cc99df8932c",
+        "fnd_a900dcb80028"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_aede2f10d470_ollama_intern_9",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_b1ede48ad208",
+        "fnd_0f587fcac8bd",
+        "fnd_3a6e8b4298fc"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_aede2f10d470_ollama_intern_12",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_0f587fcac8bd",
+        "fnd_dc989cf7d7e6"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_aede2f10d470_ollama_intern_14",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_0f587fcac8bd",
+        "fnd_42c0d4224343"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_aede2f10d470_ollama_intern_17",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_dc3383b3f611"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_aede2f10d470_ollama_intern_19",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_43338cf0b96d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_f9b159fab5ef_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_d8aa8dcb1c9a"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_f9b159fab5ef_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_a4b2953500c2"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_a5391dcfd0de"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_7cd42b85405d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_419cc44303f8"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_4",
+      "decision": "needs_human_review",
+      "reason": "Findings: claim_overproduction (warn).",
+      "finding_ids": [
+        "fnd_40f67ae39b0e",
+        "fnd_3ade298d24c4"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_5",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_2e179e157cb0"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_1de84e308ee6"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_12",
+      "decision": "needs_human_review",
+      "reason": "Findings: claim_overproduction (warn).",
+      "finding_ids": [
+        "fnd_40f67ae39b0e",
+        "fnd_052719c89fe0"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_13",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_5dca809ba4db"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_17",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ab47a2c48e1f",
+        "fnd_4d278b98d00a"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_55456d4dedfa_ollama_intern_19",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ee02b5b740da"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_bd638b8de92f_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_236271611320"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_bd638b8de92f_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_7957ed6d743e"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_bd638b8de92f_ollama_intern_5",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: scope_widening (block).",
+      "finding_ids": [
+        "fnd_20476cb75230",
+        "fnd_7d67dc600423",
+        "fnd_0faf38e46066"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_bd638b8de92f_ollama_intern_10",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_20476cb75230",
+        "fnd_5977c6c08b15"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_118111ce7028_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_fd88624aff61"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_118111ce7028_ollama_intern_4",
+      "decision": "needs_source_repair",
+      "reason": "Findings: hidden_synthesis (warn); temporal_mismatch (block).",
+      "finding_ids": [
+        "fnd_b913575893b1",
+        "fnd_d697e2dd2d49",
+        "fnd_17426ff5c9f0"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_118111ce7028_ollama_intern_5",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_f6ff3cd74b5d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_118111ce7028_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_b3ada1e254f4"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_118111ce7028_ollama_intern_9",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_970a0767d7fc"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_118111ce7028_ollama_intern_11",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_f267a152893d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_118111ce7028_ollama_intern_21",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_2d2e97da8141"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_118111ce7028_ollama_intern_26",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: scope_widening (warn).",
+      "finding_ids": [
+        "fnd_5af5efdeab7b",
+        "fnd_d5612f86eea2"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_118111ce7028_ollama_intern_27",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_147630b5eccb"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_e519c32165e4_ollama_intern_6",
+      "decision": "needs_human_review",
+      "reason": "Findings: hidden_synthesis (block).",
+      "finding_ids": [
+        "fnd_bed50a8edca3",
+        "fnd_c93e3a921df0"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_e519c32165e4_ollama_intern_7",
+      "decision": "accepted_for_synthesis",
+      "reason": "Findings: temporal_mismatch (warn).",
+      "finding_ids": [
+        "fnd_8e0c9a4b54b2",
+        "fnd_07a4bb5d4a0c"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_e519c32165e4_ollama_intern_8",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_b083b909b852",
+        "fnd_642ce493ab10"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_e519c32165e4_ollama_intern_10",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_743ae8c74296"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_e519c32165e4_ollama_intern_15",
+      "decision": "accepted_for_synthesis",
+      "reason": "Findings: definition_drift (warn).",
+      "finding_ids": [
+        "fnd_e3905f8b440b",
+        "fnd_5dbb4d99143f",
+        "fnd_e4be0b3d7f9e"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_e519c32165e4_ollama_intern_17",
+      "decision": "accepted_for_synthesis",
+      "reason": "Findings: definition_drift (warn).",
+      "finding_ids": [
+        "fnd_e3905f8b440b",
+        "fnd_5dbb4d99143f",
+        "fnd_33199ef32b90"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_e519c32165e4_ollama_intern_19",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_4943e12c250a",
+        "fnd_72f183cd5b05"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_e519c32165e4_ollama_intern_27",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_566713476b3c"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_e519c32165e4_ollama_intern_33",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn); scope_widening (block).",
+      "finding_ids": [
+        "fnd_d807aeb033e2",
+        "fnd_ae759c2fe4c3",
+        "fnd_0e22a5e65a07"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_e519c32165e4_ollama_intern_37",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: scope_widening (warn).",
+      "finding_ids": [
+        "fnd_40a86065048e",
+        "fnd_633e6987cec7"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_2c5240f22e27_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_05bc9efef013"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_ed31f644833c_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ebcea4b03f69"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_ed31f644833c_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_5bebce9aa8e4"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_ed31f644833c_ollama_intern_7",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_c7dd7fcdc1fb",
+        "fnd_25fab1cdca8d",
+        "fnd_6183c24fcbb9"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_ed31f644833c_ollama_intern_9",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_c7dd7fcdc1fb",
+        "fnd_25fab1cdca8d",
+        "fnd_5f0ef1e813ce"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_ed31f644833c_ollama_intern_14",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_42fd274ed2d0"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_ed31f644833c_ollama_intern_21",
+      "decision": "accepted_for_synthesis",
+      "reason": "Findings: temporal_mismatch (warn).",
+      "finding_ids": [
+        "fnd_25fab1cdca8d",
+        "fnd_0ef5eddea7b1",
+        "fnd_d12224e74b13"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_ed31f644833c_ollama_intern_24",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: scope_widening (warn).",
+      "finding_ids": [
+        "fnd_50a66e142d77",
+        "fnd_1cb533f248a9"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_ed31f644833c_ollama_intern_26",
+      "decision": "needs_human_review",
+      "reason": "Findings: claim_overproduction (warn).",
+      "finding_ids": [
+        "fnd_2aaac2226d5f",
+        "fnd_58dcfe019a19"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    },
+    {
+      "claim_id": "clm_ed31f644833c_ollama_intern_27",
+      "decision": "needs_human_review",
+      "reason": "Findings: claim_overproduction (warn).",
+      "finding_ids": [
+        "fnd_2aaac2226d5f",
+        "fnd_70a70feae444"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T03:53:09.145Z"
+    }
+  ],
+  "decision_counts": {
+    "accepted_for_synthesis": 40,
+    "rejected": 0,
+    "needs_scope_repair": 7,
+    "needs_source_repair": 1,
+    "needs_contradiction_mapping": 0,
+    "needs_human_review": 5
+  },
+  "severity_counts": {
+    "info": 62,
+    "warn": 12,
+    "block": 4
+  },
+  "llm_findings_rejected_ungrounded": 0,
+  "promoted_to_reviewed": false
+}

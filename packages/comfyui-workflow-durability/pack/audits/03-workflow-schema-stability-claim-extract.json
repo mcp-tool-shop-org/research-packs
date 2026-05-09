@@ -1,0 +1,18 @@
+{
+  "receipt_id": "cle_1778302383314_03-workflow-schema-stability",
+  "section_id": "03-workflow-schema-stability",
+  "extracted_at": "2026-05-09T04:53:03.314Z",
+  "research_os_version": "0.1.0",
+  "extractor": "ollama-intern",
+  "extraction_method": "ollama_intern_propositional_paged",
+  "sources_processed": 11,
+  "sources_skipped": 0,
+  "sources_failed": 0,
+  "excerpt_ledgers_built": 9,
+  "claims_added": 198,
+  "claims_deduped": 0,
+  "claims_rejected_ungrounded": 5,
+  "claims_rejected_excerpt_id_missing": 5,
+  "claims_rejected_excerpt_id_malformed": 0,
+  "failures": []
+}

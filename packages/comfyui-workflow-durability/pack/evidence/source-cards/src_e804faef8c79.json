@@ -1,0 +1,24 @@
+{
+  "source_id": "src_e804faef8c79",
+  "receipt_id": "rcpt_e804faef8c79_1778289770893",
+  "section_id": "07-existing-control-plane-attempts",
+  "url": "https://raw.githubusercontent.com/Comfy-Org/comfy-cli/main/README.md",
+  "final_url": "https://raw.githubusercontent.com/Comfy-Org/comfy-cli/main/README.md",
+  "fetched_at": "2026-05-09T01:22:50.893Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "# comfy-cli: A Command Line Tool for ComfyUI",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "# comfy-cli: A Command Line Tool for ComfyUI [![Run pytest](https://github.com/Comfy-Org/comfy-cli/actions/workflows/pytest.yml/badge.svg)](https://github.com/Comfy-Org/comfy-cli/actions/workflows/pytest.yml) [![codecov](https://codecov.io/github/Comfy-Org/comfy-cli/graph/badge.svg?token=S64WJWD2ZX)](https://codecov.io/github/Comfy-Org/comfy-cli) [![PyPI](https://img.shields.io/pypi/v/comfy-cli.svg)](https://pypi.org/project/comfy-cli/) [![Downloads](https://static.pepy.tech/badge/comfy-cli/month)](https://pepy.tech/project/comfy-cli) [![Python](https://img.shields.io/pypi/pyversions/comfy-cli)](https://pypi.org/project/comfy-cli/) [![License](https://img.shields.io/pypi/l/comfy-cli)](https://github.com/Comfy-Org/comfy-cli/blob/main/LICENSE) comfy-cli is a command line tool that helps users easily install and manage [ComfyUI](https://github.com/comfyanonymous/ComfyUI), a powerful open-source machine learning framework.",
+    "With comfy-cli, you can quickly set up ComfyUI, install packages, and manage custom nodes, all from the convenience of your terminal.",
+    "## Demo <img src=\"https://github.com/yoland68/comfy-cli/raw/main/assets/comfy-demo.gif\" width=\"400\" alt=\"Comfy Command Demo\"> ## Features - 🚀 Easy installation of ComfyUI with a single command - 📦 Seamless package management for ComfyUI extensions and dependencies - 🔧 Custom node management for extending ComfyUI's functionality - 🗄️ Download checkpoints and save model hash - 💻 Cross-platform compatibility (Windows, macOS, Linux) - 📖 Comprehensive documentation and examples - 🎉 install pull request to ComfyUI automatically ## Installation 1."
+  ],
+  "limitations": [],
+  "asserts": "# comfy-cli: A Command Line Tool for ComfyUI",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-09T01:22:51.013Z"
+}

@@ -1,0 +1,30 @@
+{
+  "source_id": "src_cea54dbbe5e3",
+  "receipt_id": "rcpt_cea54dbbe5e3_1778307838243",
+  "section_id": "05-community-distribution-patterns",
+  "url": "https://api.github.com/search/issues?q=repo:Comfy-Org/ComfyUI+shared+workflow+missing+nodes&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:Comfy-Org/ComfyUI+shared+workflow+missing+nodes&per_page=20",
+  "fetched_at": "2026-05-09T06:23:58.243Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "feat: auto-register node replacements from custom node JSON files (CORE-83)",
+  "source_type": "forum",
+  "relevance": "high",
+  "key_points": [
+    "Custom node authors can ship a `node_replacements.json` in their repo root to define node replacements declaratively.",
+    "ComfyUI reads these files and registers entries via the existing `NodeReplaceManager` during custom node loading in `nodes.py`.",
+    "No Python code needed — just a JSON file matching the `NodeReplace.as_dict()` format.",
+    "Adds robust error handling for invalid JSON, non-object files, and malformed entries which are logged and skipped gracefully.",
+    "13 unit tests covering all edge cases were added."
+  ],
+  "limitations": [
+    "Only tested with custom nodes — behavior with API nodes unknown.",
+    "Does not cover registration via Python-based methods like `comfy_extras/nodes_replacements.py`.",
+    "Scope limited to the feature's implementation and integration in ComfyUI."
+  ],
+  "asserts": "The PR enables custom node authors to define replacements without writing Python code by auto-registering them from JSON files.",
+  "scope": "This feature applies to custom nodes within the ComfyUI system, enabling developers to ship declarative replacement mappings via `node_replacements.json` files in their repositories' root directories.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T06:24:40.104Z"
+}

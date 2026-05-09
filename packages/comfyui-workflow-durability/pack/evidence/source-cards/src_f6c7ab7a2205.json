@@ -1,0 +1,22 @@
+{
+  "source_id": "src_f6c7ab7a2205",
+  "receipt_id": "rcpt_f6c7ab7a2205_1778289771365",
+  "section_id": "07-existing-control-plane-attempts",
+  "url": "https://api.github.com/repos/BennyKok/comfyui-deploy/releases?per_page=20",
+  "final_url": "https://api.github.com/repos/BennyKok/comfyui-deploy/releases?per_page=20",
+  "fetched_at": "2026-05-09T01:22:51.365Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "[{\"url\":\"https://api.github.com/repos/BennyKok/comfyui-deploy/releases/207735108\",\"assets_url\":\"https://api.github.com/repos/BennyKok/comfyui-deploy/releases/207735108/assets\",\"upload_url\":\"https://up",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "[{\"url\":\"https://api.github.com/repos/BennyKok/comfyui-deploy/releases/207735108\",\"assets_url\":\"https://api.github.com/repos/BennyKok/comfyui-deploy/releases/207735108/assets\",\"upload_url\":\"https://uploads.github.com/repos/BennyKok/comfyui-deploy/releases/207735108/assets{?name,label}\",\"html_url\":\"https://github.com/BennyKok/comfyui-deploy/releases/tag/v2.0.0\",\"id\":207735108,\"author\":{\"login\":\"BennyKok\",\"id\":18395202,\"node_id\":\"MDQ6VXNlcjE4Mzk1MjAy\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/18395202?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/BennyKok\",\"html_url\":\"https://github.com/BennyKok\",\"followers_url\":\"https://api.github.com/users/BennyKok/followers\",\"following_url\":\"https://api.github.com/users/BennyKok/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/BennyKok/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/BennyKok/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/BennyKok/subscriptions\",\"organizations_url\":\"https://api.github.com/users/BennyKok/orgs\",\"repos_url\":\"https://api.github.com/users/BennyKok/repos\",\"events_url\":\"https://api.github.com/users/BennyKok/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/BennyKok/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"node_id\":\"RE_kwDOK3aeaM4MYclE\",\"tag_name\":\"v2.0.0\",\"target_commitish\":\"main\",\"name\":\"v2.0.0\",\"draft\":false,\"immutable\":false,\"prerelease\":false,\"created_at\":\"2025-03-24T01:44:29Z\",\"updated_at\":\"2025-03-24T01:45:19Z\",\"published_at\":\"2025-03-24T01:45:19Z\",\"assets\":[],\"tarball_url\":\"https://api.github.com/repos/BennyKok/comfyui-deploy/tarball/v2.0.0\",\"zipball_url\":\"https://api.github.com/repos/BennyKok/comfyui-deploy/zipball/v2.0.0\",\"body\":\"\"}]"
+  ],
+  "limitations": [],
+  "asserts": "[{\"url\":\"https://api.github.com/repos/BennyKok/comfyui-deploy/releases/207735108\",\"assets_url\":\"https://api.github.com/repos/BennyKok/comfyui-deploy/releases/207735108/assets\",\"upload_url\":\"https://up",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-09T01:22:51.520Z"
+}

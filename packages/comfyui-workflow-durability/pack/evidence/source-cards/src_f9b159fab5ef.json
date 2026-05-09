@@ -1,0 +1,25 @@
+{
+  "source_id": "src_f9b159fab5ef",
+  "receipt_id": "rcpt_f9b159fab5ef_1778304171338",
+  "section_id": "04-environment-reproducibility",
+  "url": "https://docs.comfy.org/installation/install_custom_node",
+  "final_url": "https://docs.comfy.org/installation/install_custom_node",
+  "fetched_at": "2026-05-09T05:22:51.338Z",
+  "publisher": "docs.comfy.org",
+  "published_at": null,
+  "title": "How to Install Custom Nodes in ComfyUI - ComfyUI",
+  "source_type": "docs",
+  "relevance": "unknown",
+  "key_points": [
+    "Fetch the complete documentation index at: https://docs.comfy.org/llms.txt",
+    "Use this file to discover all available pages before exploring further.",
+    "Copy extracted folder to `ComfyUI/custom_nodes/` directory",
+    "Install dependencies manually (same as Git method step 4)"
+  ],
+  "limitations": [],
+  "asserts": "This guide will show you different methods to install custom nodes in ComfyUI",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-09T05:22:51.679Z"
+}

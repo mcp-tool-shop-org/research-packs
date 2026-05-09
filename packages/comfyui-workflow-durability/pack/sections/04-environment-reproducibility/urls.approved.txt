@@ -1,0 +1,12 @@
+https://docs.comfy.org/installation/system_requirements
+https://docs.comfy.org/installation/manual_install
+https://docs.comfy.org/installation/desktop/windows
+https://docs.comfy.org/installation/comfyui_portable_windows
+https://docs.comfy.org/installation/install_custom_node
+https://docs.comfy.org/development/core-concepts/dependencies
+https://docs.comfy.org/troubleshooting/overview
+https://docs.comfy.org/development/core-concepts/models
+https://raw.githubusercontent.com/Comfy-Org/ComfyUI/master/README.md
+https://raw.githubusercontent.com/Comfy-Org/ComfyUI/master/requirements.txt
+https://api.github.com/search/issues?q=repo:Comfy-Org/ComfyUI+requirements.txt+install+dependency&per_page=20
+https://api.github.com/search/issues?q=repo:Comfy-Org/ComfyUI+torch+cuda+python+install&per_page=20

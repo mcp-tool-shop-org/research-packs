@@ -1,0 +1,8 @@
+section_id: 05-community-distribution-patterns
+purpose: Characterize how the ComfyUI community currently shares, versions, and documents workflows — what metadata travels with a shared workflow and what consistently gets lost.
+status: draft
+created_at: 2026-05-08T20:05:00.463Z
+max_time_minutes: 45
+min_sources: 8
+primary_sources_required: 2
+contradictions_required: true

@@ -1,0 +1,756 @@
+[
+  {
+    "source_id": "src_049006574d3f",
+    "section_id": "03-workflow-schema-stability",
+    "publisher": "docs.comfy.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_049006574d3f.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_07126047391f",
+    "section_id": "02-model-file-identity",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_07126047391f.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_07437ed8d167",
+    "section_id": "05-community-distribution-patterns",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_07437ed8d167.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_0a0723012f3c",
+    "section_id": "08-failure-taxonomy",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_0a0723012f3c.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_0a3149c031c5",
+    "section_id": "03-workflow-schema-stability",
+    "publisher": "docs.comfy.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_0a3149c031c5.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_118111ce7028",
+    "section_id": "01-node-dependency-fragility",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_118111ce7028.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_155d801f1917",
+    "section_id": "06-comfyui-core-versioning",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_155d801f1917.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_19e3c332733b",
+    "section_id": "08-failure-taxonomy",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_19e3c332733b.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_19f4e9c54b47",
+    "section_id": "06-comfyui-core-versioning",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_19f4e9c54b47.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_1e2124f6f8d4",
+    "section_id": "07-existing-control-plane-attempts",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_1e2124f6f8d4.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_2086dbbb6560",
+    "section_id": "04-environment-reproducibility",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_2086dbbb6560.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_26117b36a866",
+    "section_id": "03-workflow-schema-stability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_26117b36a866.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_2a30a3ff7502",
+    "section_id": "04-environment-reproducibility",
+    "publisher": "docs.comfy.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_2a30a3ff7502.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_2ae04b870db8",
+    "section_id": "06-comfyui-core-versioning",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_2ae04b870db8.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_2c5240f22e27",
+    "section_id": "01-node-dependency-fragility",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_2c5240f22e27.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_2e0add2bdec7",
+    "section_id": "04-environment-reproducibility",
+    "publisher": "docs.comfy.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_2e0add2bdec7.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_417fb676dd7b",
+    "section_id": "07-existing-control-plane-attempts",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_417fb676dd7b.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_484224037767",
+    "section_id": "03-workflow-schema-stability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_484224037767.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_4c437e284d95",
+    "section_id": "07-existing-control-plane-attempts",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_4c437e284d95.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_55456d4dedfa",
+    "section_id": "01-node-dependency-fragility",
+    "publisher": "docs.comfy.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_55456d4dedfa.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_5941285ed842",
+    "section_id": "03-workflow-schema-stability",
+    "publisher": "docs.comfy.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_5941285ed842.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_664a4a54b4c3",
+    "section_id": "04-environment-reproducibility",
+    "publisher": "docs.comfy.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_664a4a54b4c3.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_6ccf8c48cc5a",
+    "section_id": "02-model-file-identity",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_6ccf8c48cc5a.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_72d8ae653457",
+    "section_id": "03-workflow-schema-stability",
+    "publisher": "docs.comfy.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_72d8ae653457.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_75194fe21c45",
+    "section_id": "04-environment-reproducibility",
+    "publisher": "docs.comfy.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_75194fe21c45.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_7c8ae5fe342a",
+    "section_id": "03-workflow-schema-stability",
+    "publisher": "docs.comfy.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_7c8ae5fe342a.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_8a319c76148c",
+    "section_id": "06-comfyui-core-versioning",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_8a319c76148c.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_8f706291ff12",
+    "section_id": "07-existing-control-plane-attempts",
+    "publisher": "docs.comfy.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_8f706291ff12.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_967446798047",
+    "section_id": "03-workflow-schema-stability",
+    "publisher": "docs.comfy.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_967446798047.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_981216eba718",
+    "section_id": "03-workflow-schema-stability",
+    "publisher": "docs.comfy.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_981216eba718.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_990ca9d75d8b",
+    "section_id": "06-comfyui-core-versioning",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_990ca9d75d8b.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_a295cc4f28d3",
+    "section_id": "07-existing-control-plane-attempts",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_a295cc4f28d3.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_a52f23a8cbd2",
+    "section_id": "07-existing-control-plane-attempts",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_a52f23a8cbd2.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_a8c5d541c698",
+    "section_id": "04-environment-reproducibility",
+    "publisher": "docs.comfy.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_a8c5d541c698.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_aa570bcb9060",
+    "section_id": "04-environment-reproducibility",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_aa570bcb9060.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_aede2f10d470",
+    "section_id": "01-node-dependency-fragility",
+    "publisher": "docs.comfy.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_aede2f10d470.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_b507da5fa466",
+    "section_id": "06-comfyui-core-versioning",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_b507da5fa466.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_b81c03003037",
+    "section_id": "04-environment-reproducibility",
+    "publisher": "docs.comfy.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_b81c03003037.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_bd638b8de92f",
+    "section_id": "01-node-dependency-fragility",
+    "publisher": "docs.comfy.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_bd638b8de92f.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_c038edbf6251",
+    "section_id": "02-model-file-identity",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_c038edbf6251.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_c39e382ce301",
+    "section_id": "07-existing-control-plane-attempts",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_c39e382ce301.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_ccc15b6a3971",
+    "section_id": "04-environment-reproducibility",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_ccc15b6a3971.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_cea54dbbe5e3",
+    "section_id": "05-community-distribution-patterns",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_cea54dbbe5e3.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_d44182697e02",
+    "section_id": "02-model-file-identity",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_d44182697e02.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_d56e68044c24",
+    "section_id": "05-community-distribution-patterns",
+    "publisher": "Comfy-Org/ComfyUI",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_d56e68044c24.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_df4ad7d6f9c0",
+    "section_id": "01-node-dependency-fragility",
+    "publisher": "docs.comfy.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_df4ad7d6f9c0.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_e19e5e376175",
+    "section_id": "05-community-distribution-patterns",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_e19e5e376175.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_e1e83dbebd28",
+    "section_id": "02-model-file-identity",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_e1e83dbebd28.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_e519c32165e4",
+    "section_id": "02-model-file-identity",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_e519c32165e4.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_e7045b6bccdb",
+    "section_id": "05-community-distribution-patterns",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_e7045b6bccdb.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_e804faef8c79",
+    "section_id": "07-existing-control-plane-attempts",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_e804faef8c79.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_ed31f644833c",
+    "section_id": "01-node-dependency-fragility",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_ed31f644833c.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_f311c690b666",
+    "section_id": "06-comfyui-core-versioning",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_f311c690b666.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_f4ce9a16c6b4",
+    "section_id": "04-environment-reproducibility",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_f4ce9a16c6b4.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_f6c7ab7a2205",
+    "section_id": "07-existing-control-plane-attempts",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_f6c7ab7a2205.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_f9b159fab5ef",
+    "section_id": "04-environment-reproducibility",
+    "publisher": "docs.comfy.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_f9b159fab5ef.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_fbbdece73b76",
+    "section_id": "06-comfyui-core-versioning",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_fbbdece73b76.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_fcdd7f1c90e9",
+    "section_id": "05-community-distribution-patterns",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_fcdd7f1c90e9.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  }
+]

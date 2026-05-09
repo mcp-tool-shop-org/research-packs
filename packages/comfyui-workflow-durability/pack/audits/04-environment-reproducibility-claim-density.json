@@ -1,0 +1,252 @@
+{
+  "audit_id": "cda_1778305356970_04-environment-reproducibility",
+  "section_id": "04-environment-reproducibility",
+  "audited_at": "2026-05-09T05:42:36.970Z",
+  "research_os_version": "0.1.0",
+  "candidate_claim_count": 284,
+  "source_count": 12,
+  "total_source_word_count": 1573739,
+  "claims_per_1k_words": 0.1804619444520343,
+  "weak_scope_count": 67,
+  "generic_scope_count": 70,
+  "per_source": [
+    {
+      "source_id": "src_2086dbbb6560",
+      "publisher": null,
+      "source_word_count": 26945,
+      "claim_count": 59,
+      "claims_per_1k_words": 2.1896455743180554,
+      "share_of_section": 0.20774647887323944,
+      "weak_scope_count": 25,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_aa570bcb9060",
+      "publisher": null,
+      "source_word_count": 29410,
+      "claim_count": 40,
+      "claims_per_1k_words": 1.3600816048962938,
+      "share_of_section": 0.14084507042253522,
+      "weak_scope_count": 8,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_b81c03003037",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 205010,
+      "claim_count": 30,
+      "claims_per_1k_words": 0.1463343251548705,
+      "share_of_section": 0.1056338028169014,
+      "weak_scope_count": 4,
+      "generic_scope_count": 19
+    },
+    {
+      "source_id": "src_f4ce9a16c6b4",
+      "publisher": null,
+      "source_word_count": 3865,
+      "claim_count": 30,
+      "claims_per_1k_words": 7.7619663648124195,
+      "share_of_section": 0.1056338028169014,
+      "weak_scope_count": 9,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_fcdd7f1c90e9",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 204525,
+      "claim_count": 23,
+      "claims_per_1k_words": 0.11245569001344578,
+      "share_of_section": 0.08098591549295775,
+      "weak_scope_count": 2,
+      "generic_scope_count": 3
+    },
+    {
+      "source_id": "src_2e0add2bdec7",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 188208,
+      "claim_count": 18,
+      "claims_per_1k_words": 0.09563886763580719,
+      "share_of_section": 0.06338028169014084,
+      "weak_scope_count": 2,
+      "generic_scope_count": 6
+    },
+    {
+      "source_id": "src_2a30a3ff7502",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 188895,
+      "claim_count": 17,
+      "claims_per_1k_words": 0.08999708832949523,
+      "share_of_section": 0.05985915492957746,
+      "weak_scope_count": 2,
+      "generic_scope_count": 10
+    },
+    {
+      "source_id": "src_664a4a54b4c3",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 189155,
+      "claim_count": 17,
+      "claims_per_1k_words": 0.08987338426158441,
+      "share_of_section": 0.05985915492957746,
+      "weak_scope_count": 2,
+      "generic_scope_count": 14
+    },
+    {
+      "source_id": "src_f9b159fab5ef",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 179781,
+      "claim_count": 16,
+      "claims_per_1k_words": 0.08899716877756826,
+      "share_of_section": 0.056338028169014086,
+      "weak_scope_count": 8,
+      "generic_scope_count": 6
+    },
+    {
+      "source_id": "src_a8c5d541c698",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 177284,
+      "claim_count": 14,
+      "claims_per_1k_words": 0.07896933733444643,
+      "share_of_section": 0.04929577464788732,
+      "weak_scope_count": 2,
+      "generic_scope_count": 1
+    },
+    {
+      "source_id": "src_75194fe21c45",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 180565,
+      "claim_count": 13,
+      "claims_per_1k_words": 0.07199623404314236,
+      "share_of_section": 0.045774647887323945,
+      "weak_scope_count": 2,
+      "generic_scope_count": 5
+    },
+    {
+      "source_id": "src_ccc15b6a3971",
+      "publisher": null,
+      "source_word_count": 96,
+      "claim_count": 7,
+      "claims_per_1k_words": 72.91666666666667,
+      "share_of_section": 0.02464788732394366,
+      "weak_scope_count": 1,
+      "generic_scope_count": 6
+    }
+  ],
+  "near_duplicate_clusters": [
+    {
+      "representative_assert": "Fetch the complete documentation index at: https://docs.comfy.org/llms.txt",
+      "member_count": 8,
+      "claim_ids": [
+        "clm_a8c5d541c698_heuristic_1",
+        "clm_664a4a54b4c3_heuristic_1",
+        "clm_b81c03003037_heuristic_1",
+        "clm_2a30a3ff7502_heuristic_1",
+        "clm_f9b159fab5ef_heuristic_1",
+        "clm_75194fe21c45_heuristic_1",
+        "clm_fcdd7f1c90e9_heuristic_1",
+        "clm_2e0add2bdec7_heuristic_1"
+      ]
+    },
+    {
+      "representative_assert": "Use this file to discover all available pages before exploring further.",
+      "member_count": 8,
+      "claim_ids": [
+        "clm_a8c5d541c698_heuristic_2",
+        "clm_664a4a54b4c3_heuristic_2",
+        "clm_b81c03003037_heuristic_2",
+        "clm_2a30a3ff7502_heuristic_2",
+        "clm_f9b159fab5ef_heuristic_2",
+        "clm_75194fe21c45_heuristic_2",
+        "clm_fcdd7f1c90e9_heuristic_2",
+        "clm_2e0add2bdec7_heuristic_2"
+      ]
+    }
+  ],
+  "flags": [
+    {
+      "type": "source_dominance",
+      "severity": "block",
+      "message": "Source src_2086dbbb6560 contributes 59 of 284 claims (21% of section).",
+      "affects_source_ids": [
+        "src_2086dbbb6560"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_aa570bcb9060 contributes 40 of 284 claims (14% of section).",
+      "affects_source_ids": [
+        "src_aa570bcb9060"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_b81c03003037 contributes 30 of 284 claims (11% of section).",
+      "affects_source_ids": [
+        "src_b81c03003037"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_f4ce9a16c6b4 contributes 30 of 284 claims (11% of section).",
+      "affects_source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_f4ce9a16c6b4 has 7.8 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_f4ce9a16c6b4"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_ccc15b6a3971 has 72.9 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_ccc15b6a3971"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "large_near_duplicate_cluster",
+      "severity": "block",
+      "message": "Cluster of 8 claims share a normalised assertion: \"Fetch the complete documentation index at: https://docs.comfy.org/llms.txt\".",
+      "affects_source_ids": [],
+      "affects_claim_ids": [
+        "clm_a8c5d541c698_heuristic_1",
+        "clm_664a4a54b4c3_heuristic_1",
+        "clm_b81c03003037_heuristic_1",
+        "clm_2a30a3ff7502_heuristic_1",
+        "clm_f9b159fab5ef_heuristic_1",
+        "clm_75194fe21c45_heuristic_1",
+        "clm_fcdd7f1c90e9_heuristic_1",
+        "clm_2e0add2bdec7_heuristic_1"
+      ]
+    },
+    {
+      "type": "large_near_duplicate_cluster",
+      "severity": "block",
+      "message": "Cluster of 8 claims share a normalised assertion: \"Use this file to discover all available pages before exploring further.\".",
+      "affects_source_ids": [],
+      "affects_claim_ids": [
+        "clm_a8c5d541c698_heuristic_2",
+        "clm_664a4a54b4c3_heuristic_2",
+        "clm_b81c03003037_heuristic_2",
+        "clm_2a30a3ff7502_heuristic_2",
+        "clm_f9b159fab5ef_heuristic_2",
+        "clm_75194fe21c45_heuristic_2",
+        "clm_fcdd7f1c90e9_heuristic_2",
+        "clm_2e0add2bdec7_heuristic_2"
+      ]
+    }
+  ]
+}

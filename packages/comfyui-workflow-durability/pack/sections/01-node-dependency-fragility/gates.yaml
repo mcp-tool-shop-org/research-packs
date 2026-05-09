@@ -1,0 +1,8 @@
+section_id: 01-node-dependency-fragility
+purpose: Characterize how custom-node version drift causes workflow breakage and what mitigation mechanisms the ecosystem currently offers.
+status: draft
+created_at: 2026-05-08T20:04:59.131Z
+max_time_minutes: 45
+min_sources: 8
+primary_sources_required: 2
+contradictions_required: true

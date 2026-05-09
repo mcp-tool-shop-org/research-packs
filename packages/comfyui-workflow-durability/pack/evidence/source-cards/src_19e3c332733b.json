@@ -1,0 +1,22 @@
+{
+  "source_id": "src_19e3c332733b",
+  "receipt_id": "rcpt_19e3c332733b_1778293681443",
+  "section_id": "08-failure-taxonomy",
+  "url": "https://api.github.com/repos/Comfy-Org/ComfyUI/issues?state=all&labels=area%3Aworkflows&per_page=20",
+  "final_url": "https://api.github.com/repos/Comfy-Org/ComfyUI/issues?state=all&labels=area%3Aworkflows&per_page=20",
+  "fetched_at": "2026-05-09T02:28:01.443Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "[]",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "[]"
+  ],
+  "limitations": [],
+  "asserts": "[]",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-09T02:28:01.794Z"
+}

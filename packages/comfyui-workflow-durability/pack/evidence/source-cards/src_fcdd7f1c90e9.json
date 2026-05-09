@@ -1,0 +1,27 @@
+{
+  "source_id": "src_fcdd7f1c90e9",
+  "receipt_id": "rcpt_fcdd7f1c90e9_1778307810635",
+  "section_id": "05-community-distribution-patterns",
+  "url": "https://docs.comfy.org/troubleshooting/overview",
+  "final_url": "https://docs.comfy.org/troubleshooting/overview",
+  "fetched_at": "2026-05-09T06:23:30.635Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "How to Troubleshoot and Solve ComfyUI Issues",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Common ComfyUI issues are listed with solutions.",
+    "The guide helps users effectively report bugs.",
+    "ComfyUI documentation provides troubleshooting steps."
+  ],
+  "limitations": [
+    "Scope is limited to the ComfyUI system only.",
+    "Not a comprehensive troubleshooting resource for all software issues."
+  ],
+  "asserts": "This document offers solutions to common ComfyUI issues and guidance on reporting bugs effectively.",
+  "scope": "The scope of this source is providing documentation and troubleshooting steps specifically for ComfyUI related problems.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T06:23:58.125Z"
+}

@@ -1,0 +1,136 @@
+{
+  "audit_id": "cda_1778294630940_08-failure-taxonomy",
+  "section_id": "08-failure-taxonomy",
+  "audited_at": "2026-05-09T02:43:50.940Z",
+  "research_os_version": "0.1.0",
+  "candidate_claim_count": 187,
+  "source_count": 11,
+  "total_source_word_count": 1367629,
+  "claims_per_1k_words": 0.13673298825924282,
+  "weak_scope_count": 9,
+  "generic_scope_count": 31,
+  "per_source": [
+    {
+      "source_id": "src_e519c32165e4",
+      "publisher": null,
+      "source_word_count": 25082,
+      "claim_count": 35,
+      "claims_per_1k_words": 1.395423012518938,
+      "share_of_section": 0.18716577540106952,
+      "weak_scope_count": 5,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_0a0723012f3c",
+      "publisher": null,
+      "source_word_count": 16373,
+      "claim_count": 26,
+      "claims_per_1k_words": 1.5879802113235204,
+      "share_of_section": 0.13903743315508021,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_ed31f644833c",
+      "publisher": null,
+      "source_word_count": 10835,
+      "claim_count": 26,
+      "claims_per_1k_words": 2.399630826026765,
+      "share_of_section": 0.13903743315508021,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_fcdd7f1c90e9",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 204525,
+      "claim_count": 22,
+      "claims_per_1k_words": 0.10756631218677423,
+      "share_of_section": 0.11764705882352941,
+      "weak_scope_count": 0,
+      "generic_scope_count": 3
+    },
+    {
+      "source_id": "src_aede2f10d470",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 194116,
+      "claim_count": 16,
+      "claims_per_1k_words": 0.08242494178738487,
+      "share_of_section": 0.0855614973262032,
+      "weak_scope_count": 0,
+      "generic_scope_count": 1
+    },
+    {
+      "source_id": "src_6ccf8c48cc5a",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 185898,
+      "claim_count": 14,
+      "claims_per_1k_words": 0.07531011630033675,
+      "share_of_section": 0.0748663101604278,
+      "weak_scope_count": 0,
+      "generic_scope_count": 13
+    },
+    {
+      "source_id": "src_c038edbf6251",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 187749,
+      "claim_count": 13,
+      "claims_per_1k_words": 0.06924138077965795,
+      "share_of_section": 0.06951871657754011,
+      "weak_scope_count": 0,
+      "generic_scope_count": 1
+    },
+    {
+      "source_id": "src_e1e83dbebd28",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 181103,
+      "claim_count": 12,
+      "claims_per_1k_words": 0.06626063621254204,
+      "share_of_section": 0.06417112299465241,
+      "weak_scope_count": 0,
+      "generic_scope_count": 2
+    },
+    {
+      "source_id": "src_f9b159fab5ef",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 179781,
+      "claim_count": 11,
+      "claims_per_1k_words": 0.06118555353457818,
+      "share_of_section": 0.058823529411764705,
+      "weak_scope_count": 1,
+      "generic_scope_count": 2
+    },
+    {
+      "source_id": "src_e7045b6bccdb",
+      "publisher": "docs.comfy.org",
+      "source_word_count": 182167,
+      "claim_count": 9,
+      "claims_per_1k_words": 0.049405216092925724,
+      "share_of_section": 0.0481283422459893,
+      "weak_scope_count": 0,
+      "generic_scope_count": 9
+    },
+    {
+      "source_id": "src_19e3c332733b",
+      "publisher": null,
+      "source_word_count": 0,
+      "claim_count": 3,
+      "claims_per_1k_words": 0,
+      "share_of_section": 0.016042780748663103,
+      "weak_scope_count": 3,
+      "generic_scope_count": 0
+    }
+  ],
+  "near_duplicate_clusters": [],
+  "flags": [
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_e519c32165e4 contributes 35 of 187 claims (19% of section).",
+      "affects_source_ids": [
+        "src_e519c32165e4"
+      ],
+      "affects_claim_ids": []
+    }
+  ]
+}

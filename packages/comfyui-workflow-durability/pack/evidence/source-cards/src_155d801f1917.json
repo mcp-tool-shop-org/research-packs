@@ -1,0 +1,20 @@
+{
+  "source_id": "src_155d801f1917",
+  "receipt_id": "rcpt_155d801f1917_1778271075635",
+  "section_id": "06-comfyui-core-versioning",
+  "url": "https://github.com/comfyanonymous/ComfyUI/issues?q=is%3Aissue+label%3Abreaking+",
+  "final_url": "https://github.com/Comfy-Org/ComfyUI/issues?q=is%3Aissue+label%3Abreaking+",
+  "fetched_at": "2026-05-08T20:11:15.635Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "ComfyUI Breaking Changes",
+  "source_type": "unknown",
+  "relevance": "low",
+  "key_points": [],
+  "limitations": [],
+  "asserts": "No new breaking changes to report.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-08T20:11:36.155Z"
+}

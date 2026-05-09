@@ -1,0 +1,22 @@
+{
+  "source_id": "src_990ca9d75d8b",
+  "receipt_id": "rcpt_990ca9d75d8b_1778271058181",
+  "section_id": "06-comfyui-core-versioning",
+  "url": "https://github.com/comfyanonymous/ComfyUI/releases",
+  "final_url": "https://github.com/Comfy-Org/ComfyUI/releases",
+  "fetched_at": "2026-05-08T20:10:58.181Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "(untitled)",
+  "source_type": "unknown",
+  "relevance": "unknown",
+  "key_points": [],
+  "limitations": [
+    "No textual content"
+  ],
+  "asserts": "(no assertion extracted)",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-08T20:11:14.393Z"
+}

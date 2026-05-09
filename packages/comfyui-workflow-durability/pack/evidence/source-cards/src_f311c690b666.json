@@ -1,0 +1,28 @@
+{
+  "source_id": "src_f311c690b666",
+  "receipt_id": "rcpt_f311c690b666_1778273355625",
+  "section_id": "06-comfyui-core-versioning",
+  "url": "https://docs.comfy.org/llms.txt",
+  "final_url": "https://docs.comfy.org/llms.txt",
+  "fetched_at": "2026-05-08T20:49:15.625Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "ComfyUI Docs",
+  "source_type": "docs",
+  "relevance": "medium",
+  "key_points": [
+    "Lists various APIs and endpoints for ComfyUI",
+    "Describes user authentication, asset management, job control, model handling, node information, system statistics, user data management, workflow operations, and free API services like skin enhancer, style transfer, upscaling, etc.",
+    "Includes endpoint details with methods, parameters, responses, and usage examples"
+  ],
+  "limitations": [
+    "No explicit claims or arguments presented",
+    "Not a primary source of information about ComfyUI's functionalities",
+    "Scope limited to APIs and endpoints, lacking user interface or workflow details"
+  ],
+  "asserts": "ComfyUI offers comprehensive API services for various operations.",
+  "scope": "API functionality within ComfyUI",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-08T20:49:54.125Z"
+}

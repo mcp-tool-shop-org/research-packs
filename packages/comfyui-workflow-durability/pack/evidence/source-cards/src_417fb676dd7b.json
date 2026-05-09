@@ -1,0 +1,24 @@
+{
+  "source_id": "src_417fb676dd7b",
+  "receipt_id": "rcpt_417fb676dd7b_1778289772113",
+  "section_id": "07-existing-control-plane-attempts",
+  "url": "https://raw.githubusercontent.com/ai-dock/comfyui/main/README.md",
+  "final_url": "https://raw.githubusercontent.com/ai-dock/comfyui/main/README.md",
+  "fetched_at": "2026-05-09T01:22:52.113Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "[![Docker Build](https://github.com/ai-dock/comfyui/actions/workflows/docker-build.yml/badge.svg)](https://github.com/ai-dock/comfyui/actions/workflows/docker-build.yml)",
+  "source_type": "secondary",
+  "relevance": "unknown",
+  "key_points": [
+    "[![Docker Build](https://github.com/ai-dock/comfyui/actions/workflows/docker-build.yml/badge.svg)](https://github.com/ai-dock/comfyui/actions/workflows/docker-build.yml) # AI-Dock + ComfyUI Docker Image Run [ComfyUI](https://github.com/comfyanonymous/ComfyUI) in a highly-configurable, cloud-first AI-Dock container.",
+    ">[!NOTE] >These images do not bundle models or third-party configurations.",
+    "You should use a [provisioning script](https://github.com/ai-dock/base-image/wiki/4.0-Running-the-Image#provisioning-script) to automatically configure your container."
+  ],
+  "limitations": [],
+  "asserts": "[![Docker Build](https://github.com/ai-dock/comfyui/actions/workflows/docker-build.yml/badge.svg)](https://github.com/ai-dock/comfyui/actions/workflows/docker-build.yml)",
+  "scope": null,
+  "not": null,
+  "extracted_by": "heuristic",
+  "extracted_at": "2026-05-09T01:22:52.316Z"
+}
