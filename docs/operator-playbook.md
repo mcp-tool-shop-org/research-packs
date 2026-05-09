@@ -115,7 +115,80 @@ The `publisher` field in research-os source cards is populated by an extraction 
 
 **Do not use `publisher: null` as a quality signal.** A source card with `publisher: null` may be a high-quality primary source from the canonical maintainer.
 
-**Workaround for the gate:** Set `min_independent_publishers: 0` in the pack gate config when publisher extraction is unreliable. This prevents the gate from failing on publisher diversity when the field cannot be trusted. The admitted sources are still evaluated on accepted claim count and source diversity.
+**Pack-level workaround (DEPRECATED as of research-os v0.3.1):** Set `min_independent_publishers: 0` in the pack gate config when publisher extraction is unreliable. This prevents the gate from failing on publisher diversity when the field cannot be trusted. The admitted sources are still evaluated on accepted claim count and source diversity.
+
+> **Deprecated as of research-os v0.3.1.** The pack-level `min_independent_publishers: 0` workaround applies a global guard relaxation across every section in the pack — including sections where multi-publisher diversity is genuinely useful. Use **section-scoped source waivers** (below) instead, which apply only to the section that needs them and disclose the rationale + compensating controls in the audit trail. The historical pack-level pattern remains valid for already-frozen packs (e.g., `packages/comfyui-workflow-durability/`) — its freeze receipt is unchanged. New packs should prefer the section-scoped pattern.
+
+---
+
+## Section-scoped source waivers (research-os ≥ v0.3.1)
+
+**Use section-scoped source waivers when publisher diversity is structurally incompatible with the section's truth source, not when a section merely failed to find enough sources.**
+
+This is the load-bearing distinction. The waiver is a discipline-shifting tool, not a shortcut around weak research. The same canonical phrasing appears in [research-os/docs/section-scoped-waivers.md](https://github.com/mcp-tool-shop-org/research-os/blob/main/docs/section-scoped-waivers.md) and the [handbook page](https://mcp-tool-shop-org.github.io/research-os/handbook/section-scoped-waivers/) — public guidance is consistent across the surface by design.
+
+### When to use it (valid cases)
+
+Section-scoped waivers exist for sections where the truth itself is **structurally single-publisher**. Adding third-party publishers cannot improve ground truth in these cases — it can only add interpretation layers on top of the canonical authority.
+
+- **Canonical protocol-definition sections** — XRPL XLS standards, Ethereum EIPs on a single chain, BIPs for a single Bitcoin codebase. The protocol foundation IS the canonical source. Earned by Experiment 3 (XRPL pack Session 2, 2026-05-09).
+- **Single-vendor API definition sections** — a vendor's own OpenAPI spec is the canonical truth for the API itself; third-party "API explainers" are downstream interpretations, not corroborating primaries.
+- **Single-foundation standards sections** — W3C / IETF / IEEE specs where the standards body is the canonical authority by design.
+
+The common shape: the section is documenting *what something is* against its canonical specifying authority, not *what people think about it*.
+
+### When NOT to use it (invalid cases)
+
+Three patterns operators must NOT use the waiver mechanism for. Each is a research-quality failure dressed up as a publisher-diversity exception.
+
+- **"I couldn't find enough independent sources"** — not a waiver case. Either expand source curation (academic papers, exchange/custodian operational docs, independent block explorers, sourced journalism) or honestly accept Terminal B for the section. The publisher-diversity floor is doing what it was designed to do: catching under-curation.
+- **"The reviewer is being too strict"** — not a waiver case. The reviewer's per-claim findings continue to apply normally regardless of any waiver. Per-claim `source_quality_problem`, `scope_widening`, `overgeneralized_claim`, etc. still route claims to repair. The section-scoped waiver only neutralises the *section-wide* `source_cluster_monopoly` finding's contribution to per-claim decision routing — it does not silence per-claim quality signals.
+- **"I want to ship faster"** — not a waiver case. The waiver requires audit-disclosed `reason` and non-empty `compensating_controls[]`; an empty or hand-wavy waiver fails schema validation.
+
+### Schema and example
+
+The waiver lives under `primary_source_waiver.section_waivers[]` in `research.yaml`. Each entry stands alone; multiple entries can target different sections, or the same section with different scopes (`min_independent_publishers`, `primary_sources_required`).
+
+```yaml
+primary_source_waiver:
+  status: none
+  compensating_controls: []
+  section_waivers:
+    - section_id: 01-token-surface-and-standards
+      scope: min_independent_publishers
+      reason: |
+        Section 01 defines XRPL token surfaces from canonical protocol sources.
+        The authoritative source of truth is intentionally concentrated in XRPL
+        Foundation documentation, XLS standards, and rippled implementation/release
+        records. Third-party publishers can explain or interpret these standards,
+        but they are not primary authorities for protocol semantics.
+      compensating_controls:
+        - "Sources span multiple canonical artifact types: xrpl.org docs, rendered XLS standards, raw standards markdown, rippled release data, and GitHub implementation discussions."
+        - "Claims remain span-grounded and reviewed individually."
+        - "Section synthesis must disclose the single-foundation source concentration."
+        - "Third-party sources may be added in later sections for adoption, marketplace, metadata, or operational interpretation, but are not required for protocol-definition truth."
+```
+
+### Required components
+
+Three operator disciplines must hold for the waiver to be honest:
+
+1. **`reason`** — non-empty (schema-enforced; empty values fail validation).
+2. **`compensating_controls[]`** — at least one entry (schema-enforced).
+3. **Synthesis-time disclosure** — the section's `final-report.md` must explicitly surface that the publisher concentration was deliberately accepted, with the rationale visible in the prose. NOT enforced by code; required by operator practice. The waiver mechanism captures the structural fact in `research.yaml` and the freeze receipt; the synthesis-time disclosure carries the same fact into the human-readable output.
+
+### Counterexamples within the same pack
+
+Within a single pack, the waiver applies to some sections and not others. Within the XRPL creator-token pack:
+
+- **Section 01 (token surface and standards)** — canonical protocol; waiver applies.
+- **Section 07 (metadata and off-chain durability)** — spans IPFS, Arweave, HTTP-served metadata, marketplace indexers; multi-publisher diversity is genuinely useful; do NOT waive.
+
+When in doubt: the waiver is for sections that document *what something is*, not *what people think about it*.
+
+### Pack policy still wins
+
+`gates.source_floor.primary_source_waiver_allowed: false` blocks BOTH pack-level and section-scoped waivers. An operator cannot smuggle a waiver past pack policy by rerouting it to section scope.
 
 ---
 
