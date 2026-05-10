@@ -1,0 +1,97 @@
+{
+  "report_id": "secrep_1778404887370_07-distribution-surface-durability",
+  "section_id": "07-distribution-surface-durability",
+  "reported_at": "2026-05-10T09:21:27.370Z",
+  "research_os_version": "0.3.2",
+  "status": "gated",
+  "sources": {
+    "fetched_ok": 7,
+    "source_cards": 7,
+    "publishers": [
+      "GodotSteam",
+      "itch.io"
+    ],
+    "primary_source_waiver": {
+      "status": "none",
+      "reason": null,
+      "compensating_controls": []
+    }
+  },
+  "extraction": {
+    "candidate_claims": 113,
+    "claims_per_source": [
+      {
+        "source_id": "src_639902f06da8",
+        "claims": 30
+      },
+      {
+        "source_id": "src_0cf4f6250555",
+        "claims": 28
+      },
+      {
+        "source_id": "src_57341c85596c",
+        "claims": 17
+      },
+      {
+        "source_id": "src_7d03db002fc2",
+        "claims": 11
+      },
+      {
+        "source_id": "src_ce610c7a7992",
+        "claims": 11
+      },
+      {
+        "source_id": "src_fc44452fd969",
+        "claims": 10
+      },
+      {
+        "source_id": "src_8e8c16fd06c4",
+        "claims": 6
+      }
+    ],
+    "claims_per_1k_words": 6.904136371967984,
+    "excerpt_pages_processed": 7,
+    "excerpt_id_failures": 1,
+    "malformed_extractor_outputs": 0,
+    "near_duplicate_clusters": 0,
+    "weak_scope_count": 9,
+    "generic_scope_count": 11,
+    "density_flags": 6
+  },
+  "contradictions": {
+    "pairs_compared": 6328,
+    "contradiction_candidates": 0,
+    "overgeneralization_risks": 0
+  },
+  "review": {
+    "reviewed": true,
+    "accepted_for_synthesis": 20,
+    "needs_scope_repair": 1,
+    "needs_source_repair": 7,
+    "needs_contradiction_mapping": 0,
+    "rejected": 0,
+    "needs_human_review": 0,
+    "rejection_or_repair_by_category": [
+      {
+        "category": "source_quality_problem",
+        "count": 7
+      },
+      {
+        "category": "overgeneralized_claim",
+        "count": 2
+      }
+    ]
+  },
+  "acceptance": {
+    "candidate_claims": 113,
+    "accepted_for_synthesis": 20,
+    "acceptance_ratio": 0.17699115044247787,
+    "accepted_per_source": 2.857142857142857,
+    "accepted_per_1k_words": 1.221971039286369,
+    "top_rejection_category": "source_quality_problem",
+    "claim_overproduction_fired": false,
+    "synthesis_ready": true
+  },
+  "gate_verdict": "warn",
+  "gate_synthesis_eligible": true
+}

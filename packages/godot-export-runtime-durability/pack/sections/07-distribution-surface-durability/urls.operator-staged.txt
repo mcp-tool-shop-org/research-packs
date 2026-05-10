@@ -1,0 +1,72 @@
+# Section 07 — distribution-surface-durability — F-21 verified URL staging
+# Session 7 — 2026-05-10
+#
+# NEW FINDING (pre-gather): All Valve/Steam and console developer portal URLs
+# returned HTTP 200 but are jQuery/JS-rendered shells with 0 extractable prose.
+# This is a different inaccessibility class than expected auth-gating (401/403/302).
+# Mechanism: client-side JavaScript rendering, not HTTP authentication.
+# - partner.steamgames.com/doc/*: HTTP 200, jQuery initialization, 0 <p> tags, 0 doc_contents
+# - store.steampowered.com/steamworks: HTTP 200, jQuery, 0 prose
+# - developer.nintendo.com/: HTTP 200, Liferay CMS portal, login-wall homepage
+# - partners.playstation.net/: HTTP 200, JS-shell, 4.1KB
+# - www.xbox.com/en-US/developers/id: HTTP 200, JS-shell, 185KB
+# Verdict: all Steamworks/Steam + console portal URLs are effectively closed
+# to the v0.1 fetch model via JS rendering. NOT staged. Documented as closed.
+#
+# exporting_projects.rst: ALREADY IN PACK from Section 01. NOT re-staged (dedup).
+# GodotSteam GitHub repo: MOVED TO CODEBERG (master/readme.md redirects to codeberg.org).
+# Codeberg readme.md (godot4 branch): accessible, 4.7KB, compatibility table — STAGED.
+
+# ============================================================
+# CLOSED-SURFACE LEDGER (not staged — inaccessible to v0.1 fetch)
+# ============================================================
+# URL                                                      | HTTP | Mechanism           | Publisher
+# https://partner.steamgames.com/doc/sdk                   | 200  | JS-shell (jQuery)   | Valve
+# https://partner.steamgames.com/doc/store/application     | 200  | JS-shell (jQuery)   | Valve
+# https://partner.steamgames.com/doc/features/cloud        | 200  | JS-shell (jQuery)   | Valve
+# https://partner.steamgames.com/doc/features/achievements | 200  | JS-shell (jQuery)   | Valve
+# https://partner.steamgames.com/doc/gettingstarted        | 200  | JS-shell (jQuery)   | Valve
+# https://store.steampowered.com/steamworks                | 200  | JS-shell (jQuery)   | Valve
+# https://developer.nintendo.com/                          | 200  | Liferay portal/login wall | Nintendo
+# https://partners.playstation.net/                        | 200  | JS-shell (4.1KB)    | Sony Interactive Entertainment
+# https://www.xbox.com/en-US/developers/id                 | 200  | JS-shell (185KB)    | Microsoft
+#
+# Finding: The public verification ceiling for distribution-layer durability is
+# itch.io creator docs (full SSR) + Godot export tutorials already in pack.
+# Steam/console platform SDK documentation is entirely JS-rendered, making
+# the v0.1 fetch model structurally unable to extract Steamworks/console policy.
+# This is the load-bearing evidence for the synthesis thesis about the
+# public verification ceiling.
+
+# ============================================================
+# STAGED SOURCES (7 URLs)
+# ============================================================
+
+# itch.io creator docs (itch.io) — 4 URLs
+# Publisher: itch.io | Expected type: docs (F-40 open) | SSR-stable verified
+https://itch.io/docs/creators/getting-started
+# Size: 19.8KB | <main> present | Prose: creator onboarding, upload workflow
+
+https://itch.io/docs/creators/html5
+# Size: 28KB | <main> present | Prose: HTML5/WebGL game hosting, iframe embedding
+
+https://itch.io/docs/creators/pricing
+# Size: 18.2KB | <main> present | Prose: pricing flexibility, revenue split model
+
+https://itch.io/docs/creators/download-keys
+# Size: 20.2KB | <main> present | Prose: download key management, distribution keys
+
+# GodotSteam community integration evidence (Codeberg) — 1 URL
+# Publisher: GodotSteam (community) | Expected type: secondary (Section 03 indie-dev pattern)
+# Integration evidence ONLY — documents how Godot integrates with Steamworks SDK.
+# NOT Steam platform policy. WC5 boundary: this is binding evidence, not policy authority.
+https://codeberg.org/godotsteam/godotsteam/raw/branch/godot4/readme.md
+# Size: 4.7KB | Contains: Steamworks SDK version compatibility table, known issues,
+# GodotSteam version break history. Watch Case 5 applies: integration evidence only.
+
+# GitHub Search — failure-mode evidence (null publisher, F-39 expected)
+https://api.github.com/search/issues?q=repo:godotengine/godot+Steamworks+export+Godot&per_page=20
+# Publisher: null | Type: forum (F-39 expected) | 18 results | Steamworks integration issues
+
+https://api.github.com/search/issues?q=repo:godotengine/godot+console+export+SDK&per_page=20
+# Publisher: null | Type: forum (F-39 expected) | 145 total | Console export/SDK issues

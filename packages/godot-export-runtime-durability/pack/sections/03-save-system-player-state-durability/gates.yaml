@@ -1,0 +1,8 @@
+section_id: 03-save-system-player-state-durability
+purpose: Document save serialization APIs (FileAccess, ResourceSaver, ConfigFile, JSON), save-format compatibility across Godot 3.x to 4.x, developer-side migration responsibility, and narrative-game-specific save state durability
+status: draft
+created_at: 2026-05-10T03:48:55.386Z
+max_time_minutes: 45
+min_sources: 8
+primary_sources_required: 2
+contradictions_required: true

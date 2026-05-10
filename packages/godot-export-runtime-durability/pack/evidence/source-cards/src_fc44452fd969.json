@@ -1,0 +1,27 @@
+{
+  "source_id": "src_fc44452fd969",
+  "receipt_id": "rcpt_fc44452fd969_1778403273891",
+  "section_id": "07-distribution-surface-durability",
+  "url": "https://itch.io/docs/creators/pricing",
+  "final_url": "https://itch.io/docs/creators/pricing",
+  "fetched_at": "2026-05-10T08:54:33.891Z",
+  "publisher": "itch.io",
+  "published_at": null,
+  "title": "Pricing",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "itch.io supports 'pay what you want' pricing, where the set price is a minimum price.",
+    "The average purchase on itch.io is about $1.50 more than the minimum price.",
+    "Setting up sales and bundles can be another way to drive purchases of projects.",
+    "Projects can be released as 'early access' with a paywall while still in development."
+  ],
+  "limitations": [
+    "The guide only covers options for setting prices, not other types of sales or marketing activities."
+  ],
+  "asserts": "Setting the right price point on itch.io can boost profits and encourage higher-priced donations.",
+  "scope": "The scope is about how to price projects correctly on the itch.io platform.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T08:55:01.182Z"
+}

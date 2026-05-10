@@ -1,0 +1,28 @@
+{
+  "source_id": "src_e6e0e4cb4ec7",
+  "receipt_id": "rcpt_e6e0e4cb4ec7_1778389032240",
+  "section_id": "05-desktop-platform-export-durability",
+  "url": "https://api.github.com/search/issues?q=repo:godotengine/godot+macos+notarization+export&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:godotengine/godot+macos+notarization+export&per_page=20",
+  "fetched_at": "2026-05-10T04:57:12.240Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Notarization for MacOS export under Windows in Godot 4.2. Failed with \"invalid number at line 1 column 2\"",
+  "source_type": "forum",
+  "relevance": "high",
+  "key_points": [
+    "The user is attempting to export a project for macOS using Godot 4.2 stable on Windows.",
+    "The notarization fails with the message 'invalid number at line 1 column 2'.",
+    "The user could not find more logs about the error and the godot.log was not updated with new information related to exporting attempts.",
+    "The rcodesign tool's notary-log command returned an error as the SUBMISSION_ID is unknown since Godot handles notarization internally."
+  ],
+  "limitations": [
+    "Limited logging in Godot which makes it hard to diagnose errors during export",
+    "Notarization process handled internally by Godot, making it difficult for users to manually track or troubleshoot"
+  ],
+  "asserts": "The current Godot 4.2 stable release on Windows does not successfully perform macOS notarization when exporting projects.",
+  "scope": "Exporting a project for macOS using Godot 4.2 stable on a Windows operating system",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T04:57:51.002Z"
+}

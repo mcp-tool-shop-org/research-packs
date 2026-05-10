@@ -1,0 +1,12 @@
+# Section 01 — engine version and export template compatibility
+# F-21 verified 2026-05-10: all 8 URLs returned HTTP 200 with real content
+# Sources: Godot Foundation canonical (raw RST) + GitHub API (releases + search)
+
+https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_projects.rst
+https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/feature_tags.rst
+https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/migrating/upgrading_to_godot_4.rst
+https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_pcks.rst
+https://raw.githubusercontent.com/godotengine/godot-docs/master/about/release_policy.rst
+https://api.github.com/repos/godotengine/godot/releases?per_page=20
+https://api.github.com/search/issues?q=repo:godotengine/godot+export+template+missing&per_page=20
+https://api.github.com/search/issues?q=repo:godotengine/godot+export+template+version+compatibility&per_page=20

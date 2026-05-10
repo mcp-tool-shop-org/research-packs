@@ -1,0 +1,30 @@
+{
+  "source_id": "src_b00e2fac5e30",
+  "receipt_id": "rcpt_b00e2fac5e30_1778385498186",
+  "section_id": "03-save-system-player-state-durability",
+  "url": "https://api.github.com/search/issues?q=repo:godotengine/godot+FileAccess+save+regression&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:godotengine/godot+FileAccess+save+regression&per_page=20",
+  "fetched_at": "2026-05-10T03:58:18.186Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "GitHub search results for issues related to FileAccess save regression in Godot engine",
+  "source_type": "forum",
+  "relevance": "high",
+  "key_points": [
+    "The API returned a total of 19 matching issues",
+    "The issues are related to a regression in the Godot engine's FileAccess functionality when saving files",
+    "One example issue reports that a sync filesystem operation should be added before rename during atomic writes to prevent data loss",
+    "Another issue reports a bug where OBJ file import settings are not honored and the .scn file references the .material file only after manual re-importing",
+    "A third issue reports that Godot output sometimes misses logs before quit(), but console shows all output"
+  ],
+  "limitations": [
+    "The source only provides a list of related issues without detailed analysis or solutions",
+    "The scope and impact of these issues on the overall Godot engine functionality is not clearly described in the search results",
+    "Further investigation of each issue would be needed to fully understand the implications and potential fixes"
+  ],
+  "asserts": "There are currently 19 open issues related to a FileAccess save regression in the Godot game engine, impacting atomic write functionality and logged output.",
+  "scope": "The keying search terms (repo:godotengine/godot +FileAccess +save +regression) were used to filter relevant issues from the Godot engine's GitHub issue tracker. The provided results pertain specifically to this subset of reported engine bugs and regressions in save behavior.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T03:59:05.253Z"
+}

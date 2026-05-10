@@ -1,0 +1,28 @@
+{
+  "source_id": "src_0974a54becd4",
+  "receipt_id": "rcpt_0974a54becd4_1778399556510",
+  "section_id": "06-mobile-web-export-durability",
+  "url": "https://developer.mozilla.org/en-US/docs/WebAssembly",
+  "final_url": "https://developer.mozilla.org/en-US/docs/WebAssembly",
+  "fetched_at": "2026-05-10T07:52:36.510Z",
+  "publisher": "Mozilla",
+  "published_at": null,
+  "title": "WebAssembly",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "WebAssembly is a type of code that can be run in modern web browsers.",
+    "It is a low-level assembly-like language with a compact binary format.",
+    "WebAssembly runs with near-native performance and provides languages such as C/C++, C#, and Rust with a compilation target to run on the web."
+  ],
+  "limitations": [
+    "The information comes from a technology reference source, which may not cover all aspects or real-world applications of WebAssembly in detail.",
+    "As a general reference, the scope is limited to explaining what WebAssembly is and how it works rather than discussing specific implementations or usage patterns.",
+    "The content does not include recent performance benchmarks comparing WebAssembly to other execution methods."
+  ],
+  "asserts": "WebAssembly is an assembly-like language that can be executed in web browsers, enabling languages like C/C++, C#, and Rust to target the web as a compilation destination.",
+  "scope": "The scope of this assertion is the use of WebAssembly as a low-level language for running code in modern web browsers. It does not cover details on how it integrates with specific programming languages or real-world applications.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T07:53:15.673Z"
+}

@@ -299,6 +299,8 @@ The `-text` declares the files binary; git stores literal bytes verbatim with no
 
 **Why this is operator discipline.** Logged as F-37 in research-os, deferred to v0.3.3 — `pack publish` will eventually emit the `.gitattributes` snippet at admission time so operators don't have to think about this. Until then, expect this as a closeout step for any Windows-frozen pack.
 
+**Pack-3 applied this rule preemptively.** Godot export/runtime durability (Experiment 3 pack #3 of 3) staged the `.gitattributes -text` line before opening the admission PR — no CI failure between PR merge and follow-up fix. Full Pack-3 closeout story: [`research-os/docs/experiment-3-pack-3-proof.md`](https://github.com/mcp-tool-shop-org/research-os/blob/main/docs/experiment-3-pack-3-proof.md).
+
 ---
 
 ## v0.1 self-dogfood arc — structural notes

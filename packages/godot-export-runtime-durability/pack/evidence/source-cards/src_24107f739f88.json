@@ -1,0 +1,27 @@
+{
+  "source_id": "src_24107f739f88",
+  "receipt_id": "rcpt_24107f739f88_1778399596015",
+  "section_id": "06-mobile-web-export-durability",
+  "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API",
+  "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API",
+  "fetched_at": "2026-05-10T07:53:16.015Z",
+  "publisher": "Mozilla",
+  "published_at": null,
+  "title": "WebGL: 2D and 3D graphics for the web - Web APIs | MDN",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "WebGL is a JavaScript API for rendering high-performance interactive 3D and 2D graphics within any compatible web browser.",
+    "It can be used in HTML <canvas> elements.",
+    "The API closely conforms to OpenGL ES 2.0, allowing it to take advantage of hardware graphics acceleration provided by the user's device.",
+    "WebGL does not require plug-ins for rendering graphics."
+  ],
+  "limitations": [
+    "No publisher or publication date information available on the source page."
+  ],
+  "asserts": "WebGL is a JavaScript API that allows developers to render high-performance interactive 3D and 2D graphics in web browsers without requiring additional plug-ins.",
+  "scope": "The scope of this assertion is limited to WebGL's capabilities within web browsers for rendering graphics.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T07:53:48.354Z"
+}

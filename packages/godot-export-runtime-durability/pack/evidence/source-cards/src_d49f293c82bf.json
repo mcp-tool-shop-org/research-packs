@@ -1,0 +1,31 @@
+{
+  "source_id": "src_d49f293c82bf",
+  "receipt_id": "rcpt_d49f293c82bf_1778385598897",
+  "section_id": "03-save-system-player-state-durability",
+  "url": "https://raw.githubusercontent.com/EiTaNBaRiBoA/ForgeJSONGD/main/README.md",
+  "final_url": "https://raw.githubusercontent.com/EiTaNBaRiBoA/ForgeJSONGD/main/README.md",
+  "fetched_at": "2026-05-10T03:59:58.897Z",
+  "publisher": "EiTaNBaRiBoA",
+  "published_at": null,
+  "title": "ForgeJSONGD",
+  "source_type": "secondary",
+  "relevance": "high",
+  "key_points": [
+    "Simplifies Godot save/load systems with a GDScript singleton.",
+    "Allows serialization of any class to JSON and deserialization back, automatically handling Godot types.",
+    "Provides advanced tools for comparing, finding differences, and applying patches to game or app data.",
+    "Supports saving JSON data to files with optional encryption.",
+    "Can load JSON data from files with optional decryption."
+  ],
+  "limitations": [
+    "Only properties marked with @export are serialized by default in GDScript. All script variables are serialized if not set.",
+    "In C#, only properties marked with the [Export] attribute will be serialized.",
+    "Implement robust error handling to catch potential issues like file loading failures or JSON parsing errors.",
+    "To prevent security vulnerabilities, encrypt your JSON data."
+  ],
+  "asserts": "The source claims that it can simplify save/load systems in Godot by providing a GDScript singleton which allows the easy serialization and deserialization of class objects to and from JSON format, along with additional tools for comparing and manipulating JSON data.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T04:00:31.855Z"
+}

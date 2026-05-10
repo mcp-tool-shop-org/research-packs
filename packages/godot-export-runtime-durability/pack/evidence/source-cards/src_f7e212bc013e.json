@@ -1,0 +1,28 @@
+{
+  "source_id": "src_f7e212bc013e",
+  "receipt_id": "rcpt_f7e212bc013e_1778385462731",
+  "section_id": "03-save-system-player-state-durability",
+  "url": "https://api.github.com/search/issues?q=repo:godotengine/godot+save+game+migration+version&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:godotengine/godot+save+game+migration+version&per_page=20",
+  "fetched_at": "2026-05-10T03:57:42.731Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Search Results",
+  "source_type": "forum",
+  "relevance": "high",
+  "key_points": [
+    "GitHub search results for issues related to save game migration and version in the Godot engine repository",
+    "Results include pull requests, discussions, and confirmed issues tagged as enhancement or discussion",
+    "Some issues are marked as confirmed, topic-related, or platform-specific"
+  ],
+  "limitations": [
+    "The scope of the search query is limited to specific GitHub tags and labels related to save game migration and version",
+    "Results may not include all relevant discussions or issues related to this topic in the Godot engine repository",
+    "Some issues might be outdated or no longer applicable to current versions of the Godot engine"
+  ],
+  "asserts": "The search results indicate that there are various discussions, pull requests, and confirmed issues related to save game migration and version in the Godot engine repository.",
+  "scope": "The scope of these search results is limited to specific GitHub tags, labels, and milestones related to save game migration and version within the Godot engine repository.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T03:58:17.855Z"
+}

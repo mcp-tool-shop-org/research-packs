@@ -1,0 +1,29 @@
+{
+  "source_id": "src_cfb7cbc09d44",
+  "receipt_id": "rcpt_cfb7cbc09d44_1778391921388",
+  "section_id": "02-scene-resource-serialization",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/io/data_paths.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/io/data_paths.rst",
+  "fetched_at": "2026-05-10T05:45:21.388Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "File paths in Godot projects",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Godot uses UNIX-style path separators (forward slash) to make supporting multiple platforms easier.",
+    "Instead of using Windows-style path separators, use forward slashes in your own code.",
+    "The String class offers a dozen methods for working with strings that represent file paths.",
+    "Use res:// to access files relative to the project's root folder.",
+    "Use user:// to store persistent data like player save or settings, which can be accessed even when the game is running and the project's filesystem is read-only."
+  ],
+  "limitations": [
+    "Documentation on file logging has been moved to a different section",
+    "Self-contained mode for exported projects is not supported yet"
+  ],
+  "asserts": "Godot uses UNIX-style path separators (forward slash) to make supporting multiple platforms easier when accessing and storing files in Godot projects.",
+  "scope": "This page explains how file paths work inside Godot projects.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T05:45:49.512Z"
+}

@@ -1,0 +1,27 @@
+{
+  "source_id": "src_78aaa13e8387",
+  "receipt_id": "rcpt_78aaa13e8387_1778382200323",
+  "section_id": "01-engine-version-export-template-compat",
+  "url": "https://api.github.com/search/issues?q=repo:godotengine/godot+export+template+version+compatibility&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:godotengine/godot+export+template+version+compatibility&per_page=20",
+  "fetched_at": "2026-05-10T03:03:20.323Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Export Template Manager issues in Godot engine",
+  "source_type": "forum",
+  "relevance": "high",
+  "key_points": [
+    "Export Template Manager is missing VisionOS in the per-platform download list",
+    "Export Template Manager does not resume partial downloads when downloading templates for selected platforms",
+    "EditorExportPlatformAndroid causes freeze when attempting to quit editor"
+  ],
+  "limitations": [
+    "Issues are specific to certain versions of Godot engine and may vary based on system configurations.",
+    "Reproduction steps may require detailed information about the user's project setup and environment."
+  ],
+  "asserts": "The Export Template Manager feature in Godot engine has compatibility issues with VisionOS, does not resume partial downloads for selected platforms, and causes a freeze when attempting to quit editor on Android platform exports.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T03:03:48.135Z"
+}

@@ -1,0 +1,28 @@
+{
+  "source_id": "src_5b703b620109",
+  "receipt_id": "rcpt_5b703b620109_1778388865525",
+  "section_id": "05-desktop-platform-export-durability",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/running_on_macos.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/running_on_macos.rst",
+  "fetched_at": "2026-05-10T04:54:25.525Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "Running Godot apps on macOS",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "macOS requires signed and notarized applications for default execution.",
+    "Gatekeeper performs path randomization as a security measure, breaking access to relative paths from the app when run from downloads or still in quarantine.",
+    "Moving the app to the /Applications folder resolves the issue of path randomization.",
+    "Signing and notarizing an application varies based on its distribution method - App Store, outside App Store, or unsigned."
+  ],
+  "limitations": [
+    "The information is specific to Godot engine and may not apply to all applications.",
+    "The source assumes familiarity with the Godot engine and does not provide general macOS app guidelines."
+  ],
+  "asserts": "Signing and notarizing an application affects its execution on macOS depending on distribution method and whether it's done via App Store or manually.",
+  "scope": "How signing, notarization, and distribution methods affect running a Godot engine exported project on macOS",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T04:54:51.611Z"
+}

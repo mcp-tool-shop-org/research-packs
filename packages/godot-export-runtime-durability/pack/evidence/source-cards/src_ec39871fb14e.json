@@ -1,0 +1,29 @@
+{
+  "source_id": "src_ec39871fb14e",
+  "receipt_id": "rcpt_ec39871fb14e_1778385342364",
+  "section_id": "03-save-system-player-state-durability",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_fileaccess.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_fileaccess.rst",
+  "fetched_at": "2026-05-10T03:55:42.364Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "FileAccess Class Documentation",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "The FileAccess class provides methods for file reading and writing operations.",
+    "It can be used to permanently store data in the user device's file system and to read from it.",
+    "This is useful for storing game save data or player configuration files.",
+    "A FileAccess instance has its own file cursor, which is the position in bytes in the file where the next read/write operation will occur.",
+    "The file cursor can be moved to a specific position using seek() or seek_end(), and its position can be retrieved using get_position()."
+  ],
+  "limitations": [
+    "Files are automatically closed only if the process exits 'normally' (such as by clicking the window manager's close button or pressing Alt + F4).",
+    "If you stop the project execution by pressing F8 while the project is running, the file won't be closed as the game process will be killed."
+  ],
+  "asserts": "The FileAccess class provides a convenient way to read from and write to files in Godot.",
+  "scope": "This documentation covers the functionality and usage of the FileAccess class within the Godot engine.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T03:56:13.409Z"
+}

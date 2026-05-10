@@ -1,0 +1,3208 @@
+{
+  "section_id": "02-scene-resource-serialization",
+  "reviewer": "ollama-intern",
+  "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+  "reviewed_at": "2026-05-10T06:22:20.636Z",
+  "candidate_claims": 82,
+  "findings": [
+    {
+      "finding_id": "fnd_4814246520c7",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_3bf41f24d47a_ollama_intern_26"
+      ],
+      "source_ids": [
+        "src_3bf41f24d47a"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim states a basic fact about the purpose of Resource in Godot, which is adequately supported by the evidence.",
+      "evidence": "Resource primarily serves as a container for serializable objects.",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.632Z"
+    },
+    {
+      "finding_id": "fnd_4859c535de7c",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_ef84790b4914_ollama_intern_1",
+        "clm_ef84790b4914_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_ef84790b4914"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The ResourceLoader class documentation contains scattered claims about its functionality and usage, some of which are overgeneralized or not fully supported by the provided evidence excerpts.",
+      "evidence": "The evidence excerpts cover specific methods and features of ResourceLoader but do not comprehensively support broad claims about its architecture role or resource management system scope.",
+      "required_action": "Reviewers should be cautious when relying on these excerpts to fully characterize ResourceLoader's purpose and usage across the Godot Engine.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_45cd24c6b691",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_ef84790b4914_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_ef84790b4914"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_ef84790b4914_ollama_intern_11 describes a specific ResourceLoader method but provides low leverage synthesis as it is a straightforward description of the 'exists' functionality.",
+      "evidence": "The evidence excerpt directly states the purpose and parameters of the 'exists' method.",
+      "required_action": "While accurate, this claim may not contribute significantly to high-level understanding of ResourceLoader's role.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_b829149600e1",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_bc58f284031b_ollama_intern_3",
+        "clm_d8935f3b0347_ollama_intern_133"
+      ],
+      "source_ids": [
+        "src_bc58f284031b",
+        "src_d8935f3b0347"
+      ],
+      "category": "definition_drift",
+      "severity": "warn",
+      "summary": "PackedScene's 'save' method saves a node and all its child nodes, but the claim conflates this with SceneTree saving orphan nodes.",
+      "evidence": "The evidence excerpts for claims clm_bc58f284031b_ollama_intern_3 and clm_d8935f3b0347_ollama_intern_133 refer to different functionality - PackedScene saving a node tree vs SceneTree finding orphans. They reuse 'save' language but the APIs operate on distinct graph sections.",
+      "required_action": "Clarify that 'saving' means different things in the context of PackedScene and SceneTree, and which child nodes are involved.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_f68ce9f0ed49",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_bc58f284031b_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_bc58f284031b"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_bc58f284031b_ollama_intern_11 states PackedScene enables scene manipulation but this is contextual trivia.",
+      "evidence": "The evidence excerpt lists method Javadoc for a range of Node APIs. This claim does not uniquely synthesize new facts or clearly widen scope; it restates the utility of an object model, which is low-leverage boilerplate detail in this context.",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_8add2c1bd5f6",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_0b13e026c1cc_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_0b13e026c1cc"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that resources in Godot are loaded only once from disk and shared across the project overgeneralizes the source, which only supports single-use resource loading within a single process.",
+      "evidence": "When the engine loads a resource from disk, **it only loads it once**. If a copy of that resource is already in memory, trying to load the resource again will return the same copy every time.",
+      "required_action": "Clarify or split this claim into two: one about single-use loading and another about shared access across nodes",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_9ed1d1233e78",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_0b13e026c1cc_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_0b13e026c1cc"
+      ],
+      "category": "scope_widening",
+      "severity": "warn",
+      "summary": "The claim that nodes and resources can contain other resources as properties widens beyond the source, which only discusses general property export for objects like nodes or resources.",
+      "evidence": "Every object, be it a Node or a Resource, can export properties. There are many types of Properties...",
+      "required_action": "Restrict claim scope to just nodes and resources being able to contain resources as properties",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_02975a0b449a",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_0b13e026c1cc_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_0b13e026c1cc"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim about using PackedScene.instantiate() to instantiate a scene is valid but low value, as it simply restates existing knowledge.",
+      "evidence": "To get an instance of the scene, you have to use the PackedScene.instantiate() method.",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_8ecf8404907d",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_0b13e026c1cc_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_0b13e026c1cc"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim that Godot's resources automatically free themselves when no longer in use is valid but low value, as it restates basic resource management behavior.",
+      "evidence": "When a Resource is no longer in use, it will automatically free itself...",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_47679fce4469",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_0b13e026c1cc_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_0b13e026c1cc"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim about Godot's Inspector editing resource files is valid but low value, as it states a built-in editor feature.",
+      "evidence": "- Godot Engine's Inspector renders and edits Resource files out-of-the-box...",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_44bc157c2849",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_55a63071c9c1_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_55a63071c9c1"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that 'Scenes should be used for creating concepts specific to a game' overgeneralizes the use of scenes, as scenes can be used for more than just game-specific concepts.",
+      "evidence": "When designing a game in Godot Engine. When to use scenes versus scripts",
+      "required_action": "Clarify that scenes are not only for game-specific concepts but also for reusable tools and declarative code extensions",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_4edff6a3637a",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_cfb7cbc09d44_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_cfb7cbc09d44"
+      ],
+      "category": "recommendation_exceeds_evidence",
+      "severity": "info",
+      "summary": "The recommendation to use 'res://' for accessing files relative to the project's root folder seems broader than the evidence provided, as it suggests a general practice without specifying its limitations or alternatives.",
+      "evidence": "You can access any file relative to it by writing paths starting with 'res://', which stands for resources. For example, you can access an image file 'character.png' located in the project's root folder in code with the following path: 'res://character.png'.",
+      "required_action": "Specify when and how 'res://' should be used, and mention alternatives like 'user://' for persistent user data",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_146d50da2d98",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_cfb7cbc09d44_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_cfb7cbc09d44"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim 'Godot supports UNIX-style path separators on all platforms' is valid but provides low-value information, as the fact that Godot uses UNIX-style path separators is already established in the context.",
+      "evidence": "Including Windows. To make supporting multiple platforms easier, Godot uses **UNIX-style path separators** (forward slash ``/``). These work on all platforms, **including Windows**.",
+      "required_action": "N/A",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_aa0de436f007",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_cfb7cbc09d44_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_cfb7cbc09d44"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that '[project_name]' can be overridden on a per-platform basis using feature tags overgeneralizes the scope, as it only applies to the application name in Project Settings, not the project directory itself.",
+      "evidence": "you can override it on a per-platform basis using :ref:`feature tags <doc_feature_tags>\"",
+      "required_action": "Clarify that '[project_name]' override via feature tags only applies to application name, not project directory paths.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_16d55ee65c38",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_943086ae5d37_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_943086ae5d37"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim about Godot automatically importing files placed directly in the project folder restates well-known import mechanisms.",
+      "evidence": "",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_0adc400a1404",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_943086ae5d37_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_943086ae5d37"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim about Godot supporting manual file copy and drag-and-drop for resource files restates an import mechanism detail.",
+      "evidence": "",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_5658b7726a93",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_943086ae5d37_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_943086ae5d37"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim that imported assets are hidden internally in a 'res://.godot/imported/' folder restates the import mechanism's internal behavior.",
+      "evidence": "",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_5afca0353554",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_943086ae5d37_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_943086ae5d37"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim that accessing imported assets via code requires the Resource Loader restates an import mechanism's programming necessity.",
+      "evidence": "",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_c83b59ecee8b",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_943086ae5d37_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_943086ae5d37"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim that the Resource Loader cannot access non-imported files restates a Resource Loader limitation.",
+      "evidence": "",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_04882fc2b279",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim restates that a simple fix would be to rearrange the code slightly in Godot's VariantParser to handle reading '-INF' or any negated identifier, without adding new information.",
+      "evidence": "A simple fix would be to rearrange this code slightly, so that it only needs to check for a leading ' - ' once.",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_b0f246a8a660",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c50580a705c4_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_c50580a705c4"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that 'Godot creates two new PNG files when double-clicking on a `.gltf` file' overgeneralizes from the given context which discusses issues with importing specific types of resources, not the general behavior when double-clicking `.gltf` files.",
+      "evidence": "The evidence excerpt mentions specific issues with importing `icon.svg` and that an error occurs when double-clicking PNG files in a minimal reproduction project. This does not directly support the claim about Godot creating two new PNG files for all `.gltf` files.",
+      "required_action": "Clarify or limit the claim to only the specific import issues mentioned, rather than making a general statement about behavior when double-clicking `.gltf` files.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_4def4c7aa427",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c50580a705c4_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_c50580a705c4"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim 'A minimal reproduction project is available to demonstrate this issue' restates the provided context and does not add significant synthesis value on its own.",
+      "evidence": "",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_97665fb5c4d6",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c50580a705c4_ollama_intern_21"
+      ],
+      "source_ids": [
+        "src_c50580a705c4"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that 'The cyclic resource loading issue particularly affects Curve resources' overgeneralizes from the source which discusses this issue across multiple Godot versions, but does not focus specifically on Curve resources.",
+      "evidence": "While the claim mentions Curve resources are affected, the provided context discusses issues in versions 4.6.1, 4.6, and 4.5 without focusing solely on Curves.",
+      "required_action": "Specify if this issue is particularly severe or prevalent in Curve resources beyond the general Godot versions it affects.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_98e0dfa2e814",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_8b484efdebe2_ollama_intern_19"
+      ],
+      "source_ids": [
+        "src_8b484efdebe2"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim 'The Godot engine contains a check in Range.cpp that disallows non-finite values' restates the provided context and does not add significant synthesis value on its own.",
+      "evidence": "",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_597cb764dc37",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_8b484efdebe2_ollama_intern_23"
+      ],
+      "source_ids": [
+        "src_8b484efdebe2"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that removing NodePath usages can 'mitigate null-related issues in Godot' overgeneralizes based on a single anecdote of a problem being resolved.",
+      "evidence": "Thanks to this it seems like the rare problems related to NodePaths being null is now gone.",
+      "required_action": "The claim should be revised to only reflect the specific scenario mentioned, rather than making broad generalizations about mitigating all null issues.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_0d19b640cb45",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_8b484efdebe2_ollama_intern_26"
+      ],
+      "source_ids": [
+        "src_8b484efdebe2"
+      ],
+      "category": "scope_widening",
+      "severity": "warn",
+      "summary": "The claim about Godot encountering a hard crash when loading scenes after hours of gameplay widens the scope to imply it's an engine-wide issue, but the evidence suggests it's specific to Windows.",
+      "evidence": "This might be a Windows specific problem... they get the most playtime and thus encounter this random problem the most.",
+      "required_action": "The claim should specify that the hard crash issue is only known to affect Windows users based on the provided evidence.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_7e0fddb54563",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_d8935f3b0347_ollama_intern_141"
+      ],
+      "source_ids": [
+        "src_d8935f3b0347"
+      ],
+      "category": "scope_widening",
+      "severity": "warn",
+      "summary": "The claim about the returned value of `get_process_delta_time` may vary from frame to frame uses a universal quantifier ('may') but the scope is quite narrow, discussing a single method.",
+      "evidence": ":ref:`float<class_float>` **get_process_delta_time**\\ ( \\ ) |const| :ref:`🔗<class_Node_method_get_process_delta_time>` … Returns the time elapsed (in seconds) since the last process callback. This value is identical to :ref:`_process()<class_Node_private_method__process>`'s ``delta`` parameter, and may vary from frame to frame. See also :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`.",
+      "required_action": "Revise the claim to better match the scope or provide additional context.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_4eeb3b051b6b",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c50580a705c4_ollama_intern_16",
+        "clm_c50580a705c4_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_c50580a705c4"
+      ],
+      "category": "scope_widening",
+      "severity": "warn",
+      "summary": "The universal quantifier 'all' is used in the claim, but the scope mentions specific Godot versions (4.6.1, 4.6, and 4.5).",
+      "evidence": "The assert: The cyclic resource loading issue particularly affects Curve resources.\r\nThe scope: The source asserts that this cyclic resource loading issue affects Godot versions 4.6.1, 4.6, and 4.5.",
+      "required_action": "Rephrase the claim to be more specific about the affected versions or narrow down the scope of the assertion.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_6b1e93284b51",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_3bf41f24d47a_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_3bf41f24d47a"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_3bf41f24d47a_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Resource serves primarily as data containers for serializable objects.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_5d572af537f8",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_3bf41f24d47a_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_3bf41f24d47a"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_3bf41f24d47a_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Resource is a base class for all Godot-specific resource types.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_d2a669fd6b79",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_3bf41f24d47a_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_3bf41f24d47a"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_3bf41f24d47a_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Resources are reference-counted and freed when no longer in use.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_082c47d9ac32",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_3bf41f24d47a_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_3bf41f24d47a"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_3bf41f24d47a_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Resources can be nested within other resources and saved on disk.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_438c48f1cb7f",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_3bf41f24d47a_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_3bf41f24d47a"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_3bf41f24d47a_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Resource has a private method called _get_rid()",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_f3dbebb56664",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_3bf41f24d47a_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_3bf41f24d47a"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_3bf41f24d47a_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: If 'duplicate' is true, each scene instance using the resource has its own copy.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_bf4697cade63",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_3bf41f24d47a_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_3bf41f24d47a"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_3bf41f24d47a_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Changing 'duplicate' at runtime does not affect already created duplicates.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_99e014861178",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_3bf41f24d47a_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_3bf41f24d47a"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_3bf41f24d47a_ollama_intern_14 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Resource.duplicate() returns a new resource with copied export properties.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_6665e022653f",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_3bf41f24d47a_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_3bf41f24d47a"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_3bf41f24d47a_ollama_intern_15 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Resource.duplicate() returns a deep copy if the 'deep' parameter is true.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_7aca74eea17b",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_3bf41f24d47a_ollama_intern_26"
+      ],
+      "source_ids": [
+        "src_3bf41f24d47a"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_3bf41f24d47a_ollama_intern_26 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Resource primarily serves as a container for serializable objects.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_dc777c2646da",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_ef84790b4914_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_ef84790b4914"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ef84790b4914_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ResourceLoader is a singleton used to load resource files from the filesystem.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_d9fa179f6ea4",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_ef84790b4914_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_ef84790b4914"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ef84790b4914_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ResourceLoader is not used to load non-resource files such as plain text files.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_0099a82b8a1a",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_ef84790b4914_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_ef84790b4914"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ef84790b4914_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The ResourceLoader class has a method called add_resource_format_loader.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_04c5542e5afc",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_ef84790b4914_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_ef84790b4914"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ef84790b4914_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The ResourceLoader class has an enumeration called ThreadLoadStatus.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_2409c9ac09f6",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_ef84790b4914_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_ef84790b4914"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ef84790b4914_ollama_intern_11 has no 'not' constraint recorded.",
+      "evidence": "Asserts: exists checks if a resource exists based on the provided path and type hint.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_c6331498c404",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_ef84790b4914_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_ef84790b4914"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ef84790b4914_ollama_intern_12 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ResourceLoader returns whether a recognized resource exists for the given path.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_d211b8d42edb",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_ef84790b4914_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_ef84790b4914"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ef84790b4914_ollama_intern_13 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ResourceLoader can take an optional type hint to specify the resource type.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_748f2cafe374",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_ef84790b4914_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_ef84790b4914"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ef84790b4914_ollama_intern_14 has no 'not' constraint recorded.",
+      "evidence": "Asserts: get_cached_ref() returns the cached resource reference for a given path.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_b65e97f84eb5",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_ef84790b4914_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_ef84790b4914"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ef84790b4914_ollama_intern_15 has no 'not' constraint recorded.",
+      "evidence": "Asserts: get_dependencies() returns the dependencies for a resource at a given path.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_2a1c4f31dfb0",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_ef84790b4914_ollama_intern_22"
+      ],
+      "source_ids": [
+        "src_ef84790b4914"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ef84790b4914_ollama_intern_22 has no 'not' constraint recorded.",
+      "evidence": "Asserts: ResourceLoader.load_threaded_request() loads resources using threads.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_ad6f00a6e2be",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_bc58f284031b_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_bc58f284031b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_bc58f284031b_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: PackedScene is an abstraction of a serialized scene.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_88f9bd62ccb4",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_bc58f284031b_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_bc58f284031b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_bc58f284031b_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: PackedScene can save a node to a file, including all nodes it owns.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_d096f0cce950",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_bc58f284031b_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_bc58f284031b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_bc58f284031b_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: PackedScene provides an interface to load serialized scenes.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_1bdf551cb488",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_bc58f284031b_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_bc58f284031b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_bc58f284031b_ollama_intern_11 has no 'not' constraint recorded.",
+      "evidence": "Asserts: PackedScene enables manipulation of serialized scenes.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_e861de8614ba",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_d8935f3b0347_ollama_intern_141"
+      ],
+      "source_ids": [
+        "src_d8935f3b0347"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d8935f3b0347_ollama_intern_141 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The returned value of `get_process_delta_time` may vary from frame to frame.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.633Z"
+    },
+    {
+      "finding_id": "fnd_c58f1a74ad7d",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_d8935f3b0347_ollama_intern_172"
+      ],
+      "source_ids": [
+        "src_d8935f3b0347"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d8935f3b0347_ollama_intern_172 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The remove_from_group method removes a node from a specific group.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_2eccb4b0b5dd",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_d8935f3b0347_ollama_intern_173"
+      ],
+      "source_ids": [
+        "src_d8935f3b0347"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d8935f3b0347_ollama_intern_173 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The reparent method changes a node's parent while preserving owner if possible.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_c7fbcff68548",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_d8935f3b0347_ollama_intern_190"
+      ],
+      "source_ids": [
+        "src_d8935f3b0347"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d8935f3b0347_ollama_intern_190 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Enabling `set_process_shortcut_input` enables shortcut processing for a node.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_77bb17303f29",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_0b13e026c1cc_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_0b13e026c1cc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_0b13e026c1cc_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Resources in Godot are loaded only once from disk and shared across the project.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_35a620939346",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_0b13e026c1cc_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_0b13e026c1cc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_0b13e026c1cc_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Nodes and resources in Godot can contain other resources as properties.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_563dad1b1baf",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_0b13e026c1cc_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_0b13e026c1cc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_0b13e026c1cc_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Scenes saved to disk in Godot are resources of type PackedScene.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_1f6c031db559",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_0b13e026c1cc_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_0b13e026c1cc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_0b13e026c1cc_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: To instantiate an instance of a scene, use the PackedScene.instantiate() method.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_97551ca88ee7",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_0b13e026c1cc_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_0b13e026c1cc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_0b13e026c1cc_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot's resources automatically free themselves when no longer in use.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_7b92716f3088",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_0b13e026c1cc_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_0b13e026c1cc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_0b13e026c1cc_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot's Inspector renders and edits resource files out-of-the-box.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_180eff9b662f",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_0b13e026c1cc_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_0b13e026c1cc"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_0b13e026c1cc_ollama_intern_17 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Resources in Godot can store data separate from nodes.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_f3ccd05500e7",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_55a63071c9c1_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_55a63071c9c1"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55a63071c9c1_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Scenes should be used for creating concepts specific to a game.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_466d07741fe6",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_55a63071c9c1_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_55a63071c9c1"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55a63071c9c1_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Scripts are best suited for reusable tools across projects.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_ccde5cd08a81",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_55a63071c9c1_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_55a63071c9c1"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_55a63071c9c1_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Scenes define an engine class extension with declarative code.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_40d0c2b02b79",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_cfb7cbc09d44_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_cfb7cbc09d44"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_cfb7cbc09d44_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot uses UNIX-style path separators in its projects.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_9addea97609e",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_cfb7cbc09d44_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_cfb7cbc09d44"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_cfb7cbc09d44_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot supports UNIX-style path separators on all platforms.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_d62dbb22db25",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_cfb7cbc09d44_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_cfb7cbc09d44"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_cfb7cbc09d44_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot recommends using forward slashes in path-related methods.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_ec34a7035ea3",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_cfb7cbc09d44_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_cfb7cbc09d44"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_cfb7cbc09d44_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot uses 'res://' to access files relative to the project's root folder.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_e50018d4f099",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_cfb7cbc09d44_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_cfb7cbc09d44"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_cfb7cbc09d44_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot uses 'user://' to access persistent user data.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_2a749c040451",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_cfb7cbc09d44_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_cfb7cbc09d44"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_cfb7cbc09d44_ollama_intern_7 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot uses UNIX-style path separators in project files.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_73266130b0d5",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_cfb7cbc09d44_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_cfb7cbc09d44"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_cfb7cbc09d44_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Project-specific data in Godot is stored under '[project_name]' directory.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_8371650d33ba",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_cfb7cbc09d44_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_cfb7cbc09d44"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_cfb7cbc09d44_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: '[project_name]' can be overridden on a per-platform basis using feature tags.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_9c9982779ebb",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_cfb7cbc09d44_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_cfb7cbc09d44"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_cfb7cbc09d44_ollama_intern_15 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The Steam release of Godot uses self-contained mode by default.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_1cf4228a6daf",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_cfb7cbc09d44_ollama_intern_16"
+      ],
+      "source_ids": [
+        "src_cfb7cbc09d44"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_cfb7cbc09d44_ollama_intern_16 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Self-contained mode is not yet supported in exported Godot projects.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_965877a8172d",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_943086ae5d37_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_943086ae5d37"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_943086ae5d37_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot automatically imports files placed directly in the project folder.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_b5be927439cb",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_943086ae5d37_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_943086ae5d37"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_943086ae5d37_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot supports manual file copy and drag-and-drop for resource files.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_049ee818160f",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_943086ae5d37_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_943086ae5d37"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_943086ae5d37_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Imported assets are hidden internally in a ``res://.godot/imported/`` folder.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_f44dda6697b7",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_943086ae5d37_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_943086ae5d37"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_943086ae5d37_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The Resource Loader cannot access non-imported files.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_a87f64e7dcea",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Users can type both 'inf' and 'INF' in Godot's editor inspector.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_76193981b386",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_1 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_644fddf4baa8",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Capitalizing displayed and serialized non-finite values improves consistency.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_7e4f3768bcdf",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_3 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_3ad0723f3b29",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: VariantParser cannot parse '-INF' as a single thing.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_1446d3784300",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_4 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_48ba25e34d34",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: A fix can be implemented to handle '-INF' correctly in VariantParser.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_f375a509e0a1",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_5 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_e0ac1d000512",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The author is using Godot Engine version v4.5.2.rc.custom_build.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_20b18aeac495",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_10 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_622ecf5a88e8",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_19"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_19 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot's slider node has inconsistent behavior regarding its minimum value.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_634225905488",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_19"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_19 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_4936d24568a7",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_20"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_20 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Setting the slider's value to zero explicitly does not resolve the issue.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_38e5d2e340bc",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_20"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_20 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_ac350e8d250e",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_21"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_21 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The initial value of the slider is not stored in the .tscn file.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_98edbd8cc4bb",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_21"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_21 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_e99c10d76256",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_24"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_24 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot's editor displays non-finite values such as infinity and NaN in real-time.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_cdc8641798c2",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_24"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_24 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_364e677128c0",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_25"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_25 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot allows users to modify 'inf' and 'INF' values through the editor.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_7f45374e1e79",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c5ed9836ffb5_ollama_intern_25"
+      ],
+      "source_ids": [
+        "src_c5ed9836ffb5"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_c5ed9836ffb5_ollama_intern_25 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_feb69f903376",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c50580a705c4_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_c50580a705c4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c50580a705c4_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The issue particularly affects Curve and potentially other exported resources.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_7f185c0a1b5b",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c50580a705c4_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_c50580a705c4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c50580a705c4_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot creates two new PNG files when double-clicking on a `.gltf` file.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_1aaf88639f7a",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c50580a705c4_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_c50580a705c4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c50580a705c4_ollama_intern_11 has no 'not' constraint recorded.",
+      "evidence": "Asserts: A minimal reproduction project is available to demonstrate this issue.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_88e1622b2178",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c50580a705c4_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_c50580a705c4"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_c50580a705c4_ollama_intern_11 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_7afdda832adf",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c50580a705c4_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_c50580a705c4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c50580a705c4_ollama_intern_12 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The error seems to be exclusive to Godot version 4.4.beta3.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_414c7d2f0b10",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c50580a705c4_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_c50580a705c4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c50580a705c4_ollama_intern_14 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Creating a new `EmployeeJob` resource works fine, even in v4.4.beta3.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_c8ce060b792e",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c50580a705c4_ollama_intern_16"
+      ],
+      "source_ids": [
+        "src_c50580a705c4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c50580a705c4_ollama_intern_16 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The cyclic resource loading issue particularly affects Curve resources.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_95070570bb5e",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c50580a705c4_ollama_intern_16"
+      ],
+      "source_ids": [
+        "src_c50580a705c4"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_c50580a705c4_ollama_intern_16 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.634Z"
+    },
+    {
+      "finding_id": "fnd_49c9bcabd2d8",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c50580a705c4_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_c50580a705c4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c50580a705c4_ollama_intern_17 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The cyclic resource loading issue may also affect other exported resources.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "finding_id": "fnd_bceedafa4daf",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c50580a705c4_ollama_intern_20"
+      ],
+      "source_ids": [
+        "src_c50580a705c4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c50580a705c4_ollama_intern_20 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot version 4.6.1 experiences cyclic resource loading issues.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "finding_id": "fnd_5f3d8a90798c",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c50580a705c4_ollama_intern_20"
+      ],
+      "source_ids": [
+        "src_c50580a705c4"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_c50580a705c4_ollama_intern_20 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "finding_id": "fnd_ab04f8874e53",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_c50580a705c4_ollama_intern_21"
+      ],
+      "source_ids": [
+        "src_c50580a705c4"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c50580a705c4_ollama_intern_21 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Curve resources are particularly affected by cyclic loading issues in Godot.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "finding_id": "fnd_eea619b1753f",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_8b484efdebe2_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_8b484efdebe2"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8b484efdebe2_ollama_intern_7 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Default values for PackedScene are not saved in Godot engine.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "finding_id": "fnd_2386652c5092",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_8b484efdebe2_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_8b484efdebe2"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_8b484efdebe2_ollama_intern_7 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "finding_id": "fnd_2dea6936ca7f",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_8b484efdebe2_ollama_intern_19"
+      ],
+      "source_ids": [
+        "src_8b484efdebe2"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8b484efdebe2_ollama_intern_19 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The Godot engine contains a check in Range.cpp that disallows non-finite values.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "finding_id": "fnd_6f5b68706a76",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_8b484efdebe2_ollama_intern_19"
+      ],
+      "source_ids": [
+        "src_8b484efdebe2"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_8b484efdebe2_ollama_intern_19 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "finding_id": "fnd_8bfe12aa1772",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_8b484efdebe2_ollama_intern_23"
+      ],
+      "source_ids": [
+        "src_8b484efdebe2"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8b484efdebe2_ollama_intern_23 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Removing NodePath usages from code can mitigate null-related issues in Godot.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "finding_id": "fnd_711a2849fa7e",
+      "section_id": "02-scene-resource-serialization",
+      "claim_ids": [
+        "clm_8b484efdebe2_ollama_intern_26"
+      ],
+      "source_ids": [
+        "src_8b484efdebe2"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_8b484efdebe2_ollama_intern_26 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    }
+  ],
+  "claim_reviews": [
+    {
+      "claim_id": "clm_3bf41f24d47a_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_6b1e93284b51"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_3bf41f24d47a_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_5d572af537f8"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_3bf41f24d47a_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_d2a669fd6b79"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_3bf41f24d47a_ollama_intern_4",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_082c47d9ac32"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_3bf41f24d47a_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_438c48f1cb7f"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_3bf41f24d47a_ollama_intern_9",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_f3dbebb56664"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_3bf41f24d47a_ollama_intern_10",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_bf4697cade63"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_3bf41f24d47a_ollama_intern_14",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_99e014861178"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_3bf41f24d47a_ollama_intern_15",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_6665e022653f"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_3bf41f24d47a_ollama_intern_26",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_4814246520c7",
+        "fnd_7aca74eea17b"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_ef84790b4914_ollama_intern_1",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_4859c535de7c",
+        "fnd_dc777c2646da"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_ef84790b4914_ollama_intern_3",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_4859c535de7c",
+        "fnd_d9fa179f6ea4"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_ef84790b4914_ollama_intern_4",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_0099a82b8a1a"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_ef84790b4914_ollama_intern_5",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_04c5542e5afc"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_ef84790b4914_ollama_intern_11",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_45cd24c6b691",
+        "fnd_2409c9ac09f6"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_ef84790b4914_ollama_intern_12",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_c6331498c404"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_ef84790b4914_ollama_intern_13",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_d211b8d42edb"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_ef84790b4914_ollama_intern_14",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_748f2cafe374"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_ef84790b4914_ollama_intern_15",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_b65e97f84eb5"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_ef84790b4914_ollama_intern_22",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_2a1c4f31dfb0"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_bc58f284031b_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ad6f00a6e2be"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_bc58f284031b_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Findings: definition_drift (warn).",
+      "finding_ids": [
+        "fnd_b829149600e1",
+        "fnd_88f9bd62ccb4"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_bc58f284031b_ollama_intern_10",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_d096f0cce950"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_bc58f284031b_ollama_intern_11",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_f68ce9f0ed49",
+        "fnd_1bdf551cb488"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_d8935f3b0347_ollama_intern_133",
+      "decision": "accepted_for_synthesis",
+      "reason": "Findings: definition_drift (warn).",
+      "finding_ids": [
+        "fnd_b829149600e1"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_d8935f3b0347_ollama_intern_135",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_d8935f3b0347_ollama_intern_141",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: scope_widening (warn).",
+      "finding_ids": [
+        "fnd_7e0fddb54563",
+        "fnd_e861de8614ba"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_d8935f3b0347_ollama_intern_172",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_c58f1a74ad7d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_d8935f3b0347_ollama_intern_173",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_2eccb4b0b5dd"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_d8935f3b0347_ollama_intern_184",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_d8935f3b0347_ollama_intern_185",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_d8935f3b0347_ollama_intern_186",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_d8935f3b0347_ollama_intern_188",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_d8935f3b0347_ollama_intern_190",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_c7fbcff68548"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_0b13e026c1cc_ollama_intern_2",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_8add2c1bd5f6",
+        "fnd_77bb17303f29"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_0b13e026c1cc_ollama_intern_3",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: scope_widening (warn).",
+      "finding_ids": [
+        "fnd_9ed1d1233e78",
+        "fnd_35a620939346"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_0b13e026c1cc_ollama_intern_5",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_563dad1b1baf"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_0b13e026c1cc_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_02975a0b449a",
+        "fnd_1f6c031db559"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_0b13e026c1cc_ollama_intern_8",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_8ecf8404907d",
+        "fnd_97551ca88ee7"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_0b13e026c1cc_ollama_intern_10",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_47679fce4469",
+        "fnd_7b92716f3088"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_0b13e026c1cc_ollama_intern_17",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_180eff9b662f"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_55a63071c9c1_ollama_intern_1",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_44bc157c2849",
+        "fnd_f3ccd05500e7"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_55a63071c9c1_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_466d07741fe6"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_55a63071c9c1_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ccde5cd08a81"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_cfb7cbc09d44_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_40d0c2b02b79"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_cfb7cbc09d44_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_146d50da2d98",
+        "fnd_9addea97609e"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_cfb7cbc09d44_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_d62dbb22db25"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_cfb7cbc09d44_ollama_intern_5",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_4edff6a3637a",
+        "fnd_ec34a7035ea3"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_cfb7cbc09d44_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_e50018d4f099"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_cfb7cbc09d44_ollama_intern_7",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_2a749c040451"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_cfb7cbc09d44_ollama_intern_8",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_73266130b0d5"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_cfb7cbc09d44_ollama_intern_9",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_aa0de436f007",
+        "fnd_8371650d33ba"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_cfb7cbc09d44_ollama_intern_15",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_9c9982779ebb"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_cfb7cbc09d44_ollama_intern_16",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_1cf4228a6daf"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_943086ae5d37_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_16d55ee65c38",
+        "fnd_965877a8172d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_943086ae5d37_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_0adc400a1404",
+        "fnd_b5be927439cb"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_943086ae5d37_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_5658b7726a93",
+        "fnd_049ee818160f"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_943086ae5d37_ollama_intern_4",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_5afca0353554"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_943086ae5d37_ollama_intern_5",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_c83b59ecee8b",
+        "fnd_f44dda6697b7"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_c5ed9836ffb5_ollama_intern_1",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_a87f64e7dcea",
+        "fnd_76193981b386"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_c5ed9836ffb5_ollama_intern_3",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_644fddf4baa8",
+        "fnd_7e4f3768bcdf"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_c5ed9836ffb5_ollama_intern_4",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_3ad0723f3b29",
+        "fnd_1446d3784300"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_c5ed9836ffb5_ollama_intern_5",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_04882fc2b279",
+        "fnd_48ba25e34d34",
+        "fnd_f375a509e0a1"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_c5ed9836ffb5_ollama_intern_10",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_e0ac1d000512",
+        "fnd_20b18aeac495"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_c5ed9836ffb5_ollama_intern_19",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_622ecf5a88e8",
+        "fnd_634225905488"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_c5ed9836ffb5_ollama_intern_20",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_4936d24568a7",
+        "fnd_38e5d2e340bc"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_c5ed9836ffb5_ollama_intern_21",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_ac350e8d250e",
+        "fnd_98edbd8cc4bb"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_c5ed9836ffb5_ollama_intern_24",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_e99c10d76256",
+        "fnd_cdc8641798c2"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_c5ed9836ffb5_ollama_intern_25",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_364e677128c0",
+        "fnd_7f45374e1e79"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_c50580a705c4_ollama_intern_4",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_feb69f903376"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_c50580a705c4_ollama_intern_8",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_b0f246a8a660",
+        "fnd_7f185c0a1b5b"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_c50580a705c4_ollama_intern_11",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_4def4c7aa427",
+        "fnd_1aaf88639f7a",
+        "fnd_88e1622b2178"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_c50580a705c4_ollama_intern_12",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_7afdda832adf"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_c50580a705c4_ollama_intern_14",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_414c7d2f0b10"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_c50580a705c4_ollama_intern_16",
+      "decision": "needs_source_repair",
+      "reason": "Findings: scope_widening (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_4eeb3b051b6b",
+        "fnd_c8ce060b792e",
+        "fnd_95070570bb5e"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_c50580a705c4_ollama_intern_17",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: scope_widening (warn).",
+      "finding_ids": [
+        "fnd_4eeb3b051b6b",
+        "fnd_49c9bcabd2d8"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_c50580a705c4_ollama_intern_20",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_bceedafa4daf",
+        "fnd_5f3d8a90798c"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_c50580a705c4_ollama_intern_21",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_97665fb5c4d6",
+        "fnd_ab04f8874e53"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_8b484efdebe2_ollama_intern_7",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_eea619b1753f",
+        "fnd_2386652c5092"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_8b484efdebe2_ollama_intern_19",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_98e0dfa2e814",
+        "fnd_2dea6936ca7f",
+        "fnd_6f5b68706a76"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_8b484efdebe2_ollama_intern_23",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_597cb764dc37",
+        "fnd_8bfe12aa1772"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    },
+    {
+      "claim_id": "clm_8b484efdebe2_ollama_intern_26",
+      "decision": "needs_source_repair",
+      "reason": "Findings: scope_widening (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_0d19b640cb45",
+        "fnd_711a2849fa7e"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T06:22:20.635Z"
+    }
+  ],
+  "decision_counts": {
+    "accepted_for_synthesis": 55,
+    "rejected": 0,
+    "needs_scope_repair": 11,
+    "needs_source_repair": 16,
+    "needs_contradiction_mapping": 0,
+    "needs_human_review": 0
+  },
+  "severity_counts": {
+    "info": 90,
+    "warn": 28,
+    "block": 0
+  },
+  "llm_findings_rejected_ungrounded": 0,
+  "promoted_to_reviewed": false
+}

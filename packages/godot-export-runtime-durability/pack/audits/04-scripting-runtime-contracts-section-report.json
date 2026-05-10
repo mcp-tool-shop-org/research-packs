@@ -1,0 +1,116 @@
+{
+  "report_id": "secrep_1778404885374_04-scripting-runtime-contracts",
+  "section_id": "04-scripting-runtime-contracts",
+  "reported_at": "2026-05-10T09:21:25.374Z",
+  "research_os_version": "0.3.2",
+  "status": "gated",
+  "sources": {
+    "fetched_ok": 9,
+    "source_cards": 9,
+    "publishers": [
+      "Godotengine"
+    ],
+    "primary_source_waiver": {
+      "status": "none",
+      "reason": null,
+      "compensating_controls": []
+    }
+  },
+  "extraction": {
+    "candidate_claims": 382,
+    "claims_per_source": [
+      {
+        "source_id": "src_169fec56d321",
+        "claims": 128
+      },
+      {
+        "source_id": "src_7f5634860b7d",
+        "claims": 56
+      },
+      {
+        "source_id": "src_68be97293369",
+        "claims": 51
+      },
+      {
+        "source_id": "src_04c541af2502",
+        "claims": 33
+      },
+      {
+        "source_id": "src_e3948fcd1578",
+        "claims": 33
+      },
+      {
+        "source_id": "src_ad0801f16070",
+        "claims": 30
+      },
+      {
+        "source_id": "src_33eded38b390",
+        "claims": 21
+      },
+      {
+        "source_id": "src_a9fd72b46944",
+        "claims": 19
+      },
+      {
+        "source_id": "src_d5da902c1965",
+        "claims": 11
+      }
+    ],
+    "claims_per_1k_words": 9.661347024456866,
+    "excerpt_pages_processed": 9,
+    "excerpt_id_failures": 0,
+    "malformed_extractor_outputs": 0,
+    "near_duplicate_clusters": 0,
+    "weak_scope_count": 8,
+    "generic_scope_count": 60,
+    "density_flags": 12
+  },
+  "contradictions": {
+    "pairs_compared": 72771,
+    "contradiction_candidates": 0,
+    "overgeneralization_risks": 0
+  },
+  "review": {
+    "reviewed": true,
+    "accepted_for_synthesis": 48,
+    "needs_scope_repair": 6,
+    "needs_source_repair": 21,
+    "needs_contradiction_mapping": 0,
+    "rejected": 0,
+    "needs_human_review": 1,
+    "rejection_or_repair_by_category": [
+      {
+        "category": "source_quality_problem",
+        "count": 21
+      },
+      {
+        "category": "overgeneralized_claim",
+        "count": 7
+      },
+      {
+        "category": "definition_drift",
+        "count": 3
+      },
+      {
+        "category": "scope_widening",
+        "count": 3
+      },
+      {
+        "category": "recommendation_exceeds_evidence",
+        "count": 1
+      }
+    ]
+  },
+  "acceptance": {
+    "candidate_claims": 382,
+    "accepted_for_synthesis": 48,
+    "acceptance_ratio": 0.1256544502617801,
+    "accepted_per_source": 5.333333333333333,
+    "accepted_per_1k_words": 1.2139912491464124,
+    "top_rejection_category": "source_quality_problem",
+    "claim_overproduction_fired": false,
+    "synthesis_ready": true
+  },
+  "gate_verdict": "warn",
+  "gate_synthesis_eligible": true
+}

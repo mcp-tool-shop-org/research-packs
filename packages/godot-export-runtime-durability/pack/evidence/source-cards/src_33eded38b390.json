@@ -1,0 +1,29 @@
+{
+  "source_id": "src_33eded38b390",
+  "receipt_id": "rcpt_33eded38b390_1778395595708",
+  "section_id": "04-scripting-runtime-contracts",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/scripting/gdscript/gdscript_advanced.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/scripting/gdscript/gdscript_advanced.rst",
+  "fetched_at": "2026-05-10T06:46:35.708Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "GDScript: An introduction to dynamic languages",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "GDScript is a dynamically typed language with advantages such as ease of use, quick code changes, readability, no compilation required for testing, and runtime efficiency.",
+    "In GDScript, variables are 'variant'-like meaning their type can change through assignment.",
+    "Function arguments in GDScript can be of different types.",
+    "GDScript uses pointers and references similarly to C++ and Java, allowing functions to modify objects passed as parameters."
+  ],
+  "limitations": [
+    "Less performance than statically typed languages due to dynamic typing.",
+    "More difficult to refactor code because symbols can't always be traced.",
+    "Errors that would normally be detected at compile time only appear at runtime in GDScript."
+  ],
+  "asserts": "GDScript is designed to allow games to be created quickly and efficiently, with the option to use C++ for computationally intensive parts.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T06:47:06.919Z"
+}

@@ -1,0 +1,11 @@
+https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_resource.rst
+https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_resourceloader.rst
+https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_packedscene.rst
+https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_node.rst
+https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/scripting/resources.rst
+https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/best_practices/scenes_versus_scripts.rst
+https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/io/data_paths.rst
+https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/assets_pipeline/import_process.rst
+https://api.github.com/search/issues?q=repo:godotengine/godot+tscn+compatibility+version&per_page=20
+https://api.github.com/search/issues?q=repo:godotengine/godot+resource+load+compatibility+regression&per_page=20
+https://api.github.com/search/issues?q=repo:godotengine/godot+PackedScene+compatibility&per_page=20

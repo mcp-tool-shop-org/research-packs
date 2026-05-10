@@ -1,0 +1,65 @@
+{
+  "summary_id": "tris_1778397619302_04-scripting-runtime-contracts",
+  "section_id": "04-scripting-runtime-contracts",
+  "triaged_at": "2026-05-10T07:20:19.302Z",
+  "research_os_version": "0.3.2",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 382,
+  "decisions": {
+    "needs_scope_repair": 244,
+    "selected_for_review": 76,
+    "parked_overdense_source": 51,
+    "parked_weak_scope": 8,
+    "parked_low_value": 3
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 76,
+  "selected_per_source": [
+    {
+      "source_id": "src_169fec56d321",
+      "selected": 10,
+      "total": 128
+    },
+    {
+      "source_id": "src_7f5634860b7d",
+      "selected": 10,
+      "total": 56
+    },
+    {
+      "source_id": "src_68be97293369",
+      "selected": 10,
+      "total": 51
+    },
+    {
+      "source_id": "src_04c541af2502",
+      "selected": 9,
+      "total": 33
+    },
+    {
+      "source_id": "src_e3948fcd1578",
+      "selected": 5,
+      "total": 33
+    },
+    {
+      "source_id": "src_ad0801f16070",
+      "selected": 5,
+      "total": 30
+    },
+    {
+      "source_id": "src_33eded38b390",
+      "selected": 10,
+      "total": 21
+    },
+    {
+      "source_id": "src_a9fd72b46944",
+      "selected": 10,
+      "total": 19
+    },
+    {
+      "source_id": "src_d5da902c1965",
+      "selected": 7,
+      "total": 11
+    }
+  ]
+}

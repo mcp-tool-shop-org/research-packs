@@ -1,0 +1,8 @@
+section_id: 06-mobile-web-export-durability
+purpose: iOS/Android/HTML5 export pipelines, browser WebGL/WASM compatibility, code-signing and keystore management, Apple App Store and Google Play policy and review, browser standards and runtime evolution.
+status: draft
+created_at: 2026-05-10T07:44:28.487Z
+max_time_minutes: 45
+min_sources: 8
+primary_sources_required: 2
+contradictions_required: true

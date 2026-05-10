@@ -1,0 +1,256 @@
+{
+  "audit_id": "cda_1778401492708_06-mobile-web-export-durability",
+  "section_id": "06-mobile-web-export-durability",
+  "audited_at": "2026-05-10T08:24:52.708Z",
+  "research_os_version": "0.3.2",
+  "candidate_claim_count": 402,
+  "source_count": 14,
+  "total_source_word_count": 322747,
+  "claims_per_1k_words": 1.2455576659116894,
+  "weak_scope_count": 4,
+  "generic_scope_count": 19,
+  "per_source": [
+    {
+      "source_id": "src_ba5aaca1a207",
+      "publisher": "Apple Inc.",
+      "source_word_count": 16192,
+      "claim_count": 127,
+      "claims_per_1k_words": 7.843379446640316,
+      "share_of_section": 0.31592039800995025,
+      "weak_scope_count": 4,
+      "generic_scope_count": 12
+    },
+    {
+      "source_id": "src_b777c089d810",
+      "publisher": null,
+      "source_word_count": 51605,
+      "claim_count": 44,
+      "claims_per_1k_words": 0.8526305590543551,
+      "share_of_section": 0.10945273631840796,
+      "weak_scope_count": 0,
+      "generic_scope_count": 1
+    },
+    {
+      "source_id": "src_7e04a97ea278",
+      "publisher": null,
+      "source_word_count": 51270,
+      "claim_count": 33,
+      "claims_per_1k_words": 0.6436512580456407,
+      "share_of_section": 0.08208955223880597,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_d63ce314a50f",
+      "publisher": "Godotengine",
+      "source_word_count": 3206,
+      "claim_count": 31,
+      "claims_per_1k_words": 9.669369931378666,
+      "share_of_section": 0.07711442786069651,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_e17170a435d3",
+      "publisher": null,
+      "source_word_count": 19751,
+      "claim_count": 28,
+      "claims_per_1k_words": 1.4176497392537086,
+      "share_of_section": 0.06965174129353234,
+      "weak_scope_count": 0,
+      "generic_scope_count": 2
+    },
+    {
+      "source_id": "src_5670dbff3e4d",
+      "publisher": "Google",
+      "source_word_count": 5644,
+      "claim_count": 26,
+      "claims_per_1k_words": 4.6066619418851875,
+      "share_of_section": 0.06467661691542288,
+      "weak_scope_count": 0,
+      "generic_scope_count": 3
+    },
+    {
+      "source_id": "src_083cda9d9328",
+      "publisher": "Apple Inc.",
+      "source_word_count": 2673,
+      "claim_count": 22,
+      "claims_per_1k_words": 8.23045267489712,
+      "share_of_section": 0.05472636815920398,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_5fda19aa5cd8",
+      "publisher": "Google",
+      "source_word_count": 148125,
+      "claim_count": 17,
+      "claims_per_1k_words": 0.11476793248945148,
+      "share_of_section": 0.04228855721393035,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_d726c169567d",
+      "publisher": "Godotengine",
+      "source_word_count": 1278,
+      "claim_count": 16,
+      "claims_per_1k_words": 12.519561815336463,
+      "share_of_section": 0.03980099502487562,
+      "weak_scope_count": 0,
+      "generic_scope_count": 1
+    },
+    {
+      "source_id": "src_4c6c14f4f6fa",
+      "publisher": "Godotengine",
+      "source_word_count": 1634,
+      "claim_count": 15,
+      "claims_per_1k_words": 9.179926560587516,
+      "share_of_section": 0.03731343283582089,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_0974a54becd4",
+      "publisher": "Mozilla",
+      "source_word_count": 9862,
+      "claim_count": 12,
+      "claims_per_1k_words": 1.2167917258162644,
+      "share_of_section": 0.029850746268656716,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_b2e50dff76fc",
+      "publisher": "Godotengine",
+      "source_word_count": 1267,
+      "claim_count": 11,
+      "claims_per_1k_words": 8.681925808997633,
+      "share_of_section": 0.02736318407960199,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_24107f739f88",
+      "publisher": "Mozilla",
+      "source_word_count": 9112,
+      "claim_count": 10,
+      "claims_per_1k_words": 1.0974539069359088,
+      "share_of_section": 0.024875621890547265,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_37ec19efa9ba",
+      "publisher": "Godotengine",
+      "source_word_count": 1128,
+      "claim_count": 10,
+      "claims_per_1k_words": 8.865248226950355,
+      "share_of_section": 0.024875621890547265,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    }
+  ],
+  "near_duplicate_clusters": [],
+  "flags": [
+    {
+      "type": "source_dominance",
+      "severity": "block",
+      "message": "Source src_ba5aaca1a207 contributes 127 of 402 claims (32% of section).",
+      "affects_source_ids": [
+        "src_ba5aaca1a207"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_b777c089d810 contributes 44 of 402 claims (11% of section).",
+      "affects_source_ids": [
+        "src_b777c089d810"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_7e04a97ea278 contributes 33 of 402 claims (8% of section).",
+      "affects_source_ids": [
+        "src_7e04a97ea278"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_d63ce314a50f contributes 31 of 402 claims (8% of section).",
+      "affects_source_ids": [
+        "src_d63ce314a50f"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_ba5aaca1a207 has 7.8 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_ba5aaca1a207"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_d63ce314a50f has 9.7 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_d63ce314a50f"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_083cda9d9328 has 8.2 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_083cda9d9328"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_d726c169567d has 12.5 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_d726c169567d"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_4c6c14f4f6fa has 9.2 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_4c6c14f4f6fa"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_b2e50dff76fc has 8.7 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_b2e50dff76fc"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_37ec19efa9ba has 8.9 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_37ec19efa9ba"
+      ],
+      "affects_claim_ids": []
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "receipt_id": "cle_1778397601423_04-scripting-runtime-contracts",
+  "section_id": "04-scripting-runtime-contracts",
+  "extracted_at": "2026-05-10T07:20:01.423Z",
+  "research_os_version": "0.3.2",
+  "extractor": "ollama-intern",
+  "extraction_method": "ollama_intern_propositional_paged",
+  "sources_processed": 9,
+  "sources_skipped": 0,
+  "sources_failed": 0,
+  "excerpt_ledgers_built": 9,
+  "claims_added": 382,
+  "claims_deduped": 0,
+  "claims_rejected_ungrounded": 0,
+  "claims_rejected_excerpt_id_missing": 0,
+  "claims_rejected_excerpt_id_malformed": 0,
+  "failures": []
+}

@@ -1,0 +1,28 @@
+{
+  "source_id": "src_53945c78a6f2",
+  "receipt_id": "rcpt_53945c78a6f2_1778385548888",
+  "section_id": "03-save-system-player-state-durability",
+  "url": "https://api.github.com/repos/godotengine/godot/issues/110466",
+  "final_url": "https://api.github.com/repos/godotengine/godot/issues/110466",
+  "fetched_at": "2026-05-10T03:59:08.888Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "ResourceSaver.save not saving 0 int values in 4.5 RC2",
+  "source_type": "forum",
+  "relevance": "low",
+  "key_points": [
+    "The ResourceSaver.save function does not save int fields with a value of 0.",
+    "The saved .tres file omits the int fields set to 0 entirely.",
+    "A Minimal Reproduction Project (MRP) is provided to demonstrate the issue."
+  ],
+  "limitations": [
+    "Scope seems limited to a specific version of Godot (4.5 RC2)",
+    "No clear indication of how widespread this issue may be",
+    "Tested versions and system information are provided but not thoroughly analyzed"
+  ],
+  "asserts": "ResourceSaver.save fails to save int fields with values of 0 in the .tres file format.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T03:59:31.183Z"
+}

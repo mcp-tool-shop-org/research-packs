@@ -1,0 +1,27 @@
+{
+  "source_id": "src_03cb99fe6df9",
+  "receipt_id": "rcpt_03cb99fe6df9_1778388812834",
+  "section_id": "05-desktop-platform-export-durability",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_for_macos.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_for_macos.rst",
+  "fetched_at": "2026-05-10T04:53:32.834Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "Exporting for macOS",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "macOS apps exported with the official export templates are exported as a single \"Universal 2\" binary .app bundle.",
+    "The app bundle can be exported as is, packed in a ZIP archive, or packed in a DMG disk image (only supported when exporting from macOS).",
+    "Built-in and Xcode code signing options are available for exporting signed apps."
+  ],
+  "limitations": [
+    "Projects exported without code signing and notarization will be blocked by Gatekeeper if they are downloaded from unknown sources.",
+    "Due to file system limitations, .app bundles exported from Windows lack the executable flag and won't run on macOS. Projects exported as .zip are not affected."
+  ],
+  "asserts": "The source describes how to export a Godot project to macOS using official export templates.",
+  "scope": "The scope of this source is exporting a Godot game or project to a macOS app bundle from the Godot engine.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T04:54:01.822Z"
+}

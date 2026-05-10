@@ -1,0 +1,58 @@
+{
+  "name": "godot-export-runtime-durability",
+  "topic": "What makes a Godot narrative game build durable across engine versions, export templates, platform targets, asset pipelines, save/runtime behavior, and distribution surfaces?",
+  "frozen_at": "2026-05-10T09:46:27.052Z",
+  "research_os_version": "0.1.0",
+  "sections": [
+    {
+      "id": "01-engine-version-export-template-compat",
+      "accepted_claims": 34,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "03-save-system-player-state-durability",
+      "accepted_claims": 47,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "05-desktop-platform-export-durability",
+      "accepted_claims": 19,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "02-scene-resource-serialization",
+      "accepted_claims": 55,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "04-scripting-runtime-contracts",
+      "accepted_claims": 48,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "06-mobile-web-export-durability",
+      "accepted_claims": 53,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "07-distribution-surface-durability",
+      "accepted_claims": 20,
+      "gate": "warn",
+      "synthesis_eligible": true
+    }
+  ],
+  "totals": {
+    "sections": 7,
+    "accepted_claims": 276,
+    "dispositioned": 0,
+    "unresolved_contradictions": 0
+  },
+  "freeze_receipt_sha256": "55a65792caed9c026e76d4913c939a0f656a777a0a130e0b8a0d29ad6cf41235",
+  "operator_notes": "Godot narrative-game build durability — layered release-state problem across engine/export-template versioning, scene/resource serialization, save-state migration, scripting/runtime contracts, desktop platform requirements, mobile/web gatekeepers, and distribution surfaces. Experiment 3 pack #3 of 3 — closes the Experiment 3 triangle (workflow / protocol / engine)."
+}

@@ -1,0 +1,226 @@
+{
+  "audit_id": "cda_1778390182207_05-desktop-platform-export-durability",
+  "section_id": "05-desktop-platform-export-durability",
+  "audited_at": "2026-05-10T05:16:22.207Z",
+  "research_os_version": "0.3.2",
+  "candidate_claim_count": 231,
+  "source_count": 11,
+  "total_source_word_count": 99492,
+  "claims_per_1k_words": 2.321794717163189,
+  "weak_scope_count": 10,
+  "generic_scope_count": 23,
+  "per_source": [
+    {
+      "source_id": "src_da88881cf961",
+      "publisher": null,
+      "source_word_count": 17928,
+      "claim_count": 44,
+      "claims_per_1k_words": 2.454261490406069,
+      "share_of_section": 0.19047619047619047,
+      "weak_scope_count": 1,
+      "generic_scope_count": 2
+    },
+    {
+      "source_id": "src_e6e0e4cb4ec7",
+      "publisher": null,
+      "source_word_count": 53944,
+      "claim_count": 35,
+      "claims_per_1k_words": 0.6488209995550942,
+      "share_of_section": 0.15151515151515152,
+      "weak_scope_count": 0,
+      "generic_scope_count": 3
+    },
+    {
+      "source_id": "src_03cb99fe6df9",
+      "publisher": "Godotengine",
+      "source_word_count": 1756,
+      "claim_count": 31,
+      "claims_per_1k_words": 17.65375854214123,
+      "share_of_section": 0.1341991341991342,
+      "weak_scope_count": 6,
+      "generic_scope_count": 1
+    },
+    {
+      "source_id": "src_2b06a4f43c1e",
+      "publisher": null,
+      "source_word_count": 17618,
+      "claim_count": 29,
+      "claims_per_1k_words": 1.6460438188216595,
+      "share_of_section": 0.12554112554112554,
+      "weak_scope_count": 2,
+      "generic_scope_count": 3
+    },
+    {
+      "source_id": "src_d7289e5beb6d",
+      "publisher": "Microsoft",
+      "source_word_count": 2750,
+      "claim_count": 26,
+      "claims_per_1k_words": 9.454545454545455,
+      "share_of_section": 0.11255411255411256,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_c3216b0c8944",
+      "publisher": "Apple Inc.",
+      "source_word_count": 1806,
+      "claim_count": 19,
+      "claims_per_1k_words": 10.520487264673312,
+      "share_of_section": 0.08225108225108226,
+      "weak_scope_count": 1,
+      "generic_scope_count": 5
+    },
+    {
+      "source_id": "src_ef2f01e1f840",
+      "publisher": "Microsoft",
+      "source_word_count": 1285,
+      "claim_count": 14,
+      "claims_per_1k_words": 10.894941634241244,
+      "share_of_section": 0.06060606060606061,
+      "weak_scope_count": 0,
+      "generic_scope_count": 1
+    },
+    {
+      "source_id": "src_1ceb96fdb33a",
+      "publisher": "Godotengine",
+      "source_word_count": 750,
+      "claim_count": 10,
+      "claims_per_1k_words": 13.333333333333334,
+      "share_of_section": 0.04329004329004329,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_5b703b620109",
+      "publisher": "Godotengine",
+      "source_word_count": 727,
+      "claim_count": 10,
+      "claims_per_1k_words": 13.75515818431912,
+      "share_of_section": 0.04329004329004329,
+      "weak_scope_count": 0,
+      "generic_scope_count": 8
+    },
+    {
+      "source_id": "src_d4edcfa48733",
+      "publisher": "Apple Inc.",
+      "source_word_count": 365,
+      "claim_count": 7,
+      "claims_per_1k_words": 19.178082191780824,
+      "share_of_section": 0.030303030303030304,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_7d0fca124716",
+      "publisher": "Godotengine",
+      "source_word_count": 563,
+      "claim_count": 6,
+      "claims_per_1k_words": 10.657193605683837,
+      "share_of_section": 0.025974025974025976,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    }
+  ],
+  "near_duplicate_clusters": [],
+  "flags": [
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_da88881cf961 contributes 44 of 231 claims (19% of section).",
+      "affects_source_ids": [
+        "src_da88881cf961"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_e6e0e4cb4ec7 contributes 35 of 231 claims (15% of section).",
+      "affects_source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_03cb99fe6df9 contributes 31 of 231 claims (13% of section).",
+      "affects_source_ids": [
+        "src_03cb99fe6df9"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_03cb99fe6df9 has 17.7 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_03cb99fe6df9"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_d7289e5beb6d has 9.5 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_d7289e5beb6d"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_c3216b0c8944 has 10.5 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_c3216b0c8944"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_ef2f01e1f840 has 10.9 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_ef2f01e1f840"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_1ceb96fdb33a has 13.3 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_1ceb96fdb33a"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_5b703b620109 has 13.8 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_5b703b620109"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_d4edcfa48733 has 19.2 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_d4edcfa48733"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_7d0fca124716 has 10.7 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_7d0fca124716"
+      ],
+      "affects_claim_ids": []
+    }
+  ]
+}

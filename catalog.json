@@ -35,6 +35,18 @@
         "preserved_contradiction_records": 0
       },
       "link": "packages/xrpl-creator-token-durability/"
+    },
+    {
+      "name": "godot-export-runtime-durability",
+      "topic": "What makes a Godot narrative game build durable across engine versions, export templates, platform targets, asset pipelines, save/runtime behavior, and distribution surfaces?",
+      "frozen_at": "2026-05-10T09:46:27.052Z",
+      "totals": {
+        "sections": 7,
+        "accepted_claims": 276,
+        "dispositioned": 0,
+        "preserved_contradiction_records": 0
+      },
+      "link": "packages/godot-export-runtime-durability/"
     }
   ]
 }

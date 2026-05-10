@@ -1,0 +1,28 @@
+{
+  "source_id": "src_083cda9d9328",
+  "receipt_id": "rcpt_083cda9d9328_1778399464758",
+  "section_id": "06-mobile-web-export-durability",
+  "url": "https://docs.developer.apple.com/tutorials/data/documentation/xcode/distributing-your-app-for-beta-testing-and-releases.md",
+  "final_url": "https://developer.apple.com/tutorials/data/documentation/xcode/distributing-your-app-for-beta-testing-and-releases.md",
+  "fetched_at": "2026-05-10T07:51:04.758Z",
+  "publisher": "Apple Inc.",
+  "published_at": null,
+  "title": "Distributing your app for beta testing and releases",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Release your app to beta testers and users.",
+    "Choose a distribution method based on the app's platform, development stage, and whether you belong to the Apple Developer Program.",
+    "Before releasing your app to users, distribute your final build using one of the beta test methods."
+  ],
+  "limitations": [
+    "The source is documentation rather than an independent research report.",
+    "It provides general guidance but may not cover all possible scenarios or edge cases.",
+    "Specific steps and settings may vary depending on the Xcode version and app configuration."
+  ],
+  "asserts": "The source asserts that release of your app to beta testers and users is facilitated by choosing an appropriate distribution method based on factors such as platform, development stage, and membership in the Apple Developer Program.",
+  "scope": "The scope of this assertion is limited to the process of releasing apps for beta testing and official releases within the Xcode environment using various provided methods and options.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T07:51:35.732Z"
+}

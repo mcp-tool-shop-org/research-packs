@@ -1,0 +1,74 @@
+{
+  "summary_id": "tris_1778387174931_03-save-system-player-state-durability",
+  "section_id": "03-save-system-player-state-durability",
+  "triaged_at": "2026-05-10T04:26:14.931Z",
+  "research_os_version": "0.3.2",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 323,
+  "decisions": {
+    "selected_for_review": 76,
+    "needs_scope_repair": 207,
+    "parked_weak_scope": 12,
+    "parked_overdense_source": 28
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 76,
+  "selected_per_source": [
+    {
+      "source_id": "src_f7e212bc013e",
+      "selected": 10,
+      "total": 96
+    },
+    {
+      "source_id": "src_ec39871fb14e",
+      "selected": 10,
+      "total": 79
+    },
+    {
+      "source_id": "src_b00e2fac5e30",
+      "selected": 10,
+      "total": 35
+    },
+    {
+      "source_id": "src_d02146dfcea5",
+      "selected": 10,
+      "total": 24
+    },
+    {
+      "source_id": "src_c1cc3cb1f943",
+      "selected": 7,
+      "total": 19
+    },
+    {
+      "source_id": "src_a6a330af5a09",
+      "selected": 2,
+      "total": 16
+    },
+    {
+      "source_id": "src_f826c053d744",
+      "selected": 10,
+      "total": 16
+    },
+    {
+      "source_id": "src_d49f293c82bf",
+      "selected": 6,
+      "total": 16
+    },
+    {
+      "source_id": "src_f6badbefe774",
+      "selected": 7,
+      "total": 15
+    },
+    {
+      "source_id": "src_f6ad03378646",
+      "selected": 4,
+      "total": 6
+    },
+    {
+      "source_id": "src_53945c78a6f2",
+      "selected": 0,
+      "total": 1
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "source_id": "src_4c6c14f4f6fa",
+  "receipt_id": "rcpt_4c6c14f4f6fa_1778399370177",
+  "section_id": "06-mobile-web-export-durability",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_projects.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_projects.rst",
+  "fetched_at": "2026-05-10T07:49:30.177Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "Exporting projects",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Godot has a system for exporting projects to various platforms.",
+    "Exporting allows developers to distribute compiled binaries without sharing the full project source code.",
+    "The export process can be automated from the command line using flags like --export-release.",
+    "There are two pack file formats: PCK (uncompressed, recommended) and ZIP (compressed)."
+  ],
+  "limitations": [
+    "Not all platforms have templates installed yet.",
+    "Exporting requires familiarity with the SDKs of each platform for mobile distribution."
+  ],
+  "asserts": "The source documents Godot's built-in system for exporting projects to various platforms, including PC and mobile.",
+  "scope": "godot_export_system",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T07:49:53.430Z"
+}

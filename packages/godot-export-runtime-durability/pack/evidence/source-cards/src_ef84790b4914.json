@@ -1,0 +1,30 @@
+{
+  "source_id": "src_ef84790b4914",
+  "receipt_id": "rcpt_ef84790b4914_1778391780415",
+  "section_id": "02-scene-resource-serialization",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_resourceloader.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_resourceloader.rst",
+  "fetched_at": "2026-05-10T05:43:00.415Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "ResourceLoader",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "ResourceLoader is a singleton used to load resource files.",
+    "It uses ResourceFormatLoader classes to load files into memory and convert them to a format usable by the engine.",
+    "You have to import files into the engine first to load them using load().",
+    "Non-resource files like plain text cannot be read using ResourceLoader. Use FileAccess instead.",
+    "ResourceLoader offers methods for adding, removing and listing resource format loaders."
+  ],
+  "limitations": [
+    "Documentation does not cover all possible use cases and edge cases of ResourceLoader.",
+    "Some features or methods may require knowledge of the Godot Engine's internal workings to fully understand.",
+    "Examples provided in the documentation are limited to specific scenarios and may not encompass the full range of possibilities."
+  ],
+  "asserts": "ResourceLoader is the recommended way to load resource files within the Godot Engine, making use of ResourceFormatLoader classes for efficient file handling and conversion.",
+  "scope": "The context of these assertions refers specifically to the functionality and usage of the ResourceLoader class within the Godot Engine's architecture and resource management system.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T05:43:32.804Z"
+}

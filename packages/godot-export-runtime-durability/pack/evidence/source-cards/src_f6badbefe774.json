@@ -1,0 +1,30 @@
+{
+  "source_id": "src_f6badbefe774",
+  "receipt_id": "rcpt_f6badbefe774_1778385632189",
+  "section_id": "03-save-system-player-state-durability",
+  "url": "https://raw.githubusercontent.com/MrRobinOfficial/Godot-Saveable/main/README.md",
+  "final_url": "https://raw.githubusercontent.com/MrRobinOfficial/Godot-Saveable/main/README.md",
+  "fetched_at": "2026-05-10T04:00:32.189Z",
+  "publisher": "MrRobinOfficial",
+  "published_at": null,
+  "title": "Godot C# Saveable",
+  "source_type": "secondary",
+  "relevance": "high",
+  "key_points": [
+    "A save system for Godot C#",
+    "Saving entire node trees",
+    "Uses Newtonsoft.Json for serialization and deserialization",
+    "Supports encrypted, compressed, and regular modes",
+    "ISaveable interface to allow modular save/load structures"
+  ],
+  "limitations": [
+    "Depends on the Mono version of Godot (4.2.x)",
+    "Requires installation of Newtonsoft.Json package",
+    "Limited documentation available for some features"
+  ],
+  "asserts": "The source provides a save system for Godot C# projects using JSON format, supporting encrypted, compressed, and regular saves with an ISaveable interface.",
+  "scope": "The scope is the functionality and integration of this plugin into Godot C# projects for saving node trees and custom classes.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T04:00:59.948Z"
+}

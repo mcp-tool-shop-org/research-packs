@@ -1,0 +1,30 @@
+{
+  "source_id": "src_7f5634860b7d",
+  "receipt_id": "rcpt_7f5634860b7d_1778395758689",
+  "section_id": "04-scripting-runtime-contracts",
+  "url": "https://api.github.com/search/issues?q=repo:godotengine/godot+C%23+export+platform+support&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:godotengine/godot+C%23+export+platform+support&per_page=20",
+  "fetched_at": "2026-05-10T06:49:18.689Z",
+  "publisher": null,
+  "published_at": null,
+  "title": ".NET Add support for web export using static LibGodot",
+  "source_type": "forum",
+  "relevance": "high",
+  "key_points": [
+    "PR serves as an alternative to https://github.com/godotengine/godot/pull/106125.",
+    "Uses static LibGodot to link Godot as a library for web export.",
+    "A huge portion of this PR was adding LibGodot support to web platform and figuring out a way to pass a static library to the final step.",
+    "LibGodot setup itself doesn't use the module mono and instead uses a simple interface written natively in C#.",
+    "This works with JS import and export, single-threaded and multi-threaded builds, .NET 9 and .NET 10."
+  ],
+  "limitations": [
+    "It will force the support for Emscripten 3.1.56 until C# Emscripten is updated.",
+    "Can't export with GDExtensions supported.",
+    "Currently it is not a problem, but CoreCLR also uses `Object` without namespace, so it causes duplicate symbols for `Object` vtable."
+  ],
+  "asserts": "This PR adds support for web export using static LibGodot library in .NET platform.",
+  "scope": "Adds web export functionality to Godot engine using .NET and static LibGodot library.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T06:50:00.787Z"
+}

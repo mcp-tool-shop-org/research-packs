@@ -1,0 +1,30 @@
+{
+  "source_id": "src_d02146dfcea5",
+  "receipt_id": "rcpt_d02146dfcea5_1778385373746",
+  "section_id": "03-save-system-player-state-durability",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_configfile.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_configfile.rst",
+  "fetched_at": "2026-05-10T03:56:13.746Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "ConfigFile",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "ConfigFile is a helper class to handle INI-style files.",
+    "It allows storing and retrieving Variant values on the filesystem using INI-style formatting.",
+    "Stored values are identified by a section and a key.",
+    "ConfigFile objects can be saved to or parsed from a file, or used directly in memory.",
+    "The class provides methods for manipulating stored data, such as set_value(), clear(), and erase_section()."
+  ],
+  "limitations": [
+    "Section and property names cannot contain spaces.",
+    "Comments starting with a semicolon (``;``) can be added to the file but will be ignored on load.",
+    "The file extension does not have any impact on its formatting or behavior."
+  ],
+  "asserts": "ConfigFile is a suitable class for storing and retrieving INI-style formatted data on the filesystem.",
+  "scope": "The context of ConfigFile is within the Godot engine, specifically in scenarios where INI-style formatted data needs to be stored and loaded from the filesystem.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T03:56:45.403Z"
+}

@@ -1,0 +1,30 @@
+{
+  "source_id": "src_6e935dbe9826",
+  "receipt_id": "rcpt_6e935dbe9826_1778382011132",
+  "section_id": "01-engine-version-export-template-compat",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/feature_tags.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/feature_tags.rst",
+  "fetched_at": "2026-05-10T03:00:11.132Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Feature tags",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Godot has a special system to tag availability of features.",
+    "Each feature is represented as a string, which can refer to many things like platform name, architecture, type, supported texture compression algorithms, debug or release build, running from the editor or standalone binary, and more.",
+    "Features can be queried at runtime by calling OS.has_feature(name).",
+    "OS feature tags are used by GDExtension to determine which libraries to load.",
+    "There are default features, custom features, and features can be overridden in Project Settings."
+  ],
+  "limitations": [
+    "With the exception of texture compression, web_<platform> and movie feature tags, default feature tags are immutable.",
+    "Custom feature tags are not used when running a project from the editor, even if the export preset is marked as Runnable for your current platform.",
+    "To check whether a project exported to Web is running on a mobile device, use OS.has_feature(\"web_android\") or OS.has_feature(\"web_ios\"))."
+  ],
+  "asserts": "Godot provides a system of feature tags to represent the availability of features in different runtime conditions.",
+  "scope": "The main thrust applies to developers using Godot and exporting their projects for different platforms, architectures, and configurations.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T03:00:45.973Z"
+}

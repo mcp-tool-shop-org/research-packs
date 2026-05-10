@@ -1,0 +1,28 @@
+{
+  "source_id": "src_7e04a97ea278",
+  "receipt_id": "rcpt_7e04a97ea278_1778399680461",
+  "section_id": "06-mobile-web-export-durability",
+  "url": "https://api.github.com/search/issues?q=repo:godotengine/godot+web+export+wasm+webgl&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:godotengine/godot+web+export+wasm+webgl&per_page=20",
+  "fetched_at": "2026-05-10T07:54:40.461Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Memory Access Out Of Bounds On Web Export (Release Builds)",
+  "source_type": "forum",
+  "relevance": "high",
+  "key_points": [
+    "The issue is reproducible in Godot 4.6 stable but not in Godot 4.5.1 stable.",
+    "Two projects were upgraded from Godot 4.5.1 to Godot 4.6, and both experienced the memory access out of bounds error upon web export.",
+    "The issue does not occur when creating a new project with Godot 4.6 and exporting it for the web.",
+    "The problem was discovered after upgrading two separate projects from Godot 4.5.1 to Godot 4.6, resulting in failed web exports on Itch.io due to memory access out of bounds errors."
+  ],
+  "limitations": [
+    "The issue is specific to the upgrade from Godot 4.5.1 to 4.6.",
+    "It only affects web exports and has no impact on other export targets."
+  ],
+  "asserts": "Upgrading projects from Godot 4.5.1 to 4.6 can cause memory access out of bounds errors during web export.",
+  "scope": "The scope is limited to the specific case of upgrading projects from Godot 4.5.1 to 4.6 and experiencing web export issues due to memory access out of bounds errors.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T07:55:24.013Z"
+}

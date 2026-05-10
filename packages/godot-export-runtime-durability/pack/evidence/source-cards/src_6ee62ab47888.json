@@ -1,0 +1,27 @@
+{
+  "source_id": "src_6ee62ab47888",
+  "receipt_id": "rcpt_6ee62ab47888_1778382080400",
+  "section_id": "01-engine-version-export-template-compat",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_pcks.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_pcks.rst",
+  "fetched_at": "2026-05-10T03:01:20.400Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Exporting packs, patches, and mods",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Godot enables developers to add functionality to their game after it has been deployed through resource packs (PCK files or ZIP files).",
+    "Advantages of using PCK/ZIP files include incremental updates, offering downloadable content (DLC), supporting mods, and preventing source code disclosure.",
+    "Resource packs can contain scripts, scenes, shaders, models, textures, sound effects, music, and other assets suitable for import into the game."
+  ],
+  "limitations": [
+    "Loading PCK files for patches, mods or extra content requires coding a system to automatically load files based on their location and possibly name, which is a security vulnerability.",
+    "Godot provides no out-of-the-box way to prevent someone from copying the PCK file and putting it on another person's computer if used to distribute paid content like expansions."
+  ],
+  "asserts": "Resource packs (PCK files or ZIP files) enable developers to add functionality, patches, mods or extra content to their deployed game without needing to replace the entire game.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T03:01:52.397Z"
+}

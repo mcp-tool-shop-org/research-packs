@@ -1,0 +1,14 @@
+https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_for_ios.rst
+https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_for_android.rst
+https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_for_web.rst
+https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_projects.rst
+https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/one-click_deploy.rst
+https://developer.apple.com/app-store/review/guidelines/
+https://docs.developer.apple.com/tutorials/data/documentation/xcode/distributing-your-app-for-beta-testing-and-releases.md
+https://support.google.com/googleplay/android-developer/answer/9859152
+https://developer.android.com/studio/publish
+https://developer.mozilla.org/en-US/docs/WebAssembly
+https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
+https://api.github.com/search/issues?q=repo:godotengine/godot+ios+export+apple+signing&per_page=20
+https://api.github.com/search/issues?q=repo:godotengine/godot+android+export+keystore&per_page=20
+https://api.github.com/search/issues?q=repo:godotengine/godot+web+export+wasm+webgl&per_page=20
