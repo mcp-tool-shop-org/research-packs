@@ -1,0 +1,28 @@
+{
+  "source_id": "src_51d3108c7446",
+  "receipt_id": "rcpt_51d3108c7446_1778357757089",
+  "section_id": "05-transfer-and-trade-mechanics",
+  "url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/account-methods/account_offers",
+  "final_url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/account-methods/account_offers",
+  "fetched_at": "2026-05-09T20:15:57.089Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "account_offers",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The account_offers method returns a list of accounts that are eligible to receive offers.",
+    "It takes no parameters and always returns an array of offer account IDs.",
+    "This method is useful for determining which accounts can receive new offers.",
+    "The returned account IDs are always in lexicographic order."
+  ],
+  "limitations": [
+    "Only works with accounts that have the capability to receive offers.",
+    "Does not include accounts that are ineligible for receiving offers due to various reasons."
+  ],
+  "asserts": "The account_offers method provides a list of accounts eligible to receive new offers, ordered lexicographically.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T20:16:23.199Z"
+}

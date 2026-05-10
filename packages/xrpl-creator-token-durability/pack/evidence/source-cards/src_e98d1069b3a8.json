@@ -1,0 +1,27 @@
+{
+  "source_id": "src_e98d1069b3a8",
+  "receipt_id": "rcpt_e98d1069b3a8_1778354555678",
+  "section_id": "04-issuer-controls-and-immutability",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/types/trustset",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/types/trustset",
+  "fetched_at": "2026-05-09T19:22:35.678Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "TrustSet",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The TrustSet transaction allows a trust account to set trusted and untrusted addresses.",
+    "The owner field specifies the address of the account that can manage this trust set.",
+    "If no flags are set, both trusted and untrusted fields default to an empty array.",
+    "The Account ID field identifies which account's trust relationships will be modified or viewed."
+  ],
+  "limitations": [
+    "Scope is limited to the XRPL protocol documentation"
+  ],
+  "asserts": "The TrustSet transaction enables trust accounts to set trusted and untrusted addresses, with the owner field specifying the managing account.",
+  "scope": "Context of the TrustSet transaction within the XRPL protocol",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T19:23:01.526Z"
+}

@@ -1,0 +1,26 @@
+{
+  "source_id": "src_5f4e84349ec5",
+  "receipt_id": "rcpt_5f4e84349ec5_1778349920097",
+  "section_id": "03-on-ledger-state-and-reserves",
+  "url": "https://api.github.com/search/issues?q=repo:XRPLF/rippled+NFTokenPage+delete&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:XRPLF/rippled+NFTokenPage+delete&per_page=20",
+  "fetched_at": "2026-05-09T18:05:20.097Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "After minting NFT, sometimes latest minted NFT don't appears in account NFT using xrpl.js version-2.6.0",
+  "source_type": "forum",
+  "relevance": "high",
+  "key_points": [
+    "User encountered issue where sometimes the latest minted NFT does not appear in account's NFT using xrpl.js version-2.6.0.",
+    "The issue occurs after performing the minting operation and trying to find the latest minted NFT with URI passed in JSON object while minting.",
+    "User added setTimeout but it did not resolve the issue."
+  ],
+  "limitations": [
+    "Limited information provided about the specific code or context of the problem."
+  ],
+  "asserts": "The source claims that there is an issue where sometimes the latest minted NFT does not appear in account's NFT using xrpl.js version-2.6.0.",
+  "scope": "The scope of this assertion is related to the functionality and behavior of the xrpl.js library when performing NFT minting operations.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:05:50.836Z"
+}

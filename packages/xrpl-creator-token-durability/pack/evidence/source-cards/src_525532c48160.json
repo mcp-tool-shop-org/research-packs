@@ -1,0 +1,29 @@
+{
+  "source_id": "src_525532c48160",
+  "receipt_id": "rcpt_525532c48160_1778349767555",
+  "section_id": "03-on-ledger-state-and-reserves",
+  "url": "https://xrpl.org/docs/concepts/accounts/reserves",
+  "final_url": "https://xrpl.org/docs/concepts/accounts/reserves",
+  "fetched_at": "2026-05-09T18:02:47.555Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Reserves",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "Reserves are a critical concept in the XRP Ledger, representing trust accounts that hold XRP and other assets.",
+    "Each account in the XRP Ledger has a reserve associated with it, which can be used to settle payments.",
+    "The total amount of reserves in the ledger is always equal to or greater than the total amount of XRP in all account balances.",
+    "Reserve accounts are managed by the XRPL protocol and cannot be accessed directly by users.",
+    "Reserves play a crucial role in maintaining the stability, decentralization, and trustlessness of the XRP Ledger."
+  ],
+  "limitations": [
+    "The documentation does not cover technical details or implementation specifics of reserves.",
+    "It provides an overview from a conceptual standpoint rather than diving into intricate technical aspects."
+  ],
+  "asserts": "Reserves are essential in the XRP Ledger, ensuring the stability and trustlessness of the system through decentralized account management.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:03:19.928Z"
+}

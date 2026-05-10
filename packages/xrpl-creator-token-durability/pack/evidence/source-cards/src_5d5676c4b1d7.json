@@ -1,0 +1,26 @@
+{
+  "source_id": "src_5d5676c4b1d7",
+  "receipt_id": "rcpt_5d5676c4b1d7_1778357544883",
+  "section_id": "05-transfer-and-trade-mechanics",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/types/payment",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/types/payment",
+  "fetched_at": "2026-05-09T20:12:24.883Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Payment",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The payment transaction type allows a client to send XRPL to an address or a regular URI.",
+    "It requires a signature from the payer's wallet to be valid.",
+    "The 'Account ID' field specifies the recipient of the payment, and the 'Amount' field specifies the amount being sent."
+  ],
+  "limitations": [
+    "The source is limited in scope to the XRPL protocol documentation and may not cover all possible use cases or variations."
+  ],
+  "asserts": "The payment transaction type enables users to send funds from one account to another on the XRPL network.",
+  "scope": "This document asserts the functionality of the payment transaction type within the context of the XRPL protocol. It does not encompass usage in other systems or networks.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T20:12:52.776Z"
+}

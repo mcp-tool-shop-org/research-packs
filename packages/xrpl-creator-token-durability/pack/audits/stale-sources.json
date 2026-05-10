@@ -1,0 +1,1016 @@
+[
+  {
+    "source_id": "src_006880d4c42c",
+    "section_id": "03-on-ledger-state-and-reserves",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_006880d4c42c.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_01e8d92d7e53",
+    "section_id": "05-transfer-and-trade-mechanics",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_01e8d92d7e53.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_0255a2aac931",
+    "section_id": "01-token-surface-and-standards",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_0255a2aac931.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_034a20f9fcbf",
+    "section_id": "05-transfer-and-trade-mechanics",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_034a20f9fcbf.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_03f52c5d778f",
+    "section_id": "06-amendment-and-validator-landscape",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_03f52c5d778f.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_051630391070",
+    "section_id": "05-transfer-and-trade-mechanics",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_051630391070.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_0654c94c7a98",
+    "section_id": "04-issuer-controls-and-immutability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_0654c94c7a98.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_097142ab08d3",
+    "section_id": "04-issuer-controls-and-immutability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_097142ab08d3.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_0b01dd18d515",
+    "section_id": "07-metadata-and-off-chain-durability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_0b01dd18d515.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_0fad2055eaed",
+    "section_id": "06-amendment-and-validator-landscape",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_0fad2055eaed.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_117260e9e17f",
+    "section_id": "02-account-and-key-management",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_117260e9e17f.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_12ac7f4c315b",
+    "section_id": "04-issuer-controls-and-immutability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_12ac7f4c315b.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_13f7e950b494",
+    "section_id": "02-account-and-key-management",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_13f7e950b494.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_206907715043",
+    "section_id": "02-account-and-key-management",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_206907715043.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_2185c0910a10",
+    "section_id": "07-metadata-and-off-chain-durability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_2185c0910a10.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_24fc488e7bd9",
+    "section_id": "02-account-and-key-management",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_24fc488e7bd9.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_25ac15171ff0",
+    "section_id": "06-amendment-and-validator-landscape",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_25ac15171ff0.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_313e0214db27",
+    "section_id": "07-metadata-and-off-chain-durability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_313e0214db27.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_319355bfb19d",
+    "section_id": "04-issuer-controls-and-immutability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_319355bfb19d.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_31ded2938c1f",
+    "section_id": "02-account-and-key-management",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_31ded2938c1f.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_33402410a906",
+    "section_id": "06-amendment-and-validator-landscape",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_33402410a906.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_37c1413248e9",
+    "section_id": "07-metadata-and-off-chain-durability",
+    "publisher": "IPFS",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_37c1413248e9.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_3cc91a11ac53",
+    "section_id": "07-metadata-and-off-chain-durability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_3cc91a11ac53.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_4727592a5328",
+    "section_id": "04-issuer-controls-and-immutability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_4727592a5328.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_48463ecf8302",
+    "section_id": "07-metadata-and-off-chain-durability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_48463ecf8302.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_48fddb8ee3b6",
+    "section_id": "05-transfer-and-trade-mechanics",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_48fddb8ee3b6.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_512ff500b432",
+    "section_id": "06-amendment-and-validator-landscape",
+    "publisher": "XRPL.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_512ff500b432.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_515596050b06",
+    "section_id": "06-amendment-and-validator-landscape",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_515596050b06.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_517d67dc1224",
+    "section_id": "07-metadata-and-off-chain-durability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_517d67dc1224.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_51d3108c7446",
+    "section_id": "05-transfer-and-trade-mechanics",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_51d3108c7446.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_5229d8bd314e",
+    "section_id": "01-token-surface-and-standards",
+    "publisher": "XRP Ledger Foundation",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_5229d8bd314e.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_525532c48160",
+    "section_id": "03-on-ledger-state-and-reserves",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_525532c48160.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_5412494af521",
+    "section_id": "06-amendment-and-validator-landscape",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_5412494af521.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_5a1d70d24fc1",
+    "section_id": "05-transfer-and-trade-mechanics",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_5a1d70d24fc1.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_5b84f976c797",
+    "section_id": "02-account-and-key-management",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_5b84f976c797.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_5d5676c4b1d7",
+    "section_id": "05-transfer-and-trade-mechanics",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_5d5676c4b1d7.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_5f4e84349ec5",
+    "section_id": "03-on-ledger-state-and-reserves",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_5f4e84349ec5.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_62cf595f3835",
+    "section_id": "01-token-surface-and-standards",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_62cf595f3835.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_68a1f3f26f9b",
+    "section_id": "02-account-and-key-management",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_68a1f3f26f9b.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_71ee1ec187f7",
+    "section_id": "05-transfer-and-trade-mechanics",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_71ee1ec187f7.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_72d8a212a86a",
+    "section_id": "03-on-ledger-state-and-reserves",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_72d8a212a86a.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_731c5d0b7dc0",
+    "section_id": "05-transfer-and-trade-mechanics",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_731c5d0b7dc0.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_736c7f9cccff",
+    "section_id": "05-transfer-and-trade-mechanics",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_736c7f9cccff.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_7d558c2ae6d2",
+    "section_id": "02-account-and-key-management",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_7d558c2ae6d2.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_7f175852cb10",
+    "section_id": "06-amendment-and-validator-landscape",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_7f175852cb10.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_8d039f2c0ee8",
+    "section_id": "06-amendment-and-validator-landscape",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_8d039f2c0ee8.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_8ebf52ac0af9",
+    "section_id": "06-amendment-and-validator-landscape",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_8ebf52ac0af9.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_90368c8bfc17",
+    "section_id": "04-issuer-controls-and-immutability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_90368c8bfc17.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_914d01359b57",
+    "section_id": "05-transfer-and-trade-mechanics",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_914d01359b57.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_92f5c74d9bda",
+    "section_id": "04-issuer-controls-and-immutability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_92f5c74d9bda.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_9505395adfe8",
+    "section_id": "04-issuer-controls-and-immutability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_9505395adfe8.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_9c84764fa541",
+    "section_id": "03-on-ledger-state-and-reserves",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_9c84764fa541.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_a101a2ec3e2c",
+    "section_id": "03-on-ledger-state-and-reserves",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_a101a2ec3e2c.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_a37ff8072a91",
+    "section_id": "05-transfer-and-trade-mechanics",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_a37ff8072a91.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_accb45067034",
+    "section_id": "07-metadata-and-off-chain-durability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_accb45067034.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_b357e7424a79",
+    "section_id": "02-account-and-key-management",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_b357e7424a79.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_b98e4c872d37",
+    "section_id": "02-account-and-key-management",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_b98e4c872d37.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_bb6e135772ef",
+    "section_id": "05-transfer-and-trade-mechanics",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_bb6e135772ef.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_bc7eaa08f673",
+    "section_id": "03-on-ledger-state-and-reserves",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_bc7eaa08f673.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_c24e3cf6d930",
+    "section_id": "07-metadata-and-off-chain-durability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_c24e3cf6d930.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_c3f060147acd",
+    "section_id": "01-token-surface-and-standards",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_c3f060147acd.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_c8f7530cb4f1",
+    "section_id": "05-transfer-and-trade-mechanics",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_c8f7530cb4f1.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_cef2c31af42d",
+    "section_id": "02-account-and-key-management",
+    "publisher": "xrpl.org",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_cef2c31af42d.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_d0882a19791f",
+    "section_id": "04-issuer-controls-and-immutability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_d0882a19791f.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_d2fef4cddfd7",
+    "section_id": "01-token-surface-and-standards",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_d2fef4cddfd7.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_d6c57c6845e6",
+    "section_id": "07-metadata-and-off-chain-durability",
+    "publisher": "IPFS Docs",
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_d6c57c6845e6.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_e1cfbbad4fa5",
+    "section_id": "05-transfer-and-trade-mechanics",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_e1cfbbad4fa5.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_e25c1c4ecccf",
+    "section_id": "06-amendment-and-validator-landscape",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_e25c1c4ecccf.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_e6b777fcef0d",
+    "section_id": "06-amendment-and-validator-landscape",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_e6b777fcef0d.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_e6df442e1e22",
+    "section_id": "06-amendment-and-validator-landscape",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_e6df442e1e22.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_e98d1069b3a8",
+    "section_id": "04-issuer-controls-and-immutability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_e98d1069b3a8.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_eae6b2d1d42d",
+    "section_id": "04-issuer-controls-and-immutability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_eae6b2d1d42d.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_ec3eb93321a7",
+    "section_id": "01-token-surface-and-standards",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_ec3eb93321a7.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_ec68826269c9",
+    "section_id": "02-account-and-key-management",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_ec68826269c9.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_f0063f109b4a",
+    "section_id": "01-token-surface-and-standards",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_f0063f109b4a.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_f011b0207e63",
+    "section_id": "03-on-ledger-state-and-reserves",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_f011b0207e63.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_f103bcae0753",
+    "section_id": "05-transfer-and-trade-mechanics",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_f103bcae0753.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  },
+  {
+    "source_id": "src_ff9fbb4f8527",
+    "section_id": "07-metadata-and-off-chain-durability",
+    "publisher": null,
+    "reason": "missing_date",
+    "details": "Source card has no published_at; freshness cannot be evaluated.",
+    "artifact_path": "evidence/source-cards/src_ff9fbb4f8527.json",
+    "policy": {
+      "required": true,
+      "max_source_age_months": null,
+      "stale_source_policy": "warn"
+    }
+  }
+]

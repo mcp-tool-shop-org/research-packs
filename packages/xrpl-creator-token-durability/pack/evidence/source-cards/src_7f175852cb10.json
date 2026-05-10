@@ -1,0 +1,28 @@
+{
+  "source_id": "src_7f175852cb10",
+  "receipt_id": "rcpt_7f175852cb10_1778360498444",
+  "section_id": "06-amendment-and-validator-landscape",
+  "url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/feesettings",
+  "final_url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/feesettings",
+  "fetched_at": "2026-05-09T21:01:38.444Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "FeeSettings",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The FeeSettings object represents the fee settings for a given account.",
+    "It contains the following fields: 'feeN', 'reserveBaseN', and 'reserveIncrementN'.",
+    "These fields determine the minimum balance required before sending a transaction, the base reserve amount added to each outgoing payment, and the reserve increment added to each outgoing payment above the reserveBase.",
+    "The values of these fields are set when an account is created and can be modified by the account holder using the AccountSet rippled function."
+  ],
+  "limitations": [
+    "Limited contextual information provided",
+    "Assumes prior knowledge of Ripple protocol and concepts"
+  ],
+  "asserts": "The FeeSettings object specifies the fee-related parameters for a given Ripple account, including the minimum balance required before sending transactions, base reserve amount added to outgoing payments, and incremental reserve for payments above the reserveBase.",
+  "scope": "Explains the structure and purpose of the FeeSettings object in the context of the Ripple protocol",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T21:02:12.131Z"
+}

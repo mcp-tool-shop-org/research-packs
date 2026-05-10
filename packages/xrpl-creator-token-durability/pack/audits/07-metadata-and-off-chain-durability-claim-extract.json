@@ -1,0 +1,18 @@
+{
+  "receipt_id": "cle_1778366313599_07-metadata-and-off-chain-durability",
+  "section_id": "07-metadata-and-off-chain-durability",
+  "extracted_at": "2026-05-09T22:38:33.599Z",
+  "research_os_version": "0.3.1",
+  "extractor": "ollama-intern",
+  "extraction_method": "ollama_intern_propositional",
+  "sources_processed": 11,
+  "sources_skipped": 0,
+  "sources_failed": 0,
+  "excerpt_ledgers_built": 0,
+  "claims_added": 64,
+  "claims_deduped": 121,
+  "claims_rejected_ungrounded": 0,
+  "claims_rejected_excerpt_id_missing": 0,
+  "claims_rejected_excerpt_id_malformed": 0,
+  "failures": []
+}

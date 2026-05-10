@@ -1,0 +1,30 @@
+{
+  "source_id": "src_006880d4c42c",
+  "receipt_id": "rcpt_006880d4c42c_1778349885095",
+  "section_id": "03-on-ledger-state-and-reserves",
+  "url": "https://api.github.com/search/issues?q=repo:XRPLF/rippled+reserve+NFT+delete&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:XRPLF/rippled+reserve+NFT+delete&per_page=20",
+  "fetched_at": "2026-05-09T18:04:45.095Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Sponsor signature bypass in inner batch transactions allows unauthorized reserve locking",
+  "source_type": "forum",
+  "relevance": "high",
+  "key_points": [
+    "Inner batch transactions can include an empty sfSponsorSignature object, bypassing sponsorship checks.",
+    "For non-batch transactions, sponsor signatures are verified later but this is skipped for inner batch transactions.",
+    "This allows an attacker to specify any account as a reserve sponsor without that account's consent.",
+    "The root cause is in the checkSponsor function which incorrectly assumes the signature will be validated later by checkSign for inner batch transactions.",
+    "Either fixing Batch::preflightSigValidated or Batch::preflight would prevent this exploit"
+  ],
+  "limitations": [
+    "Depends on the exact fixes chosen",
+    "The suggested fix requires careful review to ensure it won't break other functionality",
+    "Potentially impacts performance and complexity of inner batch processing logic"
+  ],
+  "asserts": "Inner batch transactions can be exploited to bypass sponsorship checks and lock arbitrary amounts of any account's reserves without authorization.",
+  "scope": "This exploit applies to the current implementation of XRPL's inner batch transaction sponsorship checks and could be used by an attacker to fraudulently increase other accounts' required reserves.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:05:20.092Z"
+}

@@ -1,0 +1,28 @@
+{
+  "source_id": "src_b98e4c872d37",
+  "receipt_id": "rcpt_b98e4c872d37_1778352163683",
+  "section_id": "02-account-and-key-management",
+  "url": "https://xrpl.org/docs/concepts/accounts/multi-signing",
+  "final_url": "https://xrpl.org/docs/concepts/accounts/multi-signing",
+  "fetched_at": "2026-05-09T18:42:43.683Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Multi-Signing",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "Multi-signing allows a set of signers to authorize transactions on an account.",
+    "Signers are specified in the account's settings, and can be changed at any time.",
+    "Each transaction requires a subset of signers to approve it before being executed.",
+    "The number of required signers for each transaction can be configured per-account.",
+    "Multi-signing is similar to hierarchical deterministic (HD) wallets but with less complexity."
+  ],
+  "limitations": [
+    "Scope is limited to the XRP Ledger and its use cases may vary depending on the application."
+  ],
+  "asserts": "Multi-signing enables multiple signers to jointly control an account in the XRP Ledger.",
+  "scope": "The context of this source is within the XRP Ledger's account management features, specifically multi-signing functionality.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:43:12.590Z"
+}

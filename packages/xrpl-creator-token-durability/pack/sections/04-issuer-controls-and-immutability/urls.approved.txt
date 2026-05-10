@@ -1,0 +1,32 @@
+# Section 04 — Issuer controls and immutability
+# URLs verified live in Session F (2026-05-09). All 13 returned HTTP 200 on
+# first probe. xls.xrpl.org is a NEW source surface this session — verified
+# text-accessible (19KB body, real prose) before staging.
+# Section purpose: NFTokenMint flags, NFTokenModify, NFTokenBurn,
+# AccountSet flags (lsfGlobalFreeze, lsfNoFreeze), Clawback (XLS-39),
+# TrustLine freeze, MPTokenIssuanceSet, transfer-fee caps.
+
+# xrpl.org canonical NFT transaction-type references
+https://xrpl.org/docs/references/protocol/transactions/types/nftokenmint
+https://xrpl.org/docs/references/protocol/transactions/types/nftokenmodify
+https://xrpl.org/docs/references/protocol/transactions/types/nftokenburn
+
+# xrpl.org canonical fungible-token + general transaction-type references
+https://xrpl.org/docs/references/protocol/transactions/types/accountset
+https://xrpl.org/docs/concepts/tokens/fungible-tokens/freezes
+https://xrpl.org/docs/references/protocol/transactions/types/trustset
+https://xrpl.org/docs/references/protocol/transactions/types/clawback
+
+# xls.xrpl.org canonical rendered XLS-0039 (Clawback) standard
+https://xls.xrpl.org/xls/XLS-0039-clawback.html
+
+# xrpl.org canonical MPT transaction-type + ledger-entry-type
+https://xrpl.org/docs/references/protocol/transactions/types/mptokenissuanceset
+https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/mptokenissuance
+
+# xrpl.org canonical data-type + ledger-entry-type references
+https://xrpl.org/docs/references/protocol/data-types/nftoken
+https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/accountroot
+
+# GitHub API search — supplementary developer-discussion (clawback + freeze + NFT/MPT edge cases)
+https://api.github.com/search/issues?q=repo:XRPLF/rippled+clawback+freeze+NFT+OR+MPT&per_page=20

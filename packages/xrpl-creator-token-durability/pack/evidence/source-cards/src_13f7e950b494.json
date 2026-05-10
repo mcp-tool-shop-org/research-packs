@@ -1,0 +1,30 @@
+{
+  "source_id": "src_13f7e950b494",
+  "receipt_id": "rcpt_13f7e950b494_1778352192944",
+  "section_id": "02-account-and-key-management",
+  "url": "https://xrpl.org/docs/concepts/accounts/tickets",
+  "final_url": "https://xrpl.org/docs/concepts/accounts/tickets",
+  "fetched_at": "2026-05-09T18:43:12.944Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Tickets",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "Tickets are a type of account in the XRP Ledger.",
+    "They provide a way to create and manage accounts without direct user control.",
+    "Ticket accounts can be used for various purposes, such as representing entities or resources.",
+    "Tickets have a fixed lifespan and can be revoked or canceled before their expiration date.",
+    "The owner of a ticket account can specify conditions for its use, such as required payments or permissions."
+  ],
+  "limitations": [
+    "The scope of the documentation may not cover all possible uses and scenarios for tickets.",
+    "Some advanced features or potential limitations of tickets are not described in detail.",
+    "The effectiveness and security of using tickets depend on proper implementation and management."
+  ],
+  "asserts": "Tickets provide a way to create and manage accounts in the XRP Ledger without direct user control, allowing specified conditions for use and a fixed lifespan.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:43:43.845Z"
+}

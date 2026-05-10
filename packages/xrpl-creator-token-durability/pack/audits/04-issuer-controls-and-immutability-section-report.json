@@ -1,0 +1,122 @@
+{
+  "report_id": "secrep_1778371454359_04-issuer-controls-and-immutability",
+  "section_id": "04-issuer-controls-and-immutability",
+  "reported_at": "2026-05-10T00:04:14.359Z",
+  "research_os_version": "0.3.1",
+  "status": "gated",
+  "sources": {
+    "fetched_ok": 13,
+    "source_cards": 13,
+    "publishers": [],
+    "primary_source_waiver": {
+      "status": "none",
+      "reason": null,
+      "compensating_controls": []
+    }
+  },
+  "extraction": {
+    "candidate_claims": 170,
+    "claims_per_source": [
+      {
+        "source_id": "src_12ac7f4c315b",
+        "claims": 41
+      },
+      {
+        "source_id": "src_097142ab08d3",
+        "claims": 21
+      },
+      {
+        "source_id": "src_9505395adfe8",
+        "claims": 21
+      },
+      {
+        "source_id": "src_eae6b2d1d42d",
+        "claims": 15
+      },
+      {
+        "source_id": "src_517d67dc1224",
+        "claims": 11
+      },
+      {
+        "source_id": "src_90368c8bfc17",
+        "claims": 11
+      },
+      {
+        "source_id": "src_d0882a19791f",
+        "claims": 9
+      },
+      {
+        "source_id": "src_319355bfb19d",
+        "claims": 8
+      },
+      {
+        "source_id": "src_e98d1069b3a8",
+        "claims": 8
+      },
+      {
+        "source_id": "src_92f5c74d9bda",
+        "claims": 8
+      },
+      {
+        "source_id": "src_ff9fbb4f8527",
+        "claims": 6
+      },
+      {
+        "source_id": "src_4727592a5328",
+        "claims": 6
+      },
+      {
+        "source_id": "src_0654c94c7a98",
+        "claims": 5
+      }
+    ],
+    "claims_per_1k_words": 3.1245979377653614,
+    "excerpt_pages_processed": 10,
+    "excerpt_id_failures": 0,
+    "malformed_extractor_outputs": 0,
+    "near_duplicate_clusters": 0,
+    "weak_scope_count": 10,
+    "generic_scope_count": 15,
+    "density_flags": 2
+  },
+  "contradictions": {
+    "pairs_compared": 14365,
+    "contradiction_candidates": 0,
+    "overgeneralization_risks": 0
+  },
+  "review": {
+    "reviewed": true,
+    "accepted_for_synthesis": 27,
+    "needs_scope_repair": 5,
+    "needs_source_repair": 10,
+    "needs_contradiction_mapping": 0,
+    "rejected": 0,
+    "needs_human_review": 0,
+    "rejection_or_repair_by_category": [
+      {
+        "category": "source_quality_problem",
+        "count": 10
+      },
+      {
+        "category": "overgeneralized_claim",
+        "count": 4
+      },
+      {
+        "category": "scope_widening",
+        "count": 1
+      }
+    ]
+  },
+  "acceptance": {
+    "candidate_claims": 170,
+    "accepted_for_synthesis": 27,
+    "acceptance_ratio": 0.1588235294117647,
+    "accepted_per_source": 2.076923076923077,
+    "accepted_per_1k_words": 0.49625967246861613,
+    "top_rejection_category": "source_quality_problem",
+    "claim_overproduction_fired": false,
+    "synthesis_ready": true
+  },
+  "gate_verdict": "warn",
+  "gate_synthesis_eligible": true
+}

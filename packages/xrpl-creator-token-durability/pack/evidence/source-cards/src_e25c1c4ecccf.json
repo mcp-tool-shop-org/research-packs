@@ -1,0 +1,29 @@
+{
+  "source_id": "src_e25c1c4ecccf",
+  "receipt_id": "rcpt_e25c1c4ecccf_1778360765663",
+  "section_id": "06-amendment-and-validator-landscape",
+  "url": "https://api.github.com/search/issues?q=repo:XRPLF/rippled+amendment+majority+activation&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:XRPLF/rippled+amendment+majority+activation&per_page=20",
+  "fetched_at": "2026-05-09T21:06:05.663Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "feature command should return threshold+1 when consensus is exactly 80% (Version: [1.9.4])",
+  "source_type": "forum",
+  "relevance": "high",
+  "key_points": [
+    "The issue describes a bug where rippled does not start the amendment activation countdown when the validator's UNL size is a specific number such that its 80% is a whole number.",
+    "Rippled only starts the countdown when the voting percentage is greater than 80%, but not exactly equal to it.",
+    "The 'rippled feature' command currently returns the incorrect threshold value when the voting percentage is exactly 80%.",
+    "When the voting percentage is exactly 80%, rippled should start the 14-day countdown, and the 'rippled feature' command should return the actual threshold value.",
+    "The issue provides detailed steps to reproduce the problem and expected vs. actual results."
+  ],
+  "limitations": [
+    "Limited to a specific number of validators in the UNL.",
+    "Scope seems to be focused on a single amendment voting scenario."
+  ],
+  "asserts": "Rippled's 'feature' command should return the correct threshold value when the validator's UNL size has an exact 80% consensus, allowing for proper activation countdown.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T21:06:43.847Z"
+}

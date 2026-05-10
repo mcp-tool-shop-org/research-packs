@@ -1,0 +1,28 @@
+{
+  "source_id": "src_a37ff8072a91",
+  "receipt_id": "rcpt_a37ff8072a91_1778357848671",
+  "section_id": "05-transfer-and-trade-mechanics",
+  "url": "https://api.github.com/search/issues?q=repo:XRPLF/rippled+NFT+offer+brokered&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:XRPLF/rippled+NFT+offer+brokered&per_page=20",
+  "fetched_at": "2026-05-09T20:17:28.671Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Flaky unit tests in CI",
+  "source_type": "forum",
+  "relevance": "low",
+  "key_points": [
+    "The issue is related to flaky unit tests in the CI process.",
+    "There seems to be an issue with a transaction that involves AccountSet and Amount operations.",
+    "A detailed error message is provided, indicating an ill-formed transaction."
+  ],
+  "limitations": [
+    "Limited context provided about the overall CI process.",
+    "No clear connection to XRPL or rippled source code is made in this particular issue.",
+    "The relevance to the wider XRP community might be low without additional information."
+  ],
+  "asserts": "(no assertion extracted)",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T20:17:51.733Z"
+}

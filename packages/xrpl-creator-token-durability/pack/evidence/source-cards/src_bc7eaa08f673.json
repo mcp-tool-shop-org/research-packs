@@ -1,0 +1,26 @@
+{
+  "source_id": "src_bc7eaa08f673",
+  "receipt_id": "rcpt_bc7eaa08f673_1778349743767",
+  "section_id": "03-on-ledger-state-and-reserves",
+  "url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types",
+  "final_url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types",
+  "fetched_at": "2026-05-09T18:02:23.767Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Ledger Entry Types",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The XRPL Ledger has several types of entries, including Accounts, Transactions, and Snapshots.",
+    "Each entry type serves a specific purpose in maintaining the integrity of the ledger.",
+    "This reference guide provides details on how to identify and interpret these different entry types."
+  ],
+  "limitations": [
+    "The source is focused solely on explaining XRPL-specific concepts without broader context."
+  ],
+  "asserts": "The XRPL Ledger utilizes various entry types, including Accounts, Transactions, and Snapshots, each serving distinct purposes in maintaining the ledger's integrity.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:02:47.209Z"
+}

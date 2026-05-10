@@ -1,0 +1,28 @@
+{
+  "source_id": "src_bb6e135772ef",
+  "receipt_id": "rcpt_bb6e135772ef_1778357674050",
+  "section_id": "05-transfer-and-trade-mechanics",
+  "url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/path-and-order-book-methods/nft_sell_offers",
+  "final_url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/path-and-order-book-methods/nft_sell_offers",
+  "fetched_at": "2026-05-09T20:14:34.050Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "nft_sell_offers",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The nft_sell_offers endpoint allows users to retrieve the offers for an NFT.",
+    "It returns a list of sell offers for the specified NFT.",
+    "The response includes offer ID, account, amount, transaction ID, and other details."
+  ],
+  "limitations": [
+    "The source provides documentation rather than real-world data or examples.",
+    "It assumes familiarity with XRPL concepts and terminology.",
+    "The scope is limited to the technical implementation of the API endpoint."
+  ],
+  "asserts": "The nft_sell_offers endpoint enables users to fetch sell offers for a specific NFT on the XRPL blockchain.",
+  "scope": "Describes how to retrieve sell offers data for an NFT using the XRPL public API.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T20:15:02.861Z"
+}

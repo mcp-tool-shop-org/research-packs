@@ -1,0 +1,27 @@
+{
+  "source_id": "src_89d29fa8978f",
+  "receipt_id": "rcpt_89d29fa8978f_1778321734161",
+  "section_id": "01-token-surface-and-standards",
+  "url": "https://raw.githubusercontent.com/XRPLF/XRPL-Standards/master/XLS-0033-multi-purpose-tokens/README.md",
+  "final_url": "https://raw.githubusercontent.com/XRPLF/XRPL-Standards/master/XLS-0033-multi-purpose-tokens/README.md",
+  "fetched_at": "2026-05-09T10:15:34.161Z",
+  "publisher": null,
+  "published_at": "2022-08-05T00:00:00Z",
+  "title": "XRPL Standards XLS-0033: Multi-Purpose Tokens (MPTs)",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "Proposal for multi-purpose tokens to replace trust lines, reducing storage requirements.",
+    "Introduces new data structures and transactions for MPT issuance, management, and trading.",
+    "MPTs have advantages like simpler conceptual model and reduced infrastructure burdens but also disadvantages like introducing a third asset type."
+  ],
+  "limitations": [
+    "Currently covers only basic MPT functionalities; future amendments will integrate with other XRPL features.",
+    "Does not introduce cross-currency payments yet."
+  ],
+  "asserts": "This proposal introduces extensions to the XRP Ledger to support a more multi-purpose token type as an alternative to trust lines.",
+  "scope": "The scope of this proposal is the XRP Ledger and its community, aiming to improve ledger stability and scalability through the introduction of MPTs.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T10:16:21.677Z"
+}

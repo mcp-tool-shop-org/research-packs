@@ -1,0 +1,29 @@
+{
+  "source_id": "src_515596050b06",
+  "receipt_id": "rcpt_515596050b06_1778360693934",
+  "section_id": "06-amendment-and-validator-landscape",
+  "url": "https://xls.xrpl.org/xls/XLS-0020-non-fungible-tokens.html",
+  "final_url": "https://xls.xrpl.org/xls/XLS-0020-non-fungible-tokens.html",
+  "fetched_at": "2026-05-09T21:04:53.934Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "XLS-0020: Non-Fungible Token Support",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The XRP Ledger offers support for tokens (a.k.a. IOUs or issued assets). Such assets are, primarily, fungible.",
+    "Non-fungible tokens serve to encode ownership of physical, non-physical, or purely digital goods, such as works of art and in-game items.",
+    "This proposal introduces extensions to the XRP Ledger that would support a native non-fungible token type, along with operations to enumerate, purchase, sell and hold such tokens.",
+    "Two new objects are proposed: NFToken for single NFTs and NFTokenOffer for buying or selling an NFToken.",
+    "An NFTokenPage is a ledger structure containing a set of NFToken objects owned by the same account."
+  ],
+  "limitations": [
+    "Requires an amendment to the XRP Ledger protocol, which increases complexity and adds more types of data that must be tracked and maintained as part of the ledger indefinitely.",
+    "New transaction and data types require new implementation code from client libraries and wallets to read, display, and transact with NFTs."
+  ],
+  "asserts": "Non-fungible tokens proposed are indivisible, unique, and not used for payments.",
+  "scope": "The proposal provides a rich set of flexible primitives that can be used by token issuers to support non-fungible tokens on the XRP Ledger.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T21:05:36.726Z"
+}

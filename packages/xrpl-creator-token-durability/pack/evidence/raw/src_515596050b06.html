@@ -1,0 +1,1535 @@
+<!--
+    Individual XLS document template
+
+    Displays a single XLS standard document with:
+    - Document metadata (number and status badge)
+    - Full rendered markdown content
+    - Navigation links back to index and GitHub source
+    - XRPL.org themed styling for document presentation
+-->
+<!--
+    Base HTML template for XLS Standards website
+
+    This template provides the common structure and styling for all pages:
+    - XRPL.org themed design with dark color scheme
+    - Work Sans typography matching official XRPL branding
+    - Responsive layout with header, main content, and footer
+    - Dynamic base URL support for GitHub Pages deployment
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Dynamic page title - can be overridden by child templates -->
+    <title>XLS-0020: Non-Fungible Token Support</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="/assets/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Main stylesheet with XRPL.org themed styling -->
+    <link rel="stylesheet" href="/assets/style.css" />
+
+    <!-- Work Sans font - official XRPL.org typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- KaTeX for LaTeX math rendering -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/katex.min.css"
+      integrity="sha384-UA8juhPf75SzzAMA/4fo3yOU7sBJ0om7SCD2GHq0fZqZco6tr1UCV7nUbk9J90JM"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/katex.min.js"
+      integrity="sha384-Tt7wBxLKwSzFVRET4O4U9H6v8MNaQ/CjN2FMP4xFm0ErrFu6aNqoonRVW5W40iGI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/contrib/auto-render.min.js"
+      integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Site header with navigation -->
+    <header>
+      <div class="container">
+        <!-- Main site title with link to homepage -->
+        <h1><a href="/">XRP Ledger Standards</a></h1>
+        <nav>
+          <!-- Primary navigation links -->
+          <a href="/">All Standards</a>
+          <a href="/contribute.html">Contribute</a>
+          <a href="https://github.com/XRPLF/XRPL-Standards">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main content area - populated by child templates -->
+    <main class="container">
+<div class="xls-document">
+  <!-- Document metadata header -->
+  <div class="xls-meta">
+    <!-- Large XLS number display -->
+    <div class="xls-number-large">XLS-0020</div>
+    <!-- Status badge with conditional styling -->
+    <div class="xls-status-badge Final">
+      Final
+    </div>
+  </div>
+
+  <!-- Main document content area -->
+  <!-- The content variable contains the rendered HTML from markdown -->
+  <div class="document-content"><pre>
+  xls: 20
+  title: Non-Fungible Token Support
+  description: Extensions to the XRP Ledger that support a native non-fungible token type with operations to enumerate, purchase, sell and hold such tokens
+  author: David J. Schwartz <david@ripple.com>, Aanchal Malhotra <amalhotra@ripple.com>, Nikolaos D. Bougalis <nikb@bougalis.net>
+  proposal-from: https://github.com/XRPLF/XRPL-Standards/discussions/46
+  status: Final
+  category: Amendment
+  created: 2021-05-24
+</pre>
+
+<div class="toc"><span class="toctitle">Table of Contents</span><ul>
+<li><a href="#1-non-fungible-token-support">1. Non-Fungible Token Support</a><ul>
+<li><a href="#11-abstract">1.1. Abstract</a></li>
+<li><a href="#12-creating-and-transferring-tokens-on-xrpl">1.2. Creating and Transferring Tokens on XRPL</a></li>
+<li><a href="#transactions">Transactions</a></li>
+<li><a href="#transactions-for-minting-and-burning-nfts-on-xrpl">Transactions for minting and burning NFTs on XRPL</a></li>
+<li><a href="#example-nftokenmint-transaction">Example NFTokenMint transaction</a></li>
+<li><a href="#14-transferability-of-tokens-nfts">1.4. Transferability of Tokens (NFTs)</a></li>
+<li><a href="#15-how-does-nftokenoffer-work">1.5. How does NFTokenOffer work?</a></li>
+<li><a href="#16-uniqueness-property-of-the-nftokenid">1.6. Uniqueness property of the NFTokenID</a></li>
+<li><a href="#history">History</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="1-non-fungible-token-support">1. Non-Fungible Token Support<a class="headerlink" href="#1-non-fungible-token-support" title="Permanent link">&para;</a></h2>
+<h3 id="11-abstract">1.1. Abstract<a class="headerlink" href="#11-abstract" title="Permanent link">&para;</a></h3>
+<p>The XRP Ledger offers support for tokens (a.k.a. IOUs or issued assets). Such assets are, primarily, fungible. They can be easily traded between users for XRP or other issued assets on the XRP Ledger's decentralized exchange. This makes them ideal for payments.</p>
+<p>Such objects can also be used to implement non-fungible tokens (NFTokens), as seen in an example implementation by the <strong>XRPL Labs</strong> team.</p>
+<p>Non-fungible tokens serve to encode ownership of physical, non-physical or purely digital goods, such as works of art and in-game items.</p>
+<p>This proposal introduces extensions to the XRP Ledger that would support a native non-fungible token type, along with operations to enumerate, purchase, sell and hold such tokens.</p>
+<p>While other proposals (some of which are <em>extremely</em> interesting) have been made, the authors believe that this proposal represents a strong commitment to supporting NFTs on the XRP Ledger, and adds a rich set of flexible primitives that can be used by token issuers.</p>
+<p>The non-fungible tokens proposed are:</p>
+<ul>
+<li><strong>Indivisible</strong>;</li>
+<li><strong>Unique</strong>; and</li>
+<li><strong>Not used for payments</strong>.</li>
+</ul>
+<h4 id="111-advantages-and-disadvantages">1.1.1. Advantages and Disadvantages<a class="headerlink" href="#111-advantages-and-disadvantages" title="Permanent link">&para;</a></h4>
+<p><strong>Advantages</strong></p>
+<ul>
+<li>NFT-specific configurations and options such as transfer fees and burnable/non-burnable tokens allow for flexibility.</li>
+<li>An efficient storage mechanism, capable of storing a large number of NFTs.</li>
+</ul>
+<p><strong>Disadvantages</strong></p>
+<ul>
+<li>Requires an amendment to the XRP Ledger protocol, which increases complexity and adds more types of data that must be tracked and maintained as part of the ledger indefinitely.</li>
+<li>New transaction and data types require new implementation code from client libraries and wallets to read, display, and transact with NFTs.</li>
+</ul>
+<h3 id="12-creating-and-transferring-tokens-on-xrpl">1.2. Creating and Transferring Tokens on XRPL<a class="headerlink" href="#12-creating-and-transferring-tokens-on-xrpl" title="Permanent link">&para;</a></h3>
+<h4 id="121-on-ledger-data-structures">1.2.1. On-Ledger Data Structures<a class="headerlink" href="#121-on-ledger-data-structures" title="Permanent link">&para;</a></h4>
+<p>We propose two new objects and one new ledger structure:</p>
+<ol>
+<li>An <strong><code>NFToken</code></strong> is a new object that describes a single NFT.</li>
+<li>An <strong><code>NFTokenOffer</code></strong> is a new object that describes an offer to buy or sell a single <code>NFToken</code>.</li>
+<li>An <strong><code>NFTokenPage</code></strong> is a ledger structure that contains a set of <strong><code>NFToken</code></strong> objects owned by the same account.</li>
+</ol>
+<h5 id="1211-the-nftoken-object">1.2.1.1. The <strong><code>NFToken</code></strong> object<a class="headerlink" href="#1211-the-nftoken-object" title="Permanent link">&para;</a></h5>
+<p>The <strong><code>NFToken</code></strong> object represents a single NFT and holds data associated with the NFT itself. NFTs are created using the <strong><code>NFTokenMint</code></strong> transaction and can, optionally, be destroyed by the <strong><code>NFTokenBurn</code></strong> transaction.</p>
+<h6 id="12111-fields">1.2.1.1.1. Fields<a class="headerlink" href="#12111-fields" title="Permanent link">&para;</a></h6>
+<p>An <strong><code>NFToken</code></strong> object can have the following required and optional fields. Notice that, unlike other objects, no field is needed to identify the object type or current owner of the object, because NFTs are grouped into pages that implicitly define the object type and identify the owner.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NFTokenID</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>UINT256</code></td>
+</tr>
+</tbody>
+</table>
+<p>This composite field uniquely identifiers a token; it contains:</p>
+<ul>
+<li>a set of 16 bits that identify flags or settings specific to the NFT</li>
+<li>16 bits that encode the transfer fee associated with this token,
+  if any</li>
+<li>the 160-bit account identifier of the issuer</li>
+<li>a 32-bit issuer-specified <a href="https://www.merriam-webster.com/dictionary/taxon">taxon</a></li>
+<li>an automatically generated monotonically increasing 32-bit sequence number.</li>
+</ul>
+<p>The 16-bit flags and transfer fee fields, and the 32-bit taxon and sequence number fields, are stored in big-endian format.</p>
+<h6 id="121111-flags">1.2.1.1.1.1 <code>Flags</code><a class="headerlink" href="#121111-flags" title="Permanent link">&para;</a></h6>
+<p>A set of flags indicating properties or other options associated with this <strong><code>NFToken</code></strong> object. The type-specific flags proposed at this are:</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Flag Name</th>
+<th style="text-align: center;">Flag Value</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>lsfBurnable</code></td>
+<td style="text-align: center;"><code>0x0001</code></td>
+<td style="text-align: left;">If set, indicates that the issuer (or an entity authorized by the issuer) can destroy the object. The object's owner can <em>always</em> do so.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>lsfOnlyXRP</code></td>
+<td style="text-align: center;"><code>0x0002</code></td>
+<td style="text-align: left;">If set, indicates that the tokens can only be offered or sold for XRP.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>lsfTrustLine</code></td>
+<td style="text-align: center;"><code>0x0004</code></td>
+<td style="text-align: left;">(<strong>DEPRECATED</strong>) If set, indicates that the issuer wants a trustline to be automatically created.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>lsfTransferable</code></td>
+<td style="text-align: center;"><code>0x0008</code></td>
+<td style="text-align: left;">If set, indicates that this NFT can be transferred. This flag has no effect if the token is being transferred <em>from</em> the issuer or <em>to</em> the issuer.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>lsfReservedFlag</code></td>
+<td style="text-align: center;"><code>0x8000</code></td>
+<td style="text-align: left;">This proposal reserves this flag for future use. Attempts to set this flag should fail.</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>These flags are <strong>immutable</strong>: they can only be set during the <strong><code>NFTokenMint</code></strong> transaction and cannot be changed later.</p>
+<p>:memo: (<strong>DEPRECATED</strong>) The <code>lsfTrustLine</code> field is useful when the token can be offered for sale for assets other than <strong>XRP</strong> and the issuer charges a <code>TransferFee</code>. If this flag is set, then a trust line will be automatically created, when needed, to allow the issuer to receive the appropriate transfer fee. If this flag is not set, then an attempt to transfer for token for an asset that the issuer does not have a trustline for will fail.</p>
+<h6 id="121112-transferfee">1.2.1.1.1.2 <code>TransferFee</code><a class="headerlink" href="#121112-transferfee" title="Permanent link">&para;</a></h6>
+<p>The value specifies the fee, in tenths of a <a href="https://en.wikipedia.org/wiki/Basis_point">basis point</a>, charged by the issuer for secondary sales of the token, if such sales are allowed at all. Valid values for this field are between 0 and 50,000 inclusive. A value of 1 is equivalent to 1/10 of a basis point or 0.001%, allowing transfer rates between 0% and 50%. A <code>TransferFee</code> of 50,000 corresponds to 50%.</p>
+<h6 id="121113-taxon-scrambling">1.2.1.1.1.3 Taxon Scrambling<a class="headerlink" href="#121113-taxon-scrambling" title="Permanent link">&para;</a></h6>
+<p>An issuer may issue several NFTs with the same taxon. To ensure that NFTs are spread across multiple pages, we lightly mix the taxon up by using the sequence (which is not under the issuer's direct control) as the seed for a simple linear congruential generator.</p>
+<p>From the <a href="https://en.wikipedia.org/wiki/Linear_congruential_generator">Hull-Dobell theorem</a> we know that <strong><code>f(x)=(m*x+c) mod n</code></strong> yields a permutation of <strong><code>[0, n)</code></strong> when <strong><code>n</code></strong> is a power of 2 if <strong><code>m</code></strong> is congruent to <strong><code>1 mod 4</code></strong> and <strong><code>c</code></strong> is odd.</p>
+<p>This proposal fixes <strong><code>m = 384160001</code></strong> and <strong><code>c = 2459</code></strong>. <strong>Changing these numbers after this proposal is implemented and deployed would be a breaking change requiring, at a minimum, an amendment and a way to distinguish token IDs that were generated with the old code.</strong></p>
+<h6 id="121114-example">1.2.1.1.1.4 Example<a class="headerlink" href="#121114-example" title="Permanent link">&para;</a></h6>
+<p>For example, the <code>NFTokenID</code> <code>000B013A95F14B0E44F78A264E41713C64B5F89242540EE2BC8B858E00000D65</code> would uniquely identify the token with <code>Taxon</code> <strong>146,999,694</strong> and <code>Sequence</code> <strong>3,429</strong>, issued by <code>rNCFjv8Ek5oDrNiMJ3pw6eLLFtMjZLJnf2</code>. The <code>TransferFee</code> is <strong>3.14%</strong> and the <code>Flags</code> associated with the token are: <strong><code>lsfBurnable</code></strong>, <strong><code>lsfOnlyXRP</code></strong> and <strong><code>lsfTransferable</code></strong>:</p>
+<pre class="highlight"><code>000B 0C44 95F14B0E44F78A264E41713C64B5F89242540EE2 BC8B858E 00000D65
++--- +--- +--------------------------------------- +------- +-------
+|    |    |                                        |        |
+|    |    |                                        |        `---&gt; Sequence: 3,429
+|    |    |                                        |
+|    |    |                                        `---&gt; Taxon: 146,999,694
+|    |    |
+|    |    `---&gt; Issuer: rNCFjv8Ek5oDrNiMJ3pw6eLLFtMjZLJnf2
+|    |
+|    `---&gt; TransferFee: 314.0 bps or 3.140%
+|
+`---&gt; Flags: 12 -&gt; lsfBurnable, lsfOnlyXRP and lsfTransferable
+</code></pre>
+
+<p>:information<em>source: Notice that the scrambled version of the taxon is <code>0xBC8B858E</code>: the scrambled version of the taxon specified by the issuer. But the _actual</em> value of the taxon is the unscrambled value.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>URI</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>BLOB</code></td>
+</tr>
+</tbody>
+</table>
+<p>A URI that points to the data and/or metadata associated with the NFT. This field need not be an HTTP or HTTPS URL; it could be an IPFS URI, a magnet link, immediate data encoded as an RFC2379 <a href="https://datatracker.ietf.org/doc/html/rfc2397">"data" URL</a>, or even an opaque issuer-specific encoding. The URI is <strong>NOT</strong> checked for validity, but the field is limited to a maximum length of 256 bytes.</p>
+<p>:memo: In the interest of reducing the size of NFT objects and their impact on the ledger as a whole as well as maximizing flexibility, this implementation recommends (but does not require) that this field be avoided. Not only does this field increase the amount of data that must be stored on ledger, but it is also immutable, which means that, if specified, it commits the issuer to hosting the data and/or metadata associated with the NFT at the specified location. See the <strong>Retrieving NFToken Data and Metadata</strong> section below for details on alternatives.</p>
+<h6 id="121121-example-nftoken-json">1.2.1.1.2.1. Example NFToken JSON<a class="headerlink" href="#121121-example-nftoken-json" title="Permanent link">&para;</a></h6>
+<pre class="highlight"><code>{
+    &quot;NFTokenID&quot;: &quot;000B013A95F14B0044F78A264E41713C64B5F89242540EE208C3098E00000D65&quot;,
+    &quot;URI&quot;: &quot;ipfs://bafybeigdyrzt5sfp7udm7hu76uh7y26nf4dfuylqabf3oclgtqy55fbzdi&quot;
+}
+</code></pre>
+
+<h6 id="retrieving-nftoken-data-and-metadata">Retrieving NFToken Data and Metadata<a class="headerlink" href="#retrieving-nftoken-data-and-metadata" title="Permanent link">&para;</a></h6>
+<p>In the interest of (a) minimizing the footprint of an NFT but without sacrificing utility or functionality, and (b) imposing as few restrictions as possible, this specification does not allow an NFT to hold arbitrary data fields. Instead, such data, whether structured or unstructured, is maintained separately and referenced by the NFT. This proposal recommends using one of the following two approaches to provide external references to obtain <strong><code>NFToken</code></strong> data and/or metadata.</p>
+<ul>
+<li><code>URI</code> field: We propose an optional <code>URI</code> field in the <strong><code>NFToken</code></strong> object. Implementations MAY choose to use this field to provide an external reference to:</li>
+<li>The immutable content for <code>Hash</code>.</li>
+<li>Mutable metadata, if any, for the <strong><code>NFToken</code></strong> object.</li>
+</ul>
+<p>The <code>URI</code> field is especially useful for referring to non-traditional Peer-to-Peer (P2P) URLs. For example, a <code>NFTokenMinter</code> wishing to store <strong><code>NFToken</code></strong> data and/or metadata using the Inter Planetary File System (IPFS) MAY use <code>URI</code> field to refer to data on IPFS in different ways, each of which is suited to different use-cases. For more context on types of IPFS links that can be used to store NFT data, see <a href="https://docs.ipfs.io/how-to/best-practices-for-nft-data/#types-of-ipfs-links-and-when-to-use-them">Best Practices for NFT Data</a>.</p>
+<ul>
+<li><code>Domain</code> field: Alternative to the above approach, issuers of <strong><code>NFToken</code></strong> objects can set the <code>Domain</code> field of their issuing account to the correct domain and offer an API for clients that want to lookup the data and/or metadata associated with a particular NFT. This proposal recommends the use of DNS <code>TXT</code> records as a customization point, allowing the issuer to specify the URL to be used by providing a properly formatted TXT record.</li>
+</ul>
+<p>Note that using this mechanism <em>requires</em> the <code>NFTokenMinter</code> to acquire a domain name and set the domain name for their minting account, but does <strong>not</strong> require the <code>NFTokenMinter</code> to necessarily operate a server
+or other service to provide the ability to query this data; instead, a <code>NFTokenMinter</code> can easily "redirect" queries to a data provider (e.g., to a marketplace, registry or other service).</p>
+<p>Implementations should check for the presence of <code>URI</code> field first to retrieve the associated data and/or metadata. If the <code>URI</code> field does not exist, implementations should check for the presence of <code>Domain</code> field. Nothing happens, if neither of the fields exist. Implementations should be prepared to handle HTTP redirections (e.g., using HTTP responses 301, 302, 307 and 308) from the URI.</p>
+<h6 id="txt-record-format">TXT Record Format:<a class="headerlink" href="#txt-record-format" title="Permanent link">&para;</a></h6>
+<pre class="highlight"><code>xrpl-nft-data-token-info-v1 IN TXT &quot;https://host.example.com/api/token-info/{:NFTokenID:}&quot;
+</code></pre>
+
+<p>Replace the string <code>{:NFTokenID:}</code> with the requested tokens' <strong><code>NFTokenID</code></strong>, as a 64 byte hex string when attempting to query information.</p>
+<p>Implementations should check for the presence of <code>TXT</code> records and use those query strings, if present. If no string is present, attempt to use the default URL. Assuming the domain was <strong>example.com</strong>, the default URL this proposal recommends would be:</p>
+<p><code>https://example.com/.well-known/xrpl-nft/{:nft_id:}</code></p>
+<h5 id="the-nftokenpage-ledger-entry">The <strong><code>NFTokenPage</code></strong> ledger entry<a class="headerlink" href="#the-nftokenpage-ledger-entry" title="Permanent link">&para;</a></h5>
+<p>This object represents a collection of <strong><code>NFToken</code></strong> objects owned by the same account. It is important to note that the <strong><code>NFToken</code></strong> objects themselves reside within this page, instead of in a dedicated object entry in the <code>SHAMap</code>. An account can have multiple <strong><code>NFTokenPage</code></strong> ledger objects, which form a doubly linked list (DLL).</p>
+<p>In the interest of minimizing the size of a page and optimizing storage, the <code>Owner</code> field is not present, since it is encoded as part of the object's ledger identifier (more details in the <strong><code>NFTokenPageID</code></strong> discussion).</p>
+<h6 id="fields">Fields<a class="headerlink" href="#fields" title="Permanent link">&para;</a></h6>
+<p>An <strong><code>NFTokenPage</code></strong> object may have the following required and optional fields:</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LedgerEntryType</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>UINT16</code></td>
+</tr>
+</tbody>
+</table>
+<p>Identifies the type of ledger object. This proposal recommends the value <code>0x0050</code> as the reserved ledger entry type.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PreviousPageMin</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>UINT256</code></td>
+</tr>
+</tbody>
+</table>
+<p>The locator of the previous page, if any. Details about this field and how it should be used are outlined below, after the construction of the <strong><code>NFTokenPageID</code></strong> is explained.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NextPageMin</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>UINT256</code></td>
+</tr>
+</tbody>
+</table>
+<p>The locator of the next page, if any. Details about this field and how it should be used are outlined below, after the construction of the <strong><code>NFTokenPageID</code></strong> is explained.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PreviousTxnID</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>HASH256</code></td>
+</tr>
+</tbody>
+</table>
+<p>Identifies the transaction ID of the transaction that most recently modified this <strong><code>NFTokenPage</code></strong> object.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PreviousTxnLgrSeq</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>number</code></td>
+<td style="text-align: center;"><code>UINT32</code></td>
+</tr>
+</tbody>
+</table>
+<p>The sequence of the ledger that contains the transaction that most recently modified this <strong><code>NFTokenPage</code></strong> object.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NFTokens</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>object</code></td>
+<td style="text-align: center;"><code>TOKEN</code></td>
+</tr>
+</tbody>
+</table>
+<p>The collection of <strong><code>NFToken</code></strong> objects contained in this <strong><code>NFTokenPage</code></strong> object. This specification places an upper bound of 32 <strong><code>NFToken</code></strong> objects per page. Objects should be stored in sorted order, from low to high with the low order 96-bit of the <code>NFTokenID</code> used as the sorting parameter.</p>
+<hr />
+<h6 id="tokenpage-id-format">TokenPage ID Format<a class="headerlink" href="#tokenpage-id-format" title="Permanent link">&para;</a></h6>
+<p>Unlike other object identifiers on the XRP Ledger, which are derived by hashing a collection of data using <code>SHA512-Half</code>, <strong><code>NFTokenPage</code></strong> identifiers are constructed so as to specfically allow for the adoption of a more efficient paging structure, ideally suited for NFTs.</p>
+<p>The identifier of an <strong><code>NFTokenPage</code></strong> is derived by concatenating the 160-bit <code>AccountID</code> of the owner of the page, followed by a 96 bit value that indicates whether a particular <strong><code>NFTokenID</code></strong> may be contained in this page.</p>
+<p>More specifically, and assuming that the function <code>low96(x)</code> returns the low 96 bits of a 256-bit value, an NFT with <strong><code>NFTokenID</code></strong> <code>A</code> can be included in a page with <strong><code>NFTokenPageID</code></strong> <code>B</code> if and only if <code>low96(A) &gt;= low96(B)</code>.</p>
+<p>For example, applying the <code>low96</code> function to the NFT described before, which had an ID of <code>000B013A95F14B0044F78A264E41713C64B5F89242540EE208C3098E00000D65</code> the function <code>low96</code> would return <code>42540EE208C3098E00000D65</code>.</p>
+<p>This curious construct exploits the structure of the SHAMap to allow for efficient lookups of individual <strong><code>NFToken</code></strong> objects without requiring iteration of the doubly linked list of <strong><code>NFTokenPages</code></strong>.</p>
+<h4 id="example-tokenpage-json">Example TokenPage JSON<a class="headerlink" href="#example-tokenpage-json" title="Permanent link">&para;</a></h4>
+<pre class="highlight"><code>{
+    &quot;LedgerEntryType&quot;: &quot;NFTokenPage&quot;,
+    &quot;PreviousTokenPage&quot;: &quot;598EDFD7CF73460FB8C695d6a9397E907378C8A841F7204C793DCBEF5406&quot;,
+    &quot;PreviousTokenNext&quot;: &quot;598EDFD7CF73460FB8C695d6a9397E9073781BA3B78198904F659AAA252A&quot;,
+    &quot;PreviousTxnID&quot;: &quot;95C8761B22894E328646F7A70035E9DFBECC90EDD83E43B7B973F626D21A0822&quot;,
+    &quot;PreviousTxnLgrSeq&quot;: 42891441,
+    &quot;Tokens&quot;:
+        {
+            {
+                &quot;NFTokenID&quot;: &quot;000B013A95F14B0044F78A264E41713C64B5F89242540EE208C3098E00000D65&quot;,
+                &quot;URI&quot;: &quot;ipfs://bafybeigdyrzt5sfp7udm7hu76uh7y26nf4dfuylqabf3oclgtqy55fbzdi&quot;
+            },
+            /* potentially more objects */
+       }
+}
+</code></pre>
+
+<h4 id="how-do-nftokenpage-objects-work">How do <strong><code>NFTokenPage</code></strong> objects work?<a class="headerlink" href="#how-do-nftokenpage-objects-work" title="Permanent link">&para;</a></h4>
+<p>The page within which an <strong><code>NFToken</code></strong> entry is stored is formed as described above. This is needed to find the correct starting point in the doubly linked list of <strong><code>NFTokenPage</code></strong> objects if that list is large. This is because it is inefficient to have to traverse the list from the beginning if an account holds thousands of <strong><code>NFToken</code></strong> objects in hundreds of <strong><code>NFTokenPage</code></strong> objects.</p>
+<h4 id="searching-an-nftoken-object">Searching an <strong><code>NFToken</code></strong> object<a class="headerlink" href="#searching-an-nftoken-object" title="Permanent link">&para;</a></h4>
+<p>To search for a specific <strong><code>NFToken</code></strong>, the first step is to locate the <strong><code>NFTokenPage</code></strong>, if any, that should contain that <strong><code>NFToken</code></strong>. For that do the following:</p>
+<p>Compute the <strong><code>NFTokenPageID</code></strong> using the account of the owner and the <strong><code>NFTokenID</code></strong> of the token, as described above. Then search for the ledger entry whose identifier is less than or equal to that value. If that entry does not exist or is not an <strong><code>NFTokenPage</code></strong>, the <strong><code>NFToken</code></strong> is not held by the given account.</p>
+<h4 id="adding-an-nftoken-object">Adding an <strong><code>NFToken</code></strong> object<a class="headerlink" href="#adding-an-nftoken-object" title="Permanent link">&para;</a></h4>
+<p>An <strong><code>NFToken</code></strong> object can be added by using the same approach to find the <strong><code>NFTokenPage</code></strong> it should be in and adding it to that page. If after addition the page overflows, find the <code>next</code> and <code>previous</code> pages (if any) and balance those three pages, inserting a new page as needed.</p>
+<h4 id="removing-an-nftoken-object">Removing an <strong><code>NFToken</code></strong> object<a class="headerlink" href="#removing-an-nftoken-object" title="Permanent link">&para;</a></h4>
+<p>An <strong><code>NFToken</code></strong> can be removed by using the same approach. If the number of <strong><code>NFTokens</code></strong> in the page goes below a certain threshhold, an attempt will be made to consolidate the page with a <code>previous</code> or subsequent page and recover the reserve.</p>
+<h4 id="reserve-for-nftokenpage-object">Reserve for <strong><code>NFTokenPage</code></strong> object<a class="headerlink" href="#reserve-for-nftokenpage-object" title="Permanent link">&para;</a></h4>
+<p>Each <strong><code>NFTokenPage</code></strong> costs an incremental reserve to the owner account. This specification allows up to 32 <strong><code>NFToken</code></strong> entries per page, which means that for accounts that hold multiple NFTs the <em>effective</em> reserve cost per NFT can be as low as <sup><em>R</em></sup>/<sub>32</sub> where <em>R</em> is the incremental reserve.</p>
+<h5 id="the-reserve-in-practice">The reserve in practice<a class="headerlink" href="#the-reserve-in-practice" title="Permanent link">&para;</a></h5>
+<p>The value of the incremental reserve is, as of this writing, 2 XRP. The table below shows what the <em>effective</em> reserve per token is, if a given page contains 1, 8, 16, 32 and 64 NFTs:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Incremental Reserve</th>
+<th style="text-align: center;">1 NFT</th>
+<th style="text-align: center;">8 NFTs</th>
+<th style="text-align: center;">16 NFTs</th>
+<th style="text-align: center;">32 NFTs</th>
+<th style="text-align: center;">64 NFTs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">5 XRP</td>
+<td style="text-align: center;">5 XRP</td>
+<td style="text-align: center;">0.625 XRP</td>
+<td style="text-align: center;">0.3125 XRP</td>
+<td style="text-align: center;">0.15625 XRP</td>
+<td style="text-align: center;">0.07812 XRP</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2 XRP</strong></td>
+<td style="text-align: center;"><strong>2 XRP</strong></td>
+<td style="text-align: center;"><strong>0.25 XRP</strong></td>
+<td style="text-align: center;"><strong>0.125 XRP</strong></td>
+<td style="text-align: center;"><strong>0.0625 XRP</strong></td>
+<td style="text-align: center;"><strong>0.03125 XRP</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">1 XRP</td>
+<td style="text-align: center;">1 XRP</td>
+<td style="text-align: center;">0.125 XRP</td>
+<td style="text-align: center;">0.0625 XRP</td>
+<td style="text-align: center;">0.03125 XRP</td>
+<td style="text-align: center;">0.01562 XRP</td>
+</tr>
+</tbody>
+</table>
+<h3 id="transactions">Transactions<a class="headerlink" href="#transactions" title="Permanent link">&para;</a></h3>
+<p>This proposal introduces several new transactions to allow for the minting, burning and trading of NFTs. All transactions introduced by this proposal incorporate the <a href="https://xrpl.org/transaction-common-fields.html">common transaction fields</a>
+that are shared by all transactions. Common fields are not documented in this proposal unless needed, because this proposal introduces new possible values for such fields.</p>
+<h3 id="transactions-for-minting-and-burning-nfts-on-xrpl">Transactions for minting and burning NFTs on XRPL<a class="headerlink" href="#transactions-for-minting-and-burning-nfts-on-xrpl" title="Permanent link">&para;</a></h3>
+<p>We define two transactions: <strong><code>NFTokenMint</code></strong> and <strong><code>NFTokenBurn</code></strong> for minting and burning NFTs respectively on XRPL.</p>
+<h4 id="the-nftokenmint-transaction">The <strong><code>NFTokenMint</code></strong> transaction<a class="headerlink" href="#the-nftokenmint-transaction" title="Permanent link">&para;</a></h4>
+<p>The <strong><code>NFTokenMint</code></strong> transaction creates an <strong><code>NFToken</code></strong> object and adds it to the relevant <strong><code>NFTokenPage</code></strong> object of the <code>NFTokenMinter</code>. A required parameter to this transaction is the <strong><code>Token</code></strong> field specifying the actual token. This transaction is the only opportunity the <code>NFTokenMinter</code> has to specify any token fields that are defined as immutable (e.g., the <code>TokenFlags</code>).</p>
+<p>If the transaction is successful, the newly minted NFToken will be owned by the account (the <code>NFTokenMinter</code> account) which executed the transaction. If needed, a new <strong><code>NFTokenPage</code></strong> is created for this account and a reserve is charged as described earlier.</p>
+<h5 id="transaction-specific-fields">Transaction-specific Fields<a class="headerlink" href="#transaction-specific-fields" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TransactionType</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>UINT16</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the new transaction type <strong><code>NFTokenMint</code></strong>. The integer value is <code>25</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Account</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>ACCOUNT ID</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the account which is minting the token. The account MUST <em>either</em>:</p>
+<ul>
+<li>match the <code>Issuer</code> field in the <strong><code>NFToken</code></strong> object; or</li>
+<li>match the <code>NFTokenMinter</code> field in the <code>AccountRoot</code> of the <code>Issuer</code> field in the <strong><code>NFToken</code></strong> object.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Issuer</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>ACCOUNT ID</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the account that should be the issuer of this token. This value is <em>optional</em> and should only be specified if the account executing the transaction is not the <code>Issuer</code> of the <strong><code>NFToken</code></strong> object. If it is present, the <code>NFTokenMinter</code> field in the <code>AccountRoot</code> of the <code>Issuer</code> field must match the <code>Account</code>, otherwise the transaction will fail.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NFTokenTaxon</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>number</code></td>
+<td style="text-align: center;"><code>UINT32</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the taxon associated with this token. The taxon is generally a value chosen by the <code>NFTokenMinter</code> of the token and a given taxon may be used for multiple tokens. Taxons have a valid range range from 0x0 to 0xFFFFFFFF.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Flags</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>number</code></td>
+<td style="text-align: center;"><code>UINT32</code></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the flags for this transaction. In addition to the universal transaction flags that are applicable to all transactions (e.g., <code>tfFullyCanonicalSig</code>), the following transaction-specific flags are defined and used to set the appropriate fields in the NFT:</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Flag Name</th>
+<th style="text-align: center;">Flag Value</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>tfBurnable</code></td>
+<td style="text-align: center;"><code>0x00000001</code></td>
+<td style="text-align: left;">If set, indicates that the <code>lsfBurnable</code> flag should be set.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>tfOnlyXRP</code></td>
+<td style="text-align: center;"><code>0x00000002</code></td>
+<td style="text-align: left;">If set, indicates that the <code>lsfOnlyXRP</code> flag should be set.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>tfTrustLine</code></td>
+<td style="text-align: center;"><code>0x00000004</code></td>
+<td style="text-align: left;">(<strong>DEPRECATED</strong>) If set, indicates that the <code>lsfTrustLine</code> flag should be set.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>tfTransferable</code></td>
+<td style="text-align: center;"><code>0x00000008</code></td>
+<td style="text-align: left;">If set, indicates that the <code>lsfTransferable</code> flag should be set.</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TransferFee</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>number</code></td>
+<td style="text-align: center;"><code>UINT16</code></td>
+</tr>
+</tbody>
+</table>
+<p>The value specifies the fee to charged by the issuer for secondary sales of the Token, if such sales are allowed. Valid values for this field are between 0 and 50,000 inclusive, allowing transfer rates of between 0.000% and 50.000% in increments of 0.001.</p>
+<p>The field MUST NOT be present if the <code>tfTransferable</code> flag is not set. If it is, the transaction should fail and a fee should be claimed.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>URI</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>BLOB</code></td>
+</tr>
+</tbody>
+</table>
+<p>A URI that points to the data and/or metadata associated with the NFT. This field need not be an HTTP or HTTPS URL; it could be an IPFS URI, a magnet link, immediate data encoded as an RFC2379 <a href="https://datatracker.ietf.org/doc/html/rfc2397">"data" URL</a>, or even an opaque issuer-specific encoding. The URI is <strong>NOT</strong> checked for validity, but the field is limited to a maximum length of 256 bytes.</p>
+<h5 id="embedding-additional-information">Embedding additional information<a class="headerlink" href="#embedding-additional-information" title="Permanent link">&para;</a></h5>
+<p>If <code>NFTokenMinters</code> need to specify additional information during minting (for example, details identifying a property by referencing a particular <a href="https://en.wikipedia.org/wiki/Plat">plat</a>, a vehicle by specifying a <a href="https://en.wikipedia.org/wiki/Vehicle_identification_number">VIN</a>, or other object-specific descriptions) they should use the <a href="https://xrpl.org/transaction-common-fields.html#memos-field"><code>memo</code></a> functionality that is already available on the XRP Ledger as a common field. Memos are a part of the signed transaction and are available from historical archives, but are not stored in the ledger.</p>
+<hr />
+<h3 id="example-nftokenmint-transaction">Example <strong><code>NFTokenMint</code></strong> transaction<a class="headerlink" href="#example-nftokenmint-transaction" title="Permanent link">&para;</a></h3>
+<pre class="highlight"><code>{
+  &quot;TransactionType&quot;: &quot;NFTokenMint&quot;,
+  &quot;Account&quot;: &quot;rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B&quot;,
+  &quot;Issuer&quot;: &quot;rNCFjv8Ek5oDrNiMJ3pw6eLLFtMjZLJnf2&quot;,
+  &quot;TransferFee&quot;: 314,
+  &quot;Flags&quot;: 2147483659,
+  &quot;Fee&quot;: 10,
+  &quot;URI&quot;: &quot;ipfs://bafybeigdyrzt5sfp7udm7hu76uh7y26nf4dfuylqabf3oclgtqy55fbzdi&quot;
+  &quot;Memos&quot;: [
+        {
+            &quot;Memo&quot;: {
+                &quot;MemoType&quot;: &quot;687474703A2F2F6578616D706C652E636F6D2F6D656D6F2F67656E65726963&quot;,
+                &quot;MemoData&quot;: &quot;72656E74&quot;
+            }
+        }
+    ],
+}
+</code></pre>
+
+<p>This transaction assumes that the issuer, <code>rNCFjv8Ek5oDrNiMJ3pw6eLLFtMjZLJnf2</code>, has set the <code>NFTokenMinter</code> field in its <code>AccountRoot</code> to <code>rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B</code>, thereby authorizing that account to mint tokens on its behalf.</p>
+<h5 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h5>
+<p>This transaction examines the <code>FirstNFTokenSequence</code> and <code>MintedNFTokens</code> fields in the account root of the <code>Issuer</code>, and uses them to construct the <code>NFTokenID</code> for the token being minted. If <code>FirstNFTokenSequence</code> does not exist, this field is assumed to have the same value as the <code>Sequence</code> field of the <code>Issuer</code>. If <code>MintedNFTokens</code> does not exist, this field is assumed to have the value 0; the value of the field is incremented by exactly 1.</p>
+<h4 id="the-nftokenburn-transaction">The <strong><code>NFTokenBurn</code></strong> transaction<a class="headerlink" href="#the-nftokenburn-transaction" title="Permanent link">&para;</a></h4>
+<p>The <strong><code>NFTokenBurn</code></strong> transaction is used to remove an <strong><code>NFToken</code></strong> object from the <strong><code>NFTokenPage</code></strong> in which it is being held, effectively removing the token from the ledger ("burning" it).</p>
+<p>If this operation succeeds, the corresponding <strong><code>NFToken</code></strong> is removed. If this operation empties the <strong><code>NFTokenPage</code></strong> holding the <strong><code>NFToken</code></strong> or results in the consolidation, thus removing an <strong><code>NFTokenPage</code></strong>, the owner’s reserve requirement is reduced by one. This operation would also delete up to a maximum of 500 <code>buy</code>/<code>sell</code> <strong><code>NFTokenOffer</code></strong> objects for the burnt <strong><code>NFToken</code></strong>, leaving any remaining <strong><code>NFTokenOffer</code></strong> untouched on the ledger.</p>
+<h5 id="transaction-specific-fields_1">Transaction-specific Fields<a class="headerlink" href="#transaction-specific-fields_1" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TransactionType</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>UINT16</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the new transaction type <strong><code>NFTokenBurn</code></strong>. The integer value is <code>26</code>.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Account</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>ACCOUNT ID</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the <code>AccountID</code> that submitted this transaction. The account MUST be either the present <code>owner</code> of the token or, if the <strong><code>lsfBurnable</code></strong> flag is set in the <strong><code>NFToken</code></strong>, either the <code>issuer</code> account or an account authorized by the issuer, i.e., <code>NFTokenMinter</code>.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NFTokenID</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>UINT256</code></td>
+</tr>
+</tbody>
+</table>
+<p>Identifies the <strong><code>NFToken</code></strong> object to be removed by the transaction.</p>
+<h4 id="example-nftokenburn-json">Example <strong><code>NFTokenBurn</code></strong> JSON<a class="headerlink" href="#example-nftokenburn-json" title="Permanent link">&para;</a></h4>
+<pre class="highlight"><code>{
+      &quot;TransactionType&quot;: &quot;NFTokenBurn&quot;,
+      &quot;Account&quot;: &quot;rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B&quot;,
+      &quot;Fee&quot;: 10,
+      &quot;NFTokenID&quot;: &quot;000B013A95F14B0044F78A264E41713C64B5F89242540EE208C3098E00000D65&quot;
+}
+</code></pre>
+
+<h4 id="13-account-root-modifications">1.3. Account Root modifications<a class="headerlink" href="#13-account-root-modifications" title="Permanent link">&para;</a></h4>
+<p>This proposal introduces 3 additional fields in an <code>AccountRoot</code>:</p>
+<ol>
+<li>The <code>NFTokenMinter</code> field;</li>
+<li>The <code>MintedNFTokens</code> field;</li>
+<li>The <code>BurnedNFTokens</code> field; and the</li>
+<li>The <code>FirstNFTokenSequence</code> field.</li>
+</ol>
+<h5 id="131-nftokenminter">1.3.1 <code>NFTokenMinter</code><a class="headerlink" href="#131-nftokenminter" title="Permanent link">&para;</a></h5>
+<p>It is likely that issuers may want to issue NFTs from their well known account, while, at the same time, wanting to delegate the issuance of such NFTs to a mint or other third party. To enable this use case, this specification introduces a new, optional field in the <code>AccountRoot</code> object.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NFTokenMinter</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>AccountID</code></td>
+</tr>
+</tbody>
+</table>
+<p>The <code>NFTokenMinter</code> field, if set, specifies an alternate account which is allowed to execute the <strong><code>NFTokenMint</code></strong> and <strong><code>NFTokenBurn</code></strong> operations on behalf of the account.</p>
+<p>The <strong><code>AccountSet</code></strong> transaction should be augmented to allow the field to be set or cleared.</p>
+<p><strong>Note:</strong> Previous versions of this spec used the term <code>MintAccount</code> for this field.</p>
+<h5 id="132-mintednftokens">1.3.2 <code>MintedNFTokens</code><a class="headerlink" href="#132-mintednftokens" title="Permanent link">&para;</a></h5>
+<p>To ensure the uniqueness of <strong><code>NFToken</code></strong> objects, this proposal introduces the <code>MintedNFTokens</code> field. This field is used during the <strong><code>NFTokenMint</code></strong> transaction and used to form the <code>NFTokenID</code> of the new object. If this field is not present, the value 0 is assumed.</p>
+<h4 id="133-burnednftokens">1.3.3 <code>BurnedNFTokens</code><a class="headerlink" href="#133-burnednftokens" title="Permanent link">&para;</a></h4>
+<p>To provide a convenient way to determine how many <strong><code>NFToken</code></strong> objects issued by an account are still active (i.e., not burned), this proposal introduces the <code>BurnedNFTokens</code> field. If this field is not present, the value 0 is assumed. The field is incremented whenever a token issued by this account is burned. So this field will be present and non-zero for any account that has issued at least one token and one or more of those tokens have been burned.</p>
+<p>:memo: An account for which the difference between the number of minted and burned tokens, as stored in the <code>MintedNFTokens</code> and <code>BurnedNFTokens</code> fields respectively, is non-zero cannot be deleted.</p>
+<h4 id="134-firstnftokensequence">1.3.4 <code>FirstNFTokenSequence</code><a class="headerlink" href="#134-firstnftokensequence" title="Permanent link">&para;</a></h4>
+<p>To ensure the <code>NFTokenID</code> cannot be reproduced by the issuer in any way, this proposal introduces the <code>FirstNFTokenSequence</code> field. When the issuer mints their first <code>NFToken</code>, this field is set to the current <code>Sequence</code> of the issuer's account and never changes. This field is used during the <code>Sequence</code> number construct of a <code>NFTokenID</code>.</p>
+<h3 id="14-transferability-of-tokens-nfts">1.4. Transferability of Tokens (NFTs)<a class="headerlink" href="#14-transferability-of-tokens-nfts" title="Permanent link">&para;</a></h3>
+<p>Tokens which have the <code>lsfTransferable</code> flag set can be transferred among users. This is achieved by way of offers.</p>
+<h4 id="141-the-nftokenoffer-ledger-entry">1.4.1. The <strong><code>NFTokenOffer</code></strong> ledger entry<a class="headerlink" href="#141-the-nftokenoffer-ledger-entry" title="Permanent link">&para;</a></h4>
+<p>The <strong><code>NFTokenOffer</code></strong> ledger entry represents an offer to buy, sell or transfer an <strong><code>NFToken</code></strong> object. An <strong><code>NFTokenOffer</code></strong> object is created as a result of <strong><code>NFTokenCreateOffer</code></strong> transaction by the owner of the <strong><code>NFToken</code></strong>.</p>
+<h5 id="1411-nftokenofferid-format">1.4.1.1. <strong><code>NFTokenOfferID</code></strong> Format<a class="headerlink" href="#1411-nftokenofferid-format" title="Permanent link">&para;</a></h5>
+<p>The unique ID, a.k.a <strong><code>NFTokenOfferID</code></strong>, of the <strong><code>NFTokenOffer</code></strong> object is the result of <strong><code>SHA512-Half</code></strong> of the following values concatenated in order:</p>
+<ul>
+<li>The <strong><code>NFTokenOffer</code></strong> space key; this proposal recommends using the value <code>0x0074</code>;</li>
+<li>The <code>AccountID</code> of the account placing the offer; and</li>
+<li>The <code>Sequence</code> (or <code>Ticket</code>) of the <strong><code>NFTokenCreateOffer</code></strong> transaction that will create the <strong><code>NFTokenOffer</code></strong>.</li>
+</ul>
+<h5 id="fields_1">Fields<a class="headerlink" href="#fields_1" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Owner</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>AccountID</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the <code>Owner</code> of the account that is creating and owns the offer. Only the current <code>Owner</code> of an <strong><code>NFToken</code></strong> can create an offer to <strong>sell</strong> an <strong><code>NFToken</code></strong>, but any account can create an offer to <strong>buy</strong> an <strong><code>NFToken</code></strong>.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LedgerEntryType</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>UINT16</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the type of ledger object. This proposal recommends using the value <code>0x0074</code>.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Flags</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>number</code></td>
+<td style="text-align: center;"><code>UINT32</code></td>
+</tr>
+</tbody>
+</table>
+<p>A set of flags associated with this object, used to specify various options or settings. This proposal only defines one flag at this time, used to determine if this is a <code>Buy</code>
+or <code>Sell</code> offer:</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Flag Name</th>
+<th style="text-align: center;">Flag Value</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>lsfSellToken</code></td>
+<td style="text-align: center;"><code>0x00000001</code></td>
+<td style="text-align: left;">If set, indicates that the offer is a sell offer. Otherwise, the offer is a buy offer.</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PreviousTxnID</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>Hash256</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the identifying hash of the transaction that most recently modified this object.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PreviousTxnLgrSeq</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>number</code></td>
+<td style="text-align: center;"><code>UINT32</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the index of the ledger that contains the transaction that most recently modified this object.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NFTokenID</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>UINT256</code></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the <strong><code>NFTokenID</code></strong> of the <strong><code>NFToken</code></strong> object being referenced by this offer.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Amount</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>object</code> or <code>string</code></td>
+<td style="text-align: center;"><code>AMOUNT</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the amount expected or offered for the <strong><code>NFToken</code></strong>. If the token has the <code>lsfOnlyXRP</code> flag set, the amount <strong>MUST</strong> be specified in XRP.</p>
+<p>Sell offers that specify assets other than XRP must specify a non-zero amount. Sell offers which specify XRP can be 'free' (i.e., the <code>Amount</code> field may be equal to <code>"0"</code>).</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Expiration</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>number</code></td>
+<td style="text-align: center;"><code>UINT32</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the time after which the offer is no longer active. The value is the number of seconds since the <a href="https://xrpl.org/basic-data-types.html#specifying-time">Ripple Epoch</a>.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Destination</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>Account ID</code></td>
+</tr>
+</tbody>
+</table>
+<p>Only allowed if the <code>lsfSellToken</code> flag is set. Indicates the <code>AccountID</code> that this sell offer is intended for (either a buyer or a broker). If present, only that account can accept the sell offer.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>OwnerNode</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>UINT64</code></td>
+</tr>
+</tbody>
+</table>
+<p>Internal bookkeeping, indicating the page inside the owner directory where this token is being tracked. This field allows of the efficient deletion of offers.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NFTokenOfferNode</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>UINT64</code></td>
+</tr>
+</tbody>
+</table>
+<p>Internal bookkeeping, indicating the page inside the token buy or sell offer directory, as appropriate, where this token is being tracked. This field allows of the efficient deletion of offers.</p>
+<h3 id="15-how-does-nftokenoffer-work">1.5. How does <strong><code>NFTokenOffer</code></strong> work?<a class="headerlink" href="#15-how-does-nftokenoffer-work" title="Permanent link">&para;</a></h3>
+<p>Unlike regular offers on XRPL, which are stored sorted by quality in an order book and are automatically matched by an on-ledger mechanism, an <strong><code>NFTokenOffer</code></strong> is not stored in an order book and will never be automatically matched or executed.</p>
+<p>A buyer must <em>explicitly</em> choose to accept an <strong><code>NFTokenOffer</code></strong> that offers to sell an <strong><code>NFToken</code></strong>. Similarly, a seller must <em>explicitly</em> choose to accept a specific <strong><code>NFTokenOffer</code></strong> that offers to buy an <strong><code>NFToken</code></strong> object that they own.</p>
+<blockquote>
+<p><strong>Note</strong>: An <strong><code>NFTokenOffer</code></strong> for an <strong><code>NFToken</code></strong> <em>may</em> be implicitly deleted during an <strong><code>NFTokenBurn</code></strong> transaction of the <strong><code>NFToken</code></strong>.</p>
+</blockquote>
+<h4 id="151-locating-nftokenoffer-objects">1.5.1. Locating <strong><code>NFTokenOffer</code></strong> objects<a class="headerlink" href="#151-locating-nftokenoffer-objects" title="Permanent link">&para;</a></h4>
+<p>Each token has two directories, one containing offers to buy the token and the other containing offers to sell the token. This makes it easy to find <strong><code>NFTokenOffer</code></strong> for a particular token. It is expected that off-ledger systems will be used to retrieve, present, communicate and effectuate the creation, enumeration, acceptance or cancellation of offers. For example, a marketplace may offer intuitive web- or app-based interfaces for users.</p>
+<h4 id="152-nftokenoffer-reserve">1.5.2. <strong><code>NFTokenOffer</code></strong> Reserve<a class="headerlink" href="#152-nftokenoffer-reserve" title="Permanent link">&para;</a></h4>
+<p>Each <strong><code>NFTokenOffer</code></strong> object costs the account placing the offer one incremental reserve. As of this writing the incremental reserve is 2 XRP. The reserve can be recovered by cancelling the offer. The reserve is also recovered if the offer is accepted, which removes the offer from the XRP Ledger.</p>
+<p>It is important for an account to cancel all of their outstanding offers for a burnt <strong><code>NFToken</code></strong> to reclaim the reserves. Otherwise, these offers will be left dangling on the ledger.</p>
+<h4 id="153-nftokenoffer-transactions">1.5.3. <strong><code>NFTokenOffer</code></strong> Transactions<a class="headerlink" href="#153-nftokenoffer-transactions" title="Permanent link">&para;</a></h4>
+<p>There are three defined transactions:</p>
+<ol>
+<li><strong><code>NFTokenCreateOffer</code></strong></li>
+<li><strong><code>NFTokenCancelOffer</code></strong></li>
+<li><strong><code>NFTokenOfferAccept</code></strong></li>
+</ol>
+<p>All three transactions have the generic set of transaction fields, some of which may be ommitted from this proposal for the sake of clarity.</p>
+<h4 id="154-nftokencreateoffer-transaction">1.5.4. <strong><code>NFTokenCreateOffer</code></strong> transaction<a class="headerlink" href="#154-nftokencreateoffer-transaction" title="Permanent link">&para;</a></h4>
+<p>The <strong><code>NFTokenCreateOffer</code></strong> transaction creates either a new <code>Sell</code> offer for an <strong><code>NFToken</code></strong> owned by the account executing the transaction, or a new <code>Buy</code> offer for <strong><code>NFToken</code></strong> owned by another account.</p>
+<p>Each offer costs one incremental reserve.</p>
+<h5 id="1541-fields">1.5.4.1. Fields<a class="headerlink" href="#1541-fields" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TransactionType</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>UINT16</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the new transaction type <strong><code>NFTokenCreateOffer</code></strong>. The integer identifier is <code>27</code>.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Account</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>AccountID</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the <code>AccountID</code> of the account that initiated the transaction.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Owner</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>AccountID</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the <code>AccountID</code> of the account that owns the corresponding <strong><code>NFToken</code></strong>.</p>
+<ul>
+<li>If the offer is to buy a token, this field must be present and it must be different than <code>Account</code> (since an offer to buy a token one already holds is meaningless).</li>
+<li>If the offer is to sell a token, this field must not be present, as the owner is, implicitly, the same as <code>Account</code> (since an offer to sell a token one doesn't already hold is meaningless).</li>
+</ul>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Flags</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>number</code></td>
+<td style="text-align: center;"><code>UINT32</code></td>
+</tr>
+</tbody>
+</table>
+<p>A set of flags that specifies options or controls the behavior of the transaction. This proposal only defines one flag at this time:</p>
+<blockquote>
+<p>|   Flag Name   |  Flag Value  | Description                                                                     |
+| :-----------: | :----------: | :------------------------------------------------------------------------------ | --- |
+| <code>tfSellToken</code> | <code>0x00000001</code> | If set, indicates that the offer is a sell offer. Otherwise, it is a buy offer. |     |</p>
+</blockquote>
+<p>Note that the <code>Flags</code> field includes both transaction-specific and generic flags. This proposal only specifies the transaction-specific flags; all currently valid generic flags (e.g., <code>tfFullyCanonicalSig</code>) are applicable, but not listed here.</p>
+<p>The transactor <strong>SHOULD NOT</strong> allow unknown flags to be set.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NFTokenID</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>Hash256</code></td>
+</tr>
+</tbody>
+</table>
+<p>Identifies the <strong><code>NFTokenID</code></strong> of the <strong><code>NFToken</code></strong> object that the offer references.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Amount</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>Currency Amount</code></td>
+<td style="text-align: center;"><code>AMOUNT</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the amount expected or offered for the <strong><code>Token</code></strong>.</p>
+<p>The amount must be non-zero, except where this is an offer is an offer to sell and the asset is XRP; then it is legal to specify an amount of zero, which means that the current owner of the token is giving it away, gratis, either to anyone at all, or to the account identified by the <code>Destination</code> field.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Expiration</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>number</code></td>
+<td style="text-align: center;"><code>UINT32</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the time after which the offer will no longer be valid. The value is the number of seconds since the <a href="https://xrpl.org/basic-data-types.html#specifying-time">Ripple Epoch</a>.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Destination</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>AccountID</code></td>
+</tr>
+</tbody>
+</table>
+<p>Only valid if the <code>tfSellToken</code> flag is set. If present, indicates that this offer may only be accepted by the specified account (either a broker or a buyer). Attempts by other accounts to accept this offer <strong>MUST</strong> fail.</p>
+<p>If successful, the <strong><code>NFTokenCreateOffer</code></strong> transaction results in the creation of an <strong><code>NFTokenOffer</code></strong> object.</p>
+<h4 id="155-nftokencanceloffer-transaction">1.5.5. <strong><code>NFTokenCancelOffer</code></strong> transaction<a class="headerlink" href="#155-nftokencanceloffer-transaction" title="Permanent link">&para;</a></h4>
+<p>The <strong><code>NFTokenCancelOffer</code></strong> transaction can be used to cancel existing token offers created using <strong><code>NFTokenCreateOffer</code></strong>.</p>
+<h4 id="1551-permissions">1.5.5.1 Permissions<a class="headerlink" href="#1551-permissions" title="Permanent link">&para;</a></h4>
+<p>An existing offer, represented by an <strong><code>NFTokenOffer</code></strong> object, can be cancelled by:</p>
+<ol>
+<li>The account that originally created the <strong><code>NFTokenOffer</code></strong>;</li>
+<li>The account in the <code>Destination</code> field of the <strong><code>NFTokenOffer</code></strong>, if one is present; or</li>
+<li>Any account if the <strong><code>NFTokenOffer</code></strong> specifies an expiration time and the close time of the parent ledger in which the <strong><code>NFTokenCancelOffer</code></strong> is included is greater than the expiration time.</li>
+</ol>
+<p>This transaction removes the listed <strong><code>NFTokenOffer</code></strong> object from the ledger, if present, and adjusts the reserve requirements accordingly. It is not an error if the <strong><code>NFTokenOffer</code></strong> cannot be found, and the transaction should complete successfully if that is the case.</p>
+<h5 id="fields_2">Fields<a class="headerlink" href="#fields_2" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TransactionType</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>UINT16</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the new transaction type <strong><code>NFTokenCancelOffer</code></strong>. The integer identifier is <code>28</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NFTokenOffers</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>array</code></td>
+<td style="text-align: center;"><code>VECTOR256</code></td>
+</tr>
+</tbody>
+</table>
+<p>An array of ledger entry IDs, each identifying an <strong><code>NFTokenOffer</code></strong> object that should be cancelled by this transaction.</p>
+<p>It is an error if an entry in this list points to an object that is not an <strong><code>NFTokenOffer</code></strong> object. It is not an error if an entry in this list points to an object that does not exist.</p>
+<hr />
+<h4 id="156-nftokenofferaccept-transaction">1.5.6. <strong><code>NFTokenOfferAccept</code></strong> transaction<a class="headerlink" href="#156-nftokenofferaccept-transaction" title="Permanent link">&para;</a></h4>
+<p>The <strong><code>NFTokenOfferAccept</code></strong> transaction is used to accept offers to <code>buy</code> or <code>sell</code> an <strong><code>NFToken</code></strong>. It can either:</p>
+<ol>
+<li>Allow <strong>one</strong> offer to be accepted. This is called <code>direct</code> mode.</li>
+<li>Allow <strong>two</strong> distinct offers, one offering to buy a given <strong><code>NFToken</code></strong> and the other offering to sell the same <strong><code>NFToken</code></strong>, to be accepted in an atomic fashion. This is called <code>brokered</code> mode.</li>
+</ol>
+<h5 id="1561-brokered-vs-direct-mode">1.5.6.1. Brokered vs. Direct Mode<a class="headerlink" href="#1561-brokered-vs-direct-mode" title="Permanent link">&para;</a></h5>
+<p>The mode in which the transaction operates depends on the presence of the <code>NFTokenSellOffer</code> and <code>NFTokenBuyOffer</code> fields of the transaction:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><code>NFTokenSellOffer</code></th>
+<th style="text-align: center;"><code>NFTokenBuyOffer</code></th>
+<th style="text-align: center;">Mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;">Brokered</td>
+</tr>
+<tr>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;">:x:</td>
+<td style="text-align: center;">Direct</td>
+</tr>
+<tr>
+<td style="text-align: center;">:x:</td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;">Direct</td>
+</tr>
+</tbody>
+</table>
+<p>If neither of those fields is specified, the transaction is malformed and shall produce a <code>tem</code> class error.</p>
+<p>The semantics of <code>brokered</code> mode are slightly different than one in <code>direct</code> mode: the account executing the transaction functions as a broker, bringing the two offers together and causing them to be matched, but does not acquire ownership of the involved NFT, which will, if the transaction is successful, be transferred directly from the seller to the buyer.</p>
+<h5 id="1562-execution-details">1.5.6.2. Execution Details<a class="headerlink" href="#1562-execution-details" title="Permanent link">&para;</a></h5>
+<h6 id="15621-direct-mode">1.5.6.2.1. Direct Mode<a class="headerlink" href="#15621-direct-mode" title="Permanent link">&para;</a></h6>
+<p>In <code>direct</code> mode, an <strong><code>NFTokenOfferAccept</code></strong> transaction <strong>MUST</strong> fail if:</p>
+<ol>
+<li>The <strong><code>NFTokenOffer</code></strong> against which <strong><code>NFTokenOfferAccept</code></strong> transaction is placed is an offer to <code>buy</code>
+   the <strong><code>NFToken</code></strong> and the account executing the <strong><code>NFTokenOfferAccept</code></strong> is not, at the time of execution, the current owner of the corresponding <strong><code>NFToken</code></strong>.</li>
+<li>The <strong><code>NFTokenOffer</code></strong> against which <strong><code>NFTokenOfferAccept</code></strong> transaction is placed is an offer to <code>sell</code>
+   the <strong><code>NFToken</code></strong> and was placed by an account which is not, at the time of execution, the current owner of the <strong><code>NFToken</code></strong>.</li>
+<li>The <strong><code>NFTokenOffer</code></strong> against which <strong><code>NFTokenOfferAccept</code></strong> transaction is placed is an offer to <code>sell</code>
+   the <strong><code>NFToken</code></strong> and was placed by an account which is not, at the time of execution, the <code>Account</code> in the recipient field of the <strong><code>NFTokenOffer</code></strong>, if one exists.</li>
+<li>The <strong><code>NFTokenOffer</code></strong> against which <strong><code>NFTokenOfferAccept</code></strong> transaction is placed specifies an <code>expiration</code> time and the close time field of the parent of the ledger in which the transaction
+   would be included has already passed.</li>
+<li>The <strong><code>NFTokenOffer</code></strong> against which <strong><code>NFTokenOfferAccept</code></strong> transaction is placed to buy or sell the <strong><code>NFToken</code></strong>
+   is owned by the account executing the <strong><code>NFTokenOfferAccept</code></strong>.</li>
+</ol>
+<p>If the transaction is executed successfully then:</p>
+<ol>
+<li>The relevant <strong><code>NFToken</code></strong> will change ownership, meaning that the token will be removed from the <strong><code>NFTokenPage</code></strong> of the existing <code>owner</code> and be added to the <strong><code>NFTokenPage</code></strong> of the new <code>owner</code>.</li>
+<li>Funds will be transferred from the buyer to the seller, as specified in the <strong><code>NFTokenOffer</code></strong>. If the corresponding <strong><code>NFToken</code></strong> offer specifies a <code>TransferRate</code>, then the <code>issuer</code> receives the specified percentage, with the balance going to the seller of the <strong><code>NFToken</code></strong>.</li>
+</ol>
+<h6 id="15622-brokered-mode">1.5.6.2.2. Brokered Mode<a class="headerlink" href="#15622-brokered-mode" title="Permanent link">&para;</a></h6>
+<p>In <code>brokered</code> mode, <strong><code>NFTokenOfferAccept</code></strong> transaction <strong>MUST</strong> fail if:</p>
+<ol>
+<li>The <code>buy</code> <strong><code>NFTokenOffer</code></strong> against which <strong><code>NFTokenOfferAccept</code></strong> transaction is placed is owned by the account executing the transaction.</li>
+<li>The <code>sell</code> <strong><code>NFTokenOffer</code></strong> against which <strong><code>NFTokenOfferAccept</code></strong> transaction is placed is owned by the account executing the transaction.</li>
+<li>The account which placed the offer to sell the <strong><code>NFToken</code></strong> is not, at the time of execution, the current owner of the corresponding <strong><code>NFToken</code></strong>.</li>
+<li>Either offer (<code>buy</code> or <code>sell</code>) specifies an <code>expiration</code> time and the close time field of the parent of the ledger in which the transaction would be included has already passed.</li>
+<li>The <code>owner</code> of the <code>sell</code> <strong><code>NFTokenOffer</code></strong> is the same account as the <code>owner</code> of the <code>buy</code> <strong><code>NFTokenOffer</code></strong>. In other words, the <strong><code>NFToken</code></strong> cannot be sold to the account that currently owns it.</li>
+<li>The account that submitted the <strong><code>NFTokenOfferAccept</code></strong> transaction has a different address from the address specified in the <code>Destination</code> field of the <code>sell</code>/<code>buy</code> <strong><code>NFTokenOffer</code></strong>.</li>
+</ol>
+<h5 id="1563-fields">1.5.6.3. Fields<a class="headerlink" href="#1563-fields" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TransactionType</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>UINT16</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the transaction type <strong><code>NFTokenOfferAccept</code></strong>. The sequence number of a previous <strong><code>NFTokenCreateOffer</code></strong> transaction. The integer identifier is <code>29</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NFTokenSellOffer</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>UINT256</code></td>
+</tr>
+</tbody>
+</table>
+<p>Identifies the <strong><code>NFTokenOffer</code></strong> that offers to sell the <strong><code>NFToken</code></strong>.</p>
+<p>:memo: In direct mode this field is optional, but either <code>NFTokenSellOffer</code> or <code>NFTokenBuyOffer</code> must be specified. In brokered mode, both <code>NFTokenSellOffer</code> and <code>NFTokenBuyOffer</code> MUST be specified.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NFTokenBuyOffer</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>string</code></td>
+<td style="text-align: center;"><code>UINT256</code></td>
+</tr>
+</tbody>
+</table>
+<p>Identifies the <strong><code>NFTokenOffer</code></strong> that offers to buy the <strong><code>NFToken</code></strong>.</p>
+<p>:memo: In direct mode this field is optional, but either <code>NFTokenSellOffer</code> or <code>NFTokenBuyOffer</code> must be specified. In brokered mode, both <code>NFTokenSellOffer</code> and <code>NFTokenBuyOffer</code> MUST be specified.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+<th style="text-align: center;">Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>NFTokenBrokerFee</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>object</code> or <code>string</code></td>
+<td style="text-align: center;"><code>AMOUNT</code></td>
+</tr>
+</tbody>
+</table>
+<p>This field is only valid in brokered mode. It specifies the amount that the broker will keep as part of their fee for bringing the two offers together; the remaining amount will be sent to the seller of the <strong><code>NFToken</code></strong> being bought. If specified, the fee must be such that, prior to accounting for the transfer fee charged by the issuer, the amount that the seller would receive is at least as much as the amount indicated in the sell offer.</p>
+<p>This functionality is intended to allow the <code>owner</code> of an <strong><code>NFToken</code></strong> to offer their token for sale to a third party broker, who may then attempt to sell the <strong><code>NFToken</code></strong> for a larger amount, without the broker having to own the <strong><code>NFToken</code></strong> or custody funds.</p>
+<p>:memo: If both offers are for the same asset, it is possible that the order in which funds are transferred might cause a transaction that would succeed to fail due to an apparent lack of funds. To ensure deterministic transaction execution and maximimize the chances of successful execution, this proposal requires that the account attempting to buy the <strong><code>NFToken</code></strong> is debited first and that funds due to the broker are credited <em>before</em> crediting the seller or issuer.</p>
+<p>:note: In brokered mode, The offers referenced by <code>NFTokenBuyOffer</code> and <code>NFTokenSellOffer</code> must both specify the same <code>NFTokenID</code>; that is, both must be for the same <strong><code>NFToken</code></strong>.</p>
+<h3 id="16-uniqueness-property-of-the-nftokenid">1.6. Uniqueness property of the <code>NFTokenID</code><a class="headerlink" href="#16-uniqueness-property-of-the-nftokenid" title="Permanent link">&para;</a></h3>
+<p>The <code>NFTokenID</code> is ensured to be unique by using its <code>Sequence</code> number structure, and by imposing a restriction on deleting accounts.</p>
+<h4 id="161-nft-sequence-construct">1.6.1. NFT <code>Sequence</code> Construct<a class="headerlink" href="#161-nft-sequence-construct" title="Permanent link">&para;</a></h4>
+<p>The <code>Sequence</code> of an NFT is the lowest 32-bit of its <code>NFTokenID</code>. It is computed by adding the <code>FirstNFTokenSequence</code> with <code>MintedNFTokens</code> to produce a monotonically increasing number.</p>
+<p>Adding the <code>FirstNFTokenSequence</code> offset prevents the NFT <code>Sequence</code> from starting at 0 whenever the issuer recreates their account. This helps to ensure that the <code>NFTokenID</code> remains unique.</p>
+<h4 id="162-account-deletion-restriction">1.6.2. Account Deletion Restriction<a class="headerlink" href="#162-account-deletion-restriction" title="Permanent link">&para;</a></h4>
+<p>An account can only be deleted if <code>FirstNFTSequence + MintedNFTokens + 256</code> is less than the current ledger sequence (256 was chosen as a heuristic restriction for account deletion and already exists in the account deletion constraint).</p>
+<p>The proposal adds a restriction because simply having the <code>NFTokenID</code> is not enough to prevent the issuer from making a duplicate <code>NFTokenID</code>. There are rare cases where the authorized minting feature could still allow a duplicate to be made.</p>
+<p>Without this restriction, the following example demonstrates how a duplicate NFTokenID can be reproduced through authorized minting:</p>
+<ol>
+<li>Alice's account sequence is at 1.</li>
+<li>Bob is Alice's authorized minter.</li>
+<li>Bob mints 500 NFTs for Alice. The NFTs will have sequences 1-501, as
+   NFT sequence is computed by <code>FirstNFTokenSequence + MintedNFTokens</code>).</li>
+<li>Alice deletes her account at ledger 257 (as required by the existing
+   <code>AccountDelete</code> amendment).</li>
+<li>Alice re-creates her account at ledger 258.</li>
+<li>Alice mints an NFT. <code>FirstNFTokenSequence</code> initializes to her account
+   sequence (258), and <code>MintedNFTokens</code> initializes as 0. This
+   newly minted NFT would have a sequence number of 258, which is a
+   duplicate of what she issued through authorized minting before she
+   deleted her account.</li>
+</ol>
+<h3 id="history">History<a class="headerlink" href="#history" title="Permanent link">&para;</a></h3>
+<p>This spec, at revision 10, describes XLS-20 with <a href="https://xrpl.org/known-amendments.html#fixnftokenremint">the <code>fixNFTokenRemint</code> amendment</a> active. For earlier versions of this spec, please see <a href="https://github.com/XRPLF/XRPL-Standards/commits/master/XLS-0020-non-fungible-tokens/README.md">the commit history</a>.</p></div>
+
+  <!-- Document navigation footer -->
+  <div class="document-nav">
+    <!-- Back to standards index -->
+    <a href="/">&larr; Back to All Standards</a>
+    <!-- Direct link to GitHub source -->
+    <a
+      href="https://github.com/XRPLF/XRPL-Standards/tree/master/XLS-0020-non-fungible-tokens"
+      >View on GitHub</a
+    >
+  </div>
+</div>
+</main>
+
+    <!-- Site footer with copyright and license information -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 XRP Ledger Foundation. Licensed under
+          <a href="https://github.com/XRPLF/XRPL-Standards/blob/master/LICENSE"
+            >Apache License 2.0</a
+          >.
+        </p>
+      </div>
+    </footer>
+
+    <!-- KaTeX auto-render: render LaTeX math on page load -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        var content = document.querySelector("main");
+        if (!content) return;
+        renderMathInElement(content, {
+          delimiters: [
+            { left: "\\[", right: "\\]", display: true },
+            { left: "\\(", right: "\\)", display: false },
+          ],
+          throwOnError: false,
+        });
+      });
+    </script>
+
+    <!-- JavaScript blocks for child templates -->
+    
+  </body>
+</html>

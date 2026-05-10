@@ -1,0 +1,28 @@
+{
+  "source_id": "src_3cc91a11ac53",
+  "receipt_id": "rcpt_3cc91a11ac53_1778364148519",
+  "section_id": "07-metadata-and-off-chain-durability",
+  "url": "https://xrpl.org/docs/concepts/tokens/nfts/payload-storage",
+  "final_url": "https://xrpl.org/docs/concepts/tokens/nfts/payload-storage",
+  "fetched_at": "2026-05-09T22:02:28.519Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "NFT Payload Storage",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "Explains how NFT payload storage works on the XRP Ledger.",
+    "Describes the structure and components of an NFT payload.",
+    "Details the process for creating, storing, and managing NFT payloads."
+  ],
+  "limitations": [
+    "Limited real-world examples provided",
+    "Assumes familiarity with XRPL concepts and terminology",
+    "Some technical details may be challenging for non-technical readers"
+  ],
+  "asserts": "NFT payload storage allows creators to store metadata associated with an NFT on the XRP Ledger, providing immutability, transparency, and decentralization.",
+  "scope": "Explains how NFT payload storage works on the XRP Ledger, focusing on the structure of payloads and the process for creating, storing, and managing them.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T22:03:09.297Z"
+}

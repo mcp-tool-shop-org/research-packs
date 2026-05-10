@@ -1,0 +1,28 @@
+# Section 03 — On-ledger state and reserves
+# URLs refreshed in Session D (2026-05-09) after Session C's 5/8 404 staleness.
+# Path-pattern lesson: ledger-OBJECT-types → ledger-ENTRY-types (renamed
+# server-side between Session 1 draft and Session C run); RPC methods moved
+# under category subpaths (account-methods/, ledger-methods/).
+# All URLs HTTP 200 verified live + content-check passed (per operator-playbook
+# discipline: status code AND prose content, not just status).
+
+# xrpl.org canonical docs — ledger-entry types (object representations on ledger)
+https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/nftokenpage
+https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/mptokenissuance
+https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/ripplestate
+https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/offer
+https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/nftokenoffer
+https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/accountroot
+https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types
+
+# xrpl.org canonical docs — reserve mechanics (already fetched at Session C — kept)
+https://xrpl.org/docs/concepts/accounts/reserves
+
+# xrpl.org canonical docs — JSON-RPC methods for reading on-ledger state
+https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/account-methods/account_objects
+https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/ledger-methods/ledger_entry
+https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/account-methods/account_info
+
+# GitHub API search — supplementary developer-discussion evidence (already fetched at Session C — kept)
+https://api.github.com/search/issues?q=repo:XRPLF/rippled+reserve+NFT+delete&per_page=20
+https://api.github.com/search/issues?q=repo:XRPLF/rippled+NFTokenPage+delete&per_page=20

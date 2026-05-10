@@ -1,0 +1,30 @@
+{
+  "source_id": "src_f011b0207e63",
+  "receipt_id": "rcpt_f011b0207e63_1778349628740",
+  "section_id": "03-on-ledger-state-and-reserves",
+  "url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/ripplestate",
+  "final_url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/ripplestate",
+  "fetched_at": "2026-05-09T18:00:28.740Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "RippleState",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "RippleState is a type of ledger entry in the XRP Ledger.",
+    "It represents a change in the state of the Ripple consensus protocol.",
+    "RippleState entries are used to communicate updates from one validator to another.",
+    "They can contain data such as changes to transaction costs, fees, and other parameters.",
+    "RippleState entries are validated by the XRP Ledger's consensus mechanism."
+  ],
+  "limitations": [
+    "The source does not discuss potential limitations or drawbacks of using RippleState entries in applications.",
+    "It assumes familiarity with the XRP Ledger and its architecture.",
+    "The scope is limited to technical details rather than broader implications or critiques."
+  ],
+  "asserts": "RippleState is an essential type of ledger entry that enables validators to communicate and enforce changes to the Ripple consensus protocol's configuration and behavior.",
+  "scope": "Describes the purpose, usage, and impact of RippleState entries within the technical context of the XRP Ledger's consensus mechanism.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:01:02.120Z"
+}

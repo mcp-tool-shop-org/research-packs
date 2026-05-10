@@ -23,6 +23,18 @@
         "preserved_contradiction_records": 0
       },
       "link": "packages/research-os-self-dogfood/"
+    },
+    {
+      "name": "xrpl-creator-token-durability",
+      "topic": "What makes XRPL creator-token holdings durable over time — across token-standard versions, account access changes, and ledger-state evolution — and what should a creator-side control plane track to keep them runnable, transferable, and provable?",
+      "frozen_at": "2026-05-10T00:25:19.025Z",
+      "totals": {
+        "sections": 7,
+        "accepted_claims": 251,
+        "dispositioned": 0,
+        "preserved_contradiction_records": 0
+      },
+      "link": "packages/xrpl-creator-token-durability/"
     }
   ]
 }

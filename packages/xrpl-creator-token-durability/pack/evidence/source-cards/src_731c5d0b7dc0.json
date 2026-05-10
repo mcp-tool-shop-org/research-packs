@@ -1,0 +1,29 @@
+{
+  "source_id": "src_731c5d0b7dc0",
+  "receipt_id": "rcpt_731c5d0b7dc0_1778357573125",
+  "section_id": "05-transfer-and-trade-mechanics",
+  "url": "https://xrpl.org/docs/concepts/payment-types/cross-currency-payments",
+  "final_url": "https://xrpl.org/docs/concepts/payment-types/cross-currency-payments",
+  "fetched_at": "2026-05-09T20:12:53.125Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Cross-Currency Payments",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "Cross-currency payments in XRP Ledger allow for the transfer of value across different currencies.",
+    "They are built on top of the decentralized exchange (dex) feature and utilize XRP as the quote currency.",
+    "The payee specifies the amount and destination, while the payer specifies the amounts to be sent in each currency.",
+    "This allows for a more efficient process than having to find an external market for each currency pair."
+  ],
+  "limitations": [
+    "Limited information provided about the specific technical implementation details.",
+    "Does not cover all potential use cases or edge cases of cross-currency payments.",
+    "Assumes some prior knowledge of XRP Ledger concepts and terminology."
+  ],
+  "asserts": "Cross-currency payments in the XRP Ledger enable efficient transfer of value across different currencies by leveraging the decentralized exchange feature and utilizing XRP as the quote currency.",
+  "scope": "Explains how cross-currency payments work within the context of the XRP Ledger, focusing on the decentralized exchange feature and how it allows for transfers between different currencies.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T20:13:29.906Z"
+}

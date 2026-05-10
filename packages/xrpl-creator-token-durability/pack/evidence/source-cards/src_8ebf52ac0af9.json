@@ -1,0 +1,29 @@
+{
+  "source_id": "src_8ebf52ac0af9",
+  "receipt_id": "rcpt_8ebf52ac0af9_1778360463141",
+  "section_id": "06-amendment-and-validator-landscape",
+  "url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/amendments",
+  "final_url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/amendments",
+  "fetched_at": "2026-05-09T21:01:03.141Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Amendments",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "Amendments are changes to the Ripple protocol that have been approved by the decentralized network.",
+    "Amendments add new features or capabilities to the XRPL protocol.",
+    "They can also fix bugs, improve performance, and update other aspects of the protocol.",
+    "The amendment process allows for ongoing evolution and improvement of the XRPL protocol."
+  ],
+  "limitations": [
+    "The documentation does not provide specific details on how often amendments are made or what types of changes they typically entail.",
+    "It focuses more on the process of amending rather than the actual content of amendments themselves.",
+    "The relevance to practical implementation and usage of XRPL may be limited, being primarily a reference for developers."
+  ],
+  "asserts": "Amendments allow approved changes to be made to the Ripple protocol in order to add new features or improve existing capabilities.",
+  "scope": "The scope of this source is the process by which approved changes (amendments) are added to the Ripple protocol to evolve and enhance its features and capabilities.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T21:01:38.096Z"
+}

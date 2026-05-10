@@ -1,0 +1,31 @@
+# Section 02 — Account and key management
+# URLs verified live in Session E (2026-05-09). All 14 returned HTTP 200 on
+# first probe; advisor's Session D-corrected URL list landed cleanly without
+# path-pattern shifts. Content checks confirm real prose (not JS-shell) on
+# permission-values + accountdelete sample.
+# Section purpose: AccountRoot fields, master key disablement, regular key,
+# signer list / multi-sign, tickets, account deletion, permission/delegation.
+
+# xrpl.org canonical concepts
+https://xrpl.org/docs/concepts/accounts
+https://xrpl.org/docs/concepts/accounts/cryptographic-keys
+https://xrpl.org/docs/concepts/accounts/multi-signing
+https://xrpl.org/docs/concepts/accounts/tickets
+
+# xrpl.org canonical transaction-type references
+https://xrpl.org/docs/references/protocol/transactions/types/accountset
+https://xrpl.org/docs/references/protocol/transactions/types/setregularkey
+https://xrpl.org/docs/references/protocol/transactions/types/signerlistset
+https://xrpl.org/docs/references/protocol/transactions/types/accountdelete
+https://xrpl.org/docs/references/protocol/transactions/types/ticketcreate
+
+# xrpl.org canonical ledger-entry-type references
+https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/accountroot
+https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/signerlist
+
+# xrpl.org canonical data-type reference + JSON-RPC method
+https://xrpl.org/docs/references/protocol/data-types/permission-values
+https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/account-methods/account_info
+
+# GitHub API search — supplementary developer-discussion (AccountDelete + NFT edge cases)
+https://api.github.com/search/issues?q=repo:XRPLF/rippled+AccountDelete+NFT+OR+NFToken&per_page=20

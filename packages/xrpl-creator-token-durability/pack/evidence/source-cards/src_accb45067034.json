@@ -1,0 +1,30 @@
+{
+  "source_id": "src_accb45067034",
+  "receipt_id": "rcpt_accb45067034_1778364395400",
+  "section_id": "07-metadata-and-off-chain-durability",
+  "url": "https://docs.arweave.org/developers",
+  "final_url": "https://docs.arweave.org/developers",
+  "fetched_at": "2026-05-09T22:06:35.4Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Getting Started",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "Arweave provides a decentralized storage solution using blockchain technology.",
+    "To get started with Arweave, you need to set up and run your first miner.",
+    "Miners are responsible for maintaining the network and earning AR tokens.",
+    "The Getting Started section of the documentation guides you through the setup process.",
+    "You can also find information on configuring and running a miner in this section."
+  ],
+  "limitations": [
+    "This source is technical documentation, which may not be accessible to all users.",
+    "The scope is limited to the Arweave platform and its usage.",
+    "No real-world examples or case studies are provided in this source."
+  ],
+  "asserts": "Setting up and running your first Arweave miner is necessary to get started with using the decentralized storage solution.",
+  "scope": "This documentation asserts the process of setting up and running an Arweave miner for users looking to utilize the platform's decentralized storage capabilities.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T22:07:12.66Z"
+}

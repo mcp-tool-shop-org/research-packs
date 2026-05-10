@@ -1,0 +1,58 @@
+{
+  "name": "xrpl-creator-token-durability",
+  "topic": "What makes XRPL creator-token holdings durable over time — across token-standard versions, account access changes, and ledger-state evolution — and what should a creator-side control plane track to keep them runnable, transferable, and provable?",
+  "frozen_at": "2026-05-10T00:25:19.025Z",
+  "research_os_version": "0.1.0",
+  "sections": [
+    {
+      "id": "01-token-surface-and-standards",
+      "accepted_claims": 45,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "02-account-and-key-management",
+      "accepted_claims": 32,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "03-on-ledger-state-and-reserves",
+      "accepted_claims": 42,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "04-issuer-controls-and-immutability",
+      "accepted_claims": 27,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "05-transfer-and-trade-mechanics",
+      "accepted_claims": 30,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "06-amendment-and-validator-landscape",
+      "accepted_claims": 56,
+      "gate": "warn",
+      "synthesis_eligible": true
+    },
+    {
+      "id": "07-metadata-and-off-chain-durability",
+      "accepted_claims": 19,
+      "gate": "warn",
+      "synthesis_eligible": true
+    }
+  ],
+  "totals": {
+    "sections": 7,
+    "accepted_claims": 251,
+    "dispositioned": 0,
+    "unresolved_contradictions": 0
+  },
+  "freeze_receipt_sha256": "6511a044aa15fa4de30a0dfc82b811947e1f57a1563fd1d7ba013a64725259a5",
+  "operator_notes": "XRPL creator-token durability — multi-layer state bundle across token standards, account authority, ledger state, issuer controls, transfer mechanics, amendment landscape, and off-chain metadata. Experiment 3 pack #2 of 3."
+}

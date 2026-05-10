@@ -1,0 +1,28 @@
+{
+  "source_id": "src_d0882a19791f",
+  "receipt_id": "rcpt_d0882a19791f_1778354695536",
+  "section_id": "04-issuer-controls-and-immutability",
+  "url": "https://xrpl.org/docs/references/protocol/data-types/nftoken",
+  "final_url": "https://xrpl.org/docs/references/protocol/data-types/nftoken",
+  "fetched_at": "2026-05-09T19:24:55.536Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "NFToken",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "NFToken is a custom data type in the XRP Ledger that represents a non-fungible token (NFT).",
+    "It allows for the creation and management of unique digital assets on the XRP Ledger.",
+    "NFTokens are built using the existing account-based structure of the XRP Ledger, making them compatible with XRP transactions.",
+    "The NFToken schema defines the properties and behaviors of NFTs in the XRP Ledger."
+  ],
+  "limitations": [
+    "This documentation may not cover all possible use cases or edge cases for creating and using NFTokens in the XRP Ledger.",
+    "It assumes a basic understanding of the XRP Ledger's functionality and concepts."
+  ],
+  "asserts": "NFToken is a custom data type in the XRP Ledger that represents non-fungible tokens (NFTs), enabling the creation and management of unique digital assets within the XRP Ledger ecosystem.",
+  "scope": "Describes the NFToken custom data type, its properties, and behavior within the context of the XRP Ledger.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T19:25:30.443Z"
+}

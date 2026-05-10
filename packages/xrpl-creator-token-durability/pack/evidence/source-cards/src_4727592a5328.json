@@ -1,0 +1,27 @@
+{
+  "source_id": "src_4727592a5328",
+  "receipt_id": "rcpt_4727592a5328_1778354581872",
+  "section_id": "04-issuer-controls-and-immutability",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/types/clawback",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/types/clawback",
+  "fetched_at": "2026-05-09T19:23:01.872Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Clawback",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "Clawback transactions allow an account to reclaim previously transferred XRP or drops.",
+    "The clawback action can be applied to any transaction type that transfers XRP or drops.",
+    "A clawback requires the signer and submitter fields to include the original sender's account.",
+    "If a clawed drop is not claimed within 10 days, it reverts to the clawback-enabled account."
+  ],
+  "limitations": [
+    "The scope of this document does not cover all potential use cases or edge cases for clawback transactions."
+  ],
+  "asserts": "Clawback transactions enable an account to reclaim previously transferred XRP or drops by specifying a target transaction and the sender's account in the signer and submitter fields.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T19:23:29.706Z"
+}

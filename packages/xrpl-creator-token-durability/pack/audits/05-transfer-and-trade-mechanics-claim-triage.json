@@ -1,0 +1,99 @@
+{
+  "summary_id": "tris_1778358600582_05-transfer-and-trade-mechanics",
+  "section_id": "05-transfer-and-trade-mechanics",
+  "triaged_at": "2026-05-09T20:30:00.582Z",
+  "research_os_version": "0.3.1",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 156,
+  "decisions": {
+    "needs_scope_repair": 102,
+    "selected_for_review": 47,
+    "parked_overdense_source": 3,
+    "parked_weak_scope": 4
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 47,
+  "selected_per_source": [
+    {
+      "source_id": "src_a37ff8072a91",
+      "selected": 10,
+      "total": 30
+    },
+    {
+      "source_id": "src_5d5676c4b1d7",
+      "selected": 4,
+      "total": 18
+    },
+    {
+      "source_id": "src_01e8d92d7e53",
+      "selected": 5,
+      "total": 12
+    },
+    {
+      "source_id": "src_bb6e135772ef",
+      "selected": 2,
+      "total": 10
+    },
+    {
+      "source_id": "src_51d3108c7446",
+      "selected": 3,
+      "total": 10
+    },
+    {
+      "source_id": "src_034a20f9fcbf",
+      "selected": 2,
+      "total": 9
+    },
+    {
+      "source_id": "src_e1cfbbad4fa5",
+      "selected": 2,
+      "total": 9
+    },
+    {
+      "source_id": "src_051630391070",
+      "selected": 1,
+      "total": 9
+    },
+    {
+      "source_id": "src_48fddb8ee3b6",
+      "selected": 5,
+      "total": 9
+    },
+    {
+      "source_id": "src_f103bcae0753",
+      "selected": 4,
+      "total": 7
+    },
+    {
+      "source_id": "src_736c7f9cccff",
+      "selected": 2,
+      "total": 7
+    },
+    {
+      "source_id": "src_71ee1ec187f7",
+      "selected": 3,
+      "total": 6
+    },
+    {
+      "source_id": "src_5a1d70d24fc1",
+      "selected": 1,
+      "total": 6
+    },
+    {
+      "source_id": "src_731c5d0b7dc0",
+      "selected": 1,
+      "total": 6
+    },
+    {
+      "source_id": "src_c8f7530cb4f1",
+      "selected": 2,
+      "total": 4
+    },
+    {
+      "source_id": "src_914d01359b57",
+      "selected": 0,
+      "total": 4
+    }
+  ]
+}

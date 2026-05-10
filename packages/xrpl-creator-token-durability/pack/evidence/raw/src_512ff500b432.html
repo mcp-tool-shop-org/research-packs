@@ -1,0 +1,1852 @@
+<!--
+    Individual XLS document template
+
+    Displays a single XLS standard document with:
+    - Document metadata (number and status badge)
+    - Full rendered markdown content
+    - Navigation links back to index and GitHub source
+    - XRPL.org themed styling for document presentation
+-->
+<!--
+    Base HTML template for XLS Standards website
+
+    This template provides the common structure and styling for all pages:
+    - XRPL.org themed design with dark color scheme
+    - Work Sans typography matching official XRPL branding
+    - Responsive layout with header, main content, and footer
+    - Dynamic base URL support for GitHub Pages deployment
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Dynamic page title - can be overridden by child templates -->
+    <title>XLS-0033: Multi-Purpose Tokens (MPTs)</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="/assets/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Main stylesheet with XRPL.org themed styling -->
+    <link rel="stylesheet" href="/assets/style.css" />
+
+    <!-- Work Sans font - official XRPL.org typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- KaTeX for LaTeX math rendering -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/katex.min.css"
+      integrity="sha384-UA8juhPf75SzzAMA/4fo3yOU7sBJ0om7SCD2GHq0fZqZco6tr1UCV7nUbk9J90JM"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/katex.min.js"
+      integrity="sha384-Tt7wBxLKwSzFVRET4O4U9H6v8MNaQ/CjN2FMP4xFm0ErrFu6aNqoonRVW5W40iGI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/contrib/auto-render.min.js"
+      integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Site header with navigation -->
+    <header>
+      <div class="container">
+        <!-- Main site title with link to homepage -->
+        <h1><a href="/">XRP Ledger Standards</a></h1>
+        <nav>
+          <!-- Primary navigation links -->
+          <a href="/">All Standards</a>
+          <a href="/contribute.html">Contribute</a>
+          <a href="https://github.com/XRPLF/XRPL-Standards">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main content area - populated by child templates -->
+    <main class="container">
+<div class="xls-document">
+  <!-- Document metadata header -->
+  <div class="xls-meta">
+    <!-- Large XLS number display -->
+    <div class="xls-number-large">XLS-0033</div>
+    <!-- Status badge with conditional styling -->
+    <div class="xls-status-badge Final">
+      Final
+    </div>
+  </div>
+
+  <!-- Main document content area -->
+  <!-- The content variable contains the rendered HTML from markdown -->
+  <div class="document-content"><pre>
+  xls: 33
+  title: Multi-Purpose Tokens (MPTs)
+  description: Extensions to the XRP Ledger to support a more multi-purpose token type as an alternative to trust lines
+  author: David Fuelling <fuelling@ripple.com>, Nikolaos Bougalis <nikb@bougalis.net>, Greg Weisbrod <gweisbrod@ripple.com>
+  proposal-from: https://github.com/XRPLF/XRPL-Standards/discussions/82
+  status: Final
+  category: Amendment
+  created: 2022-08-05
+</pre>
+
+<div class="toc"><span class="toctitle">Table of Contents</span><ul>
+<li><a href="#multi-purpose-tokens-mpts">Multi-Purpose Tokens (MPTs)</a><ul>
+<li><a href="#1-abstract">1. Abstract</a></li>
+<li><a href="#2-creating-multi-purpose-tokens">2. Creating Multi-Purpose Tokens</a></li>
+<li><a href="#3-transactions">3. Transactions</a></li>
+<li><a href="#4-details-on-locking-mpts">4. Details on Locking MPTs</a></li>
+<li><a href="#5-details-on-clawing-back-mpts">5. Details on Clawing-Back MPTs</a></li>
+<li><a href="#6-apis">6. APIs</a></li>
+<li><a href="#a-appendices">A. Appendices</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="multi-purpose-tokens-mpts">Multi-Purpose Tokens (MPTs)<a class="headerlink" href="#multi-purpose-tokens-mpts" title="Permanent link">&para;</a></h2>
+<h3 id="1-abstract">1. Abstract<a class="headerlink" href="#1-abstract" title="Permanent link">&para;</a></h3>
+<p><a href="https://xrpl.org/trust-lines-and-issuing.html#trust-lines-and-issuing">Trust lines</a> are a fundamental building block for many XRP Ledger tokenization features, including <a href="https://en.wikipedia.org/wiki/Central_bank_digital_currency">CBDCs</a> and <a href="https://www.investopedia.com/terms/s/stablecoin.asp">fiat-collateralized stablecoins</a>. However, as more and more token issuers embrace the XRP Ledger, the current size of each trust line will become an impediment to ledger stability and scalability.</p>
+<p>This proposal introduces extensions to the XRP Ledger to support a more multi-purpose token (i.e., MPT) type, along with operations to enumerate, purchase, sell and hold such tokens.</p>
+<p>Unlike trust lines, MPTs do not represent bidirectional debt relationships. Instead, MPTs function more like a unidirectional trust line with only one balance, making it simpler to support common tokenization requirements, including even non-monetery use cases such as tracking reputation points in an online game.</p>
+<p>Perhaps as important, however, MPTs require significantly less space than trust lines: ~52 bytes for each MPT held by a token holder, as compared to <em>at least</em> 234 bytes for every new trust line (see Appendix 1 for a more detailed comparison).</p>
+<h4 id="11-advantages-and-disadvantages">1.1. Advantages and Disadvantages<a class="headerlink" href="#11-advantages-and-disadvantages" title="Permanent link">&para;</a></h4>
+<p><strong>Advantages</strong></p>
+<ul>
+<li>Uses a fixed-point balance representation instead of a floating-point representation, yielding the following benefits:</li>
+<li>MPT balance amounts can easily be added to other ledger objects like escrows, checks, payment channels, and AMMs.</li>
+<li>Enables reliable and easy enforcement of invariant checks and straightforward tracking of fees.</li>
+<li>Eliminates edge case floating-point math involving very small amounts violating expected equality conditions (e.g., MPTs will never have to deal with cases where <code>A+B=A</code> for non-zero <code>B</code> or <code>(A+B)+C != A+(B+C)</code>).</li>
+<li>Simpler conceptual model (trust lines and rippling make it harder for developers to reason about the system, which increases the risk of errors or value loss).</li>
+<li>Reduces trust line storage requirements which allows more accounts to hold more tokens, for less cost.</li>
+<li>Reduces long-term infrastructure and storage burdens on node operators, increasing network resiliency.</li>
+<li>Improves node performance when processing large volumes of MPT transactions.</li>
+</ul>
+<p><strong>Disadvantages</strong></p>
+<ul>
+<li>MPTs would introduce a third asset type on the ledger after XRP and IOUs, which complicates the Payment Engine implementation.</li>
+<li>New transaction and data types require new implementation code from client libraries and wallets to read, display, and transact.</li>
+<li>MPTs will represent a smaller overall balance amount as compared to trust lines (Trustlines can represent an enormous range, roughly between 10^-96 to 10^80).</li>
+</ul>
+<h4 id="12-assumptions">1.2. Assumptions<a class="headerlink" href="#12-assumptions" title="Permanent link">&para;</a></h4>
+<p>This proposal makes a variety of assumptions, based upon observations of existing trust line usage in order to produce the most compact representations of data. These assumptions include:</p>
+<ol>
+<li><strong>Only Unidirectional</strong>. This proposal does not support bidirectional trust line constructions, on the assumption that <em>most</em> token issuers leave their trust line limit set to the default value of 0 (i.e., issuers don't allow debt relationships with token holders, by default). Thus, MPTs do not have the same "balance netting" functionality found in trust lines because MPTs have only a single balance as opposed to the two balances used by trust lines.</li>
+<li><strong>Few Issuances per Issuer</strong>. The issuance of fungible tokens often involves regulatory constraints, limiting the number of issuances per-issuer in many cases. Additionally, <a href="https://xrpl.org/freezes.html#global-freeze">XRP Ledger guidance</a> recommends using separate addresses for each token issuance to facilitate global freeze and to enhance security. Given these factors, this specification does not limit the number of MPT issuances a single account can create</li>
+<li><strong>No Trust Limits</strong>. Unlike current Trustline functionality where trust amount limits can be set by either party, this proposal eliminates this feature under the assumption that token holders will not acquire a MPT without first making an off-ledger trust decision. For example, a common use-case for a MPT is a fiat-backed stablecoin, where a token holder wouldn't purchase more stablecoin than they would feel comfortable holding.</li>
+<li><strong>No Rippling</strong>. Unlike some existing capabilities of the ledger, MPTs are not eligible for <a href="https://xrpl.org/rippling.html#rippling">rippling</a>, and thus do not have any configurability settings related to that functionality.</li>
+</ol>
+<h4 id="13-release-timeline-and-scope">1.3. Release Timeline and Scope<a class="headerlink" href="#13-release-timeline-and-scope" title="Permanent link">&para;</a></h4>
+<p>XLS-33 will only cover the addition of the new data structures for MPTs, integration with the <strong><code>Payment</code></strong> transaction such that users can make MPT to MPT payments (IE no cross currency payments), and several other incidental additions like new requirements for account deletion (discussed below). Later amendments will integrate MPTs with other features of the XRPL such as the DEX.</p>
+<h3 id="2-creating-multi-purpose-tokens">2. Creating Multi-Purpose Tokens<a class="headerlink" href="#2-creating-multi-purpose-tokens" title="Permanent link">&para;</a></h3>
+<h4 id="21-on-ledger-data-structures">2.1. On-Ledger Data Structures<a class="headerlink" href="#21-on-ledger-data-structures" title="Permanent link">&para;</a></h4>
+<p>This specification introduces two new objects and one new ledger structure:</p>
+<ol>
+<li>A <strong><code>MPTokenIssuance</code></strong> is a new object that describes a fungible token issuance created by an issuer.</li>
+<li>A <strong><code>MPToken</code></strong> is a new object that describes a single account's holdings of an issued token.</li>
+</ol>
+<h5 id="211-the-mptokenissuance-object">2.1.1. The <strong><code>MPTokenIssuance</code></strong> object<a class="headerlink" href="#211-the-mptokenissuance-object" title="Permanent link">&para;</a></h5>
+<p>The <strong><code>MPTokenIssuance</code></strong> object represents a single MPT issuance and holds data associated with the issuance itself. Token issuances are created using the <strong><code>MPTokenIssuanceCreate</code></strong> transaction and can, optionally, be destroyed by the <strong><code>MPTokenIssuanceDestroy</code></strong> transaction.</p>
+<h6 id="2111-mptokenissuance-ledger-identifier">2.1.1.1. <strong><code>MPTokenIssuance</code></strong> Ledger Identifier<a class="headerlink" href="#2111-mptokenissuance-ledger-identifier" title="Permanent link">&para;</a></h6>
+<p>The key of an <code>MPTokenIssuance</code> object is computed using the SHA512-Half of the following values, concatenated in order:</p>
+<ul>
+<li>The <code>MPTokenIssuance</code> space key (0x007E).</li>
+<li>The transaction <code>Sequence</code> number from <code>MPTokenIssuanceCreate</code> transaction that was used to create the issuance.</li>
+<li>The <code>AccountID</code> of the MPT issuer.</li>
+</ul>
+<p>The ID of an <code>MPTokenIssuance</code> object, a.k.a. <code>MPTokenIssuanceID</code>, is a 192-bit integer that contains the following
+fields, concatenated in order:</p>
+<ul>
+<li>The transaction <code>Sequence</code> number from <code>MPTokenIssuanceCreate</code> transaction that was used to create the issuance.</li>
+<li>The <code>AccountID</code> of the MPT issuer.</li>
+</ul>
+<p>This is represented graphically as follows:</p>
+<pre class="highlight"><code>┌──────────────────────────┐┌──────────────────────────┐
+│                          ││                          │
+│      Sequence            ││     Issuer AccountID     │
+│      (32 bits)           ││        (160 bits)        │
+│                          ││                          │
+└──────────────────────────┘└──────────────────────────┘
+</code></pre>
+
+<p><strong>Note: <code>MPTokenIssuanceID</code> is utilized to specify a unique <code>MPTokenIssuance</code> object in JSON parameters for
+transactions and APIs. Internally, the ledger splits the <code>MPTokenIssuanceID</code> into two components: <code>sequence</code>
+and <code>issuer</code> address.</strong></p>
+<h6 id="2112-fields">2.1.1.2. Fields<a class="headerlink" href="#2112-fields" title="Permanent link">&para;</a></h6>
+<p><strong><code>MPTokenIssuance</code></strong> objects are stored in the ledger and tracked in an <a href="https://xrpl.org/directorynode.html">Owner Directory</a> owned by the issuer. Issuances have the following required and optional fields:</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LedgerEntryType</code></td>
+<td>:heavy_check_mark:</td>
+<td><code>number</code></td>
+<td><code>UINT16</code></td>
+</tr>
+<tr>
+<td><code>Flags</code></td>
+<td>:heavy_check_mark:</td>
+<td><code>number</code></td>
+<td><code>UINT32</code></td>
+</tr>
+<tr>
+<td><code>Issuer</code></td>
+<td>:heavy_check_mark:</td>
+<td><code>string</code></td>
+<td><code>ACCOUNTID</code></td>
+</tr>
+<tr>
+<td><code>AssetScale</code></td>
+<td>(default)</td>
+<td><code>number</code></td>
+<td><code>UINT8</code></td>
+</tr>
+<tr>
+<td><code>MaximumAmount</code></td>
+<td>(default)</td>
+<td><code>string</code></td>
+<td><code>UINT64</code></td>
+</tr>
+<tr>
+<td><code>OutstandingAmount</code></td>
+<td>(default)</td>
+<td><code>string</code></td>
+<td><code>UINT64</code></td>
+</tr>
+<tr>
+<td><code>TransferFee</code></td>
+<td>(default)</td>
+<td><code>number</code></td>
+<td><code>UINT16</code></td>
+</tr>
+<tr>
+<td><code>MPTokenMetadata</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>BLOB</code></td>
+</tr>
+<tr>
+<td><code>PreviousTxnID</code></td>
+<td>:heavy_check_mark:</td>
+<td><code>string</code></td>
+<td><code>HASH256</code></td>
+</tr>
+<tr>
+<td><code>PreviousTxnLgrSeq</code></td>
+<td>:heavy_check_mark:</td>
+<td><code>number</code></td>
+<td><code>UINT32</code></td>
+</tr>
+<tr>
+<td><code>OwnerNode</code></td>
+<td>(default)</td>
+<td><code>number</code></td>
+<td><code>UINT64</code></td>
+</tr>
+<tr>
+<td><code>Sequence</code></td>
+<td>:heavy_check_mark:</td>
+<td><code>number</code></td>
+<td><code>UINT32</code></td>
+</tr>
+</tbody>
+</table>
+<h6 id="21121-ledgerentrytype">2.1.1.2.1. <code>LedgerEntryType</code><a class="headerlink" href="#21121-ledgerentrytype" title="Permanent link">&para;</a></h6>
+<p>The value 0x007E, mapped to the string <code>MPTokenIssuance</code>, indicates that this object describes a Multi-Purpose Token (MPT).</p>
+<h6 id="21122-flags">2.1.1.2.2. <code>Flags</code><a class="headerlink" href="#21122-flags" title="Permanent link">&para;</a></h6>
+<p>A set of flags indicating properties or other options associated with this <strong><code>MPTokenIssuance</code></strong> object. The type specific flags are:</p>
+<table>
+<thead>
+<tr>
+<th>Flag Name</th>
+<th>Flag Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lsfMPTLocked</code></td>
+<td>️<code>0x0001</code></td>
+<td>If set, indicates that all balances are locked.</td>
+</tr>
+<tr>
+<td><code>lsfMPTCanLock</code></td>
+<td>️<code>0x0002</code></td>
+<td>If set, indicates that the issuer can lock an individual balance or all balances of this MPT. If not set, the MPT cannot be locked in any way.</td>
+</tr>
+<tr>
+<td><code>lsfMPTRequireAuth</code></td>
+<td>️<code>0x0004</code></td>
+<td>If set, indicates that <em>individual</em> holders must be authorized. This enables issuers to limit who can hold their assets.</td>
+</tr>
+<tr>
+<td><code>lsfMPTCanEscrow</code></td>
+<td><code>0x0008</code></td>
+<td>If set, indicates that <em>individual</em> holders can place their balances into an escrow.</td>
+</tr>
+<tr>
+<td><code>lsfMPTCanTrade</code></td>
+<td><code>0x0010</code></td>
+<td>If set, indicates that <em>individual</em> holders can trade their balances using the XRP Ledger DEX or AMM.</td>
+</tr>
+<tr>
+<td><code>lsfMPTCanTransfer</code></td>
+<td>️<code>0x0020</code></td>
+<td>If set, indicates that tokens held by non-issuers may be transferred to other accounts. If not set, indicates that tokens held by non-issuers may not be transferred except back to the issuer; this enables use-cases like store credit.</td>
+</tr>
+<tr>
+<td><code>lsfMPTCanClawback</code></td>
+<td>️<code>0x0040</code></td>
+<td>If set, indicates that the issuer may use the <code>Clawback</code> transaction to clawback value from <em>individual</em> holders.</td>
+</tr>
+</tbody>
+</table>
+<p>Except for <code>lsfMPTLocked</code>, which can be mutated via the <strong><code>MPTokenIssuanceSet</code></strong> transaction, these flags are
+<strong>immutable</strong> and can only be set once, at issuance creation, using the <strong><code>MPTokenIssuanceCreate</code></strong> transaction.</p>
+<h6 id="21123-issuer">2.1.1.2.3. <code>Issuer</code><a class="headerlink" href="#21123-issuer" title="Permanent link">&para;</a></h6>
+<p>The address of the account that controls both the issuance amounts and characteristics of a particular fungible token.</p>
+<h6 id="21124-assetscale">2.1.1.2.4. <code>AssetScale</code><a class="headerlink" href="#21124-assetscale" title="Permanent link">&para;</a></h6>
+<p>Every MPT asset has an off-ledger standard unit. For example, the standard unit for a USD
+stablecoin is typically one US dollar. However, an MPT issuer might prefer to make the smallest unit of an MPT something
+smaller than the asset's standard unit, to enable on-ledger fractionalization while adhering to the limitation that
+MPTs only support whole numbers (i.e., MPT units must be integers). For example, an issuer might want each MPT unit to
+represent one cent instead of a whole dollar. Using <code>AssetScale</code>, MPT issuers can represent this difference as the
+number of orders of magnitude between a standard unit and an MPT unit.</p>
+<p>More formally, the asset scale is a non-negative integer (<code>0</code>, <code>1,</code> <code>2</code>, …) such that one MPT unit equals \(10^{-scale}\)
+of a corresponding standard unit.</p>
+<p>The following equations formalize the relationship between an asset's standard unit and an assets MPT unit:</p>
+<p>\[{StdUnits} = {MptUnits} / 10^{scale} ⟺ {StdUnits} = {MptUnits} * 10^{-scale}\]</p>
+<p>\[{MptUnits} = {StdUnits} / 10^{-scale} ⟺ {MptUnits} = {StdUnits} * 10^{scale}\]</p>
+<p>To solve for 1 unit of each, the following equations can be used:</p>
+<p>\[1 MptUnit = 10^{-scale} StdUnits\]</p>
+<p>\[1 StdUnit = 10^{scale} MptUnits\]</p>
+<p>Mapping these equations to the USD stablecoin example above, an <code>MPTokenIssuance</code> with an <code>AssetScale</code> of <code>0</code> would mean
+each MPT unit represents one standard unit. However, an <code>MPTokenIssuance</code> with an <code>AssetScale</code> of <code>2</code> would mean each
+MPT unit represents <code>0.01</code> standard units, requiring <code>100</code> MPT units to equal one standard unit. More plainly, a
+USD stablecoin <code>MPTokenIssuance</code> with an <code>AssetScale</code> of <code>2</code> would allow an issuer to create an MPT that represents
+"cents", with applications being able to display amounts correctly (e.g., 1 unit would display as <code>$0.01</code>).</p>
+<h6 id="21125-maximumamount">2.1.1.2.5. <code>MaximumAmount</code><a class="headerlink" href="#21125-maximumamount" title="Permanent link">&para;</a></h6>
+<p>An unsigned 64-bit number that specifies the maximum number of MPTs that can be distributed to non-issuing accounts (
+i.e., <code>minted</code>). The default and maximum value is <code>0x7FFF'FFFF'FFFF'FFFF</code>. However, this limit may increase in the
+future, so issuers that require a specific limit should always specify a custom value.</p>
+<h6 id="21126-outstandingamount">2.1.1.2.6. <code>OutstandingAmount</code><a class="headerlink" href="#21126-outstandingamount" title="Permanent link">&para;</a></h6>
+<p>An unsigned 64-bit number that specifies the sum of all token amounts that have been minted to all token holders. This
+value can be stored on ledger as a <code>default</code> type so that when its value is 0, it takes up less space on ledger. This
+value is increased whenever an issuer pays MPTs to a non-issuer account, and decreased whenever a non-issuer pays MPTs
+into the issuing account. The maximum value of this field is <code>0x7FFF'FFFF'FFFF'FFFF</code>.</p>
+<h6 id="21127-transferfee">2.1.1.2.7. <code>TransferFee</code><a class="headerlink" href="#21127-transferfee" title="Permanent link">&para;</a></h6>
+<p>This value specifies the fee, in tenths of a <a href="https://en.wikipedia.org/wiki/Basis_point">basis point</a>, charged by the issuer for secondary sales of the token, if such sales are allowed at all. Valid values for this field are between 0 and 50,000 inclusive. A value of 1 is equivalent to 1/10 of a basis point or 0.001%, allowing transfer rates between 0% and 50%. A <code>TransferFee</code> of 50,000 corresponds to 50%. The default value for this field is 0. Any decimals in the transfer fee will be rounded down to the nearest whole value if the fraction is less than 0.5, and rounded up to the nearest whole value if the fraction is greater than or equal to 0.5. Therefore, this fee may be rounded down to zero if the payment is very small. Issuers should make sure that their MPT's <code>AssetScale</code> is large enough to properly accommodate expected fee values.</p>
+<h6 id="21128-previoustxnid">2.1.1.2.8. <code>PreviousTxnID</code><a class="headerlink" href="#21128-previoustxnid" title="Permanent link">&para;</a></h6>
+<p>Identifies the transaction ID of the transaction that most recently modified this object.</p>
+<h6 id="21129-previoustxnlgrseq">2.1.1.2.9. <code>PreviousTxnLgrSeq</code><a class="headerlink" href="#21129-previoustxnlgrseq" title="Permanent link">&para;</a></h6>
+<p>The sequence of the ledger that contains the transaction that most recently modified this object.</p>
+<h6 id="211210-ownernode">2.1.1.2.10. <code>OwnerNode</code><a class="headerlink" href="#211210-ownernode" title="Permanent link">&para;</a></h6>
+<p>Identifies the page in the owner's directory where this item is referenced.</p>
+<h6 id="211211-sequence">2.1.1.2.11. <code>Sequence</code><a class="headerlink" href="#211211-sequence" title="Permanent link">&para;</a></h6>
+<p>A 32-bit unsigned integer that is used to ensure issuances from a given sender may only ever exist once, even if an
+issuance is later deleted. Whenever a new issuance is created, this value must match the account's current Sequence
+number.</p>
+<p><a href="https://xrpl.org/tickets.html">Tickets</a> make some exceptions to these rules so that it is possible to send transactions
+out of the normal order. Tickets represent sequence numbers reserved for later use; a transaction can use a Ticket
+instead of a normal account Sequence number.</p>
+<p>Whenever a transaction to create an MPT is included in a ledger, it uses up a sequence number (or Ticket) regardless of
+whether the transaction executed successfully or failed with a <a href="https://xrpl.org/tec-codes.html">tec-class error code</a>.
+Other transaction failures don't get included in ledgers, so they don't change the sender's sequence number (or have any
+other effects).</p>
+<p>It is possible for multiple unconfirmed MPT-creation transactions to have the same <code>Issuer</code> and sequence number. Such
+transactions are mutually exclusive, and at most one of them can be included in a validated ledger (Any others
+ultimately have no effect.)</p>
+<h6 id="2113-example-mptokenissuance-json">2.1.1.3. Example <strong><code>MPTokenIssuance</code></strong> JSON<a class="headerlink" href="#2113-example-mptokenissuance-json" title="Permanent link">&para;</a></h6>
+<pre class="highlight"><code class="language-json">{
+  &quot;LedgerEntryType&quot;: &quot;MPTokenIssuance&quot;,
+  &quot;Flags&quot;: 131072,
+  &quot;Issuer&quot;: &quot;rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW&quot;,
+  &quot;AssetScale&quot;: &quot;2&quot;,
+  &quot;MaximumAmount&quot;: &quot;100000000&quot;,
+  &quot;OutstandingAmount&quot;: &quot;5&quot;,
+  &quot;TransferFee&quot;: 50000,
+  &quot;MPTokenMetadata&quot;: &quot;&quot;,
+  &quot;OwnerNode&quot;: &quot;74&quot;
+}
+</code></pre>
+
+<h6 id="2114-how-do-mptokenissuance-objects-work">2.1.1.4. How do <strong><code>MPTokenIssuance</code></strong> objects work?<a class="headerlink" href="#2114-how-do-mptokenissuance-objects-work" title="Permanent link">&para;</a></h6>
+<p>Any account may issue any number of Multi-Purpose Tokens.</p>
+<h6 id="21141-searching-for-a-mptokenissuance-object">2.1.1.4.1. Searching for a <strong><code>MPTokenIssuance</code></strong> object<a class="headerlink" href="#21141-searching-for-a-mptokenissuance-object" title="Permanent link">&para;</a></h6>
+<p>MPTokenIssuance objects are uniquely identified by a combination of a type-specific prefix, the issuer address and a transaction sequence number. To locate a specific <strong><code>MPTokenIssuance</code></strong>, the first step is to locate the owner directory for the issuer. Then, find the directory that holds <code>MPTokenIssuance</code> ledger objects and iterate through each entry to find the instance with the desired key. If that entry does not exist then the <strong><code>MPTokenIssuance</code></strong> does not exist for the given account.</p>
+<h6 id="21142-adding-a-mptokenissuance-object">2.1.1.4.2. Adding a <strong><code>MPTokenIssuance</code></strong> object<a class="headerlink" href="#21142-adding-a-mptokenissuance-object" title="Permanent link">&para;</a></h6>
+<p>A <strong><code>MPTokenIssuance</code></strong> object can be added by using the same approach to find the <strong><code>MPTokenIssuance</code></strong>, and adding it to that directory.</p>
+<h6 id="21143-removing-a-mptokenissuance-object">2.1.1.4.3. Removing a <strong><code>MPTokenIssuance</code></strong> object<a class="headerlink" href="#21143-removing-a-mptokenissuance-object" title="Permanent link">&para;</a></h6>
+<p>An <strong><code>MPTokenIssuance</code></strong> can be removed by locating the issuance using the approach in <a href="#121141-searching-for-a-mptokenissuance-object">Searching for an MPTokenIssuance</a>. If found, the object can be deleted, but only if the <strong><code>OutstandingAmount</code></strong> is equal to 0.</p>
+<h6 id="21144-reserve-for-mptokenissuance-object">2.1.1.4.4. Reserve for <strong><code>MPTokenIssuance</code></strong> object<a class="headerlink" href="#21144-reserve-for-mptokenissuance-object" title="Permanent link">&para;</a></h6>
+<p>Each <strong><code>MPTokenIssuance</code></strong> costs an incremental reserve to the owner account.</p>
+<h5 id="212-the-mptoken-object">2.1.2. The <strong><code>MPToken</code></strong> object<a class="headerlink" href="#212-the-mptoken-object" title="Permanent link">&para;</a></h5>
+<p>The <strong><code>MPToken</code></strong> object represents an amount of a token held by an account that is <strong>not</strong> the token issuer. MPTs are
+acquired via ordinary Payment or DEX transactions, and can optionally be redeemed or exchanged using these same types of
+transactions. The object key of the <code>MPToken</code> is derived from hashing the space key, holder's address and the
+<code>MPTokenIssuanceID</code>.</p>
+<h6 id="2121-mptoken-ledger-identifier">2.1.2.1. <strong><code>MPToken</code></strong> Ledger Identifier<a class="headerlink" href="#2121-mptoken-ledger-identifier" title="Permanent link">&para;</a></h6>
+<p>The Key of an MPToken object is computed using the SHA512-Half of the following values, concatenated in order:</p>
+<ul>
+<li>The <code>MPToken</code> space key (0x007F).</li>
+<li>The <code>MPTokenIssuanceID</code> for the issuance being held.</li>
+<li>The <code>AccountID</code> of the token holder.</li>
+</ul>
+<h6 id="2122-fields">2.1.2.2. Fields<a class="headerlink" href="#2122-fields" title="Permanent link">&para;</a></h6>
+<p>A <strong><code>MPToken</code></strong> object can have the following fields.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LedgerEntryType</code></td>
+<td>:heavy_check_mark:</td>
+<td><code>string</code></td>
+<td><code>UINT16</code></td>
+</tr>
+<tr>
+<td><code>Account</code></td>
+<td>:heavy_check_mark:</td>
+<td><code>string</code></td>
+<td><code>ACCOUNTID</code></td>
+</tr>
+<tr>
+<td><code>MPTokenIssuanceID</code></td>
+<td>:heavy_check_mark:</td>
+<td><code>string</code></td>
+<td><code>UINT192</code></td>
+</tr>
+<tr>
+<td><code>MPTAmount</code></td>
+<td>default</td>
+<td><code>string</code></td>
+<td><code>UINT64</code></td>
+</tr>
+<tr>
+<td><code>Flags</code></td>
+<td>default</td>
+<td><code>number</code></td>
+<td><code>UINT32</code></td>
+</tr>
+<tr>
+<td><code>PreviousTxnID</code></td>
+<td>:heavy_check_mark:</td>
+<td><code>string</code></td>
+<td><code>HASH256</code></td>
+</tr>
+<tr>
+<td><code>PreviousTxnLgrSeq</code></td>
+<td>:heavy_check_mark:</td>
+<td><code>number</code></td>
+<td><code>UINT32</code></td>
+</tr>
+<tr>
+<td><code>OwnerNode</code></td>
+<td>:heavy_check_mark:</td>
+<td><code>number</code></td>
+<td><code>UINT64</code></td>
+</tr>
+</tbody>
+</table>
+<h6 id="21221-ledgerentrytype">2.1.2.2.1. <code>LedgerEntryType</code><a class="headerlink" href="#21221-ledgerentrytype" title="Permanent link">&para;</a></h6>
+<p>The value 0x007F, mapped to the string <code>MPToken</code>, indicates that this object describes an individual account's holding of a MPT.</p>
+<h6 id="21222-account">2.1.2.2.2. <code>Account</code><a class="headerlink" href="#21222-account" title="Permanent link">&para;</a></h6>
+<p>The owner of the <code>MPToken</code>.</p>
+<h6 id="21223-mptokenissuanceid">2.1.2.2.3. <code>MPTokenIssuanceID</code><a class="headerlink" href="#21223-mptokenissuanceid" title="Permanent link">&para;</a></h6>
+<p>The <code>MPTokenIssuance</code> identifier.</p>
+<h6 id="21224-mptamount">2.1.2.2.4. <code>MPTAmount</code><a class="headerlink" href="#21224-mptamount" title="Permanent link">&para;</a></h6>
+<p>An unsigned 64-bit number that specifies a positive amount of tokens currently held by the owner. This value can be
+stored on ledger as a <code>default</code> type so that when its value is 0, it takes up less space on ledger. The maximum value of
+this field is <code>0xFFFF'FFFF'FFFF'FFFF</code>.</p>
+<h6 id="21225-flags">2.1.2.2.5. <code>Flags</code><a class="headerlink" href="#21225-flags" title="Permanent link">&para;</a></h6>
+<p>A set of flags indicating properties or other options associated with this <strong><code>MPTokenIssuance</code></strong> object. The type specific flags are:</p>
+<table>
+<thead>
+<tr>
+<th>Flag Name</th>
+<th>Flag Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lsfMPTLocked</code></td>
+<td><code>0x0001</code></td>
+<td>If set, indicates that the MPT owned by this account is currently locked and cannot be used in any transactions other than sending value back to the issuer.</td>
+</tr>
+<tr>
+<td><code>lsfMPTAuthorized</code></td>
+<td><code>0x0002</code></td>
+<td>(Only applicable for allow-listing) If set, indicates that the issuer has authorized the holder for the MPT. This flag can be set using a <code>MPTokenAuthorize</code> transaction; it can also be "un-set" using a <code>MPTokenAuthorize</code> transaction specifying the <code>tfMPTUnauthorize</code> flag.</td>
+</tr>
+</tbody>
+</table>
+<h6 id="21226-previoustxnid">2.1.2.2.6. <code>PreviousTxnID</code><a class="headerlink" href="#21226-previoustxnid" title="Permanent link">&para;</a></h6>
+<p>Identifies the transaction ID of the transaction that most recently modified this object.</p>
+<h6 id="21227-previoustxnlgrseq">2.1.2.2.7. <code>PreviousTxnLgrSeq</code><a class="headerlink" href="#21227-previoustxnlgrseq" title="Permanent link">&para;</a></h6>
+<p>The sequence of the ledger that contains the transaction that most recently modified this object.</p>
+<h6 id="21228-ownernode">2.1.2.2.8. <code>OwnerNode</code><a class="headerlink" href="#21228-ownernode" title="Permanent link">&para;</a></h6>
+<p>Identifies the page in the owner's directory where this item is referenced.</p>
+<h6 id="2123-example-mptoken-json">2.1.2.3. Example MPToken JSON<a class="headerlink" href="#2123-example-mptoken-json" title="Permanent link">&para;</a></h6>
+<pre class="highlight"><code class="language-json">{
+  &quot;LedgerEntryType&quot;: &quot;MPToken&quot;,
+  &quot;Account&quot;: &quot;rajgkBmMxmz161r8bWYH7CQAFZP5bA9oSG&quot;,
+  &quot;MPTokenIssuanceID&quot;: &quot;000004C463C52827307480341125DA0577DEFC38405B0E3E&quot;,
+  &quot;Flags&quot;: 0,
+  &quot;MPTAmount&quot;: &quot;100000000&quot;,
+  &quot;OwnerNode&quot;: 1
+}
+</code></pre>
+
+<h6 id="2124-reserve-for-mptoken-object">2.1.2.4. Reserve for <strong><code>MPToken</code></strong> object<a class="headerlink" href="#2124-reserve-for-mptoken-object" title="Permanent link">&para;</a></h6>
+<p>Each <strong><code>MPToken</code></strong> costs an incremental reserve to the owner account.</p>
+<h3 id="3-transactions">3. Transactions<a class="headerlink" href="#3-transactions" title="Permanent link">&para;</a></h3>
+<p>This proposal introduces several new transactions to allow for the creation and deletion of MPT issuances. Likewise, this proposal introduce several new transactions for minting and redeeming discrete instances of MPTs. All transactions introduced by this proposal incorporate the <a href="https://xrpl.org/transaction-common-fields.html">common transaction fields</a> that are shared by all transactions. Common fields are not documented in this proposal unless needed because this proposal introduces new possible values for such fields.</p>
+<h4 id="31-transactions-for-creating-and-destroying-multi-purpose-token-issuances-on-xrpl">3.1. Transactions for Creating and Destroying Multi-Purpose Token Issuances on XRPL<a class="headerlink" href="#31-transactions-for-creating-and-destroying-multi-purpose-token-issuances-on-xrpl" title="Permanent link">&para;</a></h4>
+<p>We define three transactions related to MPT Issuances: <strong><code>MPTokenIssuanceCreate</code></strong> and <strong><code>MPTokenIssuanceDestroy</code></strong> and <strong><code>MPTokenIssuanceSet</code></strong> for minting, destroying, and updating MPT <em>Issuances</em> respectively on XRPL.</p>
+<h5 id="311-the-mptokenissuancecreate-transaction">3.1.1. The <strong><code>MPTokenIssuanceCreate</code></strong> transaction<a class="headerlink" href="#311-the-mptokenissuancecreate-transaction" title="Permanent link">&para;</a></h5>
+<p>The <strong><code>MPTokenIssuanceCreate</code></strong> transaction creates a <strong><code>MPTokenIssuance</code></strong> object and adds it to the relevant directory node of the creator account. This transaction is the only opportunity an <code>issuer</code> has to specify any token fields that are defined as immutable (e.g., MPT Flags).</p>
+<p>If the transaction is successful, the newly created token will be owned by the account (the creator account) which executed the transaction.</p>
+<h6 id="3111-transaction-specific-fields">3.1.1.1. Transaction-specific Fields<a class="headerlink" href="#3111-transaction-specific-fields" title="Permanent link">&para;</a></h6>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TransactionType</code></td>
+<td>️ ✔</td>
+<td><code>object</code></td>
+<td><code>UINT16</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the new transaction type <strong><code>MPTokenIssuanceCreate</code></strong>. The integer value is <code>54</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AssetScale</code></td>
+<td>️</td>
+<td><code>number</code></td>
+<td><code>UINT8</code></td>
+</tr>
+</tbody>
+</table>
+<p>An asset scale is the difference, in orders of magnitude, between a standard unit and a corresponding fractional unit. More formally, the asset scale is a non-negative integer (0, 1, 2, …) such that one standard unit equals 10^(-scale) of a corresponding fractional unit. If the fractional unit equals the standard unit, then the asset scale is 0. Note that this value is optional, and will default to <code>0</code> if not supplied.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Flags</code></td>
+<td>️</td>
+<td><code>number</code></td>
+<td><code>UINT16</code></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the flags for this transaction. In addition to the universal transaction flags that are applicable to all transactions (e.g., <code>tfFullyCanonicalSig</code>), the following transaction-specific flags are defined and used to set the appropriate fields in the Fungible Token:</p>
+<table>
+<thead>
+<tr>
+<th>Flag Name</th>
+<th>Flag Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tfMPTCanLock</code></td>
+<td>️<code>0x0002</code></td>
+<td>If set, indicates that the MPT can be locked both individually and globally. If not set, the MPT cannot be locked in any way.</td>
+</tr>
+<tr>
+<td><code>tfMPTRequireAuth</code></td>
+<td>️<code>0x0004</code></td>
+<td>If set, indicates that <em>individual</em> holders must be authorized. This enables issuers to limit who can hold their assets.</td>
+</tr>
+<tr>
+<td><code>tfMPTCanEscrow</code></td>
+<td><code>0x0008</code></td>
+<td>If set, indicates that <em>individual</em> holders can place their balances into an escrow.</td>
+</tr>
+<tr>
+<td><code>tfMPTCanTrade</code></td>
+<td><code>0x0010</code></td>
+<td>If set, indicates that <em>individual</em> holders can trade their balances using the XRP Ledger DEX.</td>
+</tr>
+<tr>
+<td><code>tfMPTCanTransfer</code></td>
+<td>️<code>0x0020</code></td>
+<td>If set, indicates that tokens may be transferred to other accounts that are not the issuer.</td>
+</tr>
+<tr>
+<td><code>tfMPTCanClawback</code></td>
+<td>️<code>0x0040</code></td>
+<td>If set, indicates that the issuer may use the <code>Clawback</code> transaction to clawback value from <em>individual</em> holders.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TransferFee</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>UINT16</code></td>
+</tr>
+</tbody>
+</table>
+<p>The value specifies the fee to charged by the issuer for secondary sales of the Token, if such sales are allowed. Valid values for this field are between 0 and 50,000 inclusive, allowing transfer rates of between 0.000% and 50.000% in increments of 0.001. The default value is 0 if this field is not specified.</p>
+<p>The field MUST NOT be present if the <code>tfMPTCanTransfer</code> flag is not set. If it is, the transaction should fail with <code>temMALFORMED</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MaximumAmount</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>UINT64</code></td>
+</tr>
+</tbody>
+</table>
+<p>The maximum number of this token's units that should ever be issued. This field is optional. If omitted, the
+implementation will set this to an empty default field value, which will be interpreted at runtime as the current
+maximum allowed value (currently <code>0x7FFF'FFFF'FFFF'FFFF</code>).</p>
+<p>Note that the maximum allowed value may increase in the future, so callers should specify a custom value if a specific
+limit is required.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MPTokenMetadata</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>BLOB</code></td>
+</tr>
+</tbody>
+</table>
+<p>Arbitrary metadata about this issuance, in hex format. The limit for this field is 1024 bytes.</p>
+<h6 id="3112-example-mptokenissuancecreate-transaction">3.1.1.2. Example <strong><code>MPTokenIssuanceCreate</code></strong> transaction<a class="headerlink" href="#3112-example-mptokenissuancecreate-transaction" title="Permanent link">&para;</a></h6>
+<pre class="highlight"><code class="language-js">{
+  &quot;TransactionType&quot;: &quot;MPTokenIssuanceCreate&quot;,
+  &quot;Account&quot;: &quot;rajgkBmMxmz161r8bWYH7CQAFZP5bA9oSG&quot;,
+  &quot;AssetScale&quot;: &quot;2&quot;, // &lt;-- Divisible into 100 units / 10^2
+  &quot;MaximumAmount&quot;: &quot;100000000&quot;, //  &lt;-- 100,000,000
+  &quot;Flags&quot;: 66, // &lt;-- tfMPTCanLock and tfMPTCanClawback
+  &quot;MPTokenMetadata&quot;: &quot;464F4F&quot;, // &lt;-- &quot;FOO&quot; (HEX)
+  &quot;Fee&quot;: 10
+}
+</code></pre>
+
+<p>This transaction assumes that the issuer of the token is the signer of the transaction.</p>
+<h4 id="32-the-mptokenissuancedestroy-transaction">3.2. The <strong><code>MPTokenIssuanceDestroy</code></strong> transaction<a class="headerlink" href="#32-the-mptokenissuancedestroy-transaction" title="Permanent link">&para;</a></h4>
+<p>The <strong><code>MPTokenIssuanceDestroy</code></strong> transaction is used to remove an <strong><code>MPTokenIssuance</code></strong> object from the directory node
+in which it is being held, effectively removing the token issuance from the ledger (i.e., "destroying" it).</p>
+<p>If this operation succeeds, the corresponding <strong><code>MPTokenIssuance</code></strong> is removed and the owner’s reserve requirement is
+reduced by one. This operation must fail if there are any holders of the MPT in question.</p>
+<p>Note that destroying an <code>MPTokenIssuance</code> does not remove associated <code>MPToken</code> objects from accounts that have held a
+deleted token. These can instead be removed using an <code>MPTokenAuthorize</code> transaction.</p>
+<h5 id="321-transaction-specific-fields">3.2.1. Transaction-specific Fields<a class="headerlink" href="#321-transaction-specific-fields" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TransactionType</code></td>
+<td>✔️</td>
+<td><code>string</code></td>
+<td><code>UINT16</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the new transaction type <strong><code>MPTokenIssuanceDestroy</code></strong>. The integer value is <code>55</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MPTokenIssuanceID</code></td>
+<td>✔️</td>
+<td><code>string</code></td>
+<td><code>UINT192</code></td>
+</tr>
+</tbody>
+</table>
+<p>Identifies the <strong><code>MPTokenIssuance</code></strong> object to be removed by the transaction.</p>
+<h5 id="322-example-mptokenissuancedestroy-json">3.2.2. Example <strong><code>MPTokenIssuanceDestroy</code></strong> JSON<a class="headerlink" href="#322-example-mptokenissuancedestroy-json" title="Permanent link">&para;</a></h5>
+<pre class="highlight"><code class="language-json">{
+  &quot;TransactionType&quot;: &quot;MPTokenIssuanceDestroy&quot;,
+  &quot;Fee&quot;: 10,
+  &quot;MPTokenIssuanceID&quot;: &quot;000004C463C52827307480341125DA0577DEFC38405B0E3E&quot;
+}
+</code></pre>
+
+<h4 id="33-the-mptokenissuanceset-transaction">3.3. The <strong><code>MPTokenIssuanceSet</code></strong> Transaction<a class="headerlink" href="#33-the-mptokenissuanceset-transaction" title="Permanent link">&para;</a></h4>
+<h5 id="331-mptokenissuanceset">3.3.1. MPTokenIssuanceSet<a class="headerlink" href="#331-mptokenissuanceset" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TransactionType</code></td>
+<td>️ ✔</td>
+<td><code>object</code></td>
+<td><code>UINT16</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the new transaction type <strong><code>MPTokenIssuanceSet</code></strong>. The integer value is <code>56</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MPTokenIssuanceID</code></td>
+<td>✔️</td>
+<td><code>string</code></td>
+<td><code>UINT192</code></td>
+</tr>
+</tbody>
+</table>
+<p>The <code>MPTokenIssuance</code> identifier.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MPTokenHolder</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>ACCOUNTID</code></td>
+</tr>
+</tbody>
+</table>
+<p>An optional XRPL Address of an individual token holder balance to lock/unlock. If omitted, this transaction will apply
+to all accounts holding MPTs.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Flag</code></td>
+<td>:heavy_check_mark:</td>
+<td><code>string</code></td>
+<td><code>UINT64</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="332-example-mptokenissuanceset-json">3.3.2. Example <strong><code>MPTokenIssuanceSet</code></strong> JSON<a class="headerlink" href="#332-example-mptokenissuanceset-json" title="Permanent link">&para;</a></h5>
+<pre class="highlight"><code class="language-json">{
+  &quot;TransactionType&quot;: &quot;MPTokenIssuanceSet&quot;,
+  &quot;Fee&quot;: 10,
+  &quot;MPTokenIssuanceID&quot;: &quot;000004C463C52827307480341125DA0577DEFC38405B0E3E&quot;,
+  &quot;Flags&quot;: 1
+}
+</code></pre>
+
+<h5 id="3311-mptokenissuanceset-flags">3.3.1.1. MPTokenIssuanceSet Flags<a class="headerlink" href="#3311-mptokenissuanceset-flags" title="Permanent link">&para;</a></h5>
+<p>Transactions of the <code>MPTokenLock</code> type support additional values in the Flags field, as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Flag Name</th>
+<th>Flag Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tfMPTLock</code></td>
+<td>️<code>0x0001</code></td>
+<td>If set, indicates that all MPT balances for this asset should be locked.</td>
+</tr>
+<tr>
+<td><code>tfMPTUnlock</code></td>
+<td>️<code>0x0002</code></td>
+<td>If set, indicates that all MPT balances for this asset should be unlocked.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="34-the-payment-transaction">3.4. The <strong><code>Payment</code></strong> Transaction<a class="headerlink" href="#34-the-payment-transaction" title="Permanent link">&para;</a></h4>
+<p>The existing <code>Payment</code> transaction will not have any new top-level fields or flags added. However, we will extend the existing <code>amount</code> field to accommodate MPT amounts.</p>
+<h5 id="341-the-amount-field">3.4.1. The <code>amount</code> field<a class="headerlink" href="#341-the-amount-field" title="Permanent link">&para;</a></h5>
+<p>Currently, the <code>amount</code> field takes one of two forms. The below example indicates an amount of 1 drop of XRP:</p>
+<pre class="highlight"><code class="language-json">{
+  &quot;amount&quot;: &quot;1&quot;
+}
+</code></pre>
+
+<p>The below example indicates an amount of 1 USD issued by the indicated account as an IOU:</p>
+<pre class="highlight"><code class="language-json">{
+  &quot;amount&quot;: {
+    &quot;issuer&quot;: &quot;rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn&quot;,
+    &quot;currency&quot;: &quot;USD&quot;,
+    &quot;value&quot;: &quot;1&quot;
+  }
+}
+</code></pre>
+
+<p>The below example indicates an amount of 1 USD issued by the indicated account as an MPT:</p>
+<pre class="highlight"><code class="language-json">{
+  &quot;amount&quot;: {
+    &quot;mpt_issuance_id&quot;: &quot;0000012FFD9EE5DA93AC614B4DB94D7E0FCE415CA51BED47&quot;,
+    &quot;value&quot;: &quot;1&quot;
+  }
+}
+</code></pre>
+
+<p>Note: The <code>MPTokenIssuanceID</code> will be used to uniquely identify the MPT during a Payment transaction.</p>
+<h4 id="35-the-mptokenauthorize-transaction">3.5. The <strong><code>MPTokenAuthorize</code></strong> Transaction<a class="headerlink" href="#35-the-mptokenauthorize-transaction" title="Permanent link">&para;</a></h4>
+<p>This transaction enables an account to hold an amount of a particular MPT issuance. When applied successfully, it will
+create a new <code>MPToken</code> object with an initial zero balance, owned by the holder account.</p>
+<p>If the issuer has set <code>lsfMPTRequireAuth</code> (allow-listing) on the <code>MPTokenIssuance</code>, then the issuer must submit a
+<code>MPTokenAuthorize</code> transaction as well in order to give permission to the holder. If <code>lsfMPTRequireAuth</code> is not set and
+the issuer attempts to submit this transaction, it will fail.</p>
+<p>This transaction can also be used to delete an <code>MPToken</code> object with a zero balance by submitting it with the
+<code>tfMPTUnauthorize</code> flag set.</p>
+<h5 id="351-mptokenauthorize">3.5.1. MPTokenAuthorize<a class="headerlink" href="#351-mptokenauthorize" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Account</code></td>
+<td>:heavy_check_mark:</td>
+<td><code>string</code></td>
+<td><code>ACCOUNTID</code></td>
+</tr>
+</tbody>
+</table>
+<p>This address can indicate either an issuer or a potential holder of a MPT.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TransactionType</code></td>
+<td>️ ✔</td>
+<td><code>object</code></td>
+<td><code>UINT16</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the new transaction type <strong><code>MPTokenAuthorize</code></strong>. The integer value is <code>57</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MPTokenIssuanceID</code></td>
+<td>✔️</td>
+<td><code>string</code></td>
+<td><code>UINT192</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the ID of the MPT involved.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MPTokenHolder</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>ACCOUNTID</code></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the holder's address that the issuer wants to authorize. Only used for authorization/allow-listing; should not
+be present if submitted by the holder.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Flag</code></td>
+<td>:heavy_check_mark:</td>
+<td><code>string</code></td>
+<td><code>UINT64</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="33512-mptokenauthorize-flags">3.3.5.12. MPTokenAuthorize Flags<a class="headerlink" href="#33512-mptokenauthorize-flags" title="Permanent link">&para;</a></h5>
+<p>Transactions of the <code>MPTokenAuthorize</code> type support additional values in the Flags field, as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Flag Name</th>
+<th>Flag Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tfMPTUnauthorize</code></td>
+<td>️<code>0x0001</code></td>
+<td>If set and transaction is submitted by a holder, it indicates that the holder no longer wants to hold the <code>MPToken</code>, which will be deleted as a result. If the the holder's <code>MPToken</code> has non-zero balance while trying to set this flag, the transaction will fail. On the other hand, if set and transaction is submitted by an issuer, it would mean that the issuer wants to unauthorize the holder (only applicable for allow-listing), which would unset the <code>lsfMPTAuthorized</code> flag on the <code>MPToken</code>.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="36-the-accountdelete-transaction">3.6. The <strong><code>AccountDelete</code></strong> Transaction<a class="headerlink" href="#36-the-accountdelete-transaction" title="Permanent link">&para;</a></h4>
+<p>This spec introduces no changes to the <code>AccountDelete</code> transaction in terms of structure. However, accounts that have <code>MPTokenIssuance</code>s may not be deleted. These accounts will need to destroy each of their <code>MPTokenIssuances</code> using <code>MPTokenIssuanceDestroy</code> first before being able to delete their account. Without this restriction (or a similar one), issuers could render MPT balances useless/unstable for any holders.</p>
+<h4 id="37-the-clawback-transaction">3.7. The <strong><code>Clawback</code></strong> Transaction<a class="headerlink" href="#37-the-clawback-transaction" title="Permanent link">&para;</a></h4>
+<p>The existing <code>Clawback</code> transaction will extend the existing <code>amount</code> field to accommodate MPT amounts. In addition, the
+<code>Clawback</code> transaction will introduce a new optional field, <code>MPTokenHolder</code>, to allow the issuer to clawback <code>MPTokens</code>
+from holders if and only if <code>lsfMPTAllowClawback</code> is set on the <code>MPTokenIssuance</code>.</p>
+<h5 id="371-new-mptokenholder-field">3.7.1. New <code>MPTokenHolder</code> field<a class="headerlink" href="#371-new-mptokenholder-field" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Required?</th>
+<th>JSON Type</th>
+<th>Internal Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MPTokenHolder</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>ACCOUNTID</code></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the MPT holder's address that the issuer wants to clawback from. The MPT holder must already own an <code>MPToken</code>
+object with a non-zero balance.</p>
+<h5 id="372-example">3.7.2. Example<a class="headerlink" href="#372-example" title="Permanent link">&para;</a></h5>
+<pre class="highlight"><code class="language-json">{
+  &quot;TransactionType&quot;: &quot;Clawback&quot;,
+  &quot;Account&quot;: &quot;rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn&quot;,
+  &quot;Amount&quot;: {
+    &quot;value&quot;: 10,
+    &quot;mpt_issuance_id&quot;: &quot;0000012FFD9EE5DA93AC614B4DB94D7E0FCE415CA51BED47&quot;
+  },
+  &quot;MPTokenHolder&quot;: &quot;rajgkBmMxmz161r8bWYH7CQAFZP5bA9oSG&quot;
+}
+</code></pre>
+
+<h3 id="4-details-on-locking-mpts">4. Details on Locking MPTs<a class="headerlink" href="#4-details-on-locking-mpts" title="Permanent link">&para;</a></h3>
+<h4 id="41-locking-individual-balances">4.1. Locking individual balances<a class="headerlink" href="#41-locking-individual-balances" title="Permanent link">&para;</a></h4>
+<p>To lock an individual balance of an individual MPT an issuer will submit the <code>MPTokenIssuanceSet</code> transaction, indicate the MPT and holder account that they wish to lock, and set the <code>tfMPTLock</code> flag. This operation will fail if:</p>
+<ul>
+<li>The <code>MPTokenIssuance</code> has the <code>lsfMPTCanLock</code> flag <em>not</em> set.</li>
+</ul>
+<p>Issuers can unlock the balance by submitting another <code>MPTokenIssuanceSet</code> transaction with the <code>tfMPTUnlock</code> flag set.</p>
+<h4 id="42-locking-entire-mpts">4.2. Locking entire MPTs<a class="headerlink" href="#42-locking-entire-mpts" title="Permanent link">&para;</a></h4>
+<p>This operation works the same as above, except that the holder account is not specified in the <code>MPTokenIssuanceSet</code> transaction when locking or unlocking. This operation will fail if:</p>
+<ul>
+<li>The <code>MPTokenIssuance</code> has the <code>lsfMPTCanLock</code> flag <em>not</em> set.</li>
+</ul>
+<p>Locking an entire MPT without locking other assets issued by an issuer is a new feature of MPTs.</p>
+<h3 id="5-details-on-clawing-back-mpts">5. Details on Clawing-Back MPTs<a class="headerlink" href="#5-details-on-clawing-back-mpts" title="Permanent link">&para;</a></h3>
+<p>To clawback funds from a MPT holder, the issuer must have specified that the MPT allows clawback by setting the <code>tfMPTCanClawback</code> flag when creating the MPT using the <code>MPTokenIssuanceCreate</code> transaction. Assuming a MPT was created with this flag set, clawbacks will be allowed using the <code>Clawback</code> transaction (more details to follow on how this transaction will change to accomodate the new values).</p>
+<h3 id="6-apis">6. APIs<a class="headerlink" href="#6-apis" title="Permanent link">&para;</a></h3>
+<p>In general, existing RPC functionality can be used to interact with MPTs. For example, the <code>type</code> field of the
+<code>account_objects</code> or <code>ledger_data</code> command can filter results by either <code>mpt_issuance</code> or <code>mptoken</code> values. In addition,
+the <code>ledger_entry</code> command can be used to query a specific <code>MPTokenIssuance</code> or <code>MPToken</code> object.</p>
+<p>This specification introduces a new Clio RPC called <code>mpt_holders</code> to allow querying all the holders of an MPT.</p>
+<h4 id="61-ledger_entry-api-updates">6.1. <code>ledger_entry</code> API Updates<a class="headerlink" href="#61-ledger_entry-api-updates" title="Permanent link">&para;</a></h4>
+<p><code>ledger_entry</code> API is updated to query <code>MPTokenIssuance</code> and <code>MPToken</code> objects.</p>
+<h4 id="611-mpt_issuance-field">6.1.1. <code>mpt_issuance</code> Field<a class="headerlink" href="#611-mpt_issuance-field" title="Permanent link">&para;</a></h4>
+<p>A <code>MPTokenIssuance</code> object can be queried by specifying the the <code>mpt_issuance</code> field.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mpt_issuance</code></td>
+<td style="text-align: center;">️String</td>
+<td>The 192-bit <code>MPTokenIssuanceID</code> that's associated with the <code>MPTokenIssuance</code>.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="611-mptoken-field">6.1.1. <code>mptoken</code> Field<a class="headerlink" href="#611-mptoken-field" title="Permanent link">&para;</a></h4>
+<p>A <code>MPToken</code> object can be queried by specifying the <code>mptoken</code> field.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mptoken</code></td>
+<td style="text-align: center;">️Object or String</td>
+<td>If string, interpret as ledger entry ID of the <code>MPToken</code> to retrieve. If an object, requires the sub-fields <code>account</code> and <code>mpt_issuance_id</code> to uniquely identify the <code>MPToken</code>.</td>
+</tr>
+<tr>
+<td><code>mptoken.mpt_issuance_id</code></td>
+<td style="text-align: center;">️String</td>
+<td>(Required if <code>mptoken</code> is specified as an object) The 192-bit <code>MPTokenIssuanceID</code> that's associated with the <code>MPTokenIssuance</code>.</td>
+</tr>
+<tr>
+<td><code>mptoken.account</code></td>
+<td style="text-align: center;">️String</td>
+<td>(Required if <code>mptoken</code> is specified as an object) The account that owns the <code>MPToken</code>.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="62-mpt_holders-api-clio-only">6.2. <code>mpt_holders</code> API (Clio-only)<a class="headerlink" href="#62-mpt_holders-api-clio-only" title="Permanent link">&para;</a></h4>
+<p>For a given <code>MPTokenIssuanceID</code>, <code>mpt_holders</code> will return all holders of an MPT and their balance. This RPC might return very large data sets, so users should handle result paging using the <code>marker</code> field.</p>
+<h5 id="621-request-fields">6.2.1. Request fields<a class="headerlink" href="#621-request-fields" title="Permanent link">&para;</a></h5>
+<pre class="highlight"><code class="language-json">{
+  &quot;command&quot;: &quot;mpt_holders&quot;,
+  &quot;mpt_issuance_id&quot;: &quot;0000012FFD9EE5DA93AC614B4DB94D7E0FCE415CA51BED47&quot;,
+  &quot;ledger_index&quot;: &quot;validated&quot;
+}
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mpt_issuance_id</code></td>
+<td style="text-align: center;">:heavy_check_mark:</td>
+<td style="text-align: center;"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates the MPTokenIssuance we wish to query.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ledger_index</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>string</code> or <code>number</code> (positive integer)</td>
+</tr>
+</tbody>
+</table>
+<p>The ledger index of the max ledger to use, or a shortcut string to choose a ledger automatically. Either <code>ledger_index</code> or <code>ledger_hash</code> must be specified.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ledger_hash</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<p>A 20-byte hex string for the max ledger version to use. Either <code>ledger_index</code> or <code>ledger_hash</code> must be specified.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>marker</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<p>Used to continue querying where we left off when paginating.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: center;">JSON Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>limit</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>number</code> (positive integer)</td>
+</tr>
+</tbody>
+</table>
+<p>Specify a limit to the number of MPTs returned.</p>
+<h5 id="622-response-fields">6.2.2. Response fields<a class="headerlink" href="#622-response-fields" title="Permanent link">&para;</a></h5>
+<pre class="highlight"><code class="language-json">{
+  &quot;mpt_issuance_id&quot;: &quot;000004C463C52827307480341125DA0577DEFC38405B0E3E&quot;,
+  &quot;limit&quot;: 50,
+  &quot;ledger_index&quot;: 2,
+  &quot;mptokens&quot;: [
+    {
+      &quot;account&quot;: &quot;rEiNkzogdHEzUxPfsri5XSMqtXUixf2Yx&quot;,
+      &quot;flags&quot;: 0,
+      &quot;mpt_amount&quot;: &quot;20&quot;,
+      &quot;locked_amount&quot;: &quot;1&quot;,
+      &quot;mptoken_index&quot;: &quot;36D91DEE5EFE4A93119A8B84C944A528F2B444329F3846E49FE921040DE17E65&quot;
+    },
+    {
+      &quot;account&quot;: &quot;rrnAZCqMahreZrKMcZU3t2DZ6yUndT4ubN&quot;,
+      &quot;flags&quot;: 0,
+      &quot;mpt_amount&quot;: &quot;1&quot;,
+      &quot;mptoken_index&quot;: &quot;D137F2E5A5767A06CB7A8F060ADE442A30CFF95028E1AF4B8767E3A56877205A&quot;
+    }
+  ],
+  &quot;validated&quot;: true
+}
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th style="text-align: center;">JSON Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mpt_issuance_id</code></td>
+<td style="text-align: center;"><code>string</code></td>
+<td>Indicates the <code>MPTokenIssuance</code> we queried.</td>
+</tr>
+<tr>
+<td><code>mptokens</code></td>
+<td style="text-align: center;"><code>array</code></td>
+<td>An array of <code>mptoken</code>s. Includes all relevant fields in the underlying <code>MPToken</code> object.</td>
+</tr>
+<tr>
+<td><code>marker</code></td>
+<td style="text-align: center;"><code>string</code></td>
+<td>Used to continue querying where we left off when paginating. Omitted if there are no more entries after this result.</td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td style="text-align: center;"><code>number</code></td>
+<td>The limit, as specified in the request</td>
+</tr>
+<tr>
+<td><code>ledger_index</code></td>
+<td style="text-align: center;"><code>number</code></td>
+<td>The index of the ledger used.</td>
+</tr>
+</tbody>
+</table>
+<p>A <code>mptoken</code> object has the following parameters:
+| Field Name | JSON Type | Description |
+| ------------------- |:---------:| ----------- |
+| <code>account</code> | <code>string</code> | The account address of the holder who owns the <code>MPToken</code>. |
+| <code>flags</code> | <code>number</code> | The flags of the <code>MPToken</code> object.|
+| <code>mpt_amount</code> | <code>string</code> | Hex-encoded amount of the holder's balance. |
+| <code>locked_amount</code> | <code>string</code> | Hex-encoded amount of the locked balance. (May be omitted if the value is 0) |
+| <code>mptoken_index</code> | <code>string</code> | Key of the <code>MPToken</code> object. |</p>
+<h4 id="63-synthetic-mpt_issuance_id-field">6.3. Synthetic <code>mpt_issuance_id</code> field<a class="headerlink" href="#63-synthetic-mpt_issuance_id-field" title="Permanent link">&para;</a></h4>
+<p><code>MPTokenIssuanceID</code> is an identifier that allows user to specify a <code>MPTokenIssuance</code> in RPCs. Therefore, a synthetically parsed <code>mpt_issuance_id</code> field is added into API responses to avoid the need for client-side parsing of the <code>MPTokenIssuanceID</code>.</p>
+<h5 id="631-transaction-metadata">6.3.1. Transaction Metadata<a class="headerlink" href="#631-transaction-metadata" title="Permanent link">&para;</a></h5>
+<p>A <code>mpt_issuance_id</code> field is provided in JSON transaction metadata (not available for binary) for all successful <code>MPTokenIssuanceCreate</code> transactions. The following APIs are impacted: <code>tx</code>, <code>account_tx</code>, <code>subscribe</code> and <code>ledger</code>.</p>
+<h6 id="6311-example">6.3.1.1. Example<a class="headerlink" href="#6311-example" title="Permanent link">&para;</a></h6>
+<p>Example of a <code>tx</code> response:</p>
+<pre class="highlight"><code class="language-json">{
+   &quot;result&quot;: {
+      &quot;Account&quot;: &quot;rBT9cUqK6UvpvZhPFNQ2qpUTin8rDokBeL&quot;,
+      &quot;AssetScale&quot;: 2,
+      &quot;Fee&quot;: &quot;10&quot;,
+      &quot;Flags&quot;: 64,
+      &quot;Sequence&quot;: 303,
+      &quot;SigningPubKey&quot;: &quot;ED39955DEA2D083C6CBE459951A0A84DB337925389ACA057645EE6E6BA99D4B2AE&quot;,
+      &quot;TransactionType&quot;: &quot;MPTokenIssuanceCreate&quot;,
+      &quot;TxnSignature&quot;: &quot;80D7B7409980BE9854F7217BB8E836C8A2A191E766F24B5EF2EA7609E1420AABE6A1FDB3038468679081A45563B4D0B49C08F4F70F64E41B578F288A208E4206&quot;,
+      &quot;ctid&quot;: &quot;C000013100000000&quot;,
+      &quot;date&quot;: 760643692,
+      &quot;hash&quot;: &quot;E563D7942E3E4A79AD73EC12E9E4C44B7C9950DF7BF5FDB75FAD0F5CE0554DB3&quot;,
+      &quot;inLedger&quot;: 305,
+      &quot;ledger_index&quot;: 305,
+      &quot;meta&quot;: {
+         &quot;AffectedNodes&quot;: [...],
+         &quot;TransactionIndex&quot;: 0,
+         &quot;TransactionResult&quot;: &quot;tesSUCCESS&quot;,
+         &quot;mpt_issuance_id&quot;: &quot;0000012F72A341F09A988CDAEA4FF5BE31F25B402C550ABE&quot;
+      },
+      &quot;status&quot;: &quot;success&quot;,
+      &quot;validated&quot;: true
+   }
+}
+</code></pre>
+
+<h5 id="632-object">6.3.2. Object<a class="headerlink" href="#632-object" title="Permanent link">&para;</a></h5>
+<p>A <code>mpt_issuance_id</code> field is provided in JSON <code>MPTokenIssuance</code> objects (not available for binary). The following APIs are impacted: <code>ledger_data</code> and <code>account_objects</code>.</p>
+<h6 id="6321-example">6.3.2.1. Example<a class="headerlink" href="#6321-example" title="Permanent link">&para;</a></h6>
+<p>Example of an <code>account_objects</code> response:</p>
+<pre class="highlight"><code class="language-json">{
+  &quot;result&quot;: {
+    &quot;account&quot;: &quot;rBT9cUqK6UvpvZhPFNQ2qpUTin8rDokBeL&quot;,
+    &quot;account_objects&quot;: [
+      {
+        &quot;AssetScale&quot;: 2,
+        &quot;Flags&quot;: 64,
+        &quot;Issuer&quot;: &quot;rBT9cUqK6UvpvZhPFNQ2qpUTin8rDokBeL&quot;,
+        &quot;LedgerEntryType&quot;: &quot;MPTokenIssuance&quot;,
+        &quot;OutstandingAmount&quot;: &quot;50&quot;,
+        &quot;OwnerNode&quot;: &quot;0&quot;,
+        &quot;PreviousTxnID&quot;: &quot;BDC5ECA6B115C74BF4DA83E36325A2F55DF9E2C968A5CC15EB4D009D87D5C7CA&quot;,
+        &quot;PreviousTxnLgrSeq&quot;: 308,
+        &quot;Sequence&quot;: 303,
+        &quot;index&quot;: &quot;75EC6F2939ED6C5798A5F369A0221BC4F6DDC50F8614ECF72E3B976351057A63&quot;,
+        &quot;mpt_issuance_id&quot;: &quot;0000012F72A341F09A988CDAEA4FF5BE31F25B402C550ABE&quot;
+      }
+    ],
+    &quot;ledger_current_index&quot;: 309,
+    &quot;status&quot;: &quot;success&quot;,
+    &quot;validated&quot;: false
+  }
+}
+</code></pre>
+
+<h3 id="a-appendices">A. Appendices<a class="headerlink" href="#a-appendices" title="Permanent link">&para;</a></h3>
+<h4 id="a1-appendix-faqs">A.1. Appendix: FAQs<a class="headerlink" href="#a1-appendix-faqs" title="Permanent link">&para;</a></h4>
+<h5 id="a11-are-mpts-different-from-trustlines">A.1.1. Are MPTs different from Trustlines?<a class="headerlink" href="#a11-are-mpts-different-from-trustlines" title="Permanent link">&para;</a></h5>
+<p>Yes, MPTs are different from Trustlines. Read more in <a href="#112-assumptions">section 1.2</a>.</p>
+<p>That said, there is some overlap in functionality between the two. For example, both MPTs and Trustlines can be used to issue a stablecoin. However, the original intent behind MPTs and Trustlines is subtly different, which impacts the on-ledger design of each. For clarity, Trustlines were invented primarily to service the idea of "community credit" and also to enhance liquidity on the ledger by making the same types of currency fungible amongst differing issuers (see <a href="https://xrpl.org/rippling.html#rippling">rippling</a> for an example of each). MPTs, on the other hand, have three primary design motivations that are subtly different from Trustlines: (1) to enable tokenization using as little space (in bytes) on ledger as possible; (2) to eliminate floating point numbers and floating point math from the tokenization primitive; and (3) to make payment implementation simpler by, for example, removing <a href="https://xrpl.org/rippling.html#rippling">rippling</a> and allowing MPT usage in places like <a href="https://xrpl.org/escrow.html#escrow">escrows</a> or <a href="https://xrpl.org/payment-channels.html">payment channels</a> in more natural ways.</p>
+<h5 id="a12-are-mpts-meant-to-replace-trustlines">A.1.2. Are MPTs meant to replace Trustlines?<a class="headerlink" href="#a12-are-mpts-meant-to-replace-trustlines" title="Permanent link">&para;</a></h5>
+<p>No, replacing Trustlines is not the intent behind MPTs. Instead, it's likely that MPTs and Trustline can and will coexist because they enable subtly different use-cases (see <a href="#211-are-mpts-different-from-trustlines">FAQ 2.1.1.</a>, in particular the part about rippling).</p>
+<h5 id="a13-instead-of-mpts-why-not-just-make-trustlines-smallerbetter">A.1.3. Instead of MPTs, why not just make Trustlines smaller/better?<a class="headerlink" href="#a13-instead-of-mpts-why-not-just-make-trustlines-smallerbetter" title="Permanent link">&para;</a></h5>
+<p>While it's true there are some proposals to make Trustlines more efficient (
+e.g., <a href="https://github.com/XRPLF/rippled/issues/3866">optimize Trustline storage</a> and
+even <a href="https://github.com/XRPLF/rippled/issues/4120">eliminate Custom Math</a> from Trustlines), both of these are
+reasonably large changes that would change important aspect of the RippleState implementation. Any time we make changes
+like this, the risk is that these changes impact existing functionality in potentially unforeseen ways. The choice to
+build and implement MPT is ultimately a choice that balances this risk/reward tradeoff towards introducing something new
+to avoid breaking any existing functionality.</p>
+<h5 id="a14-are-mpts-targeted-for-mainnet-or-a-sidechain">A.1.4. Are MPTs targeted for Mainnet or a Sidechain?<a class="headerlink" href="#a14-are-mpts-targeted-for-mainnet-or-a-sidechain" title="Permanent link">&para;</a></h5>
+<p>This is still being considered and debated, but is ultimately up to Validators to decide. On the one hand, MPTs on Mainnet would enable some new tokenization use-cases that could be problematic if Trustlines were to be used (see <a href="#217-an-early-draft-of-this-mpt-proposal-stored-mptoken-objects-in-a-paging-structure-similar-to-that-used-by-nfts-why-was-that-design-abandoned">FAQ 2.1.7</a> for more details). On the other hand, adding MPTs introduces a new payment type into the payment engine, which complicates both the implementation of rippled itself, and XRPL tooling.</p>
+<p>In any event, we will first preview MPTs in a MPT-Devnet, and depending on what we learn there, revisit this issue then.</p>
+<h5 id="a15-will-mpts-be-encoded-into-an-stamount-or-is-a-new-c-object-type-required">A.1.5. Will MPTs be encoded into an STAmount, or is a new C++ object type required?<a class="headerlink" href="#a15-will-mpts-be-encoded-into-an-stamount-or-is-a-new-c-object-type-required" title="Permanent link">&para;</a></h5>
+<p>MPTs will be able to be encoded in an <code>STAmount</code>. See the appendix called <a href="#a22-stamount-serialization">STAmount Serialization</a> for more details.</p>
+<h5 id="a16-is-there-a-limit-to-the-number-of-mptokenissuance-or-mptoken-objects-that-a-single-account-can-hold">A.1.6. Is there a limit to the number of <code>MPTokenIssuance</code> or <code>MPToken</code> objects that a single account can hold?<a class="headerlink" href="#a16-is-there-a-limit-to-the-number-of-mptokenissuance-or-mptoken-objects-that-a-single-account-can-hold" title="Permanent link">&para;</a></h5>
+<p>Practically speaking, no. The number of MPToken objects or MPTokenIssuance object that any account can hold is limited by the number of objects that can be stored in an owner directory, which is a very large number.</p>
+<h5 id="a17-an-early-draft-of-this-mpt-proposal-stored-mptoken-objects-in-a-paging-structure-similar-to-that-used-by-nfts-why-was-that-design-abandoned">A.1.7. An early draft of this MPT proposal stored <code>MPToken</code> objects in a paging structure similar to that used by NFTs. Why was that design abandoned?<a class="headerlink" href="#a17-an-early-draft-of-this-mpt-proposal-stored-mptoken-objects-in-a-paging-structure-similar-to-that-used-by-nfts-why-was-that-design-abandoned" title="Permanent link">&para;</a></h5>
+<p>The original design was optimized for on-ledger space savings, but it came with a tradeoff of increased complexity, both in terms of this specification and the implementation. Another consideration is the datapoint that many NFT developers struggled with the mechanism used to identify NFTs, some of which is a result of the NFT paging structure.</p>
+<p>After analyzing on-ledger space requirements for (a) Trustlines, (b) <code>MPTokenPages</code>, (c) and simply storing <code>MPToken</code> objects in an Owner Directory, we determined that for a typical user (i.e., one holding ~10 different MPTs), the overall space required by the simpler design strikes a nice balance between the more complicated design and Trustlines. For example, the simpler design requires ~3.2x more bytes on-ledger than more complicated design. However, the simpler design requires about 30% fewer bytes on-ledger than Trustlines.</p>
+<p>With all that said, this decision is still open for debate. For example, in early 2024 the Ripple team plans to perform limit testing around Trustlines and the simpler MPT design to see how increased numbers of both types of ledger objects affect ledger performance. Once that data is complete, we'll likely revisit this design choice to either validate it or change it.</p>
+<h5 id="a18-why-is-there-no-mptokenredeem-transaction">A.1.8. Why is there no <code>MPTokenRedeem</code> Transaction?<a class="headerlink" href="#a18-why-is-there-no-mptokenredeem-transaction" title="Permanent link">&para;</a></h5>
+<p>This is because holders of a MPT can use a normal payment transaction to send MPT back to the issuer, thus "redeeming"
+it and removing it from circulation. Note that one consequence of this design choice is that MPT issuer accounts may not
+also hold <code>MPToken</code> objects because, if the issuer could do such a thing, it would be ambiguous where incoming MPT
+payments should go (i.e., should that payment be a redemption and reduce the total amount of outstanding issuance, or
+should that payment go into an issuer's <code>MPToken</code> amount, and still be considered as "in circulation." For simplicity,
+we chose the former design, restricting MPT issuers from having <code>MPToken</code> objects at all).</p>
+<h5 id="a19-why-cant-mptoken-issuers-also-hold-their-own-balances-of-mpt-in-a-mptoken-object">A.1.9. Why can't MPToken Issuers also hold their own balances of MPT in a MPToken object?<a class="headerlink" href="#a19-why-cant-mptoken-issuers-also-hold-their-own-balances-of-mpt-in-a-mptoken-object" title="Permanent link">&para;</a></h5>
+<p>See the question above. This design also helps enforce a security best practice where an issuing account should not also be used as an issuer's transactional account. Instead, any issuer should use a different XRPL account for non-issuance activity of their MPTs.</p>
+<h5 id="a110-why-not-use-the-depositpreauth-transaction-for-authorized-mpt-functionality">A.1.10. Why not use the <code>DepositPreauth</code> transaction for Authorized MPT Functionality?<a class="headerlink" href="#a110-why-not-use-the-depositpreauth-transaction-for-authorized-mpt-functionality" title="Permanent link">&para;</a></h5>
+<p>For MPTokenIssuances that have the <code>lsfMPTRequireAuth</code> flag set, it is envisioned that a <a href="https://xrpl.org/depositpreauth.html">DepositPreauth</a> transaction could be used with minor adaptations to distinguish between pre-authorized trust lines and pre-authorized MPTs. Alternatively, we might consider <code>deposit_preauth</code> objects might apply to both, under the assumption that a single issuer restricting trust lines will want to make the same restrictions around MPTs emanating from the same issuer account.</p>
+<p>If this change is introduced, it will be done via a future amendment.</p>
+<h5 id="a111-why-was-the-name-compact-fungible-token-renamed-to-multi-purpose-token">A.1.11. Why was the name Compact Fungible Token renamed to Multi-Purpose Token?<a class="headerlink" href="#a111-why-was-the-name-compact-fungible-token-renamed-to-multi-purpose-token" title="Permanent link">&para;</a></h5>
+<p>The initial name, "Compact Fungible Token", did not effectively convey the flexibility and versatility of this token standard. Therefore, we introduced a new name, "Multi-Purpose Token", to better reflect its capacity to accommodate user customization, catering towards fungible, semi-fungible, and potentially even non-fungible token use cases. This renaming aims to highlight the extensive capabilities available via MPTs.</p>
+<p>For example, MPTs might be better suited than NFTs for certain semi-fungible use-cases (especially ones where each token might have a quantity greater than 1). In addition, some NFT issuers today issue multiple copies of the same NFT in order to make them semi-fungible. This technically violates the intent of the NFT spec, and may not work well in all NFT use-cases.</p>
+<p>That said, we'll need to consider any future requirements and tradeoffs here before choosing between NFT or MPT for any particular use-case. For example, NFTs have the ability to link to off-ledger meta-data via the <code>URI</code> field, and likely require fewer storage bytes on-ledger than an MPT (though this deserves future research).</p>
+<h5 id="a112-what-numeric-range-do-mpt-amounts-support">A.1.12. What numeric range do MPT amounts support?<a class="headerlink" href="#a112-what-numeric-range-do-mpt-amounts-support" title="Permanent link">&para;</a></h5>
+<p>In general, <code>amount</code> fields in MPT-related ledger objects are represented using unsigned 64-bit integers that can support values
+between <code>0</code> and<code>2^64 -1</code> (inclusive). An exception to this rule occurs when MPT amounts are represented in a payment or
+any other transaction that requires an <code>STAmount</code>. In these instances, the MPT amount values are limited to values
+between <code>0</code> and <code>2^63 -1</code> (inclusive), because this is the range supported by <code>STAmount</code>.</p>
+<p>Because of this limitation, the maximum amounts allowed by any balance tracking field in <code>MPTokenIssuance</code> and <code>MPToken</code>
+are also limited to values between <code>0</code> and <code>2^63 -1</code> (inclusive), although these values may be increased in the future
+to enable more tokens to exist.</p>
+<p>For context, MPT amounts in <code>STAmount</code> objects are limited to the above range so that MPT amounts will eventually work
+correctly with the <code>Number</code> class, which is used internally in rippled for certain mathematical operations such as
+inside the DEX, AMM, or otherwise. At present, the <code>Number</code> class is unable to represent numeric values larger than
+<code>2^63 - 307</code> without loss of precision or overflow (depending on how the <code>Number</code> class's overflow behavior is
+configured for any particular runtime operation). While refactoring the <code>Number</code> class to support larger internal types
+was considered, it would have resulted in performance penalties for all <code>Number</code> usages, so we elected to simply limit
+the size of MPT amounts inside of <code>STAmount</code> instead.</p>
+<h5 id="a113-why-is-mptokenissuanceid-constructed-using-sequence-issuer">A.1.13. Why is <code>MPTokenIssuanceID</code> constructed using <code>sequence</code> + <code>issuer</code>?<a class="headerlink" href="#a113-why-is-mptokenissuanceid-constructed-using-sequence-issuer" title="Permanent link">&para;</a></h5>
+<p>There are three important motivations for this design choice.</p>
+<p>First, we wanted to guard against an issuer accidentally (or maliciously) deleting an MPT issuance and then recreating
+it later with the same MPT identifier, most importantly to guard against any potential confusion on the part of previous
+token holders, or otherwise. Thus, it’s important that our design prevents deleted MPT issuances from being recreated at
+a later point in time by the same issuer. Using the <code>sequence</code> + <code>issuer</code> accomplished that goal.</p>
+<p>A second motivation is that we didn’t want the externally facing <code>MPTokenIssuanceID</code> to be the actual identifier used to
+lookup an <code>MPTIssuance</code> in the ShaMap. This is because, in general, rippled should never allow external callers to
+specify a direct location in the ShaMap – instead, this value should always be computed, and combined with a transaction
+type or contextual data to inform the lookup.</p>
+<p>Last, but certainly not least, this design approach reduces the footprint of a serialized MPT <code>STAmount</code> to 264
+bits by reducing the space required by an <code>MPTokenIssuanceID</code> to 192 bits (when compared to original
+<code>MPTokenIssuanceID</code>, which required 256-bits). Because <code>MPTokenIssuanceID</code> is a field in each <code>MPToken</code>, this will yield
+a space reduction of 64 bits per <code>MPToken</code>.</p>
+<h5 id="a114-why-isnt-mptokenissuanceid-constructed-from-the-hash-of-an-issuer-address-and-currency-code">A.1.14. Why isn’t <code>MPTokenIssuanceID</code> constructed from the hash of an issuer address and currency code?<a class="headerlink" href="#a114-why-isnt-mptokenissuanceid-constructed-from-the-hash-of-an-issuer-address-and-currency-code" title="Permanent link">&para;</a></h5>
+<p>Primarily because we did not want MPT meta-data to be part of an MPTs unique identifier. This mirrors the design of other tokenization primitives on other blockchain networks that have gained massive adoption, offering strong “prior art” (e.g., ERC-20 and ERC-721 tokens). For a more detailed discussion, see <a href="https://github.com/XRPLF/XRPL-Standards/discussions/128">here</a>.</p>
+<h5 id="a115-what-is-mpt-metadata-and-how-do-we-envision-it-being-defined">A.1.15. What is MPT metadata, and how do we envision it being defined?<a class="headerlink" href="#a115-what-is-mpt-metadata-and-how-do-we-envision-it-being-defined" title="Permanent link">&para;</a></h5>
+<p>MPT metadata provides supplementary information about an MPT that doesn't require formal definition within this spec. This data can vary widely between different asset types and issuances, encompassing details like asset codes, common names, symbols, or even visual representations.</p>
+<p>To accommodate this diversity, this specification defines the <code>MPTokenMetadata</code> blob field, which allows issuers to define their own metadata standards, tailored to their specific requirements. For instance, issuers could adopt a JSON schema, similar to those used in Ethereum's <a href="https://eips.ethereum.org/EIPS/eip-1155#erc-1155-metadata-uri-json-schema">ERC-1155</a> standard, to encode structured metadata. This encoded data could enable applications to decode and utilize it for various purposes.</p>
+<p>The key idea here is that metadata does not need to be consistent across all issuances. Instead, it's up to each issuer to choose the meaning of this data, though it's possible that a majority of issuers of similar assets might choose similar or even identical metadata standards.</p>
+<h5 id="a116-why-does-mptokenissuance-include-an-assetscale-instead-of-letting-this-exist-solely-in-mptokenmetadata">A.1.16. Why does <code>MPTokenIssuance</code> include an <code>AssetScale</code> instead of letting this exist solely in <code>MPTokenMetadata</code>?<a class="headerlink" href="#a116-why-does-mptokenissuance-include-an-assetscale-instead-of-letting-this-exist-solely-in-mptokenmetadata" title="Permanent link">&para;</a></h5>
+<p><code>AssetScale</code> is a normative field within MPTs to ensure consistent interpretation across applications, both for display
+and computation. For instance, in the case of a USD stablecoin MPT with a scale of <code>2</code>, applications would display a
+payment of 100 units as <code>$1.00</code>. Likewise, applications performing calculations on MPT amounts should have a consistent
+method to convert them into different denominations. For example, an application that utilizes dollars as its base unit
+should treat the above as a payment of one dollar and not a payment of 100 dollars.</p>
+<p>While not currently required by today's transactors, <code>AssetScale</code> also prepares for future on-ledger functionality that might require it.</p>
+<h5 id="a117-why-was-lockedamount-removed-from-the-spec">A.1.17. Why was <code>LockedAmount</code> removed from the spec?<a class="headerlink" href="#a117-why-was-lockedamount-removed-from-the-spec" title="Permanent link">&para;</a></h5>
+<p>The original design of this specification envisioned tracking locked MPT balances at both the issuance level (i.e., the
+total amount of a single issuance's locked tokens) and also envisioned tracking locked amounts inside each <code>MPToken</code> (
+i.e., to support partially locking a single user's MPT balance). However, these designs were abandoned.</p>
+<p>For the former idea, tracking locked balances at the <code>MPTokenIssuance</code> level is unnecessary because this specification
+assumes that any MPT transferred to an escrow (or any other object) is considered to be a transfer of ownership.
+Therefore, treating those funds as "locked" is inaccurate.</p>
+<p>For the latter concern, <em>partially</em> locking an individual user's MPT balance was abandoned as being more complex than
+necessary. Instead, MPT Global and user-level balance locking is likely sufficient.</p>
+<h5 id="a118-what-impact-will-mpts-have-on-the-rippled-codebase-when-it-comes-to-representing-issuers-currency-types-or-token-amounts">A.1.18 What impact will MPTs have on the rippled codebase when it comes to representing issuers, currency types, or token amounts?<a class="headerlink" href="#a118-what-impact-will-mpts-have-on-the-rippled-codebase-when-it-comes-to-representing-issuers-currency-types-or-token-amounts" title="Permanent link">&para;</a></h5>
+<p>The following changes have been made to the rippled codebase to accommodate this spec:</p>
+<ul>
+<li>The <code>Asset</code> class is added, replacing <code>Issue</code> in many contexts. <code>Issue</code> stays as-is; it supports only XRP and IOU.
+  <code>Asset</code> supports XRP, IOU, and MPT. When one needs to represent a token type, <code>Asset</code> should be used.</li>
+<li><code>STAmount</code> will support MPT tokens (in addition to XRP and IOU) by holding an <code>Asset</code> instead of an <code>Issue</code>.</li>
+<li><code>STIssue</code> will support MPT tokens (in addition to XRP and IOU) by holding an <code>Asset</code> instead of an <code>Issue</code>.</li>
+<li><code>STNumber</code> is added, which supports MPT, XRP, and IOU by being a <code>Number</code>. <code>STNumber</code> is effectively an STAmount
+  without the <code>Asset</code>, which means it is smaller when serialized.</li>
+<li>There will be an <code>MPTIssue</code>, but no <code>XRPIssue</code> or <code>IOUIssue</code>. Instead, they are both represented by <code>Issue</code>.</li>
+<li>Implicit conversions will be added from <code>MPTAmount</code>, <code>XRPAmount</code>, and <code>IOUAmount</code> to <code>Number</code> / <code>STNumber</code> and
+  explicit conversions in the opposite direction.</li>
+<li>There are implicit conversions from <code>MPTIssue</code> and <code>Issue</code> to <code>Asset</code>, and explicit conversions in the opposite
+  direction.</li>
+</ul>
+<h4 id="a2-appendix-supplemental-information">A.2. Appendix: Supplemental Information<a class="headerlink" href="#a2-appendix-supplemental-information" title="Permanent link">&para;</a></h4>
+<h5 id="a21-on-ledger-storage-requirements">A.2.1. On-Ledger Storage Requirements<a class="headerlink" href="#a21-on-ledger-storage-requirements" title="Permanent link">&para;</a></h5>
+<h6 id="a211-ripplestate-object-size-in-bytes">A.2.1.1. <code>RippleState</code> Object (Size in Bytes)<a class="headerlink" href="#a211-ripplestate-object-size-in-bytes" title="Permanent link">&para;</a></h6>
+<p>As described in issue <a href="https://github.com/ripple/rippled/issues/3866#issue-919201191">#3866</a>, the size of a <a href="https://xrpl.org/ripplestate.html#ripplestate">RippleState</a> object is anywhere from 202 to 218 bytes plus a minimum of 32 bytes for object owner tracking. In addition, each trustline actually requires entries in both participant's Owner Directories, among other bytes.</p>
+<p>This section attempts to catalog expected size, in bytes, for both Trustlines and MPTs, in an effort to predict expected space savings.</p>
+<p><strong>Required Fields</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">FIELD NAME</th>
+<th style="text-align: center;">SIZE (BITS)</th>
+<th style="text-align: center;">SIZE (BYTES)</th>
+<th style="text-align: left;">NOTE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">LedgerEntryType</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">Flags</td>
+<td style="text-align: center;">32</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">("optional" but present in &gt; 99.99% of cases)</td>
+</tr>
+<tr>
+<td style="text-align: right;">Balance</td>
+<td style="text-align: center;">384</td>
+<td style="text-align: center;">48</td>
+<td style="text-align: left;">(160–224 wasted)</td>
+</tr>
+<tr>
+<td style="text-align: right;">LowLimit</td>
+<td style="text-align: center;">384</td>
+<td style="text-align: center;">48</td>
+<td style="text-align: left;">(160–224 wasted)</td>
+</tr>
+<tr>
+<td style="text-align: right;">HighLimit</td>
+<td style="text-align: center;">384</td>
+<td style="text-align: center;">48</td>
+<td style="text-align: left;">(160–224 wasted)</td>
+</tr>
+<tr>
+<td style="text-align: right;">LowNode</td>
+<td style="text-align: center;">64</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;">(often has value 0)</td>
+</tr>
+<tr>
+<td style="text-align: right;">HighNode</td>
+<td style="text-align: center;">64</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;">(often has value 0)</td>
+</tr>
+<tr>
+<td style="text-align: right;">PreviousTxnID</td>
+<td style="text-align: center;">256</td>
+<td style="text-align: center;">32</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">PreviousTxnLgrSeq</td>
+<td style="text-align: center;">32</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">Field+Type Codes</td>
+<td style="text-align: center;">144</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: left;">For every field, there is a <code>FieldCode</code> and a <code>TypeCode</code>, taking 2 bytes in total (e.g., if there are 4 fields, we'll use 8 bytes). Here we have nine fields.</td>
+</tr>
+<tr>
+<td style="text-align: right;">---</td>
+<td style="text-align: center;">--</td>
+<td style="text-align: center;">---</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">SUB-TOTAL</td>
+<td style="text-align: center;">1760</td>
+<td style="text-align: center;">220</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">---</td>
+<td style="text-align: center;">--</td>
+<td style="text-align: center;">---</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">LowQualityIn</td>
+<td style="text-align: center;">32</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">LowQualityOut</td>
+<td style="text-align: center;">32</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">("optional" but present in &gt; 99.99% of cases)</td>
+</tr>
+<tr>
+<td style="text-align: right;">HighQualityIn</td>
+<td style="text-align: center;">32</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">(160–224 wasted)</td>
+</tr>
+<tr>
+<td style="text-align: right;">HighQualityOut</td>
+<td style="text-align: center;">32</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">(160–224 wasted)</td>
+</tr>
+<tr>
+<td style="text-align: right;">Field+Type Codes</td>
+<td style="text-align: center;">64</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;">For every field, there is a <code>FieldCode</code> and a <code>TypeCode</code>, taking 2 bytes in total (e.g., if there are 4 fields, we'll use 8 bytes). Here we have four fields.</td>
+</tr>
+<tr>
+<td style="text-align: right;">---</td>
+<td style="text-align: center;">--</td>
+<td style="text-align: center;">---</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">SUB-TOTAL</td>
+<td style="text-align: center;">192</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">---</td>
+<td style="text-align: center;">--</td>
+<td style="text-align: center;">---</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">TOTAL</td>
+<td style="text-align: center;">1952</td>
+<td style="text-align: center;">244</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h6 id="a212-mptoken-object-size-in-bytes">A.2.1.2. <code>MPToken</code> Object (Size in Bytes)<a class="headerlink" href="#a212-mptoken-object-size-in-bytes" title="Permanent link">&para;</a></h6>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">FIELD NAME</th>
+<th style="text-align: center;">SIZE (BITS)</th>
+<th style="text-align: center;">SIZE (BYTES)</th>
+<th style="text-align: left;">NOTE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">LedgerEntryType</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">MPTokenIssuanceID</td>
+<td style="text-align: center;">192</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">MPTAmount</td>
+<td style="text-align: center;">64</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">Flags</td>
+<td style="text-align: center;">32</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">PreviousTxnID</td>
+<td style="text-align: center;">256</td>
+<td style="text-align: center;">32</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">PreviousTxnLgrSeq</td>
+<td style="text-align: center;">32</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">Field+Type Codes</td>
+<td style="text-align: center;">112</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: left;">For every field, there is a <code>FieldCode</code> and a <code>TypeCode</code>, taking 2 bytes in total (e.g., if there are 4 fields, we'll use 8 bytes). Here we have 7 fields.</td>
+</tr>
+<tr>
+<td style="text-align: right;">---</td>
+<td style="text-align: center;">--</td>
+<td style="text-align: center;">---</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">TOTAL</td>
+<td style="text-align: center;">704</td>
+<td style="text-align: center;">88</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h6 id="a213-size-comparison">A.2.1.3. Size Comparison<a class="headerlink" href="#a213-size-comparison" title="Permanent link">&para;</a></h6>
+<p>As can be seen from the following size comparison table, Trustlines take up approximately 2.2-2.4x as much space on ledger, in bytes, as MPTs would.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Description</th>
+<th style="text-align: center;"># MPT Directories</th>
+<th style="text-align: center;">Total Bytes (MPT)</th>
+<th style="text-align: center;"># Trustline Directories</th>
+<th style="text-align: center;">Total Bytes (Trustline)</th>
+<th style="text-align: center;">Trustlines are X-times Larger</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Bytes for holding 1 Tokens</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">218</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">488</td>
+<td style="text-align: center;">2.2x</td>
+</tr>
+<tr>
+<td style="text-align: right;">Bytes for holding 10 Tokens</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1,370</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3,260</td>
+<td style="text-align: center;">2.4x</td>
+</tr>
+<tr>
+<td style="text-align: right;">Bytes for holding 32 Tokens</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5,300</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">12,264</td>
+<td style="text-align: center;">2.3x</td>
+</tr>
+<tr>
+<td style="text-align: right;">Bytes for holding 64 Tokens</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">12,558</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">28,444</td>
+<td style="text-align: center;">2.3x</td>
+</tr>
+</tbody>
+</table>
+<h5 id="a22-stamount-serialization">A.2.2. <code>STAmount</code> serialization<a class="headerlink" href="#a22-stamount-serialization" title="Permanent link">&para;</a></h5>
+<p>Referenced from https://gist.github.com/sappenin/2c923bb249d4e9dd153e2e5f32f96d92 with some modifications:</p>
+<h6 id="binary-encoding">Binary Encoding<a class="headerlink" href="#binary-encoding" title="Permanent link">&para;</a></h6>
+<p>To support this idea, we first need a way to leverage the
+current <a href="https://xrpl.org/serialization.html#amount-fields">STAmount</a> binary encoding. To accomplish this, we notice
+that for XRP amounts, the maximum amount of XRP (10^17 drops) only requires 57 bits. However, in the current <code>XRP</code>
+STAmount encoding, there are 62 bits available. So, so we can repurpose one of these bits to indicate if an amount is
+indeed a MPT or not (and still have 4 bits left over for future use, if needed).</p>
+<p>This enables MPT amounts to be represented in the current <code>STAmount</code> binary encoding. he rules for reading the binary
+amount fields would be backward compatible, as follows:</p>
+<ol>
+<li>Parse off the Field ID with a type_code (<code>STI_AMOUNT</code>). This indicates the following bytes are an <code>STAmount</code>.</li>
+<li>Inspect the next bit. If its value is <code>1</code>, then continue to the next step. If not, then this <code>STAmount</code> does <strong>not</strong>
+   represent an MPT nor XRP (instead this is a regular IOU token amount, and can be parsed according to existing rules
+   for those amounts).</li>
+<li>Ignore (for now) the 2nd bit (this is the sign-bit, and is always 1 for both XRP and MPT).</li>
+<li>Inspect the 3rd bit. If <code>0</code>, then parse as an XRP value per usual. However, if <code>1</code>, then parse the remaining
+   <code>STAmount</code> bytes as an MPT.</li>
+</ol>
+<h6 id="encoding-for-xrp-values-backward-compatible">Encoding for XRP Values (backward compatible)<a class="headerlink" href="#encoding-for-xrp-values-backward-compatible" title="Permanent link">&para;</a></h6>
+<pre class="highlight"><code>┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ ┌──────────────────┐ ┌──────────────────────┐ ┌──────────────────┐ ┌──────────────────┐ ┌───────────────────────────────────────────┐ │
+│ |        0         | |          1           | |        0         | |                  | |                                           | │
+│ |                  | |                      | |                  | |     Reserved     | |                XRP Amount                 | │
+│ |  &quot;Not XRP&quot; bit   | | Sign bit (always 1;  | |   &quot;IsMPT&quot; bit    | |     (4 bits)     | |                 (57 bits)                 | │
+│ | 0=XRP/MPT; 1=IOU | |      positive)       | |   0=XRP; 1=MPT   | |                  | |                                           | │
+│ └──────────────────┘ └──────────────────────┘ └──────────────────┘ └──────────────────┘ └───────────────────────────────────────────┘ │
+└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+
+<h6 id="encoding-for-mpt-values-backward-compatible">Encoding for MPT Values (backward compatible)<a class="headerlink" href="#encoding-for-mpt-values-backward-compatible" title="Permanent link">&para;</a></h6>
+<p>This encoding focuses on the first 3 bits of a MPT:</p>
+<pre class="highlight"><code>┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ ┌─────────────────┐┌────────────────────────┐┌────────────┐┌─────────────────────────────────────────────┐ │
+│ │        0        ││           1            ││     1      ││                                             │ │
+│ │                 ││                        ││            ││             Remaining MPT Bytes             │ │
+│ │  &quot;Not XRP&quot; bit  ││  Sign bit (always 1;   ││&quot;IsMPT&quot; bit ││                 (261 bits)                  │ │
+│ │0=XRP/MPT; 1=IOU ││       positive)        ││0=XRP; 1=MPT││                                             │ │
+│ └─────────────────┘└────────────────────────┘└────────────┘└─────────────────────────────────────────────┘ │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+
+<p>This encoding focuses on the rest of the bytes of a MPT (264 bits):</p>
+<pre class="highlight"><code>┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ ┌─────────────────┐┌──────────────────┐┌──────────────────────┐┌──────────────────────────┐┌──────────────────────────┐│
+│ │    [0][1][1]    ││                  ││                      ││                          ││                          ││
+│ │                 ││     Reserved     ││   MPT Amount Value   ││      Sequence            ││     Issuer AcountID      ││
+│ │   IsMPT=true    ││     (5 bits)     ││      (64 bits)       ││      (32 bits)           ││        (160 bits)        ││
+│ │                 ││                  ││                      ││                          ││                          ││
+│ └─────────────────┘└──────────────────┘└──────────────────────┘└──────────────────────────┘└──────────────────────────┘│
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+
+<p>Note: MPT introduces an extra leading byte in front of the MPT value. However, despite the MPT value being 64-bit, only 63 bits can be used. This limitation arises because internally, rippled needs to convert the value to <code>int64</code>, which has a smaller positive range compared to <code>uint64</code>.</p>
+<h5 id="a23-allow-listing">A.2.3. Allow-Listing<a class="headerlink" href="#a23-allow-listing" title="Permanent link">&para;</a></h5>
+<p>In certain use cases, issuers may want the option to only allow specific accounts to hold their MPT, similar to how authorization works for TrustLines.</p>
+<h6 id="a231-without-allow-listing">A.2.3.1. Without Allow-Listing<a class="headerlink" href="#a231-without-allow-listing" title="Permanent link">&para;</a></h6>
+<p>Let's first explore how the flow looks like without allow-listing:</p>
+<ol>
+<li>Alice holds a MPT with asset-code <code>USD</code>.</li>
+<li>Bob wants to hold it, and therefore submits a <code>MPTokenAuthorize</code> transaction specifying the <code>MPTokenIssuanceID</code>, and does not specify any flag. This will create a <code>MPToken</code> object with zero balance, and potentially taking up extra reserve.</li>
+<li>Bob can now receive and send payments from/to anyone using <code>USD</code>.</li>
+<li>Bob no longer wants to use the MPT, meaning that he needs to return his entire amount of <code>USD</code> back to the issuer through a <code>Payment</code> transaction. Resulting in a zero-balance <code>MPToken</code> object again.</li>
+<li>Bob then submits a <code>MPTokenAuthorize</code> transaction that has set the <code>tfMPTUnauthorize</code> flag, which will successfully delete <code>MPToken</code> object.</li>
+</ol>
+<h6 id="a232-with-allow-listing">A.2.3.2. With Allow-Listing<a class="headerlink" href="#a232-with-allow-listing" title="Permanent link">&para;</a></h6>
+<p>The issuer needs to enable allow-listing for the MPT by setting the <code>lsfMPTRequireAuth</code> on the <code>MPTokenIssuance</code>.</p>
+<p>With allow-listing, there needs to be a bidirectional trust between the holder and the issuer. Let's explore the flow and compare the difference with above:</p>
+<ol>
+<li>Alice has a MPT of currency <code>USD</code> (same as above)</li>
+<li>Bob wants to hold it, and therefore submits a <code>MPTokenAuthorize</code> transaction specifying the <code>MPTokenIssuanceID</code>, and does not specify any flag. This will create a <code>MPToken</code> object with zero balance, and potentially taking up extra reserve. (same as above)
+   <strong>However at this point, Bob still does not have the permission to use <code>USD</code>!</strong></li>
+<li>Alice needs to send a <code>MPTokenAuthorize</code> transaction specifying Bob's address in the <code>MPTokenHolder</code> field, and if successful, it will set the <code>lsfMPTAuthorized</code> flag on Bob's <code>MPToken</code> object. This will now finally enable Bob to use <code>USD</code>.</li>
+<li>Same as step 4 above</li>
+<li>Same as step 5 above</li>
+</ol>
+<p><strong>It is important to note that the holder always must first submit the <code>MPTokenAuthorize</code> transaction before the issuer.</strong> This means that in the example above, steps 2 and 3 cannot be reversed where Alice submits the <code>MPTokenAuthorize</code> before Bob.</p>
+<p>Issuer also has the ability to de-authorize a holder. In that case, if the holder still has outstanding funds, then it's the issuer's responsibility to clawback these funds.</p></div>
+
+  <!-- Document navigation footer -->
+  <div class="document-nav">
+    <!-- Back to standards index -->
+    <a href="/">&larr; Back to All Standards</a>
+    <!-- Direct link to GitHub source -->
+    <a
+      href="https://github.com/XRPLF/XRPL-Standards/tree/master/XLS-0033-multi-purpose-tokens"
+      >View on GitHub</a
+    >
+  </div>
+</div>
+</main>
+
+    <!-- Site footer with copyright and license information -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 XRP Ledger Foundation. Licensed under
+          <a href="https://github.com/XRPLF/XRPL-Standards/blob/master/LICENSE"
+            >Apache License 2.0</a
+          >.
+        </p>
+      </div>
+    </footer>
+
+    <!-- KaTeX auto-render: render LaTeX math on page load -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        var content = document.querySelector("main");
+        if (!content) return;
+        renderMathInElement(content, {
+          delimiters: [
+            { left: "\\[", right: "\\]", display: true },
+            { left: "\\(", right: "\\)", display: false },
+          ],
+          throwOnError: false,
+        });
+      });
+    </script>
+
+    <!-- JavaScript blocks for child templates -->
+    
+  </body>
+</html>

@@ -269,7 +269,7 @@ These are not soft-warns — they signal a damaged closure ledger and pack publi
 
 ### Earned by
 
-XRPL creator-token durability pack (Experiment 3 pack #2 of 3, Session K, 2026-05-10). Section 07 surfaced the seam: 24 raw `accepted_for_synthesis` rows but only 19 unique `claim_id`s. Refusal was correct under the v0.3.1 admission contract; v0.3.2 reconciles the contract with the closure-ledger reality. Earlier frozen packs (`comfyui-workflow-durability`, `research-os-self-dogfood`) regress identically — their effective count matched the legacy count, so neither sees a warning.
+XRPL creator-token durability pack (Experiment 3 pack #2 of 3, Session K, 2026-05-10). Section 07 surfaced the seam: 24 raw `accepted_for_synthesis` rows but only 19 unique `claim_id`s. Refusal was correct under the v0.3.1 admission contract; v0.3.2 reconciles the contract with the closure-ledger reality. Earlier frozen packs (`comfyui-workflow-durability`, `research-os-self-dogfood`) regress identically — their effective count matched the legacy count, so neither sees a warning. Full closeout story: [`research-os/docs/experiment-3-pack-2-proof.md`](https://github.com/mcp-tool-shop-org/research-os/blob/main/docs/experiment-3-pack-2-proof.md).
 
 ---
 

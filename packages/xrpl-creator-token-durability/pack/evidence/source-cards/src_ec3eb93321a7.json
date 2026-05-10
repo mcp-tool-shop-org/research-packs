@@ -1,0 +1,28 @@
+{
+  "source_id": "src_ec3eb93321a7",
+  "receipt_id": "rcpt_ec3eb93321a7_1778321609538",
+  "section_id": "01-token-surface-and-standards",
+  "url": "https://xrpl.org/docs/concepts/tokens/nfts",
+  "final_url": "https://xrpl.org/docs/concepts/tokens/nfts",
+  "fetched_at": "2026-05-09T10:13:29.538Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Non-Fungible Tokens",
+  "source_type": "primary",
+  "relevance": "medium",
+  "key_points": [
+    "NFTs are unique digital assets stored on a blockchain.",
+    "They represent ownership of items such as art, collectibles, virtual goods, and more.",
+    "NFTs have distinct properties and cannot be replaced by another token on a like-for-like basis.",
+    "On the XRP Ledger, NFTs can be created using custom fields in an issuance transaction."
+  ],
+  "limitations": [
+    "The source only discusses how NFTs work on the XRP Ledger specifically.",
+    "It does not cover general blockchain theory or other cryptocurrencies."
+  ],
+  "asserts": "NFTs represent unique digital assets with distinct properties that cannot be replaced by another token.",
+  "scope": "XRP Ledger",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T10:14:14.168Z"
+}

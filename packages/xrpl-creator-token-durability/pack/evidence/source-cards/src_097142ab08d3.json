@@ -1,0 +1,26 @@
+{
+  "source_id": "src_097142ab08d3",
+  "receipt_id": "rcpt_097142ab08d3_1778354508562",
+  "section_id": "04-issuer-controls-and-immutability",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/types/accountset",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/types/accountset",
+  "fetched_at": "2026-05-09T19:21:48.562Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "AccountSet",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The AccountSet transaction sets the account's properties.",
+    "It can set various properties such as classic staple, inflation rate, and escape hatch.",
+    "The transaction uses flags to specify which properties are being modified."
+  ],
+  "limitations": [
+    "Scope is limited to the functionality of the AccountSet transaction within the XRP Ledger system."
+  ],
+  "asserts": "The AccountSet transaction allows an account holder to modify their account's properties, such as classic staple and inflation rate, using flags.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T19:22:10.890Z"
+}

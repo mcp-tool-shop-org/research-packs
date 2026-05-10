@@ -1,0 +1,88 @@
+{
+  "summary_id": "tris_1778353331400_02-account-and-key-management",
+  "section_id": "02-account-and-key-management",
+  "triaged_at": "2026-05-09T19:02:11.400Z",
+  "research_os_version": "0.3.1",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 173,
+  "decisions": {
+    "needs_scope_repair": 132,
+    "selected_for_review": 39,
+    "parked_weak_scope": 2
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 39,
+  "selected_per_source": [
+    {
+      "source_id": "src_117260e9e17f",
+      "selected": 7,
+      "total": 25
+    },
+    {
+      "source_id": "src_31ded2938c1f",
+      "selected": 1,
+      "total": 23
+    },
+    {
+      "source_id": "src_9505395adfe8",
+      "selected": 5,
+      "total": 21
+    },
+    {
+      "source_id": "src_097142ab08d3",
+      "selected": 4,
+      "total": 20
+    },
+    {
+      "source_id": "src_ec68826269c9",
+      "selected": 2,
+      "total": 13
+    },
+    {
+      "source_id": "src_13f7e950b494",
+      "selected": 4,
+      "total": 11
+    },
+    {
+      "source_id": "src_b98e4c872d37",
+      "selected": 1,
+      "total": 10
+    },
+    {
+      "source_id": "src_206907715043",
+      "selected": 6,
+      "total": 10
+    },
+    {
+      "source_id": "src_cef2c31af42d",
+      "selected": 2,
+      "total": 9
+    },
+    {
+      "source_id": "src_68a1f3f26f9b",
+      "selected": 3,
+      "total": 9
+    },
+    {
+      "source_id": "src_b357e7424a79",
+      "selected": 2,
+      "total": 8
+    },
+    {
+      "source_id": "src_7d558c2ae6d2",
+      "selected": 1,
+      "total": 6
+    },
+    {
+      "source_id": "src_5b84f976c797",
+      "selected": 1,
+      "total": 5
+    },
+    {
+      "source_id": "src_24fc488e7bd9",
+      "selected": 0,
+      "total": 3
+    }
+  ]
+}
