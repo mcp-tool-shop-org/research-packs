@@ -1,0 +1,27 @@
+{
+  "source_id": "src_48fddb8ee3b6",
+  "receipt_id": "rcpt_48fddb8ee3b6_1778357820091",
+  "section_id": "05-transfer-and-trade-mechanics",
+  "url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/nftokenoffer",
+  "final_url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/nftokenoffer",
+  "fetched_at": "2026-05-09T20:17:00.091Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "NFTokenOffer",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "Defines the NFTokenOffer ledger object type.",
+    "An NFTokenOffer is a proposal to create a new NFToken on the XRP Ledger.",
+    "The owner of an NFToken can update its metadata, including its price and terms, as long as the NFToken has not been sold yet.",
+    "The NFTokenOffer object includes fields for the proposed name, URL, and price of the NFToken."
+  ],
+  "limitations": [
+    "Scope is limited to the XRP Ledger and its NFTokenOffer feature."
+  ],
+  "asserts": "An NFTokenOffer is a proposal to create a new NFToken on the XRP Ledger, with fields for the proposed name, URL, and price.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T20:17:28.664Z"
+}

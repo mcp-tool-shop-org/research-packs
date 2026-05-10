@@ -1,0 +1,27 @@
+{
+  "source_id": "src_5b84f976c797",
+  "receipt_id": "rcpt_5b84f976c797_1778352323638",
+  "section_id": "02-account-and-key-management",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/types/ticketcreate",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/types/ticketcreate",
+  "fetched_at": "2026-05-09T18:45:23.638Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "TicketCreate",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The TicketCreate transaction creates a ticket for a given amount to be redeemed later.",
+    "Tickets can only be created by the owner of a trust line or account.",
+    "When creating a ticket, the issuer specifies the ticket's amount and the address where it will be redeemed.",
+    "A TicketCreate transaction includes the issuer's account ID, the ticket's unit amount in drops, the recipient's account ID, and an optional expiration time."
+  ],
+  "limitations": [
+    "The documentation does not specify real-world use cases or examples for using the TicketCreate transaction type."
+  ],
+  "asserts": "Tickets can be created by the owner of a trust line or account to be redeemed later.",
+  "scope": "Describes how tickets are issued and redeemed in the XRP Ledger protocol.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:45:51.637Z"
+}

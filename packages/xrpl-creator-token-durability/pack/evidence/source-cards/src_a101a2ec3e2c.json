@@ -1,0 +1,28 @@
+{
+  "source_id": "src_a101a2ec3e2c",
+  "receipt_id": "rcpt_a101a2ec3e2c_1778349799933",
+  "section_id": "03-on-ledger-state-and-reserves",
+  "url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/account-methods/account_objects",
+  "final_url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/account-methods/account_objects",
+  "fetched_at": "2026-05-09T18:03:19.933Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "account_objects",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The account_objects method retrieves account object data for a given list of accounts.",
+    "It returns an array of objects, where each object represents an account object and contains information such as the account ID, ledger index, transaction index, and account type.",
+    "The returned objects also include details like creation date, flags, balance, and other relevant fields based on the account type.",
+    "This method supports pagination using the limit and start parameters to retrieve only a subset of the total account objects."
+  ],
+  "limitations": [
+    "The information provided in this document is specific to the XRP Ledger and its public API methods.",
+    "It does not cover potential limitations or constraints that may arise when implementing or using these methods in real-world applications."
+  ],
+  "asserts": "The account_objects method allows retrieving data for multiple accounts, including their object details like creation date, flags, balance, etc.",
+  "scope": "This document describes the usage and functionality of the account_objects method within the XRP Ledger's public API.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:03:53.452Z"
+}

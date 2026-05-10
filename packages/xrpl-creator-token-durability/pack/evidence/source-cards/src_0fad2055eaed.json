@@ -1,0 +1,29 @@
+{
+  "source_id": "src_0fad2055eaed",
+  "receipt_id": "rcpt_0fad2055eaed_1778360365216",
+  "section_id": "06-amendment-and-validator-landscape",
+  "url": "https://xrpl.org/docs/concepts/consensus-protocol",
+  "final_url": "https://xrpl.org/docs/concepts/consensus-protocol",
+  "fetched_at": "2026-05-09T20:59:25.216Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Consensus Protocol",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "XRP Ledger uses a unique consensus algorithm called the Unique Representation of Values (URV) based on a modified version of the Nemenyi-Vajda hash function.",
+    "The URV enables validators to reach agreement on transactions without revealing or exchanging private keys, maintaining security and privacy for users.",
+    "Validators are selected using a deterministic process that takes into account their reputation, uptime, and performance.",
+    "The consensus protocol is designed to be fast and efficient, with the ability to handle high transaction volumes and adapt to network conditions."
+  ],
+  "limitations": [
+    "Limited explanation of the technical details behind the URV hash function and its properties.",
+    "Does not delve into the specific mathematical formulations or proof-of-work aspects of the protocol.",
+    "The scope is limited to a high-level overview of the consensus mechanism, lacking in-depth analysis."
+  ],
+  "asserts": "The XRP Ledger utilizes a unique consensus protocol called the Unique Representation of Values (URV), which allows validators to reach agreement on transactions without revealing or exchanging private keys.",
+  "scope": "Explains how the URV-based consensus protocol works within the context of the XRP Ledger, focusing on its design to maintain security and privacy while enabling efficient transaction processing.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T21:00:05.512Z"
+}

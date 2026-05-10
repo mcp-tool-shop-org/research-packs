@@ -1,0 +1,8 @@
+section_id: 01-token-surface-and-standards
+purpose: "Map XRPL's three creator-token paradigms (IOUs/trustlines, NFTokens via XLS-20, MPTs via XLS-46): design guarantees, maturity/adoption status, coexistence and migration paths."
+status: draft
+created_at: 2026-05-09T10:05:36.384Z
+max_time_minutes: 45
+min_sources: 8
+primary_sources_required: 2
+contradictions_required: true

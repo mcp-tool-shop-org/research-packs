@@ -1,0 +1,1436 @@
+{
+  "section_id": "02-account-and-key-management",
+  "reviewer": "ollama-intern",
+  "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+  "reviewed_at": "2026-05-09T19:04:05.055Z",
+  "candidate_claims": 39,
+  "findings": [
+    {
+      "finding_id": "fnd_60fcf3e0cd17",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_117260e9e17f_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_117260e9e17f"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that 'Only the master key pair can authorize certain transactions' overgeneralizes, as it implies this is true for all types of transactions without citing evidence for that assertion.",
+      "evidence": "The cited excerpt only discusses specific transaction types requiring master key authorization, not a general rule.",
+      "required_action": "Clarify which transactions require master key authorization and source evidence for that claim.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T19:04:05.052Z"
+    },
+    {
+      "finding_id": "fnd_8b7622f02230",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_117260e9e17f_ollama_intern_20"
+      ],
+      "source_ids": [
+        "src_117260e9e17f"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim 'Not all 32-byte numbers are valid secp256k1 secret keys in the XRP Ledger' is factually correct but low-leverage trivia.",
+      "evidence": "This does not synthesize a broader insight or have practical implications beyond being an implementation detail.",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T19:04:05.052Z"
+    },
+    {
+      "finding_id": "fnd_a3a8852e07da",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_13f7e950b494_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_13f7e950b494"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "Claim clm_13f7e950b494_ollama_intern_1 overgeneralizes the use of Tickets, suggesting they allow transactions to be sent outside normal sequence order more broadly than the source indicates.",
+      "evidence": "A Ticket in the XRP Ledger is a way of setting aside a sequence number for a transaction without sending it right away. Tickets allow transactions to be sent outside of the normal sequence order.",
+      "required_action": "Clarify that Tickets enable transactions to be set aside and used later, rather than being sent out-of-order.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T19:04:05.052Z"
+    },
+    {
+      "finding_id": "fnd_c6f52ec1dbcd",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_097142ab08d3_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_097142ab08d3"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_097142ab08d3_ollama_intern_10 provides low-leverage trivia about XRPL account flags being disabled by default.",
+      "evidence": "All flags are disabled by default.",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T19:04:05.052Z"
+    },
+    {
+      "finding_id": "fnd_6c64bf7e78f8",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_b357e7424a79_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_b357e7424a79"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The AccountDelete transaction is not explicitly mentioned as part of the XRP Ledger documentation.",
+      "evidence": "Previous page Transaction Types",
+      "required_action": "Clarify that while transactions exist, their specific documentation and usage in account deletion may vary or require further research.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T19:04:05.052Z"
+    },
+    {
+      "finding_id": "fnd_d95fab8f6592",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_5b84f976c797_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_5b84f976c797"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim restates the context that tickets can be created by the owner of a trust line or account, which is a low-leverage detail for synthesis.",
+      "evidence": "",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T19:04:05.052Z"
+    },
+    {
+      "finding_id": "fnd_e34c218908d1",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_9505395adfe8_ollama_intern_18"
+      ],
+      "source_ids": [
+        "src_9505395adfe8"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that an AccountRoot entry requires incoming payments to specify a Destination Tag is overgeneralized, as it only applies to regular keys and not master keys.",
+      "evidence": "lsfRequireDestTag 0x00020000 131072 asfRequireDest Requires incoming payments to specify a Destination Tag.",
+      "required_action": "Specify that this requirement applies specifically to regular keys, not master keys.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T19:04:05.052Z"
+    },
+    {
+      "finding_id": "fnd_b35752580e46",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_9505395adfe8_ollama_intern_19"
+      ],
+      "source_ids": [
+        "src_9505395adfe8"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim that the reserve for an AccountRoot entry is the base reserve, currently 1 XRP, is a low-leverage detail for synthesis.",
+      "evidence": "",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T19:04:05.053Z"
+    },
+    {
+      "finding_id": "fnd_6c6c771d6895",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_68a1f3f26f9b_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_68a1f3f26f9b"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that creating, replacing, or removing a signer list requires the MultiSign amendment is overgeneralized, as it assumes the current implementation where SignerListID is always set to 0.",
+      "evidence": "Requires the MultiSign amendment . Loading...",
+      "required_action": "Clarify that this statement assumes the current implementation where SignerListID is always set to 0.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T19:04:05.053Z"
+    },
+    {
+      "finding_id": "fnd_82a3641dfc57",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_68a1f3f26f9b_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_68a1f3f26f9b"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that the ID of a SignerList entry is the SHA-512Half of specific concatenated values overgeneralizes by assuming the current implementation where SignerListID is always set to 0.",
+      "evidence": "The ID of a SignerList entry is the SHA-512Half of the following values, concatenated in order: … The SignerListID (currently always 0 )",
+      "required_action": "Clarify that this statement assumes the current implementation where SignerListID is always set to 0.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T19:04:05.053Z"
+    },
+    {
+      "finding_id": "fnd_6c2e3a546b21",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_206907715043_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_206907715043"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_206907715043_ollama_intern_7 reiterates the existence of granular permissions in XRPL, which is a low-value restatement of context.",
+      "evidence": "The evidence excerpt directly states 'Adding a new granular permission requires an amendment.'",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T19:04:05.053Z"
+    },
+    {
+      "finding_id": "fnd_03d2fbad1b85",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_cef2c31af42d_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_cef2c31af42d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_cef2c31af42d_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: XRP Ledger addresses have different types: issuing and operational.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.053Z"
+    },
+    {
+      "finding_id": "fnd_4ea9874a6cdd",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_cef2c31af42d_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_cef2c31af42d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_cef2c31af42d_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The XRP Ledger provides WebSocket functionality to monitor incoming payments.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.053Z"
+    },
+    {
+      "finding_id": "fnd_5474a63358d3",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_117260e9e17f_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_117260e9e17f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_117260e9e17f_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The seed value is secret information and must be protected carefully.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.053Z"
+    },
+    {
+      "finding_id": "fnd_fb216f923d94",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_117260e9e17f_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_117260e9e17f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_117260e9e17f_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The wallet_propose method is used to generate a master key pair.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.053Z"
+    },
+    {
+      "finding_id": "fnd_fd3d2961a55e",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_117260e9e17f_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_117260e9e17f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_117260e9e17f_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Learning a master private key grants full control over an account.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.053Z"
+    },
+    {
+      "finding_id": "fnd_126e0c29ec0d",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_117260e9e17f_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_117260e9e17f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_117260e9e17f_ollama_intern_11 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Changing a master key pair is impossible, making it crucial to keep it safe.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.053Z"
+    },
+    {
+      "finding_id": "fnd_c8fcf9264751",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_117260e9e17f_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_117260e9e17f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_117260e9e17f_ollama_intern_12 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Keeping master key pairs offline enhances security.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.053Z"
+    },
+    {
+      "finding_id": "fnd_e10c390f124f",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_117260e9e17f_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_117260e9e17f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_117260e9e17f_ollama_intern_13 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Only the master key pair can authorize certain transactions.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.053Z"
+    },
+    {
+      "finding_id": "fnd_f693d243293e",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_117260e9e17f_ollama_intern_20"
+      ],
+      "source_ids": [
+        "src_117260e9e17f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_117260e9e17f_ollama_intern_20 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Not all 32-byte numbers are valid secp256k1 secret keys in the XRP Ledger.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.053Z"
+    },
+    {
+      "finding_id": "fnd_ae453d6ddaf8",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_b98e4c872d37_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_b98e4c872d37"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_b98e4c872d37_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: A multi-signed transaction must include an empty SigningPubKey field.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.053Z"
+    },
+    {
+      "finding_id": "fnd_1e866c0e12cc",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_13f7e950b494_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_13f7e950b494"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_13f7e950b494_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Tickets allow transactions to be sent outside of the normal sequence order.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.053Z"
+    },
+    {
+      "finding_id": "fnd_ec47fc69cf2b",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_13f7e950b494_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_13f7e950b494"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_13f7e950b494_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: A TicketCreate transaction reserves one or more sequence numbers as Tickets.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_a39879186526",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_13f7e950b494_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_13f7e950b494"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_13f7e950b494_ollama_intern_7 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Each Ticket counts as a separate item for the owner reserve, requiring 0.2 XRP.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_ea540b3475bf",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_13f7e950b494_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_13f7e950b494"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_13f7e950b494_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: An account can look up available Tickets using the 'account_objects' method.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_a2573e8689f4",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_097142ab08d3_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_097142ab08d3"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_097142ab08d3_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The AccountSet transaction type enables modification of account flags.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_ac8deb253ca1",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_097142ab08d3_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_097142ab08d3"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_097142ab08d3_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Account flags have names that begin with asf.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_a71723756ab8",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_097142ab08d3_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_097142ab08d3"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_097142ab08d3_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: All flags are disabled by default.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_d65dbef4ccde",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_097142ab08d3_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_097142ab08d3"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_097142ab08d3_ollama_intern_11 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The AccountSet transaction can modify various attributes of an XRPL account.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_5d5135bcae13",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_7d558c2ae6d2_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_7d558c2ae6d2"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_7d558c2ae6d2_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: A SignerListSet transaction requires the MultiSign amendment to be enabled.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_bc332f850ea1",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_b357e7424a79_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_b357e7424a79"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_b357e7424a79_ollama_intern_7 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The AccountDelete transaction has a dedicated section for possible error cases.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_d7f94b704ee8",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_b357e7424a79_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_b357e7424a79"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_b357e7424a79_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The AccountDelete transaction is part of the XRP Ledger documentation.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_b9ee136e4b33",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_5b84f976c797_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_5b84f976c797"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5b84f976c797_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Tickets can be created by the owner of a trust line or account.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_b6b5ed853cb8",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_9505395adfe8_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_9505395adfe8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9505395adfe8_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: An AccountRoot entry represents an entire XRP Ledger account.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_a5239d0f1ca0",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_9505395adfe8_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_9505395adfe8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9505395adfe8_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: An AccountRoot entry contains metadata like the account address and public key.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_55222c375d9b",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_9505395adfe8_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_9505395adfe8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9505395adfe8_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The Balance field in an AccountRoot entry represents the XRP balance in drops.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_f29e7d9e9536",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_9505395adfe8_ollama_intern_18"
+      ],
+      "source_ids": [
+        "src_9505395adfe8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9505395adfe8_ollama_intern_18 has no 'not' constraint recorded.",
+      "evidence": "Asserts: An AccountRoot entry requires incoming payments to specify a Destination Tag.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_0459ad18a575",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_9505395adfe8_ollama_intern_19"
+      ],
+      "source_ids": [
+        "src_9505395adfe8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_9505395adfe8_ollama_intern_19 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The reserve for an AccountRoot entry is the base reserve, currently 1 XRP.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_ccf1ecc91f80",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_68a1f3f26f9b_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_68a1f3f26f9b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_68a1f3f26f9b_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Requires the MultiSign amendment.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_3690c46000fe",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_68a1f3f26f9b_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_68a1f3f26f9b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_68a1f3f26f9b_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The SignerListID is currently always set to 0.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_f169fbbd5443",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_68a1f3f26f9b_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_68a1f3f26f9b"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_68a1f3f26f9b_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The ID of a SignerList entry is the SHA-512Half of specific concatenated values.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_65a74d7501cd",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_206907715043_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_206907715043"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_206907715043_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Some transaction types cannot be delegated in XRPL.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_d289163f7c4f",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_206907715043_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_206907715043"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_206907715043_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Pseudo-transaction types cannot be delegated in XRPL.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_27ad4b8e73ec",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_206907715043_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_206907715043"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_206907715043_ollama_intern_7 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The permission value 65537 allows authorizing individual trust lines.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_6c763793f968",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_206907715043_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_206907715043"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_206907715043_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The permission value 65538 allows freezing individual trust lines.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_5e6018792e29",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_206907715043_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_206907715043"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_206907715043_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The permission value 65539 allows unfreezing individual trust lines.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_c862ad2fd392",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_206907715043_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_206907715043"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_206907715043_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The set of granular permissions is hard-coded and cannot be customized.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_a87accd0da15",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_ec68826269c9_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_ec68826269c9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ec68826269c9_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The account_info method requires authentication with an API token.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_e7625426e1f3",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_ec68826269c9_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_ec68826269c9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ec68826269c9_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Calling the account_info method requires authentication with an API token.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_6e09fa0f7cc2",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_31ded2938c1f_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_31ded2938c1f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_31ded2938c1f_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: There is no functionality change due to this PR.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "finding_id": "fnd_a2a48b604375",
+      "section_id": "02-account-and-key-management",
+      "claim_ids": [
+        "clm_31ded2938c1f_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_31ded2938c1f"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_31ded2938c1f_ollama_intern_10 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    }
+  ],
+  "claim_reviews": [
+    {
+      "claim_id": "clm_cef2c31af42d_ollama_intern_8",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_03d2fbad1b85"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_cef2c31af42d_ollama_intern_9",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_4ea9874a6cdd"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_117260e9e17f_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_5474a63358d3"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_117260e9e17f_ollama_intern_9",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_fb216f923d94"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_117260e9e17f_ollama_intern_10",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_fd3d2961a55e"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_117260e9e17f_ollama_intern_11",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_126e0c29ec0d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_117260e9e17f_ollama_intern_12",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_c8fcf9264751"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_117260e9e17f_ollama_intern_13",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_60fcf3e0cd17",
+        "fnd_e10c390f124f"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_117260e9e17f_ollama_intern_20",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_8b7622f02230",
+        "fnd_f693d243293e"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_b98e4c872d37_ollama_intern_9",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ae453d6ddaf8"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_13f7e950b494_ollama_intern_1",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_a3a8852e07da",
+        "fnd_1e866c0e12cc"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_13f7e950b494_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ec47fc69cf2b"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_13f7e950b494_ollama_intern_7",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_a39879186526"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_13f7e950b494_ollama_intern_9",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ea540b3475bf"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_097142ab08d3_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_a2573e8689f4"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_097142ab08d3_ollama_intern_9",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ac8deb253ca1"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_097142ab08d3_ollama_intern_10",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_c6f52ec1dbcd",
+        "fnd_a71723756ab8"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_097142ab08d3_ollama_intern_11",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_d65dbef4ccde"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_7d558c2ae6d2_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_5d5135bcae13"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_b357e7424a79_ollama_intern_7",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_bc332f850ea1"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_b357e7424a79_ollama_intern_8",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_6c64bf7e78f8",
+        "fnd_d7f94b704ee8"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_5b84f976c797_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_d95fab8f6592",
+        "fnd_b9ee136e4b33"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_9505395adfe8_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_b6b5ed853cb8"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_9505395adfe8_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_a5239d0f1ca0"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_9505395adfe8_ollama_intern_4",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_55222c375d9b"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_9505395adfe8_ollama_intern_18",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_e34c218908d1",
+        "fnd_f29e7d9e9536"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_9505395adfe8_ollama_intern_19",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_b35752580e46",
+        "fnd_0459ad18a575"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_68a1f3f26f9b_ollama_intern_3",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_6c6c771d6895",
+        "fnd_ccf1ecc91f80"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_68a1f3f26f9b_ollama_intern_5",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_3690c46000fe"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_68a1f3f26f9b_ollama_intern_9",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_82a3641dfc57",
+        "fnd_f169fbbd5443"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_206907715043_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_65a74d7501cd"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_206907715043_ollama_intern_4",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_d289163f7c4f"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_206907715043_ollama_intern_7",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_6c2e3a546b21",
+        "fnd_27ad4b8e73ec"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_206907715043_ollama_intern_8",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_6c763793f968"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_206907715043_ollama_intern_9",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_5e6018792e29"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_206907715043_ollama_intern_10",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_c862ad2fd392"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_ec68826269c9_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_a87accd0da15"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_ec68826269c9_ollama_intern_9",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_e7625426e1f3"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    },
+    {
+      "claim_id": "clm_31ded2938c1f_ollama_intern_10",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_6e09fa0f7cc2",
+        "fnd_a2a48b604375"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T19:04:05.054Z"
+    }
+  ],
+  "decision_counts": {
+    "accepted_for_synthesis": 32,
+    "rejected": 0,
+    "needs_scope_repair": 6,
+    "needs_source_repair": 1,
+    "needs_contradiction_mapping": 0,
+    "needs_human_review": 0
+  },
+  "severity_counts": {
+    "info": 44,
+    "warn": 7,
+    "block": 0
+  },
+  "llm_findings_rejected_ungrounded": 0,
+  "promoted_to_reviewed": false
+}

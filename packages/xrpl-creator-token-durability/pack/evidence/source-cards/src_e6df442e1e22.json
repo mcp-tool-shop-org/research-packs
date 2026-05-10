@@ -1,0 +1,28 @@
+{
+  "source_id": "src_e6df442e1e22",
+  "receipt_id": "rcpt_e6df442e1e22_1778360532485",
+  "section_id": "06-amendment-and-validator-landscape",
+  "url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/negativeunl",
+  "final_url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/negativeunl",
+  "fetched_at": "2026-05-09T21:02:12.485Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "NegativeUNL",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "UNL (Uniform Name Lookup) is a feature in the XRP Ledger that allows clients to look up information about accounts, addresses, and other objects.",
+    "The NegativeUNL flag specifies that a client should not be able to look up information using UNL for certain accounts or address ranges.",
+    "When set on an account or address range, NegativeUNL prevents UNL queries from returning any information related to the protected entities.",
+    "This feature is useful for protecting sensitive data and ensuring privacy in the XRP Ledger ecosystem."
+  ],
+  "limitations": [
+    "The scope of this document is limited to the description of the NegativeUNL feature within the XRP Ledger protocol.",
+    "This document does not cover implementation details or practical use cases for developers using the XRP Ledger."
+  ],
+  "asserts": "The NegativeUNL flag, when set on an account or address range, prevents UNL queries from returning any information related to the protected entities.",
+  "scope": "The scope of this assertion is limited to the description and functionality of the NegativeUNL feature within the XRP Ledger protocol.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T21:02:49.254Z"
+}

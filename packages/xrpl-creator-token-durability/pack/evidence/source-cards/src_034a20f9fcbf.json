@@ -1,0 +1,26 @@
+{
+  "source_id": "src_034a20f9fcbf",
+  "receipt_id": "rcpt_034a20f9fcbf_1778357425238",
+  "section_id": "05-transfer-and-trade-mechanics",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/types/nftokenacceptoffer",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/types/nftokenacceptoffer",
+  "fetched_at": "2026-05-09T20:10:25.238Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "NFTokenAcceptOffer",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The NFTokenAcceptOffer transaction type allows an NFT holder to accept an offer on their token.",
+    "The offer is represented by a unique OfferID that references the offer in the Offers directory.",
+    "If accepted, the offer price becomes the best known price for this token until it is updated again or the token is sold."
+  ],
+  "limitations": [
+    "The scope of this document is limited to the XRPL protocol and may not apply to other blockchains or systems."
+  ],
+  "asserts": "The NFTokenAcceptOffer transaction enables NFT holders to accept offers made on their tokens, using a unique OfferID to reference the offer in the Offers directory.",
+  "scope": "This assertion applies to the context of XRPL protocol transactions and specifically to the NFTokenAcceptOffer transaction type.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T20:10:54.054Z"
+}

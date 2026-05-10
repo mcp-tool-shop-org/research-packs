@@ -1,0 +1,26 @@
+{
+  "source_id": "src_62cf595f3835",
+  "receipt_id": "rcpt_62cf595f3835_1778321848863",
+  "section_id": "01-token-surface-and-standards",
+  "url": "https://api.github.com/search/issues?q=repo:XRPLF/rippled+MPTokenIssuance&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:XRPLF/rippled+MPTokenIssuance&per_page=20",
+  "fetched_at": "2026-05-09T10:17:28.863Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "XRPLF/rippled GitHub Issues Search",
+  "source_type": "forum",
+  "relevance": "medium",
+  "key_points": [
+    "Searches for issues in the XRPLF/rippled repository related to MPTokenIssuance and a specific pull request number.",
+    "Returns metadata about each issue found, including title, URL, labels, comments, created_at, updated_at, and author."
+  ],
+  "limitations": [
+    "Does not contain the full content of the issues or discussions related to them.",
+    "Only returns information about issues that match the specific search query used."
+  ],
+  "asserts": "The source claims to provide a list of GitHub issues matching certain criteria.",
+  "scope": "GitHub Issues in the XRPLF/rippled repository.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T10:18:09.741Z"
+}

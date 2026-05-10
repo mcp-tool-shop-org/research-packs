@@ -1,0 +1,202 @@
+{
+  "audit_id": "cda_1778362405217_06-amendment-and-validator-landscape",
+  "section_id": "06-amendment-and-validator-landscape",
+  "audited_at": "2026-05-09T21:33:25.217Z",
+  "research_os_version": "0.3.1",
+  "candidate_claim_count": 358,
+  "source_count": 14,
+  "total_source_word_count": 526491,
+  "claims_per_1k_words": 0.6799736367763172,
+  "weak_scope_count": 5,
+  "generic_scope_count": 15,
+  "per_source": [
+    {
+      "source_id": "src_5412494af521",
+      "publisher": null,
+      "source_word_count": 57947,
+      "claim_count": 115,
+      "claims_per_1k_words": 1.9845721089961514,
+      "share_of_section": 0.32122905027932963,
+      "weak_scope_count": 5,
+      "generic_scope_count": 3
+    },
+    {
+      "source_id": "src_512ff500b432",
+      "publisher": "XRPL.org",
+      "source_word_count": 9709,
+      "claim_count": 78,
+      "claims_per_1k_words": 8.033783087856627,
+      "share_of_section": 0.21787709497206703,
+      "weak_scope_count": 0,
+      "generic_scope_count": 6
+    },
+    {
+      "source_id": "src_515596050b06",
+      "publisher": null,
+      "source_word_count": 7296,
+      "claim_count": 59,
+      "claims_per_1k_words": 8.086622807017545,
+      "share_of_section": 0.164804469273743,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_8d039f2c0ee8",
+      "publisher": null,
+      "source_word_count": 47897,
+      "claim_count": 18,
+      "claims_per_1k_words": 0.375806417938493,
+      "share_of_section": 0.05027932960893855,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_e25c1c4ecccf",
+      "publisher": null,
+      "source_word_count": 9971,
+      "claim_count": 15,
+      "claims_per_1k_words": 1.504362651689901,
+      "share_of_section": 0.04189944134078212,
+      "weak_scope_count": 0,
+      "generic_scope_count": 1
+    },
+    {
+      "source_id": "src_25ac15171ff0",
+      "publisher": null,
+      "source_word_count": 49512,
+      "claim_count": 13,
+      "claims_per_1k_words": 0.2625626110841816,
+      "share_of_section": 0.036312849162011177,
+      "weak_scope_count": 0,
+      "generic_scope_count": 5
+    },
+    {
+      "source_id": "src_d16112dea1e0",
+      "publisher": null,
+      "source_word_count": 16818,
+      "claim_count": 13,
+      "claims_per_1k_words": 0.7729813295278868,
+      "share_of_section": 0.036312849162011177,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_03f52c5d778f",
+      "publisher": null,
+      "source_word_count": 44973,
+      "claim_count": 12,
+      "claims_per_1k_words": 0.2668267627243013,
+      "share_of_section": 0.0335195530726257,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_0fad2055eaed",
+      "publisher": null,
+      "source_word_count": 44663,
+      "claim_count": 9,
+      "claims_per_1k_words": 0.2015090791035085,
+      "share_of_section": 0.025139664804469275,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_8ebf52ac0af9",
+      "publisher": null,
+      "source_word_count": 47512,
+      "claim_count": 9,
+      "claims_per_1k_words": 0.18942582926418589,
+      "share_of_section": 0.025139664804469275,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_33402410a906",
+      "publisher": null,
+      "source_word_count": 47242,
+      "claim_count": 5,
+      "claims_per_1k_words": 0.10583802548579653,
+      "share_of_section": 0.013966480446927373,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_7f175852cb10",
+      "publisher": null,
+      "source_word_count": 47907,
+      "claim_count": 5,
+      "claims_per_1k_words": 0.10436888137432943,
+      "share_of_section": 0.013966480446927373,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_e6b777fcef0d",
+      "publisher": null,
+      "source_word_count": 47909,
+      "claim_count": 4,
+      "claims_per_1k_words": 0.08349161952868982,
+      "share_of_section": 0.0111731843575419,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_e6df442e1e22",
+      "publisher": null,
+      "source_word_count": 47135,
+      "claim_count": 3,
+      "claims_per_1k_words": 0.06364697146494114,
+      "share_of_section": 0.008379888268156424,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    }
+  ],
+  "near_duplicate_clusters": [],
+  "flags": [
+    {
+      "type": "source_dominance",
+      "severity": "block",
+      "message": "Source src_5412494af521 contributes 115 of 358 claims (32% of section).",
+      "affects_source_ids": [
+        "src_5412494af521"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "block",
+      "message": "Source src_512ff500b432 contributes 78 of 358 claims (22% of section).",
+      "affects_source_ids": [
+        "src_512ff500b432"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "block",
+      "message": "Source src_515596050b06 contributes 59 of 358 claims (16% of section).",
+      "affects_source_ids": [
+        "src_515596050b06"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_512ff500b432 has 8.0 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_512ff500b432"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_515596050b06 has 8.1 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_515596050b06"
+      ],
+      "affects_claim_ids": []
+    }
+  ]
+}

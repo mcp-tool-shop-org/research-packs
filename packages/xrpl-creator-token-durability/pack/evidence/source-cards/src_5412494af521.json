@@ -1,0 +1,27 @@
+{
+  "source_id": "src_5412494af521",
+  "receipt_id": "rcpt_5412494af521_1778360623650",
+  "section_id": "06-amendment-and-validator-landscape",
+  "url": "https://xrpl.org/resources/known-amendments",
+  "final_url": "https://xrpl.org/resources/known-amendments",
+  "fetched_at": "2026-05-09T21:03:43.650Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Known Amendments",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The article lists known amendments made to the XRPL protocol.",
+    "It provides details such as amendment number, author, and description of changes.",
+    "The source claims that these amendments have been applied to the XRPL protocol."
+  ],
+  "limitations": [
+    "The scope is limited to known amendments up to a specific point in time.",
+    "No information about future or pending amendments is provided."
+  ],
+  "asserts": "This document lists all known amendments made to the XRPL protocol, providing details such as amendment number, author, and description of changes.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T21:04:07.376Z"
+}

@@ -1,0 +1,260 @@
+[
+  {
+    "reason": "source_cluster_monopoly",
+    "section_id": "01-token-surface-and-standards",
+    "details": "Every source in this section traces to a single publisher (XRP Ledger Foundation).",
+    "evidence_ids": [
+      "src_0255a2aac931",
+      "src_5229d8bd314e",
+      "src_62cf595f3835",
+      "src_89d29fa8978f",
+      "src_c3f060147acd",
+      "src_d16112dea1e0",
+      "src_d2fef4cddfd7",
+      "src_ec3eb93321a7",
+      "src_f0063f109b4a"
+    ],
+    "artifact_path": "sections/01-token-surface-and-standards/sources.jsonl",
+    "waived": true,
+    "waiver_reason": "Section 01 defines XRPL token surfaces from canonical protocol sources.\nThe authoritative source of truth is intentionally concentrated in XRPL\nFoundation documentation, XLS standards, and rippled implementation/release\nrecords. Third-party publishers can explain or interpret these standards,\nbut they are not primary authorities for protocol semantics.\n"
+  },
+  {
+    "reason": "low_independent_publishers",
+    "section_id": "01-token-surface-and-standards",
+    "details": "1 independent publisher(s) — pack policy requires at least 4.",
+    "evidence_ids": [
+      "XRP Ledger Foundation"
+    ],
+    "artifact_path": "sections/01-token-surface-and-standards/sources.jsonl",
+    "waived": true,
+    "waiver_reason": "Section 01 defines XRPL token surfaces from canonical protocol sources.\nThe authoritative source of truth is intentionally concentrated in XRPL\nFoundation documentation, XLS standards, and rippled implementation/release\nrecords. Third-party publishers can explain or interpret these standards,\nbut they are not primary authorities for protocol semantics.\n"
+  },
+  {
+    "reason": "source_cluster_monopoly",
+    "section_id": "02-account-and-key-management",
+    "details": "Every source in this section traces to a single publisher (xrpl.org).",
+    "evidence_ids": [
+      "src_097142ab08d3",
+      "src_117260e9e17f",
+      "src_13f7e950b494",
+      "src_206907715043",
+      "src_24fc488e7bd9",
+      "src_31ded2938c1f",
+      "src_5b84f976c797",
+      "src_68a1f3f26f9b",
+      "src_7d558c2ae6d2",
+      "src_9505395adfe8",
+      "src_b357e7424a79",
+      "src_b98e4c872d37",
+      "src_cef2c31af42d",
+      "src_ec68826269c9"
+    ],
+    "artifact_path": "sections/02-account-and-key-management/sources.jsonl",
+    "waived": true,
+    "waiver_reason": "Section 02 documents XRPL account and key management semantics —\nAccountRoot fields, master key disablement (lsfDisableMaster),\nregular key (SetRegularKey), signer-list-based multi-signing\n(SignerListSet), ticket-based authorization (TicketCreate), account\ndeletion (AccountDelete), and permission/delegation values. The\nauthoritative source of truth for these mechanics is intentionally\nconcentrated in XRPL Foundation documentation at xrpl.org and the\nrippled implementation. Whether SetRegularKey, SignerListSet,\nAccountDelete, or AccountSet behave a particular way is defined\nby the protocol-defining body; third-party explainers describe how\noperators consume these mechanics but cannot provide more\nauthoritative ground truth than xrpl.org's transaction-type and\nledger-entry-type references.\n"
+  },
+  {
+    "reason": "low_independent_publishers",
+    "section_id": "02-account-and-key-management",
+    "details": "1 independent publisher(s) — pack policy requires at least 4.",
+    "evidence_ids": [
+      "xrpl.org"
+    ],
+    "artifact_path": "sections/02-account-and-key-management/sources.jsonl",
+    "waived": true,
+    "waiver_reason": "Section 02 documents XRPL account and key management semantics —\nAccountRoot fields, master key disablement (lsfDisableMaster),\nregular key (SetRegularKey), signer-list-based multi-signing\n(SignerListSet), ticket-based authorization (TicketCreate), account\ndeletion (AccountDelete), and permission/delegation values. The\nauthoritative source of truth for these mechanics is intentionally\nconcentrated in XRPL Foundation documentation at xrpl.org and the\nrippled implementation. Whether SetRegularKey, SignerListSet,\nAccountDelete, or AccountSet behave a particular way is defined\nby the protocol-defining body; third-party explainers describe how\noperators consume these mechanics but cannot provide more\nauthoritative ground truth than xrpl.org's transaction-type and\nledger-entry-type references.\n"
+  },
+  {
+    "reason": "excessive_type_imbalance",
+    "section_id": "02-account-and-key-management",
+    "details": "13/14 (93%) of sources are type=primary.",
+    "evidence_ids": [
+      "src_097142ab08d3",
+      "src_117260e9e17f",
+      "src_13f7e950b494",
+      "src_206907715043",
+      "src_24fc488e7bd9",
+      "src_5b84f976c797",
+      "src_68a1f3f26f9b",
+      "src_7d558c2ae6d2",
+      "src_9505395adfe8",
+      "src_b357e7424a79",
+      "src_b98e4c872d37",
+      "src_cef2c31af42d",
+      "src_ec68826269c9"
+    ],
+    "artifact_path": "sections/02-account-and-key-management/sources.jsonl"
+  },
+  {
+    "reason": "low_independent_publishers",
+    "section_id": "03-on-ledger-state-and-reserves",
+    "details": "0 independent publisher(s) — pack policy requires at least 4.",
+    "evidence_ids": [],
+    "artifact_path": "sections/03-on-ledger-state-and-reserves/sources.jsonl",
+    "waived": true,
+    "waiver_reason": "Section 03 documents XRPL on-ledger state representations (NFTokenPage,\nMPTokenIssuance, RippleState, Offer, NFTokenOffer, AccountRoot) and the\nreserve mechanics (base + owner reserve) that govern account-level\ntoken storage. The authoritative source of truth for these ledger-entry\ntypes and the JSON-RPC methods that read them (account_objects,\nledger_entry, account_info) is intentionally concentrated in XRPL\nFoundation documentation at xrpl.org and the rippled implementation.\nThese artifacts define the on-ledger schema by construction; third-party\npublishers describe how operators consume them, but cannot provide\nauthoritative ground truth for the schema itself.\n"
+  },
+  {
+    "reason": "excessive_type_imbalance",
+    "section_id": "03-on-ledger-state-and-reserves",
+    "details": "11/13 (85%) of sources are type=primary.",
+    "evidence_ids": [
+      "src_051630391070",
+      "src_48fddb8ee3b6",
+      "src_525532c48160",
+      "src_72d8a212a86a",
+      "src_90368c8bfc17",
+      "src_9505395adfe8",
+      "src_9c84764fa541",
+      "src_a101a2ec3e2c",
+      "src_bc7eaa08f673",
+      "src_ec68826269c9",
+      "src_f011b0207e63"
+    ],
+    "artifact_path": "sections/03-on-ledger-state-and-reserves/sources.jsonl"
+  },
+  {
+    "reason": "low_independent_publishers",
+    "section_id": "04-issuer-controls-and-immutability",
+    "details": "0 independent publisher(s) — pack policy requires at least 4.",
+    "evidence_ids": [],
+    "artifact_path": "sections/04-issuer-controls-and-immutability/sources.jsonl",
+    "waived": true,
+    "waiver_reason": "Section 04 documents XRPL issuer-side control mechanisms — NFTokenMint\nflags (immutable mint-time settings), NFTokenModify and NFTokenBurn\n(post-mint mutability and destruction), AccountSet flags\n(lsfGlobalFreeze, lsfNoFreeze, transfer-fee caps), Clawback (XLS-39\nfungible-token clawback), TrustLine freeze (issuer-side fungible\ntoken freeze via TrustSet), and MPTokenIssuanceSet (post-issuance MPT\ncontrols). The authoritative source of truth for which controls are\nimmutable versus mutable, and how they behave under amendment-state\nchanges, is intentionally concentrated in XRPL Foundation\ndocumentation (xrpl.org transaction-type references, xls.xrpl.org\nrendered standards) and the rippled implementation. Third-party\nexplainers describe how operators consume these mechanisms but\ncannot provide more authoritative ground truth than the\nprotocol-defining body.\n"
+  },
+  {
+    "reason": "excessive_type_imbalance",
+    "section_id": "04-issuer-controls-and-immutability",
+    "details": "12/13 (92%) of sources are type=primary.",
+    "evidence_ids": [
+      "src_0654c94c7a98",
+      "src_097142ab08d3",
+      "src_319355bfb19d",
+      "src_4727592a5328",
+      "src_517d67dc1224",
+      "src_90368c8bfc17",
+      "src_92f5c74d9bda",
+      "src_9505395adfe8",
+      "src_d0882a19791f",
+      "src_e98d1069b3a8",
+      "src_eae6b2d1d42d",
+      "src_ff9fbb4f8527"
+    ],
+    "artifact_path": "sections/04-issuer-controls-and-immutability/sources.jsonl"
+  },
+  {
+    "reason": "low_independent_publishers",
+    "section_id": "05-transfer-and-trade-mechanics",
+    "details": "0 independent publisher(s) — pack policy requires at least 4.",
+    "evidence_ids": [],
+    "artifact_path": "sections/05-transfer-and-trade-mechanics/sources.jsonl",
+    "waived": true,
+    "waiver_reason": "Section 05 documents XRPL transfer and trade mechanics — direct\nNFToken offers (NFTokenCreateOffer / NFTokenAcceptOffer /\nNFTokenCancelOffer including brokered mode), fungible-token DEX\nmechanics (OfferCreate / OfferCancel), Payment (XRP and cross-\ncurrency with pathfinding), Escrow (EscrowCreate / EscrowFinish),\nand JSON-RPC introspection methods (nft_sell_offers, nft_buy_offers,\naccount_nfts, account_offers) plus the Offer and NFTokenOffer\nledger-entry types. The authoritative source of truth for how these\ntransactions and ledger objects behave — including the brokered\nNFTokenAcceptOffer pattern, cross-currency payment pathfinding, and\nescrow execution semantics — is intentionally concentrated in XRPL\nFoundation documentation at xrpl.org and the rippled implementation.\nThird-party explainers describe how operators consume these\nmechanisms but cannot provide more authoritative ground truth than\nthe protocol-defining body.\n"
+  },
+  {
+    "reason": "excessive_type_imbalance",
+    "section_id": "05-transfer-and-trade-mechanics",
+    "details": "15/16 (94%) of sources are type=primary.",
+    "evidence_ids": [
+      "src_01e8d92d7e53",
+      "src_034a20f9fcbf",
+      "src_051630391070",
+      "src_48fddb8ee3b6",
+      "src_51d3108c7446",
+      "src_5a1d70d24fc1",
+      "src_5d5676c4b1d7",
+      "src_71ee1ec187f7",
+      "src_731c5d0b7dc0",
+      "src_736c7f9cccff",
+      "src_914d01359b57",
+      "src_bb6e135772ef",
+      "src_c8f7530cb4f1",
+      "src_e1cfbbad4fa5",
+      "src_f103bcae0753"
+    ],
+    "artifact_path": "sections/05-transfer-and-trade-mechanics/sources.jsonl"
+  },
+  {
+    "reason": "source_cluster_monopoly",
+    "section_id": "06-amendment-and-validator-landscape",
+    "details": "Every source in this section traces to a single publisher (XRPL.org).",
+    "evidence_ids": [
+      "src_03f52c5d778f",
+      "src_0fad2055eaed",
+      "src_25ac15171ff0",
+      "src_33402410a906",
+      "src_512ff500b432",
+      "src_515596050b06",
+      "src_5412494af521",
+      "src_7f175852cb10",
+      "src_8d039f2c0ee8",
+      "src_8ebf52ac0af9",
+      "src_d16112dea1e0",
+      "src_e25c1c4ecccf",
+      "src_e6b777fcef0d",
+      "src_e6df442e1e22"
+    ],
+    "artifact_path": "sections/06-amendment-and-validator-landscape/sources.jsonl",
+    "waived": true,
+    "waiver_reason": "Section 06 documents XRPL's amendment system and validator landscape\n— the meta-layer mechanism by which every other section's protocol\nbehavior can change. Topics include the 80% validator consensus\nthreshold, 2-week activation window, EnableAmendment pseudo-\ntransaction, specific amendments (XLS-20 non-fungible tokens,\nXLS-33 multi-purpose tokens, XLS-39 Clawback, DisallowIncoming,\nTokenEscrow, NFTokenModify), amendment deprecation paths, the\nAmendments ledger-entry, the FeeSettings ledger-entry, the\nNegativeUNL ledger-entry, validator distribution, and UNL\n(Unique Node List) operator configuration. The authoritative\nsource of truth for amendment-system mechanics, voting thresholds,\nand activation timelines is intentionally concentrated in XRPL\nFoundation documentation (xrpl.org concepts and references;\nxls.xrpl.org rendered standards) and the rippled implementation\n(release notes via api.github.com/repos/XRPLF/rippled/releases as\ncanonical release endpoint, Feature.cpp). Third-party explainers\ndescribe how operators consume these mechanisms but cannot provide\nmore authoritative ground truth than the protocol-defining body\nand the validator code that enforces consensus.\n"
+  },
+  {
+    "reason": "low_independent_publishers",
+    "section_id": "06-amendment-and-validator-landscape",
+    "details": "1 independent publisher(s) — pack policy requires at least 4.",
+    "evidence_ids": [
+      "XRPL.org"
+    ],
+    "artifact_path": "sections/06-amendment-and-validator-landscape/sources.jsonl",
+    "waived": true,
+    "waiver_reason": "Section 06 documents XRPL's amendment system and validator landscape\n— the meta-layer mechanism by which every other section's protocol\nbehavior can change. Topics include the 80% validator consensus\nthreshold, 2-week activation window, EnableAmendment pseudo-\ntransaction, specific amendments (XLS-20 non-fungible tokens,\nXLS-33 multi-purpose tokens, XLS-39 Clawback, DisallowIncoming,\nTokenEscrow, NFTokenModify), amendment deprecation paths, the\nAmendments ledger-entry, the FeeSettings ledger-entry, the\nNegativeUNL ledger-entry, validator distribution, and UNL\n(Unique Node List) operator configuration. The authoritative\nsource of truth for amendment-system mechanics, voting thresholds,\nand activation timelines is intentionally concentrated in XRPL\nFoundation documentation (xrpl.org concepts and references;\nxls.xrpl.org rendered standards) and the rippled implementation\n(release notes via api.github.com/repos/XRPLF/rippled/releases as\ncanonical release endpoint, Feature.cpp). Third-party explainers\ndescribe how operators consume these mechanisms but cannot provide\nmore authoritative ground truth than the protocol-defining body\nand the validator code that enforces consensus.\n"
+  },
+  {
+    "reason": "excessive_type_imbalance",
+    "section_id": "06-amendment-and-validator-landscape",
+    "details": "13/14 (93%) of sources are type=primary.",
+    "evidence_ids": [
+      "src_03f52c5d778f",
+      "src_0fad2055eaed",
+      "src_25ac15171ff0",
+      "src_33402410a906",
+      "src_512ff500b432",
+      "src_515596050b06",
+      "src_5412494af521",
+      "src_7f175852cb10",
+      "src_8d039f2c0ee8",
+      "src_8ebf52ac0af9",
+      "src_d16112dea1e0",
+      "src_e6b777fcef0d",
+      "src_e6df442e1e22"
+    ],
+    "artifact_path": "sections/06-amendment-and-validator-landscape/sources.jsonl"
+  },
+  {
+    "reason": "low_independent_publishers",
+    "section_id": "07-metadata-and-off-chain-durability",
+    "details": "2 independent publisher(s) — pack policy requires at least 4.",
+    "evidence_ids": [
+      "IPFS",
+      "IPFS Docs"
+    ],
+    "artifact_path": "sections/07-metadata-and-off-chain-durability/sources.jsonl"
+  },
+  {
+    "reason": "excessive_type_imbalance",
+    "section_id": "07-metadata-and-off-chain-durability",
+    "details": "9/11 (82%) of sources are type=primary.",
+    "evidence_ids": [
+      "src_0b01dd18d515",
+      "src_2185c0910a10",
+      "src_37c1413248e9",
+      "src_3cc91a11ac53",
+      "src_517d67dc1224",
+      "src_accb45067034",
+      "src_c24e3cf6d930",
+      "src_d6c57c6845e6",
+      "src_ff9fbb4f8527"
+    ],
+    "artifact_path": "sections/07-metadata-and-off-chain-durability/sources.jsonl"
+  }
+]

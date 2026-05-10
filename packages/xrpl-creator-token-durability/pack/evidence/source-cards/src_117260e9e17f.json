@@ -1,0 +1,28 @@
+{
+  "source_id": "src_117260e9e17f",
+  "receipt_id": "rcpt_117260e9e17f_1778352132336",
+  "section_id": "02-account-and-key-management",
+  "url": "https://xrpl.org/docs/concepts/accounts/cryptographic-keys",
+  "final_url": "https://xrpl.org/docs/concepts/accounts/cryptographic-keys",
+  "fetched_at": "2026-05-09T18:42:12.336Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Cryptographic Keys",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "Cryptographic keys are used to securely identify and authenticate users in the XRP Ledger.",
+    "The XRP Ledger supports multiple types of cryptographic key pairs, including signing keys and seeding keys.",
+    "Each account in the XRP Ledger has a pair of master public/private keys, which are used for signing transactions.",
+    "Other types of keys, such as wallet or view-only keys, can also be associated with an account.",
+    "The XRP Ledger uses cryptographic methods to ensure the security and integrity of transactions."
+  ],
+  "limitations": [
+    "The documentation is focused on explaining concepts rather than providing comprehensive technical details."
+  ],
+  "asserts": "Cryptographic keys are essential for securing user identities and authenticating users in the XRP Ledger.",
+  "scope": "The scope of this assertion is the context of cryptographic key usage within the XRP Ledger, including account creation, transaction signing, and authentication processes.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:42:43.333Z"
+}

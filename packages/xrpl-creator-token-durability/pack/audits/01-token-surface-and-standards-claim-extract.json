@@ -1,0 +1,18 @@
+{
+  "receipt_id": "cle_1778322988852_01-token-surface-and-standards",
+  "section_id": "01-token-surface-and-standards",
+  "extracted_at": "2026-05-09T10:36:28.852Z",
+  "research_os_version": "0.2.0",
+  "extractor": "ollama-intern",
+  "extraction_method": "ollama_intern_propositional_paged",
+  "sources_processed": 9,
+  "sources_skipped": 0,
+  "sources_failed": 0,
+  "excerpt_ledgers_built": 9,
+  "claims_added": 272,
+  "claims_deduped": 0,
+  "claims_rejected_ungrounded": 0,
+  "claims_rejected_excerpt_id_missing": 0,
+  "claims_rejected_excerpt_id_malformed": 0,
+  "failures": []
+}

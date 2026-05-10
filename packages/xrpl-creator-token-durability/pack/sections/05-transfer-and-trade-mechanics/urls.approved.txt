@@ -1,0 +1,36 @@
+# Section 05 — Transfer and trade mechanics
+# URLs verified live in Session G (2026-05-09).
+# Path correction earned this session: nft_sell_offers + nft_buy_offers
+# live under path-and-order-book-methods/ subpath, NOT nft-methods/ as
+# the kickoff URL list suggested. xrpl.org's RPC method category
+# subpaths use functional-grouping names that don't match the
+# transaction-type prefix (e.g., "nft" methods grouped under
+# "path-and-order-book" because they query the order book).
+
+# xrpl.org canonical NFT offer transaction-type references
+https://xrpl.org/docs/references/protocol/transactions/types/nftokencreateoffer
+https://xrpl.org/docs/references/protocol/transactions/types/nftokenacceptoffer
+https://xrpl.org/docs/references/protocol/transactions/types/nftokencanceloffer
+
+# xrpl.org canonical fungible-token DEX + payment + escrow transaction-type references
+https://xrpl.org/docs/references/protocol/transactions/types/offercreate
+https://xrpl.org/docs/references/protocol/transactions/types/offercancel
+https://xrpl.org/docs/references/protocol/transactions/types/payment
+https://xrpl.org/docs/concepts/payment-types/cross-currency-payments
+https://xrpl.org/docs/references/protocol/transactions/types/escrowcreate
+https://xrpl.org/docs/references/protocol/transactions/types/escrowfinish
+
+# xrpl.org canonical NFT introspection JSON-RPC methods (path-and-order-book-methods/ subpath)
+https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/path-and-order-book-methods/nft_sell_offers
+https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/path-and-order-book-methods/nft_buy_offers
+
+# xrpl.org canonical account-side introspection JSON-RPC methods
+https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/account-methods/account_nfts
+https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/account-methods/account_offers
+
+# xrpl.org canonical ledger-entry-type references
+https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/offer
+https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/nftokenoffer
+
+# GitHub API search — supplementary developer-discussion (NFT brokered offer edge cases)
+https://api.github.com/search/issues?q=repo:XRPLF/rippled+NFT+offer+brokered&per_page=20

@@ -1,0 +1,37 @@
+# Section 06 — Amendment and validator landscape (META section)
+# URLs verified live in Session H (2026-05-09).
+# Path-pattern corrections earned this session:
+#   - consensus → consensus-protocol (own concept, not under networks-and-servers/)
+#   - enableamendment → pseudo-transaction-types/ (distinct from regular transactions/types/)
+#   - known-amendments → /resources/ (not /docs/concepts/...)
+# All 14 verified live; XLS sources substantial (XLS-0033 114KB, XLS-0020 91KB).
+
+# xrpl.org canonical concepts (amendment system + consensus + peer protocol)
+https://xrpl.org/docs/concepts/networks-and-servers/amendments
+https://xrpl.org/docs/concepts/consensus-protocol
+https://xrpl.org/docs/concepts/networks-and-servers/peer-protocol
+
+# xrpl.org canonical pseudo-transaction-type reference (EnableAmendment)
+https://xrpl.org/docs/references/protocol/transactions/pseudo-transaction-types/enableamendment
+
+# xrpl.org canonical ledger-entry-type references (Amendments, FeeSettings, NegativeUNL)
+https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/amendments
+https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/feesettings
+https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/negativeunl
+
+# xrpl.org canonical JSON-RPC method references (server-info-methods/)
+https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/server-info-methods/feature
+https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/server-info-methods/server_info
+
+# xrpl.org canonical known-amendments registry (under /resources/)
+https://xrpl.org/resources/known-amendments
+
+# xls.xrpl.org rendered XLS standards (XLS-0033 MPTs, XLS-0020 NFTs)
+https://xls.xrpl.org/xls/XLS-0033-multi-purpose-tokens.html
+https://xls.xrpl.org/xls/XLS-0020-non-fungible-tokens.html
+
+# api.github.com canonical release endpoint (XRPLF/rippled releases)
+https://api.github.com/repos/XRPLF/rippled/releases?per_page=20
+
+# api.github.com supplementary developer-discussion (amendment + majority + activation)
+https://api.github.com/search/issues?q=repo:XRPLF/rippled+amendment+majority+activation&per_page=20

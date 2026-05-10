@@ -1,0 +1,28 @@
+{
+  "source_id": "src_e6b777fcef0d",
+  "receipt_id": "rcpt_e6b777fcef0d_1778360569595",
+  "section_id": "06-amendment-and-validator-landscape",
+  "url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/server-info-methods/feature",
+  "final_url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/server-info-methods/feature",
+  "fetched_at": "2026-05-09T21:02:49.595Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "feature",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "Discusses the feature flag functionality in XRP Ledger",
+    "Explains how server-info methods can be used to retrieve information about a server's features and capabilities",
+    "Provides details on the featureFlags object, including supportedFeatureIDs and featureStatuses properties"
+  ],
+  "limitations": [
+    "The source is a technical document targeting developers familiar with XRP Ledger and its APIs",
+    "It assumes prior knowledge of concepts like server-info methods and feature flags",
+    "Limited real-world examples are provided to illustrate the usage of the discussed features"
+  ],
+  "asserts": "Feature flag functionality in the XRP Ledger allows servers to advertise support for certain experimental or optional features.",
+  "scope": "Describes the feature flag system within the context of XRP Ledger and its server-info methods",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T21:03:18.625Z"
+}

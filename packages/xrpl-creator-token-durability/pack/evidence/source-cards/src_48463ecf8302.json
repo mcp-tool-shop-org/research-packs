@@ -1,0 +1,20 @@
+{
+  "source_id": "src_48463ecf8302",
+  "receipt_id": "rcpt_48463ecf8302_1778364466040",
+  "section_id": "07-metadata-and-off-chain-durability",
+  "url": "https://api.github.com/search/issues?q=repo:XRPLF/xrpl-dev-portal+NFT+metadata+URI&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:XRPLF/xrpl-dev-portal+NFT+metadata+URI&per_page=20",
+  "fetched_at": "2026-05-09T22:07:46.04Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "(untitled)",
+  "source_type": "forum",
+  "relevance": "unknown",
+  "key_points": [],
+  "limitations": [],
+  "asserts": "(no assertion extracted)",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T22:07:53.552Z"
+}

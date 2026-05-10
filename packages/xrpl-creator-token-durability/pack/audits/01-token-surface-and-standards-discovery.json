@@ -1,0 +1,12 @@
+{
+  "summary_id": "disum_1778321458077_01-token-surface-and-standards",
+  "section_id": "01-token-surface-and-standards",
+  "ran_at": "2026-05-09T10:10:58.077Z",
+  "research_os_version": "0.2.0",
+  "query": "XRPL creator token standards: IOUs trustlines, NFTokens XLS-20, Multi-Purpose Tokens XLS-33, token paradigm design guarantees maturity migration paths",
+  "provider": "llm-heuristic",
+  "candidates_proposed": 12,
+  "candidates_validated": 12,
+  "candidates_rejected_invalid_url": 0,
+  "warnings": []
+}

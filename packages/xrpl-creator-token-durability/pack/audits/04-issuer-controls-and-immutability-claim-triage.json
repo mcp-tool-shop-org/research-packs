@@ -1,0 +1,84 @@
+{
+  "summary_id": "tris_1778355814162_04-issuer-controls-and-immutability",
+  "section_id": "04-issuer-controls-and-immutability",
+  "triaged_at": "2026-05-09T19:43:34.162Z",
+  "research_os_version": "0.3.1",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 170,
+  "decisions": {
+    "needs_scope_repair": 107,
+    "selected_for_review": 42,
+    "parked_weak_scope": 10,
+    "parked_overdense_source": 11
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 42,
+  "selected_per_source": [
+    {
+      "source_id": "src_12ac7f4c315b",
+      "selected": 10,
+      "total": 41
+    },
+    {
+      "source_id": "src_097142ab08d3",
+      "selected": 2,
+      "total": 21
+    },
+    {
+      "source_id": "src_9505395adfe8",
+      "selected": 7,
+      "total": 21
+    },
+    {
+      "source_id": "src_eae6b2d1d42d",
+      "selected": 0,
+      "total": 15
+    },
+    {
+      "source_id": "src_517d67dc1224",
+      "selected": 4,
+      "total": 11
+    },
+    {
+      "source_id": "src_90368c8bfc17",
+      "selected": 2,
+      "total": 11
+    },
+    {
+      "source_id": "src_d0882a19791f",
+      "selected": 3,
+      "total": 9
+    },
+    {
+      "source_id": "src_319355bfb19d",
+      "selected": 5,
+      "total": 8
+    },
+    {
+      "source_id": "src_e98d1069b3a8",
+      "selected": 3,
+      "total": 8
+    },
+    {
+      "source_id": "src_92f5c74d9bda",
+      "selected": 3,
+      "total": 8
+    },
+    {
+      "source_id": "src_ff9fbb4f8527",
+      "selected": 1,
+      "total": 6
+    },
+    {
+      "source_id": "src_4727592a5328",
+      "selected": 2,
+      "total": 6
+    },
+    {
+      "source_id": "src_0654c94c7a98",
+      "selected": 0,
+      "total": 5
+    }
+  ]
+}

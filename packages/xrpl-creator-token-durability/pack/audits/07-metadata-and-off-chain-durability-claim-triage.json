@@ -1,0 +1,74 @@
+{
+  "summary_id": "tris_1778366294794_07-metadata-and-off-chain-durability",
+  "section_id": "07-metadata-and-off-chain-durability",
+  "triaged_at": "2026-05-09T22:38:14.794Z",
+  "research_os_version": "0.3.1",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 264,
+  "decisions": {
+    "parked_weak_scope": 91,
+    "needs_scope_repair": 115,
+    "selected_for_review": 35,
+    "parked_overdense_source": 23
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 35,
+  "selected_per_source": [
+    {
+      "source_id": "src_313e0214db27",
+      "selected": 10,
+      "total": 90
+    },
+    {
+      "source_id": "src_c24e3cf6d930",
+      "selected": 0,
+      "total": 42
+    },
+    {
+      "source_id": "src_d6c57c6845e6",
+      "selected": 5,
+      "total": 40
+    },
+    {
+      "source_id": "src_2185c0910a10",
+      "selected": 3,
+      "total": 35
+    },
+    {
+      "source_id": "src_517d67dc1224",
+      "selected": 3,
+      "total": 13
+    },
+    {
+      "source_id": "src_0b01dd18d515",
+      "selected": 6,
+      "total": 11
+    },
+    {
+      "source_id": "src_37c1413248e9",
+      "selected": 5,
+      "total": 10
+    },
+    {
+      "source_id": "src_accb45067034",
+      "selected": 1,
+      "total": 10
+    },
+    {
+      "source_id": "src_3cc91a11ac53",
+      "selected": 0,
+      "total": 6
+    },
+    {
+      "source_id": "src_ff9fbb4f8527",
+      "selected": 0,
+      "total": 5
+    },
+    {
+      "source_id": "src_48463ecf8302",
+      "selected": 2,
+      "total": 2
+    }
+  ]
+}

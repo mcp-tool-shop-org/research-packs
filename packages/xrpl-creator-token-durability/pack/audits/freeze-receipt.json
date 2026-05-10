@@ -1,0 +1,1363 @@
+{
+  "pack_id": "000017a92c74",
+  "pack_topic": "What makes XRPL creator-token holdings durable over time — across token-standard versions, account access changes, and ledger-state evolution — and what should a creator-side control plane track to keep them runnable, transferable, and provable?",
+  "frozen_at": "2026-05-10T00:25:19.025Z",
+  "verdict": "frozen",
+  "pack_audit_hash": "de306d254ac7690a484716033a59a79a208e5c486c3eca8047ebf8e62890fd24",
+  "handoff_hash": "646bebe0909e3aee131e752eff3d1499dfd058da7d358f1bb232fd93de99e2a3",
+  "synthesis_hashes": [
+    {
+      "path": "synthesis/cross-section-map.json",
+      "sha256": "28f3fd5960c0e9f07d102af52806c54c8efcf8891164d9a89fb2272d91fc1aed",
+      "bytes": 2541890
+    },
+    {
+      "path": "synthesis/cross-section-map.md",
+      "sha256": "f365031e99ddbba967d013e5bae13064a17ccfc6e7c864159e892f685eebd40f",
+      "bytes": 1862614
+    },
+    {
+      "path": "synthesis/decision-brief.md",
+      "sha256": "616c01c7db7e69166d76d787ec6e36661236be55f3b88a04bb522bc914c6024c",
+      "bytes": 32513
+    },
+    {
+      "path": "synthesis/working-report.md",
+      "sha256": "1b5934c1ca6f55e1f20312de0d58dd11ffa4e5d12dd5eb76afa216f315bc30dd",
+      "bytes": 46926
+    },
+    {
+      "path": "synthesis/final-report.md",
+      "sha256": "8a8b779962438db4db8677b4808fd136d01ea2319b213d4474442ae0dbc62995",
+      "bytes": 26763
+    }
+  ],
+  "canonical_artifact_hashes": [
+    {
+      "path": "research.yaml",
+      "sha256": "80a10a2ebd88917ddf51c2cdee554e0f5f4406cc991a4570ff1b6fa6bb2b670f",
+      "bytes": 21086
+    },
+    {
+      "path": "sections/01-token-surface-and-standards/claims.jsonl",
+      "sha256": "8dc7fd4b571c01f6bae8b431f686f610756081ac1c1b51ab642c1a568d30d5c6",
+      "bytes": 289976
+    },
+    {
+      "path": "sections/01-token-surface-and-standards/sources.jsonl",
+      "sha256": "f93862f69ae0f50ca98478cac81031f7ce46ca21b02c3d7556ea777264d6a714",
+      "bytes": 639
+    },
+    {
+      "path": "sections/01-token-surface-and-standards/claim-reviews.jsonl",
+      "sha256": "b3081199d55167fa9c69871f0085ca85c8e05b594884ec051be0b47a5f71cc84",
+      "bytes": 226056
+    },
+    {
+      "path": "sections/01-token-surface-and-standards/gates.yaml",
+      "sha256": "4e72e808d6148a1a6a84965f23364c6e54c8cabc63a1bb1dec9f8e09578c57c6",
+      "bytes": 375
+    },
+    {
+      "path": "audits/01-token-surface-and-standards-gate.json",
+      "sha256": "49587033759721a001846eadb4c752b44a3a8f2971f4f14e01ea51a34023ba67",
+      "bytes": 62931
+    },
+    {
+      "path": "audits/01-token-surface-and-standards-review.json",
+      "sha256": "a7455bc16b42be1a78fa7b28760e40e54ab96ead54e7c1d78aa15c31b65dbf22",
+      "bytes": 124204
+    },
+    {
+      "path": "audits/01-token-surface-and-standards-findings.jsonl",
+      "sha256": "3ae7ad0b4169bdb9aa56f70baf09f7f68ee5c1fb869aa6e123c79dd83d616234",
+      "bytes": 567682
+    },
+    {
+      "path": "sections/02-account-and-key-management/claims.jsonl",
+      "sha256": "18d170d6524e5d9aaae4a327d05ffa3b16b98a5b3f474d2d49520d6727a7089d",
+      "bytes": 164932
+    },
+    {
+      "path": "sections/02-account-and-key-management/sources.jsonl",
+      "sha256": "02404dd0d33837fd8feeaadbb3f9ebc9076749e5f5866951ff56e1b8c2f92d1a",
+      "bytes": 994
+    },
+    {
+      "path": "sections/02-account-and-key-management/claim-reviews.jsonl",
+      "sha256": "663a46c234fed0326b0dcce56a6125d1ef16754fc34a819fd8c79b91d6de578d",
+      "bytes": 15685
+    },
+    {
+      "path": "sections/02-account-and-key-management/gates.yaml",
+      "sha256": "382ef18f867eb0936320feb83b26cc5a8717cdceb51fa4413fcece3ee90222b0",
+      "bytes": 373
+    },
+    {
+      "path": "audits/02-account-and-key-management-gate.json",
+      "sha256": "4259046e951101ccded277bc3b9abcb21cf5f90f4612bf3a8a61bff8c76f4a33",
+      "bytes": 47513
+    },
+    {
+      "path": "audits/02-account-and-key-management-review.json",
+      "sha256": "3faa7b842762383f58637eb300611cefdc90a8b49e0ab9264fafdfdd9eb99f86",
+      "bytes": 65631
+    },
+    {
+      "path": "audits/02-account-and-key-management-findings.jsonl",
+      "sha256": "bd9c1a791c0a98eb4c623554b5f3437e877e86950b8dee2d485eeff62f69a815",
+      "bytes": 38475
+    },
+    {
+      "path": "sections/03-on-ledger-state-and-reserves/claims.jsonl",
+      "sha256": "7d2a05d01a82b8c1a702ed79377aadcfd58a4e1a1660859060f484ea701a82b9",
+      "bytes": 187690
+    },
+    {
+      "path": "sections/03-on-ledger-state-and-reserves/sources.jsonl",
+      "sha256": "9a016e794d97b3648a20fc136df258d09f1abf0875550f61327760ec68f5c348",
+      "bytes": 923
+    },
+    {
+      "path": "sections/03-on-ledger-state-and-reserves/claim-reviews.jsonl",
+      "sha256": "cabd8bf6100505ba8fc87aad7118cdff776aa9d9d9147289ad18a1d8839e786b",
+      "bytes": 24454
+    },
+    {
+      "path": "sections/03-on-ledger-state-and-reserves/gates.yaml",
+      "sha256": "40d983754c1c00975d25d2442609e518f026c7c0e43d9682fe355223bbf298b6",
+      "bytes": 363
+    },
+    {
+      "path": "audits/03-on-ledger-state-and-reserves-gate.json",
+      "sha256": "9096af915056fbeb883b51e36a155c7c941e30eea7da24d65bee9aec641b399d",
+      "bytes": 52120
+    },
+    {
+      "path": "audits/03-on-ledger-state-and-reserves-review.json",
+      "sha256": "15e830652c9504d2a2c557924c495426d92b7bc83a403f20ebc006f90c93eff9",
+      "bytes": 100695
+    },
+    {
+      "path": "audits/03-on-ledger-state-and-reserves-findings.jsonl",
+      "sha256": "383d4ca44d8e76ecb1a5866d3fffceb287247d7ee813259a46afd8ac8954b767",
+      "bytes": 58965
+    },
+    {
+      "path": "sections/04-issuer-controls-and-immutability/claims.jsonl",
+      "sha256": "52d39e5d94e9aa2bd45e28149053ca20240efc50d39b4638061fcfeaa4086ca0",
+      "bytes": 163353
+    },
+    {
+      "path": "sections/04-issuer-controls-and-immutability/sources.jsonl",
+      "sha256": "aa63b2821da7309f1e8f3611aa3425d1ebc06f800d3f61259716163bb4130428",
+      "bytes": 923
+    },
+    {
+      "path": "sections/04-issuer-controls-and-immutability/claim-reviews.jsonl",
+      "sha256": "50a43d441f33660e252458976469da8314bcd0e25fb739e83f0a2719f530e5e3",
+      "bytes": 17194
+    },
+    {
+      "path": "sections/04-issuer-controls-and-immutability/gates.yaml",
+      "sha256": "28aa164f4a8501f2283fe7d6e64fd3776106183a8e030cc6f2e05f0ba6450b9a",
+      "bytes": 403
+    },
+    {
+      "path": "audits/04-issuer-controls-and-immutability-gate.json",
+      "sha256": "ca55a8f017b46d9cfe1d755404a903b97a790a27a6cd252bcd9dc5e0da34e865",
+      "bytes": 45194
+    },
+    {
+      "path": "audits/04-issuer-controls-and-immutability-review.json",
+      "sha256": "b13e4d37aaaf3bf354258d36b480025f7675f6f0c1b65fe5be4626b2b67f105b",
+      "bytes": 75923
+    },
+    {
+      "path": "audits/04-issuer-controls-and-immutability-findings.jsonl",
+      "sha256": "68839f8d5ab013a2a726fb67122026051940cdc46f49c7ba378dfd1a77168b7a",
+      "bytes": 45571
+    },
+    {
+      "path": "sections/05-transfer-and-trade-mechanics/claims.jsonl",
+      "sha256": "8a5f42fbc4b150fec69d1a8a36180d0393e65bfc1ec9479f58b4409133d84b15",
+      "bytes": 144911
+    },
+    {
+      "path": "sections/05-transfer-and-trade-mechanics/sources.jsonl",
+      "sha256": "a6f621988068d32a2d682f6c3e0575bee1b0f17f4251f68ce651c581a6c65093",
+      "bytes": 1136
+    },
+    {
+      "path": "sections/05-transfer-and-trade-mechanics/claim-reviews.jsonl",
+      "sha256": "05012c78e554bb763c4561e886b612226f7e43c87f0fa1b4484efa6a547f18bb",
+      "bytes": 19235
+    },
+    {
+      "path": "sections/05-transfer-and-trade-mechanics/gates.yaml",
+      "sha256": "926eaf69f9ea1d454f3ff039163dd22feecf554905bb37b3528f9010b128ebd7",
+      "bytes": 401
+    },
+    {
+      "path": "audits/05-transfer-and-trade-mechanics-gate.json",
+      "sha256": "617be9e089e35a1f96a7069aba8afeaeb65677b585986281743d620a8e818d08",
+      "bytes": 45062
+    },
+    {
+      "path": "audits/05-transfer-and-trade-mechanics-review.json",
+      "sha256": "9aa23fceea11fec37f4490883789d3282b2af5505413a4d7ba48646a7d7dc042",
+      "bytes": 88839
+    },
+    {
+      "path": "audits/05-transfer-and-trade-mechanics-findings.jsonl",
+      "sha256": "674ae00ef07a031f65ae97bec95ae4a579dad7aa94e96d0b282f6c9e73cd144d",
+      "bytes": 54287
+    },
+    {
+      "path": "sections/06-amendment-and-validator-landscape/claims.jsonl",
+      "sha256": "d4610152c9dacc0c40175e4e0de451b1f227d5532902bfb1626524282e95f77a",
+      "bytes": 351194
+    },
+    {
+      "path": "sections/06-amendment-and-validator-landscape/sources.jsonl",
+      "sha256": "7c239ef38ad60a63736537cf9ac44fd661033aa6c6995fa74581ca666e76fdbf",
+      "bytes": 994
+    },
+    {
+      "path": "sections/06-amendment-and-validator-landscape/claim-reviews.jsonl",
+      "sha256": "c43afa1a2c2302a9f4fcdd8fea4608515cc843c8ffdac4f4632e53736599e9e8",
+      "bytes": 24714
+    },
+    {
+      "path": "sections/06-amendment-and-validator-landscape/gates.yaml",
+      "sha256": "c7cc65ceb738ca3c197f5689df96c55f32300d29cd17a69f0066da123b3ac121",
+      "bytes": 461
+    },
+    {
+      "path": "audits/06-amendment-and-validator-landscape-gate.json",
+      "sha256": "00ffbd42b2f7e23b5bb4f8f56849c666d4ec8b86e77bc91796afe0d0d410c107",
+      "bytes": 82030
+    },
+    {
+      "path": "audits/06-amendment-and-validator-landscape-review.json",
+      "sha256": "244781bee75b1b0ed6ed563fbfe39a165ee00e8d1c5579f8ac67e08cf98f2600",
+      "bytes": 104799
+    },
+    {
+      "path": "audits/06-amendment-and-validator-landscape-findings.jsonl",
+      "sha256": "850bedf6980cdfc1555fc058a297a365f151fef18ef092f8b0a2d6b946eb4bfb",
+      "bytes": 62534
+    },
+    {
+      "path": "sections/07-metadata-and-off-chain-durability/claims.jsonl",
+      "sha256": "e68678a7ebadd1e75a98868022e71a388d6e2bc1a9716ec7c13c18b7118f5267",
+      "bytes": 308479
+    },
+    {
+      "path": "sections/07-metadata-and-off-chain-durability/sources.jsonl",
+      "sha256": "88ddd7db4c294ac072548d3a8fe5a8a8cd8819ae4174f382bf76d06755eb0aa7",
+      "bytes": 781
+    },
+    {
+      "path": "sections/07-metadata-and-off-chain-durability/claim-reviews.jsonl",
+      "sha256": "bd251c30264759a766775788475cbd9c85a339f310d440d454873526b25d9d1b",
+      "bytes": 18826
+    },
+    {
+      "path": "sections/07-metadata-and-off-chain-durability/gates.yaml",
+      "sha256": "5784fbaf04bf28ca53f4ca4635c4f65db87820feef1484482f5dfa512accba4a",
+      "bytes": 354
+    },
+    {
+      "path": "audits/07-metadata-and-off-chain-durability-gate.json",
+      "sha256": "879196a01a26bd0fe071500589b8514a201f1c4cb73020b9bcb22b9aaf7d10ce",
+      "bytes": 71816
+    },
+    {
+      "path": "audits/07-metadata-and-off-chain-durability-review.json",
+      "sha256": "4accf4c72d1892d5d76d0fef385541e14ecc33ec6bc5b3ff68eb001843022ee3",
+      "bytes": 69652
+    },
+    {
+      "path": "audits/07-metadata-and-off-chain-durability-findings.jsonl",
+      "sha256": "ad5a40f3579ac3747710b9070cc2fa3def2973bccf1c42bb447cab4f6366cfec",
+      "bytes": 38894
+    },
+    {
+      "path": "evidence/fetch-log.jsonl",
+      "sha256": "df47f9503cc1b954df7ed9e51e104b82414c1c30cf910d4a5e5dcb1cf3c974e6",
+      "bytes": 71818
+    },
+    {
+      "path": "evidence/citation-ledger.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "evidence/source-cards/src_006880d4c42c.json",
+      "sha256": "f7e072803047b24e16825007b9c8a47282ffa8b8661b8a66b318d8ea08ad4b16",
+      "bytes": 1923
+    },
+    {
+      "path": "evidence/source-cards/src_01e8d92d7e53.json",
+      "sha256": "c68b971eeb8a4ae5e01f24420fb567193f5d40519e13a5df348c3fb59842e499",
+      "bytes": 1520
+    },
+    {
+      "path": "evidence/source-cards/src_0255a2aac931.json",
+      "sha256": "dd639c05043bdcc107a1da6110b1dbcfb13c13732e8fa49b98695c0e2fce9a43",
+      "bytes": 1109
+    },
+    {
+      "path": "evidence/source-cards/src_034a20f9fcbf.json",
+      "sha256": "9fb768723e93ea80e748888551e42f7d57a1de9af75ec832bdd7d2f0015b9177",
+      "bytes": 1419
+    },
+    {
+      "path": "evidence/source-cards/src_03f52c5d778f.json",
+      "sha256": "e6a914572d764ae14e5038f58b458dcf5aa8e06742df6358f1b081d590c9db35",
+      "bytes": 1485
+    },
+    {
+      "path": "evidence/source-cards/src_051630391070.json",
+      "sha256": "eaa4a35dcd0936a0e11f4fc2b7c9a1e3a4d4c6545bf38ca06e8670a98e2781cb",
+      "bytes": 1671
+    },
+    {
+      "path": "evidence/source-cards/src_0654c94c7a98.json",
+      "sha256": "8446edf44bca248379ac17543c8f7e36e254f336c1498cee1a7c4bc92c9e227e",
+      "bytes": 1290
+    },
+    {
+      "path": "evidence/source-cards/src_097142ab08d3.json",
+      "sha256": "57bcb17756fd7b4df213c1f0de934cca117735b98774f6ae0dfb92204eeed5ea",
+      "bytes": 1150
+    },
+    {
+      "path": "evidence/source-cards/src_0b01dd18d515.json",
+      "sha256": "3ee07ab82523c054dff7c6247c4583b5241289af68208b5b93250af67991500c",
+      "bytes": 1453
+    },
+    {
+      "path": "evidence/source-cards/src_0fad2055eaed.json",
+      "sha256": "54834ce6d83f68d8fea735563cf3e8dfea9788b0e7087340fb944b8867ba068f",
+      "bytes": 1943
+    },
+    {
+      "path": "evidence/source-cards/src_117260e9e17f.json",
+      "sha256": "4419d342a05095263a7c029cabdde3e6c0d7202f952512a9f2df3c311a60d4ad",
+      "bytes": 1561
+    },
+    {
+      "path": "evidence/source-cards/src_12ac7f4c315b.json",
+      "sha256": "5d61824f0b0f35ee5473d608fff152f59d40f0149e6f37784a5e6ea4228a2d4a",
+      "bytes": 1187
+    },
+    {
+      "path": "evidence/source-cards/src_13f7e950b494.json",
+      "sha256": "6a81ce0ebb0f168a6bde6ddfb342cf78c377c98b7465093ddf9e39e7ebc926dc",
+      "bytes": 1509
+    },
+    {
+      "path": "evidence/source-cards/src_206907715043.json",
+      "sha256": "2fc9c10b08d96d5dc68b6f6be58675a4f96e46df3081f88e0032f952f65f110f",
+      "bytes": 1360
+    },
+    {
+      "path": "evidence/source-cards/src_2185c0910a10.json",
+      "sha256": "1dc22e3d18073b1da528b2f7695fd3e1cfd2abca7873e2459c498f98794040ca",
+      "bytes": 1469
+    },
+    {
+      "path": "evidence/source-cards/src_24fc488e7bd9.json",
+      "sha256": "1805c5d4513875ad151feb0eccfed78d41a06b6aebcdb8015fc7cf8763ec5f69",
+      "bytes": 1216
+    },
+    {
+      "path": "evidence/source-cards/src_25ac15171ff0.json",
+      "sha256": "e1f14ea8823f29c832befada6ec84d8c0faef7de7814d41545d5a4e684ed6b61",
+      "bytes": 1288
+    },
+    {
+      "path": "evidence/source-cards/src_313e0214db27.json",
+      "sha256": "30ff08ce297b97e796be7b60e42c7a6200aa0bd0b65dba8ef442090a3a7e0951",
+      "bytes": 1127
+    },
+    {
+      "path": "evidence/source-cards/src_319355bfb19d.json",
+      "sha256": "5e413db4ac8990c53b9c1604f3b94a9972e791e9be99668cf0fdecfad3531cf3",
+      "bytes": 1130
+    },
+    {
+      "path": "evidence/source-cards/src_31ded2938c1f.json",
+      "sha256": "9f1f720270efb8d4d622a8abd41f95d32fb37d378134a67dfad93f0dbd05e3d9",
+      "bytes": 1607
+    },
+    {
+      "path": "evidence/source-cards/src_33402410a906.json",
+      "sha256": "a5c65acdaf5beb54defc7b7b91bfe4c96b983a8eabf6fbf041c5cb25d813951b",
+      "bytes": 1449
+    },
+    {
+      "path": "evidence/source-cards/src_37c1413248e9.json",
+      "sha256": "fabe0f4b753036ab1cb7cbc9b37052052e4932742a3f9c83a3867d20324de92a",
+      "bytes": 1044
+    },
+    {
+      "path": "evidence/source-cards/src_3cc91a11ac53.json",
+      "sha256": "104d2bf291e8577511190cbc4c556f1a6bc591bf11b46eba937c5d651819e44a",
+      "bytes": 1364
+    },
+    {
+      "path": "evidence/source-cards/src_4727592a5328.json",
+      "sha256": "1c36445b08d0a9b6fc3e556a5cb23080e3a8bdbd2258ca8961685ec860389755",
+      "bytes": 1337
+    },
+    {
+      "path": "evidence/source-cards/src_48463ecf8302.json",
+      "sha256": "d28a915ba41b6aeb731bcd11192ed27fabf3e8a363b5aac42c846d4eada9a6f3",
+      "bytes": 745
+    },
+    {
+      "path": "evidence/source-cards/src_48fddb8ee3b6.json",
+      "sha256": "bc6a71d434297c9e449494d71804a1d7224aa797bff61214cc03719dedd29655",
+      "bytes": 1245
+    },
+    {
+      "path": "evidence/source-cards/src_512ff500b432.json",
+      "sha256": "5cf1ea7cde205eddf2af65c8d0ed86e09a0060586a4bcd1fcfb251eb20e526e0",
+      "bytes": 1915
+    },
+    {
+      "path": "evidence/source-cards/src_515596050b06.json",
+      "sha256": "6e20c0a5072d8c15f45ac726abe8aa68981e7ad80763f793149a6975e9b0189f",
+      "bytes": 1875
+    },
+    {
+      "path": "evidence/source-cards/src_517d67dc1224.json",
+      "sha256": "27c77fa404f6294c1e6799a0a9ff23947cd89e64d0ff1fa76eb22c3ae2fecb33",
+      "bytes": 1384
+    },
+    {
+      "path": "evidence/source-cards/src_51d3108c7446.json",
+      "sha256": "968519b8b71243fdd9f5f1eb2d97eed26ad17bd44e21eea159ce775d857a4a6b",
+      "bytes": 1334
+    },
+    {
+      "path": "evidence/source-cards/src_5229d8bd314e.json",
+      "sha256": "c70231bd9ed7ba867e235a35ad22633752195c51db34afd0978c37ecba1464bf",
+      "bytes": 1025
+    },
+    {
+      "path": "evidence/source-cards/src_525532c48160.json",
+      "sha256": "414b4c3340b2787801631f74a0cb168807ba9082a8e3b28328eeac85e9a777e0",
+      "bytes": 1538
+    },
+    {
+      "path": "evidence/source-cards/src_5412494af521.json",
+      "sha256": "65691d5667e05631bcc0457e8ab896e87190df162bb55c39d465b80bd592b33a",
+      "bytes": 1151
+    },
+    {
+      "path": "evidence/source-cards/src_5a1d70d24fc1.json",
+      "sha256": "49ae0b6183f68c428b39721f399505dcbdca2f9705aae59a47d3f65793e0f0bd",
+      "bytes": 1508
+    },
+    {
+      "path": "evidence/source-cards/src_5b84f976c797.json",
+      "sha256": "4ec4f83b1a184ca1312beb99d3365cbbe00d8b763948c19a1fba3fdc4ebf31a7",
+      "bytes": 1382
+    },
+    {
+      "path": "evidence/source-cards/src_5d5676c4b1d7.json",
+      "sha256": "ad039253d7f48ecb24e3d9651fe875c45dd24ce4a57649758e4a8bde596edafe",
+      "bytes": 1338
+    },
+    {
+      "path": "evidence/source-cards/src_5f4e84349ec5.json",
+      "sha256": "7e5c3d0c5a69d3cb2c54016c6128f577affe07990c4257bb708946e005a42795",
+      "bytes": 1482
+    },
+    {
+      "path": "evidence/source-cards/src_62cf595f3835.json",
+      "sha256": "88d8ff7205b8245dba36be5f861359e8a7bbfa8e81addf1df7b9d47cd07f349d",
+      "bytes": 1249
+    },
+    {
+      "path": "evidence/source-cards/src_68a1f3f26f9b.json",
+      "sha256": "bab71368846ffbd06bae48b9857b72635b1926d2c26661de20056b53e8cee13b",
+      "bytes": 1970
+    },
+    {
+      "path": "evidence/source-cards/src_71ee1ec187f7.json",
+      "sha256": "63d7924cafdf45d0934dc681df62185ac42166e1720605735aefbc9e149588e2",
+      "bytes": 1362
+    },
+    {
+      "path": "evidence/source-cards/src_72d8a212a86a.json",
+      "sha256": "e181fb8101d029734e0c7db7dbac6279e0eb9ee7d6d21d504cd2dff738325e4e",
+      "bytes": 1160
+    },
+    {
+      "path": "evidence/source-cards/src_731c5d0b7dc0.json",
+      "sha256": "553ca7b32c247a61271c7a44317d136c147b67aab0d368f1828bc3f8df81d8ed",
+      "bytes": 1745
+    },
+    {
+      "path": "evidence/source-cards/src_736c7f9cccff.json",
+      "sha256": "f711e5ec6c58cec12173a21c1f5eb871af13d062f92c9aaf9eec6b4aa276d86d",
+      "bytes": 1383
+    },
+    {
+      "path": "evidence/source-cards/src_7d558c2ae6d2.json",
+      "sha256": "7bc5a27ed4dc9c5e9abb5a11f63191b7469be8352d04bdd250f130aad6c606ae",
+      "bytes": 1318
+    },
+    {
+      "path": "evidence/source-cards/src_7f175852cb10.json",
+      "sha256": "18220bdec51c882f74138074e776e3b9f2f0948dc201d80767a4e00f180ccf0a",
+      "bytes": 1699
+    },
+    {
+      "path": "evidence/source-cards/src_89d29fa8978f.json",
+      "sha256": "12f5142f70c92183df40fa6260b261731b092a61f5288f7ab99adbca405330ae",
+      "bytes": 1565
+    },
+    {
+      "path": "evidence/source-cards/src_8d039f2c0ee8.json",
+      "sha256": "77346039b6f044b424bb48d909bcf6d593eb42f040228be0508e5a3f9402cc3c",
+      "bytes": 1433
+    },
+    {
+      "path": "evidence/source-cards/src_8ebf52ac0af9.json",
+      "sha256": "97dc7256f5ef36138db938c556f715b8efd126f5fa2e203cb3e95d9b00f3bd97",
+      "bytes": 1719
+    },
+    {
+      "path": "evidence/source-cards/src_90368c8bfc17.json",
+      "sha256": "9fa453f7306876252903a36b31e6811efa25ed55c12b092d5dbdcdb4a86404e7",
+      "bytes": 1289
+    },
+    {
+      "path": "evidence/source-cards/src_914d01359b57.json",
+      "sha256": "d93d25749fb21ecf7a32abf6dc3d1db15124066c8835b03be52cc09debf8fe31",
+      "bytes": 1520
+    },
+    {
+      "path": "evidence/source-cards/src_92f5c74d9bda.json",
+      "sha256": "1568298365c2b7748b2420f8b1cfb7dbbf4c4f610ba3e9406c3be0b6af8a046b",
+      "bytes": 1268
+    },
+    {
+      "path": "evidence/source-cards/src_9505395adfe8.json",
+      "sha256": "c5816c353a7d9a0b0dbff86b0b5e895271221b7ff4a6c5c15cf07f47d0e17dff",
+      "bytes": 1554
+    },
+    {
+      "path": "evidence/source-cards/src_9c84764fa541.json",
+      "sha256": "e9e5d3499134a20b6016682b43aaf8cea30209af48edd04c4e347eac253d45ce",
+      "bytes": 1296
+    },
+    {
+      "path": "evidence/source-cards/src_a101a2ec3e2c.json",
+      "sha256": "f1484ee19a48b66c5ae8d0d2380c98efe42ffac2887308fdb567664a388e7872",
+      "bytes": 1785
+    },
+    {
+      "path": "evidence/source-cards/src_a37ff8072a91.json",
+      "sha256": "7b224a035ad3d0d4380f8f6aaab907fdbde41193e1b5f9eca3510f3ea52d3eb8",
+      "bytes": 1219
+    },
+    {
+      "path": "evidence/source-cards/src_accb45067034.json",
+      "sha256": "5c725931150de55ee1d04e336920fdef9ddc5a9efbde78c81e4e20997bbee787",
+      "bytes": 1562
+    },
+    {
+      "path": "evidence/source-cards/src_b357e7424a79.json",
+      "sha256": "35b46ecfb3f086463e7bba3e7471321a4f7bd27adeb42fa71306ba7dec977375",
+      "bytes": 1048
+    },
+    {
+      "path": "evidence/source-cards/src_b98e4c872d37.json",
+      "sha256": "6844eb6bcad8a183c24051f8e6616e6d5c262c57cef575ad208bee58e3165491",
+      "bytes": 1382
+    },
+    {
+      "path": "evidence/source-cards/src_bb6e135772ef.json",
+      "sha256": "a59f1b7da2c174cef8693e87eb2917f417f4efb6d8fd749672f57e988f0ec502",
+      "bytes": 1398
+    },
+    {
+      "path": "evidence/source-cards/src_bc7eaa08f673.json",
+      "sha256": "33f3d606949931ebf41a96c4d2a83772e4b9ef58add0e08d0591417faabb43b7",
+      "bytes": 1228
+    },
+    {
+      "path": "evidence/source-cards/src_c24e3cf6d930.json",
+      "sha256": "6660a62e3aa72e6ff88124b33b1634054fce726f682dd8955ae5a0674ea9de69",
+      "bytes": 1536
+    },
+    {
+      "path": "evidence/source-cards/src_c3f060147acd.json",
+      "sha256": "a1eeac382243c1bc6304e5057a9958d7ccb5cce091a90a18b7b86cef06a756ae",
+      "bytes": 1263
+    },
+    {
+      "path": "evidence/source-cards/src_c8f7530cb4f1.json",
+      "sha256": "0de503730daf7b48d18eba8f8d7758943273fafa2a136756bf9a5cb8770d8d28",
+      "bytes": 1416
+    },
+    {
+      "path": "evidence/source-cards/src_cef2c31af42d.json",
+      "sha256": "fcf8e35bbaaf143c70fc46b4af77d83098926865a83b9b6800d90d5f695d194f",
+      "bytes": 1539
+    },
+    {
+      "path": "evidence/source-cards/src_d0882a19791f.json",
+      "sha256": "50233c58063d64f6860afd904389f299b5ea7e7f733d9588b5b02488a1cc28e3",
+      "bytes": 1555
+    },
+    {
+      "path": "evidence/source-cards/src_d16112dea1e0.json",
+      "sha256": "88734267c0102669ff38bd16facfd328e6f7a6e3fefa3ef7f2ef290a1e03bb74",
+      "bytes": 1269
+    },
+    {
+      "path": "evidence/source-cards/src_d2fef4cddfd7.json",
+      "sha256": "75bbc6043408732cc563dd34c6ce0e9c63cfc55924389edd800a4eb8293a0c1d",
+      "bytes": 917
+    },
+    {
+      "path": "evidence/source-cards/src_d6c57c6845e6.json",
+      "sha256": "611922bcfabd23e03bd838909013b2c33b0ea5ef91ff343f893c2ddbce62a205",
+      "bytes": 1215
+    },
+    {
+      "path": "evidence/source-cards/src_e1cfbbad4fa5.json",
+      "sha256": "9cc77b49c3bf10d01326c1555e21e01de279f697c29ad894f2bbf2c730d186ce",
+      "bytes": 1496
+    },
+    {
+      "path": "evidence/source-cards/src_e25c1c4ecccf.json",
+      "sha256": "145298b320894f6a3be04d3fb6f9b95fddd7d2c514a5e97f49d98c6f581cbcd3",
+      "bytes": 1795
+    },
+    {
+      "path": "evidence/source-cards/src_e6b777fcef0d.json",
+      "sha256": "fea8bf24f762624a22c9e2d134eb6c51af31165fe71e77e76dcafe8fbe3d3d2c",
+      "bytes": 1513
+    },
+    {
+      "path": "evidence/source-cards/src_e6df442e1e22.json",
+      "sha256": "8e5388ef81977c9f164ad560324e9e0b51307a201ac02c790e2820a1b9260034",
+      "bytes": 1763
+    },
+    {
+      "path": "evidence/source-cards/src_e98d1069b3a8.json",
+      "sha256": "baa399f2a25520731984633c773c5f88c7af732796b844308ae1d8fa043f9cc3",
+      "bytes": 1289
+    },
+    {
+      "path": "evidence/source-cards/src_eae6b2d1d42d.json",
+      "sha256": "56cd127e20244cd1255676f8da0034e5e8abf7151c3c325fded229fb146cd7b7",
+      "bytes": 1448
+    },
+    {
+      "path": "evidence/source-cards/src_ec3eb93321a7.json",
+      "sha256": "5c56159a6bc41f52cef94422517eff282a652a7ee220d4d816060993bb41e72b",
+      "bytes": 1226
+    },
+    {
+      "path": "evidence/source-cards/src_ec68826269c9.json",
+      "sha256": "e4c312287458b0ecb5bb1d98599dbfc9b47fa66177a4d02309c87c818b5a0b1a",
+      "bytes": 1340
+    },
+    {
+      "path": "evidence/source-cards/src_f0063f109b4a.json",
+      "sha256": "69161196d19bb047f86569268e48dd47ad0778b61f4dcbfcae1abfc264c9e90f",
+      "bytes": 798
+    },
+    {
+      "path": "evidence/source-cards/src_f011b0207e63.json",
+      "sha256": "52ff3e7e6bd5d061effcc149145833c4d7e15866becbaad3bd06a78a61a98377",
+      "bytes": 1674
+    },
+    {
+      "path": "evidence/source-cards/src_f103bcae0753.json",
+      "sha256": "5f1fa642419e6c666e745bc9a4493026e67f7df45f6e202c5f88d6a12e60ff90",
+      "bytes": 1285
+    },
+    {
+      "path": "evidence/source-cards/src_ff9fbb4f8527.json",
+      "sha256": "e1cfecedec21e319d89c961d3549e85b9d3d9123763288ba2272a9b35ea15610",
+      "bytes": 1316
+    }
+  ],
+  "accepted_claim_ids": [
+    "clm_006880d4c42c_ollama_intern_14",
+    "clm_006880d4c42c_ollama_intern_25",
+    "clm_01e8d92d7e53_ollama_intern_10",
+    "clm_01e8d92d7e53_ollama_intern_11",
+    "clm_01e8d92d7e53_ollama_intern_12",
+    "clm_01e8d92d7e53_ollama_intern_3",
+    "clm_0255a2aac931_ollama_intern_1",
+    "clm_0255a2aac931_ollama_intern_18",
+    "clm_0255a2aac931_ollama_intern_19",
+    "clm_0255a2aac931_ollama_intern_20",
+    "clm_0255a2aac931_ollama_intern_4",
+    "clm_034a20f9fcbf_ollama_intern_2",
+    "clm_034a20f9fcbf_ollama_intern_3",
+    "clm_03f52c5d778f_ollama_intern_10",
+    "clm_03f52c5d778f_ollama_intern_2",
+    "clm_03f52c5d778f_ollama_intern_3",
+    "clm_03f52c5d778f_ollama_intern_6",
+    "clm_03f52c5d778f_ollama_intern_7",
+    "clm_03f52c5d778f_ollama_intern_8",
+    "clm_051630391070_ollama_intern_3",
+    "clm_051630391070_ollama_intern_4",
+    "clm_051630391070_ollama_intern_5",
+    "clm_051630391070_ollama_intern_6",
+    "clm_097142ab08d3_ollama_intern_1",
+    "clm_097142ab08d3_ollama_intern_10",
+    "clm_097142ab08d3_ollama_intern_11",
+    "clm_097142ab08d3_ollama_intern_20",
+    "clm_097142ab08d3_ollama_intern_5",
+    "clm_097142ab08d3_ollama_intern_9",
+    "clm_0b01dd18d515_ollama_intern_10",
+    "clm_0b01dd18d515_ollama_intern_11",
+    "clm_0b01dd18d515_ollama_intern_6",
+    "clm_0b01dd18d515_ollama_intern_7",
+    "clm_0b01dd18d515_ollama_intern_8",
+    "clm_0b01dd18d515_ollama_intern_9",
+    "clm_117260e9e17f_ollama_intern_10",
+    "clm_117260e9e17f_ollama_intern_11",
+    "clm_117260e9e17f_ollama_intern_12",
+    "clm_117260e9e17f_ollama_intern_20",
+    "clm_117260e9e17f_ollama_intern_6",
+    "clm_117260e9e17f_ollama_intern_9",
+    "clm_13f7e950b494_ollama_intern_3",
+    "clm_13f7e950b494_ollama_intern_7",
+    "clm_13f7e950b494_ollama_intern_9",
+    "clm_206907715043_ollama_intern_10",
+    "clm_206907715043_ollama_intern_3",
+    "clm_206907715043_ollama_intern_4",
+    "clm_206907715043_ollama_intern_7",
+    "clm_206907715043_ollama_intern_8",
+    "clm_206907715043_ollama_intern_9",
+    "clm_2185c0910a10_ollama_intern_33",
+    "clm_25ac15171ff0_ollama_intern_11",
+    "clm_25ac15171ff0_ollama_intern_2",
+    "clm_319355bfb19d_ollama_intern_2",
+    "clm_319355bfb19d_ollama_intern_3",
+    "clm_319355bfb19d_ollama_intern_6",
+    "clm_319355bfb19d_ollama_intern_8",
+    "clm_37c1413248e9_ollama_intern_2",
+    "clm_37c1413248e9_ollama_intern_3",
+    "clm_37c1413248e9_ollama_intern_4",
+    "clm_37c1413248e9_ollama_intern_5",
+    "clm_37c1413248e9_ollama_intern_6",
+    "clm_4727592a5328_ollama_intern_3",
+    "clm_4727592a5328_ollama_intern_5",
+    "clm_48fddb8ee3b6_ollama_intern_1",
+    "clm_48fddb8ee3b6_ollama_intern_2",
+    "clm_48fddb8ee3b6_ollama_intern_3",
+    "clm_48fddb8ee3b6_ollama_intern_4",
+    "clm_48fddb8ee3b6_ollama_intern_5",
+    "clm_48fddb8ee3b6_ollama_intern_6",
+    "clm_512ff500b432_ollama_intern_12",
+    "clm_512ff500b432_ollama_intern_25",
+    "clm_512ff500b432_ollama_intern_30",
+    "clm_512ff500b432_ollama_intern_34",
+    "clm_512ff500b432_ollama_intern_35",
+    "clm_512ff500b432_ollama_intern_45",
+    "clm_512ff500b432_ollama_intern_70",
+    "clm_512ff500b432_ollama_intern_71",
+    "clm_512ff500b432_ollama_intern_72",
+    "clm_515596050b06_ollama_intern_1",
+    "clm_515596050b06_ollama_intern_14",
+    "clm_515596050b06_ollama_intern_36",
+    "clm_515596050b06_ollama_intern_42",
+    "clm_515596050b06_ollama_intern_43",
+    "clm_515596050b06_ollama_intern_44",
+    "clm_515596050b06_ollama_intern_46",
+    "clm_515596050b06_ollama_intern_5",
+    "clm_515596050b06_ollama_intern_6",
+    "clm_517d67dc1224_ollama_intern_10",
+    "clm_517d67dc1224_ollama_intern_11",
+    "clm_517d67dc1224_ollama_intern_13",
+    "clm_517d67dc1224_ollama_intern_4",
+    "clm_517d67dc1224_ollama_intern_7",
+    "clm_517d67dc1224_ollama_intern_8",
+    "clm_51d3108c7446_ollama_intern_7",
+    "clm_5229d8bd314e_ollama_intern_2",
+    "clm_5229d8bd314e_ollama_intern_9",
+    "clm_525532c48160_ollama_intern_3",
+    "clm_525532c48160_ollama_intern_4",
+    "clm_525532c48160_ollama_intern_5",
+    "clm_5412494af521_ollama_intern_101",
+    "clm_5412494af521_ollama_intern_103",
+    "clm_5412494af521_ollama_intern_105",
+    "clm_5412494af521_ollama_intern_106",
+    "clm_5412494af521_ollama_intern_115",
+    "clm_5412494af521_ollama_intern_14",
+    "clm_5412494af521_ollama_intern_17",
+    "clm_5412494af521_ollama_intern_40",
+    "clm_5412494af521_ollama_intern_63",
+    "clm_5412494af521_ollama_intern_67",
+    "clm_5a1d70d24fc1_ollama_intern_1",
+    "clm_5b84f976c797_ollama_intern_1",
+    "clm_5d5676c4b1d7_ollama_intern_4",
+    "clm_5f4e84349ec5_ollama_intern_12",
+    "clm_5f4e84349ec5_ollama_intern_3",
+    "clm_68a1f3f26f9b_ollama_intern_5",
+    "clm_71ee1ec187f7_ollama_intern_2",
+    "clm_71ee1ec187f7_ollama_intern_3",
+    "clm_71ee1ec187f7_ollama_intern_4",
+    "clm_72d8a212a86a_ollama_intern_1",
+    "clm_731c5d0b7dc0_ollama_intern_2",
+    "clm_736c7f9cccff_ollama_intern_7",
+    "clm_7d558c2ae6d2_ollama_intern_2",
+    "clm_89d29fa8978f_ollama_intern_10",
+    "clm_89d29fa8978f_ollama_intern_11",
+    "clm_89d29fa8978f_ollama_intern_16",
+    "clm_89d29fa8978f_ollama_intern_19",
+    "clm_89d29fa8978f_ollama_intern_20",
+    "clm_89d29fa8978f_ollama_intern_21",
+    "clm_89d29fa8978f_ollama_intern_25",
+    "clm_89d29fa8978f_ollama_intern_31",
+    "clm_89d29fa8978f_ollama_intern_7",
+    "clm_89d29fa8978f_ollama_intern_83",
+    "clm_8d039f2c0ee8_ollama_intern_13",
+    "clm_8d039f2c0ee8_ollama_intern_14",
+    "clm_8d039f2c0ee8_ollama_intern_16",
+    "clm_8d039f2c0ee8_ollama_intern_17",
+    "clm_8d039f2c0ee8_ollama_intern_18",
+    "clm_8ebf52ac0af9_ollama_intern_1",
+    "clm_8ebf52ac0af9_ollama_intern_2",
+    "clm_8ebf52ac0af9_ollama_intern_4",
+    "clm_8ebf52ac0af9_ollama_intern_6",
+    "clm_8ebf52ac0af9_ollama_intern_7",
+    "clm_8ebf52ac0af9_ollama_intern_8",
+    "clm_90368c8bfc17_ollama_intern_1",
+    "clm_90368c8bfc17_ollama_intern_2",
+    "clm_90368c8bfc17_ollama_intern_9",
+    "clm_9505395adfe8_ollama_intern_1",
+    "clm_9505395adfe8_ollama_intern_14",
+    "clm_9505395adfe8_ollama_intern_15",
+    "clm_9505395adfe8_ollama_intern_16",
+    "clm_9505395adfe8_ollama_intern_18",
+    "clm_9505395adfe8_ollama_intern_19",
+    "clm_9505395adfe8_ollama_intern_2",
+    "clm_9505395adfe8_ollama_intern_4",
+    "clm_9505395adfe8_ollama_intern_6",
+    "clm_9505395adfe8_ollama_intern_7",
+    "clm_9505395adfe8_ollama_intern_8",
+    "clm_9505395adfe8_ollama_intern_9",
+    "clm_9c84764fa541_ollama_intern_20",
+    "clm_9c84764fa541_ollama_intern_22",
+    "clm_9c84764fa541_ollama_intern_23",
+    "clm_9c84764fa541_ollama_intern_25",
+    "clm_9c84764fa541_ollama_intern_26",
+    "clm_9c84764fa541_ollama_intern_32",
+    "clm_9c84764fa541_ollama_intern_37",
+    "clm_9c84764fa541_ollama_intern_5",
+    "clm_9c84764fa541_ollama_intern_7",
+    "clm_a101a2ec3e2c_ollama_intern_1",
+    "clm_a37ff8072a91_ollama_intern_9",
+    "clm_b357e7424a79_ollama_intern_7",
+    "clm_b98e4c872d37_ollama_intern_9",
+    "clm_bb6e135772ef_ollama_intern_9",
+    "clm_bc7eaa08f673_ollama_intern_4",
+    "clm_bc7eaa08f673_ollama_intern_5",
+    "clm_bc7eaa08f673_ollama_intern_6",
+    "clm_bc7eaa08f673_ollama_intern_7",
+    "clm_c3f060147acd_ollama_intern_1",
+    "clm_c3f060147acd_ollama_intern_14",
+    "clm_c3f060147acd_ollama_intern_19",
+    "clm_c3f060147acd_ollama_intern_24",
+    "clm_c3f060147acd_ollama_intern_26",
+    "clm_c3f060147acd_ollama_intern_29",
+    "clm_c3f060147acd_ollama_intern_30",
+    "clm_c3f060147acd_ollama_intern_4",
+    "clm_c3f060147acd_ollama_intern_8",
+    "clm_c8f7530cb4f1_ollama_intern_2",
+    "clm_c8f7530cb4f1_ollama_intern_3",
+    "clm_cef2c31af42d_ollama_intern_8",
+    "clm_cef2c31af42d_ollama_intern_9",
+    "clm_d0882a19791f_ollama_intern_1",
+    "clm_d0882a19791f_ollama_intern_2",
+    "clm_d0882a19791f_ollama_intern_3",
+    "clm_d16112dea1e0_ollama_intern_1",
+    "clm_d16112dea1e0_ollama_intern_10",
+    "clm_d16112dea1e0_ollama_intern_12",
+    "clm_d16112dea1e0_ollama_intern_13",
+    "clm_d16112dea1e0_ollama_intern_14",
+    "clm_d16112dea1e0_ollama_intern_15",
+    "clm_d16112dea1e0_ollama_intern_16",
+    "clm_d16112dea1e0_ollama_intern_17",
+    "clm_d16112dea1e0_ollama_intern_18",
+    "clm_d16112dea1e0_ollama_intern_3",
+    "clm_d16112dea1e0_ollama_intern_4",
+    "clm_d16112dea1e0_ollama_intern_5",
+    "clm_d16112dea1e0_ollama_intern_6",
+    "clm_d16112dea1e0_ollama_intern_7",
+    "clm_d16112dea1e0_ollama_intern_8",
+    "clm_d16112dea1e0_ollama_intern_9",
+    "clm_d6c57c6845e6_ollama_intern_2",
+    "clm_d6c57c6845e6_ollama_intern_3",
+    "clm_d6c57c6845e6_ollama_intern_5",
+    "clm_d6c57c6845e6_ollama_intern_6",
+    "clm_e1cfbbad4fa5_ollama_intern_5",
+    "clm_e1cfbbad4fa5_ollama_intern_9",
+    "clm_e98d1069b3a8_ollama_intern_1",
+    "clm_e98d1069b3a8_ollama_intern_2",
+    "clm_e98d1069b3a8_ollama_intern_5",
+    "clm_ec3eb93321a7_ollama_intern_2",
+    "clm_ec3eb93321a7_ollama_intern_3",
+    "clm_ec68826269c9_ollama_intern_10",
+    "clm_ec68826269c9_ollama_intern_11",
+    "clm_ec68826269c9_ollama_intern_12",
+    "clm_ec68826269c9_ollama_intern_2",
+    "clm_ec68826269c9_ollama_intern_3",
+    "clm_ec68826269c9_ollama_intern_9",
+    "clm_f0063f109b4a_ollama_intern_1",
+    "clm_f0063f109b4a_ollama_intern_2",
+    "clm_f0063f109b4a_ollama_intern_4",
+    "clm_f0063f109b4a_ollama_intern_5",
+    "clm_f0063f109b4a_ollama_intern_6",
+    "clm_f0063f109b4a_ollama_intern_7",
+    "clm_f0063f109b4a_ollama_intern_8",
+    "clm_f0063f109b4a_ollama_intern_9",
+    "clm_f011b0207e63_ollama_intern_13",
+    "clm_f011b0207e63_ollama_intern_14",
+    "clm_f011b0207e63_ollama_intern_2",
+    "clm_f011b0207e63_ollama_intern_5",
+    "clm_f103bcae0753_ollama_intern_1",
+    "clm_f103bcae0753_ollama_intern_2",
+    "clm_f103bcae0753_ollama_intern_3",
+    "clm_f103bcae0753_ollama_intern_6",
+    "clm_ff9fbb4f8527_ollama_intern_3"
+  ],
+  "cited_claim_ids": [
+    "clm_f0063f109b4a_ollama_intern_1",
+    "clm_5229d8bd314e_ollama_intern_2",
+    "clm_5229d8bd314e_ollama_intern_9",
+    "clm_f0063f109b4a_ollama_intern_4",
+    "clm_ec3eb93321a7_ollama_intern_2",
+    "clm_ec3eb93321a7_ollama_intern_3",
+    "clm_c3f060147acd_ollama_intern_24",
+    "clm_c3f060147acd_ollama_intern_8",
+    "clm_c3f060147acd_ollama_intern_29",
+    "clm_0255a2aac931_ollama_intern_1",
+    "clm_0255a2aac931_ollama_intern_4",
+    "clm_0255a2aac931_ollama_intern_19",
+    "clm_f0063f109b4a_ollama_intern_9",
+    "clm_117260e9e17f_ollama_intern_10",
+    "clm_117260e9e17f_ollama_intern_11",
+    "clm_117260e9e17f_ollama_intern_12",
+    "clm_117260e9e17f_ollama_intern_6",
+    "clm_7d558c2ae6d2_ollama_intern_2",
+    "clm_b98e4c872d37_ollama_intern_9",
+    "clm_13f7e950b494_ollama_intern_3",
+    "clm_13f7e950b494_ollama_intern_7",
+    "clm_206907715043_ollama_intern_3",
+    "clm_206907715043_ollama_intern_4",
+    "clm_206907715043_ollama_intern_10",
+    "clm_b357e7424a79_ollama_intern_7",
+    "clm_525532c48160_ollama_intern_3",
+    "clm_525532c48160_ollama_intern_4",
+    "clm_525532c48160_ollama_intern_5",
+    "clm_9505395adfe8_ollama_intern_19",
+    "clm_72d8a212a86a_ollama_intern_1",
+    "clm_90368c8bfc17_ollama_intern_2",
+    "clm_f011b0207e63_ollama_intern_2",
+    "clm_006880d4c42c_ollama_intern_25",
+    "clm_d0882a19791f_ollama_intern_3",
+    "clm_517d67dc1224_ollama_intern_7",
+    "clm_517d67dc1224_ollama_intern_4",
+    "clm_ff9fbb4f8527_ollama_intern_3",
+    "clm_319355bfb19d_ollama_intern_2",
+    "clm_319355bfb19d_ollama_intern_3",
+    "clm_319355bfb19d_ollama_intern_6",
+    "clm_319355bfb19d_ollama_intern_8",
+    "clm_4727592a5328_ollama_intern_5",
+    "clm_4727592a5328_ollama_intern_3",
+    "clm_90368c8bfc17_ollama_intern_9",
+    "clm_e98d1069b3a8_ollama_intern_1",
+    "clm_e98d1069b3a8_ollama_intern_2",
+    "clm_034a20f9fcbf_ollama_intern_2",
+    "clm_034a20f9fcbf_ollama_intern_3",
+    "clm_71ee1ec187f7_ollama_intern_3",
+    "clm_71ee1ec187f7_ollama_intern_4",
+    "clm_c8f7530cb4f1_ollama_intern_2",
+    "clm_c8f7530cb4f1_ollama_intern_3",
+    "clm_5a1d70d24fc1_ollama_intern_1",
+    "clm_731c5d0b7dc0_ollama_intern_2",
+    "clm_5d5676c4b1d7_ollama_intern_4",
+    "clm_01e8d92d7e53_ollama_intern_3",
+    "clm_e1cfbbad4fa5_ollama_intern_5",
+    "clm_e1cfbbad4fa5_ollama_intern_9",
+    "clm_8ebf52ac0af9_ollama_intern_1",
+    "clm_03f52c5d778f_ollama_intern_2",
+    "clm_8ebf52ac0af9_ollama_intern_4",
+    "clm_8ebf52ac0af9_ollama_intern_2",
+    "clm_8ebf52ac0af9_ollama_intern_6",
+    "clm_8ebf52ac0af9_ollama_intern_7",
+    "clm_03f52c5d778f_ollama_intern_6",
+    "clm_03f52c5d778f_ollama_intern_10",
+    "clm_515596050b06_ollama_intern_1",
+    "clm_515596050b06_ollama_intern_5",
+    "clm_515596050b06_ollama_intern_6",
+    "clm_515596050b06_ollama_intern_14",
+    "clm_515596050b06_ollama_intern_42",
+    "clm_d16112dea1e0_ollama_intern_4",
+    "clm_d16112dea1e0_ollama_intern_3",
+    "clm_8d039f2c0ee8_ollama_intern_13",
+    "clm_8d039f2c0ee8_ollama_intern_14",
+    "clm_d6c57c6845e6_ollama_intern_2",
+    "clm_d6c57c6845e6_ollama_intern_3",
+    "clm_37c1413248e9_ollama_intern_2",
+    "clm_37c1413248e9_ollama_intern_5",
+    "clm_37c1413248e9_ollama_intern_6",
+    "clm_0b01dd18d515_ollama_intern_6",
+    "clm_0b01dd18d515_ollama_intern_7",
+    "clm_0b01dd18d515_ollama_intern_8",
+    "clm_0b01dd18d515_ollama_intern_10",
+    "clm_f0063f109b4a_ollama_intern_2",
+    "clm_f0063f109b4a_ollama_intern_8",
+    "clm_f0063f109b4a_ollama_intern_7",
+    "clm_f0063f109b4a_ollama_intern_6",
+    "clm_f0063f109b4a_ollama_intern_5",
+    "clm_c3f060147acd_ollama_intern_30",
+    "clm_c3f060147acd_ollama_intern_4",
+    "clm_c3f060147acd_ollama_intern_26",
+    "clm_c3f060147acd_ollama_intern_14",
+    "clm_c3f060147acd_ollama_intern_19",
+    "clm_c3f060147acd_ollama_intern_1",
+    "clm_0255a2aac931_ollama_intern_18",
+    "clm_0255a2aac931_ollama_intern_20",
+    "clm_89d29fa8978f_ollama_intern_10",
+    "clm_89d29fa8978f_ollama_intern_11",
+    "clm_89d29fa8978f_ollama_intern_16",
+    "clm_89d29fa8978f_ollama_intern_19",
+    "clm_89d29fa8978f_ollama_intern_20",
+    "clm_89d29fa8978f_ollama_intern_21",
+    "clm_89d29fa8978f_ollama_intern_25",
+    "clm_89d29fa8978f_ollama_intern_31",
+    "clm_89d29fa8978f_ollama_intern_7",
+    "clm_89d29fa8978f_ollama_intern_83",
+    "clm_d16112dea1e0_ollama_intern_14",
+    "clm_d16112dea1e0_ollama_intern_15",
+    "clm_d16112dea1e0_ollama_intern_16",
+    "clm_d16112dea1e0_ollama_intern_17",
+    "clm_d16112dea1e0_ollama_intern_18",
+    "clm_d16112dea1e0_ollama_intern_12",
+    "clm_d16112dea1e0_ollama_intern_5",
+    "clm_d16112dea1e0_ollama_intern_7",
+    "clm_117260e9e17f_ollama_intern_9",
+    "clm_117260e9e17f_ollama_intern_20",
+    "clm_cef2c31af42d_ollama_intern_8",
+    "clm_cef2c31af42d_ollama_intern_9",
+    "clm_9505395adfe8_ollama_intern_1",
+    "clm_9505395adfe8_ollama_intern_2",
+    "clm_9505395adfe8_ollama_intern_4",
+    "clm_097142ab08d3_ollama_intern_1",
+    "clm_097142ab08d3_ollama_intern_11",
+    "clm_097142ab08d3_ollama_intern_9",
+    "clm_097142ab08d3_ollama_intern_10",
+    "clm_13f7e950b494_ollama_intern_9",
+    "clm_5b84f976c797_ollama_intern_1",
+    "clm_68a1f3f26f9b_ollama_intern_5",
+    "clm_206907715043_ollama_intern_7",
+    "clm_206907715043_ollama_intern_8",
+    "clm_206907715043_ollama_intern_9",
+    "clm_ec68826269c9_ollama_intern_3",
+    "clm_ec68826269c9_ollama_intern_9",
+    "clm_9505395adfe8_ollama_intern_16",
+    "clm_9505395adfe8_ollama_intern_7",
+    "clm_9505395adfe8_ollama_intern_8",
+    "clm_9505395adfe8_ollama_intern_9",
+    "clm_9505395adfe8_ollama_intern_6",
+    "clm_9505395adfe8_ollama_intern_14",
+    "clm_9505395adfe8_ollama_intern_15",
+    "clm_90368c8bfc17_ollama_intern_1",
+    "clm_48fddb8ee3b6_ollama_intern_6",
+    "clm_48fddb8ee3b6_ollama_intern_4",
+    "clm_f011b0207e63_ollama_intern_5",
+    "clm_f011b0207e63_ollama_intern_13",
+    "clm_f011b0207e63_ollama_intern_14",
+    "clm_051630391070_ollama_intern_3",
+    "clm_051630391070_ollama_intern_4",
+    "clm_051630391070_ollama_intern_5",
+    "clm_051630391070_ollama_intern_6",
+    "clm_9c84764fa541_ollama_intern_20",
+    "clm_9c84764fa541_ollama_intern_22",
+    "clm_9c84764fa541_ollama_intern_23",
+    "clm_9c84764fa541_ollama_intern_25",
+    "clm_9c84764fa541_ollama_intern_26",
+    "clm_9c84764fa541_ollama_intern_32",
+    "clm_9c84764fa541_ollama_intern_7",
+    "clm_9c84764fa541_ollama_intern_5",
+    "clm_9c84764fa541_ollama_intern_37",
+    "clm_a101a2ec3e2c_ollama_intern_1",
+    "clm_bc7eaa08f673_ollama_intern_4",
+    "clm_bc7eaa08f673_ollama_intern_5",
+    "clm_bc7eaa08f673_ollama_intern_6",
+    "clm_bc7eaa08f673_ollama_intern_7",
+    "clm_ec68826269c9_ollama_intern_2",
+    "clm_ec68826269c9_ollama_intern_10",
+    "clm_ec68826269c9_ollama_intern_11",
+    "clm_ec68826269c9_ollama_intern_12",
+    "clm_006880d4c42c_ollama_intern_14",
+    "clm_5f4e84349ec5_ollama_intern_12",
+    "clm_5f4e84349ec5_ollama_intern_3",
+    "clm_d0882a19791f_ollama_intern_1",
+    "clm_d0882a19791f_ollama_intern_2",
+    "clm_517d67dc1224_ollama_intern_10",
+    "clm_517d67dc1224_ollama_intern_11",
+    "clm_e98d1069b3a8_ollama_intern_5",
+    "clm_097142ab08d3_ollama_intern_5",
+    "clm_097142ab08d3_ollama_intern_20",
+    "clm_9505395adfe8_ollama_intern_18",
+    "clm_71ee1ec187f7_ollama_intern_2",
+    "clm_48fddb8ee3b6_ollama_intern_1",
+    "clm_48fddb8ee3b6_ollama_intern_2",
+    "clm_48fddb8ee3b6_ollama_intern_3",
+    "clm_48fddb8ee3b6_ollama_intern_5",
+    "clm_51d3108c7446_ollama_intern_7",
+    "clm_a37ff8072a91_ollama_intern_9",
+    "clm_01e8d92d7e53_ollama_intern_10",
+    "clm_01e8d92d7e53_ollama_intern_11",
+    "clm_01e8d92d7e53_ollama_intern_12",
+    "clm_f103bcae0753_ollama_intern_1",
+    "clm_f103bcae0753_ollama_intern_2",
+    "clm_f103bcae0753_ollama_intern_3",
+    "clm_f103bcae0753_ollama_intern_6",
+    "clm_bb6e135772ef_ollama_intern_9",
+    "clm_736c7f9cccff_ollama_intern_7",
+    "clm_03f52c5d778f_ollama_intern_3",
+    "clm_03f52c5d778f_ollama_intern_7",
+    "clm_03f52c5d778f_ollama_intern_8",
+    "clm_8ebf52ac0af9_ollama_intern_8",
+    "clm_515596050b06_ollama_intern_36",
+    "clm_515596050b06_ollama_intern_43",
+    "clm_515596050b06_ollama_intern_44",
+    "clm_515596050b06_ollama_intern_46",
+    "clm_512ff500b432_ollama_intern_12",
+    "clm_512ff500b432_ollama_intern_25",
+    "clm_512ff500b432_ollama_intern_30",
+    "clm_512ff500b432_ollama_intern_34",
+    "clm_512ff500b432_ollama_intern_35",
+    "clm_512ff500b432_ollama_intern_45",
+    "clm_512ff500b432_ollama_intern_70",
+    "clm_512ff500b432_ollama_intern_71",
+    "clm_512ff500b432_ollama_intern_72",
+    "clm_5412494af521_ollama_intern_101",
+    "clm_5412494af521_ollama_intern_103",
+    "clm_5412494af521_ollama_intern_105",
+    "clm_5412494af521_ollama_intern_106",
+    "clm_5412494af521_ollama_intern_40",
+    "clm_5412494af521_ollama_intern_67",
+    "clm_5412494af521_ollama_intern_17",
+    "clm_5412494af521_ollama_intern_14",
+    "clm_5412494af521_ollama_intern_63",
+    "clm_5412494af521_ollama_intern_115",
+    "clm_d16112dea1e0_ollama_intern_1",
+    "clm_d16112dea1e0_ollama_intern_8",
+    "clm_d16112dea1e0_ollama_intern_6",
+    "clm_d16112dea1e0_ollama_intern_10",
+    "clm_d16112dea1e0_ollama_intern_13",
+    "clm_d16112dea1e0_ollama_intern_9",
+    "clm_8d039f2c0ee8_ollama_intern_16",
+    "clm_8d039f2c0ee8_ollama_intern_17",
+    "clm_8d039f2c0ee8_ollama_intern_18",
+    "clm_25ac15171ff0_ollama_intern_2",
+    "clm_25ac15171ff0_ollama_intern_11",
+    "clm_517d67dc1224_ollama_intern_8",
+    "clm_517d67dc1224_ollama_intern_13",
+    "clm_d6c57c6845e6_ollama_intern_5",
+    "clm_d6c57c6845e6_ollama_intern_6",
+    "clm_37c1413248e9_ollama_intern_3",
+    "clm_37c1413248e9_ollama_intern_4",
+    "clm_0b01dd18d515_ollama_intern_9",
+    "clm_0b01dd18d515_ollama_intern_11",
+    "clm_2185c0910a10_ollama_intern_33"
+  ],
+  "uncited_accepted_claim_ids": [],
+  "unresolved_contradictions": [],
+  "waivers_disclosed": [
+    {
+      "family": "source_floor",
+      "applied_to": "01-token-surface-and-standards.min_independent_publishers",
+      "reason": "Section 01 defines XRPL token surfaces from canonical protocol sources.\nThe authoritative source of truth is intentionally concentrated in XRPL\nFoundation documentation, XLS standards, and rippled implementation/release\nrecords. Third-party publishers can explain or interpret these standards,\nbut they are not primary authorities for protocol semantics.\n",
+      "compensating_controls": [
+        "Sources span multiple canonical artifact types: xrpl.org docs, rendered XLS standards, raw standards markdown, rippled release data, and GitHub implementation discussions.",
+        "Claims remain span-grounded and reviewed individually.",
+        "Section synthesis must disclose the single-foundation source concentration.",
+        "Third-party sources may be added in later sections for adoption, marketplace, metadata, or operational interpretation, but are not required for protocol-definition truth."
+      ],
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "family": "source_floor",
+      "applied_to": "02-account-and-key-management.min_independent_publishers",
+      "reason": "Section 02 documents XRPL account and key management semantics —\nAccountRoot fields, master key disablement (lsfDisableMaster),\nregular key (SetRegularKey), signer-list-based multi-signing\n(SignerListSet), ticket-based authorization (TicketCreate), account\ndeletion (AccountDelete), and permission/delegation values. The\nauthoritative source of truth for these mechanics is intentionally\nconcentrated in XRPL Foundation documentation at xrpl.org and the\nrippled implementation. Whether SetRegularKey, SignerListSet,\nAccountDelete, or AccountSet behave a particular way is defined\nby the protocol-defining body; third-party explainers describe how\noperators consume these mechanics but cannot provide more\nauthoritative ground truth than xrpl.org's transaction-type and\nledger-entry-type references.\n",
+      "compensating_controls": [
+        "Sources span multiple canonical artifact types within the XRPL Foundation surface: xrpl.org account concept docs (Accounts overview, cryptographic-keys, multi-signing, tickets), xrpl.org transaction-type references (AccountSet, SetRegularKey, SignerListSet, AccountDelete, TicketCreate), xrpl.org ledger-entry-type references (AccountRoot, SignerList), permission-values data-type reference, and account_info JSON-RPC method documentation.",
+        "Supplementary GitHub Search API issues (XRPLF/rippled AccountDelete + NFT edge cases) are typed as forum (developer-discussion supplementary) and provide deletion-precondition edge-case evidence beyond what canonical docs surface; canonical claims still trace to xrpl.org first-party sources only.",
+        "Claims remain span-grounded and reviewed individually; per-claim source-quality findings continue to apply normally regardless of waiver. Wallet-UX claims (e.g., 'wallet provides signer UI') and ticket-as-key-recovery conflations are wallet-feature or category errors, not protocol claims, and per-claim findings should route them to scope_repair or rejection without the waiver covering for the mismatch.",
+        "Section synthesis must disclose the single-foundation source concentration explicitly, mirroring Section 01 and Section 03 discipline. Account and key semantics are protocol-level by definition; this is a structural property of XRPL's governance, not a source-curation gap.",
+        "Section 07 (metadata and off-chain durability) will NOT inherit this waiver: IPFS / Arweave / HTTP / marketplace-indexer publishers contribute genuinely independent evidence for metadata-layer questions, where the global publisher-diversity floor remains the correct guard."
+      ],
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "family": "source_floor",
+      "applied_to": "03-on-ledger-state-and-reserves.min_independent_publishers",
+      "reason": "Section 03 documents XRPL on-ledger state representations (NFTokenPage,\nMPTokenIssuance, RippleState, Offer, NFTokenOffer, AccountRoot) and the\nreserve mechanics (base + owner reserve) that govern account-level\ntoken storage. The authoritative source of truth for these ledger-entry\ntypes and the JSON-RPC methods that read them (account_objects,\nledger_entry, account_info) is intentionally concentrated in XRPL\nFoundation documentation at xrpl.org and the rippled implementation.\nThese artifacts define the on-ledger schema by construction; third-party\npublishers describe how operators consume them, but cannot provide\nauthoritative ground truth for the schema itself.\n",
+      "compensating_controls": [
+        "Sources span multiple canonical artifact types within the XRPL Foundation surface: xrpl.org ledger-entry-type reference pages (NFTokenPage, MPTokenIssuance, RippleState, Offer, NFTokenOffer, AccountRoot), xrpl.org reserve-concept documentation, xrpl.org JSON-RPC method documentation (account_objects, ledger_entry, account_info), and the ledger-entry-types index page.",
+        "Supplementary GitHub Search API issues from XRPLF/rippled are typed as forum (developer-discussion, not first-party canonical) and provide deletion-edge-case evidence; canonical claims trace to xrpl.org first-party sources only.",
+        "Claims remain span-grounded and reviewed individually; per-claim source-quality findings continue to apply normally regardless of waiver.",
+        "Section synthesis must disclose the single-foundation source concentration explicitly, mirroring Section 01's discipline. Each ledger-entry-type claim's authoritative basis is the protocol foundation's own definition; this is a structural property of XRPL's governance, not a source-curation gap.",
+        "Section 07 (metadata and off-chain durability) will NOT inherit this waiver: IPFS / Arweave / HTTP / marketplace-indexer publishers contribute genuinely independent evidence for metadata-layer questions, where the global publisher-diversity floor remains the correct guard."
+      ],
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "family": "source_floor",
+      "applied_to": "05-transfer-and-trade-mechanics.min_independent_publishers",
+      "reason": "Section 05 documents XRPL transfer and trade mechanics — direct\nNFToken offers (NFTokenCreateOffer / NFTokenAcceptOffer /\nNFTokenCancelOffer including brokered mode), fungible-token DEX\nmechanics (OfferCreate / OfferCancel), Payment (XRP and cross-\ncurrency with pathfinding), Escrow (EscrowCreate / EscrowFinish),\nand JSON-RPC introspection methods (nft_sell_offers, nft_buy_offers,\naccount_nfts, account_offers) plus the Offer and NFTokenOffer\nledger-entry types. The authoritative source of truth for how these\ntransactions and ledger objects behave — including the brokered\nNFTokenAcceptOffer pattern, cross-currency payment pathfinding, and\nescrow execution semantics — is intentionally concentrated in XRPL\nFoundation documentation at xrpl.org and the rippled implementation.\nThird-party explainers describe how operators consume these\nmechanisms but cannot provide more authoritative ground truth than\nthe protocol-defining body.\n",
+      "compensating_controls": [
+        "Sources span multiple canonical artifact types within the XRPL Foundation surface: xrpl.org transaction-type references (NFTokenCreateOffer, NFTokenAcceptOffer, NFTokenCancelOffer, OfferCreate, OfferCancel, Payment, EscrowCreate, EscrowFinish), xrpl.org concept docs (cross-currency-payments), xrpl.org JSON-RPC method references (nft_sell_offers, nft_buy_offers, account_nfts, account_offers), and xrpl.org ledger-entry-type references (Offer, NFTokenOffer).",
+        "Supplementary GitHub Search API issues (XRPLF/rippled NFT offer brokered edge cases) are typed as forum (developer-discussion supplementary); canonical claims still trace to xrpl.org first-party sources only.",
+        "Claims remain span-grounded and reviewed individually; per-claim findings continue to apply normally regardless of waiver. Specific scope discipline for this section: do NOT collapse NFT offer mechanics into fungible DEX OfferCreate (different transactions, different ledger-entry types, different state-machines); brokered NFTokenAcceptOffer must stay distinct from direct accept (most-misunderstood XRPL feature); cross-currency payments / pathfinding apply to fungible/payment flows NOT NFT transfer; escrow mechanics are NOT universal token custody (XRP + amendment-gated IOU/MPT, NFT escrow may be separate or absent); offer existence is NOT liquidity guarantee; transferability depends on flags + issuer controls + reserve/offer state from prior sections.",
+        "Section synthesis must disclose the single-foundation source concentration explicitly, mirroring Sections 01-04 discipline. Transfer and trade mechanics are protocol-level by definition; this is a structural property of XRPL's governance, not a source-curation gap. The synthesis contribution thesis for this section: a creator token is not durable just because it exists on-ledger — it must remain transferable under the token standard's offer/payment/escrow mechanics, and those mechanics differ sharply across NFTokens, trustline tokens, MPTs, and XRP paths.",
+        "Section 07 (metadata and off-chain durability) will NOT inherit this waiver: IPFS / Arweave / HTTP / marketplace-indexer publishers contribute genuinely independent evidence for metadata-layer questions, where the global publisher-diversity floor remains the correct guard."
+      ],
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    },
+    {
+      "family": "source_floor",
+      "applied_to": "06-amendment-and-validator-landscape.min_independent_publishers",
+      "reason": "Section 06 documents XRPL's amendment system and validator landscape\n— the meta-layer mechanism by which every other section's protocol\nbehavior can change. Topics include the 80% validator consensus\nthreshold, 2-week activation window, EnableAmendment pseudo-\ntransaction, specific amendments (XLS-20 non-fungible tokens,\nXLS-33 multi-purpose tokens, XLS-39 Clawback, DisallowIncoming,\nTokenEscrow, NFTokenModify), amendment deprecation paths, the\nAmendments ledger-entry, the FeeSettings ledger-entry, the\nNegativeUNL ledger-entry, validator distribution, and UNL\n(Unique Node List) operator configuration. The authoritative\nsource of truth for amendment-system mechanics, voting thresholds,\nand activation timelines is intentionally concentrated in XRPL\nFoundation documentation (xrpl.org concepts and references;\nxls.xrpl.org rendered standards) and the rippled implementation\n(release notes via api.github.com/repos/XRPLF/rippled/releases as\ncanonical release endpoint, Feature.cpp). Third-party explainers\ndescribe how operators consume these mechanisms but cannot provide\nmore authoritative ground truth than the protocol-defining body\nand the validator code that enforces consensus.\n",
+      "compensating_controls": [
+        "Sources span multiple canonical artifact types within the XRPL Foundation surface: xrpl.org concept docs (amendments, consensus-protocol, peer-protocol, /resources/known-amendments registry), xrpl.org pseudo-transaction-type reference (EnableAmendment), xrpl.org ledger-entry-type references (Amendments, FeeSettings, NegativeUNL), xrpl.org JSON-RPC method references (feature, server_info), xls.xrpl.org rendered XLS-0020 (NFTs) + XLS-0033 (MPTs) standards, and api.github.com/repos/XRPLF/rippled/releases as canonical release endpoint (typed primary, not forum).",
+        "Supplementary GitHub Search API issues (XRPLF/rippled amendment + majority + activation discussions) are typed as forum (developer-discussion supplementary); canonical claims still trace to xrpl.org / xls.xrpl.org / rippled-releases first-party sources only.",
+        "Claims remain span-grounded and reviewed individually; per-claim findings continue to apply normally regardless of waiver. Specific scope discipline for this section: amendment-state ≠ feature-availability (an amendment can be voting / majority-not-yet-activated / activated / obsoleted — distinct states); validator quorum is 80% (NOT simple majority) and 2-week window (NOT instant); per-amendment voting (NOT pack voting); XRPL amendment governance is unique (NO token-vote, NO on-chain governance proposals, NO DAO mechanisms — validator-driven via UNL); specific amendments have distinct identities (XLS-20 ≠ XLS-33 ≠ XLS-39, do NOT lump as 'NFT amendments' or 'token amendments'); validator distribution is NOT a stable global property (UNL is operator-configured).",
+        "Section synthesis must disclose the single-foundation source concentration explicitly, mirroring Sections 01-05 discipline. Amendment-system semantics are protocol-level by definition; this is a structural property of XRPL's governance, not a source-curation gap. The synthesis contribution thesis: XRPL token durability is amendment-state-dependent — the control plane must track amendment state per protocol concern (NFTs, MPTs, Clawback, TokenEscrow, DisallowIncoming) and per UNL configuration. Section 06's accepted claims will surface implicit dependencies in Sections 01-05's accepted claims (e.g., 'XLS-20 enabled NFTokens' cross-references Section 01's NFToken paradigm). The pack synthesis at freeze time must weave Section 06's amendment-state framework across all prior sections' mechanism claims.",
+        "Section 07 (metadata and off-chain durability) will NOT inherit this waiver: IPFS / Arweave / HTTP / marketplace-indexer publishers contribute genuinely independent evidence for metadata-layer questions, where the global publisher-diversity floor remains the correct guard."
+      ],
+      "disclosed_in": [
+        "synthesis/decision-brief.md",
+        "synthesis/final-report.md"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "01-token-surface-and-standards",
+      "status": "frozen",
+      "accepted_claims": 45,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "02-account-and-key-management",
+      "status": "frozen",
+      "accepted_claims": 32,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "03-on-ledger-state-and-reserves",
+      "status": "frozen",
+      "accepted_claims": 42,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "04-issuer-controls-and-immutability",
+      "status": "frozen",
+      "accepted_claims": 27,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "05-transfer-and-trade-mechanics",
+      "status": "frozen",
+      "accepted_claims": 30,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "06-amendment-and-validator-landscape",
+      "status": "frozen",
+      "accepted_claims": 56,
+      "sources": 0,
+      "contradictions": 0
+    },
+    {
+      "section_id": "07-metadata-and-off-chain-durability",
+      "status": "frozen",
+      "accepted_claims": 24,
+      "sources": 0,
+      "contradictions": 0
+    }
+  ],
+  "source_count": 80,
+  "claim_count": 243,
+  "contradiction_count": 0,
+  "review_finding_count": 0,
+  "gate_result_count": 7,
+  "integrity_checks": [
+    {
+      "name": "pack_audit_ready",
+      "passed": true,
+      "detail": "pack-audit verdict=ready_for_synthesis"
+    },
+    {
+      "name": "handoff_synthesis_ready",
+      "passed": true,
+      "detail": "cowork-handoff mode=synthesis_ready"
+    },
+    {
+      "name": "synthesis_workspace_present",
+      "passed": true,
+      "detail": "5/5 synthesis files hashed"
+    },
+    {
+      "name": "final_report_cites_accepted_claims_only",
+      "passed": true,
+      "detail": "84 citation(s); 0 unknown, 0 repair/rejected"
+    },
+    {
+      "name": "unresolved_contradictions_disclosed",
+      "passed": true,
+      "detail": "0 contradiction(s) checked"
+    },
+    {
+      "name": "waivers_disclosed",
+      "passed": true,
+      "detail": "5 waiver(s) checked"
+    },
+    {
+      "name": "canonical_artifacts_fingerprinted",
+      "passed": true,
+      "detail": "132 artifact(s) hashed"
+    }
+  ]
+}

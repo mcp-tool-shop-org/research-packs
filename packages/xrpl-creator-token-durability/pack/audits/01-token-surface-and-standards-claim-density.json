@@ -1,0 +1,161 @@
+{
+  "audit_id": "cda_1778322995852_01-token-surface-and-standards",
+  "section_id": "01-token-surface-and-standards",
+  "audited_at": "2026-05-09T10:36:35.852Z",
+  "research_os_version": "0.2.0",
+  "candidate_claim_count": 272,
+  "source_count": 9,
+  "total_source_word_count": 232151,
+  "claims_per_1k_words": 1.1716512097729495,
+  "weak_scope_count": 0,
+  "generic_scope_count": 41,
+  "per_source": [
+    {
+      "source_id": "src_89d29fa8978f",
+      "publisher": null,
+      "source_word_count": 4801,
+      "claim_count": 84,
+      "claims_per_1k_words": 17.49635492605707,
+      "share_of_section": 0.3088235294117647,
+      "weak_scope_count": 0,
+      "generic_scope_count": 12
+    },
+    {
+      "source_id": "src_c3f060147acd",
+      "publisher": null,
+      "source_word_count": 7185,
+      "claim_count": 62,
+      "claims_per_1k_words": 8.629088378566458,
+      "share_of_section": 0.22794117647058823,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_62cf595f3835",
+      "publisher": null,
+      "source_word_count": 17750,
+      "claim_count": 39,
+      "claims_per_1k_words": 2.197183098591549,
+      "share_of_section": 0.14338235294117646,
+      "weak_scope_count": 0,
+      "generic_scope_count": 20
+    },
+    {
+      "source_id": "src_d16112dea1e0",
+      "publisher": null,
+      "source_word_count": 16818,
+      "claim_count": 37,
+      "claims_per_1k_words": 2.200023784040909,
+      "share_of_section": 0.13602941176470587,
+      "weak_scope_count": 0,
+      "generic_scope_count": 5
+    },
+    {
+      "source_id": "src_0255a2aac931",
+      "publisher": null,
+      "source_word_count": 48551,
+      "claim_count": 22,
+      "claims_per_1k_words": 0.4531317583571914,
+      "share_of_section": 0.08088235294117647,
+      "weak_scope_count": 0,
+      "generic_scope_count": 4
+    },
+    {
+      "source_id": "src_5229d8bd314e",
+      "publisher": "XRP Ledger Foundation",
+      "source_word_count": 45405,
+      "claim_count": 9,
+      "claims_per_1k_words": 0.19821605550049554,
+      "share_of_section": 0.03308823529411765,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_f0063f109b4a",
+      "publisher": null,
+      "source_word_count": 45195,
+      "claim_count": 9,
+      "claims_per_1k_words": 0.19913707268503153,
+      "share_of_section": 0.03308823529411765,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_ec3eb93321a7",
+      "publisher": null,
+      "source_word_count": 44562,
+      "claim_count": 6,
+      "claims_per_1k_words": 0.13464386697185943,
+      "share_of_section": 0.022058823529411766,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_d2fef4cddfd7",
+      "publisher": null,
+      "source_word_count": 1884,
+      "claim_count": 4,
+      "claims_per_1k_words": 2.1231422505307855,
+      "share_of_section": 0.014705882352941176,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    }
+  ],
+  "near_duplicate_clusters": [],
+  "flags": [
+    {
+      "type": "source_dominance",
+      "severity": "block",
+      "message": "Source src_89d29fa8978f contributes 84 of 272 claims (31% of section).",
+      "affects_source_ids": [
+        "src_89d29fa8978f"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "block",
+      "message": "Source src_c3f060147acd contributes 62 of 272 claims (23% of section).",
+      "affects_source_ids": [
+        "src_c3f060147acd"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_62cf595f3835 contributes 39 of 272 claims (14% of section).",
+      "affects_source_ids": [
+        "src_62cf595f3835"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_d16112dea1e0 contributes 37 of 272 claims (14% of section).",
+      "affects_source_ids": [
+        "src_d16112dea1e0"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_89d29fa8978f has 17.5 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_89d29fa8978f"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_c3f060147acd has 8.6 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_c3f060147acd"
+      ],
+      "affects_claim_ids": []
+    }
+  ]
+}

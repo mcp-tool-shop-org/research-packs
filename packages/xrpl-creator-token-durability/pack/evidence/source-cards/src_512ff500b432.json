@@ -1,0 +1,28 @@
+{
+  "source_id": "src_512ff500b432",
+  "receipt_id": "rcpt_512ff500b432_1778360647719",
+  "section_id": "06-amendment-and-validator-landscape",
+  "url": "https://xls.xrpl.org/xls/XLS-0033-multi-purpose-tokens.html",
+  "final_url": "https://xls.xrpl.org/xls/XLS-0033-multi-purpose-tokens.html",
+  "fetched_at": "2026-05-09T21:04:07.719Z",
+  "publisher": "XRPL.org",
+  "published_at": null,
+  "title": "XLS-0033: Multi-Purpose Tokens (MPTs)",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "Introduces extensions to the XRP Ledger to support a more multi-purpose token type as an alternative to trust lines",
+    "Multi-Purpose Tokens (MPTs) function more like a unidirectional trust line with only one balance, making it simpler to support common tokenization requirements",
+    "MPTs require significantly less space than trust lines: ~52 bytes for each MPT held by a token holder, as compared to at least 234 bytes for every new trust line"
+  ],
+  "limitations": [
+    "Introduces a third asset type on the ledger after XRP and IOUs, which complicates the Payment Engine implementation",
+    "New transaction and data types require new implementation code from client libraries and wallets to read, display, and transact",
+    "MPTs will represent a smaller overall balance amount as compared to trust lines (Trustlines can represent an enormous range, roughly between 10^-96 to 10^80)"
+  ],
+  "asserts": "This proposal introduces extensions to the XRP Ledger to support a more multi-purpose token type as an alternative to trust lines",
+  "scope": "The scope of this specification is limited to introducing MPTokenIssuance and MPToken objects for representing MPT issuances and holdings, respectively. Later amendments will integrate MPTs with other features of the XRPL such as the DEX.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T21:04:50.732Z"
+}

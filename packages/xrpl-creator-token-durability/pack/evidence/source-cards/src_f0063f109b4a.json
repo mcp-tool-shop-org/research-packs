@@ -1,0 +1,23 @@
+{
+  "source_id": "src_f0063f109b4a",
+  "receipt_id": "rcpt_f0063f109b4a_1778321537029",
+  "section_id": "01-token-surface-and-standards",
+  "url": "https://xrpl.org/docs/concepts/tokens",
+  "final_url": "https://xrpl.org/docs/concepts/tokens",
+  "fetched_at": "2026-05-09T10:12:17.029Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Tokens",
+  "source_type": "primary",
+  "relevance": "medium",
+  "key_points": [
+    "XRP Ledger supports native issuance of tokens.",
+    "Tokens can be traded on the XRPL and held in accounts."
+  ],
+  "limitations": [],
+  "asserts": "The XRP Ledger natively supports issuance, trading, and holding of tokens.",
+  "scope": "Within the XRP Ledger system.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T10:12:54.939Z"
+}

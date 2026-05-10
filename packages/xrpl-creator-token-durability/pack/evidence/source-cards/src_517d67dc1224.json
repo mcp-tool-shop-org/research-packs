@@ -1,0 +1,28 @@
+{
+  "source_id": "src_517d67dc1224",
+  "receipt_id": "rcpt_517d67dc1224_1778364189628",
+  "section_id": "07-metadata-and-off-chain-durability",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/types/nftokenmint",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/types/nftokenmint",
+  "fetched_at": "2026-05-09T22:03:09.628Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "NFTokenMint",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "Describes the NFTokenMint transaction type in XRPL",
+    "NFTokenMint allows for minting of non-fungible tokens on XRPL",
+    "Provides example code and parameters for using the NFTokenMint transaction type"
+  ],
+  "limitations": [
+    "Focuses specifically on the XRPL protocol, may not apply to other blockchains or systems",
+    "Assumes basic knowledge of XRPL transactions and token minting concepts",
+    "Lacks details on potential limitations or edge cases for the NFTokenMint functionality"
+  ],
+  "asserts": "The NFTokenMint transaction type allows for the minting of non-fungible tokens on the XRPL blockchain.",
+  "scope": "Describes how to use the NFTokenMint transaction type within the XRPL protocol to mint new non-fungible tokens.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T22:03:42.121Z"
+}

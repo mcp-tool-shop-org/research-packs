@@ -1,0 +1,26 @@
+{
+  "source_id": "src_71ee1ec187f7",
+  "receipt_id": "rcpt_71ee1ec187f7_1778357387564",
+  "section_id": "05-transfer-and-trade-mechanics",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/types/nftokencreateoffer",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/types/nftokencreateoffer",
+  "fetched_at": "2026-05-09T20:09:47.564Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "NFTokenCreateOffer",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The NFTokenCreateOffer transaction type allows an account to create a new NFT offer.",
+    "The transaction requires a 'TransactionType' field with value 6 (NFTokenCreateOffer).",
+    "Fields include the seller account, NFT offer details, and any additional metadata."
+  ],
+  "limitations": [
+    "Scope is limited to the NFTokenCreateOffer transaction type within the XRPL protocol documentation."
+  ],
+  "asserts": "The source claims that the NFTokenCreateOffer transaction enables an account to create a new non-fungible token offer on the XRPL blockchain.",
+  "scope": "The scope of this assertion is the context of creating and specifying non-fungible token offers using the NFTokenCreateOffer transaction type in the XRPL protocol.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T20:10:24.889Z"
+}

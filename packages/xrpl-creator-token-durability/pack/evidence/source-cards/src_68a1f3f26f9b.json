@@ -1,0 +1,30 @@
+{
+  "source_id": "src_68a1f3f26f9b",
+  "receipt_id": "rcpt_68a1f3f26f9b_1778352380361",
+  "section_id": "02-account-and-key-management",
+  "url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/signerlist",
+  "final_url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/signerlist",
+  "fetched_at": "2026-05-09T18:46:20.361Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "SignerList",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "SignerList is a ledger transaction type that represents the list of accounts designated as signers for a trust line or account.",
+    "It contains an array of Account ID objects, each representing a signer account.",
+    "The SignerList allows for multiple accounts to be designated as signers on a trust line or account.",
+    "When the SignerList is modified, a SignerListSet transaction is created on the ledger.",
+    "The SignerList can only be modified by accounts that have control over the trust line or account."
+  ],
+  "limitations": [
+    "The information provided is specific to the XRP Ledger and may not apply to other blockchain systems or digital currencies.",
+    "The documentation assumes familiarity with concepts related to the XRP Ledger, such as trust lines and accounts.",
+    "The effectiveness of using SignerList may depend on the proper setup and maintenance of trust lines and accounts within the XRP Ledger."
+  ],
+  "asserts": "SignerList is a crucial ledger transaction type in the XRP Ledger that enables multiple accounts to be designated as signers for a trust line or account, ensuring secure control and modifications.",
+  "scope": "The scope of this documentation is to provide information on how SignerList works within the context of the XRP Ledger, focusing on its role in managing trust lines and accounts.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:47:01.536Z"
+}

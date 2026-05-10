@@ -1,0 +1,26 @@
+{
+  "source_id": "src_0255a2aac931",
+  "receipt_id": "rcpt_0255a2aac931_1778321657738",
+  "section_id": "01-token-surface-and-standards",
+  "url": "https://xrpl.org/docs/concepts/tokens/fungible-tokens/multi-purpose-tokens",
+  "final_url": "https://xrpl.org/docs/concepts/tokens/fungible-tokens/multi-purpose-tokens",
+  "fetched_at": "2026-05-09T10:14:17.738Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Multi-Purpose Tokens",
+  "source_type": "primary",
+  "relevance": "medium",
+  "key_points": [
+    "Multi-purpose tokens are a type of fungible token that can represent various assets or rights.",
+    "They are created by issuing a new class of tokens on the ledger.",
+    "The issuer has control over the lifecycle and properties of multi-purpose tokens."
+  ],
+  "limitations": [
+    "This document does not discuss the recency or usage statistics of these tokens."
+  ],
+  "asserts": "Multi-purpose tokens are flexible, user-defined assets issued on the XRP Ledger.",
+  "scope": "XRP Ledger",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T10:14:54.854Z"
+}

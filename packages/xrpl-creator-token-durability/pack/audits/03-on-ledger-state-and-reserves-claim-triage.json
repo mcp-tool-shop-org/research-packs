@@ -1,0 +1,83 @@
+{
+  "summary_id": "tris_1778351084892_03-on-ledger-state-and-reserves",
+  "section_id": "03-on-ledger-state-and-reserves",
+  "triaged_at": "2026-05-09T18:24:44.892Z",
+  "research_os_version": "0.3.1",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 197,
+  "decisions": {
+    "needs_scope_repair": 128,
+    "selected_for_review": 55,
+    "parked_weak_scope": 14
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 55,
+  "selected_per_source": [
+    {
+      "source_id": "src_9c84764fa541",
+      "selected": 9,
+      "total": 37
+    },
+    {
+      "source_id": "src_006880d4c42c",
+      "selected": 9,
+      "total": 31
+    },
+    {
+      "source_id": "src_5f4e84349ec5",
+      "selected": 4,
+      "total": 18
+    },
+    {
+      "source_id": "src_9505395adfe8",
+      "selected": 3,
+      "total": 18
+    },
+    {
+      "source_id": "src_f011b0207e63",
+      "selected": 4,
+      "total": 16
+    },
+    {
+      "source_id": "src_90368c8bfc17",
+      "selected": 2,
+      "total": 12
+    },
+    {
+      "source_id": "src_ec68826269c9",
+      "selected": 7,
+      "total": 12
+    },
+    {
+      "source_id": "src_525532c48160",
+      "selected": 3,
+      "total": 10
+    },
+    {
+      "source_id": "src_72d8a212a86a",
+      "selected": 2,
+      "total": 10
+    },
+    {
+      "source_id": "src_051630391070",
+      "selected": 4,
+      "total": 9
+    },
+    {
+      "source_id": "src_48fddb8ee3b6",
+      "selected": 3,
+      "total": 8
+    },
+    {
+      "source_id": "src_bc7eaa08f673",
+      "selected": 4,
+      "total": 8
+    },
+    {
+      "source_id": "src_a101a2ec3e2c",
+      "selected": 1,
+      "total": 8
+    }
+  ]
+}

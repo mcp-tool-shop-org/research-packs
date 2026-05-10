@@ -1,0 +1,26 @@
+{
+  "source_id": "src_25ac15171ff0",
+  "receipt_id": "rcpt_25ac15171ff0_1778360598970",
+  "section_id": "06-amendment-and-validator-landscape",
+  "url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/server-info-methods/server_info",
+  "final_url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/server-info-methods/server_info",
+  "fetched_at": "2026-05-09T21:03:18.970Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "server_info (rippled)",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The server_info method returns information about the server.",
+    "It provides details such as the server's domain, trusted certificates, and other relevant data.",
+    "The method is part of the public API methods available in rippled."
+  ],
+  "limitations": [
+    "The documentation does not specify all possible scenarios or edge cases for using this method."
+  ],
+  "asserts": "The server_info method in ripled allows clients to retrieve key information about the server.",
+  "scope": "This method's scope is limited to the functionality and purpose of the server_info method within the rippled system.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T21:03:43.311Z"
+}

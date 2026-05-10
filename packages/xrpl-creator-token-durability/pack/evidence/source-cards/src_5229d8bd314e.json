@@ -1,0 +1,27 @@
+{
+  "source_id": "src_5229d8bd314e",
+  "receipt_id": "rcpt_5229d8bd314e_1778321575284",
+  "section_id": "01-token-surface-and-standards",
+  "url": "https://xrpl.org/docs/concepts/tokens/fungible-tokens",
+  "final_url": "https://xrpl.org/docs/concepts/tokens/fungible-tokens",
+  "fetched_at": "2026-05-09T10:12:55.284Z",
+  "publisher": "XRP Ledger Foundation",
+  "published_at": null,
+  "title": "Fungible Tokens",
+  "source_type": "primary",
+  "relevance": "medium",
+  "key_points": [
+    "Fungible tokens are interchangeable.",
+    "They have no unique properties or restrictions on transfer.",
+    "Each token is indistinguishable from another token of the same type.",
+    "Example: XRP"
+  ],
+  "limitations": [
+    "This page provides conceptual understanding, not detailed implementation guide."
+  ],
+  "asserts": "Fungible tokens in XRP Ledger are interchangeable and can be transferred freely.",
+  "scope": "XRP Ledger",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T10:13:29.192Z"
+}

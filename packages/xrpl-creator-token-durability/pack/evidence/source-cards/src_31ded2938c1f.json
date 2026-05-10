@@ -1,0 +1,26 @@
+{
+  "source_id": "src_31ded2938c1f",
+  "receipt_id": "rcpt_31ded2938c1f_1778352474081",
+  "section_id": "02-account-and-key-management",
+  "url": "https://api.github.com/search/issues?q=repo:XRPLF/rippled+AccountDelete+NFT+OR+NFToken&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:XRPLF/rippled+AccountDelete+NFT+OR+NFToken&per_page=20",
+  "fetched_at": "2026-05-09T18:47:54.081Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "NFTokenBurn::preclaim should explicitly reject burn when issuer account SLE is absent",
+  "source_type": "forum",
+  "relevance": "high",
+  "key_points": [
+    "In NFTokenBurn::preclaim, the permission check silently falls through to tesSUCCESS if the issuer's account has been deleted (SLE is null).",
+    "The defensive fix is trivial: return tecNO_PERMISSION (or tecINTERNAL) when sle is null.",
+    "No exploit is possible as AccountDelete::preclaim blocks deletion when sfMintedNFTokens != sfBurnedNFTokens."
+  ],
+  "limitations": [
+    "Only applicable to the NFTokenBurn::preclaim function."
+  ],
+  "asserts": "The source claims that in NFTokenBurn::preclaim, when a non-owner attempts to burn a burnable NFT and the issuer's account has been deleted (SLE is null), the permission check should explicitly reject the transaction.",
+  "scope": "The scope of this assertion is limited to the NFTokenBurn::preclaim function within the NFTokenBurn.cpp source file in the libxrpl/tx/transactors/nft directory of the XRPLF/rippled repository.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:48:28.673Z"
+}

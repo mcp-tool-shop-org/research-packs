@@ -1,0 +1,165 @@
+{
+  "audit_id": "cda_1778355813559_04-issuer-controls-and-immutability",
+  "section_id": "04-issuer-controls-and-immutability",
+  "audited_at": "2026-05-09T19:43:33.559Z",
+  "research_os_version": "0.3.1",
+  "candidate_claim_count": 170,
+  "source_count": 13,
+  "total_source_word_count": 537640,
+  "claims_per_1k_words": 0.3161967115541998,
+  "weak_scope_count": 10,
+  "generic_scope_count": 15,
+  "per_source": [
+    {
+      "source_id": "src_12ac7f4c315b",
+      "publisher": null,
+      "source_word_count": 12994,
+      "claim_count": 41,
+      "claims_per_1k_words": 3.1553024472833613,
+      "share_of_section": 0.2411764705882353,
+      "weak_scope_count": 5,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_097142ab08d3",
+      "publisher": null,
+      "source_word_count": 49112,
+      "claim_count": 21,
+      "claims_per_1k_words": 0.42759407069555305,
+      "share_of_section": 0.12352941176470589,
+      "weak_scope_count": 0,
+      "generic_scope_count": 11
+    },
+    {
+      "source_id": "src_9505395adfe8",
+      "publisher": null,
+      "source_word_count": 48324,
+      "claim_count": 21,
+      "claims_per_1k_words": 0.4345666749441271,
+      "share_of_section": 0.12352941176470589,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_eae6b2d1d42d",
+      "publisher": null,
+      "source_word_count": 1401,
+      "claim_count": 15,
+      "claims_per_1k_words": 10.70663811563169,
+      "share_of_section": 0.08823529411764706,
+      "weak_scope_count": 0,
+      "generic_scope_count": 3
+    },
+    {
+      "source_id": "src_517d67dc1224",
+      "publisher": null,
+      "source_word_count": 48022,
+      "claim_count": 11,
+      "claims_per_1k_words": 0.22906168006330432,
+      "share_of_section": 0.06470588235294118,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_90368c8bfc17",
+      "publisher": null,
+      "source_word_count": 48035,
+      "claim_count": 11,
+      "claims_per_1k_words": 0.22899968772769855,
+      "share_of_section": 0.06470588235294118,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_d0882a19791f",
+      "publisher": null,
+      "source_word_count": 47755,
+      "claim_count": 9,
+      "claims_per_1k_words": 0.18846194115799392,
+      "share_of_section": 0.052941176470588235,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_319355bfb19d",
+      "publisher": null,
+      "source_word_count": 46258,
+      "claim_count": 8,
+      "claims_per_1k_words": 0.17294305849798955,
+      "share_of_section": 0.047058823529411764,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_92f5c74d9bda",
+      "publisher": null,
+      "source_word_count": 47330,
+      "claim_count": 8,
+      "claims_per_1k_words": 0.1690259877456159,
+      "share_of_section": 0.047058823529411764,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_e98d1069b3a8",
+      "publisher": null,
+      "source_word_count": 47325,
+      "claim_count": 8,
+      "claims_per_1k_words": 0.16904384574749073,
+      "share_of_section": 0.047058823529411764,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_4727592a5328",
+      "publisher": null,
+      "source_word_count": 47063,
+      "claim_count": 6,
+      "claims_per_1k_words": 0.1274886853791726,
+      "share_of_section": 0.03529411764705882,
+      "weak_scope_count": 0,
+      "generic_scope_count": 1
+    },
+    {
+      "source_id": "src_ff9fbb4f8527",
+      "publisher": null,
+      "source_word_count": 47046,
+      "claim_count": 6,
+      "claims_per_1k_words": 0.12753475322025254,
+      "share_of_section": 0.03529411764705882,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_0654c94c7a98",
+      "publisher": null,
+      "source_word_count": 46975,
+      "claim_count": 5,
+      "claims_per_1k_words": 0.10643959552953698,
+      "share_of_section": 0.029411764705882353,
+      "weak_scope_count": 5,
+      "generic_scope_count": 0
+    }
+  ],
+  "near_duplicate_clusters": [],
+  "flags": [
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_12ac7f4c315b contributes 41 of 170 claims (24% of section).",
+      "affects_source_ids": [
+        "src_12ac7f4c315b"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_eae6b2d1d42d has 10.7 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_eae6b2d1d42d"
+      ],
+      "affects_claim_ids": []
+    }
+  ]
+}

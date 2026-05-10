@@ -1,0 +1,26 @@
+{
+  "source_id": "src_c8f7530cb4f1",
+  "receipt_id": "rcpt_c8f7530cb4f1_1778357454418",
+  "section_id": "05-transfer-and-trade-mechanics",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/types/nftokencanceloffer",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/types/nftokencanceloffer",
+  "fetched_at": "2026-05-09T20:10:54.418Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "NFTokenCancelOffer",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The NFTokenCancelOffer transaction type allows an NFT holder to cancel a previously issued offer.",
+    "It requires the sender's account to have sufficient XRP and the correct NFSellerFlag set to use this functionality.",
+    "When an offer is canceled, any associated payments are also canceled and returned to their original states."
+  ],
+  "limitations": [
+    "The documentation provides high-level information but does not cover all possible edge cases or implementation details."
+  ],
+  "asserts": "The NFTokenCancelOffer transaction enables NFT holders to cancel previously issued offers, effectively undoing the associated payments.",
+  "scope": "Describes how the NFTokenCancelOffer transaction allows cancellation of NFT offer transactions and the consequences on linked payments.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T20:11:21.715Z"
+}

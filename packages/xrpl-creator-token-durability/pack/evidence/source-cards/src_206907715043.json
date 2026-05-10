@@ -1,0 +1,27 @@
+{
+  "source_id": "src_206907715043",
+  "receipt_id": "rcpt_206907715043_1778352421542",
+  "section_id": "02-account-and-key-management",
+  "url": "https://xrpl.org/docs/references/protocol/data-types/permission-values",
+  "final_url": "https://xrpl.org/docs/references/protocol/data-types/permission-values",
+  "fetched_at": "2026-05-09T18:47:01.542Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Permission Values",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The XRPL protocol supports permission levels from 0 to 255.",
+    "Permissions allow for granular control over account permissions and trustlines.",
+    "Different permission values are used for different actions, such as managing account settings or signing transactions."
+  ],
+  "limitations": [
+    "This documentation assumes familiarity with the XRPL protocol and its concepts.",
+    "The scope of permission values is limited to the XRPL context and may not apply universally outside this ecosystem."
+  ],
+  "asserts": "Permissions in the XRPL protocol allow for fine-grained control over account permissions and trustlines, with values ranging from 0 to 255.",
+  "scope": "Describes permission levels in the context of the XRPL (XRP Ledger) protocol",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:47:29.117Z"
+}

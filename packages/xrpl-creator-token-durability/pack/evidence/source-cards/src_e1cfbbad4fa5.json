@@ -1,0 +1,28 @@
+{
+  "source_id": "src_e1cfbbad4fa5",
+  "receipt_id": "rcpt_e1cfbbad4fa5_1778357642144",
+  "section_id": "05-transfer-and-trade-mechanics",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/types/escrowfinish",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/types/escrowfinish",
+  "fetched_at": "2026-05-09T20:14:02.144Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "EscrowFinish",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The EscrowFinish transaction type is used to finalize an escrowed payment.",
+    "It requires the public key of the account that will receive the funds, and the payment amount.",
+    "If the conditions are met, the funds are released from escrow to the receiver's account."
+  ],
+  "limitations": [
+    "The documentation does not cover all possible edge cases or error handling.",
+    "It assumes familiarity with XRPL concepts and terminology.",
+    "The scope is limited to the standard behavior of an EscrowFinish transaction in a typical use case."
+  ],
+  "asserts": "When all conditions are met, an EscrowFinish transaction releases escrowed funds from the payer's account to the receiver's account on the XRPL ledger.",
+  "scope": "This section asserts what happens when an EscrowFinish transaction is issued under normal circumstances, without covering edge cases or error handling.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T20:14:33.698Z"
+}

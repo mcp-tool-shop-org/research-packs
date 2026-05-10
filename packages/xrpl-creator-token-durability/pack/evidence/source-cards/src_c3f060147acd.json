@@ -1,0 +1,27 @@
+{
+  "source_id": "src_c3f060147acd",
+  "receipt_id": "rcpt_c3f060147acd_1778321695190",
+  "section_id": "01-token-surface-and-standards",
+  "url": "https://raw.githubusercontent.com/XRPLF/XRPL-Standards/master/XLS-0020-non-fungible-tokens/README.md",
+  "final_url": "https://raw.githubusercontent.com/XRPLF/XRPL-Standards/master/XLS-0020-non-fungible-tokens/README.md",
+  "fetched_at": "2026-05-09T10:14:55.190Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Non-Fungible Token Support",
+  "source_type": "primary",
+  "relevance": "medium",
+  "key_points": [
+    "Proposes extensions to support native non-fungible tokens on XRP Ledger",
+    "Introduces new objects and ledger structures: NFToken, NFTokenOffer, NFTokenPage",
+    "NFTs are indivisible, unique, and not used for payments"
+  ],
+  "limitations": [
+    "Requires an amendment to the XRP Ledger protocol",
+    "New transaction types require client library implementation"
+  ],
+  "asserts": "This proposal introduces extensions to support a native non-fungible token type with operations to enumerate, purchase, sell and hold such tokens on the XRP Ledger.",
+  "scope": "XRP Ledger protocol",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T10:15:33.824Z"
+}

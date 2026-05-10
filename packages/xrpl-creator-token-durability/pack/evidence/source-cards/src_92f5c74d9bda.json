@@ -1,0 +1,26 @@
+{
+  "source_id": "src_92f5c74d9bda",
+  "receipt_id": "rcpt_92f5c74d9bda_1778354640851",
+  "section_id": "04-issuer-controls-and-immutability",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/types/mptokenissuanceset",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/types/mptokenissuanceset",
+  "fetched_at": "2026-05-09T19:24:00.851Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "MPTokenIssuanceSet",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The MPTokenIssuanceSet transaction is used to manage MP tokens.",
+    "It allows for setting a new value, checking the current value, and resetting the value of an MP token.",
+    "The account that issued the MP token can modify its parameters."
+  ],
+  "limitations": [
+    "This documentation may not cover all possible use cases or edge cases for the MPTokenIssuanceSet transaction."
+  ],
+  "asserts": "The MPTokenIssuanceSet transaction enables management of MP tokens by setting, checking, and resetting their values.",
+  "scope": "Describes the functionality and usage of the MPTokenIssuanceSet transaction in the XRP Ledger protocol.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T19:24:27.803Z"
+}

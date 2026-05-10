@@ -1,0 +1,26 @@
+{
+  "source_id": "src_9c84764fa541",
+  "receipt_id": "rcpt_9c84764fa541_1778349833794",
+  "section_id": "03-on-ledger-state-and-reserves",
+  "url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/ledger-methods/ledger_entry",
+  "final_url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/ledger-methods/ledger_entry",
+  "fetched_at": "2026-05-09T18:03:53.794Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "ledger_entry",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The ledger_entry method retrieves a specific ledger entry from the XRP Ledger.",
+    "It takes the hash of the transaction or the index of the entry as input.",
+    "The method returns detailed information about the specified ledger entry."
+  ],
+  "limitations": [
+    "Requires knowledge of the XRP Ledger's internal mechanisms and data structures."
+  ],
+  "asserts": "The ledger_entry public API method allows retrieving detailed information about a specific transaction or ledger entry in the XRP Ledger.",
+  "scope": "Describes the functionality and usage of the ledger_entry method within the context of the XRP Ledger's public API.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:04:17.644Z"
+}
