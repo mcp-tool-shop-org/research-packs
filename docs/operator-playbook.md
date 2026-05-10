@@ -234,6 +234,41 @@ When a section has more than 100 unresolved contradictions after `contradict map
 
 ---
 
+## Gate-semantics clarity (research-os ≥ v0.3.3)
+
+Two gate-semantics improvements shipped in v0.3.3, earned by Pack-3 (Godot export/runtime durability, Experiment 3 pack #3 of 3).
+
+### F-43: Reading gate output — pack-wide vs section-scoped source-floor counts
+
+The `min_independent_publishers` and `primary_sources_required` source-floor checks evaluate **pack-wide**: the pass/fail decision uses the full source set accumulated across every section run so far, not just sources from the current section.
+
+From v0.3.3, gate output carries both views explicitly in the detail string:
+
+```
+min_independent_publishers: PASS (pack-wide=8, section-scoped=1; threshold=4)
+```
+
+The threshold check uses the **pack-wide** count. The **section-scoped** count is diagnostic: it shows how many publishers this specific section contributed locally.
+
+*Gate pass/fail behavior is unchanged. v0.3.3 makes the source-floor evidence legible by reporting both pack-wide and section-scoped counts.*
+
+**Why this matters for section-scoped waivers.** A section may need a waiver when it runs early, before the pack-wide source set has accumulated enough independent publishers — even if the section itself contains only canonical-protocol content. The same section, run later (after other sections have added diverse publishers), may pass with 0 waivers. Both outcomes are correct under pack-wide semantics. Pack-3 Sessions 4–7 (Godot pack) surfaced this directly: five sections of identical single-publisher canonical-engine shape received different waiver outcomes purely based on run-order. The v0.3.3 diagnostic makes the reason visible without changing any pass/fail behavior.
+
+### F-41: `no_source_cluster_monopoly` is informational, not a warning
+
+From v0.3.3, the `no_source_cluster_monopoly` check emits an informational `pass` rather than a `warn` when claims are single-source:
+
+```
+no_source_cluster_monopoly: PASS (12/12 claims are single-source by architecture —
+publisher diversity enforced at source-card level via min_independent_publishers)
+```
+
+*Because research-os claims are usually grounded to one source span, single-source claim attribution is expected. Source diversity should be judged from the section/pack source floor, not from a per-claim "monopoly" warning.*
+
+The check is preserved (not removed) — it stays visible in gate output. It no longer inflates the section's warning count.
+
+---
+
 ## Pack publish admission accounting (research-os ≥ v0.3.2)
 
 `pack publish` derives the per-section `accepted_claims` count from the **effective accepted set** — unique `claim_id`s whose latest canonical review decision is `accepted_for_synthesis`. Latest-decision-wins precedence per `claim_id`. This is the single canonical "accepted claims" definition that every consumer of the closure ledger uses.
