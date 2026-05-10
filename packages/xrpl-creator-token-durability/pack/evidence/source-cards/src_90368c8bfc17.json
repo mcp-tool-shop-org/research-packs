@@ -1,0 +1,27 @@
+{
+  "source_id": "src_90368c8bfc17",
+  "receipt_id": "rcpt_90368c8bfc17_1778354668162",
+  "section_id": "04-issuer-controls-and-immutability",
+  "url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/mptokenissuance",
+  "final_url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/mptokenissuance",
+  "fetched_at": "2026-05-09T19:24:28.162Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "MPTokenIssuance",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The MPTokenIssuance ledger entry type allows issuing new tokens.",
+    "It requires a secret (seed) to be specified and a flags parameter.",
+    "The token issuance transaction specifies the account to issue the tokens to.",
+    "Issued tokens are added to the destination account's balance."
+  ],
+  "limitations": [
+    "Does not cover all possible use cases or variations of the feature."
+  ],
+  "asserts": "MPTokenIssuance is a ledger entry type used for issuing new tokens by specifying a destination account and using a secret.",
+  "scope": "Describes how to issue new tokens using the MPTokenIssuance entry type in the XRP Ledger protocol.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T19:24:55.183Z"
+}

@@ -1,0 +1,156 @@
+{
+  "audit_id": "cda_1778353330735_02-account-and-key-management",
+  "section_id": "02-account-and-key-management",
+  "audited_at": "2026-05-09T19:02:10.735Z",
+  "research_os_version": "0.3.1",
+  "candidate_claim_count": 173,
+  "source_count": 14,
+  "total_source_word_count": 625884,
+  "claims_per_1k_words": 0.2764090470438612,
+  "weak_scope_count": 2,
+  "generic_scope_count": 6,
+  "per_source": [
+    {
+      "source_id": "src_117260e9e17f",
+      "publisher": null,
+      "source_word_count": 50049,
+      "claim_count": 25,
+      "claims_per_1k_words": 0.4995104797298648,
+      "share_of_section": 0.14450867052023122,
+      "weak_scope_count": 0,
+      "generic_scope_count": 1
+    },
+    {
+      "source_id": "src_31ded2938c1f",
+      "publisher": null,
+      "source_word_count": 13262,
+      "claim_count": 23,
+      "claims_per_1k_words": 1.7342783893832001,
+      "share_of_section": 0.1329479768786127,
+      "weak_scope_count": 0,
+      "generic_scope_count": 1
+    },
+    {
+      "source_id": "src_9505395adfe8",
+      "publisher": null,
+      "source_word_count": 48324,
+      "claim_count": 21,
+      "claims_per_1k_words": 0.4345666749441271,
+      "share_of_section": 0.12138728323699421,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_097142ab08d3",
+      "publisher": null,
+      "source_word_count": 49112,
+      "claim_count": 20,
+      "claims_per_1k_words": 0.40723244828147903,
+      "share_of_section": 0.11560693641618497,
+      "weak_scope_count": 0,
+      "generic_scope_count": 1
+    },
+    {
+      "source_id": "src_ec68826269c9",
+      "publisher": null,
+      "source_word_count": 48384,
+      "claim_count": 13,
+      "claims_per_1k_words": 0.26868386243386244,
+      "share_of_section": 0.07514450867052024,
+      "weak_scope_count": 2,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_13f7e950b494",
+      "publisher": null,
+      "source_word_count": 45089,
+      "claim_count": 11,
+      "claims_per_1k_words": 0.2439619419370578,
+      "share_of_section": 0.06358381502890173,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_206907715043",
+      "publisher": null,
+      "source_word_count": 45689,
+      "claim_count": 10,
+      "claims_per_1k_words": 0.21887106305675327,
+      "share_of_section": 0.057803468208092484,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_b98e4c872d37",
+      "publisher": null,
+      "source_word_count": 44693,
+      "claim_count": 10,
+      "claims_per_1k_words": 0.22374868547647284,
+      "share_of_section": 0.057803468208092484,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_68a1f3f26f9b",
+      "publisher": null,
+      "source_word_count": 47588,
+      "claim_count": 9,
+      "claims_per_1k_words": 0.1891233083970749,
+      "share_of_section": 0.05202312138728324,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_cef2c31af42d",
+      "publisher": "xrpl.org",
+      "source_word_count": 44840,
+      "claim_count": 9,
+      "claims_per_1k_words": 0.20071364852809992,
+      "share_of_section": 0.05202312138728324,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_b357e7424a79",
+      "publisher": null,
+      "source_word_count": 47282,
+      "claim_count": 8,
+      "claims_per_1k_words": 0.1691975804745992,
+      "share_of_section": 0.046242774566473986,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_7d558c2ae6d2",
+      "publisher": null,
+      "source_word_count": 47205,
+      "claim_count": 6,
+      "claims_per_1k_words": 0.1271051795360661,
+      "share_of_section": 0.03468208092485549,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_5b84f976c797",
+      "publisher": null,
+      "source_word_count": 47412,
+      "claim_count": 5,
+      "claims_per_1k_words": 0.10545853370454737,
+      "share_of_section": 0.028901734104046242,
+      "weak_scope_count": 0,
+      "generic_scope_count": 3
+    },
+    {
+      "source_id": "src_24fc488e7bd9",
+      "publisher": null,
+      "source_word_count": 46955,
+      "claim_count": 3,
+      "claims_per_1k_words": 0.06389095942924077,
+      "share_of_section": 0.017341040462427744,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    }
+  ],
+  "near_duplicate_clusters": [],
+  "flags": []
+}

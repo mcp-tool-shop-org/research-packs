@@ -1,0 +1,222 @@
+research_os_version: 0.1.0
+created_at: 2026-05-09T09:56:37.528Z
+topic: What makes XRPL creator-token holdings durable over time — across token-standard versions, account access changes, and ledger-state evolution — and what should a creator-side control plane track to keep them runnable, transferable, and provable?
+decision: ""
+audience: self
+desired_output: ""
+max_runtime_minutes: 240
+freshness:
+  required: true
+  max_source_age_months: null
+excluded_sources: []
+primary_source_waiver:
+  status: none
+  compensating_controls: []
+  section_waivers:
+    - section_id: 01-token-surface-and-standards
+      scope: min_independent_publishers
+      reason: |
+        Section 01 defines XRPL token surfaces from canonical protocol sources.
+        The authoritative source of truth is intentionally concentrated in XRPL
+        Foundation documentation, XLS standards, and rippled implementation/release
+        records. Third-party publishers can explain or interpret these standards,
+        but they are not primary authorities for protocol semantics.
+      compensating_controls:
+        - "Sources span multiple canonical artifact types: xrpl.org docs, rendered XLS standards, raw standards markdown, rippled release data, and GitHub implementation discussions."
+        - Claims remain span-grounded and reviewed individually.
+        - Section synthesis must disclose the single-foundation source concentration.
+        - Third-party sources may be added in later sections for adoption, marketplace, metadata, or operational interpretation, but are not required for protocol-definition truth.
+    - section_id: 03-on-ledger-state-and-reserves
+      scope: min_independent_publishers
+      reason: |
+        Section 03 documents XRPL on-ledger state representations (NFTokenPage,
+        MPTokenIssuance, RippleState, Offer, NFTokenOffer, AccountRoot) and the
+        reserve mechanics (base + owner reserve) that govern account-level
+        token storage. The authoritative source of truth for these ledger-entry
+        types and the JSON-RPC methods that read them (account_objects,
+        ledger_entry, account_info) is intentionally concentrated in XRPL
+        Foundation documentation at xrpl.org and the rippled implementation.
+        These artifacts define the on-ledger schema by construction; third-party
+        publishers describe how operators consume them, but cannot provide
+        authoritative ground truth for the schema itself.
+      compensating_controls:
+        - "Sources span multiple canonical artifact types within the XRPL Foundation surface: xrpl.org ledger-entry-type reference pages (NFTokenPage, MPTokenIssuance, RippleState, Offer, NFTokenOffer, AccountRoot), xrpl.org reserve-concept documentation, xrpl.org JSON-RPC method documentation (account_objects, ledger_entry, account_info), and the ledger-entry-types index page."
+        - Supplementary GitHub Search API issues from XRPLF/rippled are typed as forum (developer-discussion, not first-party canonical) and provide deletion-edge-case evidence; canonical claims trace to xrpl.org first-party sources only.
+        - Claims remain span-grounded and reviewed individually; per-claim source-quality findings continue to apply normally regardless of waiver.
+        - Section synthesis must disclose the single-foundation source concentration explicitly, mirroring Section 01's discipline. Each ledger-entry-type claim's authoritative basis is the protocol foundation's own definition; this is a structural property of XRPL's governance, not a source-curation gap.
+        - "Section 07 (metadata and off-chain durability) will NOT inherit this waiver: IPFS / Arweave / HTTP / marketplace-indexer publishers contribute genuinely independent evidence for metadata-layer questions, where the global publisher-diversity floor remains the correct guard."
+    - section_id: 04-issuer-controls-and-immutability
+      scope: min_independent_publishers
+      reason: |
+        Section 04 documents XRPL issuer-side control mechanisms — NFTokenMint
+        flags (immutable mint-time settings), NFTokenModify and NFTokenBurn
+        (post-mint mutability and destruction), AccountSet flags
+        (lsfGlobalFreeze, lsfNoFreeze, transfer-fee caps), Clawback (XLS-39
+        fungible-token clawback), TrustLine freeze (issuer-side fungible
+        token freeze via TrustSet), and MPTokenIssuanceSet (post-issuance MPT
+        controls). The authoritative source of truth for which controls are
+        immutable versus mutable, and how they behave under amendment-state
+        changes, is intentionally concentrated in XRPL Foundation
+        documentation (xrpl.org transaction-type references, xls.xrpl.org
+        rendered standards) and the rippled implementation. Third-party
+        explainers describe how operators consume these mechanisms but
+        cannot provide more authoritative ground truth than the
+        protocol-defining body.
+      compensating_controls:
+        - "Sources span multiple canonical artifact types within the XRPL Foundation surface: xrpl.org transaction-type references (NFTokenMint, NFTokenModify, NFTokenBurn, AccountSet, TrustSet, Clawback, MPTokenIssuanceSet), xrpl.org concept docs (fungible-token freezes), xrpl.org data-type references (NFToken), xrpl.org ledger-entry-type references (MPTokenIssuance, AccountRoot), and xls.xrpl.org rendered XLS-0039 (Clawback) standard."
+        - Supplementary GitHub Search API issues (XRPLF/rippled clawback + freeze + NFT/MPT edge cases) are typed as forum (developer-discussion supplementary); canonical claims still trace to xrpl.org / xls.xrpl.org first-party sources only.
+        - "Claims remain span-grounded and reviewed individually; per-claim findings continue to apply normally regardless of waiver. Specific scope discipline for this section: do NOT collapse NFT mint flags, trustline freeze, MPT controls, and Clawback into one generic issuer-control claim; do NOT project trustline-freeze semantics onto NFTokens or MPTs without source support; transfer-fee caps are token-specific (NFT transfer fees vs fungible-token issuer fees are distinct), not a universal issuer control; immutable-vs-mutable distinction must be preserved per mechanism."
+        - "Section synthesis must disclose the single-foundation source concentration explicitly, mirroring Sections 01-03 discipline. Issuer-control semantics are protocol-level by definition; this is a structural property of XRPL's governance, not a source-curation gap. The synthesis contribution target for this section: durability depends on which issuer powers are already fixed, which remain mutable, and which require protocol/amendment support."
+        - "Section 07 (metadata and off-chain durability) will NOT inherit this waiver: IPFS / Arweave / HTTP / marketplace-indexer publishers contribute genuinely independent evidence for metadata-layer questions, where the global publisher-diversity floor remains the correct guard."
+    - section_id: 05-transfer-and-trade-mechanics
+      scope: min_independent_publishers
+      reason: |
+        Section 05 documents XRPL transfer and trade mechanics — direct
+        NFToken offers (NFTokenCreateOffer / NFTokenAcceptOffer /
+        NFTokenCancelOffer including brokered mode), fungible-token DEX
+        mechanics (OfferCreate / OfferCancel), Payment (XRP and cross-
+        currency with pathfinding), Escrow (EscrowCreate / EscrowFinish),
+        and JSON-RPC introspection methods (nft_sell_offers, nft_buy_offers,
+        account_nfts, account_offers) plus the Offer and NFTokenOffer
+        ledger-entry types. The authoritative source of truth for how these
+        transactions and ledger objects behave — including the brokered
+        NFTokenAcceptOffer pattern, cross-currency payment pathfinding, and
+        escrow execution semantics — is intentionally concentrated in XRPL
+        Foundation documentation at xrpl.org and the rippled implementation.
+        Third-party explainers describe how operators consume these
+        mechanisms but cannot provide more authoritative ground truth than
+        the protocol-defining body.
+      compensating_controls:
+        - "Sources span multiple canonical artifact types within the XRPL Foundation surface: xrpl.org transaction-type references (NFTokenCreateOffer, NFTokenAcceptOffer, NFTokenCancelOffer, OfferCreate, OfferCancel, Payment, EscrowCreate, EscrowFinish), xrpl.org concept docs (cross-currency-payments), xrpl.org JSON-RPC method references (nft_sell_offers, nft_buy_offers, account_nfts, account_offers), and xrpl.org ledger-entry-type references (Offer, NFTokenOffer)."
+        - Supplementary GitHub Search API issues (XRPLF/rippled NFT offer brokered edge cases) are typed as forum (developer-discussion supplementary); canonical claims still trace to xrpl.org first-party sources only.
+        - "Claims remain span-grounded and reviewed individually; per-claim findings continue to apply normally regardless of waiver. Specific scope discipline for this section: do NOT collapse NFT offer mechanics into fungible DEX OfferCreate (different transactions, different ledger-entry types, different state-machines); brokered NFTokenAcceptOffer must stay distinct from direct accept (most-misunderstood XRPL feature); cross-currency payments / pathfinding apply to fungible/payment flows NOT NFT transfer; escrow mechanics are NOT universal token custody (XRP + amendment-gated IOU/MPT, NFT escrow may be separate or absent); offer existence is NOT liquidity guarantee; transferability depends on flags + issuer controls + reserve/offer state from prior sections."
+        - "Section synthesis must disclose the single-foundation source concentration explicitly, mirroring Sections 01-04 discipline. Transfer and trade mechanics are protocol-level by definition; this is a structural property of XRPL's governance, not a source-curation gap. The synthesis contribution thesis for this section: a creator token is not durable just because it exists on-ledger — it must remain transferable under the token standard's offer/payment/escrow mechanics, and those mechanics differ sharply across NFTokens, trustline tokens, MPTs, and XRP paths."
+        - "Section 07 (metadata and off-chain durability) will NOT inherit this waiver: IPFS / Arweave / HTTP / marketplace-indexer publishers contribute genuinely independent evidence for metadata-layer questions, where the global publisher-diversity floor remains the correct guard."
+    - section_id: 06-amendment-and-validator-landscape
+      scope: min_independent_publishers
+      reason: |
+        Section 06 documents XRPL's amendment system and validator landscape
+        — the meta-layer mechanism by which every other section's protocol
+        behavior can change. Topics include the 80% validator consensus
+        threshold, 2-week activation window, EnableAmendment pseudo-
+        transaction, specific amendments (XLS-20 non-fungible tokens,
+        XLS-33 multi-purpose tokens, XLS-39 Clawback, DisallowIncoming,
+        TokenEscrow, NFTokenModify), amendment deprecation paths, the
+        Amendments ledger-entry, the FeeSettings ledger-entry, the
+        NegativeUNL ledger-entry, validator distribution, and UNL
+        (Unique Node List) operator configuration. The authoritative
+        source of truth for amendment-system mechanics, voting thresholds,
+        and activation timelines is intentionally concentrated in XRPL
+        Foundation documentation (xrpl.org concepts and references;
+        xls.xrpl.org rendered standards) and the rippled implementation
+        (release notes via api.github.com/repos/XRPLF/rippled/releases as
+        canonical release endpoint, Feature.cpp). Third-party explainers
+        describe how operators consume these mechanisms but cannot provide
+        more authoritative ground truth than the protocol-defining body
+        and the validator code that enforces consensus.
+      compensating_controls:
+        - "Sources span multiple canonical artifact types within the XRPL Foundation surface: xrpl.org concept docs (amendments, consensus-protocol, peer-protocol, /resources/known-amendments registry), xrpl.org pseudo-transaction-type reference (EnableAmendment), xrpl.org ledger-entry-type references (Amendments, FeeSettings, NegativeUNL), xrpl.org JSON-RPC method references (feature, server_info), xls.xrpl.org rendered XLS-0020 (NFTs) + XLS-0033 (MPTs) standards, and api.github.com/repos/XRPLF/rippled/releases as canonical release endpoint (typed primary, not forum)."
+        - Supplementary GitHub Search API issues (XRPLF/rippled amendment + majority + activation discussions) are typed as forum (developer-discussion supplementary); canonical claims still trace to xrpl.org / xls.xrpl.org / rippled-releases first-party sources only.
+        - "Claims remain span-grounded and reviewed individually; per-claim findings continue to apply normally regardless of waiver. Specific scope discipline for this section: amendment-state ≠ feature-availability (an amendment can be voting / majority-not-yet-activated / activated / obsoleted — distinct states); validator quorum is 80% (NOT simple majority) and 2-week window (NOT instant); per-amendment voting (NOT pack voting); XRPL amendment governance is unique (NO token-vote, NO on-chain governance proposals, NO DAO mechanisms — validator-driven via UNL); specific amendments have distinct identities (XLS-20 ≠ XLS-33 ≠ XLS-39, do NOT lump as 'NFT amendments' or 'token amendments'); validator distribution is NOT a stable global property (UNL is operator-configured)."
+        - "Section synthesis must disclose the single-foundation source concentration explicitly, mirroring Sections 01-05 discipline. Amendment-system semantics are protocol-level by definition; this is a structural property of XRPL's governance, not a source-curation gap. The synthesis contribution thesis: XRPL token durability is amendment-state-dependent — the control plane must track amendment state per protocol concern (NFTs, MPTs, Clawback, TokenEscrow, DisallowIncoming) and per UNL configuration. Section 06's accepted claims will surface implicit dependencies in Sections 01-05's accepted claims (e.g., 'XLS-20 enabled NFTokens' cross-references Section 01's NFToken paradigm). The pack synthesis at freeze time must weave Section 06's amendment-state framework across all prior sections' mechanism claims."
+        - "Section 07 (metadata and off-chain durability) will NOT inherit this waiver: IPFS / Arweave / HTTP / marketplace-indexer publishers contribute genuinely independent evidence for metadata-layer questions, where the global publisher-diversity floor remains the correct guard."
+    - section_id: 02-account-and-key-management
+      scope: min_independent_publishers
+      reason: |
+        Section 02 documents XRPL account and key management semantics —
+        AccountRoot fields, master key disablement (lsfDisableMaster),
+        regular key (SetRegularKey), signer-list-based multi-signing
+        (SignerListSet), ticket-based authorization (TicketCreate), account
+        deletion (AccountDelete), and permission/delegation values. The
+        authoritative source of truth for these mechanics is intentionally
+        concentrated in XRPL Foundation documentation at xrpl.org and the
+        rippled implementation. Whether SetRegularKey, SignerListSet,
+        AccountDelete, or AccountSet behave a particular way is defined
+        by the protocol-defining body; third-party explainers describe how
+        operators consume these mechanics but cannot provide more
+        authoritative ground truth than xrpl.org's transaction-type and
+        ledger-entry-type references.
+      compensating_controls:
+        - "Sources span multiple canonical artifact types within the XRPL Foundation surface: xrpl.org account concept docs (Accounts overview, cryptographic-keys, multi-signing, tickets), xrpl.org transaction-type references (AccountSet, SetRegularKey, SignerListSet, AccountDelete, TicketCreate), xrpl.org ledger-entry-type references (AccountRoot, SignerList), permission-values data-type reference, and account_info JSON-RPC method documentation."
+        - Supplementary GitHub Search API issues (XRPLF/rippled AccountDelete + NFT edge cases) are typed as forum (developer-discussion supplementary) and provide deletion-precondition edge-case evidence beyond what canonical docs surface; canonical claims still trace to xrpl.org first-party sources only.
+        - Claims remain span-grounded and reviewed individually; per-claim source-quality findings continue to apply normally regardless of waiver. Wallet-UX claims (e.g., 'wallet provides signer UI') and ticket-as-key-recovery conflations are wallet-feature or category errors, not protocol claims, and per-claim findings should route them to scope_repair or rejection without the waiver covering for the mismatch.
+        - Section synthesis must disclose the single-foundation source concentration explicitly, mirroring Section 01 and Section 03 discipline. Account and key semantics are protocol-level by definition; this is a structural property of XRPL's governance, not a source-curation gap.
+        - "Section 07 (metadata and off-chain durability) will NOT inherit this waiver: IPFS / Arweave / HTTP / marketplace-indexer publishers contribute genuinely independent evidence for metadata-layer questions, where the global publisher-diversity floor remains the correct guard."
+sections:
+  - id: 01-token-surface-and-standards
+    purpose: "Map XRPL's three creator-token paradigms (IOUs/trustlines, NFTokens via XLS-20, MPTs via XLS-46): design guarantees, maturity/adoption status, coexistence and migration paths."
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 02-account-and-key-management
+    purpose: Master keys, regular keys, SignerList multi-sign, ticket-based authorization on token-issuing accounts; behavior under key rotation, compromise, blacklisting, account deletion.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 03-on-ledger-state-and-reserves
+    purpose: Ledger objects holding creator-token state (NFTokenPage, MPTokenIssuance, RippleState, Offer, Escrow); base/owner reserve mechanics; reserve-shortfall consequences.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 04-issuer-controls-and-immutability
+    purpose: "Issuer-set flags and parameters that are immutable post-mint vs mutable: NFTokenMint txFlags, AccountSet flags (lsfGlobalFreeze, lsfNoFreeze), Clawback (XLS-39), TrustLine freeze, transfer-fee caps."
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 05-transfer-and-trade-mechanics
+    purpose: "Movement of creator tokens between accounts: NFTokenCreateOffer/AcceptOffer (direct + brokered), MPT transfer, DEX OfferCreate paths, Escrow, Payment paths, transfer-flag conflicts, liquidity absence."
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 06-amendment-and-validator-landscape
+    purpose: XRPL amendment system (80% validator consensus, 2-week window, EnableAmendment); amendments defining current creator-token surface (XLS-20, XLS-46, Clawback, DisallowIncoming); deprecation paths; validator distribution implications for governance stability.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 07-metadata-and-off-chain-durability
+    purpose: NFToken metadata URIs (XLS-24 format); off-chain storage durability (IPFS, Arweave, HTTP); marketplace indexer caching when origin URI is unavailable.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+gates:
+  source_floor:
+    min_sources: 8
+    min_independent_publishers: 4
+    primary_sources_required: 2
+    primary_source_waiver_allowed: true
+  claim_integrity:
+    every_claim_needs_source: true
+    no_orphan_claims: true
+    no_source_cluster_monopoly: true
+  freshness:
+    required_for_current_topics: true
+    stale_source_policy: warn
+  contradiction:
+    required: true
+    unresolved_contradictions_block_synthesis: true
+  section_budget:
+    max_time_minutes: 45
+    extension_requires_evidence: true
+review_profiles:
+  hermes-two-pass:
+    general_model: hermes3:8b
+    critic_model: hermes3:8b
+    review_window: 10
+    mode: two_pass
+    status: calibrated_baseline
+    notes: Calibrated baseline as of v0.1. 0% good-claim FPR on the seeded fixture; bad-claim any-flag recall 9/13 (69%). Smaller window required because hermes3:8b at 4-bit on a 5080 cannot complete 25-claim windows within a 3-minute budget.
+frozen_at: 2026-05-10T00:25:19.025Z

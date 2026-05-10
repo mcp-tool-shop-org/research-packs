@@ -1,0 +1,29 @@
+{
+  "source_id": "src_5a1d70d24fc1",
+  "receipt_id": "rcpt_5a1d70d24fc1_1778357482067",
+  "section_id": "05-transfer-and-trade-mechanics",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/types/offercreate",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/types/offercreate",
+  "fetched_at": "2026-05-09T20:11:22.067Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "OfferCreate",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The OfferCreate transaction creates an offer to buy or sell XRP or other digital assets.",
+    "It requires a valid account domain and an unsigned form of the TransactionAuth",
+    "The fee is in the range of 20 to 500 drops, with a minimum balance requirement.",
+    "The offer can be created by either the offerer's or the tee's account.",
+    "The OfferCreate transaction has a maximum lifespan of one year."
+  ],
+  "limitations": [
+    "The scope and detail of this source may be limited to internal documentation for the Ripple protocol.",
+    "Some details may require additional sources to fully understand the mechanics and use cases."
+  ],
+  "asserts": "The OfferCreate transaction allows users to create offers to buy or sell XRP or other digital assets within the Ripple protocol.",
+  "scope": "This source describes how the OfferCreate transaction works in the context of the Ripple protocol.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T20:11:53.638Z"
+}

@@ -1,0 +1,29 @@
+{
+  "source_id": "src_03f52c5d778f",
+  "receipt_id": "rcpt_03f52c5d778f_1778360325698",
+  "section_id": "06-amendment-and-validator-landscape",
+  "url": "https://xrpl.org/docs/concepts/networks-and-servers/amendments",
+  "final_url": "https://xrpl.org/docs/concepts/networks-and-servers/amendments",
+  "fetched_at": "2026-05-09T20:58:45.698Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Amendments",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The Ripple consensus ledger is updated through amendments.",
+    "There are three types of amendments: Amendments, Validation Rules, and Reserved Bits.",
+    "Each amendment has a unique identifier called the 'amendment ID'.",
+    "Amendments specify changes to the validation rules and protocol behavior.",
+    "Clients should upgrade to stay compatible with the latest amendments."
+  ],
+  "limitations": [
+    "The scope is limited to the Ripple consensus ledger and its updates through amendments.",
+    "It does not cover client implementations or specific use cases."
+  ],
+  "asserts": "Amendments are an integral part of the Ripple consensus ledger update process, specifying changes to validation rules and protocol behavior.",
+  "scope": "The context is the Ripple consensus ledger and its amendment process, covering the specification of changes to validation rules and protocol behavior.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T20:59:24.871Z"
+}

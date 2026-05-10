@@ -1,0 +1,27 @@
+{
+  "source_id": "src_d6c57c6845e6",
+  "receipt_id": "rcpt_d6c57c6845e6_1778364367884",
+  "section_id": "07-metadata-and-off-chain-durability",
+  "url": "https://docs.ipfs.tech/concepts/content-addressing/",
+  "final_url": "https://docs.ipfs.tech/concepts/content-addressing/",
+  "fetched_at": "2026-05-09T22:06:07.884Z",
+  "publisher": "IPFS Docs",
+  "published_at": null,
+  "title": "Content Identifiers (CIDs)",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "CIDs are unique identifiers for content stored on IPFS.",
+    "They are not file hashes but rather a more complex representation.",
+    "CIDs have versions, which can change over time.",
+    "CID Inspector and CID conversion tools are available."
+  ],
+  "limitations": [
+    "The scope is limited to explaining the concepts of CIDs within the IPFS ecosystem."
+  ],
+  "asserts": "Content Identifiers (CIDs) provide a unique address for content stored on IPFS, allowing it to be found and shared.",
+  "scope": "Explains how Content Identifiers (CIDs) work within the IPFS network and its architecture.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T22:06:35.065Z"
+}

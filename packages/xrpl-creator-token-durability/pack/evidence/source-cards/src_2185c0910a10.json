@@ -1,0 +1,28 @@
+{
+  "source_id": "src_2185c0910a10",
+  "receipt_id": "rcpt_2185c0910a10_1778364432991",
+  "section_id": "07-metadata-and-off-chain-durability",
+  "url": "https://docs.arweave.org/developers/arweave-node-server/http-api",
+  "final_url": "https://docs.arweave.org/developers/arweave-node-server/http-api",
+  "fetched_at": "2026-05-09T22:07:12.991Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "HTTP API",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The Arweave HTTP API allows interaction with the Arweave network using standard HTTP requests.",
+    "It supports key functionality such as querying block information and submitting transactions.",
+    "Documentation is provided for each available endpoint, including required parameters and responses."
+  ],
+  "limitations": [
+    "Lacks detailed explanations or context around the purpose of the different endpoints.",
+    "Assumes prior knowledge of Arweave concepts and terminology.",
+    "Some examples may require additional setup or credentials to run successfully."
+  ],
+  "asserts": "The provided documentation thoroughly covers how to use each endpoint in the Arweave HTTP API for interacting with the Arweave network.",
+  "scope": "Describes and documents all available endpoints, parameters, and responses in the official Arweave HTTP API.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T22:07:45.704Z"
+}

@@ -1,0 +1,28 @@
+{
+  "source_id": "src_0b01dd18d515",
+  "receipt_id": "rcpt_0b01dd18d515_1778364312700",
+  "section_id": "07-metadata-and-off-chain-durability",
+  "url": "https://docs.ipfs.tech/concepts/persistence/",
+  "final_url": "https://docs.ipfs.tech/concepts/persistence/",
+  "fetched_at": "2026-05-09T22:05:12.7Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Persistence",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "IPFS treats persistence and permanence differently.",
+    "Pinning helps keep data from being discarded in IPFS.",
+    "Garbage collection can remove data that is not pinned or referenced.",
+    "There are various pinning services available to help maintain the availability of data on IPFS."
+  ],
+  "limitations": [
+    "This document provides general information and may not cover all specific use cases.",
+    "The effectiveness of persistence depends on the usage patterns and retention policies of nodes in the IPFS network."
+  ],
+  "asserts": "Pinning is a key mechanism to maintain data availability and prevent garbage collection from removing content in IPFS.",
+  "scope": "This document explains how pinning helps keep data persistent in the IPFS network, contrasting persistence with permanence, and discussing the role of garbage collection and pinning services.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T22:05:43.453Z"
+}

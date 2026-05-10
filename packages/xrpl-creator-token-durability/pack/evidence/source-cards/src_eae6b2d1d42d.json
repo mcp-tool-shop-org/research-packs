@@ -1,0 +1,28 @@
+{
+  "source_id": "src_eae6b2d1d42d",
+  "receipt_id": "rcpt_eae6b2d1d42d_1778354610054",
+  "section_id": "04-issuer-controls-and-immutability",
+  "url": "https://xls.xrpl.org/xls/XLS-0039-clawback.html",
+  "final_url": "https://xls.xrpl.org/xls/XLS-0039-clawback.html",
+  "fetched_at": "2026-05-09T19:23:30.054Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "XLS-0039: Clawback Support",
+  "source_type": "primary",
+  "relevance": "low",
+  "key_points": [
+    "Clawback feature allows issuers to recover issued assets under certain circumstances.",
+    "The feature is disabled by default and requires the issuer to have an empty owner directory before enabling it.",
+    "Issued tokens can be clawed back by an issuer if, and only if, lsfAllowTrustLineClawback flag is set."
+  ],
+  "limitations": [
+    "This proposal deals only with issued assets. The proposed clawback support cannot be used to claw back XRP.",
+    "Introduces an additional transaction, along with the complexity that comes with that.",
+    "Issuers now get additional power, which may be concerning to token holders."
+  ],
+  "asserts": "The XLS-0039 proposal introduces a clawback feature that allows issuers of digital assets in the XRP Ledger to recover issued assets under certain circumstances, enabling compliance with regulatory requirements.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T19:24:00.504Z"
+}

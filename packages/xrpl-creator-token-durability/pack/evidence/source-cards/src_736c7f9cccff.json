@@ -1,0 +1,27 @@
+{
+  "source_id": "src_736c7f9cccff",
+  "receipt_id": "rcpt_736c7f9cccff_1778357729793",
+  "section_id": "05-transfer-and-trade-mechanics",
+  "url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/account-methods/account_nfts",
+  "final_url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/account-methods/account_nfts",
+  "fetched_at": "2026-05-09T20:15:29.793Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "account_nfts",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The account_nfts method retrieves the NFTs associated with an XRP Ledger account.",
+    "It requires providing a valid Account ID as input.",
+    "The response includes a list of NFT objects, each containing metadata about the corresponding NFT."
+  ],
+  "limitations": [
+    "This documentation page provides general information and usage examples. It may not cover all possible scenarios or edge cases.",
+    "For up-to-date details and specific implementation guidance, consult the official XRP Ledger documentation or API reference."
+  ],
+  "asserts": "The account_nfts method allows retrieving information about NFTs associated with a specified XRP Ledger account by providing its Account ID as input.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T20:15:57.083Z"
+}

@@ -1,0 +1,27 @@
+{
+  "source_id": "src_319355bfb19d",
+  "receipt_id": "rcpt_319355bfb19d_1778354531239",
+  "section_id": "04-issuer-controls-and-immutability",
+  "url": "https://xrpl.org/docs/concepts/tokens/fungible-tokens/freezes",
+  "final_url": "https://xrpl.org/docs/concepts/tokens/fungible-tokens/freezes",
+  "fetched_at": "2026-05-09T19:22:11.239Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Freezing Tokens",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "Tokens can be frozen by any account, not just the token owner.",
+    "Frozen tokens cannot be transferred or sold.",
+    "The freeze and unfreeze actions are recorded on the XRPL.",
+    "Frozen tokens will reappear in the account that froze them when they are unfrozen."
+  ],
+  "limitations": [
+    "Does not cover all potential use cases or edge cases for freezing tokens."
+  ],
+  "asserts": "Tokens can be frozen by any account, and this action is recorded on the XRPL.",
+  "scope": "Describes how token freezing works in the XRPL system.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T19:22:35.328Z"
+}

@@ -1,0 +1,27 @@
+{
+  "source_id": "src_ff9fbb4f8527",
+  "receipt_id": "rcpt_ff9fbb4f8527_1778364222456",
+  "section_id": "07-metadata-and-off-chain-durability",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/types/nftokenmodify",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/types/nftokenmodify",
+  "fetched_at": "2026-05-09T22:03:42.456Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "NFTokenModify",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The NFTokenModify transaction type allows the owner of an NFT to modify its properties.",
+    "It can change metadata, add or remove tags, and update the URL associated with the NFT.",
+    "The modified properties are committed to the XRP Ledger's immutable history upon successful validation.",
+    "No new tokens are created by this operation; only the existing token's properties are updated."
+  ],
+  "limitations": [
+    "This documentation is provided 'as-is', without warranty of any kind, express or implied."
+  ],
+  "asserts": "The NFTokenModify transaction enables owners to update various attributes of their non-fungible tokens in the XRP Ledger.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T22:04:10.942Z"
+}

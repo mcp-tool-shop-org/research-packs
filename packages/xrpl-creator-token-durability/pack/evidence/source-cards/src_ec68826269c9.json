@@ -1,0 +1,27 @@
+{
+  "source_id": "src_ec68826269c9",
+  "receipt_id": "rcpt_ec68826269c9_1778352449126",
+  "section_id": "02-account-and-key-management",
+  "url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/account-methods/account_info",
+  "final_url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/account-methods/account_info",
+  "fetched_at": "2026-05-09T18:47:29.126Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "account_info",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The account_info method retrieves detailed information about a given XRPL account.",
+    "It returns an object containing fields such as accountID, ledgerVersion, balance, domain, subdomain, and flags.",
+    "This method requires authentication with an API token."
+  ],
+  "limitations": [
+    "Scope is limited to the specific account queried.",
+    "More context may be needed for full understanding of how this method fits into XRPL ecosystem"
+  ],
+  "asserts": "Calling the account_info method on a validated XRPL account returns detailed information about that specific account, including balances and domain info. Authentication with an API token is required.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:47:54.075Z"
+}

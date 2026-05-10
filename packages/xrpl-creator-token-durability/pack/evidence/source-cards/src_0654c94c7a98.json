@@ -1,0 +1,27 @@
+{
+  "source_id": "src_0654c94c7a98",
+  "receipt_id": "rcpt_0654c94c7a98_1778354480742",
+  "section_id": "04-issuer-controls-and-immutability",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/types/nftokenburn",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/types/nftokenburn",
+  "fetched_at": "2026-05-09T19:21:20.742Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "NFTokenBurn",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "NFTokenBurn is a transaction type in the XRP Ledger.",
+    "It allows an NFToken issuer to burn (destroy) an NFToken from their account, removing it from circulation.",
+    "The transaction requires the burner account to have sufficient NFToken balances and enough XRP to cover fees.",
+    "When an NFToken is burned, its token ID becomes invalid, and any associated metadata is removed."
+  ],
+  "limitations": [
+    "This documentation does not cover specific implementation details or best practices for using NFTokenBurn transactions."
+  ],
+  "asserts": "The NFTokenBurn transaction enables the destruction of NFTokens from an issuer's account in the XRP Ledger.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T19:21:48.210Z"
+}

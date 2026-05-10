@@ -1,0 +1,30 @@
+{
+  "source_id": "src_051630391070",
+  "receipt_id": "rcpt_051630391070_1778357783536",
+  "section_id": "05-transfer-and-trade-mechanics",
+  "url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/offer",
+  "final_url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/offer",
+  "fetched_at": "2026-05-09T20:16:23.536Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Offer",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "An Offer is a pre-authorized payment of XRP from an account to another account.",
+    "The Amount field specifies the amount of XRP to be paid.",
+    "The Interval field specifies how often the payment will occur, in seconds.",
+    "If there are enough funds and the account has sufficient permissions, the Offer will be added to the ledger.",
+    "Offers can be created by any account with an Authorize() or RegularKey(), but only the owner of the offer's Destination account can cancel it."
+  ],
+  "limitations": [
+    "The source assumes prior knowledge of XRP Ledger concepts and terminology.",
+    "It provides a technical description without broader context or applications.",
+    "The scope of the information is limited to Offers within the XRP Ledger system."
+  ],
+  "asserts": "An Offer in the XRP Ledger allows an account to create a pre-authorized payment of XRP from their account to another specified account.",
+  "scope": "The scope of this assertion is the XRP Ledger, specifically how Offers function and are utilized within its payment system.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T20:17:00.084Z"
+}

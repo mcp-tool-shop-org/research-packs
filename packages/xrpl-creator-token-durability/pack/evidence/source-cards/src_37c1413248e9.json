@@ -1,0 +1,26 @@
+{
+  "source_id": "src_37c1413248e9",
+  "receipt_id": "rcpt_37c1413248e9_1778364343785",
+  "section_id": "07-metadata-and-off-chain-durability",
+  "url": "https://docs.ipfs.tech/how-to/pin-files/",
+  "final_url": "https://docs.ipfs.tech/how-to/pin-files/",
+  "fetched_at": "2026-05-09T22:05:43.785Z",
+  "publisher": "IPFS",
+  "published_at": null,
+  "title": "Pin files",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "Learn how to pin files in IPFS to keep them local.",
+    "There are three kinds of pins: local, remote, and recursive.",
+    "Local pinning keeps the file on your own node's filesystem."
+  ],
+  "limitations": [
+    "The guide assumes basic familiarity with IPFS concepts and setup."
+  ],
+  "asserts": "Pinning files in IPFS allows you to keep them locally available for faster access.",
+  "scope": "Describes how to pin files using IPFS, a distributed file system protocol.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T22:06:07.557Z"
+}

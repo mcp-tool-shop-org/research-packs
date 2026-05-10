@@ -1,0 +1,28 @@
+{
+  "source_id": "src_f103bcae0753",
+  "receipt_id": "rcpt_f103bcae0753_1778357703214",
+  "section_id": "05-transfer-and-trade-mechanics",
+  "url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/path-and-order-book-methods/nft_buy_offers",
+  "final_url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/path-and-order-book-methods/nft_buy_offers",
+  "fetched_at": "2026-05-09T20:15:03.214Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "nft_buy_offers",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The nft_buy_offers method returns the list of buy offers for NFTs.",
+    "It takes no arguments and returns a JSON object with two fields:",
+    "- sells: array - an array containing information about active buy orders.",
+    "- meta: object - metadata about the returned data."
+  ],
+  "limitations": [
+    "The documentation does not specify the exact format or fields of the 'sells' array or 'meta' object.",
+    "Real-time accuracy is unknown without testing."
+  ],
+  "asserts": "The nft_buy_offers method exists to retrieve buy offers for NFTs from XRP Ledger's public API.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T20:15:29.784Z"
+}

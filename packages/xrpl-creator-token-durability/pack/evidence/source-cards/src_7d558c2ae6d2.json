@@ -1,0 +1,27 @@
+{
+  "source_id": "src_7d558c2ae6d2",
+  "receipt_id": "rcpt_7d558c2ae6d2_1778352275697",
+  "section_id": "02-account-and-key-management",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/types/signerlistset",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/types/signerlistset",
+  "fetched_at": "2026-05-09T18:44:35.697Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "SignerListSet",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "SignerListSet is a transaction type in the XRP Ledger.",
+    "It sets the list of accounts that are allowed to sign transactions for a trust line or account root.",
+    "The transaction creator can specify a new set of signers, remove existing signers, or both.",
+    "If no accounts are specified, SignerListSet removes all current signers."
+  ],
+  "limitations": [
+    "The source assumes familiarity with the XRP Ledger and its concepts."
+  ],
+  "asserts": "SignerListSet transactions allow the creator to manage which accounts can sign transactions for a trust line or account root.",
+  "scope": "Explains how SignerListSet transactions work in the context of managing signer permissions in the XRP Ledger.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:45:03.193Z"
+}

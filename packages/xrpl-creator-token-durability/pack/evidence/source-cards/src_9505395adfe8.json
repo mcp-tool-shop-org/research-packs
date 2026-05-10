@@ -1,0 +1,28 @@
+{
+  "source_id": "src_9505395adfe8",
+  "receipt_id": "rcpt_9505395adfe8_1778354730458",
+  "section_id": "04-issuer-controls-and-immutability",
+  "url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/accountroot",
+  "final_url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/accountroot",
+  "fetched_at": "2026-05-09T19:25:30.458Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "AccountRoot",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The AccountRoot is a special type of account that represents the root account for an AddressBook account.",
+    "It contains metadata about the parent account, such as the version and sequence ID.",
+    "AccountRoots are created when a new AddressBook account is first added to the ledger.",
+    "They allow the root account to be separate from the rest of the account's entries.",
+    "The AccountRoot has no balance or other normal account fields; it only contains metadata."
+  ],
+  "limitations": [
+    "This documentation may not cover all possible edge cases or future updates to the protocol."
+  ],
+  "asserts": "An AccountRoot is a special type of account used in AddressBook accounts to represent their root account, containing metadata like version and sequence ID.",
+  "scope": "The context of this assertion is within the XRP Ledger's protocol documentation, specifically regarding the AccountRoot account type.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T19:26:01.791Z"
+}

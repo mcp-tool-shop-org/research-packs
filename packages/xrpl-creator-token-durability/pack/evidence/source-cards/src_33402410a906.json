@@ -1,0 +1,28 @@
+{
+  "source_id": "src_33402410a906",
+  "receipt_id": "rcpt_33402410a906_1778360434871",
+  "section_id": "06-amendment-and-validator-landscape",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/pseudo-transaction-types/enableamendment",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/pseudo-transaction-types/enableamendment",
+  "fetched_at": "2026-05-09T21:00:34.871Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "EnableAmendment",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "EnableAmendment is a transaction type in XRP Ledger.",
+    "It allows an account to enable or disable amendments for itself or another account.",
+    "The EnableAmendment transaction uses the amendment_hash parameter to specify which amendment to enable or disable.",
+    "Enabling or disabling an amendment does not require a majority consensus, making it a fast and efficient process."
+  ],
+  "limitations": [
+    "The source focuses on technical details of the EnableAmendment transaction type in the XRP Ledger protocol.",
+    "It does not discuss potential limitations or drawbacks of using this transaction type."
+  ],
+  "asserts": "Enabling or disabling amendments for an account can be done quickly using the EnableAmendment transaction without requiring consensus.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T21:01:02.798Z"
+}

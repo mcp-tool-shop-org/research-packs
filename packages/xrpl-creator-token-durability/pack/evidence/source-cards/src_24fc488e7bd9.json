@@ -1,0 +1,26 @@
+{
+  "source_id": "src_24fc488e7bd9",
+  "receipt_id": "rcpt_24fc488e7bd9_1778352251337",
+  "section_id": "02-account-and-key-management",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/types/setregularkey",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/types/setregularkey",
+  "fetched_at": "2026-05-09T18:44:11.337Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "SetRegularKey",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The SetRegularKey transaction sets the regular key for a new account.",
+    "It takes three fields: Account, RegularKey, and Timestamp.",
+    "The RegularKey field specifies the key to set as the account's regular key."
+  ],
+  "limitations": [
+    "Limited context outside of technical XRPL documentation"
+  ],
+  "asserts": "The SetRegularKey transaction allows setting a specific key as the regular key for a new account on the XRPL blockchain.",
+  "scope": "The scope of this assertion is within the context of the XRPL protocol and its transactions, specifically focusing on the SetRegularKey transaction.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:44:35.354Z"
+}

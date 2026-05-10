@@ -1,0 +1,2232 @@
+{
+  "section_id": "06-amendment-and-validator-landscape",
+  "reviewer": "ollama-intern",
+  "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+  "reviewed_at": "2026-05-09T21:36:33.676Z",
+  "candidate_claims": 61,
+  "findings": [
+    {
+      "finding_id": "fnd_d21eacd86c52",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_03f52c5d778f_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_03f52c5d778f"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that 'Amendments are an integral part of the Ripple consensus ledger update process' is overgeneralized, as the source only provides information about how amendments affect transaction processing and does not explicitly state their importance in the overall ledger update process.",
+      "evidence": "The evidence excerpt describes how amendments approve changes to transaction processing but does not mention their role in the broader ledger update process.",
+      "required_action": "Clarify or refine the claim to focus specifically on how amendments impact transaction processing, rather than suggesting they are integral to the entire ledger update process.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.673Z"
+    },
+    {
+      "finding_id": "fnd_b37e8c1c9401",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_03f52c5d778f_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_03f52c5d778f"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim that 'Upgrading rippled to the newest version can unblock amendment blocked servers' is valid but provides low-value synthesis, as it is a specific detail that does not contribute significantly to understanding the overall amendment process.",
+      "evidence": "null",
+      "required_action": "null",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.673Z"
+    },
+    {
+      "finding_id": "fnd_f378f5161fdd",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_8ebf52ac0af9_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_8ebf52ac0af9"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_8ebf52ac0af9_ollama_intern_1 restates the context that Ripple protocol allows for approved changes through amendments.",
+      "evidence": "XRPL Overview Use Cases & Featured Projects History",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_3408f3bc1c0f",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_25ac15171ff0_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_25ac15171ff0"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_25ac15171ff0_ollama_intern_2 is low-value trivia that the server_info command asks the rippled server for information.",
+      "evidence": "The server_info command asks the server for a human-readable version of various information about the rippled server being queried. For Clio servers, see server_info (Clio) instead.",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_2980986e5969",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_25ac15171ff0_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_25ac15171ff0"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_25ac15171ff0_ollama_intern_11 is low-value trivia that the server_info method provides information about the most recent fully-validated ledger.",
+      "evidence": "validated_ledger Object (May be omitted) Information about the most recent fully-validated ledger, as a Server Ledger Object. If the most recent validated ledger is not available, the response omits this field and includes closed_ledger instead.",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_43110718a0a6",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_5412494af521_ollama_intern_115"
+      ],
+      "source_ids": [
+        "src_5412494af521"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_5412494af521_ollama_intern_115 restates the scope and purpose of the Known Amendments document without adding significant synthesis value.",
+      "evidence": "The evidence excerpt lists all known amendments in detail.",
+      "required_action": "No action required, as this claim serves its purpose well within its limited scope.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_3aab983f32d5",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_12 restates a definition.",
+      "evidence": "The 'lsfMPTLocked' flag, if set, indicates that all balances are locked.",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_a366cc063c80",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_21"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_21 restates a detail about removing an MPTokenIssuance.",
+      "evidence": "An MPTokenIssuance can be removed by locating the issuance using the approach in Searching for an MPTokenIssuance. If found, the object can be deleted, but only if the OutstandingAmount is equal to 0.",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_3c8aa41ebce0",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_25"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_25 restates how the token is owned after creation.",
+      "evidence": "If the transaction is successful, the newly created token will be owned by the account (the creator account) which executed the transaction.",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_8df2a3bb0835",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_30"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_30 restates a creator-settable limit on MPToken units.",
+      "evidence": "The maximum number of this token's units that should ever be issued. This field is optional. If omitted, the implementation will set this to an empty default field value, which will be interpreted at runtime as the current maximum allowed value (currently 0x7FFF'FFFF'FFFF'FFFF). Note that the maximum allowed value may increase in the future, so callers should specify a custom value if a specific limit is required.",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_6a0e01cfb09e",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_34"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_34 restates the transaction type for setting MPToken properties.",
+      "evidence": "Indicates the new transaction type MPTokenIssuanceSet. The integer value is 56.",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_c038e9ff596e",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_35"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_35 restates extending the Payment amount field for MPTs.",
+      "evidence": "The existing Payment transaction will not have any new top-level fields or flags added. However, we will extend the existing amount field to accommodate MPT amounts. Currently, the amount field takes one of two forms. The below example indicates an amount of 1 drop of XRP:",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_2095188d0979",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_45"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_45 restates querying MPTokens via API.",
+      "evidence": "A MPToken object can be queried by specifying the mptoken field.",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_6b50537665a9",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_70"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_70 restates the 'Not XRP' bit in STAmount encoding.",
+      "evidence": "Parse off the Field ID with a type_code (STI_AMOUNT). This indicates the following bytes are an STAmount. Inspect the next bit. If its value is 1, then continue to the next step. If not, then this STAmount does not represent an MPT nor XRP (instead this is a regular IOU token amount, and can be parsed according to existing rules for those amounts).",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_40a6c9722313",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_71"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_71 restates the 'IsMPT' bit in STAmount encoding.",
+      "evidence": "Ignore (for now) the 2nd bit (this is the sign-bit, and is always 1 for both XRP and MPT). Inspect the 3rd bit. If 0, then parse as an XRP value per usual. However, if 1, then parse the remaining STAmount bytes as an MPT.",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_ee945220e9e9",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_72"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_72 restates the STAmount encoding diagram.",
+      "evidence": "This encoding focuses on the first 3 bits of a MPT: ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │ ┌─────────────────┐┌────────────────────────┐┌────────────┐┌─────────────────────────────────────────────┐ │ │ 0 ││ 1 ││ 1 ││ │ │ ...",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_842adaec64b6",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_515596050b06_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_515596050b06"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_515596050b06_ollama_intern_1 restates the context and purpose of XLS-0020 without adding new synthesis-worthy information.",
+      "evidence": "",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_1eebc05fde3f",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_515596050b06_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_515596050b06"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_515596050b06_ollama_intern_14 restates a best practice for storing NFT data on IPFS without adding new synthesis-worthy information.",
+      "evidence": "",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_8f14015f7d65",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_515596050b06_ollama_intern_41"
+      ],
+      "source_ids": [
+        "src_515596050b06"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_515596050b06_ollama_intern_41 restates how offers to buy and sell an NFToken are organized without adding new synthesis-worthy information.",
+      "evidence": "",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_cf91512415b9",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_e25c1c4ecccf_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_e25c1c4ecccf"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that rippled starts an activation countdown when the threshold is 29 is overgeneralized, as it implies a fixed trigger point rather than the correct calculation based on the number of validators and the 80% voting threshold.",
+      "evidence": "Whereas in reality, rippled starts activation countdown when the threshold is 29.",
+      "required_action": "Clarify that the activation countdown actually depends on calculating an 80% threshold for the current number of validators, rather than a fixed threshold value.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_599e8f9a9806",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_e25c1c4ecccf_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_e25c1c4ecccf"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that the 'feature' command sets the `majority` property when consensus is exactly 80% overgeneralizes from the specific case of an amendment to apply it broadly for any change.",
+      "evidence": "The evidence excerpt shows setting the `majority` property in a specific EnableAmendment transaction, but does not generalize this behavior to all changes.",
+      "required_action": "Clarify that setting the `majority` property only occurs when enabling amendments, not for all features or changes.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_f38ab02b52ca",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_21"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "scope_widening",
+      "severity": "block",
+      "summary": "The asserts using 'all' and 'always' implies a universal truth about MPTokenIssuance removal, but the scope is only discussing a single source.",
+      "evidence": "An MPTokenIssance can be removed by locating the issuance using the approach in Searching for an MPTokenIssuance. If found, the object can be deleted, but only if the OutstandingAmount is equal to 0.",
+      "required_action": "Provide a more general example or explanation that covers all cases where an MPTokenIssuance can be removed.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_67e8079fcd7b",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_515596050b06_ollama_intern_41"
+      ],
+      "source_ids": [
+        "src_515596050b06"
+      ],
+      "category": "scope_widening",
+      "severity": "warn",
+      "summary": "The claim that 'Each NFToken object has two directories for offers to buy and sell it' uses the universal quantifier 'each' but is based on a narrow scope of 'On the XRP Ledger'. This generalization may not apply universally.",
+      "evidence": "The evidence_excerpt specifies that 'Each token has two directories', suggesting a singular instance rather than all NFToken objects in general.",
+      "required_action": "Consider narrowing the scope or adding exceptions to prevent future misuse or misunderstanding of this claim.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_89ae91c5bb27",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_03f52c5d778f_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_03f52c5d778f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_03f52c5d778f_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Amendments are an integral part of the Ripple consensus ledger update process.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_1a628ebbc0b2",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_03f52c5d778f_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_03f52c5d778f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_03f52c5d778f_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Amendments specify changes to validation rules and protocol behavior.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_ee6fe9c9482f",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_03f52c5d778f_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_03f52c5d778f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_03f52c5d778f_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Fully-functional, transaction process changes are introduced as amendments.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_1c7ccca265af",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_03f52c5d778f_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_03f52c5d778f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_03f52c5d778f_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Amendments that are vetoed by the network cannot be enabled.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_e46dc0afe12b",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_03f52c5d778f_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_03f52c5d778f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_03f52c5d778f_ollama_intern_7 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Amendments specify changes to validation rules in the Ripple consensus ledger.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_9d1c0c7b3013",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_03f52c5d778f_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_03f52c5d778f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_03f52c5d778f_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Participating in the consensus process requires understanding rule changes.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_21c8d80486fe",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_03f52c5d778f_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_03f52c5d778f"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_03f52c5d778f_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Upgrading rippled to the newest version can unblock amendment blocked servers.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_098b17df36df",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_8d039f2c0ee8_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_8d039f2c0ee8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8d039f2c0ee8_ollama_intern_14 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Using public hubs provides access to safe connections to the XRP Ledger network.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_bb04ec8e3b17",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_8d039f2c0ee8_ollama_intern_16"
+      ],
+      "source_ids": [
+        "src_8d039f2c0ee8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8d039f2c0ee8_ollama_intern_16 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The peer protocol uses HTTP, WebSocket, and TCP for communication.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_96b04237a06d",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_8d039f2c0ee8_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_8d039f2c0ee8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8d039f2c0ee8_ollama_intern_17 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The peer protocol enables exchange of transaction information between peers.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_c2e7d1237ffd",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_8d039f2c0ee8_ollama_intern_18"
+      ],
+      "source_ids": [
+        "src_8d039f2c0ee8"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8d039f2c0ee8_ollama_intern_18 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The peer protocol facilitates communication of validator information.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_a58bde847bd3",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_8ebf52ac0af9_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_8ebf52ac0af9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8ebf52ac0af9_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The Ripple protocol allows for approved changes through amendments.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_a67b6f98ec40",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_8ebf52ac0af9_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_8ebf52ac0af9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8ebf52ac0af9_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Amendments are contained within the Amendments ledger entry type.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_a4f1d18084b6",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_8ebf52ac0af9_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_8ebf52ac0af9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8ebf52ac0af9_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Amendments gain majority support through validators' consensus.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_89f01180b75f",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_8ebf52ac0af9_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_8ebf52ac0af9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8ebf52ac0af9_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The Amendments entry does not require a reserve.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_cb371fb89bfd",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_8ebf52ac0af9_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_8ebf52ac0af9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8ebf52ac0af9_ollama_intern_7 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The Amendments entry ID is the hash of the Amendments space key (0x0066).",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_25a59c351bbd",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_8ebf52ac0af9_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_8ebf52ac0af9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_8ebf52ac0af9_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The ID of the Amendments entry is always a specific hexadecimal value.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_c90440ba01ba",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_25ac15171ff0_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_25ac15171ff0"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_25ac15171ff0_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The server_info command asks the rippled server for information.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_a01ce3a548e6",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_5412494af521_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_5412494af521"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5412494af521_ollama_intern_14 has no 'not' constraint recorded.",
+      "evidence": "Asserts: A new field, CredentialIDs, is added to several existing transaction types.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.674Z"
+    },
+    {
+      "finding_id": "fnd_87319bc3feae",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_5412494af521_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_5412494af521"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5412494af521_ollama_intern_17 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The XRPL protocol amendment makes it possible to delete accounts.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_66f23883ed19",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_5412494af521_ollama_intern_40"
+      ],
+      "source_ids": [
+        "src_5412494af521"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5412494af521_ollama_intern_40 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Amendment ID CA7C02...6A0E9AC2 is implemented in XRPL protocol.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_4c0dedfdfedb",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_5412494af521_ollama_intern_63"
+      ],
+      "source_ids": [
+        "src_5412494af521"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5412494af521_ollama_intern_63 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Newly-created payment channels are added to both owner directories.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_e2588c8d1879",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_5412494af521_ollama_intern_67"
+      ],
+      "source_ids": [
+        "src_5412494af521"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5412494af521_ollama_intern_67 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The default vote for the amendment fixRemoveNFTokenAutoTrustLine is 'Yes'.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_72abc0e121bd",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_5412494af521_ollama_intern_101"
+      ],
+      "source_ids": [
+        "src_5412494af521"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5412494af521_ollama_intern_101 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Amendment ID BE1F90581635DBCEBFC4678C4B54FEDDC1A17B50FD02CFE765A4132A342126AC",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_e0b1aee44f87",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_5412494af521_ollama_intern_103"
+      ],
+      "source_ids": [
+        "src_5412494af521"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5412494af521_ollama_intern_103 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Amendment ID DA1BD556B42D85EA9C84066D028D355B52416734D3283F85E216EA5DA6DB7E13",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_bff8cf606f6a",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_5412494af521_ollama_intern_105"
+      ],
+      "source_ids": [
+        "src_5412494af521"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5412494af521_ollama_intern_105 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Amendment ID C1B8D934087225F509BEB5A8EC24447854713EE447D277F69545ABFA0E0FD490",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_b8077d05b961",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_5412494af521_ollama_intern_106"
+      ],
+      "source_ids": [
+        "src_5412494af521"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5412494af521_ollama_intern_106 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Amendment ID 532651B4FD58DF8922A49BA101AB3E996E5BFBF95A913B3E392504863E63B164",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_e626b6abacea",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_12 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The 'lsfMPTLocked' flag, if set, indicates that all balances are locked.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_83e9b8d33de1",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_21"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_21 has no 'not' constraint recorded.",
+      "evidence": "Asserts: An MPTokenIssuance can be removed only if the OutstandingAmount is equal to 0.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_222468f45aa5",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_25"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_25 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The newly created token will be owned by the creator account.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_e74359f732cd",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_30"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_30 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The issuer can set a maximum number of units for an MPToken issuance.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_00ee37613e30",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_34"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_34 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The MPTokenIssuanceSet transaction type is identified by the integer value 56.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_70f18fa9157d",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_35"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_35 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The Payment transaction's amount field will accommodate MPT amounts.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_a77079db395d",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_45"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_45 has no 'not' constraint recorded.",
+      "evidence": "Asserts: MPTokens can be queried using the ledger_entry API with the mptoken field.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_334caddb8ee0",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_70"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_70 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The first bit of an STAmount indicates whether it represents an MPT or XRP.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_b4967d787505",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_71"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_71 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The third bit of an STAmount determines whether it's parsed as XRP or MPT.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_bda9c2d8d906",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_512ff500b432_ollama_intern_72"
+      ],
+      "source_ids": [
+        "src_512ff500b432"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_512ff500b432_ollama_intern_72 has no 'not' constraint recorded.",
+      "evidence": "Asserts: MPT values are encoded focusing on the first three bits of a MPT.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_9174d0bd40fe",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_515596050b06_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_515596050b06"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_515596050b06_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: XLS-0020 introduces support for native non-fungible tokens on the XRP Ledger.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_34860e49b509",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_515596050b06_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_515596050b06"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_515596050b06_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: NFToken objects represent single NFTs and contain associated data.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_d0ae3a5d3de1",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_515596050b06_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_515596050b06"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_515596050b06_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: NFTokenIDs uniquely identify tokens and contain issuer-specific taxon.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_9cdf25bc1406",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_515596050b06_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_515596050b06"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_515596050b06_ollama_intern_14 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The URI field in an NFToken object can be used to reference data stored on IPFS.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_dd604e245098",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_515596050b06_ollama_intern_36"
+      ],
+      "source_ids": [
+        "src_515596050b06"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_515596050b06_ollama_intern_36 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Only the current Owner of an NFToken can create an offer to sell an NFToken.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_e9d23c415ca1",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_515596050b06_ollama_intern_41"
+      ],
+      "source_ids": [
+        "src_515596050b06"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_515596050b06_ollama_intern_41 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Each NFToken object has two directories for offers to buy and sell it.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_74e99f86b122",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_515596050b06_ollama_intern_46"
+      ],
+      "source_ids": [
+        "src_515596050b06"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_515596050b06_ollama_intern_46 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The NFTokenCancelOffer transaction adjusts the reserve requirements accordingly.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_7ac117f0cdb6",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_d16112dea1e0_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_d16112dea1e0"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d16112dea1e0_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Ripple has rotated the GPG key used to sign `rippled` packages.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_e2299b8240a9",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_d16112dea1e0_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_d16112dea1e0"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d16112dea1e0_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Automatic upgrades will not work until users have trusted the new key.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_c09040028559",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_d16112dea1e0_ollama_intern_4"
+      ],
+      "source_ids": [
+        "src_d16112dea1e0"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d16112dea1e0_ollama_intern_4 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The GPG key used to sign `rippled` packages has been rotated by Ripple.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_5ce5c360e1b0",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_d16112dea1e0_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_d16112dea1e0"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d16112dea1e0_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Automatic upgrades will not work until the new key is trusted.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_2080e2b4ec42",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_d16112dea1e0_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_d16112dea1e0"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d16112dea1e0_ollama_intern_7 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Users are advised to update their trust in the new GPG key.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_5961ee065ac0",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_d16112dea1e0_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_d16112dea1e0"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d16112dea1e0_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Ripple has changed its GPG key for signing `rippled` packages.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_ce4bc9bc578a",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_d16112dea1e0_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_d16112dea1e0"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d16112dea1e0_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Users are advised to update their trust in the new key.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_757faad03d39",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_d16112dea1e0_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_d16112dea1e0"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d16112dea1e0_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Users should update their trust in the new key.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_6bbd9e44a327",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_d16112dea1e0_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_d16112dea1e0"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d16112dea1e0_ollama_intern_13 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Users should update their trust to recognize the new GPG key.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_d19f7c8b6f06",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_e25c1c4ecccf_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_e25c1c4ecccf"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e25c1c4ecccf_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Rippled starts activation countdown when the threshold is 29",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_841f5739cd96",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_e25c1c4ecccf_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_e25c1c4ecccf"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_e25c1c4ecccf_ollama_intern_2 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_0c2b72f7b56b",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_e25c1c4ecccf_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_e25c1c4ecccf"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e25c1c4ecccf_ollama_intern_15 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The 'feature' command sets the `majority` property when consensus is exactly 80%",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "finding_id": "fnd_90bcfab11068",
+      "section_id": "06-amendment-and-validator-landscape",
+      "claim_ids": [
+        "clm_e25c1c4ecccf_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_e25c1c4ecccf"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_e25c1c4ecccf_ollama_intern_15 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    }
+  ],
+  "claim_reviews": [
+    {
+      "claim_id": "clm_03f52c5d778f_ollama_intern_1",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_d21eacd86c52",
+        "fnd_89ae91c5bb27"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_03f52c5d778f_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_1a628ebbc0b2"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_03f52c5d778f_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ee6fe9c9482f"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_03f52c5d778f_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_1c7ccca265af"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_03f52c5d778f_ollama_intern_7",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_e46dc0afe12b"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_03f52c5d778f_ollama_intern_8",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_9d1c0c7b3013"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_03f52c5d778f_ollama_intern_10",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_b37e8c1c9401",
+        "fnd_21c8d80486fe"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_8d039f2c0ee8_ollama_intern_13",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_8d039f2c0ee8_ollama_intern_14",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_098b17df36df"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_8d039f2c0ee8_ollama_intern_16",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_bb04ec8e3b17"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_8d039f2c0ee8_ollama_intern_17",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_96b04237a06d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_8d039f2c0ee8_ollama_intern_18",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_c2e7d1237ffd"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_8ebf52ac0af9_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_f378f5161fdd",
+        "fnd_a58bde847bd3"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_8ebf52ac0af9_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_a67b6f98ec40"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_8ebf52ac0af9_ollama_intern_4",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_a4f1d18084b6"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_8ebf52ac0af9_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_89f01180b75f"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_8ebf52ac0af9_ollama_intern_7",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_cb371fb89bfd"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_8ebf52ac0af9_ollama_intern_8",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_25a59c351bbd"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_25ac15171ff0_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_3408f3bc1c0f",
+        "fnd_c90440ba01ba"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_25ac15171ff0_ollama_intern_11",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_2980986e5969"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_5412494af521_ollama_intern_14",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_a01ce3a548e6"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_5412494af521_ollama_intern_17",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_87319bc3feae"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_5412494af521_ollama_intern_40",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_66f23883ed19"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_5412494af521_ollama_intern_63",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_4c0dedfdfedb"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_5412494af521_ollama_intern_67",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_e2588c8d1879"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_5412494af521_ollama_intern_101",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_72abc0e121bd"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_5412494af521_ollama_intern_103",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_e0b1aee44f87"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_5412494af521_ollama_intern_105",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_bff8cf606f6a"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_5412494af521_ollama_intern_106",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_b8077d05b961"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_5412494af521_ollama_intern_115",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_43110718a0a6"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_512ff500b432_ollama_intern_12",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_3aab983f32d5",
+        "fnd_e626b6abacea"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_512ff500b432_ollama_intern_21",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: scope_widening (block).",
+      "finding_ids": [
+        "fnd_a366cc063c80",
+        "fnd_f38ab02b52ca",
+        "fnd_83e9b8d33de1"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_512ff500b432_ollama_intern_25",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_3c8aa41ebce0",
+        "fnd_222468f45aa5"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_512ff500b432_ollama_intern_30",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_8df2a3bb0835",
+        "fnd_e74359f732cd"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_512ff500b432_ollama_intern_34",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_6a0e01cfb09e",
+        "fnd_00ee37613e30"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_512ff500b432_ollama_intern_35",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_c038e9ff596e",
+        "fnd_70f18fa9157d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_512ff500b432_ollama_intern_45",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_2095188d0979",
+        "fnd_a77079db395d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_512ff500b432_ollama_intern_70",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_6b50537665a9",
+        "fnd_334caddb8ee0"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_512ff500b432_ollama_intern_71",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_40a6c9722313",
+        "fnd_b4967d787505"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_512ff500b432_ollama_intern_72",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ee945220e9e9",
+        "fnd_bda9c2d8d906"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_515596050b06_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_842adaec64b6",
+        "fnd_9174d0bd40fe"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_515596050b06_ollama_intern_5",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_34860e49b509"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_515596050b06_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_d0ae3a5d3de1"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_515596050b06_ollama_intern_14",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_1eebc05fde3f",
+        "fnd_9cdf25bc1406"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_515596050b06_ollama_intern_36",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_dd604e245098"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_515596050b06_ollama_intern_41",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: scope_widening (warn).",
+      "finding_ids": [
+        "fnd_8f14015f7d65",
+        "fnd_67e8079fcd7b",
+        "fnd_e9d23c415ca1"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_515596050b06_ollama_intern_42",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_515596050b06_ollama_intern_43",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_515596050b06_ollama_intern_44",
+      "decision": "accepted_for_synthesis",
+      "reason": "No findings recorded for this claim by the current reviewer.",
+      "finding_ids": [],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_515596050b06_ollama_intern_46",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_74e99f86b122"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_d16112dea1e0_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_7ac117f0cdb6"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_d16112dea1e0_ollama_intern_3",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_e2299b8240a9"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_d16112dea1e0_ollama_intern_4",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_c09040028559"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_d16112dea1e0_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_5ce5c360e1b0"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_d16112dea1e0_ollama_intern_7",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_2080e2b4ec42"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_d16112dea1e0_ollama_intern_8",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_5961ee065ac0"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_d16112dea1e0_ollama_intern_9",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_ce4bc9bc578a"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_d16112dea1e0_ollama_intern_10",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_757faad03d39"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_d16112dea1e0_ollama_intern_13",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_6bbd9e44a327"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_e25c1c4ecccf_ollama_intern_2",
+      "decision": "needs_source_repair",
+      "reason": "Findings: overgeneralized_claim (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_cf91512415b9",
+        "fnd_d19f7c8b6f06",
+        "fnd_841f5739cd96"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    },
+    {
+      "claim_id": "clm_e25c1c4ecccf_ollama_intern_15",
+      "decision": "needs_source_repair",
+      "reason": "Findings: overgeneralized_claim (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_599e8f9a9806",
+        "fnd_0c2b72f7b56b",
+        "fnd_90bcfab11068"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-09T21:36:33.675Z"
+    }
+  ],
+  "decision_counts": {
+    "accepted_for_synthesis": 56,
+    "rejected": 0,
+    "needs_scope_repair": 3,
+    "needs_source_repair": 2,
+    "needs_contradiction_mapping": 0,
+    "needs_human_review": 0
+  },
+  "severity_counts": {
+    "info": 73,
+    "warn": 6,
+    "block": 1
+  },
+  "llm_findings_rejected_ungrounded": 0,
+  "promoted_to_reviewed": false
+}

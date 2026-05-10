@@ -1,0 +1,28 @@
+{
+  "source_id": "src_c24e3cf6d930",
+  "receipt_id": "rcpt_c24e3cf6d930_1778364276578",
+  "section_id": "07-metadata-and-off-chain-durability",
+  "url": "https://xrpl.org/docs/references/xrp-ledger-toml",
+  "final_url": "https://xrpl.org/docs/references/xrp-ledger-toml",
+  "fetched_at": "2026-05-09T22:04:36.578Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "xrp-ledger.toml File",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The xrp-ledger.toml file is a configuration file for the XRP Ledger.",
+    "It contains configuration options for the XRP Ledger, such as the path to the directory where the ledger data files will be stored.",
+    "The file also specifies the location of the transaction directory and the path to the SSL certificate and key files.",
+    "Updating this file is necessary when making changes to the XRP Ledger configuration."
+  ],
+  "limitations": [
+    "The documentation assumes a basic understanding of the XRP Ledger and its components.",
+    "It does not cover all possible configurations or scenarios for the XRP Ledger."
+  ],
+  "asserts": "The xrp-ledger.toml file is a crucial configuration file that determines how the XRP Ledger operates, specifying paths to data files and certificates.",
+  "scope": "Describing the structure and purpose of the xrp-ledger.toml configuration file in the context of running an XRP Ledger instance.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T22:05:12.37Z"
+}

@@ -1,0 +1,120 @@
+{
+  "report_id": "secrep_1778371452091_01-token-surface-and-standards",
+  "section_id": "01-token-surface-and-standards",
+  "reported_at": "2026-05-10T00:04:12.091Z",
+  "research_os_version": "0.3.1",
+  "status": "gated",
+  "sources": {
+    "fetched_ok": 9,
+    "source_cards": 9,
+    "publishers": [
+      "XRP Ledger Foundation"
+    ],
+    "primary_source_waiver": {
+      "status": "none",
+      "reason": null,
+      "compensating_controls": []
+    }
+  },
+  "extraction": {
+    "candidate_claims": 272,
+    "claims_per_source": [
+      {
+        "source_id": "src_89d29fa8978f",
+        "claims": 84
+      },
+      {
+        "source_id": "src_c3f060147acd",
+        "claims": 62
+      },
+      {
+        "source_id": "src_62cf595f3835",
+        "claims": 39
+      },
+      {
+        "source_id": "src_d16112dea1e0",
+        "claims": 37
+      },
+      {
+        "source_id": "src_0255a2aac931",
+        "claims": 22
+      },
+      {
+        "source_id": "src_f0063f109b4a",
+        "claims": 9
+      },
+      {
+        "source_id": "src_5229d8bd314e",
+        "claims": 9
+      },
+      {
+        "source_id": "src_ec3eb93321a7",
+        "claims": 6
+      },
+      {
+        "source_id": "src_d2fef4cddfd7",
+        "claims": 4
+      }
+    ],
+    "claims_per_1k_words": 6.4543685634284085,
+    "excerpt_pages_processed": 9,
+    "excerpt_id_failures": 0,
+    "malformed_extractor_outputs": 0,
+    "near_duplicate_clusters": 0,
+    "weak_scope_count": 0,
+    "generic_scope_count": 41,
+    "density_flags": 6
+  },
+  "contradictions": {
+    "pairs_compared": 36856,
+    "contradiction_candidates": 0,
+    "overgeneralization_risks": 0
+  },
+  "review": {
+    "reviewed": true,
+    "accepted_for_synthesis": 45,
+    "needs_scope_repair": 7,
+    "needs_source_repair": 11,
+    "needs_contradiction_mapping": 0,
+    "rejected": 1,
+    "needs_human_review": 0,
+    "rejection_or_repair_by_category": [
+      {
+        "category": "source_quality_problem",
+        "count": 88
+      },
+      {
+        "category": "overgeneralized_claim",
+        "count": 25
+      },
+      {
+        "category": "scope_widening",
+        "count": 16
+      },
+      {
+        "category": "source_cluster_monopoly",
+        "count": 8
+      },
+      {
+        "category": "definition_drift",
+        "count": 7
+      },
+      {
+        "category": "recommendation_exceeds_evidence",
+        "count": 5
+      }
+    ]
+  },
+  "acceptance": {
+    "candidate_claims": 272,
+    "accepted_for_synthesis": 45,
+    "acceptance_ratio": 0.16544117647058823,
+    "accepted_per_source": 5,
+    "accepted_per_1k_words": 1.0678183285083764,
+    "top_rejection_category": "source_quality_problem",
+    "claim_overproduction_fired": false,
+    "synthesis_ready": true
+  },
+  "gate_verdict": "warn",
+  "gate_synthesis_eligible": true
+}

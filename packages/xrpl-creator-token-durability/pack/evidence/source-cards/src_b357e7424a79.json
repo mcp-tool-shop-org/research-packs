@@ -1,0 +1,26 @@
+{
+  "source_id": "src_b357e7424a79",
+  "receipt_id": "rcpt_b357e7424a79_1778352303532",
+  "section_id": "02-account-and-key-management",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/types/accountdelete",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/types/accountdelete",
+  "fetched_at": "2026-05-09T18:45:03.532Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "AccountDelete",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The AccountDelete transaction is used to delete an account.",
+    "It requires a secret and the account's new public key.",
+    "If successful, the deleted account's balances are moved to the provided new account."
+  ],
+  "limitations": [
+    "Limited context and explanation provided"
+  ],
+  "asserts": "The AccountDelete transaction allows for the deletion of an account, moving its balances to a new account if provided.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:45:23.533Z"
+}

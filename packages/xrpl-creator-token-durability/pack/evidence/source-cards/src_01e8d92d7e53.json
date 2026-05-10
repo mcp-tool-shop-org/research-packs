@@ -1,0 +1,27 @@
+{
+  "source_id": "src_01e8d92d7e53",
+  "receipt_id": "rcpt_01e8d92d7e53_1778357610249",
+  "section_id": "05-transfer-and-trade-mechanics",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/types/escrowcreate",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/types/escrowcreate",
+  "fetched_at": "2026-05-09T20:13:30.249Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "EscrowCreate",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The EscrowCreate transaction creates an escrow holding funds for a specified recipient until a later time or condition.",
+    "It requires a signature from the payer and can include multiple currencies in the held amount.",
+    "The escrowed funds are released to the recipient once the specified condition is met, such as a timestamp or additional signatures.",
+    "EscrowCreate transactions are recorded on the XRP Ledger and can be tracked by their unique transaction ID."
+  ],
+  "limitations": [
+    "This documentation provides general information and may not cover all specific use cases and edge cases."
+  ],
+  "asserts": "The EscrowCreate transaction allows for secure holding of funds in an escrow until a specified condition is met, enabling trustless transactions between parties.",
+  "scope": "Describes the functionality and usage of the EscrowCreate transaction type within the XRP Ledger protocol.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T20:14:01.798Z"
+}

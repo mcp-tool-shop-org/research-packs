@@ -1,0 +1,28 @@
+{
+  "source_id": "src_914d01359b57",
+  "receipt_id": "rcpt_914d01359b57_1778357513984",
+  "section_id": "05-transfer-and-trade-mechanics",
+  "url": "https://xrpl.org/docs/references/protocol/transactions/types/offercancel",
+  "final_url": "https://xrpl.org/docs/references/protocol/transactions/types/offercancel",
+  "fetched_at": "2026-05-09T20:11:53.984Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "OfferCancel",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The OfferCancel transaction is used to cancel a previously submitted offer.",
+    "It requires the trust account to have sufficient XRP or other assets to cover any pending transactions associated with the offer.",
+    "The offer ID must be specified in the transaction.",
+    "If the canceled offer had any associated escrow holds, they are also released as part of this process."
+  ],
+  "limitations": [
+    "Limited context provided about real-world usage and implications of OfferCancel",
+    "Focuses on technical details rather than broader system impact or potential edge cases"
+  ],
+  "asserts": "The OfferCancel transaction allows a user to cancel an offer they previously submitted, releasing any associated escrow holds in the process.",
+  "scope": "Describes how OfferCancel can be used by parties who have previously submitted offers to revoke them and release related escrow holdings on the XRP Ledger.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T20:12:24.540Z"
+}

@@ -1,0 +1,27 @@
+{
+  "source_id": "src_8d039f2c0ee8",
+  "receipt_id": "rcpt_8d039f2c0ee8_1778360405859",
+  "section_id": "06-amendment-and-validator-landscape",
+  "url": "https://xrpl.org/docs/concepts/networks-and-servers/peer-protocol",
+  "final_url": "https://xrpl.org/docs/concepts/networks-and-servers/peer-protocol",
+  "fetched_at": "2026-05-09T21:00:05.859Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Peer Protocol",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The peer protocol is used by XRP Ledger to communicate between peers.",
+    "Peers in the XRP Ledger network exchange transaction information, validators and other network data using this protocol.",
+    "The protocol supports a variety of communication methods including HTTP, WebSocket, and TCP."
+  ],
+  "limitations": [
+    "Does not cover all technical details and specifications of the peer protocol",
+    "Focuses on general concepts rather than specific implementation or use cases"
+  ],
+  "asserts": "The XRP Ledger network uses the peer protocol to exchange transaction information, validators, and other network data between peers via methods like HTTP, WebSocket, and TCP.",
+  "scope": "Explains how the peer protocol enables communication of transaction info, validators, and other network metadata in the XRP Ledger system.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T21:00:34.523Z"
+}

@@ -1,0 +1,18 @@
+{
+  "receipt_id": "cle_1778351059588_03-on-ledger-state-and-reserves",
+  "section_id": "03-on-ledger-state-and-reserves",
+  "extracted_at": "2026-05-09T18:24:19.588Z",
+  "research_os_version": "0.3.1",
+  "extractor": "ollama-intern",
+  "extraction_method": "ollama_intern_propositional_paged",
+  "sources_processed": 13,
+  "sources_skipped": 0,
+  "sources_failed": 0,
+  "excerpt_ledgers_built": 13,
+  "claims_added": 197,
+  "claims_deduped": 0,
+  "claims_rejected_ungrounded": 4,
+  "claims_rejected_excerpt_id_missing": 0,
+  "claims_rejected_excerpt_id_malformed": 4,
+  "failures": []
+}

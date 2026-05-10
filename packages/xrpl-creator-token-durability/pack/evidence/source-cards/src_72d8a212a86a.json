@@ -1,0 +1,26 @@
+{
+  "source_id": "src_72d8a212a86a",
+  "receipt_id": "rcpt_72d8a212a86a_1778350016815",
+  "section_id": "03-on-ledger-state-and-reserves",
+  "url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/nftokenpage",
+  "final_url": "https://xrpl.org/docs/references/protocol/ledger-data/ledger-entry-types/nftokenpage",
+  "fetched_at": "2026-05-09T18:06:56.815Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "NFTokenPage",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "NFTokenPage is a type of account in the XRP Ledger.",
+    "It represents an NFT (non-fungible token) holder's account.",
+    "The NFTokenPage contains references to one or more NFTs held by the account."
+  ],
+  "limitations": [
+    "Limited context beyond the technical documentation"
+  ],
+  "asserts": "An NFTokenPage is a specialized account in the XRP Ledger that holds references to one or more non-fungible tokens (NFTs).",
+  "scope": "Describes the structure and purpose of an NFTokenPage account within the XRP Ledger system.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:07:26.047Z"
+}

@@ -1,0 +1,29 @@
+{
+  "source_id": "src_cef2c31af42d",
+  "receipt_id": "rcpt_cef2c31af42d_1778352088639",
+  "section_id": "02-account-and-key-management",
+  "url": "https://xrpl.org/docs/concepts/accounts",
+  "final_url": "https://xrpl.org/docs/concepts/accounts",
+  "fetched_at": "2026-05-09T18:41:28.639Z",
+  "publisher": "xrpl.org",
+  "published_at": null,
+  "title": "Accounts",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "XRP Ledger accounts are used for sending and receiving XRP and other assets.",
+    "Each account has a public key, which is derived from a secret seed phrase.",
+    "The XRP Ledger uses the SHA-256 hash function to derive account addresses from secret keys.",
+    "Accounts can be created by anyone with knowledge of their secret seed, regardless of their balance or whether they have XRP.",
+    "Accounts in the XRP Ledger are not tied to real-world identities and have no associated personal information."
+  ],
+  "limitations": [
+    "The source is technical documentation and may use jargon or assume prior knowledge.",
+    "It focuses on the XRP Ledger's technical aspects rather than its broader applications or implications."
+  ],
+  "asserts": "XRP Ledger accounts are used for sending and receiving XRP and other assets. Each account has a public key, which is derived from a secret seed phrase.",
+  "scope": "The context of creating, managing, and using accounts within the XRP Ledger system.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T18:42:11.992Z"
+}

@@ -1,0 +1,26 @@
+{
+  "source_id": "src_313e0214db27",
+  "receipt_id": "rcpt_313e0214db27_1778364251283",
+  "section_id": "07-metadata-and-off-chain-durability",
+  "url": "https://github.com/XRPLF/XRPL-Standards/discussions/69",
+  "final_url": "https://github.com/XRPLF/XRPL-Standards/discussions/69",
+  "fetched_at": "2026-05-09T22:04:11.283Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Discuss: XRPL v1.4.0 Alpha Release",
+  "source_type": "forum",
+  "relevance": "high",
+  "key_points": [
+    "XRPL Foundation is seeking feedback on the alpha release of XRPL v1.4.0.",
+    "The update includes several new features and improvements to the protocol.",
+    "Community input will be used to refine the changes before the official release."
+  ],
+  "limitations": [
+    "This discussion is part of an open-source project, so the quality and accuracy of information can vary."
+  ],
+  "asserts": "The XRPL Foundation is looking for community feedback on the alpha release of version 1.4.0 to help improve the protocol.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T22:04:36.243Z"
+}

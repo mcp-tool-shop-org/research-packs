@@ -1,0 +1,18 @@
+{
+  "receipt_id": "cle_1778353311733_02-account-and-key-management",
+  "section_id": "02-account-and-key-management",
+  "extracted_at": "2026-05-09T19:01:51.733Z",
+  "research_os_version": "0.3.1",
+  "extractor": "ollama-intern",
+  "extraction_method": "ollama_intern_propositional_paged",
+  "sources_processed": 14,
+  "sources_skipped": 0,
+  "sources_failed": 0,
+  "excerpt_ledgers_built": 12,
+  "claims_added": 173,
+  "claims_deduped": 0,
+  "claims_rejected_ungrounded": 0,
+  "claims_rejected_excerpt_id_missing": 0,
+  "claims_rejected_excerpt_id_malformed": 0,
+  "failures": []
+}

@@ -1,0 +1,18 @@
+{
+  "receipt_id": "cle_1778362383290_06-amendment-and-validator-landscape",
+  "section_id": "06-amendment-and-validator-landscape",
+  "extracted_at": "2026-05-09T21:33:03.290Z",
+  "research_os_version": "0.3.1",
+  "extractor": "ollama-intern",
+  "extraction_method": "ollama_intern_propositional_paged",
+  "sources_processed": 14,
+  "sources_skipped": 0,
+  "sources_failed": 0,
+  "excerpt_ledgers_built": 13,
+  "claims_added": 358,
+  "claims_deduped": 0,
+  "claims_rejected_ungrounded": 0,
+  "claims_rejected_excerpt_id_missing": 0,
+  "claims_rejected_excerpt_id_malformed": 0,
+  "failures": []
+}

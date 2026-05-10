@@ -1,0 +1,26 @@
+{
+  "source_id": "src_12ac7f4c315b",
+  "receipt_id": "rcpt_12ac7f4c315b_1778354761808",
+  "section_id": "04-issuer-controls-and-immutability",
+  "url": "https://api.github.com/search/issues?q=repo:XRPLF/rippled+clawback+freeze+NFT+OR+MPT&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:XRPLF/rippled+clawback+freeze+NFT+OR+MPT&per_page=20",
+  "fetched_at": "2026-05-09T19:26:01.808Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "refactor: Rename (mostly keylet) functions to more closely match the docs",
+  "source_type": "forum",
+  "relevance": "low",
+  "key_points": [
+    "PR renames a bunch of functions (mostly keylet functions) to match what the docs refer to these as, so that it's easier to know what function to use when you want to use a specific keylet.",
+    "Full list of renames provided in the PR body",
+    "There are no functionality changes in this PR, only renames"
+  ],
+  "limitations": [
+    "Source quality: GitHub pull request with limited context and information"
+  ],
+  "asserts": "(no assertion extracted)",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-09T19:26:24.787Z"
+}

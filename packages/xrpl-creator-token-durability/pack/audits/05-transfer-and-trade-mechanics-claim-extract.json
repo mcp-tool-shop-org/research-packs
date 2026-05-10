@@ -1,0 +1,18 @@
+{
+  "receipt_id": "cle_1778358579173_05-transfer-and-trade-mechanics",
+  "section_id": "05-transfer-and-trade-mechanics",
+  "extracted_at": "2026-05-09T20:29:39.173Z",
+  "research_os_version": "0.3.1",
+  "extractor": "ollama-intern",
+  "extraction_method": "ollama_intern_propositional_paged",
+  "sources_processed": 16,
+  "sources_skipped": 0,
+  "sources_failed": 0,
+  "excerpt_ledgers_built": 14,
+  "claims_added": 156,
+  "claims_deduped": 0,
+  "claims_rejected_ungrounded": 0,
+  "claims_rejected_excerpt_id_missing": 0,
+  "claims_rejected_excerpt_id_malformed": 0,
+  "failures": []
+}
