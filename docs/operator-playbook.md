@@ -234,6 +234,45 @@ When a section has more than 100 unresolved contradictions after `contradict map
 
 ---
 
+## Pack publish admission accounting (research-os ≥ v0.3.2)
+
+`pack publish` derives the per-section `accepted_claims` count from the **effective accepted set** — unique `claim_id`s whose latest canonical review decision is `accepted_for_synthesis`. Latest-decision-wins precedence per `claim_id`. This is the single canonical "accepted claims" definition that every consumer of the closure ledger uses.
+
+### Why the change matters
+
+`claim-reviews.jsonl` is append-only by design, and reviewer windows can overlap. The same `claim_id` can legitimately receive multiple `accepted_for_synthesis` records — each a real review record, none a duplicate to discard. The pre-v0.3.2 admission contract used a strict equality check between the raw row count in `claim-reviews.jsonl` and the legacy `pack-audit.json::accepted_claims` count, which surfaced a "closure-ledger seam disagreement" refusal whenever windows overlapped.
+
+The v0.3.2 contract derives the effective set first, then admits.
+
+### What the operator sees
+
+When the legacy `pack-audit.json::accepted_claims` count differs from the effective set, `pack publish` emits a single warning per affected section:
+
+```
+section <id>: legacy pack-audit.json accepted_claims (24) differs from
+effective accepted set (19). Using effective count (19) in manifest.
+Legacy audit count preserved in pack/audits/pack-audit.json (immutable
+per Law 15).
+```
+
+Admission proceeds. The archive manifest's `sections[].accepted_claims` reflects the effective count (19 in the example). The legacy audit file is preserved verbatim inside `pack/audits/pack-audit.json` because freeze artifacts are immutable.
+
+### What still hard-refuses
+
+The contract continues to refuse on real integrity problems:
+
+- **Phantom claim_id** — a `claim_id` cited as accepted in `claim-reviews.jsonl` but absent from `claims.jsonl`.
+- **Incompatible duplicate decisions** — same `claim_id` + same `created_at` carrying different decision values (e.g., one `accepted_for_synthesis`, one `rejected`).
+- **Section gate not synthesis-eligible** — gate result missing or `synthesis_eligible: false`.
+
+These are not soft-warns — they signal a damaged closure ledger and pack publish exits 2 without writing.
+
+### Earned by
+
+XRPL creator-token durability pack (Experiment 3 pack #2 of 3, Session K, 2026-05-10). Section 07 surfaced the seam: 24 raw `accepted_for_synthesis` rows but only 19 unique `claim_id`s. Refusal was correct under the v0.3.1 admission contract; v0.3.2 reconciles the contract with the closure-ledger reality. Earlier frozen packs (`comfyui-workflow-durability`, `research-os-self-dogfood`) regress identically — their effective count matched the legacy count, so neither sees a warning.
+
+---
+
 ## v0.1 self-dogfood arc — structural notes
 
 The v0.1 dogfood pack used `mistral-nemo:12b` as the extractor and reviewer model (hermes3:8b not pulled on the 5080 rig at the time). The `hermes-two-pass` review profile is calibrated against the seeded-failure fixture with `hermes3:8b` as the canonical model. The dogfood arc's proof is honest — it discloses the model substitution — but a hermes3-based receipt is Experiment 6 in the roadmap.
