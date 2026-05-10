@@ -5,3 +5,10 @@
 # on Windows (CRLF). The freeze receipt hash was computed on the CRLF bytes.
 # Force CRLF checkout on all platforms so verify-pack hashes match the receipt.
 packages/research-os-self-dogfood/pack/synthesis/final-report.md eol=crlf
+
+# Pack files: xrpl-creator-token-durability source cards were written with
+# CRLF on Windows during gather (per JSON.stringify + os.EOL on the source-card
+# writer code path). The freeze receipt hashes were computed on the CRLF bytes.
+# Treat as binary (-text) so git stores the literal bytes and verify-pack
+# hashes match the receipt on every platform.
+packages/xrpl-creator-token-durability/pack/evidence/source-cards/*.json -text
