@@ -273,6 +273,34 @@ XRPL creator-token durability pack (Experiment 3 pack #2 of 3, Session K, 2026-0
 
 ---
 
+## Closeout: integrate `.gitattributes -text` rule for CRLF source-card files
+
+Windows-frozen packs may ship source-card JSON with CRLF line endings (writer code-path artifact). Local `verify-pack` passes pre-merge because the bytes on disk match the freeze receipt's fingerprints. After merge into `research-packs`, git's default `* text=auto eol=lf` rule normalizes those bytes to LF in the index; CI on Linux checks out LF; receipt fingerprints (computed against the original CRLF bytes) fail.
+
+**Symptom on `main` post-merge CI:**
+
+```
+Hash mismatch for pack/evidence/source-cards/src_<hex>.json
+```
+
+…repeated for every CRLF-affected source-card file (10 in the XRPL case).
+
+**Fix.** Add a single line to `.gitattributes` at the receiving repo root, scoped to that package's source-card files only:
+
+```
+packages/<package-name>/pack/evidence/source-cards/*.json -text
+```
+
+The `-text` declares the files binary; git stores literal bytes verbatim with no normalization in either direction. Then restore the affected source-card bytes from the canonical frozen pack on disk at `research-os-packs/<package>/evidence/source-cards/`.
+
+**Verification.** Local `node scripts/verify-pack.mjs packages/<package-name>` should PASS after the restore. Push the fix as a follow-up PR; both the PR's CI and `main` post-merge CI should be green.
+
+**Canonical example.** XRPL pack hotfix: [research-packs#3](https://github.com/mcp-tool-shop-org/research-packs/pull/3) — 10 source-card files, single `.gitattributes` line, CI green on PR and on `main`.
+
+**Why this is operator discipline.** Logged as F-37 in research-os, deferred to v0.3.3 — `pack publish` will eventually emit the `.gitattributes` snippet at admission time so operators don't have to think about this. Until then, expect this as a closeout step for any Windows-frozen pack.
+
+---
+
 ## v0.1 self-dogfood arc — structural notes
 
 The v0.1 dogfood pack used `mistral-nemo:12b` as the extractor and reviewer model (hermes3:8b not pulled on the 5080 rig at the time). The `hermes-two-pass` review profile is calibrated against the seeded-failure fixture with `hermes3:8b` as the canonical model. The dogfood arc's proof is honest — it discloses the model substitution — but a hermes3-based receipt is Experiment 6 in the roadmap.
