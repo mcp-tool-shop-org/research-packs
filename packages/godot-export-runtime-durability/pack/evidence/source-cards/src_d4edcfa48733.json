@@ -1,0 +1,26 @@
+{
+  "source_id": "src_d4edcfa48733",
+  "receipt_id": "rcpt_d4edcfa48733_1778388924325",
+  "section_id": "05-desktop-platform-export-durability",
+  "url": "https://docs.developer.apple.com/tutorials/data/documentation/security/hardened-runtime.md",
+  "final_url": "https://developer.apple.com/tutorials/data/documentation/security/hardened-runtime.md",
+  "fetched_at": "2026-05-10T04:55:24.325Z",
+  "publisher": "Apple Inc.",
+  "published_at": null,
+  "title": "Hardened Runtime",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "The Hardened Runtime and System Integrity Protection protect the runtime integrity of macOS software by preventing certain classes of exploits, like code injection, dynamically linked library (DLL) hijacking, and process memory space tampering.",
+    "To enable the Hardened Runtime for a macOS app in Xcode, navigate to the target's Signing & Capabilities information and click the + button to add the Hardened Runtime capability.",
+    "If an app relies on a capability that the Hardened Runtime restricts, an entitlement can be added in Xcode to disable an individual protection. This should only be done if absolutely necessary for the app's functionality."
+  ],
+  "limitations": [
+    "The default value of Boolean entitlements is false, and including an entitlement only makes sense if its value is true. Don't include an entitlement if the value is false."
+  ],
+  "asserts": "Enabling the Hardened Runtime capability in Xcode ensures that a macOS app's runtime integrity is protected against exploits.",
+  "scope": "The context of this document is managing security protections and resource access for macOS apps through the use of Xcode's capabilities, entitlements, and the Hardened Runtime.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T04:55:54.940Z"
+}

@@ -1,0 +1,28 @@
+{
+  "source_id": "src_3bf41f24d47a",
+  "receipt_id": "rcpt_3bf41f24d47a_1778391746218",
+  "section_id": "02-scene-resource-serialization",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_resource.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_resource.rst",
+  "fetched_at": "2026-05-10T05:42:26.218Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "Resource",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Resource is the base class for all Godot-specific resource types.",
+    "Resources are reference-counted and freed when no longer in use.",
+    "The engine keeps a global cache of all loaded resources, referenced by paths.",
+    "In C#, resources will not be freed instantly after they are no longer in use.",
+    "Resources can be loaded from disk using GDScript's @GDScript.load() or @GDScript.preload()."
+  ],
+  "limitations": [
+    "Limited to Godot-specific resource types."
+  ],
+  "asserts": "Resource serves primarily as data containers for serializable objects.",
+  "scope": "Describes the Resource class in Godot engine, its properties and methods.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T05:43:00.081Z"
+}

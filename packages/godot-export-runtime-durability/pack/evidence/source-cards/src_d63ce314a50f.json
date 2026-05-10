@@ -1,0 +1,30 @@
+{
+  "source_id": "src_d63ce314a50f",
+  "receipt_id": "rcpt_d63ce314a50f_1778399335293",
+  "section_id": "06-mobile-web-export-durability",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_for_web.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_for_web.rst",
+  "fetched_at": "2026-05-10T07:48:55.293Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "Exporting for the Web",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "HTML5 export allows publishing games made in Godot Engine to the browser.",
+    "Projects written in C# using Godot 4 currently cannot be exported to the web.",
+    "Godot 4 can only target WebGL 2.0 (using the Compatibility rendering method).",
+    "The Web export requires support for `WebAssembly` and `WebGL 2.0` in the user's browser."
+  ],
+  "limitations": [
+    "Several features work effortlessly on native platforms but are more complicated on the web platform.",
+    "Browsers restrict autoplay for audio on websites.",
+    "Low-level networking is not implemented due to lacking support in browsers.",
+    "Clipboard synchronization between engine and the operating system requires a browser supporting the `Clipboard API`."
+  ],
+  "asserts": "HTML5 export allows publishing games made in Godot Engine to the browser, requiring support for WebAssembly and WebGL 2.0 in the user's browser.",
+  "scope": "The scope of this document is HTML5 exporting functionality in Godot Engine, covering compatibility requirements and limitations.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T07:49:29.825Z"
+}

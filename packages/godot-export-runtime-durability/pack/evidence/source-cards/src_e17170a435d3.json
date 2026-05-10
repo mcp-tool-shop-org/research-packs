@@ -1,0 +1,26 @@
+{
+  "source_id": "src_e17170a435d3",
+  "receipt_id": "rcpt_e17170a435d3_1778399655925",
+  "section_id": "06-mobile-web-export-durability",
+  "url": "https://api.github.com/search/issues?q=repo:godotengine/godot+android+export+keystore&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:godotengine/godot+android+export+keystore&per_page=20",
+  "fetched_at": "2026-05-10T07:54:15.925Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Add key password for Android export and configured signature options",
+  "source_type": "forum",
+  "relevance": "high",
+  "key_points": [
+    "Adds support for adding a key password when exporting to Android in Godot",
+    "Provides configured signature options for Android exports",
+    "Improves security by requiring a key password during the export process"
+  ],
+  "limitations": [
+    "The source does not specify any limitations or caveats."
+  ],
+  "asserts": "This pull request adds an additional layer of security to the Android exporting process in Godot by allowing users to set a key password and provides configured signature options.",
+  "scope": "This change specifically relates to the Android export functionality within the Godot game engine.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T07:54:40.451Z"
+}

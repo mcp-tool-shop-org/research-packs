@@ -1,0 +1,135 @@
+{
+  "report_id": "secrep_1778404886737_06-mobile-web-export-durability",
+  "section_id": "06-mobile-web-export-durability",
+  "reported_at": "2026-05-10T09:21:26.737Z",
+  "research_os_version": "0.3.2",
+  "status": "gated",
+  "sources": {
+    "fetched_ok": 14,
+    "source_cards": 14,
+    "publishers": [
+      "Apple Inc.",
+      "Godotengine",
+      "Google",
+      "Mozilla"
+    ],
+    "primary_source_waiver": {
+      "status": "none",
+      "reason": null,
+      "compensating_controls": []
+    }
+  },
+  "extraction": {
+    "candidate_claims": 402,
+    "claims_per_source": [
+      {
+        "source_id": "src_ba5aaca1a207",
+        "claims": 127
+      },
+      {
+        "source_id": "src_b777c089d810",
+        "claims": 44
+      },
+      {
+        "source_id": "src_7e04a97ea278",
+        "claims": 33
+      },
+      {
+        "source_id": "src_d63ce314a50f",
+        "claims": 31
+      },
+      {
+        "source_id": "src_e17170a435d3",
+        "claims": 28
+      },
+      {
+        "source_id": "src_5670dbff3e4d",
+        "claims": 26
+      },
+      {
+        "source_id": "src_083cda9d9328",
+        "claims": 22
+      },
+      {
+        "source_id": "src_5fda19aa5cd8",
+        "claims": 17
+      },
+      {
+        "source_id": "src_d726c169567d",
+        "claims": 16
+      },
+      {
+        "source_id": "src_4c6c14f4f6fa",
+        "claims": 15
+      },
+      {
+        "source_id": "src_0974a54becd4",
+        "claims": 12
+      },
+      {
+        "source_id": "src_b2e50dff76fc",
+        "claims": 11
+      },
+      {
+        "source_id": "src_37ec19efa9ba",
+        "claims": 10
+      },
+      {
+        "source_id": "src_24107f739f88",
+        "claims": 10
+      }
+    ],
+    "claims_per_1k_words": 3.2531378213687456,
+    "excerpt_pages_processed": 13,
+    "excerpt_id_failures": 0,
+    "malformed_extractor_outputs": 0,
+    "near_duplicate_clusters": 0,
+    "weak_scope_count": 4,
+    "generic_scope_count": 19,
+    "density_flags": 11
+  },
+  "contradictions": {
+    "pairs_compared": 80601,
+    "contradiction_candidates": 0,
+    "overgeneralization_risks": 0
+  },
+  "review": {
+    "reviewed": true,
+    "accepted_for_synthesis": 53,
+    "needs_scope_repair": 9,
+    "needs_source_repair": 24,
+    "needs_contradiction_mapping": 0,
+    "rejected": 0,
+    "needs_human_review": 1,
+    "rejection_or_repair_by_category": [
+      {
+        "category": "source_quality_problem",
+        "count": 24
+      },
+      {
+        "category": "overgeneralized_claim",
+        "count": 7
+      },
+      {
+        "category": "scope_widening",
+        "count": 3
+      },
+      {
+        "category": "recommendation_exceeds_evidence",
+        "count": 2
+      }
+    ]
+  },
+  "acceptance": {
+    "candidate_claims": 402,
+    "accepted_for_synthesis": 53,
+    "acceptance_ratio": 0.1318407960199005,
+    "accepted_per_source": 3.7857142857142856,
+    "accepted_per_1k_words": 0.42889627993170026,
+    "top_rejection_category": "source_quality_problem",
+    "claim_overproduction_fired": false,
+    "synthesis_ready": true
+  },
+  "gate_verdict": "warn",
+  "gate_synthesis_eligible": true
+}

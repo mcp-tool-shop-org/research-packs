@@ -1,0 +1,8 @@
+section_id: 04-scripting-runtime-contracts
+purpose: GDScript 1 vs 2.0 language migration, type-system semantics, signal/callable model, C# binding support per export target, GDExtension version-compat contracts, scene-tree initialization order and runtime parse-vs-execute distinction.
+status: draft
+created_at: 2026-05-10T06:41:36.447Z
+max_time_minutes: 45
+min_sources: 8
+primary_sources_required: 2
+contradictions_required: true

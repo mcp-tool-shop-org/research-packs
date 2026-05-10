@@ -1,0 +1,27 @@
+{
+  "source_id": "src_bc58f284031b",
+  "receipt_id": "rcpt_bc58f284031b_1778391813133",
+  "section_id": "02-scene-resource-serialization",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_packedscene.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_packedscene.rst",
+  "fetched_at": "2026-05-10T05:43:33.133Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "PackedScene",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "PackedScene is an abstraction of a serialized scene.",
+    "It provides access to operations and checks that can be performed on the scene resource itself.",
+    "Can be used to save a node to a file.",
+    "The method instantiate() triggers a Node.NOTIFICATION_SCENE_INSTANTIATED notification on the root node."
+  ],
+  "limitations": [
+    "Only available in editor builds for some methods."
+  ],
+  "asserts": "PackedScene provides an interface to load and manipulate serialized scenes.",
+  "scope": "The context of asserting is related to loading, saving and manipulating scene files in Godot game engine.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T05:43:55.256Z"
+}

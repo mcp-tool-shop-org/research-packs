@@ -1,0 +1,28 @@
+{
+  "source_id": "src_c5ed9836ffb5",
+  "receipt_id": "rcpt_c5ed9836ffb5_1778391979781",
+  "section_id": "02-scene-resource-serialization",
+  "url": "https://api.github.com/search/issues?q=repo:godotengine/godot+tscn+compatibility+version&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:godotengine/godot+tscn+compatibility+version&per_page=20",
+  "fetched_at": "2026-05-10T05:46:19.781Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Capitalize INF, -INF, and NAN in serializing",
+  "source_type": "forum",
+  "relevance": "high",
+  "key_points": [
+    "The editor inspector cannot display non-finite values such as infinity and NaN.",
+    "If the check for non-finite values is removed, they become allowed.",
+    "Non-finite values have to be typed as 'INF', '-INF', or 'NAN' like GDScript.",
+    "Removing the check for negative sign rearranges the code slightly."
+  ],
+  "limitations": [
+    "The change requires fixing reading negated identifiers such as -inf and INF.",
+    "Capitalizing the displayed and serialized text is an arbitrary choice made by engine developers."
+  ],
+  "asserts": "Allowing users to type both 'inf' and 'INF' alongside capitalizing the displayed and serialized text improves consistency in displaying non-finite values.",
+  "scope": "The source asserts about improving user experience and consistency in displaying non-finite values such as infinity and NaN in Godot's editor inspector.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T05:46:53.624Z"
+}

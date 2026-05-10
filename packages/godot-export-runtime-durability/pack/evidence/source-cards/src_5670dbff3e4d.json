@@ -1,0 +1,28 @@
+{
+  "source_id": "src_5670dbff3e4d",
+  "receipt_id": "rcpt_5670dbff3e4d_1778399522717",
+  "section_id": "06-mobile-web-export-durability",
+  "url": "https://developer.android.com/studio/publish",
+  "final_url": "https://developer.android.com/studio/publish?hl=fr",
+  "fetched_at": "2026-05-10T07:52:02.717Z",
+  "publisher": "Google",
+  "published_at": null,
+  "title": "Publier votre application | Android Studio | Android Developers",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "D\u00e9couvrez comment pr\u00e9parer la publication de votre application.",
+    "Apprenez \u00e0 cr\u00e9er des builds pour les appareils et les plateformes que vous souhaitez cibler.",
+    "Explorez les options de distribution, y compris Google Play et APK direct."
+  ],
+  "limitations": [
+    "Le contenu est ax\u00e9 sur la publication d'applications Android.",
+    "La documentation peut \u00eatre orient\u00e9e vers les d\u00e9veloppeurs avanc\u00e9s ou exp\u00e9riment\u00e9s.",
+    "Peut ne pas couvrir tous les aspects de la pr\u00e9paration \u00e0 la publication pour un nouveau d\u00e9veloppeur."
+  ],
+  "asserts": "Cette page vous guide dans la pr\u00e9paration et la publication de votre application Android, en explorant les options de builds, de distribution et d'optimisation.",
+  "scope": "La documentation vise \u00e0 fournir des informations aux d\u00e9veloppeurs Android qui souhaitent publier leur application sur Google Play ou par le biais d'un APK direct.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T07:52:36.165Z"
+}

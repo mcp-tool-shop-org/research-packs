@@ -1,0 +1,2791 @@
+{
+  "section_id": "05-desktop-platform-export-durability",
+  "reviewer": "ollama-intern",
+  "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+  "reviewed_at": "2026-05-10T05:20:09.388Z",
+  "candidate_claims": 56,
+  "findings": [
+    {
+      "finding_id": "fnd_f4cb60070eb3",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_1ceb96fdb33a_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_1ceb96fdb33a"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_1ceb96fdb33a_ollama_intern_7 restates basic context about Godot's platform support.",
+      "evidence": "",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.384Z"
+    },
+    {
+      "finding_id": "fnd_bc0a66095a45",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_5b703b620109_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_5b703b620109",
+        "src_03cb99fe6df9"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "Claim clm_5b703b620109_ollama_intern_1 overgeneralizes about default macOS app execution policy.",
+      "evidence": "",
+      "required_action": "Clarify claim only applies to user-approval, not kernel-level restrictions like sandboxing.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.384Z"
+    },
+    {
+      "finding_id": "fnd_4b2cd1a6a751",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_7d0fca124716_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_7d0fca124716"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim clm_7d0fca124716_ollama_intern_1 restates basic context about Godot's platform support.",
+      "evidence": "",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_92bb66d4fd4e",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_5b703b620109_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_5b703b620109"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that macOS apps should avoid relying on relative paths from the application folder is too broad and does not account for specific use cases where relative paths may be appropriate.",
+      "evidence": "In general, macOS apps should avoid relying on relative paths from the application folder.",
+      "required_action": "Clarify or narrow the scope of the claim to only apply in situations where using relative paths would be problematic.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_cad94ed67123",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_5b703b620109_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_5b703b620109"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim that building an app using custom export templates and OSXCross does not sign it is a grounded fact but may not be synthesis-worthy as it details a specific technical process.",
+      "evidence": "App is built using custom export templates, compiled using OSXCross, and it is not signed at all.",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_f911f5db380c",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_5b703b620109_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_5b703b620109"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim that ad-hoc signing the app yourself enables it to run on macOS is a grounded fact but may not be synthesis-worthy as it details a specific technical process.",
+      "evidence": "To run this app, you can ad-hoc sign it yourself:",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_70104d029051",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_c3216b0c8944_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_c3216b0c8944"
+      ],
+      "category": "recommendation_exceeds_evidence",
+      "severity": "warn",
+      "summary": "The claim that notarization usually takes less than an hour implies a quick process, but the source only states 'which usually takes less than an hour', allowing for variability beyond what is explicitly supported.",
+      "evidence": "When you click Next, Xcode uploads your archive to the notary service. When the upload is complete, the notary service begins the scanning process, which usually takes less than an hour.",
+      "required_action": "Specify a more concrete timeframe or caveat about variability if applicable.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_51e22c46b180",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_c3216b0c8944_ollama_intern_18"
+      ],
+      "source_ids": [
+        "src_c3216b0c8944"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that Apple provides documentation on how to customize the notarization workflow is too broad. It should be clarified if it applies only to certain aspects or for specific user roles.",
+      "evidence": "For information about how to incorporate notarization into your custom build scripts, see [Customizing the notarization workflow](/documentation/Security/customizing-the-notarization-workflow).",
+      "required_action": "Specify which aspects of customization are documented.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_dcabae38c172",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_c3216b0c8944_ollama_intern_19"
+      ],
+      "source_ids": [
+        "src_c3216b0c8944"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim that Apple offers guidance on resolving common notarization issues is a grounded fact but may not be synthesis-worthy as it details a specific resource.",
+      "evidence": "[Resolving common notarization issues](/documentation/Security/resolving-common-notarization-issues)",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_72e0d62c00c0",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_d7289e5beb6d_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_d7289e5beb6d"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that SignTool is available in the Bin folder of Windows SDK installation path is too broad and does not account for different versions or configurations.",
+      "evidence": "SignTool is available as part of the [Windows Software Development Kit (SDK)](https://developer.microsoft.com/windows/downloads/windows-sdk). The tool is installed in the `\bin` folder of the Windows SDK installation path, for example: `C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\signtool.exe`.",
+      "required_action": "Specify which specific version and location SignTool is available in.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_27f39bbfa84f",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_d7289e5beb6d_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_d7289e5beb6d"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that catalog databases are used for automatic lookup of catalog files overgeneralizes the use case and does not specify who or what uses them.",
+      "evidence": "[!NOTE] Catalog databases are used for automatic lookup of catalog files.",
+      "required_action": "Clarify who or what utilizes catalog databases for this purpose.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_f6c751251b72",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_d7289e5beb6d_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_d7289e5beb6d"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that SignTool generates an error if the /fd option isn't specified while signing overgeneralizes and does not account for exceptions or alternative scenarios.",
+      "evidence": "/fd *alg* | Specifies the file digest algorithm to use for creating file signatures. **Note**: If the /fd option isn't specified while signing, the command generates an error.",
+      "required_action": "Specify any exceptions or when this is generally applicable.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_31235b38b812",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_d7289e5beb6d_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_d7289e5beb6d"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that the /i option specifies the issuer's name of the signing certificate overgeneralizes and does not account for when this may be unnecessary or automatically determined.",
+      "evidence": "/i *IssuerName* | Specifies the name of the issuer of the signing certificate. … This value can be a substring of the entire issuer name.",
+      "required_action": "Clarify under which circumstances using /i is necessary or useful.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_ce8e8fef0c86",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_d7289e5beb6d_ollama_intern_26"
+      ],
+      "source_ids": [
+        "src_d7289e5beb6d"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that 'SignTool can add a catalog file to the system component and driver database' overgeneralizes the scope of SignTool.",
+      "evidence": "/u option generates a unique name if necessary to prevent replacing an existing catalog file named *MyCatalogFileName.cat*...",
+      "required_action": "Clarify the specific operation and limitations of adding catalog files with SignTool.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_3012d1cb6c50",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim about Godot's visionOS VR plugin supporting Immersive experiences is valid but low value, as it does not contribute to the overall synthesis.",
+      "evidence": "Introduce Vision Pro VR plugin for Immersive support...",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_816fc88a232f",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that Godot's visionOS platform supports the Platformer demo project overgeneralizes based on limited evidence.",
+      "evidence": "The source states 'We have verified the project continues to work on iOS, and it now runs natively on visionOS.' This does not confirm full support for the demo across all features/platforms as implied by the claim.",
+      "required_action": "Clarify scope of demo project compatibility with visionOS",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_e338646ccead",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_15",
+        "clm_e6e0e4cb4ec7_ollama_intern_24"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "definition_drift",
+      "severity": "info",
+      "summary": "The claim that Godot's iOS and visionOS export plugins share the majority of their code conflicts with a later claim that macOS notarization is not supported in Godot 3.2.",
+      "evidence": "The first claim states 'It's easier to review commit by commit, to see how the changes were incrementally implemented.\n\n### Documentation Considerations\n\nNow, the export plugin for `iOS` and `visionOS` share the majority of the code...' The later claim states 'macOS notarization is not supported in Godot 3.2 when exporting from Windows.' This implies a difference between versions.",
+      "required_action": "Investigate version differences between iOS/visionOS export plugins",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_9c8073c6f3a3",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_24"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "recommendation_exceeds_evidence",
+      "severity": "block",
+      "summary": "The claim that macOS notarization is not supported in Godot 3.2 when exporting from Windows implies unsupported actions based on limited evidence.",
+      "evidence": "The source states 'Likewise, we have not tested deploying directly to an iOS device using ios_deploy (used with Xcode versions prior to 14.0).' This does not confirm lack of macOS notarization support as claimed.",
+      "required_action": "Do not advise unsupported actions based on limited testing",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_114e82feba63",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_23"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim about renaming the 'Windows Universal' export option to 'UWP' is grounded but provides low-leverage synthesis.",
+      "evidence": "This individual technical detail does not advance broader understanding or guide action beyond its stated scope.",
+      "required_action": "Focus review on high-value synthesis candidates",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_597ab3956e24",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_27"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim about the lack of macOS notarization support in Godot 4.2 stable when exporting from Windows is grounded but provides low-leverage synthesis.",
+      "evidence": "This individual technical detail does not advance broader understanding or guide action beyond its stated scope.",
+      "required_action": "Focus review on high-value synthesis candidates",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_001646ebfa7a",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_24"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "The claim about the lack of macOS notarization support in Godot 3.2 when exporting from Windows is grounded but provides low-leverage synthesis.",
+      "evidence": "This individual technical detail does not advance broader understanding or guide action beyond its stated scope.",
+      "required_action": "Focus review on high-value synthesis candidates",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_3d2ab5c0e1cd",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "overgeneralized_claim",
+      "severity": "warn",
+      "summary": "The claim that Godot Engine currently supports exporting to OpenHarmony overgeneralizes based on limited evidence.",
+      "evidence": "The source cites a pull request titled 'Port to OpenHarmony' which does not confirm full export support as implied by the claim.",
+      "required_action": "Clarify scope of export compatibility with OpenHarmony",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_a1982332ca89",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "recommendation_exceeds_evidence",
+      "severity": "block",
+      "summary": "The claim that Godot Engine does not pick up the main.gd.remap file when exporting to UWP implies unsupported actions based on limited evidence.",
+      "evidence": "Citing 'Install and run' suggests advising users to take unsupported steps.",
+      "required_action": "Do not advise unsupported actions based on limited testing",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_99af0dc61564",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_11",
+        "clm_da88881cf961_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "recommendation_exceeds_evidence",
+      "severity": "warn",
+      "summary": "The claim that signtool cannot sign the file when exporting to UWP exceeds the evidence provided, which only shows an error message but does not confirm that signtool is specifically unable to sign the file.",
+      "evidence": "The source excerpt shows an error message indicating the file format cannot be signed. However, it does not definitively state that signtool itself is incapable of signing the file.",
+      "required_action": "Clarify whether the issue with signtool is confirmed or if it is a different tool or process causing the failure to sign.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_b9ce16da05a8",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_2b06a4f43c1e_ollama_intern_28"
+      ],
+      "source_ids": [
+        "src_2b06a4f43c1e"
+      ],
+      "category": "valid_but_low_value",
+      "severity": "info",
+      "summary": "Claim restates that MacOS export template is missing, but the evidence is already given in the source.",
+      "evidence": "",
+      "required_action": "",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_6d310ba0b6e7",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_5b703b620109_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_5b703b620109"
+      ],
+      "category": "scope_widening",
+      "severity": "warn",
+      "summary": "The claim that 'By default, macOS will run only applications that are signed and notarized' uses a universal quantifier ('by default') but the scope is very narrow, only applying to running Godot apps on macOS.",
+      "evidence": "By default, macOS will run only applications that are signed and notarized.",
+      "required_action": "Provide evidence of this behavior for all macOS applications to support the claim's universality.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_964726c68797",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_d7289e5beb6d_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_d7289e5beb6d"
+      ],
+      "category": "scope_widening",
+      "severity": "warn",
+      "summary": "The claim about SignTool's usage with catalog databases generalizes the tool's purpose beyond its specific use case.",
+      "evidence": "> [!NOTE] Catalog databases are used for automatic lookup of catalog files.",
+      "required_action": "To avoid scope widening, the claim should be more specific to the context mentioned in the evidence excerpt.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "high",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_4beb3f20519d",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "scope_widening",
+      "severity": "warn",
+      "summary": "The asserts uses a universal quantifier (always) but the scope is a single platform.",
+      "evidence": "Godot Engine currently supports exporting to OpenHarmony.",
+      "required_action": "Clarify if this applies universally or only to specific platforms.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_b83e7a121140",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_1ceb96fdb33a_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_1ceb96fdb33a"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_1ceb96fdb33a_ollama_intern_7 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot supports embedding PCK files when exporting for Windows.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_775fd1b3e023",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_1ceb96fdb33a_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_1ceb96fdb33a"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_1ceb96fdb33a_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot allows changing executable icons during Windows export.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.385Z"
+    },
+    {
+      "finding_id": "fnd_fc3e8b258de5",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_1ceb96fdb33a_ollama_intern_9"
+      ],
+      "source_ids": [
+        "src_1ceb96fdb33a"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_1ceb96fdb33a_ollama_intern_9 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot supports encryption key customization for Windows export.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_d30b03d0608c",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_03cb99fe6df9_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_03cb99fe6df9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_03cb99fe6df9_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The exported.app bundle supports both Intel x86_64 and ARM64 architectures.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_13ef2684898c",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_03cb99fe6df9_ollama_intern_6"
+      ],
+      "source_ids": [
+        "src_03cb99fe6df9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_03cb99fe6df9_ollama_intern_6 has no 'not' constraint recorded.",
+      "evidence": "Asserts: macOS will run only applications that are signed and notarized by default.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_be8d62c84109",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_03cb99fe6df9_ollama_intern_19"
+      ],
+      "source_ids": [
+        "src_03cb99fe6df9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_03cb99fe6df9_ollama_intern_19 has no 'not' constraint recorded.",
+      "evidence": "Asserts: To distribute an app through the App Store, you must enable the App Sandbox.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_9e6ed6db8c05",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_03cb99fe6df9_ollama_intern_21"
+      ],
+      "source_ids": [
+        "src_03cb99fe6df9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_03cb99fe6df9_ollama_intern_21 has no 'not' constraint recorded.",
+      "evidence": "Asserts: You can override default entitlements by selecting custom entitlements file.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_7352727366c5",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_03cb99fe6df9_ollama_intern_22"
+      ],
+      "source_ids": [
+        "src_03cb99fe6df9"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_03cb99fe6df9_ollama_intern_22 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The 'Enabled' entitlement enables the App Sandbox.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_fd72df681466",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_7d0fca124716_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_7d0fca124716"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_7d0fca124716_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot provides a method to export projects for Linux.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_ed63c3b2a172",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_5b703b620109_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_5b703b620109"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5b703b620109_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: By default, macOS will run only applications that are signed and notarized.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_dea1410fec8a",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_5b703b620109_ollama_intern_3"
+      ],
+      "source_ids": [
+        "src_5b703b620109"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5b703b620109_ollama_intern_3 has no 'not' constraint recorded.",
+      "evidence": "Asserts: macOS apps should avoid relying on relative paths from the application folder.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_4f51cca3ac29",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_5b703b620109_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_5b703b620109"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5b703b620109_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Building an app using custom export templates and OSXCross does not sign it.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_9c02a069e77e",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_5b703b620109_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_5b703b620109"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_5b703b620109_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Ad-hoc signing the app yourself enables it to run on macOS.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_49e530be3983",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_c3216b0c8944_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_c3216b0c8944"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c3216b0c8944_ollama_intern_15 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The notarization process usually takes less than an hour.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_06f451f7cc4d",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_c3216b0c8944_ollama_intern_18"
+      ],
+      "source_ids": [
+        "src_c3216b0c8944"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c3216b0c8944_ollama_intern_18 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Apple provides documentation on how to customize the notarization workflow.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_ffe123f60b8e",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_c3216b0c8944_ollama_intern_19"
+      ],
+      "source_ids": [
+        "src_c3216b0c8944"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_c3216b0c8944_ollama_intern_19 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Apple offers guidance on resolving common notarization issues.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_c15010f9625e",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_d7289e5beb6d_ollama_intern_2"
+      ],
+      "source_ids": [
+        "src_d7289e5beb6d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d7289e5beb6d_ollama_intern_2 has no 'not' constraint recorded.",
+      "evidence": "Asserts: SignTool is available in the Bin folder of Windows SDK installation path.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_8460d352a873",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_d7289e5beb6d_ollama_intern_10"
+      ],
+      "source_ids": [
+        "src_d7289e5beb6d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d7289e5beb6d_ollama_intern_10 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Catalog databases are used for automatic lookup of catalog files.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_e69deaeb96a5",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_d7289e5beb6d_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_d7289e5beb6d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d7289e5beb6d_ollama_intern_11 has no 'not' constraint recorded.",
+      "evidence": "Asserts: SignTool generates an error if the `/fd` option isn't specified while signing.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_fdb68ff4ccf6",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_d7289e5beb6d_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_d7289e5beb6d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d7289e5beb6d_ollama_intern_13 has no 'not' constraint recorded.",
+      "evidence": "Asserts: /i option specifies the issuer's name of the signing certificate.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_8f0061ab29d8",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_d7289e5beb6d_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_d7289e5beb6d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d7289e5beb6d_ollama_intern_15 has no 'not' constraint recorded.",
+      "evidence": "Asserts: /n option specifies the subject's name of the signing certificate.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_2ddbcd34771b",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_d7289e5beb6d_ollama_intern_16"
+      ],
+      "source_ids": [
+        "src_d7289e5beb6d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d7289e5beb6d_ollama_intern_16 has no 'not' constraint recorded.",
+      "evidence": "Asserts: /ph generates page hashes for executable files if supported.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_0bece59fc411",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_d7289e5beb6d_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_d7289e5beb6d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d7289e5beb6d_ollama_intern_17 has no 'not' constraint recorded.",
+      "evidence": "Asserts: SignTool can time stamp PKCS #7 files using the '/p7' option.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_725606c8512e",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_d7289e5beb6d_ollama_intern_18"
+      ],
+      "source_ids": [
+        "src_d7289e5beb6d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d7289e5beb6d_ollama_intern_18 has no 'not' constraint recorded.",
+      "evidence": "Asserts: SignTool requires either the '/t' or '/tr' option for time stamping files.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_c245aaf77675",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_d7289e5beb6d_ollama_intern_23"
+      ],
+      "source_ids": [
+        "src_d7289e5beb6d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d7289e5beb6d_ollama_intern_23 has no 'not' constraint recorded.",
+      "evidence": "Asserts: SignTool returns a zero exit code upon successful execution.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_fc5f50ccdd30",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_d7289e5beb6d_ollama_intern_26"
+      ],
+      "source_ids": [
+        "src_d7289e5beb6d"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_d7289e5beb6d_ollama_intern_26 has no 'not' constraint recorded.",
+      "evidence": "Asserts: SignTool can add a catalog file to the system component and driver database.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_8cf0f0aa7fe0",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_ef2f01e1f840_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_ef2f01e1f840"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ef2f01e1f840_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: App package signing is required for MSIX packages to be deployable on Windows.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_a9a540907813",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_ef2f01e1f840_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_ef2f01e1f840"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_ef2f01e1f840_ollama_intern_13 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Signing an MSIX package ensures its authenticity and integrity.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_3a110d4be662",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_11 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot 4.2 stable on Windows does not successfully notarize projects for macOS.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_1ce663b32b32",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_11 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_18cd5b39b106",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_12 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot's visionOS VR plugin supports creating Immersive experiences.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_02b2a8f00761",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_12 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_d73208f20b40",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_13 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot's visionOS platform supports the Platformer demo project.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_47030bcd07b5",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_13 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_6e3b0bc48f78",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_15 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot's iOS and visionOS export plugins share the majority of their code.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_188126b64fa0",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_15 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_8900da93fa89",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_17 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot 4.2 stable on Windows does not successfully perform macOS notarization.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_a1ec598c04f8",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_17 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_bf9c9f9db920",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_23"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_23 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The 'Windows Universal' export option has been renamed to 'UWP'.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_0cefffff50d5",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_23"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_23 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_ea3bf54868d9",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_24"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_24 has no 'not' constraint recorded.",
+      "evidence": "Asserts: macOS notarization is not supported in Godot 3.2 when exporting from Windows.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_148c1d29279b",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_24"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_24 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_fc2ee211a169",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_26"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_26 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot 4.2 does not successfully notarize macOS exports on Windows.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_c4dfa35e233a",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_26"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_26 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_713a7c2d52ba",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_27"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_27 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot 4.2 stable on Windows does not successfully notarize macOS exports.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_52e78da948ea",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_27"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_27 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_4124a46517bb",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_31"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_31 has no 'not' constraint recorded.",
+      "evidence": "Asserts: There is a minimal reproduction project available for this issue.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_eb7c7dea5092",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_e6e0e4cb4ec7_ollama_intern_31"
+      ],
+      "source_ids": [
+        "src_e6e0e4cb4ec7"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_e6e0e4cb4ec7_ollama_intern_31 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_71fe902818d0",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_da88881cf961_ollama_intern_1 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot Engine currently supports exporting to OpenHarmony.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_756e65c049ec",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_1"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_da88881cf961_ollama_intern_1 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_0bfeb235065e",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_da88881cf961_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot Engine does not pick up the main.gd.remap file when exporting to UWP.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_5562f84028e8",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_da88881cf961_ollama_intern_5 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_ac274dfb7539",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_da88881cf961_ollama_intern_11 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The generated UWP file is damaged and cannot be run.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_27b5240ed31f",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_11"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_da88881cf961_ollama_intern_11 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_f0bf23dc6c66",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_da88881cf961_ollama_intern_12 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Signtool cannot sign the file when exporting to UWP.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_de65208576b3",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_12"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_da88881cf961_ollama_intern_12 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_2730595853f8",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_da88881cf961_ollama_intern_15 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot Engine crashes after exporting a project due to missing database.db file.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_84325f5dda1c",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_da88881cf961_ollama_intern_15 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_de88b542b69a",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_da88881cf961_ollama_intern_17 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Error message about file access appears in console window when opening Godot.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_e5ec4e243fc3",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_17"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_da88881cf961_ollama_intern_17 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_49ad3f208c2c",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_20"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_da88881cf961_ollama_intern_20 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Steps to reproduce the issue of file handling on macOS have been provided.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_767b1b8cb282",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_20"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_da88881cf961_ollama_intern_20 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_0ea09c2428e2",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_37"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_da88881cf961_ollama_intern_37 has no 'not' constraint recorded.",
+      "evidence": "Asserts: After successful compilation, the extension works immediately with no fuss.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_b71734acc9f0",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_37"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_da88881cf961_ollama_intern_37 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_9107b502161b",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_43"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_da88881cf961_ollama_intern_43 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_3f0a1ad4a5f1",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_da88881cf961_ollama_intern_44"
+      ],
+      "source_ids": [
+        "src_da88881cf961"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_da88881cf961_ollama_intern_44 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_ca24c2da3a5e",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_2b06a4f43c1e_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_2b06a4f43c1e"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_2b06a4f43c1e_ollama_intern_5 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot's Linux export templates have issues that require additional steps.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_37bfe874372a",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_2b06a4f43c1e_ollama_intern_5"
+      ],
+      "source_ids": [
+        "src_2b06a4f43c1e"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_2b06a4f43c1e_ollama_intern_5 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_ec785a687c0e",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_2b06a4f43c1e_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_2b06a4f43c1e"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_2b06a4f43c1e_ollama_intern_7 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot's Linux export templates require API level 17 or higher.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_3622e16ec131",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_2b06a4f43c1e_ollama_intern_7"
+      ],
+      "source_ids": [
+        "src_2b06a4f43c1e"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_2b06a4f43c1e_ollama_intern_7 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_9b029cac1b1c",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_2b06a4f43c1e_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_2b06a4f43c1e"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_2b06a4f43c1e_ollama_intern_8 has no 'not' constraint recorded.",
+      "evidence": "Asserts: JDK 17 is the only supported version for Godot's Linux export templates.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_06d3994ee950",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_2b06a4f43c1e_ollama_intern_8"
+      ],
+      "source_ids": [
+        "src_2b06a4f43c1e"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_2b06a4f43c1e_ollama_intern_8 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_e7abbd18491a",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_2b06a4f43c1e_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_2b06a4f43c1e"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_2b06a4f43c1e_ollama_intern_13 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The display name of the Linux/BSD platform has been changed in Godot",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_d3f5ac8216eb",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_2b06a4f43c1e_ollama_intern_13"
+      ],
+      "source_ids": [
+        "src_2b06a4f43c1e"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_2b06a4f43c1e_ollama_intern_13 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_1a074bd8a08b",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_2b06a4f43c1e_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_2b06a4f43c1e"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_2b06a4f43c1e_ollama_intern_14 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot does not currently support Wayland on Linux/BSD platforms",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_0bb2512cfc0e",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_2b06a4f43c1e_ollama_intern_14"
+      ],
+      "source_ids": [
+        "src_2b06a4f43c1e"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_2b06a4f43c1e_ollama_intern_14 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_fb1d8977d46d",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_2b06a4f43c1e_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_2b06a4f43c1e"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_2b06a4f43c1e_ollama_intern_15 has no 'not' constraint recorded.",
+      "evidence": "Asserts: Godot's export templates currently support Linux and BSD platforms.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_b32212c02f1b",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_2b06a4f43c1e_ollama_intern_15"
+      ],
+      "source_ids": [
+        "src_2b06a4f43c1e"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_2b06a4f43c1e_ollama_intern_15 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_508808adcca7",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_2b06a4f43c1e_ollama_intern_28"
+      ],
+      "source_ids": [
+        "src_2b06a4f43c1e"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_2b06a4f43c1e_ollama_intern_28 has no 'not' constraint recorded.",
+      "evidence": "Asserts: The export template for MacOS is missing.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_8b284fdd9a6a",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_2b06a4f43c1e_ollama_intern_28"
+      ],
+      "source_ids": [
+        "src_2b06a4f43c1e"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_2b06a4f43c1e_ollama_intern_28 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_a9d1e3948d90",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_2b06a4f43c1e_ollama_intern_29"
+      ],
+      "source_ids": [
+        "src_2b06a4f43c1e"
+      ],
+      "category": "missing_not_constraint",
+      "severity": "info",
+      "summary": "Claim clm_2b06a4f43c1e_ollama_intern_29 has no 'not' constraint recorded.",
+      "evidence": "Asserts: There are no reported minimal reproduction projects for this issue.",
+      "required_action": "Consider adding a not-constraint to defend against overgeneralization downstream.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "low",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    },
+    {
+      "finding_id": "fnd_a1ce900d1864",
+      "section_id": "05-desktop-platform-export-durability",
+      "claim_ids": [
+        "clm_2b06a4f43c1e_ollama_intern_29"
+      ],
+      "source_ids": [
+        "src_2b06a4f43c1e"
+      ],
+      "category": "source_quality_problem",
+      "severity": "warn",
+      "summary": "Claim clm_2b06a4f43c1e_ollama_intern_29 carries confidence=high but every cited source is forum/unknown quality.",
+      "evidence": "Source types: forum",
+      "required_action": "Lower confidence or add a higher-quality corroborating source.",
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "confidence": "medium",
+      "created_at": "2026-05-10T05:20:09.386Z"
+    }
+  ],
+  "claim_reviews": [
+    {
+      "claim_id": "clm_1ceb96fdb33a_ollama_intern_7",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_f4cb60070eb3",
+        "fnd_b83e7a121140"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_1ceb96fdb33a_ollama_intern_8",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_775fd1b3e023"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_1ceb96fdb33a_ollama_intern_9",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_fc3e8b258de5"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_03cb99fe6df9_ollama_intern_2",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_d30b03d0608c"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_03cb99fe6df9_ollama_intern_6",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_13ef2684898c"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_03cb99fe6df9_ollama_intern_19",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_be8d62c84109"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_03cb99fe6df9_ollama_intern_21",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_9e6ed6db8c05"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_03cb99fe6df9_ollama_intern_22",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_7352727366c5"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_7d0fca124716_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_4b2cd1a6a751",
+        "fnd_fd72df681466"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_5b703b620109_ollama_intern_1",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn); scope_widening (warn).",
+      "finding_ids": [
+        "fnd_bc0a66095a45",
+        "fnd_6d310ba0b6e7",
+        "fnd_ed63c3b2a172"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_5b703b620109_ollama_intern_3",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_92bb66d4fd4e",
+        "fnd_dea1410fec8a"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_5b703b620109_ollama_intern_8",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_cad94ed67123",
+        "fnd_4f51cca3ac29"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_5b703b620109_ollama_intern_10",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_f911f5db380c",
+        "fnd_9c02a069e77e"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_c3216b0c8944_ollama_intern_15",
+      "decision": "needs_human_review",
+      "reason": "Findings: recommendation_exceeds_evidence (warn).",
+      "finding_ids": [
+        "fnd_70104d029051",
+        "fnd_49e530be3983"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_c3216b0c8944_ollama_intern_18",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_51e22c46b180",
+        "fnd_06f451f7cc4d"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_c3216b0c8944_ollama_intern_19",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_dcabae38c172",
+        "fnd_ffe123f60b8e"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_d7289e5beb6d_ollama_intern_2",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_72e0d62c00c0",
+        "fnd_c15010f9625e"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_d7289e5beb6d_ollama_intern_10",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn); scope_widening (warn).",
+      "finding_ids": [
+        "fnd_27f39bbfa84f",
+        "fnd_964726c68797",
+        "fnd_8460d352a873"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_d7289e5beb6d_ollama_intern_11",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_f6c751251b72",
+        "fnd_e69deaeb96a5"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_d7289e5beb6d_ollama_intern_13",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_31235b38b812",
+        "fnd_fdb68ff4ccf6"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_d7289e5beb6d_ollama_intern_15",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_8f0061ab29d8"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_d7289e5beb6d_ollama_intern_16",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_2ddbcd34771b"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_d7289e5beb6d_ollama_intern_17",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_0bece59fc411"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_d7289e5beb6d_ollama_intern_18",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_725606c8512e"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_d7289e5beb6d_ollama_intern_23",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_c245aaf77675"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_d7289e5beb6d_ollama_intern_26",
+      "decision": "needs_scope_repair",
+      "reason": "Findings: overgeneralized_claim (warn).",
+      "finding_ids": [
+        "fnd_ce8e8fef0c86",
+        "fnd_fc5f50ccdd30"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_ef2f01e1f840_ollama_intern_1",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_8cf0f0aa7fe0"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_ef2f01e1f840_ollama_intern_13",
+      "decision": "accepted_for_synthesis",
+      "reason": "Only info-level findings; accepted.",
+      "finding_ids": [
+        "fnd_a9a540907813"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_e6e0e4cb4ec7_ollama_intern_11",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_3a110d4be662",
+        "fnd_1ce663b32b32"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_e6e0e4cb4ec7_ollama_intern_12",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_3012d1cb6c50",
+        "fnd_18cd5b39b106",
+        "fnd_02b2a8f00761"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_e6e0e4cb4ec7_ollama_intern_13",
+      "decision": "needs_source_repair",
+      "reason": "Findings: overgeneralized_claim (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_816fc88a232f",
+        "fnd_d73208f20b40",
+        "fnd_47030bcd07b5"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_e6e0e4cb4ec7_ollama_intern_15",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_e338646ccead",
+        "fnd_6e3b0bc48f78",
+        "fnd_188126b64fa0"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_e6e0e4cb4ec7_ollama_intern_17",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_8900da93fa89",
+        "fnd_a1ec598c04f8"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_e6e0e4cb4ec7_ollama_intern_23",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_114e82feba63",
+        "fnd_bf9c9f9db920",
+        "fnd_0cefffff50d5"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_e6e0e4cb4ec7_ollama_intern_24",
+      "decision": "rejected",
+      "reason": "Findings: recommendation_exceeds_evidence (block); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_e338646ccead",
+        "fnd_9c8073c6f3a3",
+        "fnd_001646ebfa7a",
+        "fnd_ea3bf54868d9",
+        "fnd_148c1d29279b"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_e6e0e4cb4ec7_ollama_intern_26",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_fc2ee211a169",
+        "fnd_c4dfa35e233a"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_e6e0e4cb4ec7_ollama_intern_27",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_597ab3956e24",
+        "fnd_713a7c2d52ba",
+        "fnd_52e78da948ea"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_e6e0e4cb4ec7_ollama_intern_31",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_4124a46517bb",
+        "fnd_eb7c7dea5092"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_da88881cf961_ollama_intern_1",
+      "decision": "needs_source_repair",
+      "reason": "Findings: overgeneralized_claim (warn); scope_widening (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_3d2ab5c0e1cd",
+        "fnd_4beb3f20519d",
+        "fnd_71fe902818d0",
+        "fnd_756e65c049ec"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_da88881cf961_ollama_intern_5",
+      "decision": "rejected",
+      "reason": "Findings: recommendation_exceeds_evidence (block); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_a1982332ca89",
+        "fnd_0bfeb235065e",
+        "fnd_5562f84028e8"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_da88881cf961_ollama_intern_11",
+      "decision": "needs_source_repair",
+      "reason": "Findings: recommendation_exceeds_evidence (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_99af0dc61564",
+        "fnd_ac274dfb7539",
+        "fnd_27b5240ed31f"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_da88881cf961_ollama_intern_12",
+      "decision": "needs_source_repair",
+      "reason": "Findings: recommendation_exceeds_evidence (warn); source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_99af0dc61564",
+        "fnd_f0bf23dc6c66",
+        "fnd_de65208576b3"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_da88881cf961_ollama_intern_15",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_2730595853f8",
+        "fnd_84325f5dda1c"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_da88881cf961_ollama_intern_17",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_de88b542b69a",
+        "fnd_e5ec4e243fc3"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_da88881cf961_ollama_intern_20",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_49ad3f208c2c",
+        "fnd_767b1b8cb282"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_da88881cf961_ollama_intern_37",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_0ea09c2428e2",
+        "fnd_b71734acc9f0"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_da88881cf961_ollama_intern_43",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_9107b502161b"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_da88881cf961_ollama_intern_44",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_3f0a1ad4a5f1"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_2b06a4f43c1e_ollama_intern_5",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_ca24c2da3a5e",
+        "fnd_37bfe874372a"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_2b06a4f43c1e_ollama_intern_7",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_ec785a687c0e",
+        "fnd_3622e16ec131"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_2b06a4f43c1e_ollama_intern_8",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_9b029cac1b1c",
+        "fnd_06d3994ee950"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_2b06a4f43c1e_ollama_intern_13",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_e7abbd18491a",
+        "fnd_d3f5ac8216eb"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_2b06a4f43c1e_ollama_intern_14",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_1a074bd8a08b",
+        "fnd_0bb2512cfc0e"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_2b06a4f43c1e_ollama_intern_15",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_fb1d8977d46d",
+        "fnd_b32212c02f1b"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_2b06a4f43c1e_ollama_intern_28",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_b9ce16da05a8",
+        "fnd_508808adcca7",
+        "fnd_8b284fdd9a6a"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    },
+    {
+      "claim_id": "clm_2b06a4f43c1e_ollama_intern_29",
+      "decision": "needs_source_repair",
+      "reason": "Findings: source_quality_problem (warn).",
+      "finding_ids": [
+        "fnd_a9d1e3948d90",
+        "fnd_a1ce900d1864"
+      ],
+      "reviewer": "ollama-intern",
+      "review_method": "multi_pass(ollama_intern_adversarial_review_paged + ollama_intern_adversarial_review_paged_narrow_critic + heuristic_field_and_grounding_checks)",
+      "created_at": "2026-05-10T05:20:09.387Z"
+    }
+  ],
+  "decision_counts": {
+    "accepted_for_synthesis": 19,
+    "rejected": 2,
+    "needs_scope_repair": 8,
+    "needs_source_repair": 26,
+    "needs_contradiction_mapping": 0,
+    "needs_human_review": 1
+  },
+  "severity_counts": {
+    "info": 65,
+    "warn": 43,
+    "block": 2
+  },
+  "llm_findings_rejected_ungrounded": 0,
+  "promoted_to_reviewed": false
+}

@@ -1,0 +1,28 @@
+{
+  "source_id": "src_8b484efdebe2",
+  "receipt_id": "rcpt_8b484efdebe2_1778392051562",
+  "section_id": "02-scene-resource-serialization",
+  "url": "https://api.github.com/search/issues?q=repo:godotengine/godot+PackedScene+compatibility&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:godotengine/godot+PackedScene+compatibility&per_page=20",
+  "fetched_at": "2026-05-10T05:47:31.562Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "GitHub search results for PackedScene compatibility issues in Godot engine",
+  "source_type": "forum",
+  "relevance": "high",
+  "key_points": [
+    "The search found 116 total results related to PackedScene compatibility issues in the Godot engine.",
+    "Some of the issues are about crashes or unexpected behavior when loading scenes using the OpenGL compatibility renderer on Android.",
+    "A pull request suggests duplicating modified properties when instantiating packed scenes to avoid sharing references with the base PackedScene.",
+    "Another issue reports that Shape2D resources loaded via resource_local_to_scene are not duplicated by Node.duplicate(), which may cause unexpected behavior."
+  ],
+  "limitations": [
+    "The results are limited to issues and pull requests tagged with 'PackedScene' or related terms, so there might be other compatibility issues not covered in this search.",
+    "Without further analysis, it's hard to determine the overall impact of these issues on Godot engine's compatibility."
+  ],
+  "asserts": "The GitHub search results indicate that there are multiple reported compatibility issues related to PackedScene functionality in the Godot engine, particularly concerning Android platform and OpenGL compatibility renderer.",
+  "scope": "The scope of this source is limited to the specific issues and pull requests tagged with 'PackedScene' or related terms within the Godot engine repository on GitHub.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T05:48:12.851Z"
+}

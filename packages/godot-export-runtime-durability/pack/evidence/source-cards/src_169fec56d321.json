@@ -1,0 +1,29 @@
+{
+  "source_id": "src_169fec56d321",
+  "receipt_id": "rcpt_169fec56d321_1778395950628",
+  "section_id": "04-scripting-runtime-contracts",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/scripting/gdscript/gdscript_basics.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/scripting/gdscript/gdscript_basics.rst",
+  "fetched_at": "2026-05-10T06:52:30.628Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "GDScript reference",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "GDScript is a high-level, object-oriented, imperative, and gradually typed programming language built for Godot.",
+    "It uses an indentation-based syntax similar to Python.",
+    "Its goal is to be optimized for and tightly integrated with the Godot Engine.",
+    "GDScript is entirely independent from Python and not based on it.",
+    "The source includes a history of GDScript, examples of GDScript code, identifiers, keywords, and more."
+  ],
+  "limitations": [
+    "The documentation about GDScript's history has been moved to another section",
+    "Does not cover the full scope or usage of GDScript language"
+  ],
+  "asserts": "GDScript is a programming language built for use with Godot Engine, optimized for tight integration and flexibility.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T06:52:54.972Z"
+}

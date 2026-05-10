@@ -1,0 +1,29 @@
+{
+  "source_id": "src_639902f06da8",
+  "receipt_id": "rcpt_639902f06da8_1778403392935",
+  "section_id": "07-distribution-surface-durability",
+  "url": "https://api.github.com/search/issues?q=repo:godotengine/godot+console+export+SDK&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:godotengine/godot+console+export+SDK&per_page=20",
+  "fetched_at": "2026-05-10T08:56:32.935Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Dotnet Sdk not updating when exporting",
+  "source_type": "forum",
+  "relevance": "high",
+  "key_points": [
+    "The dotnet nuget builds update the Godot engine build correctly when building from source.",
+    "However, when exporting, the updated dotnet builds do not seem to be used.",
+    "To get the export to take the new dotnet builds, the dotnet build outputs in the mono module need to be deleted.",
+    "A bash script has been created to delete all folders ignored by git in a specified folder."
+  ],
+  "limitations": [
+    "The script removes all files and folders that are being ignored due to .gitignore.",
+    "This could potentially remove important files if they are named similarly to the ignored ones.",
+    "The script relies on correct formatting of git status --ignored output."
+  ],
+  "asserts": "When exporting a Godot project from source, the dotnet build outputs in the mono module need to be manually deleted to ensure the export uses the updated builds.",
+  "scope": "The process of ensuring updated dotnet builds are used when exporting a Godot mono project from source.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T08:57:09.836Z"
+}

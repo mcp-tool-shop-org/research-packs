@@ -1,0 +1,28 @@
+{
+  "source_id": "src_e3948fcd1578",
+  "receipt_id": "rcpt_e3948fcd1578_1778395661552",
+  "section_id": "04-scripting-runtime-contracts",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/scripting/c_sharp/c_sharp_differences.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/scripting/c_sharp/c_sharp_differences.rst",
+  "fetched_at": "2026-05-10T06:47:41.552Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "C# API differences to GDScript",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "This source lists the main differences between using C# and GDScript in Godot.",
+    "It covers general differences, global scope, constants, math functions, random functions, other functions, tips, and a full list of equivalences.",
+    "The document encourages the use of C# idioms and style guide for writing C# code in Godot."
+  ],
+  "limitations": [
+    "The document is incomplete and states so itself.",
+    "It assumes some familiarity with both GDScript and C++ as well as the Godot engine.",
+    "The scope of equivalences provided may not cover all possible differences."
+  ],
+  "asserts": "C# API in Godot strives to be idiomatic to C# instead of directly mirroring GDScript or C++ APIs, using PascalCase for method names and properties for getters/setters where available.",
+  "scope": "The context is the usage and best practices for writing C# code that interfaces with the Godot game engine, specifically when translating GDScript or C++ code to C#.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T06:48:14.405Z"
+}

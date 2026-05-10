@@ -1,0 +1,27 @@
+{
+  "source_id": "src_d5da902c1965",
+  "receipt_id": "rcpt_d5da902c1965_1778395694737",
+  "section_id": "04-scripting-runtime-contracts",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/scripting/cross_language_scripting.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/scripting/cross_language_scripting.rst",
+  "fetched_at": "2026-05-10T06:48:14.737Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "Cross-language scripting",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Godot allows mixing and matching scripting languages in a single project.",
+    "A project can define nodes written in both C# and GDScript.",
+    "Instantiating nodes directly from code is possible.",
+    "Accessing fields, calling methods, and connecting signals between different language nodes are supported."
+  ],
+  "limitations": [
+    "GDScript files cannot inherit from a C# script and vice versa due to complexity and the limitation's unlikely change in the future."
+  ],
+  "asserts": "This source asserts that Godot engine supports cross-language scripting allowing GDScript and C# to coexist within a single project.",
+  "scope": "The scope of this assertion is the Godot game engine, specifically its scripting capabilities with mixed language nodes within a project.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T06:48:38.098Z"
+}

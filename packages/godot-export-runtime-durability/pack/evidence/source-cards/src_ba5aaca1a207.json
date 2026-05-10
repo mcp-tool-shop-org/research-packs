@@ -1,0 +1,30 @@
+{
+  "source_id": "src_ba5aaca1a207",
+  "receipt_id": "rcpt_ba5aaca1a207_1778399425465",
+  "section_id": "06-mobile-web-export-durability",
+  "url": "https://developer.apple.com/app-store/review/guidelines/",
+  "final_url": "https://developer.apple.com/app-store/review/guidelines/",
+  "fetched_at": "2026-05-10T07:50:25.465Z",
+  "publisher": "Apple Inc.",
+  "published_at": null,
+  "title": "App Review Guidelines",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Provides guidance and examples across a range of development topics, including user interface design, functionality, content, and the use of specific technologies.",
+    "These guidelines are designed to help developers prepare their apps for the approval process.",
+    "The App Review Guidelines are meant to provide a transparent and predictable review process that balances the needs and interests of our users with those of developers.",
+    "This document represents the current view and opinions of Apple regarding acceptable app design and development practices.",
+    "Apps should not include buttons, text or other features that lead to external links or domains."
+  ],
+  "limitations": [
+    "The guidelines are subject to change at any time without prior notification.",
+    "Guidelines apply to all apps submitted to the App Store from now until the update of these guidelines.",
+    "This document is not exhaustive and does not contain every policy or guideline for which Apple holds responsible."
+  ],
+  "asserts": "Apps should be safe, provide a good user experience, and adhere to our design principles.",
+  "scope": "The scope of this document includes all apps submitted to the App Store from now until the update of these guidelines.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T07:51:04.418Z"
+}

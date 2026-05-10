@@ -1,0 +1,74 @@
+{
+  "summary_id": "tris_1778390191764_05-desktop-platform-export-durability",
+  "section_id": "05-desktop-platform-export-durability",
+  "triaged_at": "2026-05-10T05:16:31.764Z",
+  "research_os_version": "0.3.2",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 231,
+  "decisions": {
+    "needs_scope_repair": 147,
+    "selected_for_review": 56,
+    "parked_weak_scope": 10,
+    "parked_overdense_source": 18
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 56,
+  "selected_per_source": [
+    {
+      "source_id": "src_da88881cf961",
+      "selected": 10,
+      "total": 44
+    },
+    {
+      "source_id": "src_e6e0e4cb4ec7",
+      "selected": 10,
+      "total": 35
+    },
+    {
+      "source_id": "src_03cb99fe6df9",
+      "selected": 5,
+      "total": 31
+    },
+    {
+      "source_id": "src_2b06a4f43c1e",
+      "selected": 8,
+      "total": 29
+    },
+    {
+      "source_id": "src_d7289e5beb6d",
+      "selected": 10,
+      "total": 26
+    },
+    {
+      "source_id": "src_c3216b0c8944",
+      "selected": 3,
+      "total": 19
+    },
+    {
+      "source_id": "src_ef2f01e1f840",
+      "selected": 2,
+      "total": 14
+    },
+    {
+      "source_id": "src_1ceb96fdb33a",
+      "selected": 3,
+      "total": 10
+    },
+    {
+      "source_id": "src_5b703b620109",
+      "selected": 4,
+      "total": 10
+    },
+    {
+      "source_id": "src_d4edcfa48733",
+      "selected": 0,
+      "total": 7
+    },
+    {
+      "source_id": "src_7d0fca124716",
+      "selected": 1,
+      "total": 6
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "source_id": "src_c1cc3cb1f943",
+  "receipt_id": "rcpt_c1cc3cb1f943_1778385293378",
+  "section_id": "03-save-system-player-state-durability",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/io/saving_games.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/io/saving_games.rst",
+  "fetched_at": "2026-05-10T03:54:53.378Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Saving games",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Save game functionality can be complex and may require saving information from multiple objects across multiple levels.",
+    "The save function should allow for additional information about an arbitrary number of objects to scale with the complexity of the game.",
+    "Identifying persistent objects using groups or other methods is essential before saving game state.",
+    "Serialization using JSON or binary formats is necessary to convert object data into a format suitable for storage.",
+    "Loading saved game state requires parsing stored data and reconstructing objects and their properties."
+  ],
+  "limitations": [
+    "JSON has limitations such as larger file size, limited data types supported, and requirement of custom encoding/decoding logic for complex data structures.",
+    "Binary serialization may not include all object properties by default and requires configuring property usage flags in class definition to include them in serialization.",
+    "Saving and loading game state can be complicated and often requires custom logic tailored to the specific needs and structure of the project."
+  ],
+  "asserts": "Save games can be implemented using groups to identify persistent objects, with data serialized into JSON or binary format for storage.",
+  "scope": "The source provides a tutorial on how to implement save game functionality in Godot game engine projects, covering identification of persistent objects, serialization methods, and reconstruction of saved state during load.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T03:55:41.990Z"
+}

@@ -1,0 +1,108 @@
+{
+  "report_id": "secrep_1778404883308_01-engine-version-export-template-compat",
+  "section_id": "01-engine-version-export-template-compat",
+  "reported_at": "2026-05-10T09:21:23.308Z",
+  "research_os_version": "0.3.2",
+  "status": "gated",
+  "sources": {
+    "fetched_ok": 8,
+    "source_cards": 8,
+    "publishers": [
+      "Godotengine"
+    ],
+    "primary_source_waiver": {
+      "status": "none",
+      "reason": null,
+      "compensating_controls": []
+    }
+  },
+  "extraction": {
+    "candidate_claims": 150,
+    "claims_per_source": [
+      {
+        "source_id": "src_71469ccfe316",
+        "claims": 42
+      },
+      {
+        "source_id": "src_78aaa13e8387",
+        "claims": 21
+      },
+      {
+        "source_id": "src_6ee62ab47888",
+        "claims": 17
+      },
+      {
+        "source_id": "src_6f54a167d232",
+        "claims": 17
+      },
+      {
+        "source_id": "src_4c6c14f4f6fa",
+        "claims": 16
+      },
+      {
+        "source_id": "src_1e4fa1dde3af",
+        "claims": 14
+      },
+      {
+        "source_id": "src_d3bd0f1dae0c",
+        "claims": 13
+      },
+      {
+        "source_id": "src_6e935dbe9826",
+        "claims": 10
+      }
+    ],
+    "claims_per_1k_words": 7.49063670411985,
+    "excerpt_pages_processed": 8,
+    "excerpt_id_failures": 1,
+    "malformed_extractor_outputs": 0,
+    "near_duplicate_clusters": 0,
+    "weak_scope_count": 9,
+    "generic_scope_count": 42,
+    "density_flags": 6
+  },
+  "contradictions": {
+    "pairs_compared": 11175,
+    "contradiction_candidates": 0,
+    "overgeneralization_risks": 0
+  },
+  "review": {
+    "reviewed": true,
+    "accepted_for_synthesis": 34,
+    "needs_scope_repair": 3,
+    "needs_source_repair": 3,
+    "needs_contradiction_mapping": 0,
+    "rejected": 0,
+    "needs_human_review": 0,
+    "rejection_or_repair_by_category": [
+      {
+        "category": "source_quality_problem",
+        "count": 6
+      },
+      {
+        "category": "scope_widening",
+        "count": 5
+      },
+      {
+        "category": "source_cluster_monopoly",
+        "count": 2
+      },
+      {
+        "category": "overgeneralized_claim",
+        "count": 1
+      }
+    ]
+  },
+  "acceptance": {
+    "candidate_claims": 150,
+    "accepted_for_synthesis": 34,
+    "acceptance_ratio": 0.22666666666666666,
+    "accepted_per_source": 4.25,
+    "accepted_per_1k_words": 1.6978776529338326,
+    "top_rejection_category": "source_quality_problem",
+    "claim_overproduction_fired": false,
+    "synthesis_ready": true
+  },
+  "gate_verdict": "warn",
+  "gate_synthesis_eligible": true
+}

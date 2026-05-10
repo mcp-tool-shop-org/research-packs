@@ -1,0 +1,30 @@
+{
+  "source_id": "src_04c541af2502",
+  "receipt_id": "rcpt_04c541af2502_1778395557037",
+  "section_id": "04-scripting-runtime-contracts",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/scripting/gdscript/gdscript_exports.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/scripting/gdscript/gdscript_exports.rst",
+  "fetched_at": "2026-05-10T06:45:57.037Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "GDScript exported properties",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Class members can be exported in Godot, meaning their value gets saved along with the resource they're attached to.",
+    "Exported properties are visible and editable in the editor, allowing artists and game designers to modify values that influence how the program runs.",
+    "The @export annotation is used to export member variables.",
+    "Exporting properties can also be done in other languages such as C#, with syntax varying depending on the language.",
+    "Resources and nodes can be exported as properties in a script without having to use NodePaths."
+  ],
+  "limitations": [
+    "Exported arrays must have initializers that are constant expressions.",
+    "Using @export variables for Resource objects makes them a dependency of the instance, meaning all referenced resources are loaded when the containing scene is loaded.",
+    "If you want to reference a Resource object but load it manually when you need it, use @export_file or @export_file_path instead."
+  ],
+  "asserts": "Class members can be exported in Godot, allowing their values to be saved and edited along with the resource they're attached to.",
+  "scope": "The assertion applies to class members being exported within a script, enabling their values to be saved and edited alongside the associated resource.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T06:46:35.376Z"
+}

@@ -1,0 +1,151 @@
+{
+  "audit_id": "cda_1778382949395_01-engine-version-export-template-compat",
+  "section_id": "01-engine-version-export-template-compat",
+  "audited_at": "2026-05-10T03:15:49.395Z",
+  "research_os_version": "0.3.2",
+  "candidate_claim_count": 150,
+  "source_count": 8,
+  "total_source_word_count": 164669,
+  "claims_per_1k_words": 0.9109182663403556,
+  "weak_scope_count": 9,
+  "generic_scope_count": 42,
+  "per_source": [
+    {
+      "source_id": "src_71469ccfe316",
+      "publisher": null,
+      "source_word_count": 4619,
+      "claim_count": 42,
+      "claims_per_1k_words": 9.092877246157178,
+      "share_of_section": 0.28,
+      "weak_scope_count": 0,
+      "generic_scope_count": 26
+    },
+    {
+      "source_id": "src_78aaa13e8387",
+      "publisher": null,
+      "source_word_count": 14578,
+      "claim_count": 21,
+      "claims_per_1k_words": 1.440526821237481,
+      "share_of_section": 0.14,
+      "weak_scope_count": 4,
+      "generic_scope_count": 2
+    },
+    {
+      "source_id": "src_6ee62ab47888",
+      "publisher": null,
+      "source_word_count": 1844,
+      "claim_count": 17,
+      "claims_per_1k_words": 9.219088937093275,
+      "share_of_section": 0.11333333333333333,
+      "weak_scope_count": 5,
+      "generic_scope_count": 2
+    },
+    {
+      "source_id": "src_6f54a167d232",
+      "publisher": "Godotengine",
+      "source_word_count": 2082,
+      "claim_count": 17,
+      "claims_per_1k_words": 8.165225744476464,
+      "share_of_section": 0.11333333333333333,
+      "weak_scope_count": 0,
+      "generic_scope_count": 4
+    },
+    {
+      "source_id": "src_4c6c14f4f6fa",
+      "publisher": null,
+      "source_word_count": 1634,
+      "claim_count": 16,
+      "claims_per_1k_words": 9.791921664626683,
+      "share_of_section": 0.10666666666666667,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_1e4fa1dde3af",
+      "publisher": null,
+      "source_word_count": 120989,
+      "claim_count": 14,
+      "claims_per_1k_words": 0.11571299870236137,
+      "share_of_section": 0.09333333333333334,
+      "weak_scope_count": 0,
+      "generic_scope_count": 5
+    },
+    {
+      "source_id": "src_d3bd0f1dae0c",
+      "publisher": null,
+      "source_word_count": 17807,
+      "claim_count": 13,
+      "claims_per_1k_words": 0.7300499803448083,
+      "share_of_section": 0.08666666666666667,
+      "weak_scope_count": 0,
+      "generic_scope_count": 2
+    },
+    {
+      "source_id": "src_6e935dbe9826",
+      "publisher": null,
+      "source_word_count": 1116,
+      "claim_count": 10,
+      "claims_per_1k_words": 8.960573476702509,
+      "share_of_section": 0.06666666666666667,
+      "weak_scope_count": 0,
+      "generic_scope_count": 1
+    }
+  ],
+  "near_duplicate_clusters": [],
+  "flags": [
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_71469ccfe316 contributes 42 of 150 claims (28% of section).",
+      "affects_source_ids": [
+        "src_71469ccfe316"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_71469ccfe316 has 9.1 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_71469ccfe316"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_6ee62ab47888 has 9.2 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_6ee62ab47888"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_6f54a167d232 has 8.2 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_6f54a167d232"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_4c6c14f4f6fa has 9.8 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_4c6c14f4f6fa"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_6e935dbe9826 has 9.0 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_6e935dbe9826"
+      ],
+      "affects_claim_ids": []
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "summary_id": "tris_1778403984601_07-distribution-surface-durability",
+  "section_id": "07-distribution-surface-durability",
+  "triaged_at": "2026-05-10T09:06:24.601Z",
+  "research_os_version": "0.3.2",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 113,
+  "decisions": {
+    "selected_for_review": 28,
+    "needs_scope_repair": 76,
+    "parked_weak_scope": 9
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 28,
+  "selected_per_source": [
+    {
+      "source_id": "src_639902f06da8",
+      "selected": 3,
+      "total": 30
+    },
+    {
+      "source_id": "src_0cf4f6250555",
+      "selected": 7,
+      "total": 28
+    },
+    {
+      "source_id": "src_57341c85596c",
+      "selected": 2,
+      "total": 17
+    },
+    {
+      "source_id": "src_7d03db002fc2",
+      "selected": 9,
+      "total": 11
+    },
+    {
+      "source_id": "src_ce610c7a7992",
+      "selected": 2,
+      "total": 11
+    },
+    {
+      "source_id": "src_fc44452fd969",
+      "selected": 3,
+      "total": 10
+    },
+    {
+      "source_id": "src_8e8c16fd06c4",
+      "selected": 2,
+      "total": 6
+    }
+  ]
+}

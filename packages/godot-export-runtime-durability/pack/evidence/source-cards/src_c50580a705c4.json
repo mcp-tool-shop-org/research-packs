@@ -1,0 +1,28 @@
+{
+  "source_id": "src_c50580a705c4",
+  "receipt_id": "rcpt_c50580a705c4_1778392013981",
+  "section_id": "02-scene-resource-serialization",
+  "url": "https://api.github.com/search/issues?q=repo:godotengine/godot+resource+load+compatibility+regression&per_page=20",
+  "final_url": "https://api.github.com/search/issues?q=repo:godotengine/godot+resource+load+compatibility+regression&per_page=20",
+  "fetched_at": "2026-05-10T05:46:53.981Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Another resource is loaded from path (possible cyclic resource inclusion)",
+  "source_type": "forum",
+  "relevance": "high",
+  "key_points": [
+    "Godot produces ERROR: Another resource is loaded from path 'res://main.tscn::h2yge' (possible cyclic resource inclusion).",
+    "This error occurs in a simple scene with one exported Curve resource.",
+    "The issue has been reproduced on Godot versions 4.6.1, 4.6, and 4.5."
+  ],
+  "limitations": [
+    "Reproduction may require significant attempts (7 save/load attempts for some tested versions).",
+    "Error visibility can be inconsistent and logging is sometimes needed to confirm occurrence.",
+    "Scope appears limited to recent Godot versions; older ones were not reproduced in the report."
+  ],
+  "asserts": "Godot produces an error indicating possible cyclic resource inclusion when loading certain resources, particularly affecting Curve and potentially other exported resources.",
+  "scope": "The source asserts that this cyclic resource loading issue affects Godot versions 4.6.1, 4.6, and 4.5, with less prevalence in older versions.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T05:47:31.230Z"
+}

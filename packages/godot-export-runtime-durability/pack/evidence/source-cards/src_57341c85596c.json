@@ -1,0 +1,29 @@
+{
+  "source_id": "src_57341c85596c",
+  "receipt_id": "rcpt_57341c85596c_1778403228472",
+  "section_id": "07-distribution-surface-durability",
+  "url": "https://itch.io/docs/creators/html5",
+  "final_url": "https://itch.io/docs/creators/html5",
+  "fetched_at": "2026-05-10T08:53:48.472Z",
+  "publisher": "itch.io",
+  "published_at": null,
+  "title": "Uploading HTML5 games",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "itch.io supports uploading HTML games that can be played directly in the browser.",
+    "Many modern game engines support exporting to HTML & JavaScript, enabling browser playback without downloads or installs.",
+    "Games can be uploaded as ZIP files containing all assets and an index.html entry point, or as single HTML files",
+    "The itch.io platform hosts and processes games' assets, allowing developers to focus on their core creative work.",
+    "Custom embed options are available for integrating games into project pages, such as click-to-play launch and fullscreen viewing modes."
+  ],
+  "limitations": [
+    "Currently all HTML5 games on itch.io are set up to only take payments as donations. Selling games requires setting the 'Kind of Game' to 'Downloadable'.",
+    "There are file size limits when uploading ZIP packages, including a maximum of 1,000 individual files and 500MB total extracted size."
+  ],
+  "asserts": "itch.io supports running HTML/JavaScript/CSS projects directly in the browser by embedding an iframe pointing to your uploaded code on your itch.io project page.",
+  "scope": "The guide discusses how developers can upload and share playable browser-based HTML5 games via the itch.io platform, without requiring downloads or installs from end users. It covers packaging games as ZIP files or uploading single HTML files, custom embed options for integrating projects into itch.io pages, and current payment limitations for HTML5 games on the site.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T08:54:33.557Z"
+}

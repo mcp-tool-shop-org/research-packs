@@ -1,0 +1,59 @@
+{
+  "summary_id": "tris_1778382961312_01-engine-version-export-template-compat",
+  "section_id": "01-engine-version-export-template-compat",
+  "triaged_at": "2026-05-10T03:16:01.312Z",
+  "research_os_version": "0.3.2",
+  "triage_method": "research_os_triage_v1",
+  "candidate_claims": 150,
+  "decisions": {
+    "selected_for_review": 40,
+    "needs_scope_repair": 100,
+    "parked_overdense_source": 1,
+    "parked_weak_scope": 9
+  },
+  "per_source_cap": 10,
+  "duplicate_clusters_collapsed": 0,
+  "selected_count": 40,
+  "selected_per_source": [
+    {
+      "source_id": "src_71469ccfe316",
+      "selected": 10,
+      "total": 42
+    },
+    {
+      "source_id": "src_78aaa13e8387",
+      "selected": 3,
+      "total": 21
+    },
+    {
+      "source_id": "src_6ee62ab47888",
+      "selected": 2,
+      "total": 17
+    },
+    {
+      "source_id": "src_6f54a167d232",
+      "selected": 7,
+      "total": 17
+    },
+    {
+      "source_id": "src_4c6c14f4f6fa",
+      "selected": 5,
+      "total": 16
+    },
+    {
+      "source_id": "src_1e4fa1dde3af",
+      "selected": 8,
+      "total": 14
+    },
+    {
+      "source_id": "src_d3bd0f1dae0c",
+      "selected": 2,
+      "total": 13
+    },
+    {
+      "source_id": "src_6e935dbe9826",
+      "selected": 3,
+      "total": 10
+    }
+  ]
+}

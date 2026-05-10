@@ -1,0 +1,30 @@
+{
+  "source_id": "src_a6a330af5a09",
+  "receipt_id": "rcpt_a6a330af5a09_1778385405738",
+  "section_id": "03-save-system-player-state-durability",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_json.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_json.rst",
+  "fetched_at": "2026-05-10T03:56:45.738Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "JSON",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "The JSON class enables all data types to be converted to and from a JSON string.",
+    "stringify() is used to convert any data type into a JSON string.",
+    "parse() is used to convert existing JSON data into a Variant that can be used within Godot.",
+    "JSON Objects are converted into a Dictionary, but JSON data can also store Array's, numbers, String's and booleans."
+  ],
+  "limitations": [
+    "Both parse methods do not fully comply with the JSON specification:",
+    "- Trailing commas in arrays or objects are ignored instead of causing a parser error.",
+    "- New line and tab characters are accepted in string literals, treated like their corresponding escape sequences \n and \\t.",
+    "- Numbers are parsed using String.to_float(), which is generally more lax than the JSON specification."
+  ],
+  "asserts": "The source claims that the JSON class enables conversion of all data types to and from a JSON string format for use within Godot.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T03:57:17.634Z"
+}

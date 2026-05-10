@@ -1,0 +1,26 @@
+{
+  "source_id": "src_1e4fa1dde3af",
+  "receipt_id": "rcpt_1e4fa1dde3af_1778382140360",
+  "section_id": "01-engine-version-export-template-compat",
+  "url": "https://api.github.com/repos/godotengine/godot/releases?per_page=20",
+  "final_url": "https://api.github.com/repos/godotengine/godot/releases?per_page=20",
+  "fetched_at": "2026-05-10T03:02:20.360Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Godot Engine Release 4.6.2-stable",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "The release contains the new version of Godot game engine.",
+    "It is tagged as 'stable' and has been published to master branch.",
+    "Release was created by user akien-mga."
+  ],
+  "limitations": [
+    "Release information comes directly from Godot Engine repository, but does not contain any additional context or analysis."
+  ],
+  "asserts": "This release contains the stable version of Godot game engine with updates and improvements.",
+  "scope": "The scope is the Godot game engine itself, its updates and improvements in this specific stable release.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T03:02:47.102Z"
+}

@@ -1,0 +1,26 @@
+{
+  "source_id": "src_7d03db002fc2",
+  "receipt_id": "rcpt_7d03db002fc2_1778403188641",
+  "section_id": "07-distribution-surface-durability",
+  "url": "https://itch.io/docs/creators/getting-started",
+  "final_url": "https://itch.io/docs/creators/getting-started",
+  "fetched_at": "2026-05-10T08:53:08.641Z",
+  "publisher": "itch.io",
+  "published_at": null,
+  "title": "Your first itch.io page",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "A Project page on itch.io is how you share what you've created with the world.",
+    "All you need to create a page for your game, comic, soundtrack, assets, etc. is a free itch.io account.",
+    "To get started, hit the 'Create new game' button."
+  ],
+  "limitations": [
+    "Since itch.io started as a game marketplace, most of the vocabulary is game-centric – as the platform evolves towards other types of content, we'll keep adjusting that."
+  ],
+  "asserts": "A Project page on itch.io is how you share what you've created with the world.",
+  "scope": "The guide explains how to create a project page on the itch.io platform for games, comics, soundtracks, assets and other types of content using an account.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T08:53:48.139Z"
+}

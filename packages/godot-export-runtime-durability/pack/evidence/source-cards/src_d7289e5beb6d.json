@@ -1,0 +1,28 @@
+{
+  "source_id": "src_d7289e5beb6d",
+  "receipt_id": "rcpt_d7289e5beb6d_1778388955274",
+  "section_id": "05-desktop-platform-export-durability",
+  "url": "https://raw.githubusercontent.com/MicrosoftDocs/win32/docs/desktop-src/SecCrypto/signtool.md",
+  "final_url": "https://raw.githubusercontent.com/MicrosoftDocs/win32/docs/desktop-src/SecCrypto/signtool.md",
+  "fetched_at": "2026-05-10T04:55:55.274Z",
+  "publisher": "Microsoft",
+  "published_at": null,
+  "title": "SignTool",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "SignTool is a command-line tool that digitally signs files, verifies the signatures in files, removes the signatures from files, and time stamps files.",
+    "SignTool is available as part of the Windows Software Development Kit (SDK).",
+    "The tool is installed in the \\Bin folder of the Windows SDK installation path, for example: `C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\signtool.exe`.",
+    "SignTool supports four commands: catdb, sign, timestamp, and verify."
+  ],
+  "limitations": [
+    "The Windows SDK, [Windows Hardware Lab Kit (HLK)], [Windows Driver Kit (WDK)], and [Windows Assessment and Deployment Kit (ADK)] builds 20236 and later require that you specify the digest algorithm.",
+    "If `/fd` isn't specified during signing and if `/td` isn't specified during time stamping, the command throws a warning, error code 0, initially. In later versions of SignTool, the warning becomes an error."
+  ],
+  "asserts": "SignTool is a command-line tool used for digital signing, verifying signatures, removing signatures, and time stamping files.",
+  "scope": "The scope of this source is the usage of the SignTool command-line utility within Windows Software Development Kit (SDK) to perform operations such as digital signing, signature verification, removal of signatures, and time stamping of files.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T04:56:41.542Z"
+}

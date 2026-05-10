@@ -1,0 +1,28 @@
+{
+  "source_id": "src_d8935f3b0347",
+  "receipt_id": "rcpt_d8935f3b0347_1778391835590",
+  "section_id": "02-scene-resource-serialization",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_node.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_node.rst",
+  "fetched_at": "2026-05-10T05:43:55.590Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "class Node",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Nodes are Godot's building blocks.",
+    "Nodes can be assigned as the child of another node, resulting in a tree arrangement.",
+    "Scenes can be saved to the disk and then instantiated into other scenes."
+  ],
+  "limitations": [
+    "This is documentation for an engine feature and may not reflect all aspects or recent changes.",
+    "No date provided; it's unclear if this is current with the latest Godot version.",
+    "Scope limited to the Node class, does not cover related concepts outside of Node."
+  ],
+  "asserts": "Nodes are the building blocks in the Godot game engine and can be organized into scenes.",
+  "scope": "The scope is the use of Nodes as the fundamental elements in structuring a scene hierarchy within a Godot game project.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T05:44:21.228Z"
+}

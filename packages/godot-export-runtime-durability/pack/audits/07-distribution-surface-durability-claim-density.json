@@ -1,0 +1,141 @@
+{
+  "audit_id": "cda_1778403980692_07-distribution-surface-durability",
+  "section_id": "07-distribution-surface-durability",
+  "audited_at": "2026-05-10T09:06:20.692Z",
+  "research_os_version": "0.3.2",
+  "candidate_claim_count": 113,
+  "source_count": 7,
+  "total_source_word_count": 41011,
+  "claims_per_1k_words": 2.7553583184999146,
+  "weak_scope_count": 9,
+  "generic_scope_count": 11,
+  "per_source": [
+    {
+      "source_id": "src_639902f06da8",
+      "publisher": null,
+      "source_word_count": 17286,
+      "claim_count": 30,
+      "claims_per_1k_words": 1.7355085039916696,
+      "share_of_section": 0.26548672566371684,
+      "weak_scope_count": 0,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_0cf4f6250555",
+      "publisher": null,
+      "source_word_count": 15967,
+      "claim_count": 28,
+      "claims_per_1k_words": 1.7536168347216134,
+      "share_of_section": 0.24778761061946902,
+      "weak_scope_count": 0,
+      "generic_scope_count": 2
+    },
+    {
+      "source_id": "src_57341c85596c",
+      "publisher": "itch.io",
+      "source_word_count": 2588,
+      "claim_count": 17,
+      "claims_per_1k_words": 6.568778979907265,
+      "share_of_section": 0.1504424778761062,
+      "weak_scope_count": 0,
+      "generic_scope_count": 5
+    },
+    {
+      "source_id": "src_7d03db002fc2",
+      "publisher": "itch.io",
+      "source_word_count": 1503,
+      "claim_count": 11,
+      "claims_per_1k_words": 7.318695941450432,
+      "share_of_section": 0.09734513274336283,
+      "weak_scope_count": 0,
+      "generic_scope_count": 3
+    },
+    {
+      "source_id": "src_ce610c7a7992",
+      "publisher": "itch.io",
+      "source_word_count": 1663,
+      "claim_count": 11,
+      "claims_per_1k_words": 6.61455201443175,
+      "share_of_section": 0.09734513274336283,
+      "weak_scope_count": 3,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_fc44452fd969",
+      "publisher": "itch.io",
+      "source_word_count": 1302,
+      "claim_count": 10,
+      "claims_per_1k_words": 7.680491551459293,
+      "share_of_section": 0.08849557522123894,
+      "weak_scope_count": 6,
+      "generic_scope_count": 0
+    },
+    {
+      "source_id": "src_8e8c16fd06c4",
+      "publisher": "GodotSteam",
+      "source_word_count": 702,
+      "claim_count": 6,
+      "claims_per_1k_words": 8.547008547008549,
+      "share_of_section": 0.05309734513274336,
+      "weak_scope_count": 0,
+      "generic_scope_count": 1
+    }
+  ],
+  "near_duplicate_clusters": [],
+  "flags": [
+    {
+      "type": "source_dominance",
+      "severity": "warn",
+      "message": "Source src_639902f06da8 contributes 30 of 113 claims (27% of section).",
+      "affects_source_ids": [
+        "src_639902f06da8"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_57341c85596c has 6.6 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_57341c85596c"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_7d03db002fc2 has 7.3 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_7d03db002fc2"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_ce610c7a7992 has 6.6 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_ce610c7a7992"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_fc44452fd969 has 7.7 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_fc44452fd969"
+      ],
+      "affects_claim_ids": []
+    },
+    {
+      "type": "high_per_word_density",
+      "severity": "warn",
+      "message": "Source src_8e8c16fd06c4 has 8.5 claims per 1k source words — likely over-atomization.",
+      "affects_source_ids": [
+        "src_8e8c16fd06c4"
+      ],
+      "affects_claim_ids": []
+    }
+  ]
+}

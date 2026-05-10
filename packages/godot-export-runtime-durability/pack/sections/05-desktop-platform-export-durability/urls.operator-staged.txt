@@ -1,0 +1,32 @@
+# Section 05 — desktop-platform-export-durability
+# F-21 verified 2026-05-10: 11 URLs text-stable, each inspected for prose content
+# Publishers: Godot Foundation (4 RST), Apple (2 Markdown API), Microsoft (2 MicrosoftDocs raw GitHub), Godot community (3 GH Search JSON)
+#
+# Note — original kickoff HTML URLs for Apple and Microsoft required URL swaps:
+# - developer.apple.com/documentation/* = JS-shell only (no SSR prose). Apple provides official
+#   Markdown API at docs.developer.apple.com/tutorials/data/documentation/*.md (same content, text-stable).
+# - learn.microsoft.com/* = JS-rendered (no SSR prose in static HTML). Source content is
+#   available in public MicrosoftDocs GitHub repos via raw.githubusercontent.com/MicrosoftDocs/*.
+# These are same-source, same-publisher replacements, not different sources.
+# - exporting_projects.rst: already staged in Section 01; pack dedupes by URL hash; skipped here.
+# - docs.flathub.org/docs/for-app-authors/submission/: 404 — dropped.
+# - docs.appimage.org/: root is navigation index only, no substantive durability content — dropped.
+
+# Godot Foundation — platform-specific export tutorials (RST)
+https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_for_windows.rst
+https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_for_macos.rst
+https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_for_linux.rst
+https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/running_on_macos.rst
+
+# Apple — official Developer Documentation Markdown API (same content as developer.apple.com pages)
+https://docs.developer.apple.com/tutorials/data/documentation/security/notarizing-macos-software-before-distribution.md
+https://docs.developer.apple.com/tutorials/data/documentation/security/hardened-runtime.md
+
+# Microsoft — MicrosoftDocs raw GitHub (source content for learn.microsoft.com pages)
+https://raw.githubusercontent.com/MicrosoftDocs/win32/docs/desktop-src/SecCrypto/signtool.md
+https://raw.githubusercontent.com/microsoftdocs/msix-docs/main/msix-src/package/signing-package-overview.md
+
+# Godot community — GitHub Search API (platform export failure evidence)
+https://api.github.com/search/issues?q=repo:godotengine/godot+macos+notarization+export&per_page=20
+https://api.github.com/search/issues?q=repo:godotengine/godot+windows+export+signing&per_page=20
+https://api.github.com/search/issues?q=repo:godotengine/godot+linux+export+template&per_page=20

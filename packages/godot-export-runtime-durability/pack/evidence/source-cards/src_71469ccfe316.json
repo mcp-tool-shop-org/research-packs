@@ -1,0 +1,28 @@
+{
+  "source_id": "src_71469ccfe316",
+  "receipt_id": "rcpt_71469ccfe316_1778382046303",
+  "section_id": "01-engine-version-export-template-compat",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/migrating/upgrading_to_godot_4.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/migrating/upgrading_to_godot_4.rst",
+  "fetched_at": "2026-05-10T03:00:46.303Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "Upgrading from Godot 3 to Godot 4",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Godot 4.0 has many new features and bug fixes compared to Godot 3.x",
+    "Upgrading gives access to a longer support period for 4.x versions",
+    "Some features were lost in the upgrade process, but may be restored later"
+  ],
+  "limitations": [
+    "Godot 4's baseline hardware requirements are slightly higher than those of Godot 3",
+    "Godot 4 binary sizes are larger than those of Godot 3 for exported projects",
+    "Godot 4 does not support GLES2 rendering, which may prevent running on very old hardware"
+  ],
+  "asserts": "Upgrading from Godot 3 to Godot 4 provides access to new features, bug fixes, and a longer support period.",
+  "scope": "The source asserts the advantages and disadvantages of upgrading a Godot project from version 3 to version 4, including new features, bug fixes, hardware requirements changes, binary size differences, and lack of GLES2 rendering support in Godot 4.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T03:01:20.070Z"
+}

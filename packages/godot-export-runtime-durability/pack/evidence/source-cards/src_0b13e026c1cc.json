@@ -1,0 +1,28 @@
+{
+  "source_id": "src_0b13e026c1cc",
+  "receipt_id": "rcpt_0b13e026c1cc_1778391861568",
+  "section_id": "02-scene-resource-serialization",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/scripting/resources.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/scripting/resources.rst",
+  "fetched_at": "2026-05-10T05:44:21.568Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "Resources",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Resources are data containers in Godot that do not perform actions on their own.",
+    "Examples of resources include Texture, Script, Mesh, Animation, AudioStream, Font, and Translation.",
+    "When the engine loads a resource from disk, it only loads it once. If a copy is already in memory, trying to load the resource again returns the same copy every time."
+  ],
+  "limitations": [
+    "The documentation provides general information but does not cover all possible scenarios or edge cases for resources in Godot.",
+    "The scope and relevance of the content may vary depending on the specific needs and context of a user learning about resources.",
+    "The provided examples are simplified and may not fully represent real-world usage."
+  ],
+  "asserts": "Resources in Godot provide a way to store and manage data separate from nodes, allowing for efficient reuse and sharing of data across different parts of a project.",
+  "scope": "The context of the content is focused on explaining the concept and use of resources within the Godot game engine, specifically how they differ from and interact with nodes.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T05:44:56.000Z"
+}

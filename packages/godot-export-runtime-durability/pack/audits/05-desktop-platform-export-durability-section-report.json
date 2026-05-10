@@ -1,0 +1,122 @@
+{
+  "report_id": "secrep_1778404886040_05-desktop-platform-export-durability",
+  "section_id": "05-desktop-platform-export-durability",
+  "reported_at": "2026-05-10T09:21:26.040Z",
+  "research_os_version": "0.3.2",
+  "status": "gated",
+  "sources": {
+    "fetched_ok": 11,
+    "source_cards": 11,
+    "publishers": [
+      "Apple Inc.",
+      "Godotengine",
+      "Microsoft"
+    ],
+    "primary_source_waiver": {
+      "status": "none",
+      "reason": null,
+      "compensating_controls": []
+    }
+  },
+  "extraction": {
+    "candidate_claims": 231,
+    "claims_per_source": [
+      {
+        "source_id": "src_da88881cf961",
+        "claims": 44
+      },
+      {
+        "source_id": "src_e6e0e4cb4ec7",
+        "claims": 35
+      },
+      {
+        "source_id": "src_03cb99fe6df9",
+        "claims": 31
+      },
+      {
+        "source_id": "src_2b06a4f43c1e",
+        "claims": 29
+      },
+      {
+        "source_id": "src_d7289e5beb6d",
+        "claims": 26
+      },
+      {
+        "source_id": "src_c3216b0c8944",
+        "claims": 19
+      },
+      {
+        "source_id": "src_ef2f01e1f840",
+        "claims": 14
+      },
+      {
+        "source_id": "src_1ceb96fdb33a",
+        "claims": 10
+      },
+      {
+        "source_id": "src_5b703b620109",
+        "claims": 10
+      },
+      {
+        "source_id": "src_d4edcfa48733",
+        "claims": 7
+      },
+      {
+        "source_id": "src_7d0fca124716",
+        "claims": 6
+      }
+    ],
+    "claims_per_1k_words": 4.508284705009856,
+    "excerpt_pages_processed": 11,
+    "excerpt_id_failures": 0,
+    "malformed_extractor_outputs": 0,
+    "near_duplicate_clusters": 0,
+    "weak_scope_count": 10,
+    "generic_scope_count": 23,
+    "density_flags": 11
+  },
+  "contradictions": {
+    "pairs_compared": 26565,
+    "contradiction_candidates": 0,
+    "overgeneralization_risks": 0
+  },
+  "review": {
+    "reviewed": true,
+    "accepted_for_synthesis": 19,
+    "needs_scope_repair": 8,
+    "needs_source_repair": 26,
+    "needs_contradiction_mapping": 0,
+    "rejected": 2,
+    "needs_human_review": 1,
+    "rejection_or_repair_by_category": [
+      {
+        "category": "source_quality_problem",
+        "count": 28
+      },
+      {
+        "category": "overgeneralized_claim",
+        "count": 10
+      },
+      {
+        "category": "recommendation_exceeds_evidence",
+        "count": 4
+      },
+      {
+        "category": "scope_widening",
+        "count": 3
+      }
+    ]
+  },
+  "acceptance": {
+    "candidate_claims": 231,
+    "accepted_for_synthesis": 19,
+    "acceptance_ratio": 0.08225108225108226,
+    "accepted_per_source": 1.7272727272727273,
+    "accepted_per_1k_words": 0.37081129608306174,
+    "top_rejection_category": "source_quality_problem",
+    "claim_overproduction_fired": false,
+    "synthesis_ready": true
+  },
+  "gate_verdict": "warn",
+  "gate_synthesis_eligible": true
+}

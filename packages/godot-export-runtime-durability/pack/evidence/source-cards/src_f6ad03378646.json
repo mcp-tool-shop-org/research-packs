@@ -1,0 +1,28 @@
+{
+  "source_id": "src_f6ad03378646",
+  "receipt_id": "rcpt_f6ad03378646_1778385571286",
+  "section_id": "03-save-system-player-state-durability",
+  "url": "https://raw.githubusercontent.com/youssof20/savestate/main/README.md",
+  "final_url": "https://raw.githubusercontent.com/youssof20/savestate/main/README.md",
+  "fetched_at": "2026-05-10T03:59:31.286Z",
+  "publisher": "youssof20",
+  "published_at": null,
+  "title": "SaveState Lite",
+  "source_type": "secondary",
+  "relevance": "high",
+  "key_points": [
+    "Godot addon for atomic save files, rolling .bak backups, schema versioning with forward merge, and one SaveManager autoload.",
+    "Supports Godot versions 4.3-4.6.",
+    "MIT licensed.",
+    "Separate Pro version available with additional features like async saving/loading and quick setup menu entries."
+  ],
+  "limitations": [
+    "Does not ship a Saveable node in this repository; nodes that implement get_storage_key, collect_snapshot, and apply_snapshot can participate in save functionality.",
+    "Requires manual installation into Godot project folder."
+  ],
+  "asserts": "This source claims that SaveState Lite centralizes atomic commits (write to temp → validate → rename), optional .bak backups, and a single schema number with merge-from-defaults for older files.",
+  "scope": "The scope of this source's main claim is the Godot addon that centralizes save functionality in Godot projects, supporting versions 4.3-4.6.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T03:59:58.544Z"
+}

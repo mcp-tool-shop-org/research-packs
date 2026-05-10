@@ -1,0 +1,30 @@
+{
+  "source_id": "src_b2e50dff76fc",
+  "receipt_id": "rcpt_b2e50dff76fc_1778399393767",
+  "section_id": "06-mobile-web-export-durability",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/one-click_deploy.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/one-click_deploy.rst",
+  "fetched_at": "2026-05-10T07:49:53.767Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "One-click deploy",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "One-click deploy is a feature that allows users to automatically export, install and run projects on connected devices.",
+    "It requires a properly configured platform and supported device.",
+    "The feature is available for Android, iOS, desktop platforms, and Web.",
+    "Configuring one-click deploy varies by platform.",
+    "Troubleshooting steps are provided for each supported platform."
+  ],
+  "limitations": [
+    "Requires a runnable export preset to function.",
+    "Only one runnable preset per platform can be marked as runnable.",
+    "The feature doesn't work on platforms without the required settings configured correctly."
+  ],
+  "asserts": "One-click deploy allows users to automatically export, install and run projects on connected devices by configuring their development environment properly.",
+  "scope": null,
+  "not": "The documentation does not claim that one-click deploy is universally compatible with all possible user configurations or hardware setups.",
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T07:50:25.126Z"
+}

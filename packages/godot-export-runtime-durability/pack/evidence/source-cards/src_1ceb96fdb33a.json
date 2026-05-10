@@ -1,0 +1,30 @@
+{
+  "source_id": "src_1ceb96fdb33a",
+  "receipt_id": "rcpt_1ceb96fdb33a_1778388771934",
+  "section_id": "05-desktop-platform-export-durability",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_for_windows.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_for_windows.rst",
+  "fetched_at": "2026-05-10T04:52:51.934Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "Exporting for Windows",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Godot offers a way to export projects for PC distribution using the export system.",
+    "The exporter creates a data.pck file that is bundled with an optimized binary.",
+    "Three processor architectures are supported: x86_64, x86_32, and arm64.",
+    "PCK embedding is only supported for executables up to ~3.89 GB in size.",
+    "Godot can perform automatic code signing on export using a package signing certificate."
+  ],
+  "limitations": [
+    "x86_32 option should not be used unless trying to target old 32bit versions of Windows.",
+    "arm64 executable will not run on regular x86_64 processors.",
+    "PCK embedding size limit may vary based on build options using a custom export template."
+  ],
+  "asserts": "Godot provides an elegant approach for PC distribution when exporting projects, with support for different processor architectures and the ability to embed PCK files and perform code signing.",
+  "scope": "The document explains how to use Godot's export system to create Windows executables for PC distribution, covering architecture options, PCK embedding, changing executable icons, code signing, and environment variables.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T04:53:32.497Z"
+}

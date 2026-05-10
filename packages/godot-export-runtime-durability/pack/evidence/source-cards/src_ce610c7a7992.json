@@ -1,0 +1,27 @@
+{
+  "source_id": "src_ce610c7a7992",
+  "receipt_id": "rcpt_ce610c7a7992_1778403301520",
+  "section_id": "07-distribution-surface-durability",
+  "url": "https://itch.io/docs/creators/download-keys",
+  "final_url": "https://itch.io/docs/creators/download-keys",
+  "fetched_at": "2026-05-10T08:55:01.52Z",
+  "publisher": "itch.io",
+  "published_at": null,
+  "title": "Download keys",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "A download key is a special URL that gives someone access to a project's files.",
+    "Keys can be generated for friends, press or bulk promotions.",
+    "External keys are available for owners of the project who also own external keys like Steam."
+  ],
+  "limitations": [
+    "When someone downloads a free project a download key is not created.",
+    "A download key's URL should not be shared as it gives direct file access."
+  ],
+  "asserts": "itch.io supports creators in distributing their games and projects through special URLs called download keys.",
+  "scope": "The guide applies to how game developers on itch.io can distribute access to their projects, files, and external key integrations for different purchase scenarios.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T08:55:28.602Z"
+}

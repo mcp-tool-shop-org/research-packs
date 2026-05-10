@@ -1,0 +1,29 @@
+{
+  "source_id": "src_d726c169567d",
+  "receipt_id": "rcpt_d726c169567d_1778399306320",
+  "section_id": "06-mobile-web-export-durability",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_for_android.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_for_android.rst",
+  "fetched_at": "2026-05-10T07:48:26.320Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "Exporting for Android",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Projects can be exported to Android using Godot.",
+    "Fewer requirements are needed compared to compiling Godot for Android.",
+    "OpenJDK 17 must be installed and configured in the editor settings.",
+    "Android SDK, including required packages and NDK, must also be installed and configured.",
+    "Exporting projects to Android has specific launcher icon requirements."
+  ],
+  "limitations": [
+    "Support for C# projects is experimental and some limitations apply",
+    "Projects written in C# can be exported but support is still in early stages"
+  ],
+  "asserts": "This page describes how to export a Godot project to Android, detailing the required steps including installing OpenJDK 17, configuring Android SDK, and setting it up in the Godot editor settings.",
+  "scope": "The scope of this guide is the process of exporting a Godot game or project to an Android platform for mobile device distribution using the specific configurations and tools mentioned within the tutorial.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T07:48:54.952Z"
+}

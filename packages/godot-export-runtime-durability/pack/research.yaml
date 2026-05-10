@@ -1,0 +1,154 @@
+research_os_version: 0.1.0
+created_at: 2026-05-10T02:47:30.879Z
+topic: What makes a Godot narrative game build durable across engine versions, export templates, platform targets, asset pipelines, save/runtime behavior, and distribution surfaces?
+decision: ""
+audience: self
+desired_output: ""
+max_runtime_minutes: 240
+freshness:
+  required: true
+  max_source_age_months: null
+excluded_sources: []
+primary_source_waiver:
+  status: none
+  compensating_controls: []
+  section_waivers:
+    - section_id: 01-engine-version-export-template-compat
+      scope: min_independent_publishers
+      reason: |
+        Section 01 documents Godot engine version semantics, export template
+        versioning, and the Godot 3.x to 4.x compatibility boundary from canonical
+        first-party sources. The authoritative source of truth for these behaviors
+        is structurally concentrated in Godot Foundation documentation and the
+        godotengine/godot release record. No independent third-party publisher can
+        be the ground-truth authority for how Godot's own engine versions and
+        export templates behave — third-party sources can only interpret or relay
+        Foundation-published behavior. The source_cluster_monopoly finding
+        (observed 2026-05-10 during review pass) cascaded needs_source_repair
+        to all 40 triaged claims due to single-publisher sourcing, which is the
+        structural incompatibility this waiver is designed for.
+      compensating_controls:
+        - "Sources span multiple canonical artifact types: official tutorial RST (exporting_projects, feature_tags, exporting_pcks), migration guide RST (upgrading_to_godot_4), policy RST (release_policy), GitHub API release JSON, and GitHub Search API issue threads."
+        - Claims remain span-grounded and reviewed individually; per-claim quality signals (scope_widening, source_quality_problem, missing_not_constraint) continue to apply normally.
+        - Section synthesis must disclose the single-foundation source concentration and its implications for claim independence.
+        - Publisher diversity for later sections (03, 05) is expected without waivers; Section 01 waiver is section-scoped, not pack-wide.
+    - section_id: 01-engine-version-export-template-compat
+      scope: primary_sources_required
+      reason: |
+        For canonical-engine sections, official Godot Foundation tutorial and
+        migration RST files are the primary authoritative evidence for engine
+        behavior — there is no separate specification document for Godot engine
+        version compatibility semantics. The extractor types these files as
+        source_type=docs (tutorial/how-to format) rather than primary (spec/
+        standards format). Only the releases JSON is typed primary. The gate
+        requires 2 primary-typed sources but the content is structurally
+        primary-equivalent: official first-party docs from the canonical
+        godotengine/godot-docs repo are the authoritative source for how the
+        engine behaves across versions. Adding a third-party primary source
+        would not add truth; it would add interpretation on top of foundation docs.
+      compensating_controls:
+        - 5 of 8 sources are raw RST files from the official godotengine/godot-docs repo — first-party content authored and maintained by the Godot Foundation.
+        - The releases JSON endpoint (typed primary) provides structured release metadata confirming version history.
+        - GitHub Search API issues provide corroborating real-world evidence of export template compatibility failures from user-reported observations.
+        - All claims are span-grounded against literal excerpt text from these sources; the docs-type classification affects the gate check, not evidence quality.
+    - section_id: 03-save-system-player-state-durability
+      scope: primary_sources_required
+      reason: |
+        Section 03 uses Godot Foundation class-reference RST (class_fileaccess.rst,
+        class_configfile.rst, class_json.rst, class_resourcesaver.rst) and tutorial
+        RST (saving_games.rst) as the primary authoritative evidence for save API
+        behavior. The extractor types ALL godot-docs RST files as source_type=docs —
+        both tutorial RST and auto-generated class-reference RST (generated from
+        engine XML via make_rst.py). This is the F-40 finding: no RST file in the
+        godot-docs repo types as primary, regardless of whether it is a tutorial or
+        a class API reference. GitHub Search API results type as forum. Three
+        independent developer READMEs (youssof20, EiTaNBaRiBoA, MrRobinOfficial)
+        type as secondary. The gate requires 2 primary-typed sources; Section 03
+        has 0 primary-typed sources despite having 4 independent publishers.
+        This waiver covers only the primary_sources_required check. The
+        min_independent_publishers check PASSED without a waiver (4 publishers
+        >= 4 minimum), confirming Section 03's multi-publisher structure.
+      compensating_controls:
+        - 5 sources are raw RST files from the official godotengine/godot-docs repo (4 class-reference + 1 tutorial) — auto-generated from engine XML and first-party content maintained by the Godot Foundation.
+        - 3 independent developer sources (youssof20/savestate, EiTaNBaRiBoA/ForgeJSONGD, MrRobinOfficial/Godot-Saveable) provide corroborating real-world evidence of save system implementation practice.
+        - "min_independent_publishers cleared on own merits (4 publishers confirmed by gate): no min_independent_publishers waiver applied or needed."
+        - All claims are span-grounded against literal excerpt text from sources; the docs/secondary-type classification affects the gate check, not evidence quality.
+        - "GitHub Search API issues and specific issue #110466 (ResourceSaver regression) provide corroborating regression evidence."
+sections:
+  - id: 01-engine-version-export-template-compat
+    purpose: Document what changes across Godot 3.x to 4.x affect exported narrative game builds; how export templates are versioned and pinned; what exported binary compatibility is maintained across engine upgrades
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 03-save-system-player-state-durability
+    purpose: Document save serialization APIs (FileAccess, ResourceSaver, ConfigFile, JSON), save-format compatibility across Godot 3.x to 4.x, developer-side migration responsibility, and narrative-game-specific save state durability
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 05-desktop-platform-export-durability
+    purpose: Document desktop platform export requirements for Windows, Linux, and macOS; code-signing (Authenticode, macOS codesigning), notarization, hardened runtime, renderer fallback (Vulkan/Metal/OpenGL/D3D12), and platform-vendor distribution requirements that affect narrative-game build durability independent of engine export-template versioning
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 02-scene-resource-serialization
+    purpose: Document .tscn/.tres/.scn/.res serialization formats, PackedScene/Resource/ResourceLoader/ResourceSaver API contracts, External vs SubResource reference model, .import metadata, sub-scene composition, and the scene-graph + script + resource-path reference-graph durability contract across Godot engine version upgrades
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 04-scripting-runtime-contracts
+    purpose: GDScript 1 vs 2.0 language migration, type-system semantics, signal/callable model, C# binding support per export target, GDExtension version-compat contracts, scene-tree initialization order and runtime parse-vs-execute distinction.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 06-mobile-web-export-durability
+    purpose: iOS/Android/HTML5 export pipelines, browser WebGL/WASM compatibility, code-signing and keystore management, Apple App Store and Google Play policy and review, browser standards and runtime evolution.
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+  - id: 07-distribution-surface-durability
+    purpose: How do distribution surface requirements and platform-partner access gates affect long-term narrative-game availability on Steam, itch.io, and console platforms?
+    max_time_minutes: 45
+    min_sources: 8
+    primary_sources_required: 2
+    contradictions_required: true
+    status: frozen
+gates:
+  source_floor:
+    min_sources: 8
+    min_independent_publishers: 4
+    primary_sources_required: 2
+    primary_source_waiver_allowed: true
+  claim_integrity:
+    every_claim_needs_source: true
+    no_orphan_claims: true
+    no_source_cluster_monopoly: true
+  freshness:
+    required_for_current_topics: true
+    stale_source_policy: warn
+  contradiction:
+    required: true
+    unresolved_contradictions_block_synthesis: true
+  section_budget:
+    max_time_minutes: 45
+    extension_requires_evidence: true
+review_profiles:
+  hermes-two-pass:
+    general_model: hermes3:8b
+    critic_model: hermes3:8b
+    review_window: 10
+    mode: two_pass
+    status: calibrated_baseline
+    notes: Calibrated baseline as of v0.1. 0% good-claim FPR on the seeded fixture; bad-claim any-flag recall 9/13 (69%). Smaller window required because hermes3:8b at 4-bit on a 5080 cannot complete 25-claim windows within a 3-minute budget.
+frozen_at: 2026-05-10T09:46:27.052Z

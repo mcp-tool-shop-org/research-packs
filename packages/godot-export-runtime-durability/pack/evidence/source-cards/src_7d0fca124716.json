@@ -1,0 +1,27 @@
+{
+  "source_id": "src_7d0fca124716",
+  "receipt_id": "rcpt_7d0fca124716_1778388842155",
+  "section_id": "05-desktop-platform-export-durability",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_for_linux.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_for_linux.rst",
+  "fetched_at": "2026-05-10T04:54:02.155Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "Exporting for Linux",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Godot offers a way to distribute games for PC using the export system.",
+    "When exporting for Linux, the exporter creates a 'data.pck' file and a specially optimized binary.",
+    "There are 7 different processor architectures that exported Godot projects can run on in Linux."
+  ],
+  "limitations": [
+    "x86_32 executables should not be used unless trying to get the project to run on an old 32bit distribution and processor.",
+    "rv64, ppc64, and loongarch64 architectures are substantially more niche when it comes to running videogames on them."
+  ],
+  "asserts": "Godot provides a method to export projects for Linux, creating a 'data.pck' file and an optimized binary that can run on various processor architectures.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T04:54:25.165Z"
+}

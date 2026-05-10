@@ -1,0 +1,18 @@
+{
+  "receipt_id": "cle_1778403976299_07-distribution-surface-durability",
+  "section_id": "07-distribution-surface-durability",
+  "extracted_at": "2026-05-10T09:06:16.299Z",
+  "research_os_version": "0.3.2",
+  "extractor": "ollama-intern",
+  "extraction_method": "ollama_intern_propositional_paged",
+  "sources_processed": 7,
+  "sources_skipped": 0,
+  "sources_failed": 0,
+  "excerpt_ledgers_built": 7,
+  "claims_added": 113,
+  "claims_deduped": 0,
+  "claims_rejected_ungrounded": 1,
+  "claims_rejected_excerpt_id_missing": 1,
+  "claims_rejected_excerpt_id_malformed": 0,
+  "failures": []
+}

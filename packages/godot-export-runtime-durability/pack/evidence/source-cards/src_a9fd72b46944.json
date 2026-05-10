@@ -1,0 +1,28 @@
+{
+  "source_id": "src_a9fd72b46944",
+  "receipt_id": "rcpt_a9fd72b46944_1778395627253",
+  "section_id": "04-scripting-runtime-contracts",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/scripting/c_sharp/c_sharp_basics.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/scripting/c_sharp/c_sharp_basics.rst",
+  "fetched_at": "2026-05-10T06:47:07.253Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "C# basics",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "C# is a high-level programming language developed by Microsoft.",
+    "In Godot, C# is implemented with the modern .NET runtime.",
+    "This page provides an introduction to C#, both what it is and how to use it in Godot.",
+    "The page also discusses prerequisites for using C# in Godot, configuring an external editor, creating a C# script, and project setup and workflow."
+  ],
+  "limitations": [
+    "Projects written in C# using Godot 4 cannot be exported to the web platform. Android and iOS platform support is available but experimental.",
+    "This page provides only a brief introduction to C#, and users may need to look at other resources for specific features or details on the differences between the C# and GDScript API."
+  ],
+  "asserts": "C# can be used for scripting in Godot, with the modern .NET runtime implemented in the process.",
+  "scope": "The scope of this page is to provide a brief introduction to using C# for scripting in the Godot game engine.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T06:47:41.203Z"
+}

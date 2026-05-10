@@ -1,0 +1,28 @@
+{
+  "source_id": "src_ef2f01e1f840",
+  "receipt_id": "rcpt_ef2f01e1f840_1778389005093",
+  "section_id": "05-desktop-platform-export-durability",
+  "url": "https://raw.githubusercontent.com/microsoftdocs/msix-docs/main/msix-src/package/signing-package-overview.md",
+  "final_url": "https://raw.githubusercontent.com/microsoftdocs/msix-docs/main/msix-src/package/signing-package-overview.md",
+  "fetched_at": "2026-05-10T04:56:45.093Z",
+  "publisher": "Microsoft",
+  "published_at": null,
+  "title": "Sign an MSIX package",
+  "source_type": "primary",
+  "relevance": "high",
+  "key_points": [
+    "App package signing is a required step in the process of creating an MSIX package that can be deployed on Windows.",
+    "To successfully install a Windows application, the package doesn't just have to be signed but also trusted on the device.",
+    "Azure Artifact Signing (formerly Trusted Signing) is Microsoft's managed code signing service and is recommended for production MSIX signing.",
+    "The WinApp CLI provides convenient commands for development signing."
+  ],
+  "limitations": [
+    "Not all scenarios are covered by Azure Artifact Signing, some require OV code signing certificates from a CA",
+    "Signing with SignTool requires extra setup when using Azure Artifact Signing"
+  ],
+  "asserts": "Windows requires MSIX packages to be signed with a valid code signing certificate for deployment.",
+  "scope": "The document provides guidance on how to sign MSIX app packages for deployment on Windows, including the use of various signing options and tools.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T04:57:12.134Z"
+}

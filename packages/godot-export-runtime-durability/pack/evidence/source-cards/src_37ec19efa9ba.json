@@ -1,0 +1,28 @@
+{
+  "source_id": "src_37ec19efa9ba",
+  "receipt_id": "rcpt_37ec19efa9ba_1778399269429",
+  "section_id": "06-mobile-web-export-durability",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_for_ios.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/export/exporting_for_ios.rst",
+  "fetched_at": "2026-05-10T07:47:49.429Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "Exporting for iOS",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "This page describes how to export a Godot project to iOS.",
+    "To export, open the Export window from the Project menu in Godot editor and select iOS.",
+    "You must provide a unique bundle ID for the exported project.",
+    "After exporting, you can build and deploy the project directly on an Apple Silicon Mac without iOS simulator limitations."
+  ],
+  "limitations": [
+    "Projects written in C# can be exported to iOS as of Godot 4.2, but support is experimental and some limitations apply.",
+    "The iOS simulator only supports the Compatibility renderer."
+  ],
+  "asserts": "Godot projects can be exported to Xcode for building and deploying on iOS devices or submitting to the App Store.",
+  "scope": "This source describes how to export a Godot project to an Xcode-compatible format for deployment on iOS devices using Apple's developer tools and standards.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T07:48:25.976Z"
+}

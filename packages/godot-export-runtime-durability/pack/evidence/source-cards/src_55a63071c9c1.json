@@ -1,0 +1,28 @@
+{
+  "source_id": "src_55a63071c9c1",
+  "receipt_id": "rcpt_55a63071c9c1_1778391896337",
+  "section_id": "02-scene-resource-serialization",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/best_practices/scenes_versus_scripts.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/best_practices/scenes_versus_scripts.rst",
+  "fetched_at": "2026-05-10T05:44:56.337Z",
+  "publisher": "Godotengine",
+  "published_at": null,
+  "title": "When to use scenes versus scripts",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Scenes and scripts are used for different purposes in Godot Engine.",
+    "Scenes define object composition, while scripts add behavior.",
+    "Scripts can be registered as types in the editor for easier creation.",
+    "PackedScene provides better performance than using scripts."
+  ],
+  "limitations": [
+    "The advice assumes a specific use case based on the type of content being created.",
+    "The decision to use scenes or scripts is subjective and depends on individual project needs."
+  ],
+  "asserts": "Scenes should be used for creating concepts that are specific to a game, while scripts are best suited for reusable tools across projects.",
+  "scope": "When designing a game in Godot Engine, choose between using scenes or scripts based on whether the content is specific to the game or intended for reuse across multiple projects.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T05:45:21.030Z"
+}

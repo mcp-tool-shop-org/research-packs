@@ -1,0 +1,26 @@
+{
+  "source_id": "src_5fda19aa5cd8",
+  "receipt_id": "rcpt_5fda19aa5cd8_1778399496077",
+  "section_id": "06-mobile-web-export-durability",
+  "url": "https://support.google.com/googleplay/android-developer/answer/9859152",
+  "final_url": "https://support.google.com/googleplay/android-developer/answer/9859152",
+  "fetched_at": "2026-05-10T07:51:36.077Z",
+  "publisher": "Google",
+  "published_at": null,
+  "title": "Create and set up your app - Play Console Help",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "You can create apps and set them up using Play Console after creating your Google Play developer account.",
+    "Open Play Console to create your app.",
+    "Select Home in the left navigation menu."
+  ],
+  "limitations": [
+    "The information is specific to setting up an app on Google Play Console, which may not encompass all methods of app creation and setup."
+  ],
+  "asserts": "After creating a Google Play developer account, you can create apps and set them up using the Play Console.",
+  "scope": "Google Play development",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T07:52:02.379Z"
+}

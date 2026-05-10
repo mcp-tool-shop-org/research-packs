@@ -1,0 +1,29 @@
+{
+  "source_id": "src_8e8c16fd06c4",
+  "receipt_id": "rcpt_8e8c16fd06c4_1778403328936",
+  "section_id": "07-distribution-surface-durability",
+  "url": "https://codeberg.org/godotsteam/godotsteam/raw/branch/godot4/readme.md",
+  "final_url": "https://codeberg.org/godotsteam/godotsteam/raw/branch/godot4/readme.md",
+  "fetched_at": "2026-05-10T08:55:28.936Z",
+  "publisher": "GodotSteam",
+  "published_at": null,
+  "title": "GodotSteam for Godot Engine 4.x | Community Edition",
+  "source_type": "secondary",
+  "relevance": "high",
+  "key_points": [
+    "An ecosystem of tools for Godot Engine and Valve's Steam.",
+    "Available for Windows, Linux, and Mac platforms.",
+    "Various module and plug-in options for different versions of Godot and server components.",
+    "Documentation and tutorials available on the GodotSteam website.",
+    "Project can be built from scratch or pre-compiled versions can be downloaded."
+  ],
+  "limitations": [
+    "Rare compatibility issues may occur with Steamworks SDK updates.",
+    "No LLMs allowed for issues, patches, or pull requests."
+  ],
+  "asserts": "GodotSteam provides an ecosystem of tools for integrating Godot Engine with Valve's Steam platform for Windows, Linux, and Mac.",
+  "scope": "The scope is the integration of Godot Engine with Valve's Steam platform using various module and plug-in options available for different versions of both systems.",
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T08:55:55.302Z"
+}

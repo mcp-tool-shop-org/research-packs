@@ -1,0 +1,28 @@
+{
+  "source_id": "src_c3216b0c8944",
+  "receipt_id": "rcpt_c3216b0c8944_1778388891949",
+  "section_id": "05-desktop-platform-export-durability",
+  "url": "https://docs.developer.apple.com/tutorials/data/documentation/security/notarizing-macos-software-before-distribution.md",
+  "final_url": "https://developer.apple.com/tutorials/data/documentation/security/notarizing-macos-software-before-distribution.md",
+  "fetched_at": "2026-05-10T04:54:51.949Z",
+  "publisher": "Apple Inc.",
+  "published_at": null,
+  "title": "Notarizing macOS software before distribution",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "Notarization of macOS software is not App Review, but an automated system that scans the software for malicious content and checks for code-signing issues.",
+    "When a user installs or runs Developer ID-signed software, Gatekeeper can check if Apple has notarized it, and display descriptive information in the initial launch dialog.",
+    "You can notarize macOS apps, non-app bundles like kernel extensions, disk images (UDIF format), and flat installer packages.",
+    "Starting November 1, 2023, Apple notary service no longer accepts uploads from `altool` or Xcode 13 or earlier."
+  ],
+  "limitations": [
+    "Some preexisting software might not run properly after being successfully notarized.",
+    "Notarization also protects users only if Developer ID signing key is exposed."
+  ],
+  "asserts": "Submitting macOS software to Apple for notarization gives users more confidence in the software's safety before distribution.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T04:55:23.991Z"
+}

@@ -1,0 +1,28 @@
+{
+  "source_id": "src_f826c053d744",
+  "receipt_id": "rcpt_f826c053d744_1778385437967",
+  "section_id": "03-save-system-player-state-durability",
+  "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_resourcesaver.rst",
+  "final_url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/classes/class_resourcesaver.rst",
+  "fetched_at": "2026-05-10T03:57:17.967Z",
+  "publisher": null,
+  "published_at": null,
+  "title": "Documentation for ResourceSaver Class",
+  "source_type": "docs",
+  "relevance": "high",
+  "key_points": [
+    "ResourceSaver is a singleton for saving resources to the filesystem.",
+    "It uses ResourceFormatSavers to save resource data in various formats.",
+    "ResourceSaver provides methods like add_resource_format_saver, get_recognized_extensions, get_resource_id_for_path and remove_resource_format_saver",
+    "The class also includes enumerations like SaverFlags for specifying the save behavior."
+  ],
+  "limitations": [
+    "This is a documentation file and not intended for direct use in code.",
+    "It assumes basic familiarity with Godot engine's classes, resources and concepts."
+  ],
+  "asserts": "ResourceSaver is a central class for managing resource saving operations in the Godot engine.",
+  "scope": null,
+  "not": null,
+  "extracted_by": "ollama-intern",
+  "extracted_at": "2026-05-10T03:57:42.398Z"
+}
