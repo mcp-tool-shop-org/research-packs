@@ -338,6 +338,170 @@ The `-text` declares the files binary; git stores literal bytes verbatim with no
 
 ---
 
+## Source-card overrides workflow (research-os ≥ v0.4.0)
+
+`research-os source-card audit` replaces the operator's scratch-script loop for inspecting source-type drift. It is read-only by default and safe on frozen packs; `--apply --from` is the only write path. The F-27 scratch-script pattern is superseded.
+
+### The correction loop
+
+```bash
+# 1. Inspect drift across the pack
+research-os source-card audit --pack /path/to/pack
+
+# 2. Review audits/source-card-audit.md — focus on:
+#    - github_ui_html rows (GitHub browse pages, not content)
+#    - source_type_mismatch rows (classifier disagrees with card type)
+#    - publisher_missing rows (null publisher, no override in effect)
+
+# 3. Author an override JSON array for the findings you want to correct
+#    Save to proposed-overrides.json
+
+# 4. Apply — all-or-nothing batch validation before any write
+research-os source-card audit \
+  --pack /path/to/pack \
+  --apply \
+  --from proposed-overrides.json
+
+# 5. Re-audit to confirm resolution
+research-os source-card audit --pack /path/to/pack
+```
+
+### Override entry schema
+
+```json
+[
+  {
+    "source_id": "src_aabbccddeeff",
+    "reason": "GitHub repository browse page — replace with raw README URL.",
+    "new_source_type": "docs"
+  },
+  {
+    "source_id": "src_112233445566",
+    "reason": "Publisher missing; confirmed from domain.",
+    "new_publisher": "Mozilla"
+  }
+]
+```
+
+Both `new_source_type` and `new_publisher` may appear in the same entry. The `reason` field is required and non-empty (schema-enforced). All entries are validated before any write — a single invalid entry rejects the entire batch.
+
+### Frozen pack behaviour
+
+`--apply` is refused if `audits/freeze-receipt.json` is present. The read-only audit (`research-os source-card audit --pack <dir>`) is still allowed on frozen packs and produces the JSON + Markdown report without touching the override ledger.
+
+### Override ledger persistence
+
+The ledger at `evidence/source-card-overrides.jsonl` is append-only and is exported in the `pack publish` archive. Operator corrections survive re-gather and the full pack lifecycle. The effective source type and publisher are always the latest ledger entry for a given `source_id`.
+
+See the [source-card audit handbook page](https://mcp-tool-shop-org.github.io/research-os/handbook/source-card-audit/) for the full 7-finding-kind reference and authoring guidance.
+
+---
+
+## Reviewer calibration (research-os ≥ v0.5.0)
+
+v0.5.0 makes reviewer calibration durable. A reviewer profile is not trusted because
+it ran once; it earns a status through structured seeded-failure receipts and
+multi-run aggregation.
+
+**No trusted baseline admitted (v0.5.0).** The canonical receipts shipped with v0.5.0:
+
+| Profile | Status | Notes |
+|---|---|---|
+| `hermes-two-pass` | `failed` | Aggregate, 3 runs. Recurring failures: any-flag recall, per-category floor, decision vocab. |
+| `mistral-nemo-two-pass` | `conditional_pass` | Aggregate, 3 runs. FP at ceiling (median=1/max=2); no recurring failures. |
+| `hermes-single-pass` | `comparison_only` | Auto-assigned; architectural comparison only. |
+
+`trusted_baseline` is earned, not assumed. Single-run receipts remain available for
+quick local checks; aggregate receipts (3+ runs, median-based bars) are the trust
+artifact.
+
+### How calibration produces a receipt
+
+Two modes:
+
+```bash
+# Single-run (quick local check — backward-compatible)
+node scripts/reviewer-calibration.mjs --model <model> --two-pass --profile <profile-name>
+
+# Canonical 3-run aggregate (production evidence — use this for admission decisions)
+node scripts/reviewer-calibration.mjs --model <model> --two-pass --profile <profile-name> --runs 3
+```
+
+When `--runs <n>` is specified (n ≥ 2), the harness rebuilds the fixture from
+scratch on each run (isolation), writes per-run receipts to
+`<profile>/runs/run-001.json` … `run-00N.json`, and produces an aggregate
+`seeded-v1.{json,md}` with median-based PASS/FAIL rules.
+
+The harness writes `calibration/reviewer-profiles/<profile-name>/seeded-v1.{json,md}` —
+a Zod-validated JSON receipt plus an operator-readable Markdown sibling. The JSON
+can be committed to the research-os repo as durable proof (these are the canonical
+receipts shipped with v0.5.0).
+
+### Status labels
+
+| Label | Meaning |
+|---|---|
+| `trusted_baseline` | Canonical Hermes two-pass + all bars PASS + 0 FP. The reference profile. |
+| `conditional_pass` | Passes recalibrated bars but carries explicit caution (e.g., FP at ceiling, non-reference model). Eligible for use, but not the reference. |
+| `failed` | Any hard bar fails. Not admitted. |
+| `comparison_only` | Explicit `--mode comparison-only` flag, or single-pass Hermes (auto-assigned). Illuminates architectural deltas; does NOT vouch for production. |
+
+**`trusted_baseline` ≠ `conditional_pass`.** A `conditional_pass` profile passed
+all bars in a given run but carries a documented caution. It is not interchangeable
+with `trusted_baseline` for decisions that require the reference profile.
+
+**Recurring-failure demotion.** An aggregate receipt that passes median bars can still
+be demoted from `trusted_baseline` to `conditional_pass` if any hard bar FAILed in
+≥ ⌈N/2⌉ individual runs (`recurring_bar_failures` list is non-empty). One lucky
+median cannot mask a bar that was systematically unreliable across most runs.
+
+### Decision-vocabulary bar (architecture-aware)
+
+- **Single-pass:** must produce ≥ 4/6 unique decisions.
+- **Two-pass:** must produce ≥ 3/6 unique decisions.
+
+Why different bars: the `narrow_critic` second pass escalates finding severity
+(`warn → block`), collapsing the `needs_human_review` path into harder decisions.
+Two-pass profiles produce structurally narrower decision vocabularies — the bar is
+recalibrated to reflect that, not to lower the standard.
+
+### Limit: `needs_contradiction_mapping` unreachable from seeded-v1
+
+The `seeded-v1` fixture does not seed `unmapped_contradiction` findings, so the
+`needs_contradiction_mapping` decision can never appear in calibration runs.
+Every receipt's `unreachable_decisions` array discloses this. Fixture expansion
+is deferred to v0.6.
+
+### Auto-population in `review-promote`
+
+When you run:
+
+```bash
+research-os review-promote <section> --pack <dir> --profile hermes-two-pass
+```
+
+`review-promote` looks for a receipt at `<pack>/calibration/reviewer-profiles/hermes-two-pass/seeded-v1.json`
+and auto-populates `calibration_summary` in `review-active.json`. The lookup is
+**pack-relative** — it uses the `--pack <dir>` argument, not the terminal's cwd.
+
+**Canonical vs pack-copy:** the canonical receipts live at
+`<research-os-repo>/calibration/reviewer-profiles/<profile>/`. Packs carry their
+own copy at `<pack>/calibration/...`. Operators who want auto-population to work
+must copy the relevant receipt into their pack directory (or a future automation
+step will handle this).
+
+**Invalid-receipt fail behavior:** if a receipt exists at the expected path but
+fails JSON parse or Zod schema validation, `review-promote` fails visibly:
+
+```
+research-os: Invalid calibration receipt at <path>: <reason>
+```
+
+This is intentional. Do not work around it by deleting the receipt — fix the
+receipt (or remove it to disable auto-population).
+
+---
+
 ## v0.1 self-dogfood arc — structural notes
 
 The v0.1 dogfood pack used `mistral-nemo:12b` as the extractor and reviewer model (hermes3:8b not pulled on the 5080 rig at the time). The `hermes-two-pass` review profile is calibrated against the seeded-failure fixture with `hermes3:8b` as the canonical model. The dogfood arc's proof is honest — it discloses the model substitution — but a hermes3-based receipt is Experiment 6 in the roadmap.
