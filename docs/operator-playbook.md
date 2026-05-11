@@ -502,6 +502,89 @@ receipt (or remove it to disable auto-population).
 
 ---
 
+## Deterministic reviewer baseline (research-os ≥ v0.6.0)
+
+v0.6.0 closes Experiment 6 with a canonical Hermes baseline produced with caveats. The baseline is reproducible and attributable, but **Hermes is NOT promoted to `trusted_baseline`**. The win is the mechanism: research-os can now produce a reproducible, attributable canonical-model baseline and preserve the evidence when the model is weak.
+
+Full evidence trail: [`research-os/docs/experiment-6-proof.md`](https://github.com/mcp-tool-shop-org/research-os/blob/main/docs/experiment-6-proof.md).
+
+### Production review path with deterministic options
+
+`review_profiles.<name>.reviewer_options` in `research.yaml` carries Ollama sampling parameters (`temperature`, `seed`, `top_p`, `top_k`, `repeat_penalty`, `num_ctx`). The CLI extracts these from the active preset and threads them into both `OllamaInternReviewer` passes (general + narrow_critic).
+
+The seeded `hermes-two-pass-deterministic` profile (status: `experimental`) ships alongside the existing `hermes-two-pass`:
+
+```yaml
+review_profiles:
+  hermes-two-pass-deterministic:
+    mode: two_pass
+    general_model: hermes3:8b
+    critic_model: hermes3:8b
+    review_window: 30
+    status: experimental
+    reviewer_options:
+      temperature: 0
+      seed: 7
+```
+
+Operators reproduce a calibrated baseline from pack config — not from memorising CLI sampling flags.
+
+### Direct reviewer-options disclosure on review outputs (F-54)
+
+When the run uses a preset that provides `reviewer_options`, the field appears directly on `review.json` and `review.md` produced by `research-os review`:
+
+```json
+{
+  "section_id": "...",
+  "reviewer": "ollama-intern",
+  "review_method": "multi_pass(...)",
+  "reviewed_at": "...",
+  "reviewer_options": { "temperature": 0, "seed": 7 },
+  "...": "..."
+}
+```
+
+```markdown
+## Reviewer options
+
+- temperature: 0
+- seed: 7
+```
+
+No secondary lookup through `claim-reviews.jsonl[].profile` → `research.yaml` is required to know what conditions produced a review record.
+
+### Legacy gate JSON backward compatibility (F-53)
+
+`SectionGateResultSchema` treats `source_counts.section_primary` and `source_counts.section_independent_publishers` as `.optional().default(0)`. Pre-v0.3.3 gate JSONs that omit these fields parse cleanly under v0.6.0. The v0.1 self-dogfood pack and other early packs can now run through `research-os review` without renaming any artifacts.
+
+### Limit: deterministic settings reduce variance, do not guarantee trust
+
+The `seeded-v1` aggregate evidence for `hermes-two-pass-deterministic` (3 runs under `temperature: 0, seed: 7`) lands `failed`:
+
+- `decision_vocab_completeness` recurring failure (2/6 < required 3/6 for two-pass architecture). Structural model-capability gap; `narrow_critic` severity escalation collapses the `needs_human_review` path.
+- `per_category_any_flag_floor` recurring failure under cross-session seed variance (F-52). Ollama's `seed` is advisory; the first inference after process spawn produces slightly different output than subsequent inferences (F-51).
+
+The receipt at `calibration/reviewer-profiles/hermes-two-pass-deterministic/seeded-v1.md` shows the full bar table. Deterministic mode collapses the catastrophic `valid_but_low_value` variance that defeated single-run receipts under stochastic defaults — but it does not turn a weak model into a trusted one.
+
+### Canonical baseline produced with caveats
+
+The v0.1 self-dogfood pack was reviewed end-to-end through `research-os review` under `hermes-two-pass-deterministic` on a scratch copy with no frozen-pack mutation. All 329 claims across 8 sections carry profile lineage on the review records. That is sufficient evidence to admit the deterministic baseline as **reproducible and attributable** — and explicitly NOT sufficient to admit Hermes as `trusted_baseline`.
+
+Operators who need a calibrated reviewer choice for a research pack should:
+
+1. Inspect the current canonical receipts at `calibration/reviewer-profiles/<profile>/seeded-v1.md` to see which profiles pass which bars.
+2. Pick `conditional_pass` (currently `mistral-nemo-two-pass`) only when its caveats are acceptable for the pack's purpose — read the receipt notes, especially around FP at ceiling.
+3. Default to `comparison_only` profiles (e.g., `hermes-single-pass`) for architectural inspection, NOT for admission decisions.
+4. Surface the chosen profile's `reviewer_options` in synthesis disclosure when shipping the pack publicly.
+
+### Frictions catalog at v0.6.0
+
+- **F-51** (P3) — Ollama `seed` is advisory. First inference after process spawn differs from subsequent inferences. Mitigated by `--runs N` aggregation.
+- **F-52** (P2) — Per-category any-flag floor cross-session variance under small-N fixture. Documented; not blocking.
+- **F-53** + **F-54** — closed in v0.6.0.
+
+---
+
 ## v0.1 self-dogfood arc — structural notes
 
 The v0.1 dogfood pack used `mistral-nemo:12b` as the extractor and reviewer model (hermes3:8b not pulled on the 5080 rig at the time). The `hermes-two-pass` review profile is calibrated against the seeded-failure fixture with `hermes3:8b` as the canonical model. The dogfood arc's proof is honest — it discloses the model substitution — but a hermes3-based receipt is Experiment 6 in the roadmap.
