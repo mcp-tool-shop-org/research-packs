@@ -133,8 +133,8 @@
         "path": ".github/workflows/pages.yml"
       },
       {
-        "commits": 3,
-        "lines": 42,
+        "commits": 6,
+        "lines": 240,
         "path": ".github/workflows/verify.yml"
       },
       {
@@ -208,9 +208,39 @@
         "path": "SHIP_GATE.md"
       },
       {
+        "commits": 1,
+        "lines": 72,
+        "path": "atlas/README.md"
+      },
+      {
+        "commits": 1,
+        "lines": 30,
+        "path": "atlas/boundaries.yaml"
+      },
+      {
+        "commits": 1,
+        "lines": 145,
+        "path": "atlas/page.json"
+      },
+      {
+        "commits": 1,
+        "lines": 9696,
+        "path": "atlas/statistics.json"
+      },
+      {
+        "commits": 1,
+        "lines": 8317,
+        "path": "atlas/structure.json"
+      },
+      {
         "commits": 5,
         "lines": 56,
         "path": "catalog.json"
+      },
+      {
+        "commits": 2,
+        "lines": 36,
+        "path": "codecov.yml"
       },
       {
         "commits": 1,
@@ -233,13 +263,13 @@
         "path": "docs/source-quality-notes.md"
       },
       {
-        "commits": 2,
-        "lines": 3004,
+        "commits": 4,
+        "lines": 3312,
         "path": "package-lock.json"
       },
       {
-        "commits": 2,
-        "lines": 21,
+        "commits": 4,
+        "lines": 23,
         "path": "package.json"
       },
       {
@@ -9646,11 +9676,11 @@
   },
   "confidence": {
     "level": "low",
-    "reason": "fewer than 30 qualifying commits in the window, and fewer than 20 source files reach 10 revisions"
+    "reason": "fewer than 30 qualifying commits in the window, and fewer than 25 source files reach 10 revisions"
   },
-  "generatedAt": "2026-09-25T09:25:17.820Z",
+  "generatedAt": "2026-09-30T20:12:14.095Z",
   "generatedFrom": {
-    "commit": "82aca6deaa0649984cdf86abd0e368107d60767c"
+    "commit": "dedfb41c6fce37071cb370bbf59beac16286c10d"
   },
   "pairs": [],
   "parameters": {
@@ -9663,16 +9693,16 @@
     "floor": "fallen",
     "floorHeld": false,
     "floorTrigger": "both",
-    "headDate": "2026-09-17T19:04:54-07:00",
-    "inScopeFiles": 1904,
+    "headDate": "2026-09-29T16:48:08-07:00",
+    "inScopeFiles": 1910,
     "pinnedStart": null,
-    "priorFloor": null,
-    "qualifyingCommits": 22,
+    "priorFloor": "fallen",
+    "qualifyingCommits": 25,
     "qualifyingMinimum": 30,
     "revisions": 5,
     "shared": 10,
     "sharedFloorUsed": 3,
-    "since": "2026-03-22T02:04:54.000Z",
+    "since": "2026-04-02T23:48:08.000Z",
     "sourceExtensions": [
       ".js",
       ".mjs",
