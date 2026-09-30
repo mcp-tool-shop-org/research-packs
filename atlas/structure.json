@@ -13,7 +13,7 @@
           "path": ".github/workflows/pages.yml"
         },
         {
-          "hash": "0ed6bc70109328409ff6e79d3951e2909a2f332a48edff022140bf9073af0075",
+          "hash": "43835c087b5240c19a4ce5f4f9871c15d19d9324e2ad04ceec0fb6709be3f8c9",
           "path": ".github/workflows/verify.yml"
         }
       ],
@@ -7574,11 +7574,15 @@
           "path": "catalog.json"
         },
         {
-          "hash": "4aff222822863dde4cee1dc126afa0e945baa28b45e60a27257f6ff7ddc058fc",
+          "hash": "59ca3f6a5be96b80fee73bebf2b778211208d17cd3fb82e2134608dff0729c76",
+          "path": "codecov.yml"
+        },
+        {
+          "hash": "bdef1e372bc1aa5552a30c27ff1519608fb69b96f83a427b3678d025eaafbc65",
           "path": "package-lock.json"
         },
         {
-          "hash": "ffd24339239ec70a01751f920e960e61c05511f96fb2e7ff80114e716a2d06bb",
+          "hash": "be4a158f399f1e225596d673806e8406939c5e931e3c4794d792b1c32cc8cf10",
           "path": "package.json"
         }
       ],
@@ -7589,7 +7593,8 @@
       "name": "root",
       "origin": "authored",
       "role": "config",
-      "testedBy": 0,
+      "testedBy": 1,
+      "testedByScript": true,
       "unresolvedSites": 0
     },
     {
@@ -7611,6 +7616,21 @@
           "exports": [
             "generateReadme"
           ],
+          "failurePaths": [
+            {
+              "in": "generateReadme",
+              "kind": "throw",
+              "line": 35
+            },
+            {
+              "kind": "catch",
+              "line": 118
+            },
+            {
+              "kind": "catch",
+              "line": 126
+            }
+          ],
           "hash": "539e8a1ecad9a8e0ba957be88997c5ea323c966b28066debaf36219e58eab677",
           "importsFiles": [
             "scripts/manifest-schema.mjs"
@@ -7620,6 +7640,22 @@
         {
           "entry": "verifyPack",
           "entryRule": 1,
+          "failurePaths": [
+            {
+              "in": "verifyPack",
+              "kind": "catch",
+              "line": 49
+            },
+            {
+              "in": "verifyPack",
+              "kind": "catch",
+              "line": 75
+            },
+            {
+              "kind": "catch",
+              "line": 141
+            }
+          ],
           "hash": "9f2c98f3d4e4986c9f822d7cb96d07adece84f131c113ca63ef2cc3f1fe3d15f",
           "importsFiles": [
             "scripts/manifest-schema.mjs"
@@ -7662,6 +7698,9 @@
       "outsideReads": 9,
       "outsideWrites": 1,
       "role": "code",
+      "testRunners": [
+        "vitest"
+      ],
       "testedBy": 3,
       "unresolvedSites": 0
     },
@@ -7716,6 +7755,14 @@
         },
         {
           "hash": "391533713539035d3c92282579d43de0f137067867fdb502d7eaea3c74601d2a",
+          "importOrder": [
+            "site/src/styles/global.css",
+            "site/src/site-config.ts"
+          ],
+          "importsFiles": [
+            "site/src/site-config.ts",
+            "site/src/styles/global.css"
+          ],
           "path": "site/src/pages/index.astro"
         },
         {
@@ -7778,21 +7825,27 @@
           "importsFiles": [
             "scripts/manifest-schema.mjs"
           ],
-          "path": "tests/manifest-schema.test.mjs"
+          "path": "tests/manifest-schema.test.mjs",
+          "testFramework": "vitest"
         },
         {
           "hash": "adecd7c272947d32bee0852966d6c5ccb3e8a2d132987d37fa9916d29cdb8f9f",
           "importsFiles": [
             "scripts/summarize-pack.mjs"
           ],
-          "path": "tests/summarize-pack.test.mjs"
+          "path": "tests/summarize-pack.test.mjs",
+          "testFramework": "vitest"
         },
         {
           "hash": "e260da6b9f7b3c63dd3036e2f0b6b34825353cee93517de70d835b28aa42a61a",
           "importsFiles": [
             "tests/helpers/setup-mock-pack.mjs"
           ],
-          "path": "tests/verify-pack.test.mjs"
+          "path": "tests/verify-pack.test.mjs",
+          "spawns": [
+            "scripts/verify-pack.mjs"
+          ],
+          "testFramework": "vitest"
         }
       ],
       "globs": [
@@ -7802,6 +7855,9 @@
       "name": "tests",
       "origin": "authored",
       "role": "test",
+      "testRunners": [
+        "vitest"
+      ],
       "testedBy": 0,
       "unresolvedSites": 0
     }
@@ -7811,18 +7867,74 @@
       "checksCount": 0,
       "commands": [
         {
+          "dir": "site",
           "job": "build",
-          "step": "Install site dependencies",
-          "text": "npm ci"
+          "programs": [
+            "npm"
+          ],
+          "step": "Install site dependencies"
         },
         {
+          "dir": "site",
           "job": "build",
-          "step": "Build site",
-          "text": "npm run build"
+          "programs": [
+            "npm"
+          ],
+          "step": "Build site"
         }
       ],
       "elsewhere": [],
       "file": ".github/workflows/pages.yml",
+      "jobs": [
+        {
+          "basis": "declared",
+          "name": "build",
+          "runsOn": [
+            {
+              "labels": [
+                "ubuntu-latest"
+              ],
+              "platform": {
+                "cpu": "x64",
+                "libc": "glibc",
+                "os": "linux"
+              }
+            }
+          ],
+          "setup": [
+            {
+              "ranges": [
+                {
+                  "from": "22",
+                  "range": ">=22.0.0 <23.0.0-0"
+                }
+              ],
+              "step": "1",
+              "uses": "actions/setup-node",
+              "version": "22"
+            }
+          ]
+        },
+        {
+          "basis": "declared",
+          "environment": {
+            "name": "github-pages"
+          },
+          "name": "deploy",
+          "runsOn": [
+            {
+              "labels": [
+                "ubuntu-latest"
+              ],
+              "platform": {
+                "cpu": "x64",
+                "libc": "glibc",
+                "os": "linux"
+              }
+            }
+          ]
+        }
+      ],
       "landings": [],
       "mentions": [],
       "name": "Deploy site to GitHub Pages",
@@ -7836,7 +7948,7 @@
         {
           "boundary": "site",
           "depth": 0,
-          "files": 3
+          "files": 5
         }
       ],
       "readers": [],
@@ -7897,37 +8009,145 @@
       "checksCount": 0,
       "commands": [
         {
+          "dir": "",
           "job": "verify",
-          "step": "Atlas check",
-          "text": "npx --yes @dogfood-lab/atlas@1.21.0 check"
+          "programs": [
+            "npx"
+          ],
+          "step": "Atlas check"
         },
         {
+          "dir": "",
           "job": "verify",
-          "step": "Install dependencies",
-          "text": "npm ci"
+          "programs": [
+            "npm"
+          ],
+          "step": "Install dependencies"
         },
         {
+          "dir": "",
           "job": "verify",
-          "step": "Run tests",
-          "text": "npm test"
+          "programs": [
+            "npm"
+          ],
+          "step": "Run tests"
         },
         {
+          "dir": "",
           "job": "verify",
-          "step": "Verify all packages",
-          "text": "node scripts/verify-pack.mjs packages/*"
+          "programs": [
+            "node"
+          ],
+          "step": "Verify all packages"
         },
         {
+          "dir": "",
           "job": "verify",
-          "step": "Dependency audit",
-          "text": "npm audit --audit-level=high"
+          "programs": [
+            "npm"
+          ],
+          "step": "Dependency audit"
         }
       ],
       "elsewhere": [],
       "file": ".github/workflows/verify.yml",
+      "findings": [
+        {
+          "job": "verify",
+          "lines": [
+            {
+              "file": ".github/workflows/verify.yml",
+              "line": 34
+            },
+            {
+              "file": ".github/workflows/verify.yml",
+              "line": 43
+            },
+            {
+              "file": "package-lock.json",
+              "line": 1213
+            }
+          ],
+          "package": "vitest",
+          "pinnedBy": {
+            "step": "Setup Node.js",
+            "version": "20"
+          },
+          "pins": [
+            "20"
+          ],
+          "requires": "^22.12.0 || ^24.0.0 || >=26.0.0",
+          "rule": "D1",
+          "step": "Run tests",
+          "tool": "vitest run",
+          "version": "5.0.0"
+        }
+      ],
+      "jobs": [
+        {
+          "basis": "declared",
+          "name": "verify",
+          "runsOn": [
+            {
+              "labels": [
+                "ubuntu-latest"
+              ],
+              "platform": {
+                "cpu": "x64",
+                "libc": "glibc",
+                "os": "linux"
+              }
+            }
+          ],
+          "setup": [
+            {
+              "ranges": [
+                {
+                  "from": "22",
+                  "range": ">=22.0.0 <23.0.0-0"
+                }
+              ],
+              "step": "1",
+              "uses": "actions/setup-node",
+              "version": "22"
+            },
+            {
+              "ranges": [
+                {
+                  "from": "20",
+                  "range": ">=20.0.0 <21.0.0-0"
+                }
+              ],
+              "step": "Setup Node.js",
+              "uses": "actions/setup-node",
+              "version": "20"
+            }
+          ]
+        },
+        {
+          "basis": "declared",
+          "name": "codecov",
+          "runsOn": [
+            {
+              "labels": [
+                "ubuntu-latest"
+              ],
+              "platform": {
+                "cpu": "x64",
+                "libc": "glibc",
+                "os": "linux"
+              }
+            }
+          ]
+        }
+      ],
       "landings": [],
       "mentions": [],
       "name": "Verify",
-      "permissions": [],
+      "permissions": [
+        "contents:read",
+        "id-token:write"
+      ],
       "pushes": false,
       "reach": [
         {
@@ -7983,6 +8203,19 @@
         "releases": false
       },
       "stages": [],
+      "tests": [
+        {
+          "coverage": true,
+          "files": 3,
+          "job": "verify",
+          "junit": true,
+          "runner": "vitest",
+          "step": "Run tests",
+          "through": [
+            "npm test"
+          ]
+        }
+      ],
       "triggers": [
         {
           "branches": [
@@ -7999,7 +8232,10 @@
       ],
       "uses": [
         "actions/checkout",
-        "actions/setup-node"
+        "actions/download-artifact",
+        "actions/setup-node",
+        "actions/upload-artifact",
+        "codecov/codecov-action"
       ],
       "usesWorkflowToken": false
     }
@@ -8012,9 +8248,10 @@
       "to": "scripts"
     }
   ],
+  "engine": "1.24.0",
   "generatedFrom": {
-    "commit": "82aca6deaa0649984cdf86abd0e368107d60767c",
-    "tracked": 1904
+    "commit": "dedfb41c6fce37071cb370bbf59beac16286c10d",
+    "tracked": 1905
   },
   "landings": [
     {

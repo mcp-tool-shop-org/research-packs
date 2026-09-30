@@ -1,14 +1,14 @@
 # research-packs: how it works
 
-Mapped at 2026-09-25 from commit 82aca6d.
+Mapped at 2026-09-30 from commit dedfb41 by Atlas 1.24.0.
 
 ## What this is
 
-7 parts, mostly JSON data (1166 files); code in JavaScript (8) and TypeScript (2). Work enters through 2 doors; the busiest is Verify, which reaches 2 parts.
+7 parts, mostly JSON data (1166 files) and Markdown (430); code in HTML (174), JavaScript (8), CSS (2), TypeScript (2) and Astro (1). Work enters through 2 doors; the busiest is Verify, which reaches 2 parts. It deploys a site to GitHub Pages.
 
-## What changed since the last map
+## What changed since 2026-09-25 (82aca6d)
 
-This is the first map.
+Nothing structural changed since 2026-09-25; 1 file added and 3 changed content.
 
 ## What comes in
 
@@ -18,6 +18,7 @@ This is the first map.
 ## What happens through Verify
 
 1. The workflow runs scripts/verify-pack.mjs in scripts and tests/manifest-schema.test.mjs, tests/summarize-pack.test.mjs and tests/verify-pack.test.mjs in tests.
+2. It uploads coverage to Codecov.
 
 ## Who reads the results
 
@@ -67,6 +68,6 @@ Read those in order to follow one pull request end to end.
 
 - 1 read uses a path built at run time and is not named here.
 - 1 write and 9 reads go to a path their caller passes, not to this repository.
-- Statistics confidence is low: fewer than 30 qualifying commits in the window, and fewer than 20 source files reach 10 revisions.
+- Statistics confidence is low: fewer than 30 qualifying commits in the window, and fewer than 25 source files reach 10 revisions.
 
 Regenerate with `npx --yes @dogfood-lab/atlas map`.
