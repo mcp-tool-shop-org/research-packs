@@ -75,7 +75,7 @@
     },
     {
       "path": "sections/03-save-system-player-state-durability/claims.jsonl",
-      "sha256": "2085184f6383d11c5bbd8f92f9f1e8bf3c1455a1709b3be4b4f83700c691057e",
+      "sha256": "a9632a32b973897c233e71fe5481c8f96cc455132cc631270a95614709985eb6",
       "bytes": 353080
     },
     {
@@ -110,8 +110,8 @@
     },
     {
       "path": "sections/05-desktop-platform-export-durability/claims.jsonl",
-      "sha256": "68e9a597fbd2bbadd33d57310a1d6c25420d9b681e8fd2c197694279e46ddbe2",
-      "bytes": 272722
+      "sha256": "fa4ed685b7038eae664648ffba86c6b1039302d39351cf8632dea00da7bc6048",
+      "bytes": 272738
     },
     {
       "path": "sections/05-desktop-platform-export-durability/sources.jsonl",
@@ -145,7 +145,7 @@
     },
     {
       "path": "sections/02-scene-resource-serialization/claims.jsonl",
-      "sha256": "0659510272578e6da3344631e361474c028113ffbbf847d6c091372d35eec188",
+      "sha256": "53c7691312cc19e11c9a357f8b3af8a528c8292d177aa00b707ccbecdcad2931",
       "bytes": 405508
     },
     {
@@ -215,8 +215,8 @@
     },
     {
       "path": "sections/06-mobile-web-export-durability/claims.jsonl",
-      "sha256": "13027c758d15893a53512767318e1c03044513076d0847ddaf17d67e7eeac3ac",
-      "bytes": 421913
+      "sha256": "39e9b99a88c78ff9d4836f1863aaa17a1160b0a2189c6cbaad40cbe09bb1b121",
+      "bytes": 421923
     },
     {
       "path": "sections/06-mobile-web-export-durability/sources.jsonl",
@@ -250,7 +250,7 @@
     },
     {
       "path": "sections/07-distribution-surface-durability/claims.jsonl",
-      "sha256": "be974adb34336e97bcd830d0bfb03b708de296e64985912f76e6b06498200525",
+      "sha256": "bb40e2496a98b603473b82a3718171489ddf3658a3ffd97786a9ea2402a40f7a",
       "bytes": 125034
     },
     {
@@ -285,8 +285,8 @@
     },
     {
       "path": "evidence/fetch-log.jsonl",
-      "sha256": "18cf1221134211a328c01e9ff604003f324d5d7b7cc96dd8dfcfaf6323fccb34",
-      "bytes": 54552
+      "sha256": "41951b5907ed8e2f8b2eab393a62bfa3de314fc94e050be1ac67ca46a81fa969",
+      "bytes": 54593
     },
     {
       "path": "evidence/citation-ledger.jsonl",
@@ -320,8 +320,8 @@
     },
     {
       "path": "evidence/source-cards/src_0cf4f6250555.json",
-      "sha256": "0361669a81b6bf9fc81a6157131709ea3d5eecb1e8f05263bb5079902a915c91",
-      "bytes": 1611
+      "sha256": "dcf8c6b1842f6d700e7b6817335b8b36be563f69b0743d5817f8495f7f29e2b4",
+      "bytes": 1906
     },
     {
       "path": "evidence/source-cards/src_169fec56d321.json",
@@ -380,8 +380,8 @@
     },
     {
       "path": "evidence/source-cards/src_5670dbff3e4d.json",
-      "sha256": "edfd4b50003ddd5117f98c6694efb693797c04fa26fbdcf8326aad79c8abf164",
-      "bytes": 1611
+      "sha256": "23506419b6fb44b25a3a8bec1612fc526382b4102c84b411d382566ff61cd5f9",
+      "bytes": 1977
     },
     {
       "path": "evidence/source-cards/src_57341c85596c.json",
@@ -395,13 +395,13 @@
     },
     {
       "path": "evidence/source-cards/src_5fda19aa5cd8.json",
-      "sha256": "d4b7ec4d21dbc63d84a1813f43d48bce0ff9786ab76043156c9f2c6266df7f8d",
-      "bytes": 1190
+      "sha256": "34d00f510afdb4e1f1002631a512c028d4d35cb7a2cb10b9d3912904d6a05f68",
+      "bytes": 1806
     },
     {
       "path": "evidence/source-cards/src_639902f06da8.json",
-      "sha256": "6a9ee311d213acc4b8fb408db08bd569943205474568306476752415622439e2",
-      "bytes": 1685
+      "sha256": "00fd8eebb16df45207de2de9e2d9a8da3596baf13a5f2d43fd4950d33599c8f6",
+      "bytes": 1980
     },
     {
       "path": "evidence/source-cards/src_68be97293369.json",
@@ -485,8 +485,8 @@
     },
     {
       "path": "evidence/source-cards/src_b00e2fac5e30.json",
-      "sha256": "195e0c2e40cd947963a40730921f2819e0edba5118a77030ebc23a9ead26bb55",
-      "bytes": 2143
+      "sha256": "b946d4bbebb7f96b0dbbee7df3922c8aad0e16da4535e0d33f5bbce19faf3909",
+      "bytes": 2436
     },
     {
       "path": "evidence/source-cards/src_b2e50dff76fc.json",
@@ -495,8 +495,8 @@
     },
     {
       "path": "evidence/source-cards/src_b777c089d810.json",
-      "sha256": "f564438ebf094321fe4198dd56db11ab5eb1b67027d351789679ea46d9550227",
-      "bytes": 1298
+      "sha256": "66b1cf9a5c02815e32a26d740f494f7a771a2b239e6d662f493c782093140d4e",
+      "bytes": 1593
     },
     {
       "path": "evidence/source-cards/src_ba5aaca1a207.json",
@@ -520,8 +520,8 @@
     },
     {
       "path": "evidence/source-cards/src_c50580a705c4.json",
-      "sha256": "3759748a7682eb5752a1df07056733ec4463f3b0265d302427fab981d668f06b",
-      "bytes": 1692
+      "sha256": "f6b4ee8f707d3ff7ac413cc176503420285a13c28ebe79147fa8f7b735697747",
+      "bytes": 1985
     },
     {
       "path": "evidence/source-cards/src_c5ed9836ffb5.json",
@@ -585,13 +585,13 @@
     },
     {
       "path": "evidence/source-cards/src_da88881cf961.json",
-      "sha256": "35162d9b2fbba472675c6373e03986e82d231fb3fec2553f35d64f7b3fba9280",
-      "bytes": 1082
+      "sha256": "152d81d62a2c27cc2f702de69d451d6958ee9f483d7706a5715b3f5af5066bac",
+      "bytes": 1375
     },
     {
       "path": "evidence/source-cards/src_e17170a435d3.json",
-      "sha256": "39b74dace82ae694e0e7078050f3040961b6a909615cb5cf1dcc904f75d19eab",
-      "bytes": 1349
+      "sha256": "fe6f5ca2038923f57baecf0eb3c019e9cf68a035e182f0e45be0c2cd11f03d6b",
+      "bytes": 1644
     },
     {
       "path": "evidence/source-cards/src_e3948fcd1578.json",
@@ -600,8 +600,8 @@
     },
     {
       "path": "evidence/source-cards/src_e6e0e4cb4ec7.json",
-      "sha256": "1a34bd22404fa0f83528f5cf399f97d70744a16a56480bd85f2c7efacec4b647",
-      "bytes": 1681
+      "sha256": "068b3e144bb3c716114183ce8b4414f2bff17cf0d8a5c892b01c7596e3043fa2",
+      "bytes": 1974
     },
     {
       "path": "evidence/source-cards/src_ec39871fb14e.json",
@@ -625,8 +625,8 @@
     },
     {
       "path": "evidence/source-cards/src_f6badbefe774.json",
-      "sha256": "017aa346a3af737366e119e133743eadeccd4fb8c769a1bb2c437ce8f5430ade",
-      "bytes": 1396
+      "sha256": "803fe50321396f5d20413d740de82ffe59f3c05efa897e9be2ea1e7d9c8b045a",
+      "bytes": 1690
     },
     {
       "path": "evidence/source-cards/src_f7e212bc013e.json",

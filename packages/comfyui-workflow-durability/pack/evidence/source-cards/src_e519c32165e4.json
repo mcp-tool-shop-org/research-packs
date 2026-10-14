@@ -23,5 +23,7 @@
   "scope": "This issue specifically applies to the ComfyUI software's frontend caching behavior.",
   "not": null,
   "extracted_by": "ollama-intern",
-  "extracted_at": "2026-05-09T04:05:08.125Z"
+  "extracted_at": "2026-05-09T04:05:08.125Z",
+  "redaction_count": 14,
+  "redaction_note": "2026-10-14: Redacted 14 home-path account name(s) (same-length mask) from evidence/raw/src_e519c32165e4.json so the published pack does not re-publish a third party's personal data; same-length masking keeps every excerpt span in place."
 }

@@ -20,5 +20,7 @@
   "scope": null,
   "not": null,
   "extracted_by": "heuristic",
-  "extracted_at": "2026-05-09T05:22:50.913Z"
+  "extracted_at": "2026-05-09T05:22:50.913Z",
+  "redaction_count": 18,
+  "redaction_note": "2026-10-14: Redacted 18 home-path account name(s) ([redacted-user]) from evidence/raw/src_b81c03003037.html so the published pack does not re-publish a third party's personal data; excerpts and claim quotes were re-derived from the redacted text."
 }

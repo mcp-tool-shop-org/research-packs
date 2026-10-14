@@ -180,8 +180,8 @@
     },
     {
       "path": "sections/05-cowork-handoff/claims.jsonl",
-      "sha256": "c6752435640fc6e1a3332560682778cc877684039148a5450c0463f13db5a37a",
-      "bytes": 502031
+      "sha256": "3f7d96efae4f378685614aa3cb8f539adf8a0d8d98352b42b4adf7df4be45814",
+      "bytes": 502103
     },
     {
       "path": "sections/05-cowork-handoff/sources.jsonl",
@@ -330,7 +330,7 @@
     },
     {
       "path": "evidence/fetch-log.jsonl",
-      "sha256": "06f559603f2958ce87fedbc494451a321cda95462d2b7395f3838c50a718e40a",
+      "sha256": "f0fafdab559864830cc455d58b2e01fd18ea71e656eda7cb846869f50a9b7546",
       "bytes": 93524
     },
     {
@@ -435,8 +435,8 @@
     },
     {
       "path": "evidence/source-cards/src_5be2e21d45c9.json",
-      "sha256": "48477f094f553ebadc1657739eabe4564df93fb05db358045203f3204a4e5ce4",
-      "bytes": 945
+      "sha256": "93a6c0c4590d6ddd21256c6af858e89d1e03346ff3b258d1dd03b7b5e1fcc73d",
+      "bytes": 1242
     },
     {
       "path": "evidence/source-cards/src_5d98fdba0757.json",

@@ -24,5 +24,7 @@
   "scope": "The source asserts that this cyclic resource loading issue affects Godot versions 4.6.1, 4.6, and 4.5, with less prevalence in older versions.",
   "not": null,
   "extracted_by": "ollama-intern",
-  "extracted_at": "2026-05-10T05:47:31.230Z"
+  "extracted_at": "2026-05-10T05:47:31.230Z",
+  "redaction_count": 3,
+  "redaction_note": "2026-10-14: Redacted 3 home-path account name(s) ([redacted-user]) from evidence/raw/src_c50580a705c4.json so the published pack does not re-publish a third party's personal data; excerpts and claim quotes were re-derived from the redacted text."
 }

@@ -23,5 +23,7 @@
   "scope": "This issue applies to Godot 4.x releases specifically and contrasts with the behavior observed in Godot 3.5",
   "not": null,
   "extracted_by": "ollama-intern",
-  "extracted_at": "2026-05-10T08:56:32.593Z"
+  "extracted_at": "2026-05-10T08:56:32.593Z",
+  "redaction_count": 1,
+  "redaction_note": "2026-10-14: Redacted 1 home-path account name(s) ([redacted-user]) from evidence/raw/src_0cf4f6250555.json so the published pack does not re-publish a third party's personal data; excerpts and claim quotes were re-derived from the redacted text."
 }

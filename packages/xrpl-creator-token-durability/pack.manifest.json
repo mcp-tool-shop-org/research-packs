@@ -53,6 +53,6 @@
     "dispositioned": 0,
     "unresolved_contradictions": 0
   },
-  "freeze_receipt_sha256": "6511a044aa15fa4de30a0dfc82b811947e1f57a1563fd1d7ba013a64725259a5",
+  "freeze_receipt_sha256": "8f3f500ba285b885f719ed30ddd64e5d89337d5cb2c49c9ac2e9f235a936ae15",
   "operator_notes": "XRPL creator-token durability — multi-layer state bundle across token standards, account authority, ledger state, issuer controls, transfer mechanics, amendment landscape, and off-chain metadata. Experiment 3 pack #2 of 3."
 }

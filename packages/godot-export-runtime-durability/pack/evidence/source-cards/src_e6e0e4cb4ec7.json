@@ -24,5 +24,7 @@
   "scope": "Exporting a project for macOS using Godot 4.2 stable on a Windows operating system",
   "not": null,
   "extracted_by": "ollama-intern",
-  "extracted_at": "2026-05-10T04:57:51.002Z"
+  "extracted_at": "2026-05-10T04:57:51.002Z",
+  "redaction_count": 2,
+  "redaction_note": "2026-10-14: Redacted 2 home-path account name(s) ([redacted-user]) from evidence/raw/src_e6e0e4cb4ec7.json so the published pack does not re-publish a third party's personal data; excerpts and claim quotes were re-derived from the redacted text."
 }

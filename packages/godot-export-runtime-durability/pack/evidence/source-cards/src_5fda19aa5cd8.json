@@ -22,5 +22,7 @@
   "scope": "Google Play development",
   "not": null,
   "extracted_by": "ollama-intern",
-  "extracted_at": "2026-05-10T07:52:02.379Z"
+  "extracted_at": "2026-05-10T07:52:02.379Z",
+  "redaction_count": 6,
+  "redaction_note": "2026-10-14: Redacted 4 occurrences (3 distinct keys) of embedded third-party Google API client keys ([REDACTED-THIRD-PARTY-GOOGLE-CLIENT-KEY]) from evidence/raw/src_5fda19aa5cd8.html to prevent false-positive secret-scanning alerts on scraped third-party page source without altering extracted prose or claim excerpts. 2026-10-14: Redacted 2 personal email address(es) ([redacted-email]) from evidence/raw/src_5fda19aa5cd8.html so the published pack does not re-publish a third party's personal data; excerpts and claim quotes were re-derived from the redacted text."
 }

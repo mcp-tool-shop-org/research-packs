@@ -22,5 +22,7 @@
   "scope": "The scope of this assertion is limited to the specific instance of a crash that occurs during the iOS export process in Godot version 4.7-beta1.",
   "not": null,
   "extracted_by": "ollama-intern",
-  "extracted_at": "2026-05-10T07:54:15.916Z"
+  "extracted_at": "2026-05-10T07:54:15.916Z",
+  "redaction_count": 2,
+  "redaction_note": "2026-10-14: Redacted 2 home-path account name(s) ([redacted-user]) from evidence/raw/src_b777c089d810.json so the published pack does not re-publish a third party's personal data; excerpts and claim quotes were re-derived from the redacted text."
 }

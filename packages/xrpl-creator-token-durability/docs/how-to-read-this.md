@@ -51,6 +51,6 @@ From this directory:
 node ../../scripts/verify-pack.mjs .
 ```
 
-Expected output: `PASS` with `sections=7 accepted_claims=251 artifacts_verified=137` and receipt sha256 `6511a044aa15fa4de30a0dfc82b811947e1f57a1563fd1d7ba013a64725259a5`.
+Expected output: `PASS` with `sections=7 accepted_claims=251 artifacts_verified=137` and receipt sha256 `8f3f500ba285b885f719ed30ddd64e5d89337d5cb2c49c9ac2e9f235a936ae15`.
 
 See [`../../docs/how-to-read-a-pack.md`](../../docs/how-to-read-a-pack.md) for the general guide.

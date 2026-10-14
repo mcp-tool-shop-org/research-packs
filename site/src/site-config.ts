@@ -54,7 +54,7 @@ export const config: SiteConfig = {
         },
         {
           title: 'Verify one pack',
-          code: 'node scripts/verify-pack.mjs packages/research-os-self-dogfood\n# PASS  research-os-self-dogfood\n#       receipt_sha256=368d23...d466 (53796 bytes)',
+          code: 'node scripts/verify-pack.mjs packages/research-os-self-dogfood\n# PASS  research-os-self-dogfood\n#       receipt_sha256=04d903...579c (53797 bytes)',
         },
       ],
     },

@@ -215,7 +215,7 @@
     },
     {
       "path": "sections/06-amendment-and-validator-landscape/claims.jsonl",
-      "sha256": "d4610152c9dacc0c40175e4e0de451b1f227d5532902bfb1626524282e95f77a",
+      "sha256": "2522663f5e1f5b252d0e30b6897d8139649b3762c58721b5bc52cce2fd58337f",
       "bytes": 351194
     },
     {
@@ -285,7 +285,7 @@
     },
     {
       "path": "evidence/fetch-log.jsonl",
-      "sha256": "df47f9503cc1b954df7ed9e51e104b82414c1c30cf910d4a5e5dcb1cf3c974e6",
+      "sha256": "5e7f91e972024a6e2188efee1ed132fd32579d5556fe05bd42783bc5782c2fc2",
       "bytes": 71818
     },
     {
@@ -620,8 +620,8 @@
     },
     {
       "path": "evidence/source-cards/src_d16112dea1e0.json",
-      "sha256": "88734267c0102669ff38bd16facfd328e6f7a6e3fefa3ef7f2ef290a1e03bb74",
-      "bytes": 1269
+      "sha256": "fd5f5e77b3687945d0bbce5d3815a57e33a3f2506482051ca0d1e7fed1116e90",
+      "bytes": 1564
     },
     {
       "path": "evidence/source-cards/src_d2fef4cddfd7.json",

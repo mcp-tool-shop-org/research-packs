@@ -60,6 +60,6 @@
     "unresolved_contradictions": 0,
     "preserved_contradiction_records": 171
   },
-  "freeze_receipt_sha256": "d71943c6444d4bb5ba38ae577089498d119b95f00caed8f068f0ee09c79038eb",
+  "freeze_receipt_sha256": "8ae6763dd0038c4bd3334fa39bc1d745cf4ff394d7ea2e19193a5cc063192b6e",
   "operator_notes": "ComfyUI arc operating mode: operator-staged URLs over LLM discovery; text-accessible sources only (raw.githubusercontent.com, docs.comfy.org, api.github.com/search); GitHub Search API canonical form for keyword filtering — the /issues?q= parameter is silently dropped; heuristic contradiction detector for narrow-topic sections (5/5 sessions: ollama-intern stalled every time); llms.txt aggregate-source acceptance with triage capping; community-distribution surfaces inaccessible (JS-shell + paywall + stale-URL — strongest Experiment 1 finding); publisher-null is non-deterministic across all source types, not just GitHub — min_independent_publishers: 0 workaround required for the full arc; hermes3:8b two-pass calibrated reviewer used for sections 04–08; Pattern 2 predicate fix (commit 22b5dba) shipped mid-arc when hermes3 full decision vocabulary exposed stale candidate-set-completeness predicates in audit and cowork handoff."
 }

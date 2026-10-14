@@ -81,6 +81,6 @@ From this directory:
 node ../../scripts/verify-pack.mjs .
 ```
 
-Expected output: `PASS  godot-export-runtime-durability` with `receipt_sha256=55a65792caed9c026e76d4913c939a0f656a777a0a130e0b8a0d29ad6cf41235`.
+Expected output: `PASS  godot-export-runtime-durability` with `receipt_sha256=4578c15df1dc1eb4c2ba240b111bbc4810c335a6b7452b0f12ab768c5b3f6fab`.
 
 See [`../../docs/how-to-read-a-pack.md`](../../docs/how-to-read-a-pack.md) for the general guide.

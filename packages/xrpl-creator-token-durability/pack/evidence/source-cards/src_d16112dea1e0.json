@@ -23,5 +23,7 @@
   "scope": null,
   "not": null,
   "extracted_by": "ollama-intern",
-  "extracted_at": "2026-05-09T21:06:05.657Z"
+  "extracted_at": "2026-05-09T21:06:05.657Z",
+  "redaction_count": 5,
+  "redaction_note": "2026-10-14: Redacted 5 personal email address(es) ([redacted-email]) from evidence/raw/src_d16112dea1e0.json so the published pack does not re-publish a third party's personal data; excerpts and claim quotes were re-derived from the redacted text."
 }

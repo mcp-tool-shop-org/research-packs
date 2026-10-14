@@ -22,5 +22,7 @@
   "scope": null,
   "not": null,
   "extracted_by": "ollama-intern",
-  "extracted_at": "2026-05-10T04:58:12.996Z"
+  "extracted_at": "2026-05-10T04:58:12.996Z",
+  "redaction_count": 5,
+  "redaction_note": "2026-10-14: Redacted 5 home-path account name(s) ([redacted-user]) from evidence/raw/src_da88881cf961.json so the published pack does not re-publish a third party's personal data; excerpts and claim quotes were re-derived from the redacted text."
 }

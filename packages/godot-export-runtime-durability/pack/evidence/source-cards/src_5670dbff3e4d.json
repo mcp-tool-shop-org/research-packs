@@ -11,18 +11,20 @@
   "source_type": "docs",
   "relevance": "high",
   "key_points": [
-    "D\u00e9couvrez comment pr\u00e9parer la publication de votre application.",
-    "Apprenez \u00e0 cr\u00e9er des builds pour les appareils et les plateformes que vous souhaitez cibler.",
+    "Découvrez comment préparer la publication de votre application.",
+    "Apprenez à créer des builds pour les appareils et les plateformes que vous souhaitez cibler.",
     "Explorez les options de distribution, y compris Google Play et APK direct."
   ],
   "limitations": [
-    "Le contenu est ax\u00e9 sur la publication d'applications Android.",
-    "La documentation peut \u00eatre orient\u00e9e vers les d\u00e9veloppeurs avanc\u00e9s ou exp\u00e9riment\u00e9s.",
-    "Peut ne pas couvrir tous les aspects de la pr\u00e9paration \u00e0 la publication pour un nouveau d\u00e9veloppeur."
+    "Le contenu est axé sur la publication d'applications Android.",
+    "La documentation peut être orientée vers les développeurs avancés ou expérimentés.",
+    "Peut ne pas couvrir tous les aspects de la préparation à la publication pour un nouveau développeur."
   ],
-  "asserts": "Cette page vous guide dans la pr\u00e9paration et la publication de votre application Android, en explorant les options de builds, de distribution et d'optimisation.",
-  "scope": "La documentation vise \u00e0 fournir des informations aux d\u00e9veloppeurs Android qui souhaitent publier leur application sur Google Play ou par le biais d'un APK direct.",
+  "asserts": "Cette page vous guide dans la préparation et la publication de votre application Android, en explorant les options de builds, de distribution et d'optimisation.",
+  "scope": "La documentation vise à fournir des informations aux développeurs Android qui souhaitent publier leur application sur Google Play ou par le biais d'un APK direct.",
   "not": null,
   "extracted_by": "ollama-intern",
-  "extracted_at": "2026-05-10T07:52:36.165Z"
+  "extracted_at": "2026-05-10T07:52:36.165Z",
+  "redaction_count": 10,
+  "redaction_note": "2026-10-14: Redacted 9 embedded third-party Google API client keys ([REDACTED-THIRD-PARTY-GOOGLE-CLIENT-KEY]) and 1 embedded third-party Stripe live publishable key ([REDACTED-THIRD-PARTY-STRIPE-CLIENT-KEY]) from evidence/raw/src_5670dbff3e4d.html to prevent false-positive secret-scanning alerts on scraped third-party page source without altering extracted prose or claim excerpts."
 }
