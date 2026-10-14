@@ -1811,11 +1811,11 @@
           "path": "packages/godot-export-runtime-durability/README.md"
         },
         {
-          "hash": "c1778d0c18b69f67d727ad4ab029c300e2e73bc82ff0ca177c9966d557b7e0df",
+          "hash": "c4e5c42fd2f1c7054362d5256424372e1d21cf63eabea153c09b0116938aaeb5",
           "path": "packages/godot-export-runtime-durability/docs/how-to-read-this.md"
         },
         {
-          "hash": "7986200893c8a46db2fa9f7f840fee45bbb885dc8818a439eac9bdb1a85fb39d",
+          "hash": "00e74458d58095dd3eea025e9a656fcac3d8de1be0ee397d343f1c19e19e8d1a",
           "path": "packages/godot-export-runtime-durability/pack.manifest.json"
         },
         {
@@ -2131,11 +2131,11 @@
           "path": "packages/godot-export-runtime-durability/pack/audits/07-distribution-surface-durability-section-report.md"
         },
         {
-          "hash": "55a65792caed9c026e76d4913c939a0f656a777a0a130e0b8a0d29ad6cf41235",
+          "hash": "83d76f412884c5876efb50afac6f6282a055400efe2c6a8560824066febb834b",
           "path": "packages/godot-export-runtime-durability/pack/audits/freeze-receipt.json"
         },
         {
-          "hash": "e6b4fe024e397998628d824b441c1d859bb8e894d75430bd27446cf6beef168e",
+          "hash": "1e281180c393fa68c3aa85412e3d5b9ef94fa0d2d872019f72cbdcad0ae3e471",
           "path": "packages/godot-export-runtime-durability/pack/audits/freeze-receipt.md"
         },
         {
@@ -2275,7 +2275,7 @@
           "path": "packages/godot-export-runtime-durability/pack/evidence/excerpts/src_55a63071c9c1.jsonl"
         },
         {
-          "hash": "49810118ba5c5815973078c438c09c8f27a8af51c4d6f021f6b3808afd7fecc8",
+          "hash": "a82843ee2492a8f4b37328a538d677dffe2189a9375467445561ab0d7dedd6a6",
           "path": "packages/godot-export-runtime-durability/pack/evidence/excerpts/src_5670dbff3e4d.jsonl"
         },
         {
@@ -2287,7 +2287,7 @@
           "path": "packages/godot-export-runtime-durability/pack/evidence/excerpts/src_5b703b620109.jsonl"
         },
         {
-          "hash": "60a6e0e8be20504b7e273459b586561e01524b8d9ecbb8ed43ef0a30ba918537",
+          "hash": "7dfffa6c8d7d2da23dee2c9ab162937de20b248a6c1f44773914bd5f6260dc69",
           "path": "packages/godot-export-runtime-durability/pack/evidence/excerpts/src_5fda19aa5cd8.jsonl"
         },
         {
@@ -2487,7 +2487,7 @@
           "path": "packages/godot-export-runtime-durability/pack/evidence/excerpts/src_fc44452fd969.jsonl"
         },
         {
-          "hash": "18cf1221134211a328c01e9ff604003f324d5d7b7cc96dd8dfcfaf6323fccb34",
+          "hash": "57061927f0f20ff7148048847c77110d8fb676b73e475a991108fe8639f7b7a3",
           "path": "packages/godot-export-runtime-durability/pack/evidence/fetch-log.jsonl"
         },
         {
@@ -2559,7 +2559,7 @@
           "path": "packages/godot-export-runtime-durability/pack/evidence/raw/src_55a63071c9c1.txt"
         },
         {
-          "hash": "39e71dd232473e35147051aee03cc19f6060a15df9c4d6cc06585526cea02ee1",
+          "hash": "611f0515eeb1b0180a7eb9cba959afc1dbe035f22ec4fb01540c0a83ad2f6a93",
           "path": "packages/godot-export-runtime-durability/pack/evidence/raw/src_5670dbff3e4d.html"
         },
         {
@@ -2571,7 +2571,7 @@
           "path": "packages/godot-export-runtime-durability/pack/evidence/raw/src_5b703b620109.txt"
         },
         {
-          "hash": "3ade208d48f7d8e75f67ec29e4e194e3c1a56765bf864599d3ae95449a07bd40",
+          "hash": "885cf6fa1d04861a70ab0c2641875f6ab33052748ffdadc0ee08ba6e9591ea68",
           "path": "packages/godot-export-runtime-durability/pack/evidence/raw/src_5fda19aa5cd8.html"
         },
         {
@@ -2839,7 +2839,7 @@
           "path": "packages/godot-export-runtime-durability/pack/evidence/source-cards/src_55a63071c9c1.json"
         },
         {
-          "hash": "edfd4b50003ddd5117f98c6694efb693797c04fa26fbdcf8326aad79c8abf164",
+          "hash": "23506419b6fb44b25a3a8bec1612fc526382b4102c84b411d382566ff61cd5f9",
           "path": "packages/godot-export-runtime-durability/pack/evidence/source-cards/src_5670dbff3e4d.json"
         },
         {
@@ -2851,7 +2851,7 @@
           "path": "packages/godot-export-runtime-durability/pack/evidence/source-cards/src_5b703b620109.json"
         },
         {
-          "hash": "d4b7ec4d21dbc63d84a1813f43d48bce0ff9786ab76043156c9f2c6266df7f8d",
+          "hash": "e7c457c65a0769b9c885a0a47de753b9e9be563cade3121f1457338e6a205bec",
           "path": "packages/godot-export-runtime-durability/pack/evidence/source-cards/src_5fda19aa5cd8.json"
         },
         {
@@ -3399,7 +3399,7 @@
           "path": "packages/godot-export-runtime-durability/pack/sections/06-mobile-web-export-durability/claim-triage.md"
         },
         {
-          "hash": "13027c758d15893a53512767318e1c03044513076d0847ddaf17d67e7eeac3ac",
+          "hash": "ebaab2210d919e00545e8d4aaebb1b4b42ea07b59856a9af4f6fdee452c0ca61",
           "path": "packages/godot-export-runtime-durability/pack/sections/06-mobile-web-export-durability/claims.jsonl"
         },
         {
@@ -7717,7 +7717,7 @@
           "path": "site/astro.config.mjs"
         },
         {
-          "hash": "af5d4f54dca60686724d306eb58759fb25b6f5ba4d66559ab84a968112a184e5",
+          "hash": "0607a19c4f60b635244a906c7ad2424359b50e20c4a83bc140f202abce4a941e",
           "path": "site/package-lock.json"
         },
         {
@@ -8207,7 +8207,7 @@
   ],
   "engine": "1.24.0",
   "generatedFrom": {
-    "commit": "3330a26cea0c57089755ea6e7201685630dfa744",
+    "commit": "367af69afa7e986e009f9fed9c4cf6e4190a1c72",
     "tracked": 1905
   },
   "landings": [
