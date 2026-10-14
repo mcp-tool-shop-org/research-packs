@@ -42639,7 +42639,7 @@
       "claim_id": "clm_664a4a54b4c3_ollama_intern_13",
       "section_id": "04-environment-reproducibility",
       "artifact_path": "sections/04-environment-reproducibility/claims.jsonl",
-      "asserts": "Custom nodes can be placed in the directory '/Users/your_username/Documents/extra_custom_nodes' during manual installation.",
+      "asserts": "Custom nodes can be placed in the directory '/Users/[redacted-user]/Documents/extra_custom_nodes' during manual installation.",
       "scope": "Manual Installation process on MacOS",
       "not": "Other platforms",
       "source_ids": [

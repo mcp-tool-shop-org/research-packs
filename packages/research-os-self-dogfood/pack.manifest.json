@@ -59,6 +59,6 @@
     "dispositioned": 17,
     "unresolved_contradictions": 0
   },
-  "freeze_receipt_sha256": "368d23613783ef48b36cccd814463b3f413d514eb7a37792653142ef1fd5d466",
+  "freeze_receipt_sha256": "04d90301128a2baf8907c0bd7e7f845c347e061f36a8dd5d1d99bb2ae9f1579c",
   "operator_notes": "Recursive proof: this pack researches research-os's own spec using research-os itself. Frozen 2026-05-08 using mistral-nemo:12b (hermes3:8b not pulled at the time; documented substitution). Section 03 is the primary regression fixture; its 7 dispositioned claims (out_of_bounds_regression_fixture) must not be cited. Primary-source waiver active for all 8 sections — design intent is operator input, not public publications."
 }

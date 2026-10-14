@@ -22,5 +22,7 @@
   "scope": "This change specifically relates to the Android export functionality within the Godot game engine.",
   "not": null,
   "extracted_by": "ollama-intern",
-  "extracted_at": "2026-05-10T07:54:40.451Z"
+  "extracted_at": "2026-05-10T07:54:40.451Z",
+  "redaction_count": 4,
+  "redaction_note": "2026-10-14: Redacted 4 home-path account name(s) ([redacted-user]) from evidence/raw/src_e17170a435d3.json so the published pack does not re-publish a third party's personal data; excerpts and claim quotes were re-derived from the redacted text."
 }

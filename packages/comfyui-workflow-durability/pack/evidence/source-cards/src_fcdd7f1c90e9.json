@@ -23,5 +23,7 @@
   "scope": "The scope of this source is providing documentation and troubleshooting steps specifically for ComfyUI related problems.",
   "not": null,
   "extracted_by": "ollama-intern",
-  "extracted_at": "2026-05-09T06:23:58.125Z"
+  "extracted_at": "2026-05-09T06:23:58.125Z",
+  "redaction_count": 4,
+  "redaction_note": "2026-10-14: Redacted 4 home-path account name(s) ([redacted-user]) from evidence/raw/src_fcdd7f1c90e9.html so the published pack does not re-publish a third party's personal data; excerpts and claim quotes were re-derived from the redacted text."
 }

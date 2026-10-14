@@ -25,5 +25,7 @@
   "scope": "The process of ensuring updated dotnet builds are used when exporting a Godot mono project from source.",
   "not": null,
   "extracted_by": "ollama-intern",
-  "extracted_at": "2026-05-10T08:57:09.836Z"
+  "extracted_at": "2026-05-10T08:57:09.836Z",
+  "redaction_count": 1,
+  "redaction_note": "2026-10-14: Redacted 1 home-path account name(s) ([redacted-user]) from evidence/raw/src_639902f06da8.json so the published pack does not re-publish a third party's personal data; excerpts and claim quotes were re-derived from the redacted text."
 }

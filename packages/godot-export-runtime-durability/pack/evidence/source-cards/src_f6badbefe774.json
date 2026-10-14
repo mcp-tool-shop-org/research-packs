@@ -26,5 +26,7 @@
   "scope": "The scope is the functionality and integration of this plugin into Godot C# projects for saving node trees and custom classes.",
   "not": null,
   "extracted_by": "ollama-intern",
-  "extracted_at": "2026-05-10T04:00:59.948Z"
+  "extracted_at": "2026-05-10T04:00:59.948Z",
+  "redaction_count": 1,
+  "redaction_note": "2026-10-14: Redacted 1 personal email address(es) ([redacted-email]) from evidence/raw/src_f6badbefe774.txt so the published pack does not re-publish a third party's personal data; excerpts and claim quotes were re-derived from the redacted text."
 }

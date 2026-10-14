@@ -208,8 +208,8 @@
         "path": "SHIP_GATE.md"
       },
       {
-        "commits": 5,
-        "lines": 106,
+        "commits": 6,
+        "lines": 112,
         "path": "atlas/README.md"
       },
       {
@@ -218,18 +218,18 @@
         "path": "atlas/boundaries.yaml"
       },
       {
-        "commits": 5,
-        "lines": 247,
+        "commits": 6,
+        "lines": 261,
         "path": "atlas/page.json"
       },
       {
-        "commits": 5,
-        "lines": 9872,
+        "commits": 6,
+        "lines": 9906,
         "path": "atlas/statistics.json"
       },
       {
-        "commits": 5,
-        "lines": 8993,
+        "commits": 6,
+        "lines": 9021,
         "path": "atlas/structure.json"
       },
       {
@@ -263,8 +263,8 @@
         "path": "docs/source-quality-notes.md"
       },
       {
-        "commits": 4,
-        "lines": 3312,
+        "commits": 5,
+        "lines": 3319,
         "path": "package-lock.json"
       },
       {
@@ -2448,13 +2448,13 @@
         "path": "packages/godot-export-runtime-durability/README.md"
       },
       {
-        "commits": 1,
-        "lines": 86,
+        "commits": 2,
+        "lines": 88,
         "path": "packages/godot-export-runtime-durability/docs/how-to-read-this.md"
       },
       {
-        "commits": 1,
-        "lines": 58,
+        "commits": 2,
+        "lines": 60,
         "path": "packages/godot-export-runtime-durability/pack.manifest.json"
       },
       {
@@ -2848,13 +2848,13 @@
         "path": "packages/godot-export-runtime-durability/pack/audits/07-distribution-surface-durability-section-report.md"
       },
       {
-        "commits": 1,
-        "lines": 1340,
+        "commits": 2,
+        "lines": 1354,
         "path": "packages/godot-export-runtime-durability/pack/audits/freeze-receipt.json"
       },
       {
-        "commits": 1,
-        "lines": 405,
+        "commits": 2,
+        "lines": 413,
         "path": "packages/godot-export-runtime-durability/pack/audits/freeze-receipt.md"
       },
       {
@@ -3028,8 +3028,8 @@
         "path": "packages/godot-export-runtime-durability/pack/evidence/excerpts/src_55a63071c9c1.jsonl"
       },
       {
-        "commits": 1,
-        "lines": 209,
+        "commits": 2,
+        "lines": 627,
         "path": "packages/godot-export-runtime-durability/pack/evidence/excerpts/src_5670dbff3e4d.jsonl"
       },
       {
@@ -3043,8 +3043,8 @@
         "path": "packages/godot-export-runtime-durability/pack/evidence/excerpts/src_5b703b620109.jsonl"
       },
       {
-        "commits": 1,
-        "lines": 100,
+        "commits": 2,
+        "lines": 300,
         "path": "packages/godot-export-runtime-durability/pack/evidence/excerpts/src_5fda19aa5cd8.jsonl"
       },
       {
@@ -3293,8 +3293,8 @@
         "path": "packages/godot-export-runtime-durability/pack/evidence/excerpts/src_fc44452fd969.jsonl"
       },
       {
-        "commits": 1,
-        "lines": 72,
+        "commits": 2,
+        "lines": 76,
         "path": "packages/godot-export-runtime-durability/pack/evidence/fetch-log.jsonl"
       },
       {
@@ -3383,8 +3383,8 @@
         "path": "packages/godot-export-runtime-durability/pack/evidence/raw/src_55a63071c9c1.txt"
       },
       {
-        "commits": 1,
-        "lines": 10064,
+        "commits": 2,
+        "lines": 10066,
         "path": "packages/godot-export-runtime-durability/pack/evidence/raw/src_5670dbff3e4d.html"
       },
       {
@@ -3398,8 +3398,8 @@
         "path": "packages/godot-export-runtime-durability/pack/evidence/raw/src_5b703b620109.txt"
       },
       {
-        "commits": 1,
-        "lines": 6054,
+        "commits": 2,
+        "lines": 6062,
         "path": "packages/godot-export-runtime-durability/pack/evidence/raw/src_5fda19aa5cd8.html"
       },
       {
@@ -3733,8 +3733,8 @@
         "path": "packages/godot-export-runtime-durability/pack/evidence/source-cards/src_55a63071c9c1.json"
       },
       {
-        "commits": 1,
-        "lines": 28,
+        "commits": 2,
+        "lines": 46,
         "path": "packages/godot-export-runtime-durability/pack/evidence/source-cards/src_5670dbff3e4d.json"
       },
       {
@@ -3748,8 +3748,8 @@
         "path": "packages/godot-export-runtime-durability/pack/evidence/source-cards/src_5b703b620109.json"
       },
       {
-        "commits": 1,
-        "lines": 26,
+        "commits": 2,
+        "lines": 30,
         "path": "packages/godot-export-runtime-durability/pack/evidence/source-cards/src_5fda19aa5cd8.json"
       },
       {
@@ -4433,8 +4433,8 @@
         "path": "packages/godot-export-runtime-durability/pack/sections/06-mobile-web-export-durability/claim-triage.md"
       },
       {
-        "commits": 1,
-        "lines": 402,
+        "commits": 2,
+        "lines": 488,
         "path": "packages/godot-export-runtime-durability/pack/sections/06-mobile-web-export-durability/claims.jsonl"
       },
       {
@@ -9676,11 +9676,11 @@
   },
   "confidence": {
     "level": "low",
-    "reason": "fewer than 30 qualifying commits in the window, and fewer than 25 source files reach 10 revisions"
+    "reason": "fewer than 25 source files reach 10 revisions in the window"
   },
-  "generatedAt": "2026-10-14T19:18:55.785Z",
+  "generatedAt": "2026-10-14T21:53:02.583Z",
   "generatedFrom": {
-    "commit": "367af69afa7e986e009f9fed9c4cf6e4190a1c72"
+    "commit": "5433990421bb1946e9c35df4a761506709468fe7"
   },
   "pairs": [],
   "parameters": {
@@ -9692,17 +9692,17 @@
     "fallenShared": 3,
     "floor": "fallen",
     "floorHeld": false,
-    "floorTrigger": "both",
-    "headDate": "2026-10-01T13:37:01-07:00",
+    "floorTrigger": "revision-depth",
+    "headDate": "2026-10-14T15:23:27-04:00",
     "inScopeFiles": 1910,
     "pinnedStart": null,
     "priorFloor": "fallen",
-    "qualifyingCommits": 28,
+    "qualifyingCommits": 30,
     "qualifyingMinimum": 30,
     "revisions": 5,
     "shared": 10,
     "sharedFloorUsed": 3,
-    "since": "2026-04-04T20:37:01.000Z",
+    "since": "2026-04-17T19:23:27.000Z",
     "sourceExtensions": [
       ".js",
       ".mjs",

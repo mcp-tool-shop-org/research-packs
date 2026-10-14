@@ -1,14 +1,14 @@
 # research-packs: how it works
 
-Mapped at 2026-10-14 from commit 367af69 by Atlas 1.24.0.
+Mapped at 2026-10-14 from commit 5433990 by Atlas 1.24.0.
 
 ## What this is
 
 7 parts, mostly JSON data (1166 files) and Markdown (430); code in HTML (174), JavaScript (8), CSS (2), TypeScript (2) and Astro (1). Work enters through 2 doors; the busiest is Verify, which reaches 2 parts. It deploys a site to GitHub Pages.
 
-## What changed since 2026-09-30 (3330a26)
+## What changed since 2026-10-14 (367af69)
 
-Nothing structural changed since 2026-09-30; 13 files changed content.
+Nothing structural changed since 2026-10-14; 105 files changed content.
 
 ## What comes in
 
@@ -36,7 +36,7 @@ Verify writes nothing this map can see.
 
 No two source files changed together often enough to name.
 
-Window: 180 days; a pair counts from 3 shared commits, since the window holds fewer than 30 qualifying commits.
+Window: 180 days; a pair counts from 3 shared commits, since 0 source files reach 10 revisions; the floor rises to 10 when 25 do.
 
 ## What no test touches
 
@@ -68,6 +68,6 @@ Read those in order to follow one pull request end to end.
 
 - 1 read uses a path built at run time and is not named here.
 - 1 write and 9 reads go to a path their caller passes, not to this repository.
-- Statistics confidence is low: fewer than 30 qualifying commits in the window, and fewer than 25 source files reach 10 revisions.
+- Statistics confidence is low: fewer than 25 source files reach 10 revisions in the window.
 
 Regenerate with `npx --yes @dogfood-lab/atlas map`.

@@ -26,5 +26,7 @@
   "scope": "The keying search terms (repo:godotengine/godot +FileAccess +save +regression) were used to filter relevant issues from the Godot engine's GitHub issue tracker. The provided results pertain specifically to this subset of reported engine bugs and regressions in save behavior.",
   "not": null,
   "extracted_by": "ollama-intern",
-  "extracted_at": "2026-05-10T03:59:05.253Z"
+  "extracted_at": "2026-05-10T03:59:05.253Z",
+  "redaction_count": 3,
+  "redaction_note": "2026-10-14: Redacted 3 home-path account name(s) ([redacted-user]) from evidence/raw/src_b00e2fac5e30.json so the published pack does not re-publish a third party's personal data; excerpts and claim quotes were re-derived from the redacted text."
 }

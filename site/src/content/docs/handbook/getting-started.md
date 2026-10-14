@@ -26,7 +26,7 @@ A passing run looks like:
 ```
 PASS  research-os-self-dogfood
       sections=8 accepted_claims=296 artifacts_verified=131
-      receipt_sha256=368d23613783ef48b36cccd814463b3f413d514eb7a37792653142ef1fd5d466 (53796 bytes)
+      receipt_sha256=04d90301128a2baf8907c0bd7e7f845c347e061f36a8dd5d1d99bb2ae9f1579c (53797 bytes)
 ```
 
 **PASS** means every canonical artifact is byte-identical to what was frozen. If any artifact has been modified since freeze, the run fails with the path and hash mismatch.

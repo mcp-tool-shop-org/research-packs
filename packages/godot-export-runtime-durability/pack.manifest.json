@@ -53,6 +53,6 @@
     "dispositioned": 0,
     "unresolved_contradictions": 0
   },
-  "freeze_receipt_sha256": "83d76f412884c5876efb50afac6f6282a055400efe2c6a8560824066febb834b",
+  "freeze_receipt_sha256": "4578c15df1dc1eb4c2ba240b111bbc4810c335a6b7452b0f12ab768c5b3f6fab",
   "operator_notes": "Godot narrative-game build durability — layered release-state problem across engine/export-template versioning, scene/resource serialization, save-state migration, scripting/runtime contracts, desktop platform requirements, mobile/web gatekeepers, and distribution surfaces. Experiment 3 pack #3 of 3 — closes the Experiment 3 triangle (workflow / protocol / engine)."
 }

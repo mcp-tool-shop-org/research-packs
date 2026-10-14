@@ -20,5 +20,7 @@
   "scope": null,
   "not": null,
   "extracted_by": "heuristic",
-  "extracted_at": "2026-05-09T03:06:09.473Z"
+  "extracted_at": "2026-05-09T03:06:09.473Z",
+  "redaction_count": 1,
+  "redaction_note": "2026-10-14: Redacted 1 home-path account name(s) (same-length mask) from evidence/raw/src_ed31f644833c.json so the published pack does not re-publish a third party's personal data; same-length masking keeps every excerpt span in place."
 }
