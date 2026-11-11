@@ -21,30 +21,30 @@
   "changes": {
     "fileCounts": {
       "added": 0,
-      "changed": 105,
+      "changed": 1,
       "moved": 0,
-      "parts": 3,
+      "parts": 1,
       "removed": 0
     },
     "items": [
       {
         "kind": "counts",
-        "sentence": "Nothing structural changed since 2026-10-14; 105 files changed content.",
+        "sentence": "Nothing structural changed since 2026-10-14; 1 file changed content.",
         "subjects": []
       }
     ],
     "since": {
-      "commit": "367af69afa7e986e009f9fed9c4cf6e4190a1c72",
-      "generatedAt": "2026-10-14T19:18:55.785Z"
+      "commit": "5433990421bb1946e9c35df4a761506709468fe7",
+      "generatedAt": "2026-10-14T21:53:02.583Z"
     },
     "unchanged": true
   },
   "changesTogether": [],
   "changesTogetherNote": [
-    "Window: 180 days; a pair counts from 3 shared commits, since 0 source files reach 10 revisions; the floor rises to 10 when 25 do."
+    "Window: 180 days; a pair counts from 3 shared commits, since the window holds fewer than 30 qualifying commits."
   ],
   "changesTogetherWithTests": 0,
-  "commit": "5433990421bb1946e9c35df4a761506709468fe7",
+  "commit": "64a8dc1a0376145a1007f76c12d5a6b814e65e1f",
   "defaultBranch": "main",
   "derived": "7 parts, mostly JSON data (1166 files) and Markdown (430); code in HTML (174), JavaScript (8), CSS (2), TypeScript (2) and Astro (1). Work enters through 2 doors; the busiest is Verify, which reaches 2 parts. It deploys a site to GitHub Pages.",
   "doors": [
@@ -122,13 +122,13 @@
   "duplicatesLead": null,
   "duplicatesNote": [],
   "edges": [],
-  "engine": "1.24.0",
+  "engine": "1.26.0",
   "generated": [],
-  "generatedAt": "2026-10-14T21:53:02.583Z",
+  "generatedAt": "2026-11-11T22:35:04.275Z",
   "limits": [
     "1 read uses a path built at run time and is not named here.",
     "1 write and 9 reads go to a path their caller passes, not to this repository.",
-    "Statistics confidence is low: fewer than 25 source files reach 10 revisions in the window."
+    "Statistics confidence is low: fewer than 30 qualifying commits in the window, and fewer than 25 source files reach 10 revisions."
   ],
   "mainDoor": ".github/workflows/verify.yml",
   "partLabels": {
@@ -156,6 +156,7 @@
   "testedBy": {
     "scripts": 3
   },
+  "testedCodeParts": 1,
   "unnamedWrites": 0,
   "unread": [],
   "unreadFiles": 0,
